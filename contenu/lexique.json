@@ -159,7 +159,25 @@
             "fr": "Un comité peut se réunir quand la Chambre ne siège pas. C'est pourquoi un projet de loi peut avancer en août, l'Assemblée absente — et pourquoi ce site peut montrer des travaux alors que la bande dit que la Chambre est ajournée."
           }
         }
-      ]
+      ],
+      "intro": {
+        "en": [
+          "Where it sits: **first reading → second reading → COMMITTEE → third reading → royal assent.** The House debates the *idea* at second reading. If it agrees, it sends the bill to a standing committee. That is where the *text* is worked on, before the bill goes back for third reading.",
+          "What happens there: the committee hears people affected by the bill — associations, businesses, ordinary citizens — and then goes through the text section by section. Every proposed change is debated and voted on. **This is the only moment when the wording of a law changes.** In the House you vote for or against a bill; in committee you vote on each comma.",
+          "Who decides: the government holds the majority on every committee, as it does in the House. Most opposition amendments are defeated there.",
+          "What it tells you: **{enComite} of the {publics} public bills** of this session went to committee. The step is not a formality every bill goes through — it is the filter. When a bill reaches committee, it is on its way to becoming law."
+        ],
+        "fr": [
+          "Où il se place : **1re lecture → 2e lecture → COMITÉ → 3e lecture → sanction royale.** L’Assemblée débat de l’*idée* en deuxième lecture. Si elle l’approuve, elle renvoie le projet à un comité permanent. C’est là que le *texte* est travaillé, avant de revenir pour la troisième lecture.",
+          "Ce qui s’y fait : le comité entend les gens touchés par le projet — associations, entreprises, simples citoyen·ne·s — puis passe le texte article par article. Chaque modification proposée est débattue, puis votée. **C’est le seul moment où le libellé d’une loi change.** En Chambre, on vote pour ou contre un projet ; en comité, on vote sur chaque virgule.",
+          "Qui décide : le gouvernement détient la majorité dans chaque comité, comme en Chambre. La plupart des amendements de l’opposition y sont rejetés.",
+          "Ce que ça dit : **{enComite} des {publics} projets de loi publics** de cette session sont allés en comité. L’étape n’est pas une formalité que tous traversent — c’est le filtre. Quand un projet l’atteint, c’est qu’il est en train de devenir une loi."
+        ]
+      },
+      "note": {
+        "en": "Measured on 24 September 2026: committees held 359 recorded votes this session, against 115 in the House itself.",
+        "fr": "Mesuré le 24 septembre 2026 : les comités ont tenu 359 votes nominatifs cette session, contre 115 à la Chambre elle-même."
+      }
     },
     {
       "titre": {

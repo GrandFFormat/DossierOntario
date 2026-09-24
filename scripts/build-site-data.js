@@ -354,6 +354,9 @@ function main() {
       // compter ici gonflerait le chiffre sans rien dire du travail législatif.
       sanctionnes: projets.filter((p) => p.type === 'public' && p.etape === 5).length,
       votes: votesSite.length,
+      // Le lexique cite ces deux chiffres dans son explication des comités : ils doivent
+      // se rafraîchir avec le reste, sinon l'explication vieillit en silence.
+      projetsEnComite: projets.filter((p) => p.type === 'public' && fiches[p.numero]?.etapes?.some((e) => e.comite)).length,
       sieges: members?.totalSieges ?? null,
     },
     derniersMouvements: mouvements.slice(0, 15),

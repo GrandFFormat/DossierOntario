@@ -130,7 +130,7 @@ const PAGES = [
   {
     fichier: 'glossary.html',
     vue: 'lexique',
-    donnees: 'contenu:lexique',
+    donnees: 'contenu:lexique apercu',
     titre: 'Lexicon',
     description:
       'Bills, readings, closure, prorogation: the words of the Ontario Legislature explained in plain language.',

@@ -412,3 +412,14 @@ img{max-width:100%;}
 .projet-comite .projet-titre{flex:1 1 180px; font-weight:600;}
 .journees{margin-top:8px; padding-left:18px;}
 .journees li{display:flex; gap:8px; flex-wrap:wrap; align-items:baseline;}
+
+/* Le bloc d'explication d'un groupe du lexique : plus long qu'une fiche, et mis en avant.
+   Certaines choses — le rôle d'un comité — ne tiennent pas en trois lignes. */
+.explication{
+  border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow-sm);
+  padding:16px 20px; margin:0 0 18px;
+}
+.explication p{margin:0 0 12px; font-size:15.5px; line-height:1.6; max-width:78ch;}
+.explication p:last-child{margin-bottom:0;}
+.explication b{font-weight:800;}
+.explication .legende{border-top:2px solid var(--line-soft); padding-top:10px; margin-top:14px;}

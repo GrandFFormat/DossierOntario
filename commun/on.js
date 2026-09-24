@@ -674,6 +674,30 @@
 
     const ancre = (i) => `groupe-${i + 1}`;
 
+    /**
+     * Le bloc d'explication d'un groupe : plus long qu'une fiche, parce que certaines
+     * choses ne s'expliquent pas en trois lignes — le rôle d'un comité, par exemple.
+     *
+     * Les {accolades} sont remplies par les chiffres du jour (data/site/apercu.json) :
+     * un nombre écrit à la main dans un texte finit toujours par mentir. Les **gras** et
+     * les *italiques* sont les seules mises en forme permises, et le texte est échappé
+     * AVANT d'être balisé — le contenu reste du texte, jamais du HTML.
+     */
+    const explication = (g) => {
+      if (!g.intro) return '';
+      const chiffres = DONNEES.apercu?.chiffres ?? {};
+      const valeurs = { enComite: chiffres.projetsEnComite, publics: chiffres.projets };
+
+      const rendre = (p) =>
+        echapper(p.replace(/\{(\w+)\}/g, (tel, cle) => (valeurs[cle] != null ? valeurs[cle] : tel)))
+          .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+          .replace(/\*([^*]+)\*/g, '<i>$1</i>');
+
+      const paragraphes = selonLangue(g.intro.en, g.intro.fr).map((p) => `<p>${rendre(p)}</p>`).join('');
+      const note = g.note ? `<p class="legende">${echapper(selonLangue(g.note.en, g.note.fr))}</p>` : '';
+      return `<div class="explication">${paragraphes}${note}</div>`;
+    };
+
     cible.innerHTML =
       // Cinq groupes et vingt-quatre termes : des raccourcis évitent de tout faire défiler.
       `<nav class="raccourcis" aria-label="${mot('lexique.titre')}">${lex.groupes
@@ -683,6 +707,7 @@
         .map(
           (g, i) => `<h2 class="titre-groupe" id="${ancre(i)}">${echapper(selonLangue(g.titre.en, g.titre.fr))}
               <span class="compte">${g.entrees.length}</span></h2>
+            ${explication(g)}
             <div class="grille">${g.entrees.map(entree).join('')}</div>`
         )
         .join('') +
