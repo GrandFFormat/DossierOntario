@@ -71,7 +71,8 @@
       'etape.4': '3rd reading', 'etape.5': 'Royal assent',
       'groupe.5': 'Became law', 'groupe.4': 'At third reading', 'groupe.3': 'In committee',
       'groupe.2': 'At second reading', 'groupe.1': 'Tabled, nothing since',
-      'projet.parraine': 'Sponsored by', 'projet.note': 'Explanatory note (official)',
+      'projet.parraine': 'Sponsored by', 'projet.note': 'The Assembly’s own note, word for word',
+      'projet.noteQuoi': 'The Assembly prints this note at the front of every bill. Long bills are split into “schedules”, each one changing a different law. It is a reader’s aid, not part of the law.',
       'projet.ouvrir': 'What this bill does',
       'projet.resume': 'In plain words',
       'projet.resumeAnglais': 'Summary in English: the Assembly did not publish this bill in French.',
@@ -170,7 +171,8 @@
       'etape.4': '3e lecture', 'etape.5': 'Sanction royale',
       'groupe.5': 'Devenus lois', 'groupe.4': 'En troisième lecture', 'groupe.3': 'En comité',
       'groupe.2': 'En deuxième lecture', 'groupe.1': 'Déposés, rien depuis',
-      'projet.parraine': 'Parrainé par', 'projet.note': 'Note explicative (officielle)',
+      'projet.parraine': 'Parrainé par', 'projet.note': 'La note de l’Assemblée, mot pour mot',
+      'projet.noteQuoi': 'L’Assemblée imprime cette note en tête de chaque projet de loi. Les longs projets sont découpés en « annexes » (schedules), chacune modifiant une loi différente. C’est une aide au lecteur, elle ne fait pas partie de la loi.',
       'projet.ouvrir': 'Ce que fait ce projet',
       'projet.resume': 'En clair',
       'projet.resumeAnglais': 'Résumé en anglais : l’Assemblée n’a pas publié ce projet en français.',
@@ -460,8 +462,15 @@
             <div class="projet-texte">
               <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
               ${
+                // La note de l'Assemblée reste PLIÉE : c'est la vérification du résumé, pas
+                // ce qu'on vient lire. Affichée d'office, c'était un mur de prose juridique
+                // (« SCHEDULE 1 CITY OF TORONTO ACT… ») juste sous les puces en clair.
                 note
-                  ? `<h4 class="sous-titre">${mot('projet.note')}</h4><p class="courant">${echapper(note)}</p>`
+                  ? `<details class="note-officielle">
+                      <summary>${mot('projet.note')}</summary>
+                      <p class="legende note-quoi">${mot('projet.noteQuoi')}</p>
+                      <p class="courant">${echapper(note)}</p>
+                    </details>`
                   : `<p class="legende">${mot('projet.sansNote')}</p>`
               }
             </div>
