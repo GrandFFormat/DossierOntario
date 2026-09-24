@@ -216,6 +216,10 @@ function main() {
         titreFr: projet.titreFr,
         evenementEn: [etape.etape, etape.evenement].filter(Boolean).join(' — '),
         evenementFr: [etape.etapeFr, etape.evenementFr].filter(Boolean).join(' — ') || null,
+        // Sans le comité, une ligne datée d'août semble contredire la bande « la Chambre
+        // ne siège pas » : les comités, eux, siègent pendant l'ajournement.
+        comiteEn: etape.comite ?? null,
+        comiteFr: etape.comiteFr ?? null,
       });
     }
   }

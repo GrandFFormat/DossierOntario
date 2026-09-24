@@ -293,7 +293,9 @@
           <td>${date(m.date) ?? ''}</td>
           <td><span class="numero">${echapper(m.numero)}</span></td>
           <td>${echapper(selonLangue(m.titreEn, m.titreFr))}</td>
-          <td>${echapper(selonLangue(m.evenementEn, m.evenementFr) ?? '')}</td>
+          <td>${echapper(selonLangue(m.evenementEn, m.evenementFr) ?? '')}${
+            m.comiteEn ? `<span class="legende"> · ${echapper(selonLangue(m.comiteEn, m.comiteFr))}</span>` : ''
+          }</td>
         </tr>`
       )
       .join('');
