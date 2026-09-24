@@ -20,6 +20,24 @@ const PAGES = [
     titre: 'What the Ontario Legislature is doing',
     description:
       "Bills, recorded votes, MPPs and cabinet of the Legislative Assembly of Ontario, in plain language. Unofficial, free, bilingual.",
+    bandes: `<div class="bande bande-alerte" data-role="relache" hidden>
+  <div class="colonne">
+    <span class="marqueur" aria-hidden="true">⚠️</span>
+    <div>
+      <p class="titre-bande" data-role="relache-titre"></p>
+      <p data-role="relache-texte"></p>
+    </div>
+  </div>
+</div>
+<div class="bande bande-mission">
+  <div class="colonne">
+    <div>
+      <p class="titre-bande" data-i18n="mission.titre">Read the record, not the press release</p>
+      <p data-i18n="mission.texte">Every bill, every recorded vote and every member, taken from the
+        Assembly's own record and linked back to it. Free, bilingual, and not official.</p>
+    </div>
+  </div>
+</div>`,
     contenu: `  <h1 class="titre-une">
     <span data-i18n="accueil.titre1">WHAT THE</span>
     <span class="titre-contour" data-i18n="accueil.titre2">LEGISLATURE</span>
@@ -149,7 +167,9 @@ for (const page of PAGES) {
     .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
     .replace(/\{\{VUE\}\}/g, page.vue)
     .replace(/\{\{DONNEES\}\}/g, page.donnees)
-    .replace(/\{\{CONTENU\}\}/g, page.contenu);
+    // Les bandes pleine largeur vivent hors de la colonne : seule l'accueil en a.
+    .replace(/\{\{BANDES\}\}/g, () => page.bandes ?? '')
+    .replace(/\{\{CONTENU\}\}/g, () => page.contenu);
 
   for (const autre of PAGES) {
     html = html.replace(`{{ACTIF_${autre.vue}}}`, autre.fichier === page.fichier ? 'actif' : '');

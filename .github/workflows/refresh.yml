@@ -39,6 +39,9 @@ jobs:
       - name: Lire la liste des projets de loi
         run: npm run scrape:bills
 
+      - name: Lire les jours de séance
+        run: npm run scrape:calendrier
+
       - name: Lire la fiche de chaque projet
         run: npm run scrape:bill-details
 

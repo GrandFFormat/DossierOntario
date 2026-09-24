@@ -69,6 +69,7 @@ function main() {
   const votes = lireJson('data/votes.json');
   const members = lireJson('data/members.json');
   const ministers = lireJson('data/ministers.json');
+  const calendrier = lireJson('data/calendrier.json');
 
   if (!bills) throw new Error('data/bills.json manquant — lancer les scrapers d\'abord.');
   mkdirSync(SORTIE, { recursive: true });
@@ -233,6 +234,15 @@ function main() {
       sieges: members?.totalSieges ?? null,
     },
     derniersMouvements: mouvements.slice(0, 15),
+    // De quoi dire honnêtement pourquoi rien ne bouge : la Chambre est en relâche.
+    calendrier: calendrier
+      ? {
+          derniereSeance: calendrier.derniereSeance,
+          prochaineSeance: calendrier.prochaineSeance,
+          enRelache: calendrier.enRelache,
+          joursDepuis: calendrier.joursDepuisDerniereSeance ?? null,
+        }
+      : null,
   });
 }
 

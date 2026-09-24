@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "scrape:bills": "node scrapers/bills.js",
+    "scrape:calendrier": "node scrapers/calendrier.js",
     "scrape:bill-details": "node scrapers/bill-details.js",
     "scrape:votes": "node scrapers/votes.js",
     "scrape:members": "node scrapers/members.js",

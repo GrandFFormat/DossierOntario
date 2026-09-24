@@ -35,6 +35,12 @@
       'chiffre.projets': 'public bills', 'chiffre.sanctionnes': 'became law',
       'chiffre.votes': 'recorded votes', 'chiffre.deputes': 'seats',
       'relache.titre': 'The House is not sitting',
+      'relache.texte': (fin, retour) =>
+        `The last sitting day was ${fin}. Nothing moves until the House returns on ${retour} — the numbers below are not stale, the Legislature is simply away.`,
+      'relache.texteSansRetour': (fin) =>
+        `The last sitting day was ${fin}, and no next sitting has been announced yet. The numbers below are not stale, the Legislature is simply away.`,
+      'mission.titre': 'Read the record, not the press release',
+      'mission.texte': "Every bill, every recorded vote and every member, taken from the Assembly's own record and linked back to it. Free, bilingual, and not official.",
       'projets.titre': 'Bills', 'projets.recherche': 'Search by number or title',
       'projets.tous': 'All', 'projets.gouvernement': 'Government', 'projets.depute': "Members'",
       'projets.prive': 'Private', 'projets.sanctionne': 'Became law', 'projets.encours': 'In progress',
@@ -42,6 +48,8 @@
       'projets.compte': (n) => `${n} bill${n > 1 ? 's' : ''}`,
       'etape.1': '1st reading', 'etape.2': '2nd reading', 'etape.3': 'Committee',
       'etape.4': '3rd reading', 'etape.5': 'Royal assent',
+      'groupe.5': 'Became law', 'groupe.4': 'At third reading', 'groupe.3': 'In committee',
+      'groupe.2': 'At second reading', 'groupe.1': 'Tabled, nothing since',
       'projet.parraine': 'Sponsored by', 'projet.note': 'Explanatory note (official)',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
@@ -53,6 +61,7 @@
       'votes.ancien': 'no longer an MPP',
       'votes.sansNoms': 'For this division the Assembly published the totals only, not the names. The minutes are the source.',
       'votes.pv': 'Minutes of the day →',
+      'votes.compte': (n) => `${n} division${n > 1 ? 's' : ''}`,
       'votes.ajournement-chambre': 'Motion to adjourn the House',
       'votes.ajournement-debat': 'Motion to adjourn the debate',
       'votes.proposePar': 'moved by',
@@ -62,6 +71,9 @@
       'cabinet.titreOfficiel': 'Official title',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
       'accueil.mouvements': 'Latest activity',
+      'porte.projets': 'What is being proposed', 'porte.votes': 'Who voted how',
+      'porte.deputes': 'Who represents you', 'porte.cabinet': 'Who runs what',
+      'porte.lexique': 'What the words mean',
       'accueil.titre1': 'WHAT THE', 'accueil.titre2': 'LEGISLATURE', 'accueil.titre3': 'IS DOING',
       'intro.projets': '<b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee, third reading and royal assent. Most bills introduced by members never leave first reading — that is not a failure of this site, it is what the record shows.',
       'intro.votes': 'A recorded division happens when five or more MPPs stand to ask for one. Only then are individual names recorded. MPPs who were absent are not listed — the Assembly does not publish absences, so neither do we.',
@@ -91,6 +103,12 @@
       'chiffre.projets': 'projets de loi publics', 'chiffre.sanctionnes': 'devenus lois',
       'chiffre.votes': 'votes nominatifs', 'chiffre.deputes': 'sièges',
       'relache.titre': 'La Chambre ne siège pas',
+      'relache.texte': (fin, retour) =>
+        `La dernière séance remonte au ${fin}. Rien ne bougera avant le retour de la Chambre, le ${retour} — les chiffres ci-dessous ne sont pas périmés, l'Assemblée est simplement absente.`,
+      'relache.texteSansRetour': (fin) =>
+        `La dernière séance remonte au ${fin}, et aucune prochaine séance n'est encore annoncée. Les chiffres ci-dessous ne sont pas périmés, l'Assemblée est simplement absente.`,
+      'mission.titre': 'Lire le compte rendu, pas le communiqué',
+      'mission.texte': "Chaque projet de loi, chaque vote nominatif et chaque élu·e, pris dans le compte rendu de l'Assemblée et reliés à lui. Gratuit, bilingue, et non officiel.",
       'projets.titre': 'Projets de loi', 'projets.recherche': 'Chercher par numéro ou par titre',
       'projets.tous': 'Tous', 'projets.gouvernement': 'Du gouvernement', 'projets.depute': 'De député·e·s',
       'projets.prive': "D'intérêt privé", 'projets.sanctionne': 'Devenu loi', 'projets.encours': 'En cours',
@@ -98,6 +116,8 @@
       'projets.compte': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
       'etape.1': '1re lecture', 'etape.2': '2e lecture', 'etape.3': 'Comité',
       'etape.4': '3e lecture', 'etape.5': 'Sanction royale',
+      'groupe.5': 'Devenus lois', 'groupe.4': 'En troisième lecture', 'groupe.3': 'En comité',
+      'groupe.2': 'En deuxième lecture', 'groupe.1': 'Déposés, rien depuis',
       'projet.parraine': 'Parrainé par', 'projet.note': 'Note explicative (officielle)',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
@@ -109,6 +129,7 @@
       'votes.ancien': 'ne siège plus',
       'votes.sansNoms': 'Pour ce vote, l’Assemblée n’a publié que les totaux, sans les noms. Le procès-verbal fait foi.',
       'votes.pv': 'Procès-verbal du jour →',
+      'votes.compte': (n) => `${n} vote${n > 1 ? 's' : ''}`,
       'votes.ajournement-chambre': 'Motion d’ajournement de l’Assemblée',
       'votes.ajournement-debat': 'Motion d’ajournement du débat',
       'votes.proposePar': 'proposée par',
@@ -118,6 +139,9 @@
       'cabinet.titreOfficiel': 'Titre officiel',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
       'accueil.mouvements': 'Derniers mouvements',
+      'porte.projets': 'Ce qui est proposé', 'porte.votes': 'Qui a voté quoi',
+      'porte.deputes': 'Qui vous représente', 'porte.cabinet': 'Qui dirige quoi',
+      'porte.lexique': 'Ce que les mots veulent dire',
       'accueil.titre1': 'CE QUE', 'accueil.titre2': 'L’ASSEMBLÉE', 'accueil.titre3': 'FAIT',
       'intro.projets': '<b>44e législature, 1re session.</b> Un projet de loi passe par la première lecture, la deuxième lecture, le comité, la troisième lecture et la sanction royale. La plupart des projets déposés par des député·e·s ne dépassent jamais la première lecture — ce n’est pas un trou dans ce site, c’est ce que dit le compte rendu.',
       'intro.votes': 'Il y a vote nominatif quand cinq député·e·s ou plus se lèvent pour le demander. Les noms ne sont consignés qu’à ce moment-là. Les absent·e·s n’apparaissent pas : l’Assemblée ne publie pas les absences, et nous n’en déduisons rien.',
@@ -254,9 +278,20 @@
       )
       .join('');
 
+    const portes = [
+      ['/bills', 'nav.projets', 'porte.projets'],
+      ['/votes', 'nav.votes', 'porte.votes'],
+      ['/mpps', 'nav.deputes', 'porte.deputes'],
+      ['/cabinet', 'nav.cabinet', 'porte.cabinet'],
+      ['/glossary', 'nav.lexique', 'porte.lexique'],
+    ]
+      .map(([lien, titre, sous]) => `<a class="porte" href="${lien}"><b>${mot(titre)}</b><span>${mot(sous)}</span></a>`)
+      .join('');
+
     cible.innerHTML = `
       <div class="chiffres">${chiffres}</div>
-      <h2 class="titre-vue">${mot('accueil.mouvements')}</h2>
+      <div class="portes">${portes}</div>
+      <h2 class="titre-groupe">${mot('accueil.mouvements')}</h2>
       <table class="tableau"><tbody>${mouvements}</tbody></table>`;
   };
 
@@ -296,22 +331,46 @@
       </article>`;
     };
 
+    const retenu = (p, f) =>
+      f === 'tous' || (f === 'sanctionne' ? p.etape === 5 : f === 'encours' ? p.etape < 5 : p.typeProjet === f);
+
     const dessiner = () => {
       const visibles = projets.filter((p) => {
-        const okFiltre =
-          filtre === 'tous' ||
-          (filtre === 'sanctionne' ? p.etape === 5 : filtre === 'encours' ? p.etape < 5 : p.typeProjet === filtre);
         const texte = `${p.numero} ${p.titreEn} ${p.titreFr ?? ''}`.toLowerCase();
-        return okFiltre && (!recherche || texte.includes(recherche));
+        return retenu(p, filtre) && (!recherche || texte.includes(recherche));
       });
       cible.querySelector('[data-role="compte"]').textContent = mot('projets.compte', visibles.length);
-      cible.querySelector('[data-role="liste"]').innerHTML = visibles.length
-        ? visibles.map(carte).join('')
+
+      // Rangés par étape franchie, de la sanction royale au simple dépôt : sans ces
+      // têtes de groupe, 191 cartes se suivent sans que l'œil ait où se poser.
+      const groupes = [5, 4, 3, 2, 1]
+        .map((etape) => ({
+          etape,
+          projets: visibles
+            .filter((p) => p.etape === etape)
+            .sort((a, b) => (b.derniereActivite ?? '').localeCompare(a.derniereActivite ?? '')),
+        }))
+        .filter((g) => g.projets.length);
+
+      cible.querySelector('[data-role="liste"]').innerHTML = groupes.length
+        ? groupes
+            .map(
+              (g) => `<h2 class="titre-groupe">${mot(`groupe.${g.etape}`)}
+                  <span class="compte">${mot('projets.compte', g.projets.length)}</span></h2>
+                <div class="grille">${g.projets.map(carte).join('')}</div>`
+            )
+            .join('')
         : `<p class="courant">${mot('projets.aucun')}</p>`;
     };
 
+    // Chaque filtre annonce combien de projets il montrera : on ne clique pas à l'aveugle.
     const filtres = ['tous', 'gouvernement', 'depute', 'prive', 'sanctionne', 'encours']
-      .map((f) => `<button class="filtre ${f === 'tous' ? 'actif' : ''}" data-filtre="${f}">${mot(`projets.${f}`)}</button>`)
+      .map((f) => {
+        const n = projets.filter((p) => retenu(p, f)).length;
+        return `<button class="filtre ${f === 'tous' ? 'actif' : ''}" data-filtre="${f}">${mot(
+          `projets.${f}`
+        )} <span class="compte">${n}</span></button>`;
+      })
       .join('');
 
     cible.innerHTML = `
@@ -320,7 +379,7 @@
         ${filtres}
       </div>
       <p class="legende" data-role="compte"></p>
-      <div class="grille" data-role="liste"></div>`;
+      <div data-role="liste"></div>`;
 
     cible.querySelectorAll('[data-filtre]').forEach((b) =>
       b.addEventListener('click', () => {
@@ -376,9 +435,16 @@
       </div>`;
     };
 
-    cible.innerHTML = votes
-      .map(
-        (v) => `<details class="carte">
+    // Un vote n'arrive jamais seul : la Chambre en tient plusieurs le même jour. On les
+    // range donc par jour de séance, du plus récent au plus ancien.
+    const parJour = new Map();
+    for (const v of votes) {
+      const jour = v.date ?? '—';
+      if (!parJour.has(jour)) parJour.set(jour, []);
+      parJour.get(jour).push(v);
+    }
+
+    const carteVote = (v) => `<details class="carte">
           <summary>
             <span class="legende">${date(v.date) ?? ''}</span>
             <h3 class="carte-titre">${echapper(sujet(v))}</h3>
@@ -391,7 +457,13 @@
           <a class="lien-source" href="${echapper(selonLangue(v.url, v.urlFr))}" target="_blank" rel="noopener">${
             v.sansNoms ? mot('votes.pv') : 'ola.org →'
           }</a>
-        </details>`
+        </details>`;
+
+    cible.innerHTML = [...parJour.entries()]
+      .map(
+        ([jour, duJour]) => `<h2 class="titre-groupe">${date(jour) ?? jour}
+            <span class="compte">${mot('votes.compte', duJour.length)}</span></h2>
+          <div class="grille">${duJour.map(carteVote).join('')}</div>`
       )
       .join('');
   };
@@ -406,10 +478,17 @@
       <p class="courant">${echapper(selonLangue(e.texte.en, e.texte.fr))}</p>
     </article>`;
 
+    const ancre = (i) => `groupe-${i + 1}`;
+
     cible.innerHTML =
+      // Cinq groupes et vingt-quatre termes : des raccourcis évitent de tout faire défiler.
+      `<nav class="raccourcis" aria-label="${mot('lexique.titre')}">${lex.groupes
+        .map((g, i) => `<a href="#${ancre(i)}">${echapper(selonLangue(g.titre.en, g.titre.fr))}</a>`)
+        .join('')}</nav>` +
       lex.groupes
         .map(
-          (g) => `<h2 class="titre-vue">${echapper(selonLangue(g.titre.en, g.titre.fr))}</h2>
+          (g, i) => `<h2 class="titre-groupe" id="${ancre(i)}">${echapper(selonLangue(g.titre.en, g.titre.fr))}
+              <span class="compte">${g.entrees.length}</span></h2>
             <div class="grille">${g.entrees.map(entree).join('')}</div>`
         )
         .join('') +
@@ -473,10 +552,27 @@
       <div class="grille">${(c.adjointsParlementaires ?? []).map(carte).join('')}</div>`;
   };
 
+  /** La bande jaune ne s'affiche que s'il y a vraiment relâche, et dit jusqu'à quand. */
+  function poserRelache() {
+    const bande = document.querySelector('[data-role="relache"]');
+    const cal = DONNEES.apercu?.calendrier;
+    if (!bande) return;
+    if (!cal?.enRelache || !cal.derniereSeance) {
+      bande.hidden = true;
+      return;
+    }
+    bande.hidden = false;
+    bande.querySelector('[data-role="relache-titre"]').textContent = mot('relache.titre');
+    bande.querySelector('[data-role="relache-texte"]').textContent = cal.prochaineSeance
+      ? mot('relache.texte', date(cal.derniereSeance), date(cal.prochaineSeance))
+      : mot('relache.texteSansRetour', date(cal.derniereSeance));
+  }
+
   function rendre() {
     appliquerLangue();
     const vue = document.body.dataset.vue;
     if (VUES[vue]) VUES[vue]();
+    poserRelache();
     const maj = DONNEES.apercu?.maj ?? DONNEES.bills?.maj ?? null;
     const pied = document.querySelector('[data-role="maj"]');
     if (pied && maj) pied.textContent = `${mot('pied.maj')} ${date(maj.slice(0, 10))}`;
