@@ -74,6 +74,8 @@
       'projet.parraine': 'Sponsored by', 'projet.note': 'Explanatory note (official)',
       'projet.ouvrir': 'What this bill does',
       'projet.resume': 'In plain words',
+      'projet.resumeAnglais': 'Summary in English: the Assembly did not publish this bill in French.',
+      'projet.resumeTronque': 'This bill is very long: the summary covers only its first part. The explanatory note below covers all of it.',
       'projet.resumeIA': 'Written by AI from the official text published on ola.org. Not an official document, and not the law as amended since.',
       'projet.sansNote': 'The Assembly published no explanatory note for this bill. The official text says what it does.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
@@ -171,6 +173,8 @@
       'projet.parraine': 'Parrainé par', 'projet.note': 'Note explicative (officielle)',
       'projet.ouvrir': 'Ce que fait ce projet',
       'projet.resume': 'En clair',
+      'projet.resumeAnglais': 'Résumé en anglais : l’Assemblée n’a pas publié ce projet en français.',
+      'projet.resumeTronque': 'Ce projet est très long : le résumé n’en couvre que la première partie. La note explicative ci-dessous le couvre en entier.',
       'projet.resumeIA': 'Rédigé par une IA à partir du texte officiel publié sur ola.org. Ce n’est pas un document officiel, ni la loi telle qu’amendée depuis.',
       'projet.sansNote': 'L’Assemblée n’a publié aucune note explicative pour ce projet. Le texte officiel dit ce qu’il fait.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
@@ -255,6 +259,18 @@
     "Parti vert de l'Ontario": 'Vert',
   };
   const sigleParti = (nom) => SIGLES[nom] ?? nom;
+
+  // Un fichier de résumés par langue, demandé une seule fois. Un échec ne reste pas collé :
+  // on l'oublie, pour que le pli suivant réessaie.
+  const _resumes = {};
+  const chargerResumes = (lg) =>
+    (_resumes[lg] ??= fetch(`/data/site/resumes-${lg}.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null)
+      .then((d) => {
+        if (!d) delete _resumes[lg];
+        return d;
+      }));
 
   // Noir ou blanc sur la couleur du parti, selon sa luminance : l'orange du NPD et le gris
   // d'une personne indépendante sont trop clairs pour du texte blanc.
@@ -408,9 +424,6 @@
         .map((n) => `<div class="etape ${p.etape >= n ? 'franchie' : ''}">${mot(`etape.${n}`)}</div>`)
         .join('');
       const note = selonLangue(p.noteEn, p.noteFr);
-      // Le résumé en clair arrive AVANT la note officielle : c'est ce qu'on vient chercher.
-      // La note reste dessous, mot pour mot — le résumé ne la remplace pas, il y mène.
-      const resume = selonLangue(p.resumeEn, p.resumeFr);
       const lien = selonLangue(p.url, p.urlFr);
       const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
       const pastilleParti = parti
@@ -436,13 +449,7 @@
         <details class="projet-detail">
           <summary>${mot('projet.ouvrir')}</summary>
           <div class="projet-detail-corps">
-            ${
-              resume
-                ? `<h4 class="sous-titre">${mot('projet.resume')}</h4>
-                   <ul class="resume">${resume.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
-                   <p class="legende avis-ia">${mot('projet.resumeIA')}</p>`
-                : ''
-            }
+            <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
             ${
               note
                 ? `<h4 class="sous-titre">${mot('projet.note')}</h4><p class="courant">${echapper(note)}</p>`
@@ -453,6 +460,41 @@
         </details>
       </article>`;
     };
+
+    // Les résumés en clair vivent dans data/site/resumes-<langue>.json et n'arrivent qu'au
+    // premier pli ouvert : dans bills.json, ils faisaient presque doubler le poids de la page
+    // (voir build-site-data.js). Ils passent AVANT la note officielle — c'est ce qu'on vient
+    // chercher —, et la note reste dessous, mot pour mot : le résumé y mène, il ne la remplace pas.
+    const remplirResume = async (details) => {
+      const zone = details.querySelector('.zone-resume');
+      if (!zone || zone.dataset.rempli) return;
+      zone.dataset.rempli = '1';   // posé tout de suite : deux ouvertures rapides ne chargent qu'une fois
+      const numero = zone.dataset.numero;
+      const donnees = await chargerResumes(langue);
+      if (!donnees) { delete zone.dataset.rempli; return; }   // réseau : on réessaiera au prochain pli
+      let r = donnees[numero];
+      let enAnglais = false;
+      // 52 projets n'ont pas de texte français sur ola.org, donc pas de résumé français. On
+      // montre alors l'anglais, en le disant, plutôt que rien ou une traduction maison.
+      if (!r && langue === 'fr') {
+        r = (await chargerResumes('en'))?.[numero];
+        enAnglais = !!r;
+      }
+      if (!r) return;
+      zone.innerHTML = `<h4 class="sous-titre">${mot('projet.resume')}</h4>
+        <ul class="resume"${enAnglais ? ' lang="en"' : ''}>${r.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
+        <p class="legende avis-ia">${mot('projet.resumeIA')}${r.t ? ` ${mot('projet.resumeTronque')}` : ''}${
+          enAnglais ? ` ${mot('projet.resumeAnglais')}` : ''
+        }</p>`;
+    };
+    // « toggle » ne remonte pas dans le DOM : on l'écoute en phase de capture, une seule fois
+    // pour toute la section, même si la vue est redessinée (changement de langue, filtres).
+    if (!cible.dataset.ecouteResumes) {
+      cible.dataset.ecouteResumes = '1';
+      cible.addEventListener('toggle', (e) => {
+        if (e.target.matches?.('.projet-detail') && e.target.open) remplirResume(e.target);
+      }, true);
+    }
 
     const retenu = (p, f) =>
       f === 'tous' || (f === 'sanctionne' ? p.etape === 5 : f === 'encours' ? p.etape < 5 : p.typeProjet === f);

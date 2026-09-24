@@ -143,17 +143,29 @@ function main() {
       derniereActivite: f?.derniereActivite ?? null,
       noteEn: extrait(f?.noteEn),
       noteFr: extrait(f?.noteFr),
-      // Les puces en langage clair (scrapers/resumes.js). Un résumé que le modèle a refusé
-      // d'écrire faute de matière (« sansContenu ») n'arrive pas ici : mieux vaut la note
-      // officielle seule qu'une phrase creuse présentée comme un résumé.
-      resumeEn: puces(resumes, p.numero, 'en'),
-      resumeFr: puces(resumes, p.numero, 'fr'),
       votes: f?.votes?.length ?? 0,
       url: p.url,
       urlFr: p.urlFr,
     };
   });
   ecrire('bills', { maj: details?.lus ?? bills.lus, nombre: projets.length, projets });
+
+  // Les résumés en langage clair (scrapers/resumes.js), À PART des projets : dans bills.json
+  // ils faisaient passer la page de 86 à 157 ko compressés, pour du texte qui ne s'affiche
+  // qu'une fois un pli ouvert. Un fichier par langue, que commun/on.js va chercher au premier
+  // dépliement — le même arrangement que les résumés de DossierQuébec.
+  //   p : les puces. Un résumé « sansContenu » n'est pas écrit : mieux vaut la note officielle
+  //       seule qu'une phrase creuse présentée comme un résumé.
+  //   t : le texte dépassait 60 000 signes et le résumé n'en couvre que le début — la carte
+  //       doit le dire, sinon il passe pour le résumé du projet entier.
+  for (const langue of ['en', 'fr']) {
+    const parNumero = {};
+    for (const p of projets) {
+      const liste = puces(resumes, p.numero, langue);
+      if (liste) parNumero[p.numero] = { p: liste, ...(resumes.resumes[p.numero][langue].tronque ? { t: true } : {}) };
+    }
+    ecrire(`resumes-${langue}`, parNumero);
+  }
 
   // ------------------------------------------------------------------ votes
   let votesSite = [];

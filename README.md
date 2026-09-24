@@ -93,10 +93,17 @@ npm run resumes -- --batch     # tout ce qui manque, API Batches, moitié prix
 ```
 
 Rien n'est jamais repayé : un résumé n'est refait que si la **dernière activité** du projet a
-changé. Le premier lot complet a coûté **2,72 $ US**, et un jour ordinaire ne coûte rien du
-tout. La clé (`ANTHROPIC_API_KEY`) vient de l'environnement ou de `api.env`, jamais du dépôt ;
+changé. Le premier lot complet a coûté **4,05 $ US** (4,22 $ avec les deux échantillons) —
+l'estimation annonçait 2,72 $ : compter quatre signes par jeton sous-estime la prose
+juridique d'environ moitié, prévoir large. Un jour ordinaire ne coûte rien du tout.
+La clé (`ANTHROPIC_API_KEY`) vient de l'environnement ou de `api.env`, jamais du dépôt ;
 en CI, l'étape est **sautée** si le secret n'est pas configuré et le reste tourne — le site
 retombe alors sur la note officielle de l'Assemblée.
+
+Les puces ne sont pas dans `bills.json` : elles y faisaient passer la page de 86 à 157 ko
+compressés. Elles vivent dans `data/site/resumes-en.json` et `resumes-fr.json` (37 et 34 ko),
+que la page ne va chercher qu'au premier pli ouvert. Les 52 projets sans texte français
+affichent en français le résumé anglais, **en le disant**.
 
 ⚠️ Deux pièges déjà payés. La **langue de sortie s'écrit** : les premiers résumés anglais sont
 revenus en français parce que le schéma de l'outil — le dernier mot que le modèle lit — était
