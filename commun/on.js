@@ -33,6 +33,9 @@
       'comites.activite': 'Latest work on bills',
       'comites.aucune': 'No bill has been referred to this committee this session.',
       'comites.page': 'The committee on ola.org →',
+      'comites.etudies': 'Bills it studied', 'comites.composition': 'Who sits on it',
+      'comites.legislatifs': 'Committees that studied bills',
+      'comites.surveillance': 'Oversight committees',
       'lexique.titre': 'Plain-language lexicon',
       'lexique.intro': 'Parliamentary words, explained in ordinary ones. These explanations are ours, not the Assembly’s: we write them to be understood, not to be precise in the legal sense. For the formal definitions, the Assembly publishes its own glossary.',
       'lexique.officiel': 'The Assembly’s glossary of procedural terms →',
@@ -121,6 +124,9 @@
       'comites.activite': 'Derniers travaux sur des projets de loi',
       'comites.aucune': 'Aucun projet de loi ne lui a été renvoyé cette session.',
       'comites.page': 'Le comité sur ola.org →',
+      'comites.etudies': 'Projets de loi étudiés', 'comites.composition': 'Qui y siège',
+      'comites.legislatifs': 'Comités qui ont étudié des projets de loi',
+      'comites.surveillance': 'Comités de surveillance',
       'lexique.titre': 'Le lexique en langage clair',
       'lexique.intro': 'Les mots du Parlement, expliqués avec des mots de tous les jours. Ces explications sont les nôtres, pas celles de l’Assemblée : elles cherchent à être comprises, pas à être exactes au sens juridique. Pour les définitions formelles, l’Assemblée publie son propre glossaire.',
       'lexique.officiel': 'Le glossaire des termes de procédure de l’Assemblée →',
@@ -574,51 +580,71 @@
     const donnees = DONNEES.comites;
     if (!cible || !donnees) return;
 
+    const membre = (m) => `<li>
+      <span class="puce-parti" style="background:${echapper(m.couleurParti ?? '#8B8578')}" aria-hidden="true"></span>
+      ${m.url ? `<a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a>` : echapper(m.nom)}
+      ${m.role && !/^members?$/i.test(m.role) ? `<span class="legende">${echapper(m.role)}</span>` : ''}
+    </li>`;
+
+    const projet = (p) => `<li>
+      <span class="numero">${echapper(p.numero)}</span>
+      ${echapper(selonLangue(p.titreEn, p.titreFr))}
+      <span class="legende">${mot('comites.jours', p.jours)} · ${date(p.derniereDate) ?? ''} ·
+        ${echapper(selonLangue(p.dernierEvenementEn, p.dernierEvenementFr) ?? '')}</span>
+    </li>`;
+
     const carte = (c) => {
+      const mandat = selonLangue(c.mandatEn, c.mandatFr);
       const chiffres = [
         c.projets.length ? mot('comites.projets', c.projets.length) : null,
-        c.jours ? mot('comites.jours', c.jours) : null,
         c.transcriptions ? mot('comites.transcriptions', c.transcriptions) : null,
       ].filter(Boolean);
 
-      const activite = c.activite.length
-        ? `<p class="legende">${mot('comites.activite')}</p>
-           <ul class="liste-sobre">${c.activite
-             .map(
-               (a) => `<li><span class="numero">${echapper(a.numero)}</span>
-                 ${echapper(selonLangue(a.titreEn, a.titreFr))}
-                 <span class="legende">${date(a.date) ?? ''} · ${echapper(
-                   selonLangue(a.evenementEn, a.evenementFr) ?? ''
-                 )}</span></li>`
-             )
-             .join('')}</ul>`
-        : `<p class="courant">${mot('comites.aucune')}</p>`;
-
-      const transcriptions = c.dernieres.length
-        ? `<p class="legende">${mot('comites.recentes')}</p>
-           <ul class="liste-sobre">${c.dernieres
-             .map(
-               (t) => `<li><a class="lien-source" href="${echapper(t.url)}" target="_blank"
-                 rel="noopener">${date(t.date) ?? echapper(t.libelle ?? '')}</a></li>`
-             )
-             .join('')}</ul>`
-        : '';
-
-      return `<article class="carte">
-        <h3 class="carte-titre">${echapper(selonLangue(c.nomEn, c.nomFr))}</h3>
-        <p class="legende">${chiffres.join(' · ')}</p>
-        ${activite}
-        ${transcriptions}
-        <a class="lien-source" href="${echapper(c.url)}" target="_blank" rel="noopener">${mot('comites.page')}</a>
+      return `<article class="comite">
+        <div class="comite-entete">
+          <h2 class="comite-nom">${echapper(selonLangue(c.nomEn, c.nomFr))}</h2>
+          <p class="legende">${chiffres.join(' · ')}</p>
+        </div>
+        ${mandat ? `<p class="comite-mandat">${echapper(mandat)}</p>` : ''}
+        <div class="comite-colonnes">
+          <section>
+            <h3 class="comite-soustitre">${mot('comites.etudies')}</h3>
+            ${c.projets.length
+              ? `<ul class="liste-sobre">${c.projets.map(projet).join('')}</ul>`
+              : `<p class="courant">${mot('comites.aucune')}</p>`}
+          </section>
+          <section>
+            <h3 class="comite-soustitre">${mot('comites.composition')}</h3>
+            <ul class="liste-membres">${c.membres.map(membre).join('')}</ul>
+          </section>
+          <section>
+            <h3 class="comite-soustitre">${mot('comites.recentes')}</h3>
+            <ul class="liste-sobre">${c.dernieres
+              .map(
+                (t) => `<li><a class="lien-source" href="${echapper(t.url)}" target="_blank"
+                  rel="noopener">${date(t.date) ?? echapper(t.libelle ?? '')}</a></li>`
+              )
+              .join('')}</ul>
+            <a class="lien-source" href="${echapper(selonLangue(c.url, c.urlFr))}"
+               target="_blank" rel="noopener">${mot('comites.page')}</a>
+          </section>
+        </div>
       </article>`;
     };
 
-    const actifs = donnees.comites.filter((c) => c.projets.length);
-    const autres = donnees.comites.filter((c) => !c.projets.length);
+    // Ceux qui ont reçu des projets de loi d'abord : c'est là que se fait le travail
+    // législatif. Les comités de surveillance suivent, sous leur propre titre.
+    const avecProjets = donnees.comites.filter((c) => c.projets.length);
+    const surveillance = donnees.comites.filter((c) => !c.projets.length);
 
     cible.innerHTML =
-      `<div class="grille">${actifs.map(carte).join('')}</div>` +
-      (autres.length ? `<div class="grille" style="margin-top:18px">${autres.map(carte).join('')}</div>` : '');
+      `<h2 class="titre-groupe">${mot('comites.legislatifs')}
+        <span class="compte">${avecProjets.length}</span></h2>` +
+      avecProjets.map(carte).join('') +
+      (surveillance.length
+        ? `<h2 class="titre-groupe">${mot('comites.surveillance')}
+            <span class="compte">${surveillance.length}</span></h2>` + surveillance.map(carte).join('')
+        : '');
   };
 
   VUES.lexique = () => {

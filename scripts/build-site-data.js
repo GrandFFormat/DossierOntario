@@ -63,6 +63,29 @@ function extrait(texte) {
   return propre.length > MAX_NOTE ? `${propre.slice(0, MAX_NOTE)}…` : propre || null;
 }
 
+/**
+ * Le mandat, ramené à ce qui s'y lit.
+ *
+ * Le texte officiel s'ouvre sur le nom du comité suivi de « Terms of Reference », puis
+ * enchaîne les renvois au Règlement sur plusieurs centaines de mots. On retire cette
+ * en-tête et on garde les deux premières phrases : de quoi comprendre à quoi sert le
+ * comité. Le texte entier reste dans data/comites.json, et la page renvoie à ola.org.
+ */
+function mandatCourt(texte, nom) {
+  if (!texte) return null;
+  let t = texte.trim();
+  if (nom && t.startsWith(nom)) t = t.slice(nom.length).trim();
+  t = t.replace(/^(Terms of Reference|Mandat|Cadre de référence)\s*/i, '').trim();
+
+  const phrases = t.split(/(?<=\.)\s+/);
+  let court = '';
+  for (const phrase of phrases) {
+    if (court && (court + phrase).length > 360) break;
+    court += (court ? ' ' : '') + phrase;
+  }
+  return court.length > 40 ? court : t.slice(0, 360);
+}
+
 function main() {
   const bills = lireJson('data/bills.json');
   const details = lireJson('data/bill-details.json');
@@ -210,39 +233,70 @@ function main() {
   // comité est une journée où ce comité s'est penché sur ce projet. On y joint les
   // transcriptions, qui sont la seule trace publique de ce qui s'y est dit.
   if (comites) {
+    const parNom = new Map((members?.deputes ?? []).map((d) => [d.identifiant, d]));
+
+    // L'activité vient des tableaux d'étapes : chaque ligne qui nomme un comité est une
+    // journée où ce comité s'est penché sur ce projet. On regroupe PAR PROJET plutôt que
+    // de lister chaque ligne : « Projet 105, 4 jours » se lit mieux que quatre lignes
+    // identiques à un mot près.
     const activite = new Map();
     for (const projet of projets) {
       for (const etape of fiches[projet.numero]?.etapes ?? []) {
         if (!etape.comite) continue;
-        if (!activite.has(etape.comite)) activite.set(etape.comite, []);
-        activite.get(etape.comite).push({
-          date: etape.date,
-          numero: projet.numero,
-          titreEn: projet.titreEn,
-          titreFr: projet.titreFr,
-          evenementEn: etape.evenement,
-          evenementFr: etape.evenementFr,
-        });
+        if (!activite.has(etape.comite)) activite.set(etape.comite, new Map());
+        const parProjet = activite.get(etape.comite);
+        if (!parProjet.has(projet.numero)) {
+          parProjet.set(projet.numero, {
+            numero: projet.numero,
+            titreEn: projet.titreEn,
+            titreFr: projet.titreFr,
+            jours: new Set(),
+            derniereDate: null,
+            dernierEvenementEn: null,
+            dernierEvenementFr: null,
+          });
+        }
+        const p = parProjet.get(projet.numero);
+        if (etape.date) p.jours.add(etape.date);
+        if (etape.date && (!p.derniereDate || etape.date > p.derniereDate)) {
+          p.derniereDate = etape.date;
+          p.dernierEvenementEn = etape.evenement;
+          p.dernierEvenementFr = etape.evenementFr;
+        }
       }
     }
 
     ecrire('comites', {
       maj: comites.lus,
       comites: comites.comites.map((c) => {
-        const lignes = (activite.get(c.nomEn) ?? []).sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
+        const projetsDuComite = [...(activite.get(c.nomEn) ?? new Map()).values()]
+          .map((p) => ({ ...p, jours: p.jours.size }))
+          .sort((a, b) => (b.derniereDate ?? '').localeCompare(a.derniereDate ?? ''));
+
         return {
           cle: c.cle,
           nomEn: c.nomEn,
           nomFr: c.nomFr,
           url: c.url,
+          urlFr: c.urlFr,
+          mandatEn: mandatCourt(c.mandatEn, c.nomEn),
+          mandatFr: mandatCourt(c.mandatFr, c.nomFr),
+          // La couleur du parti vient de la fiche du ou de la député·e, jamais d'ailleurs.
+          membres: c.membres.map((m) => {
+            const d = parNom.get(m.identifiant);
+            return {
+              nom: m.nom,
+              role: m.role,
+              parti: d?.parti ?? null,
+              partiFr: d?.partiFr ?? null,
+              couleurParti: d?.couleurParti ?? null,
+              url: d?.url ?? null,
+            };
+          }),
+          projets: projetsDuComite,
+          jours: new Set(projetsDuComite.flatMap((p) => p.derniereDate ?? [])).size,
           transcriptions: c.transcriptions.length,
-          derniereSeance: c.transcriptions[0]?.date ?? null,
-          // Les cinq dernières transcriptions suffisent à la page ; la liste complète
-          // reste dans data/comites.json.
-          dernieres: c.transcriptions.slice(0, 5),
-          projets: [...new Set(lignes.map((l) => l.numero))],
-          activite: lignes.slice(0, 8),
-          jours: new Set(lignes.map((l) => l.date)).size,
+          dernieres: c.transcriptions.slice(0, 4),
         };
       }),
     });

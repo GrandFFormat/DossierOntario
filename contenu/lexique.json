@@ -6,52 +6,76 @@
   },
   "groupes": [
     {
-      "titre": { "en": "The life of a bill", "fr": "La vie d'un projet de loi" },
+      "titre": {
+        "en": "The life of a bill",
+        "fr": "La vie d'un projet de loi"
+      },
       "entrees": [
         {
-          "terme": { "en": "Bill", "fr": "Projet de loi" },
+          "terme": {
+            "en": "Bill",
+            "fr": "Projet de loi"
+          },
           "texte": {
             "en": "A proposed law. It only becomes law once it has passed three readings and received royal assent. Until then it is a proposal, however much it is talked about.",
             "fr": "Une loi proposée. Elle ne devient la loi qu'après trois lectures et la sanction royale. D'ici là, c'est un projet, même si on en parle beaucoup."
           }
         },
         {
-          "terme": { "en": "First reading", "fr": "Première lecture" },
+          "terme": {
+            "en": "First reading",
+            "fr": "Première lecture"
+          },
           "texte": {
             "en": "The bill is tabled and printed. There is no debate on what it contains. Most bills introduced by members never get past this point.",
             "fr": "Le projet est déposé et imprimé. On n'y débat pas de son contenu. La plupart des projets déposés par des député·e·s ne dépassent jamais cette étape."
           }
         },
         {
-          "terme": { "en": "Second reading", "fr": "Deuxième lecture" },
+          "terme": {
+            "en": "Second reading",
+            "fr": "Deuxième lecture"
+          },
           "texte": {
             "en": "The House debates the principle of the bill — its idea, not its wording — and votes on it. A bill defeated here is finished.",
             "fr": "L'Assemblée débat du principe du projet — son idée, pas son libellé — puis vote. Un projet rejeté ici est terminé."
           }
         },
         {
-          "terme": { "en": "Committee", "fr": "Comité" },
+          "terme": {
+            "en": "Committee",
+            "fr": "Comité"
+          },
           "texte": {
             "en": "A small group of MPPs goes through the bill line by line, hears witnesses and may amend it. This is where the wording changes.",
             "fr": "Un petit groupe de député·e·s étudie le projet article par article, entend des témoins et peut l'amender. C'est là que le texte change."
           }
         },
         {
-          "terme": { "en": "Third reading", "fr": "Troisième lecture" },
+          "terme": {
+            "en": "Third reading",
+            "fr": "Troisième lecture"
+          },
           "texte": {
             "en": "The final debate and the final vote, on the bill as it now stands after committee.",
             "fr": "Le dernier débat et le dernier vote, sur le projet tel qu'il ressort du comité."
           }
         },
         {
-          "terme": { "en": "Royal assent", "fr": "Sanction royale" },
+          "terme": {
+            "en": "Royal assent",
+            "fr": "Sanction royale"
+          },
           "texte": {
             "en": "The Lieutenant Governor's approval. The bill becomes law — though some parts may only come into force later, on a date the government chooses.",
             "fr": "L'approbation de la lieutenante-gouverneure. Le projet devient loi — mais certaines parties peuvent n'entrer en vigueur que plus tard, à une date choisie par le gouvernement."
           }
         },
         {
-          "terme": { "en": "Explanatory note", "fr": "Note explicative" },
+          "terme": {
+            "en": "Explanatory note",
+            "fr": "Note explicative"
+          },
           "texte": {
             "en": "A summary written by the Assembly's legal counsel and printed at the head of the bill. It is not part of the law, but it is the clearest official description of what the bill does. It is what this site shows on each bill.",
             "fr": "Un résumé rédigé par les légistes de l'Assemblée et imprimé en tête du projet. Il ne fait pas partie de la loi, mais c'est la description officielle la plus claire de ce que le projet fait. C'est ce que ce site affiche sur chaque projet."
@@ -60,38 +84,134 @@
       ]
     },
     {
-      "titre": { "en": "Who proposes what", "fr": "Qui propose quoi" },
+      "titre": {
+        "en": "Committee work",
+        "fr": "Le travail en comité"
+      },
       "entrees": [
         {
-          "terme": { "en": "Government bill", "fr": "Projet de loi du gouvernement" },
+          "terme": {
+            "en": "Standing committee",
+            "fr": "Comité permanent"
+          },
+          "texte": {
+            "en": "A small group of MPPs — nine to eleven, in proportion to the parties — that examines bills in detail, hears the public, and studies matters the House sends it. Ontario has eight. Five of them take bills; the other three watch over the government: public accounts, government agencies, and the rules of the House.",
+            "fr": "Un petit groupe de député·e·s — neuf à onze, en proportion des partis — qui étudie les projets de loi en détail, entend le public et se penche sur ce que l'Assemblée lui renvoie. L'Ontario en compte huit. Cinq reçoivent des projets de loi ; les trois autres surveillent le gouvernement : comptes publics, organismes gouvernementaux et règles de la Chambre."
+          }
+        },
+        {
+          "terme": {
+            "en": "Why committees matter",
+            "fr": "Pourquoi les comités comptent"
+          },
+          "texte": {
+            "en": "This is where a bill is actually changed. The House debates whether a bill is a good idea; the committee goes through it line by line and votes on each proposed change. Committees also hold about three times as many recorded votes as the House itself.",
+            "fr": "C'est là qu'un projet de loi est réellement modifié. L'Assemblée débat de l'idée ; le comité, lui, passe le texte article par article et vote sur chaque changement proposé. Les comités tiennent aussi environ trois fois plus de votes nominatifs que la Chambre elle-même."
+          }
+        },
+        {
+          "terme": {
+            "en": "Clause-by-clause",
+            "fr": "Étude article par article"
+          },
+          "texte": {
+            "en": "The meeting where the committee goes through a bill section by section and votes on amendments. It is the step where the text changes — or does not.",
+            "fr": "La séance où le comité parcourt le projet article par article et vote sur les amendements. C'est l'étape où le texte change — ou ne change pas."
+          }
+        },
+        {
+          "terme": {
+            "en": "Public hearings",
+            "fr": "Consultations publiques"
+          },
+          "texte": {
+            "en": "Meetings where the committee hears people and organisations affected by a bill. Ontario committees sometimes travel: one heard witnesses in a Listowel golf club in August 2026.",
+            "fr": "Des séances où le comité entend les personnes et les organismes touchés par un projet de loi. Les comités ontariens se déplacent parfois : l'un d'eux a entendu des témoins dans un club de golf de Listowel, en août 2026."
+          }
+        },
+        {
+          "terme": {
+            "en": "Amendment",
+            "fr": "Amendement"
+          },
+          "texte": {
+            "en": "A proposed change to the wording of a bill. Most are moved in committee; most are defeated there too, since the government usually holds the majority of seats on each committee.",
+            "fr": "Une modification proposée au texte d'un projet de loi. La plupart sont présentés en comité — et la plupart y sont rejetés, le gouvernement détenant en général la majorité des sièges de chaque comité."
+          }
+        },
+        {
+          "terme": {
+            "en": "Reported back",
+            "fr": "Rapport à la Chambre"
+          },
+          "texte": {
+            "en": "When the committee has finished, it sends the bill back to the House — « as amended » if it changed the text, « without amendment » if it did not. Only then can third reading happen.",
+            "fr": "Quand le comité a terminé, il renvoie le projet à l'Assemblée — « avec des amendements » s'il a changé le texte, « sans amendement » sinon. La troisième lecture ne peut venir qu'après."
+          }
+        },
+        {
+          "terme": {
+            "en": "Committees sit during adjournment",
+            "fr": "Les comités siègent hors séance"
+          },
+          "texte": {
+            "en": "A committee can meet when the House is not sitting. That is why a bill can move forward in August with the Legislature away — and why this site can show activity while the banner says the House is adjourned.",
+            "fr": "Un comité peut se réunir quand la Chambre ne siège pas. C'est pourquoi un projet de loi peut avancer en août, l'Assemblée absente — et pourquoi ce site peut montrer des travaux alors que la bande dit que la Chambre est ajournée."
+          }
+        }
+      ]
+    },
+    {
+      "titre": {
+        "en": "Who proposes what",
+        "fr": "Qui propose quoi"
+      },
+      "entrees": [
+        {
+          "terme": {
+            "en": "Government bill",
+            "fr": "Projet de loi du gouvernement"
+          },
           "texte": {
             "en": "A bill sponsored by a minister. These are the ones that usually become law, because the government controls the House's time.",
             "fr": "Un projet parrainé par un·e ministre. Ce sont ceux qui deviennent généralement des lois, parce que le gouvernement dispose du temps de l'Assemblée."
           }
         },
         {
-          "terme": { "en": "Private member's public bill", "fr": "Projet de loi émanant d'un·e député·e" },
+          "terme": {
+            "en": "Private member's public bill",
+            "fr": "Projet de loi émanant d'un·e député·e"
+          },
           "texte": {
             "en": "A bill sponsored by an MPP who is not a minister — including government backbenchers. It gets a short debate slot, and rarely goes further.",
             "fr": "Un projet parrainé par un·e député·e qui n'est pas ministre, y compris du côté du gouvernement. Il obtient une courte plage de débat, et va rarement plus loin."
           }
         },
         {
-          "terme": { "en": "Private bill", "fr": "Projet de loi d'intérêt privé" },
+          "terme": {
+            "en": "Private bill",
+            "fr": "Projet de loi d'intérêt privé"
+          },
           "texte": {
             "en": "Numbered « PR ». It concerns one person, company or municipality rather than the public — most often to revive a dissolved corporation. Counted separately on this site, because lumping them in would inflate the numbers.",
             "fr": "Numéroté « PR ». Il vise une personne, une société ou une municipalité plutôt que le public — le plus souvent pour faire revivre une société dissoute. Compté à part sur ce site : les mêler aux autres gonflerait les chiffres."
           }
         },
         {
-          "terme": { "en": "MPP", "fr": "Député·e provincial·e" },
+          "terme": {
+            "en": "MPP",
+            "fr": "Député·e provincial·e"
+          },
           "texte": {
             "en": "Member of Provincial Parliament. Ontario has 124, one per riding. They sit at Queen's Park, in Toronto.",
             "fr": "Membre de l'Assemblée législative. L'Ontario en compte 124, un·e par circonscription. Ils et elles siègent à Queen's Park, à Toronto."
           }
         },
         {
-          "terme": { "en": "Parliamentary assistant", "fr": "Adjoint·e parlementaire" },
+          "terme": {
+            "en": "Parliamentary assistant",
+            "fr": "Adjoint·e parlementaire"
+          },
           "texte": {
             "en": "An MPP who helps a minister. Not a minister, and not a member of cabinet.",
             "fr": "Un·e député·e qui épaule un·e ministre. Ce n'est pas un·e ministre, et cette personne ne siège pas au Conseil des ministres."
@@ -100,38 +220,56 @@
       ]
     },
     {
-      "titre": { "en": "Votes and debate", "fr": "Les votes et le débat" },
+      "titre": {
+        "en": "Votes and debate",
+        "fr": "Les votes et le débat"
+      },
       "entrees": [
         {
-          "terme": { "en": "Recorded division", "fr": "Vote nominatif" },
+          "terme": {
+            "en": "Recorded division",
+            "fr": "Vote nominatif"
+          },
           "texte": {
             "en": "A vote where each MPP's name is recorded. It happens when five or more members stand to ask for one. Otherwise the Speaker simply judges the voices, and no names are kept.",
             "fr": "Un vote où le nom de chaque député·e est consigné. Il a lieu quand cinq député·e·s ou plus se lèvent pour le demander. Sinon, la présidence juge à la voix et aucun nom n'est retenu."
           }
         },
         {
-          "terme": { "en": "Closure", "fr": "Clôture" },
+          "terme": {
+            "en": "Closure",
+            "fr": "Clôture"
+          },
           "texte": {
             "en": "A motion that ends the debate and forces the vote. Used by the government when it wants to stop a debate from continuing.",
             "fr": "Une motion qui met fin au débat et force le vote. Le gouvernement s'en sert quand il veut empêcher un débat de se poursuivre."
           }
         },
         {
-          "terme": { "en": "Time allocation", "fr": "Attribution de temps" },
+          "terme": {
+            "en": "Time allocation",
+            "fr": "Attribution de temps"
+          },
           "texte": {
             "en": "An order that fixes in advance how much time a bill gets at each stage. Same effect as closure, decided earlier.",
             "fr": "Un ordre qui fixe d'avance le temps accordé à un projet à chaque étape. Même effet que la clôture, décidé plus tôt."
           }
         },
         {
-          "terme": { "en": "Adjournment of the House", "fr": "Ajournement de l'Assemblée" },
+          "terme": {
+            "en": "Adjournment of the House",
+            "fr": "Ajournement de l'Assemblée"
+          },
           "texte": {
             "en": "A motion to end the day's sitting. When the opposition moves it mid-debate, it is a delaying tactic. These divisions are recorded with totals only — the Assembly does not publish the names.",
             "fr": "Une motion pour mettre fin à la séance du jour. Quand l'opposition la propose en plein débat, c'est une tactique pour retarder. Ces votes ne sont publiés qu'avec leurs totaux : l'Assemblée n'en publie pas les noms."
           }
         },
         {
-          "terme": { "en": "Opposition day", "fr": "Jour de l'opposition" },
+          "terme": {
+            "en": "Opposition day",
+            "fr": "Jour de l'opposition"
+          },
           "texte": {
             "en": "A day where an opposition party, not the government, chooses the motion the House debates.",
             "fr": "Une journée où c'est un parti d'opposition, et non le gouvernement, qui choisit la motion débattue."
@@ -140,31 +278,46 @@
       ]
     },
     {
-      "titre": { "en": "The paper trail", "fr": "Les documents" },
+      "titre": {
+        "en": "The paper trail",
+        "fr": "Les documents"
+      },
       "entrees": [
         {
-          "terme": { "en": "Orders and Notices Paper", "fr": "Feuilleton et Avis" },
+          "terme": {
+            "en": "Orders and Notices Paper",
+            "fr": "Feuilleton et Avis"
+          },
           "texte": {
             "en": "The agenda: what the House plans to do that day, and everything that could be called. Published before each sitting.",
             "fr": "L'ordre du jour : ce que l'Assemblée prévoit faire ce jour-là, et tout ce qui pourrait être appelé. Publié avant chaque séance."
           }
         },
         {
-          "terme": { "en": "Votes and Proceedings", "fr": "Procès-verbaux" },
+          "terme": {
+            "en": "Votes and Proceedings",
+            "fr": "Procès-verbaux"
+          },
           "texte": {
             "en": "The minutes: what the House actually did, decision by decision. This is the record this site checks its votes against.",
             "fr": "Le compte rendu officiel : ce que l'Assemblée a fait, décision par décision. C'est le document contre lequel ce site vérifie ses votes."
           }
         },
         {
-          "terme": { "en": "Hansard", "fr": "Journal des débats" },
+          "terme": {
+            "en": "Hansard",
+            "fr": "Journal des débats"
+          },
           "texte": {
             "en": "The word-for-word transcript of what is said in the House. The Assembly publishes it in the language spoken; it is not translated.",
             "fr": "La transcription mot à mot de ce qui se dit à l'Assemblée. Elle est publiée dans la langue prononcée : il n'y a pas de traduction."
           }
         },
         {
-          "terme": { "en": "Estimates and Supply Act", "fr": "Budget des dépenses et loi de crédits" },
+          "terme": {
+            "en": "Estimates and Supply Act",
+            "fr": "Budget des dépenses et loi de crédits"
+          },
           "texte": {
             "en": "The estimates are the government's spending plans, examined by committees. The Supply Act is the law that actually authorizes the spending. It has no explanatory note — there is nothing to explain beyond the amounts.",
             "fr": "Le budget des dépenses expose ce que le gouvernement compte dépenser ; des comités l'examinent. La loi de crédits est celle qui autorise réellement la dépense. Elle n'a pas de note explicative — il n'y a rien à expliquer au-delà des montants."
@@ -173,24 +326,36 @@
       ]
     },
     {
-      "titre": { "en": "The calendar", "fr": "Le calendrier" },
+      "titre": {
+        "en": "The calendar",
+        "fr": "Le calendrier"
+      },
       "entrees": [
         {
-          "terme": { "en": "Sitting day", "fr": "Jour de séance" },
+          "terme": {
+            "en": "Sitting day",
+            "fr": "Jour de séance"
+          },
           "texte": {
             "en": "A day the House meets. In Ontario, Monday to Thursday, and only during the periods set by the parliamentary calendar. Long breaks are normal: the House does not sit all year.",
             "fr": "Un jour où l'Assemblée se réunit. En Ontario, du lundi au jeudi, et seulement pendant les périodes fixées par le calendrier parlementaire. Les longues relâches sont normales : l'Assemblée ne siège pas toute l'année."
           }
         },
         {
-          "terme": { "en": "Prorogation", "fr": "Prorogation" },
+          "terme": {
+            "en": "Prorogation",
+            "fr": "Prorogation"
+          },
           "texte": {
             "en": "The end of a session. Bills that have not passed die, unless the House agrees to take them up again where they left off.",
             "fr": "La fin d'une session. Les projets non adoptés meurent, à moins que l'Assemblée n'accepte de les reprendre là où ils en étaient."
           }
         },
         {
-          "terme": { "en": "Dissolution", "fr": "Dissolution" },
+          "terme": {
+            "en": "Dissolution",
+            "fr": "Dissolution"
+          },
           "texte": {
             "en": "The end of the parliament itself, before an election. Everything on the order paper dies with it.",
             "fr": "La fin de la législature elle-même, avant une élection. Tout ce qui était au feuilleton meurt avec elle."

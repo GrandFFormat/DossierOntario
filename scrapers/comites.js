@@ -1,7 +1,7 @@
 // Scraper — les comités permanents
 //
-// Ce que ce scraper récolte : le nom officiel de chaque comité, son adresse, et la liste
-// de ses transcriptions (une par jour de séance du comité).
+// Ce que ce scraper récolte : le nom officiel de chaque comité (dans les deux langues),
+// son MANDAT officiel, sa COMPOSITION, et la liste de ses transcriptions.
 //
 // Ce qu'il ne récolte PAS, et pourquoi : les votes tenus en comité. Ils existent — 359
 // sur 96 transcriptions, soit trois fois plus que les 115 votes de la Chambre —, mais ils
@@ -22,6 +22,7 @@ import { lirePage, texte, ADRESSE, LEGISLATURE, SESSION } from './ola.js';
 
 const INDEX = `${ADRESSE.base}/en/legislative-business/committees`;
 const OUT_PATH = 'data/comites.json';
+const MAX_MANDAT = 1200;
 
 const MOIS = {
   jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06',
@@ -68,6 +69,55 @@ function nomsFrancais() {
   return paires;
 }
 
+/**
+ * Les onglets d'une page de comité (Business, Members, …, Mandate) sont des boutons
+ * « role=tab », dans le même ordre que leurs contenus. On repère donc un onglet par son
+ * NOM plutôt que par sa position : l'Assemblée peut en ajouter un sans nous casser.
+ */
+function ongletParNom($, noms) {
+  const etiquettes = $('button[role="tab"]')
+    .map((_, b) => texte($(b).html() ?? ''))
+    .get();
+
+  const i = etiquettes.findIndex((t) => noms.some((n) => t.toLowerCase() === n.toLowerCase()));
+  return i < 0 ? null : $('.lao-tab-content').eq(i);
+}
+
+/** Le mandat officiel : ce que la Chambre charge ce comité de faire. */
+function lireMandat($) {
+  const onglet = ongletParNom($, ['Mandate', 'Mandat']);
+  if (!onglet || !onglet.length) return null;
+  const t = texte(onglet.html() ?? '');
+  if (t.length <= 40) return null;
+  return t.length > MAX_MANDAT ? `${t.slice(0, MAX_MANDAT)}…` : t;
+}
+
+/** La composition : présidence, vice-présidences et membres, avec leur rôle. */
+function lireMembres($) {
+  const onglet = ongletParNom($, ['Members', 'Membres']);
+  if (!onglet || !onglet.length) return [];
+
+  const membres = [];
+  let role = null;
+
+  onglet.find('h2, h3, h4, h5, a').each((_, el) => {
+    const $el = $(el);
+    const balise = (el.tagName ?? '').toLowerCase();
+
+    if (balise !== 'a') {
+      role = texte($el.html() ?? '') || role;
+      return;
+    }
+    const href = $el.attr('href') ?? '';
+    if (!href.includes('/members/all/')) return;
+    const nom = texte($el.html() ?? '');
+    if (!nom) return;
+    membres.push({ identifiant: href.split('/').pop(), nom, role });
+  });
+
+  return [...new Map(membres.map((m) => [m.identifiant, m])).values()];
+}
+
 /** Les transcriptions d'un comité : une par jour de séance. */
 async function lireTranscriptions(urlComite) {
   const $ = cheerio.load(await lirePage(`${urlComite}/transcripts`));
@@ -102,32 +152,35 @@ async function main() {
     } catch (err) {
       console.warn(`  (transcriptions de ${cle} : ${err.message})`);
     }
-    // Les comités de surveillance (comptes publics, organismes gouvernementaux, procédure)
-    // n'ont jamais de projet de loi renvoyé : leur nom français n'est donc nulle part dans
-    // nos fiches. On va le chercher sur leur propre page française, que la page anglaise
-    // désigne elle-même par sa balise hreflang. Bilingue partout, sans exception.
+
+    // La page du comité porte son mandat officiel et sa composition — les deux choses qui
+    // répondent à « il sert à quoi, celui-là ? ».
     let nomFr = fr.get(c.nom) ?? null;
-    if (!nomFr) {
-      try {
-        const $ = cheerio.load(await lirePage(c.url));
-        const urlFr = $('link[hreflang="fr"]').attr('href');
-        if (urlFr) {
-          const $fr = cheerio.load(await lirePage(urlFr));
-          nomFr = texte($fr('h1').first().html() ?? '') || null;
-        }
-      } catch (err) {
-        console.warn(`  (nom français de ${cle} : ${err.message})`);
+    let mandatEn = null;
+    let mandatFr = null;
+    let membres = [];
+    let urlFr = null;
+
+    try {
+      const $ = cheerio.load(await lirePage(c.url));
+      mandatEn = lireMandat($);
+      membres = lireMembres($);
+      urlFr = $('link[hreflang="fr"]').attr('href') ?? null;
+
+      if (urlFr) {
+        const $fr = cheerio.load(await lirePage(urlFr));
+        mandatFr = lireMandat($fr);
+        if (!nomFr) nomFr = texte($fr('h1').first().html() ?? '') || null;
       }
+    } catch (err) {
+      console.warn(`  (page de ${cle} : ${err.message})`);
     }
 
-    comites.push({
-      cle,
-      nomEn: c.nom,
-      nomFr,
-      url: c.url,
-      transcriptions,
-    });
-    console.log(`  ${cle} : ${transcriptions.length} transcriptions`);
+    comites.push({ cle, nomEn: c.nom, nomFr, url: c.url, urlFr, mandatEn, mandatFr, membres, transcriptions });
+    console.log(
+      `  ${cle} : ${transcriptions.length} transcriptions, ${membres.length} membres,` +
+        ` mandat ${mandatEn ? 'lu' : 'ABSENT'}${mandatFr ? ' (FR ok)' : ''}`
+    );
   }
 
   mkdirSync('data', { recursive: true });
@@ -149,10 +202,6 @@ async function main() {
 
   const total = comites.reduce((n, c) => n + c.transcriptions.length, 0);
   console.log(`${comites.length} comités écrits dans ${OUT_PATH} (${total} transcriptions).`);
-  const sansFr = comites.filter((c) => !c.nomFr).map((c) => c.cle);
-  if (sansFr.length) {
-    console.log(`  sans nom français (aucun projet de loi ne leur a été renvoyé) : ${sansFr.join(', ')}`);
-  }
 }
 
 main().catch((err) => {
