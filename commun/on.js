@@ -69,6 +69,9 @@
       'votes.sansNoms': 'For this division the Assembly published the totals only, not the names. The minutes are the source.',
       'votes.pv': 'Minutes of the day →',
       'votes.compte': (n) => `${n} division${n > 1 ? 's' : ''}`,
+      'votes.nominatif': 'Recorded division',
+      'votes.page': 'Full vote on ola.org →',
+      'votes.absences': 'Ontario records only the members who voted: there is no abstention and no absence list. The party breakdown is counted from the names, not published as such.',
       'votes.ajournement-chambre': 'Motion to adjourn the House',
       'votes.ajournement-debat': 'Motion to adjourn the debate',
       'votes.proposePar': 'moved by',
@@ -144,6 +147,9 @@
       'votes.sansNoms': 'Pour ce vote, l’Assemblée n’a publié que les totaux, sans les noms. Le procès-verbal fait foi.',
       'votes.pv': 'Procès-verbal du jour →',
       'votes.compte': (n) => `${n} vote${n > 1 ? 's' : ''}`,
+      'votes.nominatif': 'Vote nominatif',
+      'votes.page': 'Le vote complet sur ola.org →',
+      'votes.absences': 'L’Ontario ne consigne que les député·e·s qui ont voté : il n’y a ni abstention ni liste d’absences. La répartition par parti est comptée à partir des noms, elle n’est pas publiée telle quelle.',
       'votes.ajournement-chambre': 'Motion d’ajournement de l’Assemblée',
       'votes.ajournement-debat': 'Motion d’ajournement du débat',
       'votes.proposePar': 'proposée par',
@@ -431,21 +437,69 @@
         : mot('votes.' + v.motion);
     };
 
+    /** Qui a voté : la fiche du ou de la député·e, même s'il ou elle ne siège plus. */
+    const fiche = (identifiant) => parIdentifiant.get(identifiant) ?? anciens.get(identifiant) ?? null;
+
+    /** Le compte par parti, calculé à partir des noms — l'Assemblée ne le publie pas. */
+    const parPartis = (v) => {
+      const partis = new Map();
+      for (const [identifiant, camp] of v.votants) {
+        const d = fiche(identifiant);
+        const nom = d ? selonLangue(d.parti, d.partiFr) ?? '—' : '—';
+        if (!partis.has(nom)) {
+          partis.set(nom, { nom, couleur: d?.couleurParti ?? '#8B8578', pour: 0, contre: 0 });
+        }
+        partis.get(nom)[camp]++;
+      }
+      return [...partis.values()].sort((a, b) => b.pour + b.contre - (a.pour + a.contre));
+    };
+
+    const colonne = (v, camp) => {
+      const noms = v.votants
+        .filter((x) => x[1] === camp)
+        .map((x) => {
+          const d = fiche(x[0]);
+          const ancien = !parIdentifiant.has(x[0]) && anciens.has(x[0]);
+          return `<li><span class="puce-parti" style="background:${echapper(
+            d?.couleurParti ?? '#8B8578'
+          )}" aria-hidden="true"></span>${echapper(d ? d.nom : x[0])}${
+            ancien ? ` <span class="legende">· ${mot('votes.ancien')}</span>` : ''
+          }</li>`;
+        })
+        .join('');
+      const total = camp === 'pour' ? v.pour : v.contre;
+      return `<div class="colonne-votants">
+        <h4 class="tete-${camp}">${mot(`votes.${camp}`)} — ${total}</h4>
+        <ul>${noms}</ul>
+      </div>`;
+    };
+
     const detail = (v) => {
-      const ligne = (camp) =>
-        v.votants
-          .filter((x) => x[1] === camp)
-          .map((x) => {
-            const d = parIdentifiant.get(x[0]) ?? anciens.get(x[0]) ?? null;
-            const ancien = !parIdentifiant.has(x[0]) && anciens.has(x[0]);
-            return `<li>${echapper(d ? d.nom : x[0])} <span class="legende">${echapper(
-              d ? selonLangue(d.parti, d.partiFr) ?? '' : ''
-            )}${ancien ? ` · ${mot('votes.ancien')}` : ''}</span></li>`;
-          })
-          .join('');
-      return `<div class="grille">
-        <div><h4 class="pour">${mot('votes.pour')} (${v.pour})</h4><ul>${ligne('pour')}</ul></div>
-        <div><h4 class="contre">${mot('votes.contre')} (${v.contre})</h4><ul>${ligne('contre')}</ul></div>
+      const partis = parPartis(v)
+        .map(
+          (p) => `<div class="parti-boite">
+            <h4 style="background:${echapper(p.couleur)}">${echapper(p.nom)}</h4>
+            <dl>
+              <dt>${mot('votes.pour')}</dt><dd class="pour">${p.pour}</dd>
+              <dt>${mot('votes.contre')}</dt><dd class="contre">${p.contre}</dd>
+            </dl>
+          </div>`
+        )
+        .join('');
+
+      return `<div class="partis">${partis}</div>
+        <div class="colonnes-votants">${colonne(v, 'pour')}${colonne(v, 'contre')}</div>`;
+    };
+
+    /** La barre de proportion : verte pour les pour, rouge pour les contre. */
+    const barre = (v) => {
+      const total = (v.pour ?? 0) + (v.contre ?? 0);
+      if (!total) return '';
+      const part = (n) => `${((n / total) * 100).toFixed(1)}%`;
+      return `<div class="barre-proportion" role="img"
+        aria-label="${mot('votes.pour')} ${v.pour}, ${mot('votes.contre')} ${v.contre}">
+        <span class="part-pour" style="width:${part(v.pour)}"></span>
+        <span class="part-contre" style="width:${part(v.contre)}"></span>
       </div>`;
     };
 
@@ -458,26 +512,37 @@
       parJour.get(jour).push(v);
     }
 
-    const carteVote = (v) => `<details class="carte">
-          <summary>
-            <span class="legende">${date(v.date) ?? ''}</span>
-            <h3 class="carte-titre">${echapper(sujet(v))}</h3>
-            <p class="legende">${selonLangue(v.typeEn, v.typeFr) ? `${echapper(selonLangue(v.typeEn, v.typeFr))} — ` : ''}
-              <span class="pour">${mot('votes.pour')} ${v.pour}</span> ·
-              <span class="contre">${mot('votes.contre')} ${v.contre}</span> ·
-              ${echapper(selonLangue(v.resultatEn, v.resultatFr) ?? '')}</p>
-          </summary>
-          ${v.sansNoms ? `<p class="courant">${mot('votes.sansNoms')}</p>` : detail(v)}
-          <a class="lien-source" href="${echapper(selonLangue(v.url, v.urlFr))}" target="_blank" rel="noopener">${
-            v.sansNoms ? mot('votes.pv') : 'ola.org →'
-          }</a>
-        </details>`;
+    const carteVote = (v) => {
+      const adopte = /^Carried|^Adopt/i.test(v.resultatEn ?? v.resultatFr ?? '');
+      const meta = [
+        date(v.date),
+        mot('votes.nominatif'),
+        selonLangue(v.typeEn, v.typeFr),
+      ].filter(Boolean);
+
+      return `<details class="carte">
+        <summary class="vote-entete">
+          <span class="pastille ${adopte ? 'pastille-adopte' : 'pastille-rejete'}">${echapper(
+            selonLangue(v.resultatEn, v.resultatFr) ?? ''
+          )}</span>
+          <h3 class="carte-titre">${echapper(sujet(v))}</h3>
+          <span class="vote-comptes"><b class="pour">${v.pour}</b> ${mot('votes.pour')}
+            <b class="contre">${v.contre}</b> ${mot('votes.contre')}</span>
+        </summary>
+        <p class="legende">${echapper(meta.join(' · '))}</p>
+        ${barre(v)}
+        ${v.sansNoms ? `<p class="courant">${mot('votes.sansNoms')}</p>` : detail(v)}
+        <p class="legende note-vote">${mot('votes.absences')}</p>
+        <a class="bouton bouton-jaune" href="${echapper(selonLangue(v.url, v.urlFr))}"
+           target="_blank" rel="noopener">${v.sansNoms ? mot('votes.pv') : mot('votes.page')}</a>
+      </details>`;
+    };
 
     cible.innerHTML = [...parJour.entries()]
       .map(
         ([jour, duJour]) => `<h2 class="titre-groupe">${date(jour) ?? jour}
             <span class="compte">${mot('votes.compte', duJour.length)}</span></h2>
-          <div class="grille">${duJour.map(carteVote).join('')}</div>`
+          ${duJour.map(carteVote).join('')}`
       )
       .join('');
   };

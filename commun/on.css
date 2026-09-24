@@ -316,3 +316,54 @@ img{max-width:100%;}
 }
 .pied-liens a:hover{color:var(--yellow);}
 .pied .non-officiel{color:#F2F0EA;}
+
+/* ---------- La carte d'un vote ----------
+   Reprise de DossierQuébec, à une différence près : l'Ontario ne publie ni abstentions
+   ni absences. Il n'y a donc que deux camps, et la carte ne montre pas une colonne vide
+   qui laisserait croire à une donnée manquante. */
+.vote-entete{
+  display:flex; gap:14px; align-items:flex-start; flex-wrap:wrap; cursor:pointer;
+  list-style:none;
+}
+.vote-entete::-webkit-details-marker{display:none;}
+.vote-entete .carte-titre{flex:1 1 260px; margin:0;}
+.vote-comptes{
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.06em; color:var(--slate); white-space:nowrap;
+}
+.vote-comptes b{font-family:'Archivo',sans-serif; font-weight:900; font-size:20px; letter-spacing:-.02em;}
+.pastille-adopte{background:var(--green-soft); border-color:var(--green); color:var(--ink);}
+.pastille-rejete{background:var(--red-soft); border-color:var(--red); color:var(--ink);}
+
+.barre-proportion{display:flex; height:14px; border:2px solid var(--line); margin:12px 0 4px;}
+.barre-proportion span{display:block;}
+.barre-proportion .part-pour{background:var(--green);}
+.barre-proportion .part-contre{background:var(--red);}
+
+.partis{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin:14px 0;}
+.parti-boite{border:2px solid var(--line); background:var(--card);}
+.parti-boite h4{
+  margin:0; padding:6px 10px; color:var(--sur-fonce);
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.06em;
+}
+.parti-boite dl{margin:0; padding:8px 10px; display:grid; grid-template-columns:1fr auto; gap:2px 8px;}
+.parti-boite dt{font-family:'Archivo Narrow',sans-serif; font-weight:600; font-size:11px;
+  text-transform:uppercase; letter-spacing:.05em; color:var(--slate);}
+.parti-boite dd{margin:0; font-weight:800; font-size:13px; text-align:right;}
+
+.colonnes-votants{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;}
+.colonne-votants{border:2px solid var(--line); background:var(--card);}
+.colonne-votants h4{
+  margin:0; padding:7px 12px; color:var(--sur-fonce);
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.06em;
+}
+.colonne-votants .tete-pour{background:var(--green);}
+.colonne-votants .tete-contre{background:var(--red);}
+.colonne-votants ul{margin:0; padding:10px 12px; list-style:none; max-height:280px; overflow:auto;}
+.colonne-votants li{display:flex; align-items:center; gap:8px; font-size:14px; padding:2px 0;}
+.puce-parti{width:11px; height:11px; flex:none; border:1px solid var(--line);}
+.note-vote{margin:14px 0 10px;}
+.bouton-jaune{background:var(--yellow); color:var(--sur-clair); border-color:var(--sur-clair);}
+.bouton-jaune:hover{background:var(--ink-bg); color:var(--yellow);}
