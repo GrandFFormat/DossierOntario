@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- MODÈLE — ce fichier n'est jamais servi. scripts/build-pages.js en tire les pages du
+     site, une par vue, comme le fait DossierQuébec depuis son propre gabarit.html.
+     Les marqueurs {{…}} sont remplacés à la fabrication. -->
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bills — DossierOntario</title>
+<meta name="description" content="139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor, official explanatory note.">
+<link rel="canonical" href="https://dossierontario.ca/bills">
+<link rel="alternate" hreflang="en" href="https://dossierontario.ca/bills">
+<meta property="og:title" content="Bills — DossierOntario">
+<meta property="og:description" content="139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor, official explanatory note.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dossierontario.ca/bills">
+<link rel="stylesheet" href="commun/on.css">
+<script src="commun/on.js" defer></script>
+</head>
+<body data-vue="projets" data-donnees="bills">
+
+<header class="entete">
+  <div class="entete-rang">
+    <a class="mot-symbole" href="/">
+      Dossier<span class="province">Ontario</span>
+      <span class="erable" title="DossierCanada" aria-hidden="true">
+        <svg viewBox="-2015 -2000 4030 4030" aria-hidden="true"><path fill="currentColor" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></svg>
+      </span>
+    </a>
+    <div class="controles">
+      <button type="button" data-action="moins" data-i18n="entete.moins" aria-label="A−">A−</button>
+      <button type="button" data-action="plus" data-i18n="entete.plus" aria-label="A+">A+</button>
+      <button type="button" data-action="theme" data-i18n="entete.theme">Theme</button>
+      <button type="button" data-action="langue" data-i18n="entete.langue">Français</button>
+    </div>
+  </div>
+  <nav class="onglets" aria-label="Sections">
+    <a href="/" data-i18n="nav.accueil" class="">Home</a>
+    <a href="/bills" data-i18n="nav.projets" class="actif">Bills</a>
+    <a href="/votes" data-i18n="nav.votes" class="">Votes</a>
+    <a href="/mpps" data-i18n="nav.deputes" class="">MPPs</a>
+    <a href="/cabinet" data-i18n="nav.cabinet" class="">Cabinet</a>
+    <a href="/sources" data-i18n="nav.sources" class="">Sources</a>
+  </nav>
+</header>
+
+<main class="colonne">
+  <h1 class="titre-vue" data-i18n="projets.titre">Bills</h1>
+  <div class="encadre" data-i18n-html="intro.projets">
+    <b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee,
+    third reading and royal assent. Most bills introduced by members never leave first reading —
+    that is not a failure of this site, it is what the record shows.
+  </div>
+  <div class="encadre"><span data-i18n="projet.avertissement">The explanatory note is written by the Assembly
+    as a reader’s aid and is not part of the law.</span></div>
+  <div class="encadre"><span data-i18n="intro.deduction">ola.org does not say whether a bill comes from the
+    government: we work it out from the sponsor — a minister, with a portfolio in brackets.</span></div>
+  <section data-vue="projets"></section>
+</main>
+
+<footer class="pied">
+  <div class="colonne">
+    <p class="non-officiel" data-i18n="pied.nonOfficiel">Unofficial site — not affiliated with the Legislative Assembly of Ontario</p>
+    <p data-i18n="pied.sources">Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue</p>
+    <p data-i18n="pied.gratuit">Free, no subscription, no advertising.</p>
+    <p data-role="maj"></p>
+  </div>
+</footer>
+
+</body>
+</html>

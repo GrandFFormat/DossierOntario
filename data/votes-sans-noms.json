@@ -1,0 +1,55 @@
+{
+  "source": "https://www.ola.org — procès-verbaux (Votes and Proceedings) de chaque jour de séance",
+  "explication": "Votes annoncés par la Chambre avec leur compte seulement : l'Assemblée ne publie pas la liste des noms pour ces motions (des motions d'ajournement, en pratique).",
+  "legislature": 44,
+  "session": 1,
+  "lus": "2026-09-24T03:50:41.837Z",
+  "joursLus": 81,
+  "nombre": 4,
+  "votes": [
+    {
+      "date": "2025-06-04",
+      "proposePar": "Marit Stiles",
+      "motion": "ajournement-chambre",
+      "resultatEn": "Lost",
+      "resultatFr": "Rejetée",
+      "pour": 44,
+      "contre": 73,
+      "sansNoms": true,
+      "source": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2025-06-04/votes-proceedings"
+    },
+    {
+      "date": "2025-11-18",
+      "proposePar": "Marit Stiles",
+      "motion": "ajournement-chambre",
+      "resultatEn": "Lost",
+      "resultatFr": "Rejetée",
+      "pour": 24,
+      "contre": 61,
+      "sansNoms": true,
+      "source": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2025-11-18/votes-proceedings"
+    },
+    {
+      "date": "2025-11-19",
+      "proposePar": "Hon. Steve Clark",
+      "motion": "ajournement-chambre",
+      "resultatEn": "Carried",
+      "resultatFr": "Adoptée",
+      "pour": 69,
+      "contre": 25,
+      "sansNoms": true,
+      "source": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2025-11-19/votes-proceedings"
+    },
+    {
+      "date": "2026-06-02",
+      "proposePar": "Hon. Steve Clark",
+      "motion": "ajournement-chambre",
+      "resultatEn": "Carried",
+      "resultatFr": "Adoptée",
+      "pour": 57,
+      "contre": 28,
+      "sansNoms": true,
+      "source": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-06-02/votes-proceedings"
+    }
+  ]
+}

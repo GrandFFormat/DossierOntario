@@ -1,0 +1,23 @@
+{
+  "name": "dossierontario",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scrapers de DossierOntario — veille citoyenne sur l'Assemblée législative de l'Ontario (site non officiel)",
+  "type": "module",
+  "scripts": {
+    "scrape:bills": "node scrapers/bills.js",
+    "scrape:bill-details": "node scrapers/bill-details.js",
+    "scrape:votes": "node scrapers/votes.js",
+    "scrape:members": "node scrapers/members.js",
+    "scrape:ministers": "node scrapers/ministers.js",
+    "build:data": "node scripts/build-site-data.js",
+    "build:pages": "node scripts/build-pages.js",
+    "build": "npm run build:data && npm run build:pages",
+    "scrape:votes-sans-noms": "node scrapers/votes-sans-noms.js",
+    "verifier:votes": "node scripts/verifier-votes.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "csv-parse": "^7.0.2"
+  }
+}

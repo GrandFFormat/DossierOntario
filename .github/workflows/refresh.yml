@@ -1,0 +1,76 @@
+# Rafraîchissement quotidien de DossierOntario.
+#
+# L'Assemblée de l'Ontario siège du lundi au jeudi. On lit donc chaque matin de semaine,
+# après quoi la journée précédente est publiée. Pendant les relâches (du 3 juin au
+# 26 octobre en 2026), rien ne change : le travail tourne quand même, ne trouve rien de
+# neuf, et ne produit aucun commit.
+#
+# Politesse : les scrapers attendent 2 s entre deux pages d'ola.org (10 s sur
+# data.ontario.ca, qui le demande dans son robots.txt). Une lecture complète prend une
+# quinzaine de minutes — c'est voulu. Ne pas baisser OLA_DELAI_MS pour aller plus vite.
+
+name: Rafraîchir les données
+
+on:
+  schedule:
+    - cron: '0 11 * * 1-5' # 7 h (heure de l'Est) du lundi au vendredi
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm ci
+
+      - name: Lire la liste des projets de loi
+        run: npm run scrape:bills
+
+      - name: Lire la fiche de chaque projet
+        run: npm run scrape:bill-details
+
+      - name: Lire les votes nominatifs
+        run: npm run scrape:votes
+
+      - name: Lire les votes dont l'Assemblée ne publie que le compte
+        run: npm run scrape:votes-sans-noms
+
+      - name: Lire les député·e·s
+        run: npm run scrape:members
+
+      - name: Lire le Conseil des ministres
+        run: npm run scrape:ministers
+
+      # Le contrôle compare notre récolte aux procès-verbaux officiels. Un écart ne doit
+      # pas empêcher la publication du jour : il doit se voir dans le journal du travail.
+      - name: Contrôler les votes contre les procès-verbaux
+        continue-on-error: true
+        run: npm run verifier:votes
+
+      - name: Préparer les données du site et les pages
+        run: npm run build
+
+      - name: Publier ce qui a changé
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A data *.html sitemap.xml
+          if git diff --staged --quiet; then
+            echo 'Rien de neuf du côté de l’Assemblée.'
+          else
+            git commit -m "Données de l'Assemblée au $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- MODÈLE — ce fichier n'est jamais servi. scripts/build-pages.js en tire les pages du
+     site, une par vue, comme le fait DossierQuébec depuis son propre gabarit.html.
+     Les marqueurs {{…}} sont remplacés à la fabrication. -->
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What the Ontario Legislature is doing — DossierOntario</title>
+<meta name="description" content="Bills, recorded votes, MPPs and cabinet of the Legislative Assembly of Ontario, in plain language. Unofficial, free, bilingual.">
+<link rel="canonical" href="https://dossierontario.ca/">
+<link rel="alternate" hreflang="en" href="https://dossierontario.ca/">
+<meta property="og:title" content="What the Ontario Legislature is doing — DossierOntario">
+<meta property="og:description" content="Bills, recorded votes, MPPs and cabinet of the Legislative Assembly of Ontario, in plain language. Unofficial, free, bilingual.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dossierontario.ca/">
+<link rel="stylesheet" href="commun/on.css">
+<script src="commun/on.js" defer></script>
+</head>
+<body data-vue="accueil" data-donnees="apercu">
+
+<header class="entete">
+  <div class="entete-rang">
+    <a class="mot-symbole" href="/">
+      Dossier<span class="province">Ontario</span>
+      <span class="erable" title="DossierCanada" aria-hidden="true">
+        <svg viewBox="-2015 -2000 4030 4030" aria-hidden="true"><path fill="currentColor" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></svg>
+      </span>
+    </a>
+    <div class="controles">
+      <button type="button" data-action="moins" data-i18n="entete.moins" aria-label="A−">A−</button>
+      <button type="button" data-action="plus" data-i18n="entete.plus" aria-label="A+">A+</button>
+      <button type="button" data-action="theme" data-i18n="entete.theme">Theme</button>
+      <button type="button" data-action="langue" data-i18n="entete.langue">Français</button>
+    </div>
+  </div>
+  <nav class="onglets" aria-label="Sections">
+    <a href="/" data-i18n="nav.accueil" class="actif">Home</a>
+    <a href="/bills" data-i18n="nav.projets" class="">Bills</a>
+    <a href="/votes" data-i18n="nav.votes" class="">Votes</a>
+    <a href="/mpps" data-i18n="nav.deputes" class="">MPPs</a>
+    <a href="/cabinet" data-i18n="nav.cabinet" class="">Cabinet</a>
+    <a href="/sources" data-i18n="nav.sources" class="">Sources</a>
+  </nav>
+</header>
+
+<main class="colonne">
+  <h1 class="titre-une">
+    <span data-i18n="accueil.titre1">WHAT THE</span>
+    <span class="titre-contour" data-i18n="accueil.titre2">LEGISLATURE</span>
+    <span class="titre-accent" data-i18n="accueil.titre3">IS DOING</span>
+  </h1>
+  <p class="chapo" data-i18n="accueil.chapo">Ontario's 124 MPPs pass the laws that shape schools, housing,
+    health care and mining. DossierOntario follows every bill, every recorded vote and every member —
+    from the official record, with a link back to it on each item.</p>
+  <section data-vue="accueil"></section>
+</main>
+
+<footer class="pied">
+  <div class="colonne">
+    <p class="non-officiel" data-i18n="pied.nonOfficiel">Unofficial site — not affiliated with the Legislative Assembly of Ontario</p>
+    <p data-i18n="pied.sources">Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue</p>
+    <p data-i18n="pied.gratuit">Free, no subscription, no advertising.</p>
+    <p data-role="maj"></p>
+  </div>
+</footer>
+
+</body>
+</html>

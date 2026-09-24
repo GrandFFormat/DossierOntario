@@ -1,0 +1,3928 @@
+{
+  "source": {
+    "liste": "https://www.ola.org/en/members/current",
+    "listeFr": "https://www.ola.org/fr/deputes/actuels",
+    "coordonnees": "https://www.ola.org/sites/default/files/node-files/office_csvs/offices-all.csv"
+  },
+  "legislature": 44,
+  "session": 1,
+  "lus": "2026-09-24T03:07:25.276Z",
+  "totalSieges": 124,
+  "etatPartis": [
+    {
+      "parti": "Progressive Conservative Party of Ontario",
+      "sieges": 79
+    },
+    {
+      "parti": "New Democratic Party of Ontario",
+      "sieges": 27
+    },
+    {
+      "parti": "Ontario Liberal Party",
+      "sieges": 14
+    },
+    {
+      "parti": "Green Party of Ontario",
+      "sieges": 2
+    },
+    {
+      "parti": "Independent",
+      "sieges": 2
+    }
+  ],
+  "etatPartisFr": [
+    {
+      "parti": "Parti progressiste-conservateur de l'Ontario",
+      "sieges": 79
+    },
+    {
+      "parti": "Nouveau Parti démocratique de l'Ontario",
+      "sieges": 27
+    },
+    {
+      "parti": "Parti libéral de l'Ontario",
+      "sieges": 14
+    },
+    {
+      "parti": "Parti vert de l'Ontario",
+      "sieges": 2
+    },
+    {
+      "parti": "Indépendant",
+      "sieges": 2
+    }
+  ],
+  "avisEn": null,
+  "avisFr": "Résultats : 124",
+  "nombre": 124,
+  "deputes": [
+    {
+      "identifiant": "tyler-allsopp",
+      "nom": "Tyler Allsopp",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Bay of Quinte",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/tyler-allsopp",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Baie de Quinte",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/tyler-allsopp",
+      "numeroMembre": "108",
+      "courriel": "tyler.allsopp@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 8, 5503 Hwy. 62 S",
+          "ville": "Belleville",
+          "codePostal": "K8N 0L5",
+          "telephone": "613-962-1144",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "deepak-anand",
+      "nom": "Deepak Anand",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Mississauga—Malton",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/deepak-anand",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Mississauga—Malton",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/deepak-anand",
+      "numeroMembre": "7493",
+      "courriel": "deepak.anandco@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 11, 7895 Tranmere Dr.",
+          "ville": "Mississauga",
+          "codePostal": "L5S 1V9",
+          "telephone": "905-696-0367",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "teresa-j-armstrong",
+      "nom": "Teresa J. Armstrong",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "London—Fanshawe",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/teresa-j-armstrong",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "London—Fanshawe",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/teresa-j-armstrong",
+      "numeroMembre": "7183",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "155 Clarke Rd.",
+          "ville": "London",
+          "codePostal": "N5W 5C9",
+          "telephone": "519-668-1104",
+          "courriel": "tarmstrong-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 341, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1872",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "aris-babikian",
+      "nom": "Aris Babikian",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Scarborough—Agincourt",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/aris-babikian",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Scarborough—Agincourt",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/aris-babikian",
+      "numeroMembre": "7509",
+      "courriel": "aris.babikian@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 207, 4002 Sheppard Ave. E",
+          "ville": "Scarborough",
+          "codePostal": "M1S 4R5",
+          "telephone": "416-297-6568",
+          "courriel": "aris.babikianco@pc.ola.org"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 265, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7111",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "robert-bailey",
+      "nom": "Robert Bailey",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Sarnia—Lambton",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/robert-bailey",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Sarnia—Lambton",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/robert-bailey",
+      "numeroMembre": "7086",
+      "courriel": "bob.bailey@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 254, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3040",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 102, 805 Christina St. N",
+          "ville": "Point Edward",
+          "codePostal": "N7V 1X6",
+          "telephone": "519-337-0051",
+          "courriel": "bob.baileyco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "jeff-beattie",
+      "nom": "Jeff Beattie",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Hamilton East—Stoney Creek",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/jeff-beattie",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Hamilton-Est—Stoney Creek",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jeff-beattie",
+      "numeroMembre": "125",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 102, 115 Hwy. 8",
+          "ville": "Stoney Creek",
+          "codePostal": "L8G 1C1",
+          "telephone": "905-662-8755",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jessica-bell",
+      "nom": "Jessica Bell",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "University—Rosedale",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/jessica-bell",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "University—Rosedale",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jessica-bell",
+      "numeroMembre": "7518",
+      "courriel": "jbell-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 103, 719 Bloor St. W",
+          "ville": "Toronto",
+          "codePostal": "M6G 1L5",
+          "telephone": "416-535-7206",
+          "courriel": "jbell-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 384, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1620",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "peter-bethlenfalvy",
+      "nom": "Hon. Peter Bethlenfalvy",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Pickering—Uxbridge",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/peter-bethlenfalvy",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Pickering—Uxbridge",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/peter-bethlenfalvy",
+      "numeroMembre": "7505",
+      "courriel": "peter.bethlenfalvy@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Finance, ​​​​​​​Frost Building South, 7th Floor, 7 Queen's Park Cres.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1Y7",
+          "telephone": "416-325-0400",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 213, 1550 Kingston Rd.",
+          "ville": "Pickering",
+          "codePostal": "L1V 1C3",
+          "telephone": "905-509-0336",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stephen-blais",
+      "nom": "Stephen Blais",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Orléans",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/stephen-blais",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Orléans",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stephen-blais",
+      "numeroMembre": "7564",
+      "courriel": "sblais.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 401, 4473 Innes Rd.",
+          "ville": "Orleans",
+          "codePostal": "K4A 1A7",
+          "telephone": "613-834-8679",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 436, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0035",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "will-bouma",
+      "nom": "Will Bouma",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Brantford—Brant",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/will-bouma",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Brantford—Brant",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/will-bouma",
+      "numeroMembre": "7457",
+      "courriel": "will.bouma@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 267, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0169",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 101, 96 Nelson St.",
+          "ville": "Brantford",
+          "codePostal": "N3T 2N1",
+          "telephone": "519-759-0361",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "guy-bourgouin",
+      "nom": "Guy Bourgouin",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Mushkegowuk—James Bay",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/guy-bourgouin",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Mushkegowuk—Baie James",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/guy-bourgouin",
+      "numeroMembre": "7495",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 6, 631 Front St., P.O. Box 387",
+          "ville": "Hearst",
+          "codePostal": "P0L 1N0",
+          "telephone": "705-372-6400",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "1-2 Ash St.",
+          "ville": "Kapuskasing",
+          "codePostal": "P5N 3H4",
+          "telephone": "705-335-6400",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 330, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7351",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stephanie-bowman",
+      "nom": "Stephanie Bowman",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Don Valley West",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/stephanie-bowman",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Don Valley-Ouest",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stephanie-bowman",
+      "numeroMembre": "7594",
+      "courriel": "sbowman.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 101, 795 Eglinton Ave. E",
+          "ville": "Toronto",
+          "codePostal": "M4G 4E4",
+          "telephone": "416-425-6777",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 412, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0008",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "bobbi-ann-brady",
+      "nom": "Bobbi Ann Brady",
+      "parti": "Independent",
+      "circonscription": "Haldimand—Norfolk",
+      "couleurParti": "#C7C7C7",
+      "url": "https://www.ola.org/en/members/all/bobbi-ann-brady",
+      "partiFr": "Indépendant",
+      "circonscriptionFr": "Haldimand—Norfolk",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/bobbi-ann-brady",
+      "numeroMembre": "7599",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 472, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0027",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Mailing address: P.O. Box 91",
+          "ville": "Simcoe",
+          "codePostal": "N3Y 4K8",
+          "telephone": null,
+          "courriel": "babrady-co@ola.org"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "50B Gilbertson Dr.",
+          "ville": "Simcoe",
+          "codePostal": "N3Y 4L8",
+          "telephone": "519-428-0446",
+          "courriel": "babrady-co@ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "ric-bresee",
+      "nom": "Ric Bresee",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Hastings—Lennox and Addington",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/ric-bresee",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Hastings—Lennox and Addington",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/ric-bresee",
+      "numeroMembre": "7601",
+      "courriel": "ric.bresee@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 263, Main Legislative Building",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0119",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "26A St. Lawrence St. W, P.O. Box 70",
+          "ville": "Madoc",
+          "codePostal": "K0K 2K0",
+          "telephone": "613-473-1112",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "6 Dundas St. W",
+          "ville": "Napanee",
+          "codePostal": "K7R 1Z4",
+          "telephone": "613-354-3031",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jeff-burch",
+      "nom": "Jeff Burch",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Niagara Centre",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/jeff-burch",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Niagara-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jeff-burch",
+      "numeroMembre": "7496",
+      "courriel": "jburch-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 355, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3990",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 102, 60 King St.",
+          "ville": "Welland",
+          "codePostal": "L3B 6A4",
+          "telephone": "905-732-6884",
+          "courriel": "jburch-co@ndp.on.ca"
+        }
+      ]
+    },
+    {
+      "identifiant": "paul-calandra",
+      "nom": "Hon. Paul Calandra",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Markham—Stouffville",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/paul-calandra",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Markham—Stouffville",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/paul-calandra",
+      "numeroMembre": "7484",
+      "courriel": "paul.calandra@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Education, 5th Floor, 438 University Ave.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2A5",
+          "telephone": "416-325-2600",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 400, 37 Sandiford Dr.",
+          "ville": "Stouffville",
+          "codePostal": "L4A 3Z2",
+          "telephone": "905-642-2588",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2, 2677 Bur Oak Ave.",
+          "ville": "Markham",
+          "codePostal": "L6B 1K8",
+          "telephone": "905-642-2588",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "rob-cerjanec",
+      "nom": "Rob Cerjanec",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Ajax",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/rob-cerjanec",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Ajax",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/rob-cerjanec",
+      "numeroMembre": "7647",
+      "courriel": "rcerjanec.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 410, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3008",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 502, 230 Westney Rd. S",
+          "ville": "Ajax",
+          "codePostal": "L1S 7J5",
+          "telephone": "905-427-2060",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "raymond-sung-joon-cho",
+      "nom": "Hon. Raymond Sung Joon Cho",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Scarborough North",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/raymond-sung-joon-cho",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Scarborough-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/raymond-sung-joon-cho",
+      "numeroMembre": "7364",
+      "courriel": "raymond.cho@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry for Seniors and Accessibility, 5th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1S5",
+          "telephone": "416-314-0797",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 111, 4500 Sheppard Ave. E",
+          "ville": "Toronto",
+          "codePostal": "M1S 3R6",
+          "telephone": "416-297-5040",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stan-cho",
+      "nom": "Hon. Stan Cho",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Willowdale",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/stan-cho",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Willowdale",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stan-cho",
+      "numeroMembre": "7520",
+      "courriel": "stan.cho@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Tourism, Culture and Gaming, 6th Floor, 438 University Ave.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1N3",
+          "telephone": "416-326-9326",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "111 Sheppard Ave. W",
+          "ville": "North York",
+          "codePostal": "M2N 1M7",
+          "telephone": "416-733-7878",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "monica-ciriello",
+      "nom": "Monica Ciriello",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Hamilton Mountain",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/monica-ciriello",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Hamilton Mountain",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/monica-ciriello",
+      "numeroMembre": "7646",
+      "courriel": "monica.ciriello@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 400, 1030 Upper James St.",
+          "ville": "Hamilton",
+          "codePostal": "L9C 6X6",
+          "telephone": "905-388-1515",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "aislinn-clancy",
+      "nom": "Aislinn Clancy",
+      "parti": "Green Party of Ontario",
+      "circonscription": "Kitchener Centre",
+      "couleurParti": "#2F772F",
+      "url": "https://www.ola.org/en/members/all/aislinn-clancy",
+      "partiFr": "Parti vert de l'Ontario",
+      "circonscriptionFr": "Kitchener-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/aislinn-clancy",
+      "numeroMembre": "104",
+      "courriel": "aclancy-qp@ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 470, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1223",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 605, 305 King St. W",
+          "ville": "Kitchener",
+          "codePostal": "N2G 1B9",
+          "telephone": "519-579-5460",
+          "courriel": "aclancy-co@ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "steve-clark",
+      "nom": "Hon. Steve Clark",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Leeds—Grenville—Thousand Islands and Rideau Lakes",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/steve-clark",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Leeds—Grenville—Thousand Islands et Rideau Lakes",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/steve-clark",
+      "numeroMembre": "7146",
+      "courriel": "steve.clark@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 223, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-7754",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 305, 9 Broad St.",
+          "ville": "Brockville",
+          "codePostal": "K6V 6Z4",
+          "telephone": "613-342-9522",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "lorne-coe",
+      "nom": "Lorne Coe",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Whitby",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/lorne-coe",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Whitby",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/lorne-coe",
+      "numeroMembre": "7344",
+      "courriel": "lorne.coe@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 270, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1331",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 202, 3000 Garden St.",
+          "ville": "Whitby",
+          "codePostal": "L1R 2G6",
+          "telephone": "905-430-1141",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "lucille-collard",
+      "nom": "Lucille Collard",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Ottawa—Vanier",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/lucille-collard",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Ottawa—Vanier",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/lucille-collard",
+      "numeroMembre": "7565",
+      "courriel": "lcollard.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "237 Montreal Rd.",
+          "ville": "Vanier",
+          "codePostal": "K1L 6C7",
+          "telephone": "613-744-4484",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 416, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0007",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "michelle-cooper",
+      "nom": "Hon. Michelle Cooper",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Eglinton—Lawrence",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/michelle-cooper",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Eglinton—Lawrence",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/michelle-cooper",
+      "numeroMembre": "109",
+      "courriel": "michelle.cooper@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 111, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1248",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "1104 Eglinton Ave W.",
+          "ville": "Toronto",
+          "codePostal": "M6C 2E2",
+          "telephone": "416-781-2395",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stephen-crawford",
+      "nom": "Hon. Stephen Crawford",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Oakville",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/stephen-crawford",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Oakville",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stephen-crawford",
+      "numeroMembre": "7498",
+      "courriel": "stephen.crawford@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Public and Business Service Delivery and Procurement, 5th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J3",
+          "telephone": "416-212-2665",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 74 Rebecca St.",
+          "ville": "Oakville",
+          "codePostal": "L6K 1J2",
+          "telephone": "905-827-5141",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "rudy-cuzzetto",
+      "nom": "Rudy Cuzzetto",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Mississauga—Lakeshore",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/rudy-cuzzetto",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Mississauga—Lakeshore",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/rudy-cuzzetto",
+      "numeroMembre": "7492",
+      "courriel": "rudy.cuzzetto@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Whitney Block, Room 1307, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A2",
+          "telephone": "416-325-4890",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1 & 2, 120 Lakeshore Rd. W",
+          "ville": "Mississauga",
+          "codePostal": "L5H 1E8",
+          "telephone": "905-274-8228",
+          "courriel": "rudy.cuzzettoco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "george-darouze",
+      "nom": "George Darouze",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Carleton",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/george-darouze",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Carleton",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/george-darouze",
+      "numeroMembre": "110",
+      "courriel": "george.darouze@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "P.O. Box 51, Main Stn",
+          "ville": "Manotick",
+          "codePostal": "K4M 1A2",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 1128 Mill Street",
+          "ville": "Manotick",
+          "codePostal": "K4M 1A4",
+          "telephone": "613-838-4425",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "billy-denault",
+      "nom": "Billy Denault",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Renfrew—Nipissing—Pembroke",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/billy-denault",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Renfrew—Nipissing—Pembroke",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/billy-denault",
+      "numeroMembre": "111",
+      "courriel": "billy.denault@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "The Victoria Center, Unit 6, 84 Isabella St.",
+          "ville": "Pembroke",
+          "codePostal": "K8A 5S5",
+          "telephone": "613-735-6627",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jess-dixon",
+      "nom": "Jess Dixon",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Kitchener South—Hespeler",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/jess-dixon",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Kitchener-Sud—Hespeler",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jess-dixon",
+      "numeroMembre": "7603",
+      "courriel": "jess.dixon@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 116, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0138",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Building A, Unit 11, 260 Holiday Inn Dr.",
+          "ville": "Cambridge",
+          "codePostal": "N3C 2E8",
+          "telephone": "519-650-9413",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "andrew-dowie",
+      "nom": "Andrew Dowie",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Windsor—Tecumseh",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/andrew-dowie",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Windsor—Tecumseh",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/andrew-dowie",
+      "numeroMembre": "7617",
+      "courriel": "andrew.dowie@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 5452 Tecumseh Rd. E",
+          "ville": "Windsor",
+          "codePostal": "N8T 1C7",
+          "telephone": "519-251-5199",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "doug-downey",
+      "nom": "Hon. Doug Downey",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Barrie—Springwater—Oro-Medonte",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/doug-downey",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Barrie—Springwater—Oro-Medonte",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/doug-downey",
+      "numeroMembre": "7450",
+      "courriel": "doug.downey@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of the Attorney General, McMurtry-Scott Building, 11th Floor, 720 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2S9",
+          "telephone": "416-326-2220",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 14, 20 Bell Farm Rd.",
+          "ville": "Barrie",
+          "codePostal": "L4M 6E4",
+          "telephone": "705-726-5538",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jill-dunlop",
+      "nom": "Hon. Jill Dunlop",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Simcoe North",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/jill-dunlop",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Simcoe-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jill-dunlop",
+      "numeroMembre": "7512",
+      "courriel": "jill.dunlop@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Emergency Preparedness and Response, 7th Floor, Suite 702, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M5G 2C2",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 9, 575 West St. S",
+          "ville": "Orillia",
+          "codePostal": "L3V 5H4",
+          "telephone": "705-326-3246",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "lee-fairclough",
+      "nom": "Lee Fairclough",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Etobicoke—Lakeshore",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/lee-fairclough",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Etobicoke—Lakeshore",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/lee-fairclough",
+      "numeroMembre": "112",
+      "courriel": "lfairclough.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 425, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3047",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "1136 The Queensway",
+          "ville": "Etobicoke",
+          "codePostal": "M8Z 1P7",
+          "telephone": "416-259-2249",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "victor-fedeli",
+      "nom": "Hon. Victor Fedeli",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Nipissing",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/victor-fedeli",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Nipissing",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/victor-fedeli",
+      "numeroMembre": "7185",
+      "courriel": "vic.fedeli@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Economic Development, Job Creation, and Trade, 18th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1S5",
+          "telephone": "416-326-8475",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "219 Main St. E",
+          "ville": "North Bay",
+          "codePostal": "P1B 1B2",
+          "telephone": "705-474-8340",
+          "courriel": "vic.fedelico@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "catherine-fife",
+      "nom": "Catherine Fife",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Waterloo",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/catherine-fife",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Waterloo",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/catherine-fife",
+      "numeroMembre": "7204",
+      "courriel": "cfife-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 220, 100 Regina St. S",
+          "ville": "Waterloo",
+          "codePostal": "N2J 4P9",
+          "telephone": "519-725-3477",
+          "courriel": "cfife-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 370, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-6913",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "mohamed-firin",
+      "nom": "Mohamed Firin",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "York South—Weston",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/mohamed-firin",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "York-Sud—Weston",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/mohamed-firin",
+      "numeroMembre": "113",
+      "courriel": "mohamed.firin@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "1830 and 1832 Weston Rd.",
+          "ville": "Toronto",
+          "codePostal": "M9N 1V8",
+          "telephone": "416-243-7984",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "rob-flack",
+      "nom": "Hon. Rob Flack",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Elgin—Middlesex—London",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/rob-flack",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Elgin—Middlesex—London",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/rob-flack",
+      "numeroMembre": "7596",
+      "courriel": "rob.flack@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Municipal Affairs and Housing, 17th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J3",
+          "telephone": "416-585-7000",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 201, 750 Talbot St.",
+          "ville": "St. Thomas",
+          "codePostal": "N5P 1E2",
+          "telephone": "519-631-5995",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "doug-ford",
+      "nom": "Hon. Doug Ford",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Etobicoke North",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/doug-ford",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Etobicoke-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/doug-ford",
+      "numeroMembre": "7468",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Intergovernmental Affairs, Room 223, Main Legislative Building, Queen's Park, 111 Wellesley St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A4",
+          "telephone": "416-325-1941",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 110, 964 Albion Rd.",
+          "ville": "Etobicoke",
+          "codePostal": "M9V 1A7",
+          "telephone": "416-745-2859",
+          "courriel": "doug.fordco@pc.ola.org"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Premier's Office, Room 281, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-7635",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "john-fraser",
+      "nom": "John Fraser",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Ottawa South",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/john-fraser",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Ottawa-Sud",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/john-fraser",
+      "numeroMembre": "7226",
+      "courriel": "jfraser.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit D, 1883 Bank St.",
+          "ville": "Ottawa",
+          "codePostal": "K1V 7Z9",
+          "telephone": "613-736-9573",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 419, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-4670",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jennifer-k-french",
+      "nom": "Jennifer K. French",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Oshawa",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/jennifer-k-french",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Oshawa",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jennifer-k-french",
+      "numeroMembre": "7283",
+      "courriel": "jfrench-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2, 78 Centre St. N",
+          "ville": "Oshawa",
+          "codePostal": "L1G 4B6",
+          "telephone": "905-723-2411",
+          "courriel": "jfrench-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 345, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0117",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "dawn-gallagher-murphy",
+      "nom": "Dawn Gallagher Murphy",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Newmarket—Aurora",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/dawn-gallagher-murphy",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Newmarket—Aurora",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/dawn-gallagher-murphy",
+      "numeroMembre": "7605",
+      "courriel": "dawn.gallaghermurphy@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 212, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1183",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 22, 16635 Yonge St.",
+          "ville": "Newmarket",
+          "codePostal": "L3X 1V6",
+          "telephone": "905-853-9889",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "wayne-gates",
+      "nom": "Wayne Gates",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Niagara Falls",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/wayne-gates",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Niagara Falls",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/wayne-gates",
+      "numeroMembre": "7244",
+      "courriel": "wgates-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Douglas Heights Seniors Centre, 265 High St.",
+          "ville": "Fort Erie",
+          "codePostal": "L2A 3R4",
+          "telephone": "905-871-8868",
+          "courriel": "wgates-co@ndp.on.ca"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 6746 Morrison St.",
+          "ville": "Niagara Falls",
+          "codePostal": "L2E 6Z8",
+          "telephone": "905-357-0681",
+          "courriel": "wgates-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 322, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-212-6102",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "france-gelinas",
+      "nom": "France Gélinas",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Nickel Belt",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/france-gelinas",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Nickel Belt",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/france-gelinas",
+      "numeroMembre": "7090",
+      "courriel": "fgelinas-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Hanmer Valley Shopping Centre, Unit 15, 5085 Hwy. 69 N",
+          "ville": "Hanmer",
+          "codePostal": "P3P 1P7",
+          "telephone": "705-969-3621",
+          "courriel": "fgelinas-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 316, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-9203",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "alexa-gilmour",
+      "nom": "Alexa Gilmour",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Parkdale—High Park",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/alexa-gilmour",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Parkdale—High Park",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/alexa-gilmour",
+      "numeroMembre": "114",
+      "courriel": "agilmour-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "2849 Dundas St. W",
+          "ville": "Toronto",
+          "codePostal": "M6P 1Y6",
+          "telephone": "416-763-5630",
+          "courriel": "agilmour-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 204, North Wing, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3017",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "chris-glover",
+      "nom": "Chris Glover",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Spadina—Fort York",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/chris-glover",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Spadina—Fort York",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/chris-glover",
+      "numeroMembre": "7513",
+      "courriel": "cglover-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit A, 226 Bathurst St.",
+          "ville": "Toronto",
+          "codePostal": "M5T 2R9",
+          "telephone": "416-603-9664",
+          "courriel": "cglover-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 241, North Wing, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7196",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "lisa-gretzky",
+      "nom": "Lisa Gretzky",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Windsor West",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/lisa-gretzky",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Windsor-Ouest",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/lisa-gretzky",
+      "numeroMembre": "7288",
+      "courriel": "lgretzky-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "2443 Dougall Ave.",
+          "ville": "Windsor",
+          "codePostal": "N8X 1T3",
+          "telephone": "519-977-7191",
+          "courriel": "lgretzky-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 325, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0235",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "hardeep-singh-grewal",
+      "nom": "Hardeep Singh Grewal",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Brampton East",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/hardeep-singh-grewal",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Brampton-Est",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/hardeep-singh-grewal",
+      "numeroMembre": "7587",
+      "courriel": "hardeep.grewal@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 307, 1 Gateway Blvd.",
+          "ville": "Brampton",
+          "codePostal": "L6T 0G3",
+          "telephone": "905-799-3939",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "silvia-gualtieri",
+      "nom": "Silvia Gualtieri",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Mississauga East—Cooksville",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/silvia-gualtieri",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Mississauga-Est—Cooksville",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/silvia-gualtieri",
+      "numeroMembre": "115",
+      "courriel": "silvia.gualtieri@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 157, Main Legislative Building, Queen’s Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1237",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 204, 2345 Stanfield Rd.",
+          "ville": "Mississauga",
+          "codePostal": "L4Y 1R6",
+          "telephone": "905-238-1751",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "zee-hamid",
+      "nom": "Hon. Zee Hamid",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Milton",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/zee-hamid",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Milton",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/zee-hamid",
+      "numeroMembre": "105",
+      "courriel": "zee.hamid@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of the Solicitor General, George Drew Building, 25 Grosvenor St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1Y6",
+          "telephone": "416-326-5000",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "159 Main St. E",
+          "ville": "Milton",
+          "codePostal": "L9T 1N7",
+          "telephone": "905-878-1729",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "ernie-hardeman",
+      "nom": "Hon. Ernie Hardeman",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Oxford",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/ernie-hardeman",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Oxford",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/ernie-hardeman",
+      "numeroMembre": "43",
+      "courriel": "ernie.hardeman@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "12 Perry St.",
+          "ville": "Woodstock",
+          "codePostal": "N4S 3C2",
+          "telephone": "519-537-5222",
+          "courriel": "ernie.hardemanco@pc.ola.org"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Whitney Block, Room 1304, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A2",
+          "telephone": "416-325-0224",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "mike-harris",
+      "nom": "Hon. Mike Harris",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Kitchener—Conestoga",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/mike-harris",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Kitchener—Conestoga",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/mike-harris",
+      "numeroMembre": "7482",
+      "courriel": "mike.harris@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Natural Resources, Suite 1802, 438 University Avenue",
+          "ville": "Toronto",
+          "codePostal": "M5G 2K8",
+          "telephone": "416-314-2301",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 3 & 4, 63 Arthur St. S",
+          "ville": "Elmira",
+          "codePostal": "N3B 2M6",
+          "telephone": "519-669-2090",
+          "courriel": "mike.harrisco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "andrea-hazell",
+      "nom": "Andrea Hazell",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Scarborough—Guildwood",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/andrea-hazell",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Scarborough—Guildwood",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/andrea-hazell",
+      "numeroMembre": "7644",
+      "courriel": "ahazell.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 440, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1207",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit B10, 3785 Kingston Rd.",
+          "ville": "Scarborough",
+          "codePostal": "M1J 3M4",
+          "telephone": "416-281-2787",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "kevin-holland",
+      "nom": "Hon. Kevin Holland",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Thunder Bay—Atikokan",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/kevin-holland",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Thunder Bay—Atikokan",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/kevin-holland",
+      "numeroMembre": "7613",
+      "courriel": "kevin.holland@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Natural Resources, Whitney Block, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1W3",
+          "telephone": "416-314-2301",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "774 James St. N",
+          "ville": "Thunder Bay",
+          "codePostal": "P7C 5N3",
+          "telephone": "807-623-6702",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "ted-hsu",
+      "nom": "Ted Hsu",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Kingston and the Islands",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/ted-hsu",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Kingston et les Îles",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/ted-hsu",
+      "numeroMembre": "7602",
+      "courriel": "thsu.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 460, 366 King St. E",
+          "ville": "Kingston",
+          "codePostal": "K7K 6Y3",
+          "telephone": "613-547-2385",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 421, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0051",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "sylvia-jones",
+      "nom": "Hon. Sylvia Jones",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Dufferin—Caledon",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/sylvia-jones",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Dufferin—Caledon",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/sylvia-jones",
+      "numeroMembre": "7093",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Health, 5th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J3",
+          "telephone": "416-327-4300",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite A, 3rd Floor, 180 Broadway Ave.",
+          "ville": "Orangeville",
+          "codePostal": "L9W 1K3",
+          "telephone": "519-941-7751",
+          "courriel": "sylvia.jones@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "trevor-jones",
+      "nom": "Hon. Trevor Jones",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Chatham-Kent—Leamington",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/trevor-jones",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Chatham-Kent—Leamington",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/trevor-jones",
+      "numeroMembre": "7592",
+      "courriel": "trevor.jones@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Minister of Agriculture, Food and Agribusiness, 11th Floor, 77 Grenville St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1B3",
+          "telephone": "416-326-3074",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 100, 111 Heritage Rd.",
+          "ville": "Chatham",
+          "codePostal": "N7M 5W7",
+          "telephone": "519-351-0510",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2, 115 Erie St. N",
+          "ville": "Leamington",
+          "codePostal": "N8H 3A3",
+          "telephone": "519-326-3367",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "john-jordan",
+      "nom": "John Jordan",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Lanark—Frontenac—Kingston",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/john-jordan",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Lanark—Frontenac—Kingston",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/john-jordan",
+      "numeroMembre": "7604",
+      "courriel": "john.jordan@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 167, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1232",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 207, 91 Cornelia Street W.",
+          "ville": "Smiths Falls",
+          "codePostal": "K7A 5L3",
+          "telephone": "613-284-1630",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "logan-kanapathi",
+      "nom": "Logan Kanapathi",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Markham—Thornhill",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/logan-kanapathi",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Markham—Thornhill",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/logan-kanapathi",
+      "numeroMembre": "7485",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 171, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7648",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 3, 7380 McCowan Rd.",
+          "ville": "Markham",
+          "codePostal": "L3S 3H8",
+          "telephone": "905-305-1935",
+          "courriel": "logan.kanapathico@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "terence-kernaghan",
+      "nom": "Terence Kernaghan",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "London North Centre",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/terence-kernaghan",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "London-Centre-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/terence-kernaghan",
+      "numeroMembre": "7483",
+      "courriel": "tkernaghan-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 105, 400 York St.",
+          "ville": "London",
+          "codePostal": "N6B 3N2",
+          "telephone": "519-432-7339",
+          "courriel": "tkernaghan-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 320, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7568",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "michael-s-kerzner",
+      "nom": "Hon. Michael S. Kerzner",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "York Centre",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/michael-s-kerzner",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "York-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/michael-s-kerzner",
+      "numeroMembre": "7618",
+      "courriel": "michael.kerzner@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of the Solicitor General, George Drew Building, 25 Grosvenor St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1Y6",
+          "telephone": "416-326-5000",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "830 Sheppard Ave. W.",
+          "ville": "Toronto",
+          "codePostal": "M3H 2T1",
+          "telephone": "416-630-0080",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "andrea-khanjin",
+      "nom": "Hon. Andrea Khanjin",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Barrie—Innisfil",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/andrea-khanjin",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Barrie—Innisfil",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/andrea-khanjin",
+      "numeroMembre": "7448",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Red Tape Reduction, 7th Floor, 56 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M5S 2S3",
+          "telephone": "416-212-0088",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 237 Mapleview Dr. E",
+          "ville": "Barrie",
+          "codePostal": "L4N 0W5",
+          "telephone": "705-722-0575",
+          "courriel": "andrea.khanjin@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "natalia-kusendova-bashta",
+      "nom": "Hon. Natalia Kusendova-Bashta",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Mississauga Centre",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/natalia-kusendova-bashta",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Mississauga-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/natalia-kusendova-bashta",
+      "numeroMembre": "7489",
+      "courriel": "natalia.kusendova@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Long-Term Care, 6th Floor, 400 University Ave.",
+          "ville": "Toronto",
+          "codePostal": "M5G 1S5",
+          "telephone": "416-325-6200",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 701, 50 Burnhamthorpe Rd. W",
+          "ville": "Mississauga",
+          "codePostal": "L5B 3C3",
+          "telephone": "905-890-1901",
+          "courriel": "natalia.kusendovaco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "susan-lahey",
+      "nom": "Susan Lahey",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "York—Simcoe",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/susan-lahey",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "York—Simcoe",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/susan-lahey",
+      "numeroMembre": "127",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 9, 45 Grist Mill Rd.",
+          "ville": "Holland Landing",
+          "codePostal": "L9N 1M7",
+          "telephone": "905-895-1555",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "anthony-leardi",
+      "nom": "Anthony Leardi",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Essex",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/anthony-leardi",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Essex",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/anthony-leardi",
+      "numeroMembre": "7597",
+      "courriel": "anthony.leardi@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 213, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "310 Thomas Rd.",
+          "ville": "Amherstburg",
+          "codePostal": "N9V 2Y9",
+          "telephone": "519-736-1550",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stephen-lecce",
+      "nom": "Hon. Stephen Lecce",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "King—Vaughan",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/stephen-lecce",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "King—Vaughan",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stephen-lecce",
+      "numeroMembre": "7479",
+      "courriel": "stephen.lecce@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Energy and Mines, 10th Floor, 77 Grenville St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2C1",
+          "telephone": "416-327-6758",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 2220 King Rd.",
+          "ville": "King City",
+          "codePostal": "L7B 1L3",
+          "telephone": "647-560-9700",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "robin-lennox",
+      "nom": "Robin Lennox",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Hamilton Centre",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/robin-lennox",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Hamilton-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/robin-lennox",
+      "numeroMembre": "116",
+      "courriel": "rlennox-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 3, 630 Main St. E",
+          "ville": "Hamilton",
+          "codePostal": "L8M 1J7",
+          "telephone": "905-544-9644",
+          "courriel": "rlennox-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 202, North Wing, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1796",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "sol-mamakwa",
+      "nom": "Sol Mamakwa",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Kiiwetinoong",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/sol-mamakwa",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Kiiwetinoong",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/sol-mamakwa",
+      "numeroMembre": "7477",
+      "courriel": "smamakwa-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 104, 73 King St., P.O. Box 176",
+          "ville": "Sioux Lookout",
+          "codePostal": "P8T 1A1",
+          "telephone": "807-737-2210",
+          "courriel": "smamakwa-co@ndp.on.ca"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2, 14 Discovery Rd.",
+          "ville": "Red Lake",
+          "codePostal": "P0V 2M0",
+          "telephone": "807-727-1133",
+          "courriel": "smamakwa-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 361, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7692",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "todd-j-mccarthy",
+      "nom": "Hon. Todd J. McCarthy",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Durham",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/todd-j-mccarthy",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Durham",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/todd-j-mccarthy",
+      "numeroMembre": "7595",
+      "courriel": "todd.mccarthy@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Environment, Conservation and Parks, 5th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J3",
+          "telephone": "416-314-6790",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "23 King St. W",
+          "ville": "Bowmanville",
+          "codePostal": "L1C 1R2",
+          "telephone": "905-697-1501",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "karen-mccrimmon",
+      "nom": "Karen McCrimmon",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Kanata—Carleton",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/karen-mccrimmon",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Kanata—Carleton",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/karen-mccrimmon",
+      "numeroMembre": "7645",
+      "courriel": "kmccrimmon-co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 428, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1212",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 109, 555 Legget Dr.",
+          "ville": "Kanata",
+          "codePostal": "K2K 2X3",
+          "telephone": "613-599-3000",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "graham-mcgregor",
+      "nom": "Hon. Graham McGregor",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Brampton North",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/graham-mcgregor",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Brampton-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/graham-mcgregor",
+      "numeroMembre": "7588",
+      "courriel": "graham.mcgregor@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Citizenship and Multiculturalism, 14th Floor, 56 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 2E7",
+          "telephone": "416-212-0039",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 7, 10215 Kennedy Rd. N",
+          "ville": "Brampton",
+          "codePostal": "L6Z 0C5",
+          "telephone": "289-298-1049",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "catherine-mckenney",
+      "nom": "Catherine McKenney",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Ottawa Centre",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/catherine-mckenney",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Ottawa-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/catherine-mckenney",
+      "numeroMembre": "117",
+      "courriel": "cmckenney-co@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 353 Waverley St. W",
+          "ville": "Ottawa",
+          "codePostal": "K2P 0W4",
+          "telephone": "613-722-6414",
+          "courriel": "cmckenney-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 363, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0071",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "mary-margaret-mcmahon",
+      "nom": "Mary-Margaret McMahon",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Beaches—East York",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/mary-margaret-mcmahon",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Beaches—East York",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/mary-margaret-mcmahon",
+      "numeroMembre": "7585",
+      "courriel": "mmcmahon.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 433, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0090",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "1896 Danforth Ave.",
+          "ville": "Toronto",
+          "codePostal": "M4C 1J4",
+          "telephone": "416-690-1032",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "sam-oosterhoff",
+      "nom": "Hon. Sam Oosterhoff",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Niagara West",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/sam-oosterhoff",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Niagara-Ouest",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/sam-oosterhoff",
+      "numeroMembre": "7405",
+      "courriel": "sam.oosterhoff@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Energy and Mines, 10th Floor, 77 Grenville St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2C1",
+          "telephone": "416-327-6758",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit M1, 4961 King St. E",
+          "ville": "Beamsville",
+          "codePostal": "L0R 1B0",
+          "telephone": "905-563-1755",
+          "courriel": "sam.oosterhoffco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "billy-pang",
+      "nom": "Billy Pang",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Markham—Unionville",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/billy-pang",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Markham—Unionville",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/billy-pang",
+      "numeroMembre": "7486",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 186, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3043",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 602, 3601 Hwy. 7 E",
+          "ville": "Markham",
+          "codePostal": "L3R 0M3",
+          "telephone": "905-474-3288",
+          "courriel": "billy.pangco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "michael-parsa",
+      "nom": "Hon. Michael Parsa",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Aurora—Oak Ridges—Richmond Hill",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/michael-parsa",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Aurora—Oak Ridges—Richmond Hill",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/michael-parsa",
+      "numeroMembre": "7447",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Children, Community and Social Services, 7th Floor, 438 University Ave.",
+          "ville": "Toronto",
+          "codePostal": "M5G 2K8",
+          "telephone": "416-325-5225",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 201, 13085 Yonge St.",
+          "ville": "Richmond Hill",
+          "codePostal": "L4E 3S8",
+          "telephone": "905-773-6250",
+          "courriel": "michael.parsaco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "chandra-pasma",
+      "nom": "Chandra Pasma",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Ottawa West—Nepean",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/chandra-pasma",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Ottawa-Ouest—Nepean",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/chandra-pasma",
+      "numeroMembre": "7606",
+      "courriel": "cpasma-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 206, North Wing, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3001",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 500, 1580 Merivale Rd.",
+          "ville": "Nepean",
+          "codePostal": "K2G 4B5",
+          "telephone": "613-721-8075",
+          "courriel": "cpasma-co@ndp.on.ca"
+        }
+      ]
+    },
+    {
+      "identifiant": "david-piccini",
+      "nom": "Hon. David Piccini",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Northumberland—Peterborough South",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/david-piccini",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Northumberland—Peterborough-Sud",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/david-piccini",
+      "numeroMembre": "7524",
+      "courriel": "david.piccini@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Labour, Immigration, Training and Skills Development, 14th Floor, 400 University Ave",
+          "ville": "Toronto",
+          "codePostal": "M7A 1T7",
+          "telephone": "416-326-7600",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "117 Peter St.",
+          "ville": "Port Hope",
+          "codePostal": "L1A 1C5",
+          "telephone": "905-372-4000",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "natalie-pierre",
+      "nom": "Natalie Pierre",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Burlington",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/natalie-pierre",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Burlington",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/natalie-pierre",
+      "numeroMembre": "7590",
+      "courriel": "natalie.pierre@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 115, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1229",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 306, 3027 Harvester Rd.",
+          "ville": "Burlington",
+          "codePostal": "L7N 3G7",
+          "telephone": "905-639-7924",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "steve-pinsonneault",
+      "nom": "Steve Pinsonneault",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Lambton—Kent—Middlesex",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/steve-pinsonneault",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Lambton—Kent—Middlesex",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/steve-pinsonneault",
+      "numeroMembre": "106",
+      "courriel": "steve.pinsonneault@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 210, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3015",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 13 & 14, 60 McNaughton Ave.",
+          "ville": "Wallaceburg",
+          "codePostal": "N8A 1R9",
+          "telephone": "519-627-1015",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "81 Front St. W",
+          "ville": "Strathroy",
+          "codePostal": "N7G 1X6",
+          "telephone": "519-245-8696",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "george-pirie",
+      "nom": "Hon. George Pirie",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Timmins",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/george-pirie",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Timmins",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/george-pirie",
+      "numeroMembre": "7615",
+      "courriel": "george.pirie@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Northern Economic Development and Growth, 5th Floor, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1W3",
+          "telephone": "416-326-4740",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit G, 681 Algonquin Blvd. East",
+          "ville": "Timmins",
+          "codePostal": "P4N 8S6",
+          "telephone": "705-268-6400",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "nolan-quinn",
+      "nom": "Hon. Nolan Quinn",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Stormont—Dundas—South Glengarry",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/nolan-quinn",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Stormont—Dundas—South Glengarry",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/nolan-quinn",
+      "numeroMembre": "7611",
+      "courriel": "nolan.quinn@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Colleges, Universities, Research Excellence and Security, 5th Floor, 438 University Ave.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1N3",
+          "telephone": "416-326-1600",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Time Square, Suite 100, 120 Second St. W",
+          "ville": "Cornwall",
+          "codePostal": "K6J 1G5",
+          "telephone": "613-933-6513",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "joseph-racinsky",
+      "nom": "Joseph Racinsky",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Wellington—Halton Hills",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/joseph-racinsky",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Wellington—Halton Hills",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/joseph-racinsky",
+      "numeroMembre": "118",
+      "courriel": "joseph.racinsky@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "2nd Floor, 181 St. Andrew St. E",
+          "ville": "Fergus",
+          "codePostal": "N1M 1P9",
+          "telephone": "519-787-5247",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "matthew-rae",
+      "nom": "Hon. Matthew Rae",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Perth—Wellington",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/matthew-rae",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Perth—Wellington",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/matthew-rae",
+      "numeroMembre": "7608",
+      "courriel": "matthew.rae@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 249, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2, 55 Lorne Ave. E",
+          "ville": "Stratford",
+          "codePostal": "N5A 6S4",
+          "telephone": "519-272-0660",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "tom-rakocevic",
+      "nom": "Tom Rakocevic",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Humber River—Black Creek",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/tom-rakocevic",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Humber River—Black Creek",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/tom-rakocevic",
+      "numeroMembre": "7474",
+      "courriel": "trakocevic-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 38, 2300 Finch Ave. W",
+          "ville": "North York",
+          "codePostal": "M9M 2Y3",
+          "telephone": "416-743-7272",
+          "courriel": "trakocevic-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 207, North Wing, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7585",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "greg-rickford",
+      "nom": "Hon. Greg Rickford",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Kenora—Rainy River",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/greg-rickford",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Kenora—Rainy River",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/greg-rickford",
+      "numeroMembre": "7476",
+      "courriel": "greg.rickford@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Indigenous Affairs and First Nations Economic Reconciliation, Suite 400, 160 Bloor St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2E6",
+          "telephone": "416-326-4740",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2, 439 Government St.",
+          "ville": "Dryden",
+          "codePostal": "P8N 2P4",
+          "telephone": "807-223-6456",
+          "courriel": "greg.rickfordco@pc.ola.org"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "5907 Hwy. 11/71, P.O. Box 326",
+          "ville": "Emo",
+          "codePostal": "P0W 1E0",
+          "telephone": "807-274-7619",
+          "courriel": "greg.rickfordco@pc.ola.org"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite B, 610 Lakeview Dr.",
+          "ville": "Kenora",
+          "codePostal": "P9N 3P7",
+          "telephone": "807-467-2415",
+          "courriel": "greg.rickfordco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "brian-riddell",
+      "nom": "Brian Riddell",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Cambridge",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/brian-riddell",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Cambridge",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/brian-riddell",
+      "numeroMembre": "7591",
+      "courriel": "brian.riddell@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 159, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1938",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Cambridge Place, Suite 601, 73 Water St. N",
+          "ville": "Cambridge",
+          "codePostal": "N1R 7L6",
+          "telephone": "519-650-2770",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "bill-rosenberg",
+      "nom": "Bill Rosenberg",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Algoma—Manitoulin",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/bill-rosenberg",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Algoma—Manitoulin",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/bill-rosenberg",
+      "numeroMembre": "119",
+      "courriel": "bill.rosenberg@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "169 Main Street, P.O. Box 429",
+          "ville": "Thessalon",
+          "codePostal": "P0R 1L0",
+          "telephone": "705-842-6556",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "sheref-sabawy",
+      "nom": "Sheref Sabawy",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Mississauga—Erin Mills",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/sheref-sabawy",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Mississauga—Erin Mills",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/sheref-sabawy",
+      "numeroMembre": "7491",
+      "courriel": "sheref.sabawy@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 261, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1185",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 40, 4181 Sladeview Cres",
+          "ville": "Mississauga",
+          "codePostal": "L5L 5R2",
+          "telephone": "905-820-8851",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "amarjot-sandhu",
+      "nom": "Amarjot Sandhu",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Brampton West",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/amarjot-sandhu",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Brampton-Ouest",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/amarjot-sandhu",
+      "numeroMembre": "7456",
+      "courriel": "amarjot.sandhu@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 160, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3028",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 309, 10 Gillingham Dr.",
+          "ville": "Brampton",
+          "codePostal": "L6X 0G6",
+          "telephone": "905-595-1532",
+          "courriel": "amarjot.sandhuco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "prabmeet-singh-sarkaria",
+      "nom": "Hon. Prabmeet Singh Sarkaria",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Brampton South",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/prabmeet-singh-sarkaria",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Brampton-Sud",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/prabmeet-singh-sarkaria",
+      "numeroMembre": "7455",
+      "courriel": "prabmeet.sarkaria@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Transportation, 5th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1Z8",
+          "telephone": "416-327-9200",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 402, 7700 Hurontario St.",
+          "ville": "Brampton",
+          "codePostal": "L6Y 4M3",
+          "telephone": "905-796-8669",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stephane-sarrazin",
+      "nom": "Stéphane Sarrazin",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Glengarry—Prescott—Russell",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/stephane-sarrazin",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Glengarry—Prescott—Russell",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stephane-sarrazin",
+      "numeroMembre": "7598",
+      "courriel": "stephane.sarrazin@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 153, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1079",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "290A McGill St.",
+          "ville": "Hawkesbury",
+          "codePostal": "K6A 1P8",
+          "telephone": "613-632-2706",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "peggy-sattler",
+      "nom": "Peggy Sattler",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "London West",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/peggy-sattler",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "London-Ouest",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/peggy-sattler",
+      "numeroMembre": "7225",
+      "courriel": "psattler-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 101, 240 Commissioners Rd. W",
+          "ville": "London",
+          "codePostal": "N6J 1Y1",
+          "telephone": "519-657-3120",
+          "courriel": "psattler-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 368, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-6908",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "brian-saunderson",
+      "nom": "Hon. Brian Saunderson",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Simcoe—Grey",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/brian-saunderson",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Simcoe—Grey",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/brian-saunderson",
+      "numeroMembre": "7610",
+      "courriel": "brian.saunderson@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "15th Floor, 56 Wellesley St. West",
+          "ville": "Toronto",
+          "codePostal": "M7A 2E7",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 28, 180 Parsons Rd.",
+          "ville": "Alliston",
+          "codePostal": "L9R 1E8",
+          "telephone": "705-435-4087",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "7317 Hwy. 26 E",
+          "ville": "Stayner",
+          "codePostal": "L0M 1S0",
+          "telephone": "705-428-2134",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "mike-schreiner",
+      "nom": "Mike Schreiner",
+      "parti": "Green Party of Ontario",
+      "circonscription": "Guelph",
+      "couleurParti": "#2F772F",
+      "url": "https://www.ola.org/en/members/all/mike-schreiner",
+      "partiFr": "Parti vert de l'Ontario",
+      "circonscriptionFr": "Guelph",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/mike-schreiner",
+      "numeroMembre": "7449",
+      "courriel": "mschreiner@ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 102, 173 Woolwich St.",
+          "ville": "Guelph",
+          "codePostal": "N1H 3V4",
+          "telephone": "519-836-4190",
+          "courriel": "mschreiner-co@ola.org"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 467, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-4664",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "chris-scott",
+      "nom": "Chris Scott",
+      "parti": "Independent",
+      "circonscription": "Sault Ste. Marie",
+      "couleurParti": "#C7C7C7",
+      "url": "https://www.ola.org/en/members/all/chris-scott",
+      "partiFr": "Indépendant",
+      "circonscriptionFr": "Sault Ste. Marie",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/chris-scott",
+      "numeroMembre": "120",
+      "courriel": "cscott-co@ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room N404, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0109",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "153 Great Northern Rd.",
+          "ville": "Sault Ste Marie",
+          "codePostal": "P6B 4Y9",
+          "telephone": "705-949-6959",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "laurie-scott",
+      "nom": "Hon. Laurie Scott",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Haliburton—Kawartha Lakes—Brock",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/laurie-scott",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Haliburton—Kawartha Lakes—Brock",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/laurie-scott",
+      "numeroMembre": "2116",
+      "courriel": "laurie.scott@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "14 Lindsay St. N",
+          "ville": "Lindsay",
+          "codePostal": "K9V 1T4",
+          "telephone": "705-324-6654",
+          "courriel": "laurie.scottco@pc.ola.org"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 114, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0277",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "fatima-shaban",
+      "nom": "Fatima Shaban",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Scarborough Southwest",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/fatima-shaban",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Scarborough-Sud-Ouest",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/fatima-shaban",
+      "numeroMembre": "126",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 5, 3110 Kingston Rd.",
+          "ville": "Scarborough",
+          "codePostal": "M1M 1P2",
+          "telephone": "416-261-9525",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "adil-shamji",
+      "nom": "Adil Shamji",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Don Valley East",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/adil-shamji",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Don Valley-Est",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/adil-shamji",
+      "numeroMembre": "7593",
+      "courriel": "ashamji.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 441, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0105",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite L02, 1200 Lawrence Ave. E",
+          "ville": "Toronto",
+          "codePostal": "M3A 1E1",
+          "telephone": "416-494-6856",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "sandy-shaw",
+      "nom": "Sandy Shaw",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Hamilton West—Ancaster—Dundas",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/sandy-shaw",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Hamilton-Ouest—Ancaster—Dundas",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/sandy-shaw",
+      "numeroMembre": "7472",
+      "courriel": "sshaw-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "177 King St. W",
+          "ville": "Dundas",
+          "codePostal": "L9H 1V3",
+          "telephone": "905-628-2755",
+          "courriel": "sshaw-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 359, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-6890",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "donna-skelly",
+      "nom": "Hon. Donna Skelly",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Flamborough—Glanbrook",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/donna-skelly",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Flamborough—Glanbrook",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/donna-skelly",
+      "numeroMembre": "7470",
+      "courriel": "donna.skelly@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 180, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-7435",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 104, 2000 Garth St.",
+          "ville": "Hamilton",
+          "codePostal": "L9B 0C1",
+          "telephone": "905-679-3770",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "dave-smith",
+      "nom": "Dave Smith",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Peterborough—Kawartha",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/dave-smith",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Peterborough—Kawartha",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/dave-smith",
+      "numeroMembre": "7525",
+      "courriel": "dave.smith@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit E, 864 Chemong Rd.",
+          "ville": "Peterborough",
+          "codePostal": "K9H 5Z8",
+          "telephone": "705-742-3777",
+          "courriel": "dave.smithco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "david-smith",
+      "nom": "David Smith",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Scarborough Centre",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/david-smith",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Scarborough-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/david-smith",
+      "numeroMembre": "7609",
+      "courriel": "david.smith1@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 170, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1180",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "2063 Lawrence Ave. E",
+          "ville": "Scarborough",
+          "codePostal": "M1R 2Z4",
+          "telephone": "416-615-2183",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "graydon-smith",
+      "nom": "Hon. Graydon Smith",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Parry Sound—Muskoka",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/graydon-smith",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Parry Sound—Muskoka",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/graydon-smith",
+      "numeroMembre": "7607",
+      "courriel": "graydon.smith@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Municipal Affairs and Housing, 17th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J3",
+          "telephone": "416-585-6500",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 1, 26 James St.",
+          "ville": "Parry Sound",
+          "codePostal": "P2A 1T5",
+          "telephone": "705-746-4266",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 2.04, 230 Manitoba St.",
+          "ville": "Bracebridge",
+          "codePostal": "P1L 2E1",
+          "telephone": "705-645-8538",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "laura-smith",
+      "nom": "Laura Smith",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Thornhill",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/laura-smith",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Thornhill",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/laura-smith",
+      "numeroMembre": "7612",
+      "courriel": "laura.smith@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 165, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1243",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Centre Street Square, Unit 4, 1136 Centre St.",
+          "ville": "Thornhill",
+          "codePostal": "L4J 3M8",
+          "telephone": "905-731-1178",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "stephanie-smyth",
+      "nom": "Stephanie Smyth",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Toronto—St. Paul's",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/stephanie-smyth",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Toronto—St. Paul's",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/stephanie-smyth",
+      "numeroMembre": "121",
+      "courriel": "ssmyth.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 444, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3020",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "803 St. Clair Ave. W",
+          "ville": "Toronto",
+          "codePostal": "M6C 1B9",
+          "telephone": "416-656-0943",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jennifer-jennie-stevens",
+      "nom": "Jennifer (Jennie) Stevens",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "St. Catharines",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/jennifer-jennie-stevens",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "St. Catharines",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jennifer-jennie-stevens",
+      "numeroMembre": "7514",
+      "courriel": "jstevens-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit B, 209 Carlton St.",
+          "ville": "St. Catharines",
+          "codePostal": "L2R 1S1",
+          "telephone": "905-935-0018",
+          "courriel": "jstevens-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 386, Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7127",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "marit-stiles",
+      "nom": "Marit Stiles",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Davenport",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/marit-stiles",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Davenport",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/marit-stiles",
+      "numeroMembre": "7460",
+      "courriel": "mstiles-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 381, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7202",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "1199 Bloor St. W",
+          "ville": "Toronto",
+          "codePostal": "M6H 1N4",
+          "telephone": "416-535-3158",
+          "courriel": "mstiles-co@ndp.on.ca"
+        }
+      ]
+    },
+    {
+      "identifiant": "kinga-surma",
+      "nom": "Hon. Kinga Surma",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Etobicoke Centre",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/kinga-surma",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Etobicoke-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/kinga-surma",
+      "numeroMembre": "7467",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Infrastructure, Room 5E200, 5th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J3",
+          "telephone": "416-327-4412",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Lloydmanor Shopping Centre, Unit 102, 201 Lloyd Manor Rd.",
+          "ville": "Etobicoke",
+          "codePostal": "M9B 6H6",
+          "telephone": "416-234-2800",
+          "courriel": "kinga.surmaco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "peter-tabuns",
+      "nom": "Peter Tabuns",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Toronto—Danforth",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/peter-tabuns",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Toronto—Danforth",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/peter-tabuns",
+      "numeroMembre": "7041",
+      "courriel": "tabunsp-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "923 Danforth Ave.",
+          "ville": "Toronto",
+          "codePostal": "M4J 1L8",
+          "telephone": "416-461-0223",
+          "courriel": "tabunsp-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 357, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3250",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "nina-tangri",
+      "nom": "Hon. Nina Tangri",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Mississauga—Streetsville",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/nina-tangri",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Mississauga—Streetsville",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/nina-tangri",
+      "numeroMembre": "7494",
+      "courriel": "nina.tangri@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Economic Development, Job Creation and Trade, 18th Floor, 56 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M5S 2S3",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "330 Queen St. S",
+          "ville": "Mississauga",
+          "codePostal": "L5M 1M2",
+          "telephone": "905-569-1643",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "vijay-thanigasalam",
+      "nom": "Hon. Vijay Thanigasalam",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Scarborough—Rouge Park",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/vijay-thanigasalam",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Scarborough—Rouge Park",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/vijay-thanigasalam",
+      "numeroMembre": "7511",
+      "courriel": "vijay.thanigasalam@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Health, Frost Building South, 7 Queen's Park Cres.",
+          "ville": "Toronto",
+          "codePostal": "M7A 1Y7",
+          "telephone": "416-327-4300",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 105, 8130 Sheppard Ave. E",
+          "ville": "Toronto",
+          "codePostal": "M1B 3W3",
+          "telephone": "416-283-8448",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "lisa-m-thompson",
+      "nom": "Hon. Lisa M. Thompson",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Huron—Bruce",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/lisa-m-thompson",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Huron—Bruce",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/lisa-m-thompson",
+      "numeroMembre": "7179",
+      "courriel": "lisa.thompson@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Rural Affairs, 28th Floor, 777 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2J4",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "408 Queen St., P.O. Box 426",
+          "ville": "Blyth",
+          "codePostal": "N0M 1H0",
+          "telephone": "519-523-4251",
+          "courriel": "lisa.thompsonco@pc.ola.org"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 3, 807 Queen St., P.O. Box 834",
+          "ville": "Kincardine",
+          "codePostal": "N2Z 2Y2",
+          "telephone": "519-524-4994",
+          "courriel": "lisa.thompsonco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "michael-a-tibollo",
+      "nom": "Hon. Michael A. Tibollo",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Vaughan—Woodbridge",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/michael-a-tibollo",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Vaughan—Woodbridge",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/michael-a-tibollo",
+      "numeroMembre": "7519",
+      "courriel": null,
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of the Attorney General, McMurtry-Scott Building, 11th Floor, 720 Bay St.",
+          "ville": "Toronto",
+          "codePostal": "M7A 2S9",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 3, 5100 Rutherford Rd.",
+          "ville": "Woodbridge",
+          "codePostal": "L4H 2J2",
+          "telephone": "905-893-4428",
+          "courriel": "michael.tibolloco@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "effie-j-triantafilopoulos",
+      "nom": "Effie J. Triantafilopoulos",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Oakville North—Burlington",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/effie-j-triantafilopoulos",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Oakville-Nord—Burlington",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/effie-j-triantafilopoulos",
+      "numeroMembre": "7499",
+      "courriel": "effie.triantafilopoulos@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Whitney Block, Room 1308, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A2",
+          "telephone": "416-325-1069",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 570, 2525 Old Bronte Rd.",
+          "ville": "Oakville",
+          "codePostal": "L6M 4J2",
+          "telephone": "905-825-2455",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jonathan-tsao",
+      "nom": "Jonathan Tsao",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Don Valley North",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/jonathan-tsao",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Don Valley-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jonathan-tsao",
+      "numeroMembre": "122",
+      "courriel": "jtsao.mpp.co@liberal.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 429, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-3033",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 103, 2175 Sheppard Ave. E",
+          "ville": "North York",
+          "codePostal": "M2J 1W8",
+          "telephone": "416-494-8778",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "john-vanthof",
+      "nom": "John Vanthof",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Timiskaming—Cochrane",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/john-vanthof",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Timiskaming—Cochrane",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/john-vanthof",
+      "numeroMembre": "7192",
+      "courriel": "jvanthof-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 107, 145 Government Rd. W",
+          "ville": "Kirkland Lake",
+          "codePostal": "P2N 2E8",
+          "telephone": "705-567-4650",
+          "courriel": "jvanthof-co@ndp.on.ca"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Pinewoods Centre, Unit 5, 247 Whitewood Ave., P.O. Box 398",
+          "ville": "New Liskeard",
+          "codePostal": "P0J 1P0",
+          "telephone": "705-647-5995",
+          "courriel": "jvanthof-co@ndp.on.ca"
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "2nd Floor, 193 King St.",
+          "ville": "Sturgeon Falls",
+          "codePostal": "P2B 1R8",
+          "telephone": "705-753-0200",
+          "courriel": "jvanthof-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 348, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-2000",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "lise-vaugeois",
+      "nom": "Lise Vaugeois",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Thunder Bay—Superior North",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/lise-vaugeois",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Thunder Bay—Supérieur-Nord",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/lise-vaugeois",
+      "numeroMembre": "7614",
+      "courriel": "lvaugeois-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "272 Park Ave.",
+          "ville": "Thunder Bay",
+          "codePostal": "P7B 1C5",
+          "telephone": "807-345-3647",
+          "courriel": "lvaugeois-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 203, North Wing, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0069",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "paul-vickers",
+      "nom": "Paul Vickers",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Bruce—Grey—Owen Sound",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/paul-vickers",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Bruce—Grey—Owen Sound",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/paul-vickers",
+      "numeroMembre": "123",
+      "courriel": "paul.vickers@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 156, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1216",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 105B, 345 8th Street E",
+          "ville": "Owen Sound",
+          "codePostal": "N4K 1L3",
+          "telephone": "519-371-2421",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "daisy-wai",
+      "nom": "Daisy Wai",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Richmond Hill",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/daisy-wai",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Richmond Hill",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/daisy-wai",
+      "numeroMembre": "7506",
+      "courriel": "daisy.wai@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 184, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": null,
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 409, 9555 Yonge St.",
+          "ville": "Richmond Hill",
+          "codePostal": "L4C 9M5",
+          "telephone": "905-884-8080",
+          "courriel": "daisy.waico@pc.ola.org"
+        }
+      ]
+    },
+    {
+      "identifiant": "tyler-watt",
+      "nom": "Tyler Watt",
+      "parti": "Ontario Liberal Party",
+      "circonscription": "Nepean",
+      "couleurParti": "#DA291C",
+      "url": "https://www.ola.org/en/members/all/tyler-watt",
+      "partiFr": "Parti libéral de l'Ontario",
+      "circonscriptionFr": "Nepean",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/tyler-watt",
+      "numeroMembre": "124",
+      "courriel": "tylerwatt.mpp.co@ola.org",
+      "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 447, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1777",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 222/3, 250B Greenbank Rd.",
+          "ville": "Nepean",
+          "codePostal": "K2H 8X4",
+          "telephone": "613-518-9288",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "jamie-west",
+      "nom": "Jamie West",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Sudbury",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/jamie-west",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Sudbury",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/jamie-west",
+      "numeroMembre": "7446",
+      "courriel": "jwest-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Unit 4B, 555 Barrydowne Rd.",
+          "ville": "Sudbury",
+          "codePostal": "P3A 3T4",
+          "telephone": "705-675-1914",
+          "courriel": "jwest-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 347, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-326-7144",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "charmaine-a-williams",
+      "nom": "Hon. Charmaine A. Williams",
+      "parti": "Progressive Conservative Party of Ontario",
+      "circonscription": "Brampton Centre",
+      "couleurParti": "#006AD1",
+      "url": "https://www.ola.org/en/members/all/charmaine-a-williams",
+      "partiFr": "Parti progressiste-conservateur de l'Ontario",
+      "circonscriptionFr": "Brampton-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/charmaine-a-williams",
+      "numeroMembre": "7586",
+      "courriel": "charmaine.williams@pc.ola.org",
+      "bureaux": [
+        {
+          "type": "Ministry office",
+          "adresse": "Ministry of Children, Community and Social Services, 7th Floor, 438 University Ave.",
+          "ville": "Toronto",
+          "codePostal": "M5G 2K8",
+          "telephone": "416-325-5225",
+          "courriel": null
+        },
+        {
+          "type": "Constituency office",
+          "adresse": "Lakeridge Plaza, Unit 12, 456 Vodden St. E",
+          "ville": "Brampton",
+          "codePostal": "L6S 5Y7",
+          "telephone": "905-454-1233",
+          "courriel": null
+        }
+      ]
+    },
+    {
+      "identifiant": "kristyn-wong-tam",
+      "nom": "Kristyn Wong-Tam",
+      "parti": "New Democratic Party of Ontario",
+      "circonscription": "Toronto Centre",
+      "couleurParti": "#F89C18",
+      "url": "https://www.ola.org/en/members/all/kristyn-wong-tam",
+      "partiFr": "Nouveau Parti démocratique de l'Ontario",
+      "circonscriptionFr": "Toronto-Centre",
+      "urlFr": "https://www.ola.org/fr/deputes/tous/kristyn-wong-tam",
+      "numeroMembre": "7616",
+      "courriel": "kwong-tam-qp@ndp.on.ca",
+      "bureaux": [
+        {
+          "type": "Constituency office",
+          "adresse": "Suite 401, 120 Carlton St.",
+          "ville": "Toronto",
+          "codePostal": "M5A 4K2",
+          "telephone": "416-972-7683",
+          "courriel": "kwong-tam-co@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 327, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-0031",
+          "courriel": null
+        }
+      ]
+    }
+  ]
+}

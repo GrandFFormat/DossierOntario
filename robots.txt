@@ -1,0 +1,5 @@
+# DossierOntario — site citoyen non officiel
+User-agent: *
+Allow: /
+
+Sitemap: https://dossierontario.ca/sitemap.xml

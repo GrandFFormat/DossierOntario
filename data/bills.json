@@ -1,0 +1,3759 @@
+{
+  "source": {
+    "en": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1",
+    "fr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1"
+  },
+  "legislature": 44,
+  "session": 1,
+  "lus": "2026-09-24T02:45:42.341Z",
+  "nombre": {
+    "total": 191,
+    "publics": 139,
+    "prives": 52
+  },
+  "projets": [
+    {
+      "numero": "1",
+      "numeroTri": 1,
+      "type": "public",
+      "titreEn": "An Act to perpetuate an ancient parliamentary right",
+      "titreFr": "Loi visant à perpétuer un ancien droit parlementaire",
+      "parrains": [
+        {
+          "nom": "Ford, Hon. Doug",
+          "role": "Premier"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-1",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-1"
+    },
+    {
+      "numero": "2",
+      "numeroTri": 2,
+      "type": "public",
+      "titreEn": "Protect Ontario Through Free Trade Within Canada Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l’Ontario en favorisant le libre-échange au Canada",
+      "parrains": [
+        {
+          "nom": "Fedeli, Hon. Victor",
+          "role": "Minister of Economic Development, Job Creation and Trade"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-2",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-2"
+    },
+    {
+      "numero": "3",
+      "numeroTri": 3,
+      "type": "public",
+      "titreEn": "Robbie’s Legacy Act (Honouring Beloved Organ and Tissue Donors), 2026",
+      "titreFr": "Loi de 2026 sur le legs de Robbie (hommage à nos chers donneurs d’organes et de tissus)",
+      "parrains": [
+        {
+          "nom": "Hsu, Ted",
+          "role": null
+        },
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        },
+        {
+          "nom": "Fraser, John",
+          "role": null
+        },
+        {
+          "nom": "Shamji, Adil",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-3",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-3"
+    },
+    {
+      "numero": "4",
+      "numeroTri": 4,
+      "type": "public",
+      "titreEn": "Peter Kormos Memorial Act (Saving Organs to Save Lives), 2025",
+      "titreFr": "Loi de 2025 commémorant Peter Kormos (Sauver des organes pour sauver des vies)",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-4",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-4"
+    },
+    {
+      "numero": "5",
+      "numeroTri": 5,
+      "type": "public",
+      "titreEn": "Protect Ontario by Unleashing our Economy Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l’Ontario en libérant son économie",
+      "parrains": [
+        {
+          "nom": "Lecce, Hon. Stephen",
+          "role": "Minister of Energy and Mines"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-5",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-5"
+    },
+    {
+      "numero": "6",
+      "numeroTri": 6,
+      "type": "public",
+      "titreEn": "Safer Municipalities Act, 2025",
+      "titreFr": "Loi de 2025 pour des municipalités plus sûres",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-6",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-6"
+    },
+    {
+      "numero": "7",
+      "numeroTri": 7,
+      "type": "public",
+      "titreEn": "Health Care is Not for Sale Act (Addressing Unfair Fees Charged to Patients), 2025",
+      "titreFr": "Loi de 2025 sur les soins de santé qui ne sont pas à vendre (lutte contre la facturation d'honoraires injustes aux patients)",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-7",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-7"
+    },
+    {
+      "numero": "8",
+      "numeroTri": 8,
+      "type": "public",
+      "titreEn": "WSIB Coverage for Workers in Residential Care Facilities and Group Homes Act, 2025",
+      "titreFr": "Loi de 2025 sur la protection à accorder aux travailleurs dans les établissements de soins en résidence et les foyers de groupe par la Commission de la sécurité professionnelle et de l'assurance contre les accidents du travail",
+      "parrains": [
+        {
+          "nom": "Fraser, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-8",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-8"
+    },
+    {
+      "numero": "9",
+      "numeroTri": 9,
+      "type": "public",
+      "titreEn": "Municipal Accountability Act, 2026",
+      "titreFr": "Loi de 2026 sur la responsabilité au niveau municipal",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-9",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-9"
+    },
+    {
+      "numero": "10",
+      "numeroTri": 10,
+      "type": "public",
+      "titreEn": "Protect Ontario Through Safer Streets and Stronger Communities Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l'Ontario en rendant les rues plus sûres et les collectivités plus fortes",
+      "parrains": [
+        {
+          "nom": "Downey, Hon. Doug",
+          "role": "Attorney General"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-10",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-10"
+    },
+    {
+      "numero": "11",
+      "numeroTri": 11,
+      "type": "public",
+      "titreEn": "More Convenient Care Act, 2025",
+      "titreFr": "Loi de 2025 pour plus de soins commodes",
+      "parrains": [
+        {
+          "nom": "Jones, Hon. Sylvia",
+          "role": "Minister of Health"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-11",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-11"
+    },
+    {
+      "numero": "12",
+      "numeroTri": 12,
+      "type": "public",
+      "titreEn": "Cutting Taxes on Small Businesses Act, 2025",
+      "titreFr": "Loi de 2025 pour réduire les impôts des petites entreprises",
+      "parrains": [
+        {
+          "nom": "Bowman, Stephanie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-12",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-12"
+    },
+    {
+      "numero": "13",
+      "numeroTri": 13,
+      "type": "public",
+      "titreEn": "Primary Care Act, 2025",
+      "titreFr": "Loi de 2025 sur les soins primaires",
+      "parrains": [
+        {
+          "nom": "Jones, Hon. Sylvia",
+          "role": "Minister of Health"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-13",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-13"
+    },
+    {
+      "numero": "14",
+      "numeroTri": 14,
+      "type": "public",
+      "titreEn": "Support for Seniors and Caregivers Act, 2025",
+      "titreFr": "Loi de 2025 sur le soutien aux personnes âgées et aux fournisseurs de soins",
+      "parrains": [
+        {
+          "nom": "Kusendova-Bashta, Hon. Natalia",
+          "role": "Minister of Long-Term Care"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-14",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-14"
+    },
+    {
+      "numero": "15",
+      "numeroTri": 15,
+      "type": "public",
+      "titreEn": "Kids’ Online Safety and Privacy Month Act, 2025",
+      "titreFr": "Loi de 2025 sur le Mois de la sécurité et de la protection de la vie privée des enfants en ligne",
+      "parrains": [
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-15",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-15"
+    },
+    {
+      "numero": "16",
+      "numeroTri": 16,
+      "type": "public",
+      "titreEn": "Sacred Spaces, Safe Places Act, 2025",
+      "titreFr": "Loi de 2025 pour des lieux sacrés sécuritaires",
+      "parrains": [
+        {
+          "nom": "Fraser, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-16",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-16"
+    },
+    {
+      "numero": "17",
+      "numeroTri": 17,
+      "type": "public",
+      "titreEn": "Protect Ontario by Building Faster and Smarter Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l'Ontario en construisant plus rapidement et plus efficacement",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-17",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-17"
+    },
+    {
+      "numero": "18",
+      "numeroTri": 18,
+      "type": "public",
+      "titreEn": "Supply Act, 2025",
+      "titreFr": "Loi de crédits de 2025",
+      "parrains": [
+        {
+          "nom": "Mulroney, Hon. Caroline",
+          "role": "President of the Treasury Board"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-18",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-18"
+    },
+    {
+      "numero": "19",
+      "numeroTri": 19,
+      "type": "public",
+      "titreEn": "Patient-to-Nurse Ratios for Hospitals Act, 2025",
+      "titreFr": "Loi de 2025 sur les ratios patients-personnel infirmier dans les hôpitaux",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-19",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-19"
+    },
+    {
+      "numero": "20",
+      "numeroTri": 20,
+      "type": "public",
+      "titreEn": "Taxation Amendment Act (Promoting Leisure Activities for Youth), 2025",
+      "titreFr": "Loi de 2025 modifiant la Loi sur les impôts (promotion des activités de loisirs pour les jeunes)",
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-20",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-20"
+    },
+    {
+      "numero": "21",
+      "numeroTri": 21,
+      "type": "public",
+      "titreEn": "Protect Our Food Act, 2025",
+      "titreFr": "Loi de 2025 visant à protéger nos aliments",
+      "parrains": [
+        {
+          "nom": "Schreiner, Mike",
+          "role": null
+        },
+        {
+          "nom": "Brady, Bobbi Ann",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-21",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-21"
+    },
+    {
+      "numero": "22",
+      "numeroTri": 22,
+      "type": "public",
+      "titreEn": "Ontario University Athletics Week Act, 2025",
+      "titreFr": "Loi de 2025 sur la Semaine des sports universitaires de l’Ontario",
+      "parrains": [
+        {
+          "nom": "Saunderson, Brian",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-22",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-22"
+    },
+    {
+      "numero": "23",
+      "numeroTri": 23,
+      "type": "public",
+      "titreEn": "Protecting Seniors’ Rights in Care Homes Act, 2026",
+      "titreFr": "Loi de 2026 sur la protection des droits des personnes âgées dans les maisons de soins",
+      "parrains": [
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        },
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "Glover, Chris",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-23",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-23"
+    },
+    {
+      "numero": "24",
+      "numeroTri": 24,
+      "type": "public",
+      "titreEn": "Plan to Protect Ontario Act (Budget Measures), 2025",
+      "titreFr": "Loi de 2025 sur le plan pour protéger l'Ontario (mesures budgétaires)",
+      "parrains": [
+        {
+          "nom": "Bethlenfalvy, Hon. Peter",
+          "role": "Minister of Finance"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-24",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-24"
+    },
+    {
+      "numero": "25",
+      "numeroTri": 25,
+      "type": "public",
+      "titreEn": "Emergency Management Modernization Act, 2025",
+      "titreFr": "Loi de 2025 sur la modernisation de la gestion des situations d'urgence",
+      "parrains": [
+        {
+          "nom": "Dunlop, Hon. Jill",
+          "role": "Minister of Emergency Preparedness and Response"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-25",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-25"
+    },
+    {
+      "numero": "26",
+      "numeroTri": 26,
+      "type": "public",
+      "titreEn": "Provincial Parks and Conservation Reserves Amendment Act, 2025",
+      "titreFr": "Loi de 2025 modifiant la Loi sur les parcs provinciaux et les réserves de conservation",
+      "parrains": [
+        {
+          "nom": "Dowie, Andrew",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-26",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-26"
+    },
+    {
+      "numero": "27",
+      "numeroTri": 27,
+      "type": "public",
+      "titreEn": "Resource Management and Safety Act, 2025",
+      "titreFr": "Loi de 2025 sur la gestion des ressources et la sécurité",
+      "parrains": [
+        {
+          "nom": "Harris, Hon. Mike",
+          "role": "Minister of Natural Resources"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-27",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-27"
+    },
+    {
+      "numero": "28",
+      "numeroTri": 28,
+      "type": "public",
+      "titreEn": "Homelessness Ends with Housing Act, 2025",
+      "titreFr": "Loi de 2025 visant à mettre fin à l'itinérance grâce au logement",
+      "parrains": [
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        },
+        {
+          "nom": "Fairclough, Lee",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-28",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-28"
+    },
+    {
+      "numero": "29",
+      "numeroTri": 29,
+      "type": "public",
+      "titreEn": "Turn Down the Heat Act (Extreme Heat Awareness), 2025",
+      "titreFr": "Loi de 2025 sur la sensibilisation aux risques posés par les chaleurs extrêmes",
+      "parrains": [
+        {
+          "nom": "McMahon, Mary-Margaret",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-29",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-29"
+    },
+    {
+      "numero": "30",
+      "numeroTri": 30,
+      "type": "public",
+      "titreEn": "Working for Workers Seven Act, 2025",
+      "titreFr": "Loi de 2025 visant à œuvrer pour les travailleurs, sept",
+      "parrains": [
+        {
+          "nom": "Piccini, Hon. David",
+          "role": "Minister of Labour, Immigration, Training and Skills Development"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-30",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-30"
+    },
+    {
+      "numero": "31",
+      "numeroTri": 31,
+      "type": "public",
+      "titreEn": "Marriage Amendment Act, 2025",
+      "titreFr": "Loi de 2025 modifiant la Loi sur le mariage",
+      "parrains": [
+        {
+          "nom": "Rae, Matthew",
+          "role": null
+        },
+        {
+          "nom": "Smith, Dave",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-31",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-31"
+    },
+    {
+      "numero": "32",
+      "numeroTri": 32,
+      "type": "public",
+      "titreEn": "Resource Recovery and Circular Economy Amendment Act (Beverage Container Deposit Program), 2025",
+      "titreFr": "Loi de 2025 modifiant la Loi sur la récupération des ressources et l'économie circulaire (programme de consignes applicables aux contenants de boissons)",
+      "parrains": [
+        {
+          "nom": "McMahon, Mary-Margaret",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-32",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-32"
+    },
+    {
+      "numero": "33",
+      "numeroTri": 33,
+      "type": "public",
+      "titreEn": "Supporting Children and Students Act, 2025",
+      "titreFr": "Loi de 2025 sur le soutien aux enfants, aux élèves et aux étudiants",
+      "parrains": [
+        {
+          "nom": "Calandra, Hon. Paul",
+          "role": "Minister of Education"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-33",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-33"
+    },
+    {
+      "numero": "34",
+      "numeroTri": 34,
+      "type": "public",
+      "titreEn": "MPP Pension and Compensation Act, 2025",
+      "titreFr": "Loi de 2025 sur la rétribution et le régime de retraite des députés",
+      "parrains": [
+        {
+          "nom": "Bethlenfalvy, Hon. Peter",
+          "role": "Minister of Finance"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-34",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-34"
+    },
+    {
+      "numero": "35",
+      "numeroTri": 35,
+      "type": "public",
+      "titreEn": "Captive Wildlife Protection Act, 2025",
+      "titreFr": "Loi de 2025 sur la protection des animaux sauvages en captivité",
+      "parrains": [
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        },
+        {
+          "nom": "McCrimmon, Karen",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-35",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-35"
+    },
+    {
+      "numero": "36",
+      "numeroTri": 36,
+      "type": "public",
+      "titreEn": "Heat Stress Act, 2025",
+      "titreFr": "Loi de 2025 sur le stress dû à la chaleur",
+      "parrains": [
+        {
+          "nom": "Tabuns, Peter",
+          "role": null
+        },
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-36",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-36"
+    },
+    {
+      "numero": "37",
+      "numeroTri": 37,
+      "type": "public",
+      "titreEn": "Fewer Floods, Safer Ontario Act, 2025",
+      "titreFr": "Loi de 2025 visant à réduire les inondations et accroître la sécurité en Ontario",
+      "parrains": [
+        {
+          "nom": "McMahon, Mary-Margaret",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-37",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-37"
+    },
+    {
+      "numero": "38",
+      "numeroTri": 38,
+      "type": "public",
+      "titreEn": "Ethiopian Heritage Month Act, 2025",
+      "titreFr": "Loi de 2025 sur le Mois du patrimoine éthiopien",
+      "parrains": [
+        {
+          "nom": "Begum, Doly",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-38",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-38"
+    },
+    {
+      "numero": "39",
+      "numeroTri": 39,
+      "type": "public",
+      "titreEn": "Notwithstanding Clause Limitation Act, 2025",
+      "titreFr": "Loi de 2025 visant à limiter le recours à la disposition de dérogation",
+      "parrains": [
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-39",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-39"
+    },
+    {
+      "numero": "40",
+      "numeroTri": 40,
+      "type": "public",
+      "titreEn": "Protect Ontario by Securing Affordable Energy for Generations Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l'Ontario en garantissant l'accès à l'énergie abordable pour les générations futures",
+      "parrains": [
+        {
+          "nom": "Lecce, Hon. Stephen",
+          "role": "Minister of Energy and Mines"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-40",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-40"
+    },
+    {
+      "numero": "41",
+      "numeroTri": 41,
+      "type": "public",
+      "titreEn": "9-1-1 Everywhere in Ontario Act, 2025",
+      "titreFr": "Loi de 2025 sur le 9-1-1 partout en Ontario",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Bourgouin, Guy",
+          "role": null
+        },
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-41",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-41"
+    },
+    {
+      "numero": "42",
+      "numeroTri": 42,
+      "type": "public",
+      "titreEn": "Justice for Soli Act (Stop Criminalizing Mental Health), 2025",
+      "titreFr": "Loi de 2025 exigeant la justice pour Soli (arrêter la criminalisation des problèmes de santé mentale)",
+      "parrains": [
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Mamakwa, Sol",
+          "role": null
+        },
+        {
+          "nom": "Stevens, Jennifer (Jennie)",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-42",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-42"
+    },
+    {
+      "numero": "43",
+      "numeroTri": 43,
+      "type": "public",
+      "titreEn": "Consent Awareness Week Act, 2025",
+      "titreFr": "Loi de 2025 sur la Semaine de sensibilisation au consentement",
+      "parrains": [
+        {
+          "nom": "Sattler, Peggy",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-43",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-43"
+    },
+    {
+      "numero": "44",
+      "numeroTri": 44,
+      "type": "public",
+      "titreEn": "Healthcare Staffing Agencies Act, 2025",
+      "titreFr": "Loi de 2025 sur les agences de recrutement de personnel de soins de santé",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gates, Wayne",
+          "role": null
+        },
+        {
+          "nom": "Gretzky, Lisa",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-44",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-44"
+    },
+    {
+      "numero": "45",
+      "numeroTri": 45,
+      "type": "public",
+      "titreEn": "Peel Transition Implementation Act, 2025",
+      "titreFr": "Loi de 2025 sur la mise en œuvre de la transition de Peel",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-45",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-45"
+    },
+    {
+      "numero": "46",
+      "numeroTri": 46,
+      "type": "public",
+      "titreEn": "Protect Ontario by Cutting Red Tape Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l’Ontario en réduisant les formalités administratives",
+      "parrains": [
+        {
+          "nom": "Khanjin, Hon. Andrea",
+          "role": "Minister of Red Tape Reduction"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-46",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-46"
+    },
+    {
+      "numero": "47",
+      "numeroTri": 47,
+      "type": "public",
+      "titreEn": "Fairness for Road Users Act (Contraventions Causing Death or Serious Bodily Harm), 2025",
+      "titreFr": "Loi de 2025 sur l'équité envers les usagers de la route (contraventions causant un décès ou des blessures corporelles graves)",
+      "parrains": [
+        {
+          "nom": "French, Jennifer K.",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-47",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-47"
+    },
+    {
+      "numero": "48",
+      "numeroTri": 48,
+      "type": "public",
+      "titreEn": "Uploading Highways 174 and 17 Act, 2025",
+      "titreFr": "Loi de 2025 sur le transfert de compétences relatives aux voies publiques 174 et 17",
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-48",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-48"
+    },
+    {
+      "numero": "49",
+      "numeroTri": 49,
+      "type": "public",
+      "titreEn": "Northern Highway 11 and 17 Safety Act, 2025",
+      "titreFr": "Loi de 2025 sur la sécurité des routes 11 et 17 du Nord",
+      "parrains": [
+        {
+          "nom": "Bourgouin, Guy",
+          "role": null
+        },
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-49",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-49"
+    },
+    {
+      "numero": "50",
+      "numeroTri": 50,
+      "type": "public",
+      "titreEn": "No Free Ride for Fossil Fuels Act, 2025",
+      "titreFr": "Loi de 2025 visant à empêcher les combustibles fossiles de bénéficier d'un passe-droit",
+      "parrains": [
+        {
+          "nom": "Schreiner, Mike",
+          "role": null
+        },
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-50",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-50"
+    },
+    {
+      "numero": "51",
+      "numeroTri": 51,
+      "type": "public",
+      "titreEn": "Rent Stabilization Act, 2025",
+      "titreFr": "Loi de 2025 sur la stabilisation des loyers",
+      "parrains": [
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "McKenney, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-51",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-51"
+    },
+    {
+      "numero": "52",
+      "numeroTri": 52,
+      "type": "public",
+      "titreEn": "EV-Ready Homes Act (Electric Vehicle Charging), 2025",
+      "titreFr": "Loi de 2025 sur les maisons prêtes pour les VE (recharge des véhicules électriques)",
+      "parrains": [
+        {
+          "nom": "French, Jennifer K.",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-52",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-52"
+    },
+    {
+      "numero": "53",
+      "numeroTri": 53,
+      "type": "public",
+      "titreEn": "Dignity and Mental Health in Jails Act, 2025",
+      "titreFr": "Loi de 2025 pour favoriser la dignité et la santé mentale dans les prisons",
+      "parrains": [
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-53",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-53"
+    },
+    {
+      "numero": "54",
+      "numeroTri": 54,
+      "type": "public",
+      "titreEn": "End the Public Funding of Partisan Government Advertising Act, 2025",
+      "titreFr": "Loi de 2025 visant à mettre fin au financement public de la publicité gouvernementale partisane",
+      "parrains": [
+        {
+          "nom": "Stiles, Marit",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-54",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-54"
+    },
+    {
+      "numero": "55",
+      "numeroTri": 55,
+      "type": "public",
+      "titreEn": "Intimate Partner Violence Epidemic Act, 2025",
+      "titreFr": "Loi de 2025 sur l’épidémie de violence entre partenaires intimes",
+      "parrains": [
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        },
+        {
+          "nom": "Gretzky, Lisa",
+          "role": null
+        },
+        {
+          "nom": "Sattler, Peggy",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-55",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-55"
+    },
+    {
+      "numero": "56",
+      "numeroTri": 56,
+      "type": "public",
+      "titreEn": "Building a More Competitive Economy Act, 2025",
+      "titreFr": "Loi de 2025 visant à bâtir une économie plus concurrentielle",
+      "parrains": [
+        {
+          "nom": "Khanjin, Hon. Andrea",
+          "role": "Minister of Red Tape Reduction"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-56",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-56"
+    },
+    {
+      "numero": "57",
+      "numeroTri": 57,
+      "type": "public",
+      "titreEn": "Respect for Taxpayers Act (Haldimand County Trustee Vacancy), 2025",
+      "titreFr": "Loi de 2025 pour assurer le respect des contribuables (vacance du poste de conseiller scolaire du comté de Haldimand)",
+      "parrains": [
+        {
+          "nom": "Calandra, Hon. Paul",
+          "role": "Minister of Education"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-57",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-57"
+    },
+    {
+      "numero": "58",
+      "numeroTri": 58,
+      "type": "public",
+      "titreEn": "Franco-Ontarian Bookstore Promotion and Protection Act, 2025",
+      "titreFr": "Loi de 2025 pour la promotion et la protection des librairies franco-ontariennes",
+      "parrains": [
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-58",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-58"
+    },
+    {
+      "numero": "59",
+      "numeroTri": 59,
+      "type": "public",
+      "titreEn": "Rare Disease Strategy Act, 2025",
+      "titreFr": "Loi de 2025 sur la stratégie en matière de maladies rares",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-59",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-59"
+    },
+    {
+      "numero": "60",
+      "numeroTri": 60,
+      "type": "public",
+      "titreEn": "Fighting Delays, Building Faster Act, 2025",
+      "titreFr": "Loi de 2025 visant à lutter contre les retards et à construire plus rapidement",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-60",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-60"
+    },
+    {
+      "numero": "61",
+      "numeroTri": 61,
+      "type": "public",
+      "titreEn": "Ontario Artificial Intelligence, Talent and Innovation Strategy Act, 2025",
+      "titreFr": "Loi de 2025 sur la stratégie ontarienne pour favoriser le talent et l’innovation dans le domaine de l’intelligence artificielle",
+      "parrains": [
+        {
+          "nom": "Cerjanec, Rob",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-61",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-61"
+    },
+    {
+      "numero": "62",
+      "numeroTri": 62,
+      "type": "public",
+      "titreEn": "Public Health Accountability Act (In Honour of Dr. Sheela Basrur), 2025",
+      "titreFr": "Loi de 2025 sur la responsabilité en matière de santé publique (en hommage à la Dʳᵉ Sheela Basrur)",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-62",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-62"
+    },
+    {
+      "numero": "63",
+      "numeroTri": 63,
+      "type": "public",
+      "titreEn": "Stop Ripping Off Fans Act (Ticket Resale Price Caps), 2025",
+      "titreFr": "Loi de 2025 visant à mettre fin à la revente abusive de billets (limite sur les prix de revente de billets)",
+      "parrains": [
+        {
+          "nom": "Cerjanec, Rob",
+          "role": null
+        },
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        },
+        {
+          "nom": "Smyth, Stephanie",
+          "role": null
+        },
+        {
+          "nom": "Watt, Tyler",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-63",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-63"
+    },
+    {
+      "numero": "64",
+      "numeroTri": 64,
+      "type": "public",
+      "titreEn": "Housing Equity and Rental Transparency Act, 2025",
+      "titreFr": "Loi de 2025 sur l'équité en matière de logement et la transparence dans les modalités de location",
+      "parrains": [
+        {
+          "nom": "Bowman, Stephanie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-64",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-64"
+    },
+    {
+      "numero": "65",
+      "numeroTri": 65,
+      "type": "public",
+      "titreEn": "Remembrance Day Observance Act, 2025",
+      "titreFr": "Loi de 2025 sur l'observation du jour du Souvenir",
+      "parrains": [
+        {
+          "nom": "Stevens, Jennifer (Jennie)",
+          "role": null
+        },
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        },
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-65",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-65"
+    },
+    {
+      "numero": "66",
+      "numeroTri": 66,
+      "type": "public",
+      "titreEn": "Kids' Online Safety and Privacy Month Act, 2025",
+      "titreFr": "Loi de 2025 sur le Mois de la sécurité et de la protection de la vie privée des enfants en ligne",
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        },
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-66",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-66"
+    },
+    {
+      "numero": "67",
+      "numeroTri": 67,
+      "type": "public",
+      "titreEn": "Hospitality Workers Appreciation Day Act, 2025",
+      "titreFr": "Loi de 2025 sur la Journée de reconnaissance des travailleuses et travailleurs de l'industrie de l’accueil",
+      "parrains": [
+        {
+          "nom": "Hardeman, Hon. Ernie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-67",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-67"
+    },
+    {
+      "numero": "68",
+      "numeroTri": 68,
+      "type": "public",
+      "titreEn": "Plan to Protect Ontario Act (Budget Measures), 2025 (No. 2)",
+      "titreFr": "Loi de 2025 sur le plan pour protéger l'Ontario (mesures budgétaires) (n° 2)",
+      "parrains": [
+        {
+          "nom": "Bethlenfalvy, Hon. Peter",
+          "role": "Minister of Finance"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-68",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-68"
+    },
+    {
+      "numero": "69",
+      "numeroTri": 69,
+      "type": "public",
+      "titreEn": "Respecting Workers in Health Care and in Related Fields Act, 2025",
+      "titreFr": "Loi de 2025 sur le respect dû aux travailleurs du domaine de la santé et de domaines connexes",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gates, Wayne",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-69",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-69"
+    },
+    {
+      "numero": "70",
+      "numeroTri": 70,
+      "type": "public",
+      "titreEn": "Supporting Mobility, Affordability and Reliable Transportation in Ontario Act, 2025",
+      "titreFr": "Loi de 2025 pour une mobilité accrue, des prix plus abordables et des transports plus fiables en Ontario",
+      "parrains": [
+        {
+          "nom": "Hazell, Andrea",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-70",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-70"
+    },
+    {
+      "numero": "71",
+      "numeroTri": 71,
+      "type": "public",
+      "titreEn": "Life Leases Act, 2025",
+      "titreFr": "Loi de 2025 sur les baux viagers",
+      "parrains": [
+        {
+          "nom": "Racinsky, Joseph",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-71",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-71"
+    },
+    {
+      "numero": "72",
+      "numeroTri": 72,
+      "type": "public",
+      "titreEn": "Buy Ontario Act, 2025",
+      "titreFr": "Loi de 2025 visant à encourager à acheter ontarien",
+      "parrains": [
+        {
+          "nom": "Crawford, Hon. Stephen",
+          "role": "Minister of Public and Business Service Delivery and Procurement"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-72",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-72"
+    },
+    {
+      "numero": "73",
+      "numeroTri": 73,
+      "type": "public",
+      "titreEn": "Protecting Ontario from Urban Wildfires Act, 2025",
+      "titreFr": "Loi de 2025 pour protéger l'Ontario contre les feux non maîtrisés en milieu urbain",
+      "parrains": [
+        {
+          "nom": "Tabuns, Peter",
+          "role": null
+        },
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-73",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-73"
+    },
+    {
+      "numero": "74",
+      "numeroTri": 74,
+      "type": "public",
+      "titreEn": "Christopher's Law (Sex Offender Registry) Amendment Act (Information Disclosure), 2025",
+      "titreFr": "Loi de 2025 modifiant la Loi Christopher sur le registre des délinquants sexuels (divulgation de renseignements)",
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        },
+        {
+          "nom": "Cerjanec, Rob",
+          "role": null
+        },
+        {
+          "nom": "Collard, Lucille",
+          "role": null
+        },
+        {
+          "nom": "Tsao, Jonathan",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-74",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-74"
+    },
+    {
+      "numero": "75",
+      "numeroTri": 75,
+      "type": "public",
+      "titreEn": "Keeping Criminals Behind Bars Act, 2026",
+      "titreFr": "Loi de 2026 visant à maintenir les criminels derrière les barreaux",
+      "parrains": [
+        {
+          "nom": "Kerzner, Hon. Michael S.",
+          "role": "Solicitor General"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-75",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-75"
+    },
+    {
+      "numero": "76",
+      "numeroTri": 76,
+      "type": "public",
+      "titreEn": "Barrie – Oro-Medonte – Springwater Boundary Adjustment Act, 2025",
+      "titreFr": "Loi de 2025 sur la modification des limites territoriales entre Barrie, Oro-Medonte et Springwater",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-76",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-76"
+    },
+    {
+      "numero": "77",
+      "numeroTri": 77,
+      "type": "public",
+      "titreEn": "Speaking Out About, and Reporting On, Workplace Violence and Harassment Act, 2025",
+      "titreFr": "Loi de 2025 sur la dénonciation et le signalement des violences et du harcèlement au travail",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-77",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-77"
+    },
+    {
+      "numero": "78",
+      "numeroTri": 78,
+      "type": "public",
+      "titreEn": "Commissioner for Democratic Rights Act, 2025",
+      "titreFr": "Loi de 2025 sur le commissaire aux droits démocratiques",
+      "parrains": [
+        {
+          "nom": "Glover, Chris",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-78",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-78"
+    },
+    {
+      "numero": "79",
+      "numeroTri": 79,
+      "type": "public",
+      "titreEn": "Chad's Law (Enforcing Safer Passing), 2025",
+      "titreFr": "Loi Chad de 2025 (pour des dépassements plus sécuritaires)",
+      "parrains": [
+        {
+          "nom": "Bourgouin, Guy",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-79",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-79"
+    },
+    {
+      "numero": "80",
+      "numeroTri": 80,
+      "type": "public",
+      "titreEn": "Gender Affirming Health Care Advisory Committee Act, 2025",
+      "titreFr": "Loi de 2025 sur le Comité consultatif des soins de santé axés sur l'affirmation de genre",
+      "parrains": [
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        },
+        {
+          "nom": "Kernaghan, Terence",
+          "role": null
+        },
+        {
+          "nom": "McKenney, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-80",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-80"
+    },
+    {
+      "numero": "81",
+      "numeroTri": 81,
+      "type": "public",
+      "titreEn": "Ontario Climate Change Adaptation and Resilience Act, 2025",
+      "titreFr": "Loi de 2025 pour l’adaptation et la résilience aux changements climatiques de l’Ontario",
+      "parrains": [
+        {
+          "nom": "Tabuns, Peter",
+          "role": null
+        },
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-81",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-81"
+    },
+    {
+      "numero": "82",
+      "numeroTri": 82,
+      "type": "public",
+      "titreEn": "Protecting Renters from Unfair Above Guideline Rent Increases Act, 2026",
+      "titreFr": "Loi de 2026 visant à protéger les locataires contre les augmentations injustes de loyer supérieures au taux légal",
+      "parrains": [
+        {
+          "nom": "Smyth, Stephanie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-82",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-82"
+    },
+    {
+      "numero": "83",
+      "numeroTri": 83,
+      "type": "public",
+      "titreEn": "Christian Heritage Month Act, 2025",
+      "titreFr": "Loi de 2025 sur le Mois du patrimoine chrétien",
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-83",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-83"
+    },
+    {
+      "numero": "84",
+      "numeroTri": 84,
+      "type": "public",
+      "titreEn": "Mandatory Blood Testing Amendment Act, 2026",
+      "titreFr": "Loi de 2026 modifiant la Loi de 2006 sur le dépistage obligatoire par test sanguin",
+      "parrains": [
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-84",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-84"
+    },
+    {
+      "numero": "85",
+      "numeroTri": 85,
+      "type": "public",
+      "titreEn": "Transparent and Accountable Health Care Act, 2025",
+      "titreFr": "Loi de 2025 sur le financement transparent et responsable des soins de santé",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-85",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-85"
+    },
+    {
+      "numero": "86",
+      "numeroTri": 86,
+      "type": "public",
+      "titreEn": "Meredith Act (Fair Compensation for Injured Workers), 2026",
+      "titreFr": "Loi Meredith de 2026 sur l'indemnisation équitable des travailleurs blessés",
+      "parrains": [
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        },
+        {
+          "nom": "Gates, Wayne",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-86",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-86"
+    },
+    {
+      "numero": "87",
+      "numeroTri": 87,
+      "type": "public",
+      "titreEn": "Environmental Protection Amendment Act (Industrial, Commercial and Institutional Source Separation Programs), 2025",
+      "titreFr": "Loi de 2025 modifiant la Loi sur la protection de l'environnement (programmes de séparation à la source des déchets industriels, commerciaux et institutionnels)",
+      "parrains": [
+        {
+          "nom": "McMahon, Mary-Margaret",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-87",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-87"
+    },
+    {
+      "numero": "88",
+      "numeroTri": 88,
+      "type": "public",
+      "titreEn": "Safe Night Out Act, 2025",
+      "titreFr": "Loi de 2025 visant à favoriser des sorties sans danger",
+      "parrains": [
+        {
+          "nom": "Sattler, Peggy",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-88",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-88"
+    },
+    {
+      "numero": "89",
+      "numeroTri": 89,
+      "type": "public",
+      "titreEn": "Massage Therapy Tax Act, 2025",
+      "titreFr": "Loi de 2025 sur l'imposition de la massothérapie",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-89",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-89"
+    },
+    {
+      "numero": "90",
+      "numeroTri": 90,
+      "type": "public",
+      "titreEn": "Textile Waste Act, 2025",
+      "titreFr": "Loi de 2025 sur les déchets textiles",
+      "parrains": [
+        {
+          "nom": "McMahon, Mary-Margaret",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-90",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-90"
+    },
+    {
+      "numero": "91",
+      "numeroTri": 91,
+      "type": "public",
+      "titreEn": "Right to Repair Act, 2025",
+      "titreFr": "Loi de 2025 sur le droit de réparer",
+      "parrains": [
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Kernaghan, Terence",
+          "role": null
+        },
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-91",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-91"
+    },
+    {
+      "numero": "92",
+      "numeroTri": 92,
+      "type": "public",
+      "titreEn": "Ontario Consumer Watchdog Act, 2025",
+      "titreFr": "Loi de 2025 sur l'organisme ontarien de défense du consommateur",
+      "parrains": [
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Fife, Catherine",
+          "role": null
+        },
+        {
+          "nom": "McKenney, Catherine",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-92",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-92"
+    },
+    {
+      "numero": "93",
+      "numeroTri": 93,
+      "type": "public",
+      "titreEn": "Truck Driver Training Schools Accountability Act, 2026",
+      "titreFr": "Loi de 2026 sur la responsabilité des écoles de formation de conducteurs de camions",
+      "parrains": [
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        },
+        {
+          "nom": "Bourgouin, Guy",
+          "role": null
+        },
+        {
+          "nom": "Mamakwa, Sol",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-93",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-93"
+    },
+    {
+      "numero": "94",
+      "numeroTri": 94,
+      "type": "public",
+      "titreEn": "Putting Fans First Act (No Ticket Resales Above Face Value), 2026",
+      "titreFr": "Loi de 2026 donnant la priorité aux fans (interdiction de revendre des billets au-delà de leur valeur nominale)",
+      "parrains": [
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Glover, Chris",
+          "role": null
+        },
+        {
+          "nom": "Mamakwa, Sol",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-94",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-94"
+    },
+    {
+      "numero": "95",
+      "numeroTri": 95,
+      "type": "public",
+      "titreEn": "Supply Act, 2026",
+      "titreFr": "Loi de crédits de 2026",
+      "parrains": [
+        {
+          "nom": "Mulroney, Hon. Caroline",
+          "role": "President of the Treasury Board"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-95",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-95"
+    },
+    {
+      "numero": "96",
+      "numeroTri": 96,
+      "type": "public",
+      "titreEn": "Anti-Scab Labour Act, 2026",
+      "titreFr": "Loi de 2026 sur les briseurs de grève",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gates, Wayne",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-96",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-96"
+    },
+    {
+      "numero": "97",
+      "numeroTri": 97,
+      "type": "public",
+      "titreEn": "Plan to Protect Ontario Act (Budget Measures), 2026",
+      "titreFr": "Loi de 2026 sur le plan pour protéger l'Ontario (mesures budgétaires)",
+      "parrains": [
+        {
+          "nom": "Bethlenfalvy, Hon. Peter",
+          "role": "Minister of Finance"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-97",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-97"
+    },
+    {
+      "numero": "98",
+      "numeroTri": 98,
+      "type": "public",
+      "titreEn": "Building Homes and Improving Transportation Infrastructure Act, 2026",
+      "titreFr": "Loi de 2026 pour la construction de logements et l’amélioration de l’infrastructure de transport",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-98",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-98"
+    },
+    {
+      "numero": "99",
+      "numeroTri": 99,
+      "type": "public",
+      "titreEn": "Fair and Free Elections Act, 2026",
+      "titreFr": "Loi de 2026 pour des élections libres et honnêtes",
+      "parrains": [
+        {
+          "nom": "Fraser, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-99",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-99"
+    },
+    {
+      "numero": "100",
+      "numeroTri": 100,
+      "type": "public",
+      "titreEn": "Better Regional Governance Act, 2026",
+      "titreFr": "Loi de 2026 pour une meilleure gouvernance régionale",
+      "parrains": [
+        {
+          "nom": "Flack, Hon. Rob",
+          "role": "Minister of Municipal Affairs and Housing"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-100",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-100"
+    },
+    {
+      "numero": "101",
+      "numeroTri": 101,
+      "type": "public",
+      "titreEn": "Putting Student Achievement First Act, 2026",
+      "titreFr": "Loi de 2026 donnant la priorité à la réussite des élèves",
+      "parrains": [
+        {
+          "nom": "Calandra, Hon. Paul",
+          "role": "Minister of Education"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-101",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-101"
+    },
+    {
+      "numero": "102",
+      "numeroTri": 102,
+      "type": "public",
+      "titreEn": "Bishop Brigante Colon Cancer Prevention Act, 2026",
+      "titreFr": "Loi Bishop Brigante de 2026 sur la prévention du cancer du côlon",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-102",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-102"
+    },
+    {
+      "numero": "103",
+      "numeroTri": 103,
+      "type": "public",
+      "titreEn": "Keeping People Housed Act, 2026",
+      "titreFr": "Loi de 2026 pour que chacun puisse garder son logement",
+      "parrains": [
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-103",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-103"
+    },
+    {
+      "numero": "104",
+      "numeroTri": 104,
+      "type": "public",
+      "titreEn": "Fair Grocery Prices Act, 2026",
+      "titreFr": "Loi de 2026 pour des produits alimentaires à des prix raisonnables",
+      "parrains": [
+        {
+          "nom": "Fraser, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-104",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-104"
+    },
+    {
+      "numero": "105",
+      "numeroTri": 105,
+      "type": "public",
+      "titreEn": "Protecting Ontario’s Workers and Economic Resilience Act, 2026",
+      "titreFr": "Loi de 2026 pour protéger les travailleurs et la résilience économique de l’Ontario",
+      "parrains": [
+        {
+          "nom": "Khanjin, Hon. Andrea",
+          "role": "Minister of Red Tape Reduction"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-105",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-105"
+    },
+    {
+      "numero": "106",
+      "numeroTri": 106,
+      "type": "public",
+      "titreEn": "Developmental Disabilities Awareness Week Act, 2026",
+      "titreFr": "Loi de 2026 sur la Semaine de sensibilisation à la déficience intellectuelle",
+      "parrains": [
+        {
+          "nom": "Pang, Billy",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-106",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-106"
+    },
+    {
+      "numero": "107",
+      "numeroTri": 107,
+      "type": "public",
+      "titreEn": "Stop Harmful Gambling Advertising Act, 2026",
+      "titreFr": "Loi de 2026 visant à mettre fin à la publicité nuisible sur le jeu",
+      "parrains": [
+        {
+          "nom": "Fairclough, Lee",
+          "role": null
+        },
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        },
+        {
+          "nom": "Fraser, John",
+          "role": null
+        },
+        {
+          "nom": "Hsu, Ted",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-107",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-107"
+    },
+    {
+      "numero": "108",
+      "numeroTri": 108,
+      "type": "public",
+      "titreEn": "Protecting Ontario by Upholding Honesty and Integrity Act, 2026",
+      "titreFr": "Loi de 2026 pour protéger l’Ontario en respectant les principes d’honnêteté et d’intégrité",
+      "parrains": [
+        {
+          "nom": "Shamji, Adil",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-108",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-108"
+    },
+    {
+      "numero": "109",
+      "numeroTri": 109,
+      "type": "public",
+      "titreEn": "Protecting Ontario’s Food Independence Act, 2026",
+      "titreFr": "Loi de 2026 visant à protéger l’autonomie alimentaire de l’Ontario",
+      "parrains": [
+        {
+          "nom": "Jones, Hon. Trevor",
+          "role": "Minister of Agriculture, Food and Agribusiness"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-109",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-109"
+    },
+    {
+      "numero": "110",
+      "numeroTri": 110,
+      "type": "public",
+      "titreEn": "Building Billy Bishop Airport Act, 2026",
+      "titreFr": "Loi de 2026 sur la construction de l’aéroport Billy Bishop",
+      "parrains": [
+        {
+          "nom": "Sarkaria, Hon. Prabmeet Singh",
+          "role": "Minister of Transportation"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-110",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-110"
+    },
+    {
+      "numero": "111",
+      "numeroTri": 111,
+      "type": "public",
+      "titreEn": "Nepali Heritage Month Act, 2026",
+      "titreFr": "Loi de 2026 sur le Mois du patrimoine népalais",
+      "parrains": [
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-111",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-111"
+    },
+    {
+      "numero": "112",
+      "numeroTri": 112,
+      "type": "public",
+      "titreEn": "Lydia’s Law (Accountability and Transparency in the Handling of Sexual Assault Cases), 2026",
+      "titreFr": "Loi Lydia de 2026 (responsabilité et transparence dans le traitement des cas d’agression sexuelle)",
+      "parrains": [
+        {
+          "nom": "Fife, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Kernaghan, Terence",
+          "role": null
+        },
+        {
+          "nom": "Mamakwa, Sol",
+          "role": null
+        },
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-112",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-112"
+    },
+    {
+      "numero": "113",
+      "numeroTri": 113,
+      "type": "public",
+      "titreEn": "Fair Prices and Tax-Free Groceries Act, 2026",
+      "titreFr": "Loi de 2026 sur les prix équitables et les produits alimentaires non taxés",
+      "parrains": [
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-113",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-113"
+    },
+    {
+      "numero": "114",
+      "numeroTri": 114,
+      "type": "public",
+      "titreEn": "HST Relief Implementation Act (Residential Property Rebates), 2026",
+      "titreFr": "Loi de 2026 sur la mise en œuvre de l’allégement de la TVH (remises relatives aux biens résidentiels)",
+      "parrains": [
+        {
+          "nom": "Bethlenfalvy, Hon. Peter",
+          "role": "Minister of Finance"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-114",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-114"
+    },
+    {
+      "numero": "115",
+      "numeroTri": 115,
+      "type": "public",
+      "titreEn": "Black Health Equity Act, 2026",
+      "titreFr": "Loi de 2026 sur l’équité en matière de santé pour les Noirs",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-115",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-115"
+    },
+    {
+      "numero": "116",
+      "numeroTri": 116,
+      "type": "public",
+      "titreEn": "Safety and Accountability in Ontario Corrections Act, 2026",
+      "titreFr": "Loi de 2026 sur la sécurité et la responsabilisation des services correctionnels en Ontario",
+      "parrains": [
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        },
+        {
+          "nom": "Stevens, Jennifer (Jennie)",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-116",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-116"
+    },
+    {
+      "numero": "117",
+      "numeroTri": 117,
+      "type": "public",
+      "titreEn": "Access (Assistance for Care, Commuting and Essential Specialized Services) Act, 2026",
+      "titreFr": "Loi «Access» de 2026 (aide au titre des soins, des déplacements et des services spécialisés essentiels)",
+      "parrains": [
+        {
+          "nom": "Gretzky, Lisa",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "McKenney, Catherine",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-117",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-117"
+    },
+    {
+      "numero": "118",
+      "numeroTri": 118,
+      "type": "public",
+      "titreEn": "Buddhist Heritage Month Act, 2026",
+      "titreFr": "Loi de 2026 sur le Mois du patrimoine bouddhiste",
+      "parrains": [
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-118",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-118"
+    },
+    {
+      "numero": "119",
+      "numeroTri": 119,
+      "type": "public",
+      "titreEn": "Protecting Ontario’s Streets and Communities Act, 2026",
+      "titreFr": "Loi de 2026 visant à protéger les rues et les collectivités de l’Ontario",
+      "parrains": [
+        {
+          "nom": "Kerzner, Hon. Michael S.",
+          "role": "Solicitor General"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-119",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-119"
+    },
+    {
+      "numero": "120",
+      "numeroTri": 120,
+      "type": "public",
+      "titreEn": "Ethnic Media and Community Media Appreciation Week Act, 2026",
+      "titreFr": "Loi de 2026 sur la Semaine de reconnaissance des médias ethniques et communautaires",
+      "parrains": [
+        {
+          "nom": "Anand, Deepak",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-120",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-120"
+    },
+    {
+      "numero": "121",
+      "numeroTri": 121,
+      "type": "public",
+      "titreEn": "Save a Life Act (Naloxone Kit Registration and Public Access), 2026",
+      "titreFr": "Loi de 2026 visant à sauver des vies (accès public aux trousses de naloxone et leur enregistrement)",
+      "parrains": [
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gretzky, Lisa",
+          "role": null
+        },
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-121",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-121"
+    },
+    {
+      "numero": "122",
+      "numeroTri": 122,
+      "type": "public",
+      "titreEn": "Romanian Heritage Week Act, 2026",
+      "titreFr": "Loi de 2026 sur la Semaine du patrimoine roumain",
+      "parrains": [
+        {
+          "nom": "Kanapathi, Logan",
+          "role": null
+        },
+        {
+          "nom": "Cuzzetto, Rudy",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-122",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-122"
+    },
+    {
+      "numero": "123",
+      "numeroTri": 123,
+      "type": "public",
+      "titreEn": "Fighting Extreme Heat in Schools Act, 2026",
+      "titreFr": "Loi de 2026 sur la lutte contre la chaleur extrême dans les écoles",
+      "parrains": [
+        {
+          "nom": "Pasma, Chandra",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Tabuns, Peter",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-123",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-123"
+    },
+    {
+      "numero": "124",
+      "numeroTri": 124,
+      "type": "public",
+      "titreEn": "Mining Awareness Week Act, 2026",
+      "titreFr": "Loi de 2026 sur la Semaine de sensibilisation à l’exploitation minière",
+      "parrains": [
+        {
+          "nom": "West, Jamie",
+          "role": null
+        },
+        {
+          "nom": "Bourgouin, Guy",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-124",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-124"
+    },
+    {
+      "numero": "125",
+      "numeroTri": 125,
+      "type": "public",
+      "titreEn": "Smoke-Free Ontario Amendment Act (Vaping is not for Kids), 2026",
+      "titreFr": "Loi de 2026 modifiant la Loi favorisant un Ontario sans fumée (le vapotage n’est pas pour les enfants)",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gates, Wayne",
+          "role": null
+        },
+        {
+          "nom": "Shaw, Sandy",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-125",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-125"
+    },
+    {
+      "numero": "126",
+      "numeroTri": 126,
+      "type": "public",
+      "titreEn": "Protecting Homeowners from Title Fraud Act, 2026",
+      "titreFr": "Loi de 2026 sur la protection des propriétaires de logements contre la fraude sur le transfert des titres de propriété",
+      "parrains": [
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Kernaghan, Terence",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "McKenney, Catherine",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-126",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-126"
+    },
+    {
+      "numero": "127",
+      "numeroTri": 127,
+      "type": "public",
+      "titreEn": "Fair Start for Young Workers Act, 2026",
+      "titreFr": "Loi de 2026 visant à offrir un début de carrière équitable aux jeunes travailleurs",
+      "parrains": [
+        {
+          "nom": "Cerjanec, Rob",
+          "role": null
+        },
+        {
+          "nom": "Bowman, Stephanie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-127",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-127"
+    },
+    {
+      "numero": "128",
+      "numeroTri": 128,
+      "type": "public",
+      "titreEn": "Hot Days, Cool Homes Act, 2026",
+      "titreFr": "Loi de 2026 pour des logements frais lors des jours de grande chaleur",
+      "parrains": [
+        {
+          "nom": "McKenney, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-128",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-128"
+    },
+    {
+      "numero": "129",
+      "numeroTri": 129,
+      "type": "public",
+      "titreEn": "Andre's Law (Bill of Rights for Residents of Supported Group Living Residences), 2026",
+      "titreFr": "Loi André de 2026 (déclaration des droits des résidents de résidences de groupe avec services de soutien)",
+      "parrains": [
+        {
+          "nom": "Vaugeois, Lise",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-129",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-129"
+    },
+    {
+      "numero": "130",
+      "numeroTri": 130,
+      "type": "public",
+      "titreEn": "Adapting to a Hotter Ontario Act, 2026",
+      "titreFr": "Loi de 2026 sur l’adaptation à un Ontario plus chaud",
+      "parrains": [
+        {
+          "nom": "Tabuns, Peter",
+          "role": null
+        },
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-130",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-130"
+    },
+    {
+      "numero": "131",
+      "numeroTri": 131,
+      "type": "public",
+      "titreEn": "Menstrual Health Day Act, 2026",
+      "titreFr": "Loi de 2026 proclamant la Journée de la santé menstruelle",
+      "parrains": [
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-131",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-131"
+    },
+    {
+      "numero": "132",
+      "numeroTri": 132,
+      "type": "public",
+      "titreEn": "Nancy Rose Act (Paediatric Hospice Palliative Care Strategy), 2026",
+      "titreFr": "Loi Nancy Rose de 2026 (stratégie des soins palliatifs pédiatriques)",
+      "parrains": [
+        {
+          "nom": "Shaw, Sandy",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-132",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-132"
+    },
+    {
+      "numero": "133",
+      "numeroTri": 133,
+      "type": "public",
+      "titreEn": "Health Care Honours, Employment, Retention, Optimization and Empowerment Strategy Act, 2026",
+      "titreFr": "Loi de 2026 sur la stratégie en matière de distinctions, d'emploi, de rétention, d'optimisation et du développement de l'autonomie dans le secteur de la santé",
+      "parrains": [
+        {
+          "nom": "Shamji, Adil",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-133",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-133"
+    },
+    {
+      "numero": "134",
+      "numeroTri": 134,
+      "type": "public",
+      "titreEn": "Diverting Waste from Landfills and Reducing Greenhouse Gases Act, 2026",
+      "titreFr": "Loi de 2026 visant à détourner les déchets destinés aux sites d’enfouissement et à réduire les gaz à effet de serre",
+      "parrains": [
+        {
+          "nom": "McMahon, Mary-Margaret",
+          "role": null
+        },
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-134",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-134"
+    },
+    {
+      "numero": "135",
+      "numeroTri": 135,
+      "type": "public",
+      "titreEn": "Swahili Heritage Month Act, 2026",
+      "titreFr": "Loi de 2026 sur le Mois du patrimoine de la langue swahilie",
+      "parrains": [
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-135",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-135"
+    },
+    {
+      "numero": "136",
+      "numeroTri": 136,
+      "type": "public",
+      "titreEn": "Responsible Flyer Delivery Act, 2026",
+      "titreFr": "Loi de 2026 sur la distribution responsable de dépliants promotionnels",
+      "parrains": [
+        {
+          "nom": "Bowman, Stephanie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-136",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-136"
+    },
+    {
+      "numero": "137",
+      "numeroTri": 137,
+      "type": "public",
+      "titreEn": "Keeping Our Kids Safe Online Act, 2026",
+      "titreFr": "Loi de 2026 visant à assurer la sécurité de nos enfants en ligne",
+      "parrains": [
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-137",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-137"
+    },
+    {
+      "numero": "138",
+      "numeroTri": 138,
+      "type": "public",
+      "titreEn": "Social Media Age Restriction Plan Act, 2026",
+      "titreFr": "Loi de 2026 sur le plan imposant une restriction d’âge à l’égard des médias sociaux",
+      "parrains": [
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Fife, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-138",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-138"
+    },
+    {
+      "numero": "139",
+      "numeroTri": 139,
+      "type": "public",
+      "titreEn": "Homes You Can Afford in the Communities You Love Act, 2026",
+      "titreFr": "Loi de 2026 pour des logements abordables dans les communautés que vous aimez",
+      "parrains": [
+        {
+          "nom": "Schreiner, Mike",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-139",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-139"
+    },
+    {
+      "numero": "PR1",
+      "numeroTri": 1,
+      "type": "prive",
+      "titreEn": "1976998 Ontario Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Dixon, Jess",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr1",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr1"
+    },
+    {
+      "numero": "PR2",
+      "numeroTri": 2,
+      "type": "prive",
+      "titreEn": "MFIS Holdings and Investments Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Riddell, Brian",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr2",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr2"
+    },
+    {
+      "numero": "PR3",
+      "numeroTri": 3,
+      "type": "prive",
+      "titreEn": "Gilda Investments Limited Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Cooper, Michelle",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr3",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr3"
+    },
+    {
+      "numero": "PR4",
+      "numeroTri": 4,
+      "type": "prive",
+      "titreEn": "Marbro Holdings Ltd. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Mamakwa, Sol",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr4",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr4"
+    },
+    {
+      "numero": "PR5",
+      "numeroTri": 5,
+      "type": "prive",
+      "titreEn": "Social Asset Measurements Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr5",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr5"
+    },
+    {
+      "numero": "PR6",
+      "numeroTri": 6,
+      "type": "prive",
+      "titreEn": "Andrew Zawadowski Medicine Professional Corporation Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Pierre, Natalie",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr6",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr6"
+    },
+    {
+      "numero": "PR7",
+      "numeroTri": 7,
+      "type": "prive",
+      "titreEn": "2512681 Ontario Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Sabawy, Sheref",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr7",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr7"
+    },
+    {
+      "numero": "PR8",
+      "numeroTri": 8,
+      "type": "prive",
+      "titreEn": "Thistletown Lions Club Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Coe, Lorne",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr8",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr8"
+    },
+    {
+      "numero": "PR9",
+      "numeroTri": 9,
+      "type": "prive",
+      "titreEn": "Holy Trinity Restaurant Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr9",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr9"
+    },
+    {
+      "numero": "PR10",
+      "numeroTri": 10,
+      "type": "prive",
+      "titreEn": "Five Senses Productions Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr10",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr10"
+    },
+    {
+      "numero": "PR12",
+      "numeroTri": 12,
+      "type": "prive",
+      "titreEn": "1955274 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Smith, David",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr12",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr12"
+    },
+    {
+      "numero": "PR13",
+      "numeroTri": 13,
+      "type": "prive",
+      "titreEn": "Faris Team Mortgage Brokerage Corp. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Gallagher Murphy, Dawn",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr13",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr13"
+    },
+    {
+      "numero": "PR14",
+      "numeroTri": 14,
+      "type": "prive",
+      "titreEn": "Jarm Holdings Investments Ltd. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Gallagher Murphy, Dawn",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr14",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr14"
+    },
+    {
+      "numero": "PR15",
+      "numeroTri": 15,
+      "type": "prive",
+      "titreEn": "2708634 Ontario Ltd. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bowman, Stephanie",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr15",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr15"
+    },
+    {
+      "numero": "PR16",
+      "numeroTri": 16,
+      "type": "prive",
+      "titreEn": "1581766 Ontario Ltd. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr16",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr16"
+    },
+    {
+      "numero": "PR17",
+      "numeroTri": 17,
+      "type": "prive",
+      "titreEn": "Ludger Michel Estates Limited Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr17",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr17"
+    },
+    {
+      "numero": "PR18",
+      "numeroTri": 18,
+      "type": "prive",
+      "titreEn": "2163694 Ontario Ltd. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Blais, Stephen",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr18",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr18"
+    },
+    {
+      "numero": "PR19",
+      "numeroTri": 19,
+      "type": "prive",
+      "titreEn": "Pickering College Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Gallagher Murphy, Dawn",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr19",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr19"
+    },
+    {
+      "numero": "PR20",
+      "numeroTri": 20,
+      "type": "prive",
+      "titreEn": "730159 Ontario Ltd. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Saunderson, Brian",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr20",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr20"
+    },
+    {
+      "numero": "PR21",
+      "numeroTri": 21,
+      "type": "prive",
+      "titreEn": "1000401924 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr21",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr21"
+    },
+    {
+      "numero": "PR22",
+      "numeroTri": 22,
+      "type": "prive",
+      "titreEn": "1000401927 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr22",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr22"
+    },
+    {
+      "numero": "PR23",
+      "numeroTri": 23,
+      "type": "prive",
+      "titreEn": "Sur-Leen Farms Limited Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Pinsonneault, Steve",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr23",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr23"
+    },
+    {
+      "numero": "PR24",
+      "numeroTri": 24,
+      "type": "prive",
+      "titreEn": "1505756 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr24",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr24"
+    },
+    {
+      "numero": "PR25",
+      "numeroTri": 25,
+      "type": "prive",
+      "titreEn": "Acme Restoration Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr25",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr25"
+    },
+    {
+      "numero": "PR26",
+      "numeroTri": 26,
+      "type": "prive",
+      "titreEn": "1758195 Ontario Ltd. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr26",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr26"
+    },
+    {
+      "numero": "PR27",
+      "numeroTri": 27,
+      "type": "prive",
+      "titreEn": "KCI Property Investment Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Pierre, Natalie",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr27",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr27"
+    },
+    {
+      "numero": "PR28",
+      "numeroTri": 28,
+      "type": "prive",
+      "titreEn": "668986 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Vanthof, John",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr28",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr28"
+    },
+    {
+      "numero": "PR29",
+      "numeroTri": 29,
+      "type": "prive",
+      "titreEn": "P. Gregor Medicine Professional Corporation Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Shaw, Sandy",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr29",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr29"
+    },
+    {
+      "numero": "PR31",
+      "numeroTri": 31,
+      "type": "prive",
+      "titreEn": "Vaughan Basketball Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Fairclough, Lee",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr31",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr31"
+    },
+    {
+      "numero": "PR32",
+      "numeroTri": 32,
+      "type": "prive",
+      "titreEn": "Groves Memorial Community Hospital Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Racinsky, Joseph",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr32",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr32"
+    },
+    {
+      "numero": "PR33",
+      "numeroTri": 33,
+      "type": "prive",
+      "titreEn": "Honey Harbour Community Church Inc. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Saunderson, Brian",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr33",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr33"
+    },
+    {
+      "numero": "PR34",
+      "numeroTri": 34,
+      "type": "prive",
+      "titreEn": "The Roman Catholic Diocese of St. Catharines in Ontario Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Dowie, Andrew",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr34",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr34"
+    },
+    {
+      "numero": "PR35",
+      "numeroTri": 35,
+      "type": "prive",
+      "titreEn": "Pembroke and Area Airport Commission Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Denault, Billy",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr35",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr35"
+    },
+    {
+      "numero": "PR36",
+      "numeroTri": 36,
+      "type": "prive",
+      "titreEn": "2417633 Ontario Limited Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr36",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr36"
+    },
+    {
+      "numero": "PR37",
+      "numeroTri": 37,
+      "type": "prive",
+      "titreEn": "338026 Ontario Limited Act. 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr37",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr37"
+    },
+    {
+      "numero": "PR38",
+      "numeroTri": 38,
+      "type": "prive",
+      "titreEn": "Ontario Wildlife Holdings & Sanctuary Corp. Act, 2025",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Riddell, Brian",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr38",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr38"
+    },
+    {
+      "numero": "PR39",
+      "numeroTri": 39,
+      "type": "prive",
+      "titreEn": "778624 Ontario Limited Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bailey, Robert",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr39",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr39"
+    },
+    {
+      "numero": "PR40",
+      "numeroTri": 40,
+      "type": "prive",
+      "titreEn": "Step by Step Investments Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Pang, Billy",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr40",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr40"
+    },
+    {
+      "numero": "PR41",
+      "numeroTri": 41,
+      "type": "prive",
+      "titreEn": "2771280 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Sabawy, Sheref",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr41",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr41"
+    },
+    {
+      "numero": "PR43",
+      "numeroTri": 43,
+      "type": "prive",
+      "titreEn": "R&J Drago Consultants Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Coe, Lorne",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr43",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr43"
+    },
+    {
+      "numero": "PR44",
+      "numeroTri": 44,
+      "type": "prive",
+      "titreEn": "1092167 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Sabawy, Sheref",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr44",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr44"
+    },
+    {
+      "numero": "PR45",
+      "numeroTri": 45,
+      "type": "prive",
+      "titreEn": "Jinghua Trading (Canada) Ltd. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Pang, Billy",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr45",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr45"
+    },
+    {
+      "numero": "PR46",
+      "numeroTri": 46,
+      "type": "prive",
+      "titreEn": "Base31 Community Association Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Allsopp, Tyler",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr46",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr46"
+    },
+    {
+      "numero": "PR47",
+      "numeroTri": 47,
+      "type": "prive",
+      "titreEn": "M E Investments Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Sattler, Peggy",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr47",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr47"
+    },
+    {
+      "numero": "PR48",
+      "numeroTri": 48,
+      "type": "prive",
+      "titreEn": "CIJ Consulting Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr48",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr48"
+    },
+    {
+      "numero": "PR49",
+      "numeroTri": 49,
+      "type": "prive",
+      "titreEn": "2343967 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Anand, Deepak",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr49",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr49"
+    },
+    {
+      "numero": "PR50",
+      "numeroTri": 50,
+      "type": "prive",
+      "titreEn": "Avant Assets Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr50",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr50"
+    },
+    {
+      "numero": "PR51",
+      "numeroTri": 51,
+      "type": "prive",
+      "titreEn": "861282 Ontario Limited Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Kanapathi, Logan",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr51",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr51"
+    },
+    {
+      "numero": "PR52",
+      "numeroTri": 52,
+      "type": "prive",
+      "titreEn": "Julian Pepper Capital Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Dixon, Jess",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr52",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr52"
+    },
+    {
+      "numero": "PR53",
+      "numeroTri": 53,
+      "type": "prive",
+      "titreEn": "J.C.C. Corp. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Cooper, Michelle",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr53",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr53"
+    },
+    {
+      "numero": "PR54",
+      "numeroTri": 54,
+      "type": "prive",
+      "titreEn": "Ray Hunking Trucking Limited Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Kernaghan, Terence",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr54",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr54"
+    },
+    {
+      "numero": "PR55",
+      "numeroTri": 55,
+      "type": "prive",
+      "titreEn": "London Hydro Holdings Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Rae, Matthew",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr55",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr55"
+    }
+  ]
+}

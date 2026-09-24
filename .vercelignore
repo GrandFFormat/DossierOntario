@@ -1,0 +1,26 @@
+# Ce qui vit dans le dépôt mais n'a rien à faire sur le site servi.
+
+# Le MODÈLE : les six pages en sont tirées par scripts/build-pages.js. Servi tel quel,
+# il ferait doublon avec index.html aux yeux de Google.
+gabarit.html
+
+# L'outillage : il tourne dans GitHub Actions, pas sur le site.
+/scrapers
+/scripts
+/.github
+/.claude
+
+# Les fichiers bruts des scrapers : le site ne lit QUE data/site/. Les fiches complètes
+# (toutes les étapes, les notes explicatives entières, les bureaux de circonscription)
+# pèsent plusieurs mégaoctets et doublonnent avec ola.org, qui reste la source citée sur
+# chaque élément du site.
+/data/bill-details.json
+/data/bills.json
+/data/votes.json
+/data/votes-sans-noms.json
+/data/members.json
+/data/ministers.json
+
+# Notes et journaux : jamais des pages.
+**/*.md
+**/*.log

@@ -1,0 +1,200 @@
+/* DossierOntario — feuille de style, d'après la « Charte Dossier ».
+   Les jetons viennent de la charte commune (tokens.json, version du 19 septembre 2026).
+   Une seule chose change d'une province à l'autre : l'accent. Ici, le rouge du Red
+   Ensign, #C8102E (Flag Act, R.S.O. 1990, c. F.20 — code de l'Amirauté T1144).
+   Le jaune #FFD24D est commun à toute la famille : c'est lui qui dit « site Dossier ». */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap');
+
+:root{
+  --ink:#131313; --paper:#F2F0EA; --paper-2:#FDFCF9; --card:#FFFFFF;
+  --line:#131313; --line-soft:#E5E2DA; --slate:#555550;
+  --sur-clair:#131313; --sur-fonce:#FFFFFF;
+  --gold:#C8102E; --gold-soft:#ffd9d6; --gold-bg:#C8102E; --gold-hover:#851420;
+  --ink-bg:#131313; --yellow:#FFD24D;
+  --green:#1E6A3C; --green-soft:#BFE8CD; --red:#C22B1D; --red-soft:#F6C9C2;
+  --erable-rouge:#D52B1E;
+  --h-ctrl:36px; --gouttiere:28px; --colonne:1280px;
+  --shadow-sm:4px 4px 0 var(--ink); --shadow:6px 6px 0 var(--ink); --shadow-lg:8px 8px 0 var(--ink);
+}
+/* Le thème sombre est un CHOIX du visiteur, jamais le réglage du système. */
+:root[data-theme="dark"]{
+  --ink:#F3F1EA; --paper:#1A1815; --paper-2:#221F1A; --card:#272420;
+  --line:#F3F1EA; --line-soft:#3D3931; --slate:#A9A498;
+  --gold:#f9817f; --gold-soft:#4a1d1d; --gold-bg:#C8102E;
+  --ink-bg:#0E0D0B;
+  --green:#5FCB8A; --green-soft:#153A22; --red:#FF8172; --red-soft:#411D18;
+  --shadow-sm:4px 4px 0 #131313; --shadow:6px 6px 0 #131313; --shadow-lg:8px 8px 0 #131313;
+}
+
+*{box-sizing:border-box;}
+*{border-radius:0 !important;}
+::selection{background:var(--yellow); color:var(--sur-clair);}
+
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Archivo',system-ui,sans-serif; -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+img{max-width:100%;}
+
+.colonne{max-width:var(--colonne); margin:0 auto; padding:0 var(--gouttiere);}
+@media (max-width:640px){ :root{ --gouttiere:18px; } }
+
+/* ---------- En-tête ---------- */
+.entete{background:var(--paper); border-bottom:3px solid var(--ink); position:sticky; top:0; z-index:50;}
+.entete-rang{
+  max-width:var(--colonne); margin:0 auto; padding:12px var(--gouttiere);
+  display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+}
+.mot-symbole{
+  font-weight:900; font-size:24px; letter-spacing:-0.03em; text-transform:uppercase;
+  text-decoration:none; display:inline-flex; align-items:center; gap:12px;
+}
+.mot-symbole .province{color:var(--gold);}
+.erable{color:var(--yellow); display:inline-flex; transition:transform .7s ease-in-out, color .7s ease-in-out;}
+.erable svg{width:26px; height:26px; display:block;}
+.erable.est-rouge{color:var(--erable-rouge); transform:rotate(180deg);}
+
+.controles{display:flex; align-items:center; gap:8px;}
+.controles > *{
+  height:var(--h-ctrl); border:1px solid var(--line); background:var(--card); color:var(--ink);
+  font-family:'Archivo Narrow',sans-serif; font-weight:600; font-size:12px;
+  text-transform:uppercase; letter-spacing:.04em; padding:0 14px; cursor:pointer;
+}
+.controles > *:hover{background:var(--yellow); color:var(--sur-clair);}
+.controles > *:focus-visible{outline:2px solid var(--gold); outline-offset:2px;}
+
+/* ---------- Onglets de navigation ---------- */
+.onglets{display:flex; gap:8px; flex-wrap:wrap; padding:10px var(--gouttiere); max-width:var(--colonne); margin:0 auto;}
+.onglets a{
+  font-family:'Archivo Narrow',sans-serif; font-size:13.5px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.04em; text-decoration:none;
+  padding:6px 12px; border:2px solid transparent;
+}
+.onglets a.actif{color:var(--card); background:var(--ink); border-color:var(--ink);}
+:root[data-theme="dark"] .onglets a.actif{color:var(--paper);}
+.onglets a:hover:not(.actif){background:var(--yellow); border-color:var(--sur-clair); color:var(--sur-clair);}
+
+/* ---------- Bandes ---------- */
+.bande{border-top:3px solid var(--ink); border-bottom:3px solid var(--ink); padding:22px 0; margin:0 0 28px;}
+.bande-mission{
+  background:var(--gold-bg); color:var(--sur-fonce);
+  --ink:var(--sur-fonce); --slate:#f3dcdc; --line:var(--sur-fonce);
+}
+.bande-alerte{
+  background:var(--yellow); color:var(--sur-clair);
+  --ink:#131313; --paper:#FFD24D; --card:#FFD24D; --slate:#3a3a36; --line:#131313; --gold:#851420;
+}
+.bande p{margin:0; font-size:16px; line-height:1.5;}
+.bande p + p{margin-top:8px;}
+
+/* ---------- Titres ---------- */
+.titre-une{
+  margin:34px 0 10px; font-weight:900; text-transform:uppercase; letter-spacing:-0.02em;
+  line-height:.92; font-size:clamp(40px,7vw,92px);
+}
+.titre-une span{display:block;}
+.titre-contour{color:transparent; -webkit-text-stroke:3px var(--ink);}
+.titre-accent{color:var(--gold);}
+.titre-vue{
+  margin:30px 0 8px; font-weight:900; text-transform:uppercase; letter-spacing:-0.02em;
+  line-height:.94; font-size:clamp(30px,4.6vw,56px);
+}
+.chapo{font-size:17px; line-height:1.5; max-width:680px; margin:10px 0 20px;}
+.courant{font-size:15.5px; line-height:1.55;}
+.legende, .meta{
+  font-family:'Archivo Narrow',sans-serif; font-weight:600; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.06em; color:var(--slate);
+}
+
+/* ---------- Bande de chiffres ---------- */
+.chiffres{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin:20px 0 30px;}
+.chiffre{border:3px solid var(--ink); background:var(--card); padding:14px 16px; box-shadow:var(--shadow-sm);}
+.chiffre b{display:block; font-weight:900; font-size:clamp(28px,4vw,44px); line-height:1; letter-spacing:-.02em;}
+.chiffre span{display:block; margin-top:6px; font-family:'Archivo Narrow',sans-serif; font-weight:700;
+  font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--slate);}
+
+/* ---------- Cartes ---------- */
+.grille{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:18px;}
+.carte{
+  border:3px solid var(--ink); background:var(--card); padding:16px 18px;
+  box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px;
+}
+.carte:hover{background:var(--paper-2);}
+.carte-titre{font-weight:800; font-size:18px; line-height:1.25; margin:0;}
+.carte-titre a{text-decoration:none;}
+.carte-titre a:hover{color:var(--gold);}
+.numero{
+  display:inline-block; background:var(--gold-bg); color:var(--sur-fonce);
+  font-weight:900; font-size:13px; padding:4px 10px; letter-spacing:.02em;
+}
+
+/* ---------- Pastilles ---------- */
+.pastille{
+  display:inline-flex; align-items:center; gap:6px; border:2px solid var(--line);
+  padding:3px 9px; font-family:'Archivo Narrow',sans-serif; font-weight:700;
+  font-size:11px; text-transform:uppercase; letter-spacing:.05em; background:var(--card);
+}
+.pastille-sanctionne{background:var(--green-soft); border-color:var(--green); color:var(--ink);}
+.pastille-encours{background:var(--gold-soft); border-color:var(--gold); color:var(--ink);}
+.pastille-arrete{background:var(--red-soft); border-color:var(--red); color:var(--ink);}
+.pastille-parti{color:var(--sur-fonce); border-color:var(--sur-clair);}
+
+/* ---------- Étapes ---------- */
+.etapes{display:flex; flex-wrap:wrap; gap:6px; margin:6px 0;}
+.etape{
+  flex:1 1 90px; border:2px solid var(--line); background:var(--card); padding:6px 8px;
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:10.5px;
+  text-transform:uppercase; letter-spacing:.04em; text-align:center; color:var(--slate);
+}
+.etape.franchie{background:var(--gold-bg); border-color:var(--gold-bg); color:var(--sur-fonce);}
+
+/* ---------- Tableaux (votes) ---------- */
+.tableau{width:100%; border-collapse:collapse; border:3px solid var(--ink); background:var(--card);}
+.tableau th, .tableau td{border:1px solid var(--line-soft); padding:8px 10px; text-align:left; font-size:14px;}
+.tableau th{
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.06em; background:var(--paper-2);
+}
+.tableau tr:hover td{background:var(--yellow); color:var(--sur-clair);}
+.pour{color:var(--green); font-weight:800;}
+.contre{color:var(--red); font-weight:800;}
+
+/* ---------- Encadré d'explication ---------- */
+.encadre{border:2px solid var(--line); background:var(--paper-2); padding:12px 14px; margin:16px 0; font-size:14.5px; line-height:1.5;}
+.encadre b{font-weight:800;}
+
+/* ---------- Boutons et liens ---------- */
+.bouton{
+  display:inline-block; border:3px solid var(--ink); background:var(--gold-bg); color:var(--sur-fonce);
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12.5px; text-transform:uppercase;
+  letter-spacing:.05em; padding:9px 16px; text-decoration:none; box-shadow:var(--shadow-sm); cursor:pointer;
+}
+.bouton:hover{background:var(--yellow); color:var(--sur-clair);}
+.lien-source{color:var(--gold); text-decoration:underline; text-underline-offset:3px; font-weight:600;}
+/* Une adresse de courriel garde sa casse : les étiquettes sont en capitales, pas les adresses. */
+.legende a[href^="mailto:"]{text-transform:none; letter-spacing:0;}
+
+/* ---------- Recherche et filtres ---------- */
+.barre-filtres{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin:18px 0;}
+.champ{
+  border:3px solid var(--ink); background:var(--card); color:var(--ink); padding:9px 12px;
+  font-family:'Archivo',sans-serif; font-size:15px; min-width:240px; box-shadow:var(--shadow-sm);
+}
+.champ:focus{outline:3px solid var(--yellow); outline-offset:2px;}
+.filtre{
+  border:2px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer;
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.05em; padding:7px 12px;
+}
+.filtre:hover{background:var(--yellow); color:var(--sur-clair);}
+.filtre.actif{background:var(--ink-bg); color:var(--yellow); border-color:var(--ink-bg);}
+
+/* ---------- Pied de page ---------- */
+.pied{border-top:3px solid var(--ink); margin-top:44px; padding:26px 0 40px; background:var(--card);}
+.pied p{margin:6px 0; font-size:13.5px; line-height:1.55; color:var(--slate);}
+.pied .non-officiel{font-family:'Archivo Narrow',sans-serif; font-weight:700; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--ink); font-size:12px;}
+
+@media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important;} }
