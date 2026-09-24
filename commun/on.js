@@ -22,6 +22,10 @@
     en: {
       'nav.accueil': 'Home', 'nav.projets': 'Bills', 'nav.votes': 'Votes',
       'nav.deputes': 'MPPs', 'nav.cabinet': 'Cabinet', 'nav.sources': 'Sources',
+      'nav.lexique': 'Lexicon',
+      'lexique.titre': 'Plain-language lexicon',
+      'lexique.intro': 'Parliamentary words, explained in ordinary ones. These explanations are ours, not the Assembly’s: we write them to be understood, not to be precise in the legal sense. For the formal definitions, the Assembly publishes its own glossary.',
+      'lexique.officiel': 'The Assembly’s glossary of procedural terms →',
       'entete.erable': 'Go to the federal site — DossierCanada',
       'entete.langue': 'Français', 'entete.theme': 'Theme', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': 'Unofficial site — not affiliated with the Legislative Assembly of Ontario',
@@ -74,6 +78,10 @@
     fr: {
       'nav.accueil': 'Accueil', 'nav.projets': 'Projets de loi', 'nav.votes': 'Votes',
       'nav.deputes': 'Député·e·s', 'nav.cabinet': 'Conseil des ministres', 'nav.sources': 'Sources',
+      'nav.lexique': 'Lexique',
+      'lexique.titre': 'Le lexique en langage clair',
+      'lexique.intro': 'Les mots du Parlement, expliqués avec des mots de tous les jours. Ces explications sont les nôtres, pas celles de l’Assemblée : elles cherchent à être comprises, pas à être exactes au sens juridique. Pour les définitions formelles, l’Assemblée publie son propre glossaire.',
+      'lexique.officiel': 'Le glossaire des termes de procédure de l’Assemblée →',
       'entete.erable': 'Aller au site fédéral — DossierCanada',
       'entete.langue': 'English', 'entete.theme': 'Thème', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': "Site non officiel — sans lien avec l'Assemblée législative de l'Ontario",
@@ -205,12 +213,14 @@
     await Promise.all(
       voulus.map(async (nom) => {
         try {
-          const res = await fetch(`data/site/${nom}.json`, { cache: 'no-cache' });
+          // « contenu:x » = un fichier ÉCRIT (le lexique) ; sinon, une donnée RÉCOLTÉE.
+          const chemin = nom.startsWith('contenu:') ? `contenu/${nom.slice(8)}.json` : `data/site/${nom}.json`;
+          const res = await fetch(chemin, { cache: 'no-cache' });
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          DONNEES[nom] = await res.json();
+          DONNEES[nom.replace('contenu:', '')] = await res.json();
         } catch (err) {
           console.error(`Données « ${nom} » indisponibles :`, err.message);
-          DONNEES[nom] = null;
+          DONNEES[nom.replace('contenu:', '')] = null;
         }
       })
     );
@@ -384,6 +394,28 @@
         </details>`
       )
       .join('');
+  };
+
+  VUES.lexique = () => {
+    const cible = document.querySelector('section[data-vue="lexique"]');
+    const lex = DONNEES.lexique;
+    if (!cible || !lex) return;
+
+    const entree = (e) => `<article class="carte">
+      <h3 class="carte-titre">${echapper(selonLangue(e.terme.en, e.terme.fr))}</h3>
+      <p class="courant">${echapper(selonLangue(e.texte.en, e.texte.fr))}</p>
+    </article>`;
+
+    cible.innerHTML =
+      lex.groupes
+        .map(
+          (g) => `<h2 class="titre-vue">${echapper(selonLangue(g.titre.en, g.titre.fr))}</h2>
+            <div class="grille">${g.entrees.map(entree).join('')}</div>`
+        )
+        .join('') +
+      `<p class="legende" style="margin-top:22px">
+        <a class="lien-source" href="${echapper(langue === 'fr' ? lex.source.fr : lex.source.en)}"
+           target="_blank" rel="noopener">${mot('lexique.officiel')}</a></p>`;
   };
 
   VUES.deputes = () => {

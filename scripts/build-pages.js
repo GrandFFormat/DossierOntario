@@ -86,6 +86,21 @@ const PAGES = [
   <section data-vue="cabinet"></section>`,
   },
   {
+    fichier: 'glossary.html',
+    vue: 'lexique',
+    donnees: 'contenu:lexique',
+    titre: 'Lexicon',
+    description:
+      'Bills, readings, closure, prorogation: the words of the Ontario Legislature explained in plain language.',
+    contenu: `  <h1 class="titre-vue" data-i18n="lexique.titre">Plain-language lexicon</h1>
+  <div class="encadre" data-i18n="lexique.intro">
+    Parliamentary words, explained in ordinary ones. These explanations are ours, not the
+    Assembly's: we write them to be understood, not to be precise in the legal sense.
+    For the formal definitions, the Assembly publishes its own glossary.
+  </div>
+  <section data-vue="lexique"></section>`,
+  },
+  {
     fichier: 'sources.html',
     vue: 'sources',
     donnees: '',

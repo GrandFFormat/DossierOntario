@@ -6,14 +6,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MPPs — DossierOntario</title>
-<meta name="description" content="The 124 members of provincial parliament, their party, riding and contact details.">
-<link rel="canonical" href="https://dossierontario.ca/mpps">
-<link rel="alternate" hreflang="en" href="https://dossierontario.ca/mpps">
-<meta property="og:title" content="MPPs — DossierOntario">
-<meta property="og:description" content="The 124 members of provincial parliament, their party, riding and contact details.">
+<title>Lexicon — DossierOntario</title>
+<meta name="description" content="Bills, readings, closure, prorogation: the words of the Ontario Legislature explained in plain language.">
+<link rel="canonical" href="https://dossierontario.ca/glossary">
+<link rel="alternate" hreflang="en" href="https://dossierontario.ca/glossary">
+<meta property="og:title" content="Lexicon — DossierOntario">
+<meta property="og:description" content="Bills, readings, closure, prorogation: the words of the Ontario Legislature explained in plain language.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://dossierontario.ca/mpps">
+<meta property="og:url" content="https://dossierontario.ca/glossary">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="commun/on.css">
 <script src="commun/on.js" defer></script>
 </head>
-<body data-vue="deputes" data-donnees="members">
+<body data-vue="lexique" data-donnees="contenu:lexique">
 
 <header class="entete">
   <div class="entete-rang">
@@ -45,16 +45,21 @@
     <a href="/" data-i18n="nav.accueil" class="">Home</a>
     <a href="/bills" data-i18n="nav.projets" class="">Bills</a>
     <a href="/votes" data-i18n="nav.votes" class="">Votes</a>
-    <a href="/mpps" data-i18n="nav.deputes" class="actif">MPPs</a>
+    <a href="/mpps" data-i18n="nav.deputes" class="">MPPs</a>
     <a href="/cabinet" data-i18n="nav.cabinet" class="">Cabinet</a>
-    <a href="/glossary" data-i18n="nav.lexique" class="">Lexicon</a>
+    <a href="/glossary" data-i18n="nav.lexique" class="actif">Lexicon</a>
     <a href="/sources" data-i18n="nav.sources" class="">Sources</a>
   </nav>
 </header>
 
 <main class="colonne">
-  <h1 class="titre-vue" data-i18n="deputes.titre">Members of Provincial Parliament</h1>
-  <section data-vue="deputes"></section>
+  <h1 class="titre-vue" data-i18n="lexique.titre">Plain-language lexicon</h1>
+  <div class="encadre" data-i18n="lexique.intro">
+    Parliamentary words, explained in ordinary ones. These explanations are ours, not the
+    Assembly's: we write them to be understood, not to be precise in the legal sense.
+    For the formal definitions, the Assembly publishes its own glossary.
+  </div>
+  <section data-vue="lexique"></section>
 </main>
 
 <footer class="pied">
