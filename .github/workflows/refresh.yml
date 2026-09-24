@@ -27,6 +27,11 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    # Porté au niveau du travail, et pas de l'étape : le contexte `secrets` ne se lit pas
+    # dans un `if` d'étape, mais `env` oui. C'est ce qui permet de SAUTER les résumés quand
+    # le secret n'est pas configuré, au lieu de faire rougir le rafraîchissement chaque matin.
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -65,6 +70,15 @@ jobs:
       - name: Contrôler les votes contre les procès-verbaux
         continue-on-error: true
         run: npm run verifier:votes
+
+      # Les résumés en langage clair. En lot (moitié prix), et seulement pour les projets
+      # nouveaux ou dont la dernière activité a bougé : un jour ordinaire, ça ne coûte rien
+      # du tout. Sans le secret ANTHROPIC_API_KEY l'étape est SAUTÉE et le reste tourne —
+      # le site affiche alors la note officielle de l'Assemblée, comme avant.
+      - name: Écrire les résumés en langage clair
+        if: env.ANTHROPIC_API_KEY != ''
+        continue-on-error: true
+        run: npm run resumes -- --batch
 
       - name: Préparer les données du site et les pages
         run: npm run build

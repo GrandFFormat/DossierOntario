@@ -73,10 +73,12 @@
       'groupe.2': 'At second reading', 'groupe.1': 'Tabled, nothing since',
       'projet.parraine': 'Sponsored by', 'projet.note': 'Explanatory note (official)',
       'projet.ouvrir': 'What this bill does',
+      'projet.resume': 'In plain words',
+      'projet.resumeIA': 'Written by AI from the official text published on ola.org. Not an official document, and not the law as amended since.',
       'projet.sansNote': 'The Assembly published no explanatory note for this bill. The official text says what it does.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
-      'projet.avertissement': 'The explanatory note is written by the Assembly as a reader’s aid and is not part of the law.',
+      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such, then the Assembly’s own explanatory note — which the Assembly writes as a reader’s aid, and which is not part of the law.',
       'projet.derniere': 'Last activity',
       'votes.titre': 'Recorded votes', 'votes.pour': 'Ayes', 'votes.contre': 'Nays',
       'votes.resultat': 'Outcome', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -110,7 +112,8 @@
       'sources.quoi': 'Data', 'sources.source': 'Source',
       'sources.pasTitre': 'What this site does not do',
       'sources.pas': 'It never invents a missing value: an unknown field is shown as unknown. It never gets around a site’s protections — our reader identifies itself honestly and follows ola.org’s robots.txt, which is why we follow links instead of using the Assembly’s own search engine. Ontario has no electronic petitions, and Hansard is not translated, so neither appears here.',
-      'sources.l1': 'Bills, stages, explanatory notes', 'sources.l2': 'Recorded votes',
+      'sources.l1': 'Bills, stages, explanatory notes, official texts (the source of the plain-language summaries)',
+      'sources.l2': 'Recorded votes',
       'sources.l3': 'MPPs, party standings, contact details', 'sources.l4': 'Ministers, official French titles',
     },
     fr: {
@@ -167,10 +170,12 @@
       'groupe.2': 'En deuxième lecture', 'groupe.1': 'Déposés, rien depuis',
       'projet.parraine': 'Parrainé par', 'projet.note': 'Note explicative (officielle)',
       'projet.ouvrir': 'Ce que fait ce projet',
+      'projet.resume': 'En clair',
+      'projet.resumeIA': 'Rédigé par une IA à partir du texte officiel publié sur ola.org. Ce n’est pas un document officiel, ni la loi telle qu’amendée depuis.',
       'projet.sansNote': 'L’Assemblée n’a publié aucune note explicative pour ce projet. Le texte officiel dit ce qu’il fait.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
-      'projet.avertissement': 'La note explicative est rédigée par l’Assemblée à titre de service aux lecteurs et ne fait pas partie de la loi.',
+      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel, puis la note explicative de l’Assemblée — qu’elle écrit à titre de service aux lecteurs et qui ne fait pas partie de la loi.',
       'projet.derniere': 'Dernière activité',
       'votes.titre': 'Votes nominatifs', 'votes.pour': 'Pour', 'votes.contre': 'Contre',
       'votes.resultat': 'Résultat', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -204,7 +209,8 @@
       'sources.quoi': 'Donnée', 'sources.source': 'Source',
       'sources.pasTitre': 'Ce que ce site ne fait pas',
       'sources.pas': 'Il n’invente jamais une donnée manquante : un champ inconnu est affiché comme inconnu. Il ne contourne aucune protection — notre lecteur s’identifie honnêtement et respecte le robots.txt d’ola.org, ce qui explique qu’on suive les liens au lieu d’utiliser le moteur de recherche de l’Assemblée. L’Ontario n’a pas de pétitions électroniques, et le Journal des débats n’est pas traduit : ni l’un ni l’autre n’apparaît ici.',
-      'sources.l1': 'Projets de loi, étapes, notes explicatives', 'sources.l2': 'Votes nominatifs',
+      'sources.l1': 'Projets de loi, étapes, notes explicatives, textes officiels (la source des résumés en clair)',
+      'sources.l2': 'Votes nominatifs',
       'sources.l3': 'Député·e·s, état des partis, coordonnées', 'sources.l4': 'Ministres, titres officiels français',
     },
   };
@@ -402,6 +408,9 @@
         .map((n) => `<div class="etape ${p.etape >= n ? 'franchie' : ''}">${mot(`etape.${n}`)}</div>`)
         .join('');
       const note = selonLangue(p.noteEn, p.noteFr);
+      // Le résumé en clair arrive AVANT la note officielle : c'est ce qu'on vient chercher.
+      // La note reste dessous, mot pour mot — le résumé ne la remplace pas, il y mène.
+      const resume = selonLangue(p.resumeEn, p.resumeFr);
       const lien = selonLangue(p.url, p.urlFr);
       const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
       const pastilleParti = parti
@@ -427,6 +436,13 @@
         <details class="projet-detail">
           <summary>${mot('projet.ouvrir')}</summary>
           <div class="projet-detail-corps">
+            ${
+              resume
+                ? `<h4 class="sous-titre">${mot('projet.resume')}</h4>
+                   <ul class="resume">${resume.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
+                   <p class="legende avis-ia">${mot('projet.resumeIA')}</p>`
+                : ''
+            }
             ${
               note
                 ? `<h4 class="sous-titre">${mot('projet.note')}</h4><p class="courant">${echapper(note)}</p>`

@@ -191,6 +191,11 @@ img{max-width:100%;}
 .projet-detail[open] > summary::before{content:'−';}
 .projet-detail > summary:hover{color:var(--ink);}
 .projet-detail-corps{display:flex; flex-direction:column; gap:12px; padding-top:12px;}
+.resume{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px;}
+.resume li{font-size:15.5px; line-height:1.5;}
+.resume li::marker{color:var(--gold); font-weight:900;}
+/* L'avertissement colle au résumé qu'il concerne, pas à la note officielle en dessous. */
+.avis-ia{margin-top:-4px; text-transform:none; letter-spacing:0; font-style:italic;}
 .sous-titre{
   margin:0; font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11px;
   text-transform:uppercase; letter-spacing:.07em; color:var(--slate);

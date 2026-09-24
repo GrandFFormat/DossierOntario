@@ -16,9 +16,12 @@
     "build": "npm run build:data && npm run build:pages",
     "scrape:votes-sans-noms": "node scrapers/votes-sans-noms.js",
     "scrape:comites": "node scrapers/comites.js",
-    "verifier:votes": "node scripts/verifier-votes.js"
+    "verifier:votes": "node scripts/verifier-votes.js",
+    "resumes": "node scrapers/resumes.js",
+    "resumes:estimation": "node scrapers/resumes.js --dry-run"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
     "cheerio": "^1.0.0",
     "csv-parse": "^7.0.2"
   }

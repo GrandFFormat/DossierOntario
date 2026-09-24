@@ -25,6 +25,12 @@ const MAX_NOTE = 1200; // le site affiche un extrait ; la note entière reste da
 
 const lireJson = (chemin) => (existsSync(chemin) ? JSON.parse(readFileSync(chemin, 'utf-8')) : null);
 
+/** Les puces d'un projet dans une langue, ou null s'il n'y en a pas (ou pas d'utiles). */
+const puces = (resumes, numero, langue) => {
+  const r = resumes?.resumes?.[numero]?.[langue];
+  return r && !r.sansContenu && r.puces?.length ? r.puces : null;
+};
+
 function etapeDe(fiche) {
   if (!fiche || !fiche.etapes?.length) return 1;
   const etapes = fiche.etapes;
@@ -95,6 +101,7 @@ function main() {
   const ministers = lireJson('data/ministers.json');
   const calendrier = lireJson('data/calendrier.json');
   const comites = lireJson('data/comites.json');
+  const resumes = lireJson('data/resumes.json');
 
   if (!bills) throw new Error('data/bills.json manquant — lancer les scrapers d\'abord.');
   mkdirSync(SORTIE, { recursive: true });
@@ -136,6 +143,11 @@ function main() {
       derniereActivite: f?.derniereActivite ?? null,
       noteEn: extrait(f?.noteEn),
       noteFr: extrait(f?.noteFr),
+      // Les puces en langage clair (scrapers/resumes.js). Un résumé que le modèle a refusé
+      // d'écrire faute de matière (« sansContenu ») n'arrive pas ici : mieux vaut la note
+      // officielle seule qu'une phrase creuse présentée comme un résumé.
+      resumeEn: puces(resumes, p.numero, 'en'),
+      resumeFr: puces(resumes, p.numero, 'fr'),
       votes: f?.votes?.length ?? 0,
       url: p.url,
       urlFr: p.urlFr,

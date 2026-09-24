@@ -72,6 +72,37 @@ Options utiles : `--limite N`, `--numeros 5,12`, `--type public|prive`.
 `OLA_DELAI_MS` change le délai entre deux requêtes (2000 par défaut). Ne pas le baisser
 pour aller plus vite : la lenteur fait partie de la politesse.
 
+## Les résumés en langage clair
+
+`scrapers/resumes.js` lit le **texte officiel** de chaque projet sur ola.org — l'onglet
+« Bill » de la fiche, celui que `bill-details.js` se contente de mesurer — et en tire trois à
+sept puces. Une fois par langue, à partir du texte officiel **de cette langue** : l'Ontario
+publie ses lois en anglais et en français, autant s'en servir plutôt que de traduire un
+résumé. 191 projets, 330 résumés (52 projets n'ont pas de texte français).
+
+La consigne interdit d'ajouter quoi que ce soit d'absent du texte, de juger, de décrire le
+processus législatif (le site le montre ailleurs) et de recalculer un chiffre. Quand le texte
+est procédural ou trop mince, le modèle lève `sansContenu` et **on n'affiche rien** plutôt
+qu'une phrase creuse. La carte porte le résumé au-dessus de la note officielle, jamais à sa
+place, avec l'avertissement qu'il vient d'une IA et le texte de l'Assemblée juste en dessous.
+
+```bash
+npm run resumes:estimation     # ce que coûterait le travail restant — ne dépense rien
+npm run resumes -- --limit 10  # un petit lot, plein tarif
+npm run resumes -- --batch     # tout ce qui manque, API Batches, moitié prix
+```
+
+Rien n'est jamais repayé : un résumé n'est refait que si la **dernière activité** du projet a
+changé. Le premier lot complet a coûté **2,72 $ US**, et un jour ordinaire ne coûte rien du
+tout. La clé (`ANTHROPIC_API_KEY`) vient de l'environnement ou de `api.env`, jamais du dépôt ;
+en CI, l'étape est **sautée** si le secret n'est pas configuré et le reste tourne — le site
+retombe alors sur la note officielle de l'Assemblée.
+
+⚠️ Deux pièges déjà payés. La **langue de sortie s'écrit** : les premiers résumés anglais sont
+revenus en français parce que le schéma de l'outil — le dernier mot que le modèle lit — était
+rédigé en français des deux côtés. Et les textes se lisent **avant** d'appeler l'API : on ne
+paie pas pour découvrir ensuite qu'une page d'ola.org n'a pas répondu.
+
 ## Fabriquer le site
 
 ```bash
