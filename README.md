@@ -89,6 +89,27 @@ node scripts/serve.js  # http://localhost:4173 pour regarder le résultat
 - Le rafraîchissement quotidien tourne dans `.github/workflows/refresh.yml`, du lundi au
   vendredi matin, et ne produit un commit que si quelque chose a changé.
 
+## Le déploiement (Vercel)
+
+Le site est **fabriqué avant le commit** : les six pages et `data/site/` sont dans le
+dépôt. Vercel n'a donc rien à construire, il n'a qu'à servir des fichiers. C'est ce que
+disent `installCommand` et `buildCommand` dans `vercel.json` : sans eux, Vercel verrait
+le script `build` du `package.json` et essaierait de refabriquer le site — alors que
+`.vercelignore` retire justement `/scripts` et les données brutes de ce qui lui est
+envoyé, puisqu'il n'en a pas besoin.
+
+Deux choses apprises en chemin, un soir de septembre 2026 :
+
+- **Vercel valide `vercel.json` contre son schéma et rejette toute clé inconnue.** Une
+  clé `"//"` ajoutée en guise de commentaire fait échouer le déploiement en une seconde,
+  avant même le clonage. D'où cette section : les explications vont ici, pas là-bas.
+- **La branche de production se règle dans Vercel** (*Settings → Git → Production
+  Branch*). Si elle ne correspond pas à la branche poussée (`master`), chaque push ne
+  produit qu'un déploiement « Preview » et le domaine ne sert rien.
+
+`ignoreCommand` évite les déploiements inutiles : un commit qui ne touche qu'un README,
+les scrapers, les scripts ou les workflows ne change rien au site servi.
+
 ## L'état de la Chambre
 
 La 44e législature siège depuis le 14 avril 2025. En 2026, elle siège du lundi au jeudi,
