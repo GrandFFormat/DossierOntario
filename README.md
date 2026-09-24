@@ -83,8 +83,10 @@ résumé. 191 projets, 330 résumés (52 projets n'ont pas de texte français).
 La consigne interdit d'ajouter quoi que ce soit d'absent du texte, de juger, de décrire le
 processus législatif (le site le montre ailleurs) et de recalculer un chiffre. Quand le texte
 est procédural ou trop mince, le modèle lève `sansContenu` et **on n'affiche rien** plutôt
-qu'une phrase creuse. La carte porte le résumé au-dessus de la note officielle, jamais à sa
-place, avec l'avertissement qu'il vient d'une IA et le texte de l'Assemblée juste en dessous.
+qu'une phrase creuse. La carte porte le résumé avec l'avertissement qu'il vient d'une IA, et le
+bouton vers le texte officiel sur ola.org. La note explicative de l'Assemblée n'est plus reprise
+(24 sept. 2026) : sous le résumé, c'était un mur de prose juridique en double d'une page qu'ola.org
+publie déjà. Elle reste dans `data/bill-details.json`.
 
 ```bash
 npm run resumes:estimation     # ce que coûterait le travail restant — ne dépense rien
@@ -98,7 +100,7 @@ l'estimation annonçait 2,72 $ : compter quatre signes par jeton sous-estime la 
 juridique d'environ moitié, prévoir large. Un jour ordinaire ne coûte rien du tout.
 La clé (`ANTHROPIC_API_KEY`) vient de l'environnement ou de `api.env`, jamais du dépôt ;
 en CI, l'étape est **sautée** si le secret n'est pas configuré et le reste tourne — le site
-retombe alors sur la note officielle de l'Assemblée.
+dit alors qu'il n'a pas encore de résumé, et renvoie au texte officiel.
 
 Les puces ne sont pas dans `bills.json` : elles y faisaient passer la page de 86 à 157 ko
 compressés. Elles vivent dans `data/site/resumes-en.json` et `resumes-fr.json` (37 et 34 ko),

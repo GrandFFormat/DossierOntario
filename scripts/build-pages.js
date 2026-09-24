@@ -72,7 +72,7 @@ const PAGES = [
     donnees: 'bills',
     titre: 'Bills',
     description:
-      '139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor, a plain-language summary and the official explanatory note.',
+      '139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor and a plain-language summary, with a link to the official text.',
     contenu: `  <h1 class="titre-vue" data-i18n="projets.titre">Bills</h1>
   <div class="encadre" data-i18n-html="intro.projets">
     <b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee,
@@ -80,8 +80,7 @@ const PAGES = [
     that is not a failure of this site, it is what the record shows.
   </div>
   <div class="encadre"><span data-i18n="projet.avertissement">Open a bill to read a plain-language summary,
-    written by AI from the official text and marked as such, then the Assembly’s own explanatory note — which
-    the Assembly writes as a reader’s aid, and which is not part of the law.</span></div>
+    written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.</span></div>
   <div class="encadre"><span data-i18n="intro.deduction">ola.org does not say whether a bill comes from the
     government: we work it out from the sponsor — a minister, with a portfolio in brackets.</span></div>
   <section data-vue="projets"></section>`,
@@ -169,7 +168,7 @@ const PAGES = [
   <h2 class="titre-vue" data-i18n="sources.doù">Where the data comes from</h2>
   <table class="tableau">
     <tr><th data-i18n="sources.quoi">Data</th><th data-i18n="sources.source">Source</th></tr>
-    <tr><td data-i18n="sources.l1">Bills, stages, explanatory notes, official texts (the source of the plain-language summaries)</td>
+    <tr><td data-i18n="sources.l1">Bills, stages, official texts (the source of the plain-language summaries)</td>
         <td><a class="lien-source" href="https://www.ola.org/en/legislative-business/bills/parliament-44/session-1">ola.org — Bills</a></td></tr>
     <tr><td data-i18n="sources.l2">Recorded votes</td>
         <td><a class="lien-source" href="https://www.ola.org/en/legislative-business/votes-search">ola.org — one page per division</a></td></tr>

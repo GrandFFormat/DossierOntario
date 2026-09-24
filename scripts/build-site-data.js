@@ -21,7 +21,6 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { cleNom } from '../scrapers/ola.js';
 
 const SORTIE = 'data/site';
-const MAX_NOTE = 1200; // le site affiche un extrait ; la note entière reste dans data/
 
 const lireJson = (chemin) => (existsSync(chemin) ? JSON.parse(readFileSync(chemin, 'utf-8')) : null);
 
@@ -40,34 +39,6 @@ function etapeDe(fiche) {
   if (etapes.some((e) => e.comite)) return 3;
   if (aUneEtape(/Second Reading/i)) return 2;
   return 1;
-}
-
-// Toutes les notes explicatives s'ouvrent sur le même avertissement de l'Assemblée
-// (« cette note ne fait pas partie de la loi »), parfois suivi du chapitre où le projet
-// a été édicté. Le répéter sur 139 cartes n'apprend rien : le site l'affiche une fois,
-// en haut de la page. On le retire donc de l'extrait — le texte reste entier dans
-// data/bill-details.json, et la page du projet sur ola.org reste à un clic.
-const AVERTISSEMENTS = [
-  /^This Explanatory Note was written as a reader.s aid to Bill [^.]*\.\s*/i,
-  /^La note explicative, rédigée à titre de service aux lecteurs du projet de loi [^.]*\.\s*/i,
-  /^Bill \d+ has been enacted as Chapter [^.]*\.\s*/i,
-  /^Le projet de loi \d+ a été édicté et constitue maintenant le chapitre [^.]*\.\s*/i,
-];
-
-function extrait(texte) {
-  if (!texte) return null;
-  let propre = texte.replace(/\s*\n\s*/g, ' ').trim();
-  let change = true;
-  while (change) {
-    change = false;
-    for (const motif of AVERTISSEMENTS) {
-      if (motif.test(propre)) {
-        propre = propre.replace(motif, '').trim();
-        change = true;
-      }
-    }
-  }
-  return propre.length > MAX_NOTE ? `${propre.slice(0, MAX_NOTE)}…` : propre || null;
 }
 
 /**
@@ -141,8 +112,6 @@ function main() {
       etape: etapeDe(f),
       premiereLecture: f?.premiereLecture ?? null,
       derniereActivite: f?.derniereActivite ?? null,
-      noteEn: extrait(f?.noteEn),
-      noteFr: extrait(f?.noteFr),
       votes: f?.votes?.length ?? 0,
       url: p.url,
       urlFr: p.urlFr,
@@ -154,8 +123,8 @@ function main() {
   // ils faisaient passer la page de 86 à 157 ko compressés, pour du texte qui ne s'affiche
   // qu'une fois un pli ouvert. Un fichier par langue, que commun/on.js va chercher au premier
   // dépliement — le même arrangement que les résumés de DossierQuébec.
-  //   p : les puces. Un résumé « sansContenu » n'est pas écrit : mieux vaut la note officielle
-  //       seule qu'une phrase creuse présentée comme un résumé.
+  //   p : les puces. Un résumé « sansContenu » n'est pas écrit : mieux vaut « pas encore de
+  //       résumé » et le lien vers le texte officiel qu'une phrase creuse.
   //   t : le texte dépassait 60 000 signes et le résumé n'en couvre que le début — la carte
   //       doit le dire, sinon il passe pour le résumé du projet entier.
   for (const langue of ['en', 'fr']) {

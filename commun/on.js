@@ -71,17 +71,16 @@
       'etape.4': '3rd reading', 'etape.5': 'Royal assent',
       'groupe.5': 'Became law', 'groupe.4': 'At third reading', 'groupe.3': 'In committee',
       'groupe.2': 'At second reading', 'groupe.1': 'Tabled, nothing since',
-      'projet.parraine': 'Sponsored by', 'projet.note': 'The Assembly’s own note, word for word',
-      'projet.noteQuoi': 'The Assembly prints this note at the front of every bill. Long bills are split into “schedules”, each one changing a different law. It is a reader’s aid, not part of the law.',
+      'projet.parraine': 'Sponsored by',
       'projet.ouvrir': 'What this bill does',
       'projet.resume': 'In plain words',
       'projet.resumeAnglais': 'Summary in English: the Assembly did not publish this bill in French.',
-      'projet.resumeTronque': 'This bill is very long: the summary covers only its first part. The explanatory note below covers all of it.',
+      'projet.resumeTronque': 'This bill is very long: the summary covers only its first part. The full text is on ola.org.',
       'projet.resumeIA': 'Written by AI from the official text published on ola.org. Not an official document, and not the law as amended since.',
-      'projet.sansNote': 'The Assembly published no explanatory note for this bill. The official text says what it does.',
+      'projet.sansResume': 'No plain-language summary for this bill yet: it is written the morning after a bill is tabled. The official text is on ola.org.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
-      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such, then the Assembly’s own explanatory note — which the Assembly writes as a reader’s aid, and which is not part of the law.',
+      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.',
       'projet.derniere': 'Last activity',
       'votes.titre': 'Recorded votes', 'votes.pour': 'Ayes', 'votes.contre': 'Nays',
       'votes.resultat': 'Outcome', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -115,7 +114,7 @@
       'sources.quoi': 'Data', 'sources.source': 'Source',
       'sources.pasTitre': 'What this site does not do',
       'sources.pas': 'It never invents a missing value: an unknown field is shown as unknown. It never gets around a site’s protections — our reader identifies itself honestly and follows ola.org’s robots.txt, which is why we follow links instead of using the Assembly’s own search engine. Ontario has no electronic petitions, and Hansard is not translated, so neither appears here.',
-      'sources.l1': 'Bills, stages, explanatory notes, official texts (the source of the plain-language summaries)',
+      'sources.l1': 'Bills, stages, official texts (the source of the plain-language summaries)',
       'sources.l2': 'Recorded votes',
       'sources.l3': 'MPPs, party standings, contact details', 'sources.l4': 'Ministers, official French titles',
     },
@@ -171,17 +170,16 @@
       'etape.4': '3e lecture', 'etape.5': 'Sanction royale',
       'groupe.5': 'Devenus lois', 'groupe.4': 'En troisième lecture', 'groupe.3': 'En comité',
       'groupe.2': 'En deuxième lecture', 'groupe.1': 'Déposés, rien depuis',
-      'projet.parraine': 'Parrainé par', 'projet.note': 'La note de l’Assemblée, mot pour mot',
-      'projet.noteQuoi': 'L’Assemblée imprime cette note en tête de chaque projet de loi. Les longs projets sont découpés en « annexes » (schedules), chacune modifiant une loi différente. C’est une aide au lecteur, elle ne fait pas partie de la loi.',
+      'projet.parraine': 'Parrainé par',
       'projet.ouvrir': 'Ce que fait ce projet',
       'projet.resume': 'En clair',
       'projet.resumeAnglais': 'Résumé en anglais : l’Assemblée n’a pas publié ce projet en français.',
-      'projet.resumeTronque': 'Ce projet est très long : le résumé n’en couvre que la première partie. La note explicative ci-dessous le couvre en entier.',
+      'projet.resumeTronque': 'Ce projet est très long : le résumé n’en couvre que la première partie. Le texte complet est sur ola.org.',
       'projet.resumeIA': 'Rédigé par une IA à partir du texte officiel publié sur ola.org. Ce n’est pas un document officiel, ni la loi telle qu’amendée depuis.',
-      'projet.sansNote': 'L’Assemblée n’a publié aucune note explicative pour ce projet. Le texte officiel dit ce qu’il fait.',
+      'projet.sansResume': 'Pas encore de résumé en clair pour ce projet : il s’écrit le matin qui suit son dépôt. Le texte officiel est sur ola.org.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
-      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel, puis la note explicative de l’Assemblée — qu’elle écrit à titre de service aux lecteurs et qui ne fait pas partie de la loi.',
+      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel. Le texte officiel lui-même est sur ola.org, à un clic.',
       'projet.derniere': 'Dernière activité',
       'votes.titre': 'Votes nominatifs', 'votes.pour': 'Pour', 'votes.contre': 'Contre',
       'votes.resultat': 'Résultat', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -215,7 +213,7 @@
       'sources.quoi': 'Donnée', 'sources.source': 'Source',
       'sources.pasTitre': 'Ce que ce site ne fait pas',
       'sources.pas': 'Il n’invente jamais une donnée manquante : un champ inconnu est affiché comme inconnu. Il ne contourne aucune protection — notre lecteur s’identifie honnêtement et respecte le robots.txt d’ola.org, ce qui explique qu’on suive les liens au lieu d’utiliser le moteur de recherche de l’Assemblée. L’Ontario n’a pas de pétitions électroniques, et le Journal des débats n’est pas traduit : ni l’un ni l’autre n’apparaît ici.',
-      'sources.l1': 'Projets de loi, étapes, notes explicatives, textes officiels (la source des résumés en clair)',
+      'sources.l1': 'Projets de loi, étapes, textes officiels (la source des résumés en clair)',
       'sources.l2': 'Votes nominatifs',
       'sources.l3': 'Député·e·s, état des partis, coordonnées', 'sources.l4': 'Ministres, titres officiels français',
     },
@@ -425,7 +423,6 @@
       const etapes = [1, 2, 3, 4, 5]
         .map((n) => `<div class="etape ${p.etape >= n ? 'franchie' : ''}">${mot(`etape.${n}`)}</div>`)
         .join('');
-      const note = selonLangue(p.noteEn, p.noteFr);
       const lien = selonLangue(p.url, p.urlFr);
       const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
       const pastilleParti = parti
@@ -460,19 +457,10 @@
           <summary>${mot('projet.ouvrir')}</summary>
           <div class="projet-detail-corps">
             <div class="projet-texte">
+              <!-- La note explicative de l'Assemblée n'est plus reprise ici (24 sept. 2026) :
+                   sous le résumé, c'était un mur de prose juridique en double d'une page
+                   qu'ola.org publie déjà, à un clic du bouton à droite. -->
               <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
-              ${
-                // La note de l'Assemblée reste PLIÉE : c'est la vérification du résumé, pas
-                // ce qu'on vient lire. Affichée d'office, c'était un mur de prose juridique
-                // (« SCHEDULE 1 CITY OF TORONTO ACT… ») juste sous les puces en clair.
-                note
-                  ? `<details class="note-officielle">
-                      <summary>${mot('projet.note')}</summary>
-                      <p class="legende note-quoi">${mot('projet.noteQuoi')}</p>
-                      <p class="courant">${echapper(note)}</p>
-                    </details>`
-                  : `<p class="legende">${mot('projet.sansNote')}</p>`
-              }
             </div>
             <aside class="projet-cote">
               <h4 class="sous-titre">${mot('projet.derniere')}</h4>
@@ -507,7 +495,12 @@
         r = (await chargerResumes('en'))?.[numero];
         enAnglais = !!r;
       }
-      if (!r) return;
+      // Un projet tout juste déposé n'a pas encore son résumé (il s'écrit au rafraîchissement
+      // du matin) : on le dit, plutôt qu'une colonne vide.
+      if (!r) {
+        zone.innerHTML = `<p class="legende avis-ia">${mot('projet.sansResume')}</p>`;
+        return;
+      }
       zone.innerHTML = `<h4 class="sous-titre">${mot('projet.resume')}</h4>
         <ul class="resume"${enAnglais ? ' lang="en"' : ''}>${r.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
         <p class="legende avis-ia">${mot('projet.resumeIA')}${r.t ? ` ${mot('projet.resumeTronque')}` : ''}${

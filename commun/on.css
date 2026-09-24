@@ -208,19 +208,6 @@ img{max-width:100%;}
 }
 .projet-texte{display:flex; flex-direction:column; gap:12px; min-width:0; max-width:760px;}
 .zone-resume{display:flex; flex-direction:column; gap:10px;}
-/* La note de l'Assemblée, repliée sous le résumé : un lien discret, pas un second pavé. */
-.note-officielle{border-top:1px solid var(--line-soft); padding-top:10px;}
-.note-officielle > summary{
-  cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:8px;
-  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12px;
-  text-transform:uppercase; letter-spacing:.06em; color:var(--slate);
-}
-.note-officielle > summary::-webkit-details-marker{display:none;}
-.note-officielle > summary::before{content:'+'; font-weight:900; font-size:15px; color:var(--gold);}
-.note-officielle[open] > summary::before{content:'−';}
-.note-officielle > summary:hover{color:var(--ink);}
-.note-officielle[open]{display:flex; flex-direction:column; gap:10px;}
-.note-quoi{text-transform:none; letter-spacing:0; font-style:italic;}
 .zone-resume:empty{display:none;}
 .projet-cote{display:flex; flex-direction:column; gap:12px;}
 .boite-activite{
