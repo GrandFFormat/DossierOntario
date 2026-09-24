@@ -47,14 +47,28 @@ img{max-width:100%;}
   max-width:var(--colonne); margin:0 auto; padding:12px var(--gouttiere);
   display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
 }
+/* Le mot-symbole et la feuille forment un seul bloc à gauche : sans ce groupe, la
+   rangée d'en-tête (justify-content:space-between) enverrait la feuille au milieu. */
+.marque{display:flex; align-items:center; gap:14px;}
 .mot-symbole{
   font-weight:900; font-size:24px; letter-spacing:-0.03em; text-transform:uppercase;
   text-decoration:none; display:inline-flex; align-items:center; gap:12px;
 }
 .mot-symbole .province{color:var(--gold);}
-.erable{color:var(--yellow); display:inline-flex; transition:transform .7s ease-in-out, color .7s ease-in-out;}
+/* La feuille d'érable mène à DossierCanada. Toutes les 20 s elle bascule SUR ELLE-MÊME
+   (rotateY, comme une pièce de monnaie qu'on retourne) et passe du jaune commun au rouge
+   du drapeau canadien — exactement le geste de DossierQuébec. Un rotate() tout court la
+   ferait pivoter à plat, ce qui n'est pas la même chose. */
+.erable{
+  color:var(--yellow); display:inline-flex; flex:none; cursor:pointer;
+  transition:transform .7s ease-in-out, color .7s ease-in-out; transform-style:preserve-3d;
+}
 .erable svg{width:26px; height:26px; display:block;}
-.erable.est-rouge{color:var(--erable-rouge); transform:rotate(180deg);}
+.erable.est-rouge{color:var(--erable-rouge); transform:rotateY(180deg);}
+.erable:hover{transform:scale(1.12);}
+.erable.est-rouge:hover{transform:rotateY(180deg) scale(1.12);}
+.erable:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+@media (prefers-reduced-motion:reduce){ .erable{transition:color .3s ease;} }
 
 .controles{display:flex; align-items:center; gap:8px;}
 .controles > *{

@@ -22,6 +22,7 @@
     en: {
       'nav.accueil': 'Home', 'nav.projets': 'Bills', 'nav.votes': 'Votes',
       'nav.deputes': 'MPPs', 'nav.cabinet': 'Cabinet', 'nav.sources': 'Sources',
+      'entete.erable': 'Go to the federal site — DossierCanada',
       'entete.langue': 'Français', 'entete.theme': 'Theme', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': 'Unofficial site — not affiliated with the Legislative Assembly of Ontario',
       'pied.sources': 'Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue',
@@ -73,6 +74,7 @@
     fr: {
       'nav.accueil': 'Accueil', 'nav.projets': 'Projets de loi', 'nav.votes': 'Votes',
       'nav.deputes': 'Député·e·s', 'nav.cabinet': 'Conseil des ministres', 'nav.sources': 'Sources',
+      'entete.erable': 'Aller au site fédéral — DossierCanada',
       'entete.langue': 'English', 'entete.theme': 'Thème', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': "Site non officiel — sans lien avec l'Assemblée législative de l'Ontario",
       'pied.sources': "Données publiques de l'Assemblée législative de l'Ontario (ola.org) et du Catalogue de données de l'Ontario",
@@ -150,6 +152,9 @@
     });
     document.querySelectorAll('[data-i18n-html]').forEach((el) => {
       el.innerHTML = mot(el.getAttribute('data-i18n-html'));
+    });
+    document.querySelectorAll('[data-i18n-title]').forEach((el) => {
+      el.title = mot(el.getAttribute('data-i18n-title'));
     });
     document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
       el.placeholder = mot(el.getAttribute('data-i18n-placeholder'));
