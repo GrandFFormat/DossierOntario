@@ -175,6 +175,36 @@ img{max-width:100%;}
 }
 .etape.franchie{background:var(--gold-bg); border-color:var(--gold-bg); color:var(--sur-fonce);}
 
+/* ---------- Le pli d'une carte de projet ----------
+   Même mécanique que .projet-comite : le marqueur du navigateur est remplacé par un + qui
+   devient −, pour que l'état se lise sans couleur ni animation. */
+.projet-detail{border-top:2px solid var(--line-soft); padding-top:10px; margin-top:2px;}
+.projet-detail > summary{
+  cursor:pointer; list-style:none; display:flex; align-items:center; gap:8px;
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12px;
+  text-transform:uppercase; letter-spacing:.06em; color:var(--slate);
+}
+.projet-detail > summary::-webkit-details-marker{display:none;}
+.projet-detail > summary::before{
+  content:'+'; font-weight:900; font-size:15px; line-height:1; color:var(--gold);
+}
+.projet-detail[open] > summary::before{content:'−';}
+.projet-detail > summary:hover{color:var(--ink);}
+.projet-detail-corps{display:flex; flex-direction:column; gap:12px; padding-top:12px;}
+.sous-titre{
+  margin:0; font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11px;
+  text-transform:uppercase; letter-spacing:.07em; color:var(--slate);
+}
+/* La sortie vers le texte officiel : c'est le geste qu'on veut voir sur une carte ouverte,
+   pas un lien de bas de page. Même bouton plein que sur DossierQuébec. */
+.bouton-source{
+  align-self:flex-start; display:inline-block; background:var(--gold-bg); color:var(--sur-fonce);
+  border:3px solid var(--ink); box-shadow:var(--shadow); padding:11px 16px; text-decoration:none;
+  font-family:'Archivo Narrow',sans-serif; font-weight:800; font-size:12px;
+  text-transform:uppercase; letter-spacing:.06em;
+}
+.bouton-source:hover{background:var(--gold); color:var(--sur-fonce);}
+
 /* ---------- Tableaux (votes) ---------- */
 .tableau{width:100%; border-collapse:collapse; border:3px solid var(--ink); background:var(--card);}
 .tableau th, .tableau td{border:1px solid var(--line-soft); padding:8px 10px; text-align:left; font-size:14px;}

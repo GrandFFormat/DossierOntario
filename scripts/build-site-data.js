@@ -18,6 +18,7 @@
 // Usage : node scripts/build-site-data.js
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { cleNom } from '../scrapers/ola.js';
 
 const SORTIE = 'data/site';
 const MAX_NOTE = 1200; // le site affiche un extrait ; la note entière reste dans data/
@@ -100,9 +101,23 @@ function main() {
 
   const fiches = details?.fiches ?? {};
 
+  // Le parti du parrain, résolu ICI plutôt que dans le navigateur : la page des projets ne
+  // charge pas la liste des député·e·s, et ce serait 40 ko pour une pastille. cleNom() fait
+  // le rapprochement entre « Flack, Hon. Rob » (fiche du projet) et « Rob Flack » (liste des
+  // membres) — le même utilitaire qui avait fait passer les votes de 117 à 124 sur 124.
+  const membreParNom = new Map((members?.deputes ?? []).map((d) => [cleNom(d.nom), d]));
+  const partiDuParrain = (noms) => {
+    for (const n of noms) {
+      const d = membreParNom.get(cleNom(n));
+      if (d) return d;
+    }
+    return null;   // un projet privé peut être parrainé par quelqu'un qui ne siège plus
+  };
+
   // ------------------------------------------------------------------ projets
   const projets = bills.projets.map((p) => {
     const f = fiches[p.numero] ?? null;
+    const parrain = partiDuParrain(p.parrains.map((x) => x.nom));
     return {
       numero: p.numero,
       type: p.type,
@@ -110,6 +125,9 @@ function main() {
       titreEn: p.titreEn,
       titreFr: p.titreFr,
       parrains: p.parrains.map((x) => x.nom),
+      parrainParti: parrain?.parti ?? null,
+      parrainPartiFr: parrain?.partiFr ?? null,
+      parrainCouleur: parrain?.couleurParti ?? null,
       statutEn: f?.statutEn ?? null,
       statutFr: f?.statutFr ?? null,
       statutDerniereEtape: f?.statutDerniereEtape ?? null,

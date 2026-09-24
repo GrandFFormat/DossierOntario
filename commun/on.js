@@ -72,6 +72,8 @@
       'groupe.5': 'Became law', 'groupe.4': 'At third reading', 'groupe.3': 'In committee',
       'groupe.2': 'At second reading', 'groupe.1': 'Tabled, nothing since',
       'projet.parraine': 'Sponsored by', 'projet.note': 'Explanatory note (official)',
+      'projet.ouvrir': 'What this bill does',
+      'projet.sansNote': 'The Assembly published no explanatory note for this bill. The official text says what it does.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
       'projet.avertissement': 'The explanatory note is written by the Assembly as a reader’s aid and is not part of the law.',
@@ -164,6 +166,8 @@
       'groupe.5': 'Devenus lois', 'groupe.4': 'En troisième lecture', 'groupe.3': 'En comité',
       'groupe.2': 'En deuxième lecture', 'groupe.1': 'Déposés, rien depuis',
       'projet.parraine': 'Parrainé par', 'projet.note': 'Note explicative (officielle)',
+      'projet.ouvrir': 'Ce que fait ce projet',
+      'projet.sansNote': 'L’Assemblée n’a publié aucune note explicative pour ce projet. Le texte officiel dit ce qu’il fait.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
       'projet.avertissement': 'La note explicative est rédigée par l’Assemblée à titre de service aux lecteurs et ne fait pas partie de la loi.',
@@ -223,6 +227,38 @@
 
   const echapper = (s) =>
     String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  // Le sigle d'un parti, pour la pastille d'une carte : « Progressive Conservative Party of
+  // Ontario » ne tient pas sur une ligne de carte, et l'écrire au long trois fois par carte
+  // noie le reste. Ce sont les formes que tout le monde emploie en Ontario, pas des
+  // abréviations inventées — et le nom officiel entier reste dans l'infobulle, sur la page
+  // des député·e·s et dans les données. Un parti inconnu de cette table s'écrit au long
+  // plutôt que de disparaître.
+  const SIGLES = {
+    'Progressive Conservative Party of Ontario': 'PC',
+    'New Democratic Party of Ontario': 'NDP',
+    'Ontario Liberal Party': 'Liberal',
+    'Green Party of Ontario': 'Green',
+    'Parti progressiste-conservateur de l’Ontario': 'PC',
+    "Parti progressiste-conservateur de l'Ontario": 'PC',
+    'Nouveau Parti démocratique de l’Ontario': 'NPD',
+    "Nouveau Parti démocratique de l'Ontario": 'NPD',
+    'Parti libéral de l’Ontario': 'Libéral',
+    "Parti libéral de l'Ontario": 'Libéral',
+    'Parti vert de l’Ontario': 'Vert',
+    "Parti vert de l'Ontario": 'Vert',
+  };
+  const sigleParti = (nom) => SIGLES[nom] ?? nom;
+
+  // Noir ou blanc sur la couleur du parti, selon sa luminance : l'orange du NPD et le gris
+  // d'une personne indépendante sont trop clairs pour du texte blanc.
+  const texteSurParti = (hex) => {
+    const m = /^#([0-9a-f]{6})$/i.exec(String(hex ?? ''));
+    if (!m) return '#FFFFFF';
+    const n = parseInt(m[1], 16);
+    const luminance = 0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255);
+    return luminance > 160 ? '#111111' : '#FFFFFF';
+  };
 
   // ---------------------------------------------------------------- en-tête
   function appliquerLangue() {
@@ -366,18 +402,39 @@
         .map((n) => `<div class="etape ${p.etape >= n ? 'franchie' : ''}">${mot(`etape.${n}`)}</div>`)
         .join('');
       const note = selonLangue(p.noteEn, p.noteFr);
+      const lien = selonLangue(p.url, p.urlFr);
+      const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
+      const pastilleParti = parti
+        ? `<span class="pastille pastille-parti" style="background:${echapper(p.parrainCouleur ?? '#8B8578')};
+             border-color:${echapper(p.parrainCouleur ?? '#8B8578')}; color:${texteSurParti(p.parrainCouleur)}"
+             title="${echapper(parti)}">${echapper(sigleParti(parti))}</span>`
+        : '';
+      // La note explicative reste PLIÉE. Dépliée sur chaque carte, elle donnait 191 pavés de
+      // prose juridique à la file : la liste ne se parcourait plus, et l'extrait coupé à 260
+      // signes s'arrêtait au milieu d'une phrase. Pliée, la liste se lit ; dépliée, la note
+      // est entière et le texte officiel est à un clic.
       return `<article class="carte">
         <div><span class="numero">${echapper(p.numero)}</span>
           <span class="pastille ${pastille}">${echapper(etiquette)}</span>
-          ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}</div>
-        <h3 class="carte-titre"><a href="${echapper(p.url)}" target="_blank" rel="noopener">${echapper(titre)}</a></h3>
+          ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
+          ${pastilleParti}</div>
+        <h3 class="carte-titre">${echapper(titre)}</h3>
         ${statut ? `<p class="legende">${echapper(statut)}</p>` : ''}
         <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}</p>
         <div class="etapes">${etapes}</div>
-        ${note ? `<p class="courant">${echapper(note.slice(0, 260))}${note.length > 260 ? '…' : ''}</p>` : ''}
         <p class="legende">${p.derniereActivite ? `${mot('projet.derniere')} : ${date(p.derniereActivite)}` : ''}
           ${p.votes ? ` · ${mot('projet.compteVotes', p.votes)}` : ''}</p>
-        <a class="lien-source" href="${echapper(selonLangue(p.url, p.urlFr))}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+        <details class="projet-detail">
+          <summary>${mot('projet.ouvrir')}</summary>
+          <div class="projet-detail-corps">
+            ${
+              note
+                ? `<h4 class="sous-titre">${mot('projet.note')}</h4><p class="courant">${echapper(note)}</p>`
+                : `<p class="legende">${mot('projet.sansNote')}</p>`
+            }
+            <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+          </div>
+        </details>
       </article>`;
     };
 
