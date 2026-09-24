@@ -251,13 +251,21 @@ function main() {
             titreEn: projet.titreEn,
             titreFr: projet.titreFr,
             jours: new Set(),
+            journees: [],
             derniereDate: null,
             dernierEvenementEn: null,
             dernierEvenementFr: null,
           });
         }
         const p = parProjet.get(projet.numero);
-        if (etape.date) p.jours.add(etape.date);
+        if (etape.date) {
+          p.jours.add(etape.date);
+          p.journees.push({
+            date: etape.date,
+            evenementEn: etape.evenement,
+            evenementFr: etape.evenementFr,
+          });
+        }
         if (etape.date && (!p.derniereDate || etape.date > p.derniereDate)) {
           p.derniereDate = etape.date;
           p.dernierEvenementEn = etape.evenement;
@@ -269,8 +277,20 @@ function main() {
     ecrire('comites', {
       maj: comites.lus,
       comites: comites.comites.map((c) => {
+        // Chaque journée porte, quand elle existe, la transcription de ce jour-là : c'est
+        // la seule trace publique de ce qui s'est dit. Une journée sans transcription
+        // n'est pas un trou — c'est souvent une décision prise à la Chambre (« renvoyé
+        // au comité »), pas une séance du comité.
+        const parDate = new Map(c.transcriptions.filter((t) => t.date).map((t) => [t.date, t.url]));
+
         const projetsDuComite = [...(activite.get(c.nomEn) ?? new Map()).values()]
-          .map((p) => ({ ...p, jours: p.jours.size }))
+          .map((p) => ({
+            ...p,
+            jours: p.jours.size,
+            journees: p.journees
+              .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''))
+              .map((j) => ({ ...j, transcription: parDate.get(j.date) ?? null })),
+          }))
           .sort((a, b) => (b.derniereDate ?? '').localeCompare(a.derniereDate ?? ''));
 
         return {
@@ -296,7 +316,7 @@ function main() {
           projets: projetsDuComite,
           jours: new Set(projetsDuComite.flatMap((p) => p.derniereDate ?? [])).size,
           transcriptions: c.transcriptions.length,
-          dernieres: c.transcriptions.slice(0, 4),
+
         };
       }),
     });

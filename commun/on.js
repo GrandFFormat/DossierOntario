@@ -29,7 +29,8 @@
       'comites.projets': (n) => `${n} bill${n > 1 ? 's' : ''}`,
       'comites.jours': (n) => `${n} sitting day${n > 1 ? 's' : ''}`,
       'comites.transcriptions': (n) => `${n} transcript${n > 1 ? 's' : ''}`,
-      'comites.recentes': 'Latest transcripts',
+      'comites.transcription': 'Transcript →',
+      'comites.sansTranscription': 'no committee transcript (decided in the House)',
       'comites.activite': 'Latest work on bills',
       'comites.aucune': 'No bill has been referred to this committee this session.',
       'comites.page': 'The committee on ola.org →',
@@ -120,7 +121,8 @@
       'comites.projets': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
       'comites.jours': (n) => `${n} jour${n > 1 ? 's' : ''} de séance`,
       'comites.transcriptions': (n) => `${n} transcription${n > 1 ? 's' : ''}`,
-      'comites.recentes': 'Dernières transcriptions',
+      'comites.transcription': 'Transcription →',
+      'comites.sansTranscription': 'pas de transcription de comité (décidé à la Chambre)',
       'comites.activite': 'Derniers travaux sur des projets de loi',
       'comites.aucune': 'Aucun projet de loi ne lui a été renvoyé cette session.',
       'comites.page': 'Le comité sur ola.org →',
@@ -586,12 +588,34 @@
       ${m.role && !/^members?$/i.test(m.role) ? `<span class="legende">${echapper(m.role)}</span>` : ''}
     </li>`;
 
-    const projet = (p) => `<li>
-      <span class="numero">${echapper(p.numero)}</span>
-      ${echapper(selonLangue(p.titreEn, p.titreFr))}
-      <span class="legende">${mot('comites.jours', p.jours)} · ${date(p.derniereDate) ?? ''} ·
-        ${echapper(selonLangue(p.dernierEvenementEn, p.dernierEvenementFr) ?? '')}</span>
-    </li>`;
+    // Un projet de loi se déplie sur ses journées de comité, et chaque journée mène à la
+    // transcription de ce jour-là. Les transcriptions appartiennent au projet dont elles
+    // parlent : en colonne séparée, elles n'étaient qu'une liste de dates orphelines.
+    const projet = (p) => {
+      const journees = p.journees
+        .map(
+          (j) => `<li>
+            <span class="legende">${date(j.date) ?? ''}</span>
+            ${echapper(selonLangue(j.evenementEn, j.evenementFr) ?? '')}
+            ${
+              j.transcription
+                ? `<a class="lien-source" href="${echapper(j.transcription)}" target="_blank"
+                     rel="noopener">${mot('comites.transcription')}</a>`
+                : `<span class="legende">${mot('comites.sansTranscription')}</span>`
+            }
+          </li>`
+        )
+        .join('');
+
+      return `<details class="projet-comite">
+        <summary>
+          <span class="numero">${echapper(p.numero)}</span>
+          <span class="projet-titre">${echapper(selonLangue(p.titreEn, p.titreFr))}</span>
+          <span class="legende">${mot('comites.jours', p.jours)} · ${date(p.derniereDate) ?? ''}</span>
+        </summary>
+        <ul class="liste-sobre journees">${journees}</ul>
+      </details>`;
+    };
 
     const carte = (c) => {
       const mandat = selonLangue(c.mandatEn, c.mandatFr);
@@ -616,15 +640,6 @@
           <section>
             <h3 class="comite-soustitre">${mot('comites.composition')}</h3>
             <ul class="liste-membres">${c.membres.map(membre).join('')}</ul>
-          </section>
-          <section>
-            <h3 class="comite-soustitre">${mot('comites.recentes')}</h3>
-            <ul class="liste-sobre">${c.dernieres
-              .map(
-                (t) => `<li><a class="lien-source" href="${echapper(t.url)}" target="_blank"
-                  rel="noopener">${date(t.date) ?? echapper(t.libelle ?? '')}</a></li>`
-              )
-              .join('')}</ul>
             <a class="lien-source" href="${echapper(selonLangue(c.url, c.urlFr))}"
                target="_blank" rel="noopener">${mot('comites.page')}</a>
           </section>

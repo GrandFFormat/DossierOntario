@@ -395,3 +395,20 @@ img{max-width:100%;}
 .liste-membres li{display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:14px; padding:3px 0;}
 .liste-membres a{text-decoration:none;}
 .liste-membres a:hover{color:var(--gold);}
+
+/* Un projet de loi étudié en comité se déplie sur ses journées */
+.projet-comite{border-bottom:1px solid var(--line-soft); padding:8px 0;}
+.projet-comite:last-child{border-bottom:0;}
+.projet-comite > summary{
+  cursor:pointer; list-style:none; display:flex; gap:8px; align-items:baseline; flex-wrap:wrap;
+  font-size:14.5px; line-height:1.35;
+}
+.projet-comite > summary::-webkit-details-marker{display:none;}
+.projet-comite > summary::before{
+  content:'+'; font-family:'Archivo Narrow',sans-serif; font-weight:700; color:var(--gold); flex:none;
+}
+.projet-comite[open] > summary::before{content:'−';}
+.projet-comite > summary:hover{color:var(--gold);}
+.projet-comite .projet-titre{flex:1 1 180px; font-weight:600;}
+.journees{margin-top:8px; padding-left:18px;}
+.journees li{display:flex; gap:8px; flex-wrap:wrap; align-items:baseline;}
