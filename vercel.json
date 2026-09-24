@@ -1,5 +1,9 @@
 {
   "cleanUrls": true,
+  "//": "Le site est fabriqué AVANT le commit (npm run build) : les six pages et data/site/ sont dans le dépôt. Vercel n'a donc qu'à servir des fichiers. Sans ces deux lignes, il verrait le script « build » du package.json et essaierait de refabriquer le site — avec /scripts et les données brutes que .vercelignore retire justement de l'envoi.",
+  "installCommand": "echo \"Aucune dependance a installer : le site est statique.\"",
+  "buildCommand": "echo \"Rien a construire : les pages sont deja fabriquees et commitees.\"",
+  "outputDirectory": ".",
   "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ':(exclude,glob)**/*.md' ':(exclude,glob)scrapers/**' ':(exclude,glob)scripts/**' ':(exclude,glob).github/**'",
   "headers": [
     {
