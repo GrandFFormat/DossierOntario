@@ -9,8 +9,18 @@
 // Usage : node scripts/build-pages.js
 
 import { readFileSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 
 const MODELE = 'gabarit.html';
+
+// La feuille de style et le script sont mis en cache une heure (vercel.json), CHACUN DE SON
+// CÔTÉ. Le 24 septembre 2026, la mise en ligne des résumés l'a montré : le nouveau script est
+// arrivé avec l'ancienne feuille de style, et les cartes se sont affichées sans leur mise en
+// forme. Chaque page appelle donc ses deux fichiers avec l'empreinte de leur contenu
+// (?v=…) : une page neuve demande la paire neuve, une page en cache garde sa paire à elle —
+// jamais un mélange des deux.
+const empreinte = (chemin) => createHash('sha1').update(readFileSync(chemin)).digest('hex').slice(0, 10);
+const VERSIONS = { 'commun/on.css': empreinte('commun/on.css'), 'commun/on.js': empreinte('commun/on.js') };
 
 const PAGES = [
   {
@@ -62,15 +72,16 @@ const PAGES = [
     donnees: 'bills',
     titre: 'Bills',
     description:
-      '139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor, official explanatory note.',
+      '139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor, a plain-language summary and the official explanatory note.',
     contenu: `  <h1 class="titre-vue" data-i18n="projets.titre">Bills</h1>
   <div class="encadre" data-i18n-html="intro.projets">
     <b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee,
     third reading and royal assent. Most bills introduced by members never leave first reading —
     that is not a failure of this site, it is what the record shows.
   </div>
-  <div class="encadre"><span data-i18n="projet.avertissement">The explanatory note is written by the Assembly
-    as a reader’s aid and is not part of the law.</span></div>
+  <div class="encadre"><span data-i18n="projet.avertissement">Open a bill to read a plain-language summary,
+    written by AI from the official text and marked as such, then the Assembly’s own explanatory note — which
+    the Assembly writes as a reader’s aid, and which is not part of the law.</span></div>
   <div class="encadre"><span data-i18n="intro.deduction">ola.org does not say whether a bill comes from the
     government: we work it out from the sponsor — a minister, with a portfolio in brackets.</span></div>
   <section data-vue="projets"></section>`,
@@ -158,7 +169,7 @@ const PAGES = [
   <h2 class="titre-vue" data-i18n="sources.doù">Where the data comes from</h2>
   <table class="tableau">
     <tr><th data-i18n="sources.quoi">Data</th><th data-i18n="sources.source">Source</th></tr>
-    <tr><td data-i18n="sources.l1">Bills, stages, explanatory notes</td>
+    <tr><td data-i18n="sources.l1">Bills, stages, explanatory notes, official texts (the source of the plain-language summaries)</td>
         <td><a class="lien-source" href="https://www.ola.org/en/legislative-business/bills/parliament-44/session-1">ola.org — Bills</a></td></tr>
     <tr><td data-i18n="sources.l2">Recorded votes</td>
         <td><a class="lien-source" href="https://www.ola.org/en/legislative-business/votes-search">ola.org — one page per division</a></td></tr>
@@ -202,7 +213,8 @@ for (const page of PAGES) {
     // ce que le site fait.
     .replace(/\{\{BANDES\}\}/g, () => page.bandes ?? '')
     .replace(/\{\{BANDES_BAS\}\}/g, () => page.bandesBas ?? '')
-    .replace(/\{\{CONTENU\}\}/g, () => page.contenu);
+    .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
+    .replace(/(href|src)="(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="${chemin}?v=${VERSIONS[chemin]}"`);
 
   for (const autre of PAGES) {
     html = html.replace(`{{ACTIF_${autre.vue}}}`, autre.fichier === page.fichier ? 'actif' : '');
