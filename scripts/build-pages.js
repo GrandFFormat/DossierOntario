@@ -28,8 +28,8 @@ const PAGES = [
       <p data-role="relache-texte"></p>
     </div>
   </div>
-</div>
-<div class="bande bande-mission">
+</div>`,
+    bandesBas: `<div class="bande bande-mission">
   <div class="colonne">
     <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>
     <p class="enonce" data-i18n-html="mission.enonce">The Assembly's own site is the most reliable source
@@ -166,7 +166,12 @@ const PAGES = [
 // Google voit deux adresses pour une seule page.
 const adressePropre = (fichier) => (fichier === 'index.html' ? '' : fichier.replace(/\.html$/, ''));
 
-const modele = readFileSync(MODELE, 'utf8').replace(/\r\n/g, '\n');
+// Le commentaire de tête du modèle parle du modèle, pas des pages : il n'a rien à faire
+// dans ce qu'on sert (et il y affirmerait « ce fichier n'est jamais servi », ce qui
+// serait faux une fois recopié).
+const modele = readFileSync(MODELE, 'utf8')
+  .replace(/\r\n/g, '\n')
+  .replace(/<!-- MODÈLE[\s\S]*?-->\n/, '');
 
 for (const page of PAGES) {
   let html = modele
@@ -176,7 +181,11 @@ for (const page of PAGES) {
     .replace(/\{\{VUE\}\}/g, page.vue)
     .replace(/\{\{DONNEES\}\}/g, page.donnees)
     // Les bandes pleine largeur vivent hors de la colonne : seule l'accueil en a.
+    // L'alerte se lit AVANT les chiffres ; la mission se lit APRÈS, en bas de page,
+    // comme sur DossierQuébec — on explique ce qu'on essaie de faire à qui a déjà vu
+    // ce que le site fait.
     .replace(/\{\{BANDES\}\}/g, () => page.bandes ?? '')
+    .replace(/\{\{BANDES_BAS\}\}/g, () => page.bandesBas ?? '')
     .replace(/\{\{CONTENU\}\}/g, () => page.contenu);
 
   for (const autre of PAGES) {

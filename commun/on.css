@@ -286,6 +286,8 @@ img{max-width:100%;}
 .encadre-mission ul{margin:0; padding-left:18px;}
 .encadre-mission li{font-size:14.5px; line-height:1.5; margin:5px 0;}
 .bande-mission .colonne{display:block;}
+/* En bas de page, la bande de mission colle au pied : pas de marge sous elle. */
+.bande-mission{margin:36px 0 0;}
 
 /* ---------- Pied de page ----------
    La charte note que celui de DossierQuébec utilise « ink » comme fond : en thème
