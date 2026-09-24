@@ -259,3 +259,58 @@ img{max-width:100%;}
   font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--slate);
 }
 .porte:hover span{color:var(--sur-clair);}
+
+/* ---------- La bande de mission, en entier ----------
+   D'après le composant « Bandes » de la charte : un sur-titre, un énoncé en gros
+   caractères dont la chute est surlignée de jaune, puis deux encadrés qui disent
+   honnêtement ce que fait la source officielle et ce que ce site essaie d'ajouter.
+   La charte signale que son sur-titre est codé en dur à #A9C6FF, un peu sous le seuil
+   de contraste : ici il est en crème plein, donc lisible. */
+.sur-titre{
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12px;
+  text-transform:uppercase; letter-spacing:.14em; margin:0 0 14px; color:var(--sur-fonce);
+}
+.enonce{
+  margin:0 0 22px; font-weight:900; font-size:clamp(22px,3.4vw,40px); line-height:1.18;
+  text-transform:uppercase; letter-spacing:-0.015em; max-width:22em;
+}
+.enonce .surlignage{background:var(--yellow); color:var(--sur-clair); padding:0 .18em;}
+.comparaison{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;}
+.encadre-mission{border:2px solid var(--sur-fonce); padding:14px 18px;}
+.encadre-mission.nous{border-color:var(--yellow);}
+.encadre-mission h3{
+  margin:0 0 10px; font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11.5px;
+  text-transform:uppercase; letter-spacing:.1em; color:var(--sur-fonce);
+}
+.encadre-mission.nous h3{color:var(--yellow);}
+.encadre-mission ul{margin:0; padding-left:18px;}
+.encadre-mission li{font-size:14.5px; line-height:1.5; margin:5px 0;}
+.bande-mission .colonne{display:block;}
+
+/* ---------- Pied de page ----------
+   La charte note que celui de DossierQuébec utilise « ink » comme fond : en thème
+   sombre, ink devient crème et le texte tombe à 1,8:1. On prend donc « ink-bg », qui
+   reste noir dans les deux thèmes — et on écrit dessus en « paper », qui reste clair. */
+.pied{
+  border-top:3px solid var(--ink); margin-top:44px; padding:26px 0 34px;
+  background:var(--ink-bg); color:#B8B4AA;
+}
+.pied-nav{display:flex; flex-wrap:wrap; gap:10px 22px; margin-bottom:18px;}
+.pied-nav a{
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:13px;
+  text-transform:uppercase; letter-spacing:.06em; color:#F2F0EA; text-decoration:none;
+}
+.pied-nav a:hover{color:var(--yellow);}
+.pied-bas{
+  display:flex; flex-wrap:wrap; gap:12px 24px; justify-content:space-between;
+  align-items:baseline; border-top:1px solid #3D3931; padding-top:16px;
+}
+.pied-bas p{margin:0; font-family:'Archivo Narrow',sans-serif; font-size:13px;
+  text-transform:uppercase; letter-spacing:.05em; color:#B8B4AA;}
+.pied-liens{display:flex; flex-wrap:wrap; gap:18px;}
+.pied-liens a{
+  font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:13px;
+  text-transform:uppercase; letter-spacing:.06em; color:#F2F0EA; text-decoration:none;
+}
+.pied-liens a:hover{color:var(--yellow);}
+.pied .non-officiel{color:#F2F0EA;}

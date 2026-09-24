@@ -31,10 +31,18 @@ const PAGES = [
 </div>
 <div class="bande bande-mission">
   <div class="colonne">
-    <div>
-      <p class="titre-bande" data-i18n="mission.titre">Read the record, not the press release</p>
-      <p data-i18n="mission.texte">Every bill, every recorded vote and every member, taken from the
-        Assembly's own record and linked back to it. Free, bilingual, and not official.</p>
+    <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>
+    <p class="enonce" data-i18n-html="mission.enonce">The Assembly's own site is the most reliable source
+      there is. This one just makes it <span class="surlignage">easier to follow.</span></p>
+    <div class="comparaison">
+      <div class="encadre-mission">
+        <h3 data-i18n="mission.euxTitre">What ola.org does</h3>
+        <ul data-i18n-html="mission.eux"><li>Organises everything by official document</li></ul>
+      </div>
+      <div class="encadre-mission nous">
+        <h3 data-i18n="mission.nousTitre">What this site tries to do</h3>
+        <ul data-i18n-html="mission.nous"><li>Groups everything by bill</li></ul>
+      </div>
     </div>
   </div>
 </div>`,
