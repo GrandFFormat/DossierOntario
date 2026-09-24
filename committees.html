@@ -1,19 +1,16 @@
 <!doctype html>
-<!-- MODÈLE — ce fichier n'est jamais servi. scripts/build-pages.js en tire les pages du
-     site, une par vue, comme le fait DossierQuébec depuis son propre gabarit.html.
-     Les marqueurs {{…}} sont remplacés à la fabrication. -->
 <html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{TITRE}} — DossierOntario</title>
-<meta name="description" content="{{DESCRIPTION}}">
-<link rel="canonical" href="https://dossierontario.ca/{{FICHIER}}">
-<link rel="alternate" hreflang="en" href="https://dossierontario.ca/{{FICHIER}}">
-<meta property="og:title" content="{{TITRE}} — DossierOntario">
-<meta property="og:description" content="{{DESCRIPTION}}">
+<title>Committees — DossierOntario</title>
+<meta name="description" content="The eight standing committees of the Ontario Legislature: which bills they studied, when they sat, and their transcripts.">
+<link rel="canonical" href="https://dossierontario.ca/committees">
+<link rel="alternate" hreflang="en" href="https://dossierontario.ca/committees">
+<meta property="og:title" content="Committees — DossierOntario">
+<meta property="og:description" content="The eight standing committees of the Ontario Legislature: which bills they studied, when they sat, and their transcripts.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://dossierontario.ca/{{FICHIER}}">
+<meta property="og:url" content="https://dossierontario.ca/committees">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,7 +18,7 @@
 <link rel="stylesheet" href="commun/on.css">
 <script src="commun/on.js" defer></script>
 </head>
-<body data-vue="{{VUE}}" data-donnees="{{DONNEES}}">
+<body data-vue="comites" data-donnees="comites">
 
 <header class="entete">
   <div class="entete-rang">
@@ -42,23 +39,30 @@
     </div>
   </div>
   <nav class="onglets" aria-label="Sections">
-    <a href="/" data-i18n="nav.accueil" class="{{ACTIF_accueil}}">Home</a>
-    <a href="/bills" data-i18n="nav.projets" class="{{ACTIF_projets}}">Bills</a>
-    <a href="/votes" data-i18n="nav.votes" class="{{ACTIF_votes}}">Votes</a>
-    <a href="/committees" data-i18n="nav.comites" class="{{ACTIF_comites}}">Committees</a>
-    <a href="/mpps" data-i18n="nav.deputes" class="{{ACTIF_deputes}}">MPPs</a>
-    <a href="/cabinet" data-i18n="nav.cabinet" class="{{ACTIF_cabinet}}">Cabinet</a>
-    <a href="/glossary" data-i18n="nav.lexique" class="{{ACTIF_lexique}}">Lexicon</a>
-    <a href="/sources" data-i18n="nav.sources" class="{{ACTIF_sources}}">Sources</a>
+    <a href="/" data-i18n="nav.accueil" class="">Home</a>
+    <a href="/bills" data-i18n="nav.projets" class="">Bills</a>
+    <a href="/votes" data-i18n="nav.votes" class="">Votes</a>
+    <a href="/committees" data-i18n="nav.comites" class="actif">Committees</a>
+    <a href="/mpps" data-i18n="nav.deputes" class="">MPPs</a>
+    <a href="/cabinet" data-i18n="nav.cabinet" class="">Cabinet</a>
+    <a href="/glossary" data-i18n="nav.lexique" class="">Lexicon</a>
+    <a href="/sources" data-i18n="nav.sources" class="">Sources</a>
   </nav>
 </header>
 
-{{BANDES}}
+
 <main class="colonne">
-{{CONTENU}}
+  <h1 class="titre-vue" data-i18n="comites.titre">Standing committees</h1>
+  <div class="encadre" data-i18n="comites.intro">
+    A bill sent to committee is gone over line by line, witnesses are heard, and it can be amended.
+    Committees also sit while the House is adjourned.
+  </div>
+  <div class="encadre"><span data-i18n="comites.votes">Committees hold recorded votes too, but the
+    Assembly publishes them only inside the transcripts. They are not listed on this site yet.</span></div>
+  <section data-vue="comites"></section>
 </main>
 
-{{BANDES_BAS}}
+
 
 <footer class="pied">
   <div class="colonne">

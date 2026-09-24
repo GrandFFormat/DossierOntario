@@ -22,7 +22,17 @@
     en: {
       'nav.accueil': 'Home', 'nav.projets': 'Bills', 'nav.votes': 'Votes',
       'nav.deputes': 'MPPs', 'nav.cabinet': 'Cabinet', 'nav.sources': 'Sources',
-      'nav.lexique': 'Lexicon',
+      'nav.lexique': 'Lexicon', 'nav.comites': 'Committees',
+      'comites.titre': 'Standing committees',
+      'comites.intro': 'A bill sent to committee is gone over line by line, witnesses are heard, and it can be amended. Committees also sit while the House is adjourned — which is why a bill can move in August with the Legislature away.',
+      'comites.votes': 'Committees hold recorded votes too — about three times as many as the House, on amendments. The Assembly publishes them only inside the transcripts, in running prose, and only when a member asks for one: roughly one committee decision in seven. They are not listed on this site yet.',
+      'comites.projets': (n) => `${n} bill${n > 1 ? 's' : ''}`,
+      'comites.jours': (n) => `${n} sitting day${n > 1 ? 's' : ''}`,
+      'comites.transcriptions': (n) => `${n} transcript${n > 1 ? 's' : ''}`,
+      'comites.recentes': 'Latest transcripts',
+      'comites.activite': 'Latest work on bills',
+      'comites.aucune': 'No bill has been referred to this committee this session.',
+      'comites.page': 'The committee on ola.org →',
       'lexique.titre': 'Plain-language lexicon',
       'lexique.intro': 'Parliamentary words, explained in ordinary ones. These explanations are ours, not the Assembly’s: we write them to be understood, not to be precise in the legal sense. For the formal definitions, the Assembly publishes its own glossary.',
       'lexique.officiel': 'The Assembly’s glossary of procedural terms →',
@@ -100,7 +110,17 @@
     fr: {
       'nav.accueil': 'Accueil', 'nav.projets': 'Projets de loi', 'nav.votes': 'Votes',
       'nav.deputes': 'Député·e·s', 'nav.cabinet': 'Conseil des ministres', 'nav.sources': 'Sources',
-      'nav.lexique': 'Lexique',
+      'nav.lexique': 'Lexique', 'nav.comites': 'Comités',
+      'comites.titre': 'Les comités permanents',
+      'comites.intro': 'Un projet de loi renvoyé en comité y est étudié article par article ; des témoins sont entendus et le texte peut être amendé. Les comités siègent aussi pendant l’ajournement de la Chambre — c’est pourquoi un projet peut avancer en août, l’Assemblée absente.',
+      'comites.votes': 'Les comités tiennent eux aussi des votes nominatifs — environ trois fois plus que la Chambre, sur des amendements. L’Assemblée ne les publie qu’à l’intérieur des transcriptions, au fil du texte, et seulement quand un·e député·e le demande : à peu près une décision de comité sur sept. Ils ne sont pas encore recensés sur ce site.',
+      'comites.projets': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
+      'comites.jours': (n) => `${n} jour${n > 1 ? 's' : ''} de séance`,
+      'comites.transcriptions': (n) => `${n} transcription${n > 1 ? 's' : ''}`,
+      'comites.recentes': 'Dernières transcriptions',
+      'comites.activite': 'Derniers travaux sur des projets de loi',
+      'comites.aucune': 'Aucun projet de loi ne lui a été renvoyé cette session.',
+      'comites.page': 'Le comité sur ola.org →',
       'lexique.titre': 'Le lexique en langage clair',
       'lexique.intro': 'Les mots du Parlement, expliqués avec des mots de tous les jours. Ces explications sont les nôtres, pas celles de l’Assemblée : elles cherchent à être comprises, pas à être exactes au sens juridique. Pour les définitions formelles, l’Assemblée publie son propre glossaire.',
       'lexique.officiel': 'Le glossaire des termes de procédure de l’Assemblée →',
@@ -547,6 +567,58 @@
           ${duJour.map(carteVote).join('')}`
       )
       .join('');
+  };
+
+  VUES.comites = () => {
+    const cible = document.querySelector('section[data-vue="comites"]');
+    const donnees = DONNEES.comites;
+    if (!cible || !donnees) return;
+
+    const carte = (c) => {
+      const chiffres = [
+        c.projets.length ? mot('comites.projets', c.projets.length) : null,
+        c.jours ? mot('comites.jours', c.jours) : null,
+        c.transcriptions ? mot('comites.transcriptions', c.transcriptions) : null,
+      ].filter(Boolean);
+
+      const activite = c.activite.length
+        ? `<p class="legende">${mot('comites.activite')}</p>
+           <ul class="liste-sobre">${c.activite
+             .map(
+               (a) => `<li><span class="numero">${echapper(a.numero)}</span>
+                 ${echapper(selonLangue(a.titreEn, a.titreFr))}
+                 <span class="legende">${date(a.date) ?? ''} · ${echapper(
+                   selonLangue(a.evenementEn, a.evenementFr) ?? ''
+                 )}</span></li>`
+             )
+             .join('')}</ul>`
+        : `<p class="courant">${mot('comites.aucune')}</p>`;
+
+      const transcriptions = c.dernieres.length
+        ? `<p class="legende">${mot('comites.recentes')}</p>
+           <ul class="liste-sobre">${c.dernieres
+             .map(
+               (t) => `<li><a class="lien-source" href="${echapper(t.url)}" target="_blank"
+                 rel="noopener">${date(t.date) ?? echapper(t.libelle ?? '')}</a></li>`
+             )
+             .join('')}</ul>`
+        : '';
+
+      return `<article class="carte">
+        <h3 class="carte-titre">${echapper(selonLangue(c.nomEn, c.nomFr))}</h3>
+        <p class="legende">${chiffres.join(' · ')}</p>
+        ${activite}
+        ${transcriptions}
+        <a class="lien-source" href="${echapper(c.url)}" target="_blank" rel="noopener">${mot('comites.page')}</a>
+      </article>`;
+    };
+
+    const actifs = donnees.comites.filter((c) => c.projets.length);
+    const autres = donnees.comites.filter((c) => !c.projets.length);
+
+    cible.innerHTML =
+      `<div class="grille">${actifs.map(carte).join('')}</div>` +
+      (autres.length ? `<div class="grille" style="margin-top:18px">${autres.map(carte).join('')}</div>` : '');
   };
 
   VUES.lexique = () => {

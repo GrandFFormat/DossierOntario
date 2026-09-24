@@ -51,6 +51,9 @@ jobs:
       - name: Lire les votes dont l'Assemblée ne publie que le compte
         run: npm run scrape:votes-sans-noms
 
+      - name: Lire les comités
+        run: npm run scrape:comites
+
       - name: Lire les député·e·s
         run: npm run scrape:members
 

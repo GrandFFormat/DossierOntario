@@ -367,3 +367,9 @@ img{max-width:100%;}
 .note-vote{margin:14px 0 10px;}
 .bouton-jaune{background:var(--yellow); color:var(--sur-clair); border-color:var(--sur-clair);}
 .bouton-jaune:hover{background:var(--ink-bg); color:var(--yellow);}
+
+/* Listes sobres à l'intérieur d'une carte (activité d'un comité, transcriptions) */
+.liste-sobre{margin:0 0 12px; padding:0; list-style:none;}
+.liste-sobre li{padding:6px 0; border-bottom:1px solid var(--line-soft); font-size:14.5px; line-height:1.4;}
+.liste-sobre li:last-child{border-bottom:0;}
+.liste-sobre .legende{display:block; margin-top:2px;}

@@ -90,6 +90,22 @@ const PAGES = [
   <section data-vue="votes"></section>`,
   },
   {
+    fichier: 'committees.html',
+    vue: 'comites',
+    donnees: 'comites',
+    titre: 'Committees',
+    description:
+      'The eight standing committees of the Ontario Legislature: which bills they studied, when they sat, and their transcripts.',
+    contenu: `  <h1 class="titre-vue" data-i18n="comites.titre">Standing committees</h1>
+  <div class="encadre" data-i18n="comites.intro">
+    A bill sent to committee is gone over line by line, witnesses are heard, and it can be amended.
+    Committees also sit while the House is adjourned.
+  </div>
+  <div class="encadre"><span data-i18n="comites.votes">Committees hold recorded votes too, but the
+    Assembly publishes them only inside the transcripts. They are not listed on this site yet.</span></div>
+  <section data-vue="comites"></section>`,
+  },
+  {
     fichier: 'mpps.html',
     vue: 'deputes',
     donnees: 'members',

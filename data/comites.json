@@ -1,0 +1,788 @@
+{
+  "source": "https://www.ola.org/en/legislative-business/committees",
+  "legislature": 44,
+  "session": 1,
+  "lus": "2026-09-24T14:56:19.576Z",
+  "nombre": 8,
+  "comites": [
+    {
+      "cle": "finance-economic-affairs",
+      "nomEn": "Standing Committee on Finance and Economic Affairs",
+      "nomFr": "Comité permanent des finances et des affaires économiques",
+      "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-05-27",
+          "libelle": "Committee Transcript 2026-May-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-may-27"
+        },
+        {
+          "date": "2026-05-26",
+          "libelle": "Committee Transcript 2026-May-26",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-may-26"
+        },
+        {
+          "date": "2026-05-21",
+          "libelle": "Committee Transcript 2026-May-21",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-may-21"
+        },
+        {
+          "date": "2026-05-13",
+          "libelle": "Committee Transcript 2026-May-13",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-may-13"
+        },
+        {
+          "date": "2026-05-05",
+          "libelle": "Committee Transcript 2026-May-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-may-05"
+        },
+        {
+          "date": "2026-02-17",
+          "libelle": "Committee Transcript 2026-Feb-17",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-feb-17"
+        },
+        {
+          "date": "2026-01-29",
+          "libelle": "Committee Transcript 2026-Jan-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-29"
+        },
+        {
+          "date": "2026-01-28",
+          "libelle": "Committee Transcript 2026-Jan-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-28"
+        },
+        {
+          "date": "2026-01-27",
+          "libelle": "Committee Transcript 2026-Jan-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-27"
+        },
+        {
+          "date": "2026-01-22",
+          "libelle": "Committee Transcript 2026-Jan-22",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-22"
+        },
+        {
+          "date": "2026-01-21",
+          "libelle": "Committee Transcript 2026-Jan-21",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-21"
+        },
+        {
+          "date": "2026-01-20",
+          "libelle": "Committee Transcript 2026-Jan-20",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-20"
+        },
+        {
+          "date": "2026-01-15",
+          "libelle": "Committee Transcript 2026-Jan-15",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-15"
+        },
+        {
+          "date": "2026-01-14",
+          "libelle": "Committee Transcript 2026-Jan-14",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-14"
+        },
+        {
+          "date": "2026-01-13",
+          "libelle": "Committee Transcript 2026-Jan-13",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-jan-13"
+        },
+        {
+          "date": "2025-12-05",
+          "libelle": "Committee Transcript 2025-Dec-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-dec-05"
+        },
+        {
+          "date": "2025-12-04",
+          "libelle": "Committee Transcript 2025-Dec-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-dec-04"
+        },
+        {
+          "date": "2025-11-13",
+          "libelle": "Committee Transcript 2025-Nov-13",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-nov-13"
+        },
+        {
+          "date": "2025-11-12",
+          "libelle": "Committee Transcript 2025-Nov-12",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-nov-12"
+        },
+        {
+          "date": "2025-10-29",
+          "libelle": "Committee Transcript 2025-Oct-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-oct-29"
+        },
+        {
+          "date": "2025-10-28",
+          "libelle": "Committee Transcript 2025-Oct-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-oct-28"
+        },
+        {
+          "date": "2025-10-21",
+          "libelle": "Committee Transcript 2025-Oct-21",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-oct-21"
+        },
+        {
+          "date": "2025-05-29",
+          "libelle": "Committee Transcript 2025-May-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-may-29"
+        },
+        {
+          "date": "2025-05-27",
+          "libelle": "Committee Transcript 2025-May-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-may-27"
+        },
+        {
+          "date": "2025-05-06",
+          "libelle": "Committee Transcript 2025-May-06",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2025-may-06"
+        }
+      ]
+    },
+    {
+      "cle": "government-agencies",
+      "nomEn": "Standing Committee on Government Agencies",
+      "nomFr": "Comité permanent des organismes gouvernementaux",
+      "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-08-27",
+          "libelle": "Committee Transcript 2026-Aug-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-aug-27"
+        },
+        {
+          "date": "2026-07-30",
+          "libelle": "Committee Transcript 2026-Jul-30",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-jul-30"
+        },
+        {
+          "date": "2026-07-09",
+          "libelle": "Committee Transcript 2026-Jul-09",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-jul-09"
+        },
+        {
+          "date": "2026-06-18",
+          "libelle": "Committee Transcript 2026-Jun-18",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-jun-18"
+        },
+        {
+          "date": "2026-06-11",
+          "libelle": "Committee Transcript 2026-Jun-11",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-jun-11"
+        },
+        {
+          "date": "2026-06-04",
+          "libelle": "Committee Transcript 2026-Jun-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-jun-04"
+        },
+        {
+          "date": "2026-05-28",
+          "libelle": "Committee Transcript 2026-May-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-may-28"
+        },
+        {
+          "date": "2026-05-14",
+          "libelle": "Committee Transcript 2026-May-14",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-may-14"
+        },
+        {
+          "date": "2026-05-07",
+          "libelle": "Committee Transcript 2026-May-07",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-may-07"
+        },
+        {
+          "date": "2026-04-23",
+          "libelle": "Committee Transcript 2026-Apr-23",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-apr-23"
+        },
+        {
+          "date": "2026-04-16",
+          "libelle": "Committee Transcript 2026-Apr-16",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-apr-16"
+        },
+        {
+          "date": "2026-04-02",
+          "libelle": "Committee Transcript 2026-Apr-02",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-apr-02"
+        },
+        {
+          "date": "2026-03-26",
+          "libelle": "Committee Transcript 2026-Mar-26",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-mar-26"
+        },
+        {
+          "date": "2025-12-11",
+          "libelle": "Committee Transcript 2025-Dec-11",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-dec-11"
+        },
+        {
+          "date": "2025-12-04",
+          "libelle": "Committee Transcript 2025-Dec-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-dec-04"
+        },
+        {
+          "date": "2025-11-27",
+          "libelle": "Committee Transcript 2025-Nov-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-nov-27"
+        },
+        {
+          "date": "2025-11-20",
+          "libelle": "Committee Transcript 2025-Nov-20",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-nov-20"
+        },
+        {
+          "date": "2025-11-06",
+          "libelle": "Committee Transcript 2025-Nov-06",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-nov-06"
+        },
+        {
+          "date": "2025-10-30",
+          "libelle": "Committee Transcript 2025-Oct-30",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-oct-30"
+        },
+        {
+          "date": "2025-10-23",
+          "libelle": "Committee Transcript 2025-Oct-23",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-oct-23"
+        },
+        {
+          "date": "2025-06-05",
+          "libelle": "Committee Transcript 2025-Jun-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-jun-05"
+        },
+        {
+          "date": "2025-05-29",
+          "libelle": "Committee Transcript 2025-May-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-may-29"
+        },
+        {
+          "date": "2025-05-15",
+          "libelle": "Committee Transcript 2025-May-15",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-may-15"
+        },
+        {
+          "date": "2025-05-01",
+          "libelle": "Committee Transcript 2025-May-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2025-may-01"
+        }
+      ]
+    },
+    {
+      "cle": "heritage-infrastructure-cultural-policy",
+      "nomEn": "Standing Committee on Heritage, Infrastructure and Cultural Policy",
+      "nomFr": "Comité permanent du patrimoine, de l'infrastructure et de la culture",
+      "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-05-28",
+          "libelle": "Committee Transcript 2026-May-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-may-28"
+        },
+        {
+          "date": "2026-05-27",
+          "libelle": "Committee Transcript 2026-May-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-may-27"
+        },
+        {
+          "date": "2026-05-21",
+          "libelle": "Committee Transcript 2026-May-21",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-may-21"
+        },
+        {
+          "date": "2026-05-19",
+          "libelle": "Committee Transcript 2026-May-19",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-may-19"
+        },
+        {
+          "date": "2026-05-07",
+          "libelle": "Committee Transcript 2026-May-07",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-may-07"
+        },
+        {
+          "date": "2026-05-04",
+          "libelle": "Committee Transcript 2026-May-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-may-04"
+        },
+        {
+          "date": "2026-04-30",
+          "libelle": "Committee Transcript 2026-Apr-30",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-apr-30"
+        },
+        {
+          "date": "2026-04-28",
+          "libelle": "Committee Transcript 2026-Apr-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-apr-28"
+        },
+        {
+          "date": "2026-04-23",
+          "libelle": "Committee Transcript 2026-Apr-23",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-apr-23"
+        },
+        {
+          "date": "2025-12-08",
+          "libelle": "Committee Transcript 2025-Dec-08",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-dec-08"
+        },
+        {
+          "date": "2025-12-03",
+          "libelle": "Committee Transcript 2025-Dec-03",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-dec-03"
+        },
+        {
+          "date": "2025-11-27",
+          "libelle": "Committee Transcript 2025-Nov-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-nov-27"
+        },
+        {
+          "date": "2025-11-19",
+          "libelle": "Committee Transcript 2025-Nov-19",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-nov-19"
+        },
+        {
+          "date": "2025-11-13",
+          "libelle": "Committee Transcript 2025-Nov-13",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-nov-13"
+        },
+        {
+          "date": "2025-11-06",
+          "libelle": "Committee Transcript 2025-Nov-06",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-nov-06"
+        },
+        {
+          "date": "2025-11-05",
+          "libelle": "Committee Transcript 2025-Nov-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-nov-05"
+        },
+        {
+          "date": "2025-10-23",
+          "libelle": "Committee Transcript 2025-Oct-23",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-oct-23"
+        },
+        {
+          "date": "2025-08-26",
+          "libelle": "Committee Transcript 2025-Aug-26",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-aug-26"
+        },
+        {
+          "date": "2025-07-31",
+          "libelle": "Committee Transcript 2025-Jul-31",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-jul-31"
+        },
+        {
+          "date": "2025-07-24",
+          "libelle": "Committee Transcript 2025-Jul-24",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-jul-24"
+        },
+        {
+          "date": "2025-07-17",
+          "libelle": "Committee Transcript 2025-Jul-17",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-jul-17"
+        },
+        {
+          "date": "2025-07-04",
+          "libelle": "Committee Transcript 2025-Jul-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-jul-04"
+        },
+        {
+          "date": "2025-07-03",
+          "libelle": "Committee Transcript 2025-Jul-03",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-jul-03"
+        },
+        {
+          "date": "2025-06-04",
+          "libelle": "Committee Transcript 2025-Jun-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-jun-04"
+        },
+        {
+          "date": "2025-05-01",
+          "libelle": "Committee Transcript 2025-May-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2025-may-01"
+        }
+      ]
+    },
+    {
+      "cle": "interior",
+      "nomEn": "Standing Committee on the Interior",
+      "nomFr": "Comité permanent des affaires intérieures",
+      "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-08-12",
+          "libelle": "Committee Transcript 2026-Aug-12",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-aug-12"
+        },
+        {
+          "date": "2026-08-11",
+          "libelle": "Committee Transcript 2026-Aug-11",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-aug-11"
+        },
+        {
+          "date": "2026-08-10",
+          "libelle": "Committee Transcript 2026-Aug-10",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-aug-10"
+        },
+        {
+          "date": "2026-08-05",
+          "libelle": "Committee Transcript 2026-Aug-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-aug-05"
+        },
+        {
+          "date": "2026-07-29",
+          "libelle": "Committee Transcript 2026-Jul-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-jul-29"
+        },
+        {
+          "date": "2026-06-01",
+          "libelle": "Committee Transcript 2026-Jun-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-jun-01"
+        },
+        {
+          "date": "2026-05-26",
+          "libelle": "Committee Transcript 2026-May-26",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-may-26"
+        },
+        {
+          "date": "2025-12-02",
+          "libelle": "Committee Transcript 2025-Dec-02",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-dec-02"
+        },
+        {
+          "date": "2025-11-25",
+          "libelle": "Committee Transcript 2025-Nov-25",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-25"
+        },
+        {
+          "date": "2025-11-24",
+          "libelle": "Committee Transcript 2025-Nov-24",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-24"
+        },
+        {
+          "date": "2025-11-18",
+          "libelle": "Committee Transcript 2025-Nov-18",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-18"
+        },
+        {
+          "date": "2025-11-17",
+          "libelle": "Committee Transcript 2025-Nov-17",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-17"
+        },
+        {
+          "date": "2025-11-12",
+          "libelle": "Committee Transcript 2025-Nov-12",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-12"
+        },
+        {
+          "date": "2025-11-04",
+          "libelle": "Committee Transcript 2025-Nov-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-04"
+        },
+        {
+          "date": "2025-11-03",
+          "libelle": "Committee Transcript 2025-Nov-03",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-nov-03"
+        },
+        {
+          "date": "2025-10-27",
+          "libelle": "Committee Transcript 2025-Oct-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-oct-27"
+        },
+        {
+          "date": "2025-10-21",
+          "libelle": "Committee Transcript 2025-Oct-21",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-oct-21"
+        },
+        {
+          "date": "2025-06-03",
+          "libelle": "Committee Transcript 2025-Jun-03 vol. A",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-jun-03-vol-a"
+        },
+        {
+          "date": "2025-06-03",
+          "libelle": "Committee Transcript 2025-Jun-03 vol. B",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-jun-03-vol-b"
+        },
+        {
+          "date": "2025-05-28",
+          "libelle": "Committee Transcript 2025-May-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-may-28"
+        },
+        {
+          "date": "2025-05-26",
+          "libelle": "Committee Transcript 2025-May-26",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-may-26"
+        },
+        {
+          "date": "2025-05-22",
+          "libelle": "Committee Transcript 2025-May-22",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-may-22"
+        },
+        {
+          "date": "2025-05-06",
+          "libelle": "Committee Transcript 2025-May-06",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-may-06"
+        },
+        {
+          "date": "2025-05-05",
+          "libelle": "Committee Transcript 2025-May-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2025-may-05"
+        }
+      ]
+    },
+    {
+      "cle": "justice-policy",
+      "nomEn": "Standing Committee on Justice Policy",
+      "nomFr": "Comité permanent de la justice",
+      "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-07-30",
+          "libelle": "Committee Transcript 2026-Jul-30",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-jul-30"
+        },
+        {
+          "date": "2026-05-28",
+          "libelle": "Committee Transcript 2026-May-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-may-28"
+        },
+        {
+          "date": "2026-05-27",
+          "libelle": "Committee Transcript 2026-May-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-may-27"
+        },
+        {
+          "date": "2026-04-23",
+          "libelle": "Committee Transcript 2026-Apr-23",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-apr-23"
+        },
+        {
+          "date": "2026-04-15",
+          "libelle": "Committee Transcript 2026-Apr-15",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-apr-15"
+        },
+        {
+          "date": "2026-03-26",
+          "libelle": "Committee Transcript 2026-Mar-26",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-mar-26"
+        },
+        {
+          "date": "2025-11-06",
+          "libelle": "Committee Transcript 2025-Nov-06",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2025-nov-06"
+        },
+        {
+          "date": "2025-11-05",
+          "libelle": "Committee Transcript 2025-Nov-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2025-nov-05"
+        },
+        {
+          "date": "2025-10-30",
+          "libelle": "Committee Transcript 2025-Oct-30",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2025-oct-30"
+        },
+        {
+          "date": "2025-10-29",
+          "libelle": "Committee Transcript 2025-Oct-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2025-oct-29"
+        },
+        {
+          "date": "2025-10-22",
+          "libelle": "Committee Transcript 2025-Oct-22",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2025-oct-22"
+        },
+        {
+          "date": "2025-05-01",
+          "libelle": "Committee Transcript 2025-May-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2025-may-01"
+        }
+      ]
+    },
+    {
+      "cle": "procedure-house-affairs",
+      "nomEn": "Standing Committee on Procedure and House Affairs",
+      "nomFr": "Comité permanent de la procédure et des affaires de la Chambre",
+      "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-07-31",
+          "libelle": "Committee Transcript 2026-Jul-31",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-jul-31"
+        },
+        {
+          "date": "2026-05-12",
+          "libelle": "Committee Transcript 2026-May-12",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-may-12"
+        },
+        {
+          "date": "2026-04-14",
+          "libelle": "Committee Transcript 2026-Apr-14",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-apr-14"
+        },
+        {
+          "date": "2026-01-21",
+          "libelle": "Committee Transcript 2026-Jan-21",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-jan-21"
+        },
+        {
+          "date": "2025-12-11",
+          "libelle": "Committee Transcript 2025-Dec-11",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-dec-11"
+        },
+        {
+          "date": "2025-11-18",
+          "libelle": "Committee Transcript 2025-Nov-18",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-nov-18"
+        },
+        {
+          "date": "2025-10-07",
+          "libelle": "Committee Transcript 2025-Oct-07",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-oct-07"
+        },
+        {
+          "date": "2025-06-03",
+          "libelle": "Committee Transcript 2025-Jun-03",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-jun-03"
+        },
+        {
+          "date": "2025-05-27",
+          "libelle": "Committee Transcript 2025-May-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-may-27"
+        },
+        {
+          "date": "2025-05-08",
+          "libelle": "Committee Transcript 2025-May-08",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-may-08"
+        },
+        {
+          "date": "2025-05-01",
+          "libelle": "Committee Transcript 2025-May-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-may-01"
+        },
+        {
+          "date": "2025-04-29",
+          "libelle": "Committee Transcript 2025-Apr-29",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2025-apr-29"
+        }
+      ]
+    },
+    {
+      "cle": "public-accounts",
+      "nomEn": "Standing Committee on Public Accounts",
+      "nomFr": "Comité permanent des comptes publics",
+      "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-05-25",
+          "libelle": "Committee Transcript 2026-May-25",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2026-may-25"
+        },
+        {
+          "date": "2026-05-11",
+          "libelle": "Committee Transcript 2026-May-11",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2026-may-11"
+        },
+        {
+          "date": "2026-05-04",
+          "libelle": "Committee Transcript 2026-May-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2026-may-04"
+        },
+        {
+          "date": "2026-03-23",
+          "libelle": "Committee Transcript 2026-Mar-23",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2026-mar-23"
+        },
+        {
+          "date": "2025-12-08",
+          "libelle": "Committee Transcript 2025-Dec-08",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-dec-08"
+        },
+        {
+          "date": "2025-12-01",
+          "libelle": "Committee Transcript 2025-Dec-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-dec-01"
+        },
+        {
+          "date": "2025-11-03",
+          "libelle": "Committee Transcript 2025-Nov-03",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-nov-03"
+        },
+        {
+          "date": "2025-10-27",
+          "libelle": "Committee Transcript 2025-Oct-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-oct-27"
+        },
+        {
+          "date": "2025-10-20",
+          "libelle": "Committee Transcript 2025-Oct-20",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-oct-20"
+        },
+        {
+          "date": "2025-06-02",
+          "libelle": "Committee Transcript 2025-Jun-02",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-jun-02"
+        },
+        {
+          "date": "2025-05-05",
+          "libelle": "Committee Transcript 2025-May-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2025-may-05"
+        }
+      ]
+    },
+    {
+      "cle": "social-policy",
+      "nomEn": "Standing Committee on Social Policy",
+      "nomFr": "Comité permanent de la politique sociale",
+      "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44",
+      "transcriptions": [
+        {
+          "date": "2026-06-01",
+          "libelle": "Committee Transcript 2026-Jun-01",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-jun-01"
+        },
+        {
+          "date": "2026-05-25",
+          "libelle": "Committee Transcript 2026-May-25",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-may-25"
+        },
+        {
+          "date": "2026-04-30",
+          "libelle": "Committee Transcript 2026-Apr-30",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-apr-30"
+        },
+        {
+          "date": "2026-04-27",
+          "libelle": "Committee Transcript 2026-Apr-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-apr-27"
+        },
+        {
+          "date": "2025-11-12",
+          "libelle": "Committee Transcript 2025-Nov-12",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-nov-12"
+        },
+        {
+          "date": "2025-11-04",
+          "libelle": "Committee Transcript 2025-Nov-04",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-nov-04"
+        },
+        {
+          "date": "2025-11-03",
+          "libelle": "Committee Transcript 2025-Nov-03",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-nov-03"
+        },
+        {
+          "date": "2025-10-28",
+          "libelle": "Committee Transcript 2025-Oct-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-oct-28"
+        },
+        {
+          "date": "2025-10-20",
+          "libelle": "Committee Transcript 2025-Oct-20",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-oct-20"
+        },
+        {
+          "date": "2025-05-05",
+          "libelle": "Committee Transcript 2025-May-05",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-may-05"
+        }
+      ]
+    }
+  ]
+}

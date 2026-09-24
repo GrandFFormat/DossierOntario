@@ -15,6 +15,7 @@
     "build:pages": "node scripts/build-pages.js",
     "build": "npm run build:data && npm run build:pages",
     "scrape:votes-sans-noms": "node scrapers/votes-sans-noms.js",
+    "scrape:comites": "node scrapers/comites.js",
     "verifier:votes": "node scripts/verifier-votes.js"
   },
   "dependencies": {

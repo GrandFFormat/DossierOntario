@@ -70,6 +70,7 @@ function main() {
   const members = lireJson('data/members.json');
   const ministers = lireJson('data/ministers.json');
   const calendrier = lireJson('data/calendrier.json');
+  const comites = lireJson('data/comites.json');
 
   if (!bills) throw new Error('data/bills.json manquant — lancer les scrapers d\'abord.');
   mkdirSync(SORTIE, { recursive: true });
@@ -200,6 +201,50 @@ function main() {
       ministres: ministers.ministres,
       adjointsParlementaires: ministers.adjointsParlementaires,
       licence: ministers.source?.licence ?? null,
+    });
+  }
+
+  // ------------------------------------------------------------------ comités
+  //
+  // L'activité vient des tableaux d'étapes des projets de loi : chaque ligne qui nomme un
+  // comité est une journée où ce comité s'est penché sur ce projet. On y joint les
+  // transcriptions, qui sont la seule trace publique de ce qui s'y est dit.
+  if (comites) {
+    const activite = new Map();
+    for (const projet of projets) {
+      for (const etape of fiches[projet.numero]?.etapes ?? []) {
+        if (!etape.comite) continue;
+        if (!activite.has(etape.comite)) activite.set(etape.comite, []);
+        activite.get(etape.comite).push({
+          date: etape.date,
+          numero: projet.numero,
+          titreEn: projet.titreEn,
+          titreFr: projet.titreFr,
+          evenementEn: etape.evenement,
+          evenementFr: etape.evenementFr,
+        });
+      }
+    }
+
+    ecrire('comites', {
+      maj: comites.lus,
+      comites: comites.comites.map((c) => {
+        const lignes = (activite.get(c.nomEn) ?? []).sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
+        return {
+          cle: c.cle,
+          nomEn: c.nomEn,
+          nomFr: c.nomFr,
+          url: c.url,
+          transcriptions: c.transcriptions.length,
+          derniereSeance: c.transcriptions[0]?.date ?? null,
+          // Les cinq dernières transcriptions suffisent à la page ; la liste complète
+          // reste dans data/comites.json.
+          dernieres: c.transcriptions.slice(0, 5),
+          projets: [...new Set(lignes.map((l) => l.numero))],
+          activite: lignes.slice(0, 8),
+          jours: new Set(lignes.map((l) => l.date)).size,
+        };
+      }),
     });
   }
 
