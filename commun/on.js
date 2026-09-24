@@ -435,27 +435,45 @@
       // prose juridique à la file : la liste ne se parcourait plus, et l'extrait coupé à 260
       // signes s'arrêtait au milieu d'une phrase. Pliée, la liste se lit ; dépliée, la note
       // est entière et le texte officiel est à un clic.
-      return `<article class="carte">
-        <div><span class="numero">${echapper(p.numero)}</span>
-          <span class="pastille ${pastille}">${echapper(etiquette)}</span>
-          ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
-          ${pastilleParti}</div>
-        <h3 class="carte-titre">${echapper(titre)}</h3>
-        ${statut ? `<p class="legende">${echapper(statut)}</p>` : ''}
-        <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}</p>
+      // Même plan que la carte de DossierQuébec : une carte PLEINE LARGEUR par projet. En
+      // grille de trois, une carte ouverte devenait un couloir de texte de 400 px de large à
+      // côté de deux cartes vides, et les cinq étapes se cassaient sur deux lignes. Fermée :
+      // numéro, titre, parrain, pastilles, étapes. Ouverte : le texte à gauche (résumé, puis
+      // note officielle), l'état du projet et la sortie vers ola.org à droite.
+      return `<article class="carte carte-projet">
+        <div class="projet-tete">
+          <span class="numero">${echapper(p.numero)}</span>
+          <div class="projet-tete-texte">
+            <h3 class="carte-titre">${echapper(titre)}</h3>
+            <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}</p>
+          </div>
+          <div class="projet-pastilles">
+            ${pastilleParti}
+            ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
+            <span class="pastille ${pastille}">${echapper(etiquette)}</span>
+          </div>
+        </div>
         <div class="etapes">${etapes}</div>
-        <p class="legende">${p.derniereActivite ? `${mot('projet.derniere')} : ${date(p.derniereActivite)}` : ''}
-          ${p.votes ? ` · ${mot('projet.compteVotes', p.votes)}` : ''}</p>
         <details class="projet-detail">
           <summary>${mot('projet.ouvrir')}</summary>
           <div class="projet-detail-corps">
-            <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
-            ${
-              note
-                ? `<h4 class="sous-titre">${mot('projet.note')}</h4><p class="courant">${echapper(note)}</p>`
-                : `<p class="legende">${mot('projet.sansNote')}</p>`
-            }
-            <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+            <div class="projet-texte">
+              <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
+              ${
+                note
+                  ? `<h4 class="sous-titre">${mot('projet.note')}</h4><p class="courant">${echapper(note)}</p>`
+                  : `<p class="legende">${mot('projet.sansNote')}</p>`
+              }
+            </div>
+            <aside class="projet-cote">
+              <h4 class="sous-titre">${mot('projet.derniere')}</h4>
+              <div class="boite-activite">
+                ${p.derniereActivite ? `<b>${date(p.derniereActivite)}</b>` : ''}
+                ${statut ? `<span>${echapper(statut)}</span>` : ''}
+                ${p.votes ? `<span>${mot('projet.compteVotes', p.votes)}</span>` : ''}
+              </div>
+              <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+            </aside>
           </div>
         </details>
       </article>`;
@@ -522,7 +540,7 @@
             .map(
               (g) => `<h2 class="titre-groupe">${mot(`groupe.${g.etape}`)}
                   <span class="compte">${mot('projets.compte', g.projets.length)}</span></h2>
-                <div class="grille">${g.projets.map(carte).join('')}</div>`
+                <div class="liste-projets">${g.projets.map(carte).join('')}</div>`
             )
             .join('')
         : `<p class="courant">${mot('projets.aucun')}</p>`;

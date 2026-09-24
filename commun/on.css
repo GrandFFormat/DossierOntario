@@ -190,7 +190,40 @@ img{max-width:100%;}
 }
 .projet-detail[open] > summary::before{content:'−';}
 .projet-detail > summary:hover{color:var(--ink);}
-.projet-detail-corps{display:flex; flex-direction:column; gap:12px; padding-top:12px;}
+/* ---------- La carte d'un projet : pleine largeur, comme sur DossierQuébec ----------
+   En grille de trois, une carte ouverte devenait un couloir de 400 px de texte à côté de deux
+   cartes vides. Une carte par ligne ; ouverte, le texte à gauche, l'état et la sortie à droite. */
+.liste-projets{display:flex; flex-direction:column; gap:18px;}
+.carte-projet{padding:18px 22px; gap:14px;}
+.carte-projet:hover{background:var(--card);}
+.projet-tete{display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:16px; align-items:start;}
+.projet-tete .numero{font-size:14px; padding:7px 12px; white-space:nowrap;}
+.projet-tete-texte{display:flex; flex-direction:column; gap:5px; min-width:0;}
+.carte-projet .carte-titre{font-size:20px;}
+.projet-pastilles{display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end;}
+.carte-projet .etapes{flex-wrap:nowrap; margin:0;}
+.carte-projet .etape{flex:1 1 0;}
+.projet-detail-corps{
+  display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:30px; padding-top:16px;
+}
+.projet-texte{display:flex; flex-direction:column; gap:12px; min-width:0; max-width:760px;}
+.zone-resume{display:flex; flex-direction:column; gap:10px;}
+.zone-resume:empty{display:none;}
+.projet-cote{display:flex; flex-direction:column; gap:12px;}
+.boite-activite{
+  border:3px solid var(--ink); background:var(--paper-2); padding:12px 14px;
+  display:flex; flex-direction:column; gap:5px; font-size:15px;
+}
+.boite-activite span{font-size:13px; color:var(--slate); line-height:1.4;}
+.projet-cote .bouton-source{align-self:stretch; text-align:center;}
+@media (max-width:760px){
+  .carte-projet{padding:16px;}
+  .projet-tete{grid-template-columns:auto minmax(0,1fr);}
+  .projet-pastilles{grid-column:1 / -1; justify-content:flex-start;}
+  .carte-projet .etapes{flex-wrap:wrap;}
+  .carte-projet .etape{flex:1 1 90px;}
+  .projet-detail-corps{grid-template-columns:1fr; gap:18px;}
+}
 .resume{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px;}
 .resume li{font-size:15.5px; line-height:1.5;}
 .resume li::marker{color:var(--gold); font-weight:900;}
