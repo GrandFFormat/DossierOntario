@@ -47,7 +47,7 @@
       'entete.langue': 'Français', 'entete.theme': 'Theme', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': 'Unofficial site — not affiliated with the Legislative Assembly of Ontario',
       'pied.sources': 'Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue',
-      'pied.gratuit': 'Free, no subscription, no advertising.',
+      'pied.gratuit': 'Free, no subscription, no advertising.', 'haut.titre': 'Back to top',
       'pied.maj': 'Data read on',
       'chiffre.projets': 'public bills', 'chiffre.sanctionnes': 'became law',
       'chiffre.votes': 'recorded votes', 'chiffre.deputes': 'seats',
@@ -188,7 +188,7 @@
       'entete.langue': 'English', 'entete.theme': 'Thème', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': "Site non officiel — sans lien avec l'Assemblée législative de l'Ontario",
       'pied.sources': "Données publiques de l'Assemblée législative de l'Ontario (ola.org) et du Catalogue de données de l'Ontario",
-      'pied.gratuit': 'Gratuit, sans abonnement et sans publicité.',
+      'pied.gratuit': 'Gratuit, sans abonnement et sans publicité.', 'haut.titre': 'Retour en haut',
       'pied.maj': 'Données lues le',
       'chiffre.projets': 'projets de loi publics', 'chiffre.sanctionnes': 'devenus lois',
       'chiffre.votes': 'votes nominatifs', 'chiffre.deputes': 'sièges',
@@ -377,6 +377,7 @@
     });
     document.querySelectorAll('[data-i18n-title]').forEach((el) => {
       el.title = mot(el.getAttribute('data-i18n-title'));
+      if (el.hasAttribute('aria-label')) el.setAttribute('aria-label', el.title);
     });
     document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
       el.placeholder = mot(el.getAttribute('data-i18n-placeholder'));
@@ -1576,8 +1577,20 @@
     if (pied && maj) pied.textContent = `${mot('pied.maj')} ${date(maj.slice(0, 10))}`;
   }
 
+  // La flèche « haut de page », sur toutes les pages comme sur DQ : cachée en haut, elle
+  // apparaît quand on a descendu d'un écran et ramène en haut d'un clic.
+  function poserHautDePage() {
+    const b = document.querySelector('[data-role="haut"]');
+    if (!b) return;
+    const suivre = () => { b.hidden = window.scrollY < window.innerHeight * 0.8; };
+    window.addEventListener('scroll', suivre, { passive: true });
+    b.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    suivre();
+  }
+
   document.addEventListener('DOMContentLoaded', async () => {
     poserEntete();
+    poserHautDePage();
     appliquerLangue();
     await charger();
     rendre();
