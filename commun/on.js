@@ -69,6 +69,7 @@
       'projets.tous': 'All', 'projets.gouvernement': 'Government', 'projets.depute': "Members'",
       'projets.prive': 'Private', 'projets.sanctionne': 'Became law', 'projets.encours': 'In progress',
       'projets.aucun': 'No bill matches.',
+      'projets.recent': 'Recent activity', 'projets.sansDate': 'No known activity date',
       'projets.compte': (n) => `${n} bill${n > 1 ? 's' : ''}`,
       'etape.1': '1st reading', 'etape.2': '2nd reading', 'etape.3': 'Committee',
       'etape.4': '3rd reading', 'etape.5': 'Royal assent',
@@ -171,6 +172,7 @@
       'projets.tous': 'Tous', 'projets.gouvernement': 'Du gouvernement', 'projets.depute': 'De député·e·s',
       'projets.prive': "D'intérêt privé", 'projets.sanctionne': 'Devenu loi', 'projets.encours': 'En cours',
       'projets.aucun': 'Aucun projet ne correspond.',
+      'projets.recent': 'Activité récente', 'projets.sansDate': 'Aucune date d’activité connue',
       'projets.compte': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
       'etape.1': '1re lecture', 'etape.2': '2e lecture', 'etape.3': 'Comité',
       'etape.4': '3e lecture', 'etape.5': 'Sanction royale',
@@ -415,6 +417,10 @@
     if (!cible || !projets) return;
 
     let filtre = 'tous';
+    // « Recent activity » : un MODE d'affichage, pas un filtre de plus. Il se combine avec
+    // les filtres (projets du gouvernement les plus récemment actifs, par exemple) et
+    // remplace le classement par étape par une liste du plus récent au plus ancien.
+    let recent = false;
     let recherche = '';
 
     const carte = (p) => {
@@ -453,7 +459,11 @@
           <span class="numero">${echapper(p.numero)}</span>
           <div class="projet-tete-texte">
             <h3 class="carte-titre">${echapper(titre)}</h3>
-            <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}</p>
+            <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}${
+              // En mode « activité récente », la date est ce qu'on vient voir : elle monte dans
+              // la tête de la carte au lieu d'attendre qu'on l'ouvre.
+              recent && p.derniereActivite ? ` · <b class="date-activite">${mot('projet.derniere')} : ${date(p.derniereActivite)}</b>` : ''
+            }</p>
           </div>
           <div class="projet-pastilles">
             ${pastilleParti}
@@ -546,6 +556,33 @@
       });
       cible.querySelector('[data-role="compte"]').textContent = mot('projets.compte', visibles.length);
 
+      if (recent) {
+        // Du plus récemment actif au plus ancien, sous une tête par mois : l'œil a où se
+        // poser, et on voit d'un coup si la Chambre a siégé ce mois-là. Un projet sans date
+        // d'activité connue va à la fin, sous sa propre tête, plutôt que d'être daté au hasard.
+        const tries = [...visibles].sort((a, b) => (b.derniereActivite ?? '').localeCompare(a.derniereActivite ?? ''));
+        const parMois = new Map();
+        for (const p of tries) {
+          const cle = p.derniereActivite ? p.derniereActivite.slice(0, 7) : '';
+          if (!parMois.has(cle)) parMois.set(cle, []);
+          parMois.get(cle).push(p);
+        }
+        const nomMois = (cle) =>
+          cle
+            ? new Date(`${cle}-15T12:00:00`).toLocaleDateString(langue === 'fr' ? 'fr-CA' : 'en-CA', { month: 'long', year: 'numeric' })
+            : mot('projets.sansDate');
+        cible.querySelector('[data-role="liste"]').innerHTML = tries.length
+          ? [...parMois]
+              .map(
+                ([cle, liste]) => `<h2 class="titre-groupe">${nomMois(cle)}
+                  <span class="compte">${mot('projets.compte', liste.length)}</span></h2>
+                <div class="liste-projets">${liste.map(carte).join('')}</div>`
+              )
+              .join('')
+          : `<p class="courant">${mot('projets.aucun')}</p>`;
+        return;
+      }
+
       // Rangés par étape franchie, de la sanction royale au simple dépôt : sans ces
       // têtes de groupe, 191 cartes se suivent sans que l'œil ait où se poser.
       const groupes = [5, 4, 3, 2, 1]
@@ -581,6 +618,7 @@
     cible.innerHTML = `
       <div class="barre-filtres">
         <input class="champ" type="search" data-role="recherche" placeholder="${mot('projets.recherche')}" aria-label="${mot('projets.recherche')}">
+        <button class="filtre filtre-mode" data-role="recent" aria-pressed="false">↻ ${mot('projets.recent')}</button>
         ${filtres}
       </div>
       <p class="legende" data-role="compte"></p>
@@ -594,6 +632,12 @@
         dessiner();
       })
     );
+    cible.querySelector('[data-role="recent"]').addEventListener('click', (e) => {
+      recent = !recent;
+      e.currentTarget.classList.toggle('actif', recent);
+      e.currentTarget.setAttribute('aria-pressed', String(recent));
+      dessiner();
+    });
     cible.querySelector('[data-role="recherche"]').addEventListener('input', (e) => {
       recherche = e.target.value.trim().toLowerCase();
       dessiner();

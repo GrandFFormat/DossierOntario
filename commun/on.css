@@ -290,6 +290,10 @@ img{max-width:100%;}
 }
 .filtre:hover{background:var(--yellow); color:var(--sur-clair);}
 .filtre.actif{background:var(--ink-bg); color:var(--yellow); border-color:var(--ink-bg);}
+/* « Recent activity » est un MODE, pas un filtre : il se distingue et se combine avec eux. */
+.filtre-mode{border-color:var(--gold); color:var(--gold);}
+.filtre-mode.actif{background:var(--yellow); color:#131313; border-color:var(--line);}
+.date-activite{color:var(--ink); font-weight:800;}
 
 /* ---------- Pied de page ---------- */
 .pied{border-top:3px solid var(--ink); margin-top:44px; padding:26px 0 40px; background:var(--card);}
