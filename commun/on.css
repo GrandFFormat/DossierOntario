@@ -623,3 +623,8 @@ img{max-width:100%;}
 .section-pli[open] > summary .grand-titre::before{content:'− ';}
 .section-pli > summary:hover{background:var(--yellow); color:#131313;}
 .section-pli > summary:hover .legende{color:#131313;}
+.titre-partis{margin-top:40px;}
+.section-pli + .section-pli > summary{margin-top:14px;}
+/* Les boutons de partis : un cran sous les deux grands groupes, sur une seule ligne. */
+.pli-parti > summary{padding:10px 16px;}
+.pli-parti .grand-titre{font-size:clamp(18px,2.2vw,26px);}

@@ -142,7 +142,7 @@
       'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding',
       'deputes.circo': 'Riding', 'deputes.votes': 'Recorded votes', 'deputes.parraines': 'Bills sponsored',
       'deputes.compteMinistres': (n) => `${n} ministers — official titles from ONTERM`,
-      'deputes.compteDeputes': (n) => `${n} MPPs`,
+      'deputes.compteDeputes': (n) => `${n} MPPs`, 'deputes.parPartis': 'By party',
       'deputes.votesNote': '“Recorded votes”: the divisions in which the member’s name appears, out of those held since their first one. Ontario records only who voted — a missed vote can be an absence or a choice, and the Speaker does not vote — so this is not an official attendance rate. “Bills sponsored” counts co-sponsorships.', 'deputes.parti': 'Party', 'deputes.courriel': 'Email',
       'cabinet.titre': 'Cabinet',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
@@ -283,7 +283,7 @@
       'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription',
       'deputes.circo': 'Circonscription', 'deputes.votes': 'Votes nominatifs', 'deputes.parraines': 'Projets parrainés',
       'deputes.compteMinistres': (n) => `${n} ministres — titres officiels d’ONTERM`,
-      'deputes.compteDeputes': (n) => `${n} député·e·s`,
+      'deputes.compteDeputes': (n) => `${n} député·e·s`, 'deputes.parPartis': 'Par parti',
       'deputes.votesNote': '« Votes nominatifs » : les votes où le nom de la personne figure, sur ceux tenus depuis son premier. L’Ontario ne consigne que qui a voté — un vote manqué peut être une absence ou un choix, et le président de la Chambre ne vote pas — : ce n’est donc pas un taux de présence officiel. « Projets parrainés » compte aussi les coparrainages.', 'deputes.parti': 'Parti', 'deputes.courriel': 'Courriel',
       'cabinet.titre': 'Conseil des ministres',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
@@ -1501,20 +1501,48 @@
           .includes(q);
       const ministres = d.deputes.filter((m) => m.ministreEn && correspond(m)).sort((x, y) => x.ordreCabinet - y.ordreCabinet);
       const autres = d.deputes.filter((m) => !m.ministreEn && correspond(m));
-      cible.querySelector('[data-role="liste"]').innerHTML =
-        (ministres.length
-          ? // Le Conseil se replie derrière son titre (demande de Martin) : sinon ses 38 cartes
-            // repoussaient le reste de l'Assemblée loin sous la ligne de flottaison. Il s'ouvre
-            // de lui-même quand on arrive par /cabinet ou qu'une recherche trouve un·e ministre.
-            `<details class="section-pli" id="cabinet" ${q || location.hash === '#cabinet' ? 'open' : ''}>
-              <summary class="tete-section"><h2 class="grand-titre">${mot('cabinet.titre')}</h2><span class="legende">${mot('deputes.compteMinistres', ministres.length)}</span></summary>
-              <div class="grille">${ministres.map(carte).join('')}</div>
+
+      // Chaque groupe se replie derrière son titre (demande de Martin) : le Conseil, le reste
+      // de l'Assemblée, puis un bouton par parti avec TOUS ses député·e·s, ministres compris,
+      // du plus grand caucus au plus petit. Le Conseil s'ouvre de lui-même en arrivant par
+      // /cabinet. Pendant une recherche, les groupes qui ont un résultat s'ouvrent, et les
+      // boutons de partis s'effacent : ils répéteraient les mêmes cartes une seconde fois.
+      const section = ({ id, titre, compte, liste, ouvert, couleur }) =>
+        liste.length
+          ? `<details class="section-pli ${couleur ? 'pli-parti' : ''}" ${id ? `id="${id}"` : ''} ${ouvert ? 'open' : ''}>
+              <summary class="tete-section" ${couleur ? `style="border-left:10px solid ${echapper(couleur)}"` : ''}>
+                <h2 class="grand-titre">${echapper(titre)}</h2><span class="legende">${compte}</span>
+              </summary>
+              <div class="grille">${liste.map(carte).join('')}</div>
             </details>`
-          : '') +
-          (autres.length
-            ? `<div class="tete-section"><h2 class="grand-titre">${mot('deputes.autres')}</h2><span class="legende">${mot('deputes.compteDeputes', autres.length)}</span></div>
-               <div class="grille">${autres.map(carte).join('')}</div>`
-            : '') || `<p class="courant">${mot('deputes.aucun')}</p>`;
+          : '';
+
+      const partis = [];
+      if (!q) {
+        const parParti = new Map();
+        for (const m of d.deputes) {
+          if (!parParti.has(m.parti)) parParti.set(m.parti, []);
+          parParti.get(m.parti).push(m);
+        }
+        for (const [, membres] of [...parParti].sort((x, y) => y[1].length - x[1].length)) {
+          membres.sort((x, y) => (x.ordreCabinet ?? 999) - (y.ordreCabinet ?? 999) || x.nom.localeCompare(y.nom));
+          partis.push(
+            section({
+              titre: selonLangue(membres[0].parti, membres[0].partiFr) ?? '—',
+              compte: mot('deputes.compteDeputes', membres.length),
+              liste: membres,
+              couleur: membres[0].couleurParti,
+            })
+          );
+        }
+      }
+
+      cible.querySelector('[data-role="liste"]').innerHTML =
+        [
+          section({ id: 'cabinet', titre: mot('cabinet.titre'), compte: mot('deputes.compteMinistres', ministres.length), liste: ministres, ouvert: !!q || location.hash === '#cabinet' }),
+          section({ titre: mot('deputes.autres'), compte: mot('deputes.compteDeputes', autres.length), liste: autres, ouvert: !!q }),
+          partis.length ? `<h2 class="titre-groupe titre-partis">${mot('deputes.parPartis')}</h2>${partis.join('')}` : '',
+        ].join('') || `<p class="courant">${mot('deputes.aucun')}</p>`;
     };
     dessiner();
     cible.querySelector('[data-role="recherche"]').addEventListener('input', (e) => dessiner(e.target.value.trim().toLowerCase()));
