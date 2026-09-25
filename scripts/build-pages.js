@@ -48,6 +48,12 @@ const PAGES = [
     <div data-role="defis-liste"></div>
   </div>
 </div>
+<div class="colonne recents-accueil" data-role="recents" hidden>
+  <h2 class="titre-groupe" data-i18n="recents.titre">Recently active bills</h2>
+  <p class="legende recents-indice" data-i18n="recents.indice">↓ Click anywhere in a card to read what the bill does ↓</p>
+  <div class="liste-projets" data-role="recents-liste"></div>
+  <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
+</div>
 <div class="bande bande-mission">
   <div class="colonne">
     <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>

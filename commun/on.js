@@ -71,6 +71,9 @@
       'projets.aucun': 'No bill matches.',
       'projets.recent': 'Recent activity', 'projets.sansDate': 'No known activity date',
       'projets.defis': 'Challenged',
+      'recents.titre': 'Recently active bills',
+      'recents.indice': '↓ Click anywhere in a card to read what the bill does ↓',
+      'recents.tous': 'All bills →',
       'defis.titre': 'Bills challenged by citizens',
       'defis.sous': 'The moment one person asks for an explanation, the bill appears here — back it in one click.',
       'defis.vide': 'No one has challenged a bill yet. Open a bill in progress and ask for an explanation: it will appear here.',
@@ -193,6 +196,9 @@
       'projets.aucun': 'Aucun projet ne correspond.',
       'projets.recent': 'Activité récente', 'projets.sansDate': 'Aucune date d’activité connue',
       'projets.defis': 'Challengés',
+      'recents.titre': 'Projets de loi récemment actifs',
+      'recents.indice': '↓ Cliquez n’importe où dans une carte pour voir ce que fait le projet ↓',
+      'recents.tous': 'Tous les projets de loi →',
       'defis.titre': 'Projets challengés par les citoyen·ne·s',
       'defis.sous': 'Dès qu’une personne demande une explication, le projet apparaît ici — appuyez en un clic.',
       'defis.vide': 'Personne n’a encore challengé de projet. Ouvrez un projet en cours et demandez une explication : il apparaîtra ici.',
@@ -569,8 +575,31 @@
     // le bouton « Recent activity » de la page des projets. La bande des projets challengés,
     // juste en dessous, prend sa place.
 
-    bandeDefis();
+    // Les projets récemment actifs viennent APRÈS la bande : ils attendent les totaux de
+    // demandes, sinon leurs cartes s'afficheraient d'abord sans bouton ni compteur.
+    bandeDefis().then(recentsAccueil, recentsAccueil);
   };
+
+  // Sous la bande jaune, comme sur DossierQuébec : les quatre projets qui ont bougé le plus
+  // récemment, avec EXACTEMENT la carte de la page des projets (carteProjet) — elle s'ouvre
+  // d'un clic, montre le résumé en clair, le bouton « challenger » et le partage.
+  async function recentsAccueil() {
+    const zone = document.querySelector('[data-role="recents"]');
+    if (!zone) return;
+    const projets = DONNEES.bills?.projets ?? (await chargerProjets());
+    if (!projets) return;
+    const liste = zone.querySelector('[data-role="recents-liste"]');
+    const dessiner = () => {
+      liste.innerHTML = [...projets]
+        .sort((a, b) => (b.derniereActivite ?? '').localeCompare(a.derniereActivite ?? ''))
+        .slice(0, 4)
+        .map((p) => carteProjet(p, true))
+        .join('');
+    };
+    dessiner();
+    zone.hidden = false;
+    brancherCartes(zone, projets, dessiner);
+  }
 
   // ---------------------------------------------------------------- la bande des projets challengés
   // Comme sur l'accueil de DossierQuébec : les projets que des gens ont challengés, les plus
@@ -675,143 +704,139 @@
     await dessiner();
   }
 
-  VUES.projets = () => {
-    const cible = document.querySelector('section[data-vue="projets"]');
-    const projets = DONNEES.bills?.projets;
-    if (!cible || !projets) return;
-
-    let filtre = 'tous';
-    // « Recent activity » : un MODE d'affichage, pas un filtre de plus. Il se combine avec
-    // les filtres (projets du gouvernement les plus récemment actifs, par exemple) et
-    // remplace le classement par étape par une liste du plus récent au plus ancien.
-    let recent = false;
-    let recherche = '';
-
-    const carte = (p) => {
-      const titre = selonLangue(p.titreEn, p.titreFr);
-      // Sur la pastille, du langage clair (la charte l'exige) ; l'état officiel, mot
-      // pour mot, reste affiché juste en dessous.
-      const statut = selonLangue(p.statutEn, p.statutFr) ?? p.statutDerniereEtape;
-      const etiquette =
-        p.etape === 5 ? mot('projets.sanctionne') : p.etape === 1 ? mot('etape.1') : mot('projets.encours');
-      const pastille =
-        p.etape === 5 ? 'pastille-sanctionne' : p.etape >= 2 ? 'pastille-encours' : '';
-      const etapes = [1, 2, 3, 4, 5]
-        // Comme sur DQ : les étapes passées pleines, l'étape ACTUELLE en jaune, les suivantes
-        // en creux. Avant, les cinq étaient pleines pour une loi sanctionnée : on ne voyait pas
-        // où le projet s'était arrêté.
-        .map((n) => `<div class="etape ${p.etape > n ? 'franchie' : p.etape === n ? 'courante' : ''}">${mot(`etape.${n}`)}</div>`)
-        .join('');
-      const lien = selonLangue(p.url, p.urlFr);
-      const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
-      const pastilleParti = parti
-        ? `<span class="pastille pastille-parti" style="background:${echapper(p.parrainCouleur ?? '#8B8578')};
-             border-color:${echapper(p.parrainCouleur ?? '#8B8578')}; color:${texteSurParti(p.parrainCouleur)}"
-             title="${echapper(parti)}">${echapper(sigleParti(parti))}</span>`
-        : '';
-      // La note explicative reste PLIÉE. Dépliée sur chaque carte, elle donnait 191 pavés de
-      // prose juridique à la file : la liste ne se parcourait plus, et l'extrait coupé à 260
-      // signes s'arrêtait au milieu d'une phrase. Pliée, la liste se lit ; dépliée, la note
-      // est entière et le texte officiel est à un clic.
-      // Même plan que la carte de DossierQuébec : une carte PLEINE LARGEUR par projet. En
-      // grille de trois, une carte ouverte devenait un couloir de texte de 400 px de large à
-      // côté de deux cartes vides, et les cinq étapes se cassaient sur deux lignes. Fermée :
-      // numéro, titre, parrain, pastilles, étapes. Ouverte : le texte à gauche (résumé, puis
-      // note officielle), l'état du projet et la sortie vers ola.org à droite.
-      const nDefi = DEFI.comptes.get(String(p.numero)) ?? 0;
-      return `<article class="carte carte-projet" data-numero="${echapper(p.numero)}">
-        <div class="projet-tete">
-          <span class="numero">${echapper(p.numero)}</span>
-          <div class="projet-tete-texte">
-            <h3 class="carte-titre">${echapper(titre)}</h3>
-            <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}${
-              // En mode « activité récente », la date est ce qu'on vient voir : elle monte dans
-              // la tête de la carte au lieu d'attendre qu'on l'ouvre.
-              recent && p.derniereActivite ? ` · <b class="date-activite">${mot('projet.derniere')} : ${date(p.derniereActivite)}</b>` : ''
-            }</p>
-          </div>
-          <div class="projet-pastilles">
-            ${nDefi ? `<span class="pastille pastille-defi">${mot('defi.compte', nDefi)}</span>` : ''}
-            ${pastilleParti}
-            ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
-            <span class="pastille ${pastille}">${echapper(etiquette)}</span>
-          </div>
+  // ---------------------------------------------------------------- la carte d'un projet
+  // Partagée par la page des projets et l'accueil (« Recently active bills ») : une seule carte,
+  // pas deux copies qui divergent.
+  function carteProjet(p, recent = false) {
+    const titre = selonLangue(p.titreEn, p.titreFr);
+    // Sur la pastille, du langage clair (la charte l'exige) ; l'état officiel, mot
+    // pour mot, reste affiché juste en dessous.
+    const statut = selonLangue(p.statutEn, p.statutFr) ?? p.statutDerniereEtape;
+    const etiquette =
+      p.etape === 5 ? mot('projets.sanctionne') : p.etape === 1 ? mot('etape.1') : mot('projets.encours');
+    const pastille =
+      p.etape === 5 ? 'pastille-sanctionne' : p.etape >= 2 ? 'pastille-encours' : '';
+    const etapes = [1, 2, 3, 4, 5]
+      // Comme sur DQ : les étapes passées pleines, l'étape ACTUELLE en jaune, les suivantes
+      // en creux. Avant, les cinq étaient pleines pour une loi sanctionnée : on ne voyait pas
+      // où le projet s'était arrêté.
+      .map((n) => `<div class="etape ${p.etape > n ? 'franchie' : p.etape === n ? 'courante' : ''}">${mot(`etape.${n}`)}</div>`)
+      .join('');
+    const lien = selonLangue(p.url, p.urlFr);
+    const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
+    const pastilleParti = parti
+      ? `<span class="pastille pastille-parti" style="background:${echapper(p.parrainCouleur ?? '#8B8578')};
+           border-color:${echapper(p.parrainCouleur ?? '#8B8578')}; color:${texteSurParti(p.parrainCouleur)}"
+           title="${echapper(parti)}">${echapper(sigleParti(parti))}</span>`
+      : '';
+    // La note explicative reste PLIÉE. Dépliée sur chaque carte, elle donnait 191 pavés de
+    // prose juridique à la file : la liste ne se parcourait plus, et l'extrait coupé à 260
+    // signes s'arrêtait au milieu d'une phrase. Pliée, la liste se lit ; dépliée, la note
+    // est entière et le texte officiel est à un clic.
+    // Même plan que la carte de DossierQuébec : une carte PLEINE LARGEUR par projet. En
+    // grille de trois, une carte ouverte devenait un couloir de texte de 400 px de large à
+    // côté de deux cartes vides, et les cinq étapes se cassaient sur deux lignes. Fermée :
+    // numéro, titre, parrain, pastilles, étapes. Ouverte : le texte à gauche (résumé, puis
+    // note officielle), l'état du projet et la sortie vers ola.org à droite.
+    const nDefi = DEFI.comptes.get(String(p.numero)) ?? 0;
+    return `<article class="carte carte-projet" data-numero="${echapper(p.numero)}">
+      <div class="projet-tete">
+        <span class="numero">${echapper(p.numero)}</span>
+        <div class="projet-tete-texte">
+          <h3 class="carte-titre">${echapper(titre)}</h3>
+          <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}${
+            // En mode « activité récente », la date est ce qu'on vient voir : elle monte dans
+            // la tête de la carte au lieu d'attendre qu'on l'ouvre.
+            recent && p.derniereActivite ? ` · <b class="date-activite">${mot('projet.derniere')} : ${date(p.derniereActivite)}</b>` : ''
+          }</p>
         </div>
-        <div class="etapes">${etapes}</div>
-        <details class="projet-detail">
-          <summary>${mot('projet.ouvrir')}</summary>
-          <div class="projet-detail-corps">
-            <div class="projet-texte">
-              <!-- La note explicative de l'Assemblée n'est plus reprise ici (24 sept. 2026) :
-                   sous le résumé, c'était un mur de prose juridique en double d'une page
-                   qu'ola.org publie déjà, à un clic du bouton à droite. -->
-              <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
-            </div>
-            <aside class="projet-cote">
-              <h4 class="sous-titre">${mot('projet.derniere')}</h4>
-              <div class="boite-activite">
-                ${p.derniereActivite ? `<b>${date(p.derniereActivite)}</b>` : ''}
-                ${statut ? `<span>${echapper(statut)}</span>` : ''}
-                ${p.votes ? `<span>${mot('projet.compteVotes', p.votes)}</span>` : ''}
-              </div>
-              <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
-              ${
-                // Challenger : seulement un projet qui n'est pas devenu loi, et seulement quand
-                // la table existe (DEFI.dispo). Voir chargerDefi().
-                DEFI.dispo && p.etape < 5
-                  ? `<div class="defi">
-                      <p class="legende defi-indice">${DEFI.usager ? mot('defi.indice') : mot('defi.indiceAnonyme')}${
-                        DEFI.usager ? ` <button class="lien-mini" data-role="deconnexion">${mot('defi.deconnexion')}</button>` : ''
-                      }</p>
-                      <button class="bouton-defi ${DEFI.miens.has(String(p.numero)) ? 'actif' : ''}" data-defi="${echapper(p.numero)}">${
-                        !DEFI.usager ? mot('defi.connexion') : DEFI.miens.has(String(p.numero)) ? mot('defi.retirer') : mot('defi.demander')
-                      }</button>
-                    </div>`
-                  : ''
-              }
-              <div class="partage">
-                <span class="legende">${mot('partage.titre')}</span>
-                <button class="bouton-partage" data-partage="x" aria-label="X">𝕏</button>
-                <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
-                <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
-              </div>
-            </aside>
+        <div class="projet-pastilles">
+          ${nDefi ? `<span class="pastille pastille-defi">${mot('defi.compte', nDefi)}</span>` : ''}
+          ${pastilleParti}
+          ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
+          <span class="pastille ${pastille}">${echapper(etiquette)}</span>
+        </div>
+      </div>
+      <div class="etapes">${etapes}</div>
+      <details class="projet-detail">
+        <summary>${mot('projet.ouvrir')}</summary>
+        <div class="projet-detail-corps">
+          <div class="projet-texte">
+            <!-- La note explicative de l'Assemblée n'est plus reprise ici (24 sept. 2026) :
+                 sous le résumé, c'était un mur de prose juridique en double d'une page
+                 qu'ola.org publie déjà, à un clic du bouton à droite. -->
+            <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
           </div>
-        </details>
-      </article>`;
-    };
+          <aside class="projet-cote">
+            <h4 class="sous-titre">${mot('projet.derniere')}</h4>
+            <div class="boite-activite">
+              ${p.derniereActivite ? `<b>${date(p.derniereActivite)}</b>` : ''}
+              ${statut ? `<span>${echapper(statut)}</span>` : ''}
+              ${p.votes ? `<span>${mot('projet.compteVotes', p.votes)}</span>` : ''}
+            </div>
+            <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+            ${
+              // Challenger : seulement un projet qui n'est pas devenu loi, et seulement quand
+              // la table existe (DEFI.dispo). Voir chargerDefi().
+              DEFI.dispo && p.etape < 5
+                ? `<div class="defi">
+                    <p class="legende defi-indice">${DEFI.usager ? mot('defi.indice') : mot('defi.indiceAnonyme')}${
+                      DEFI.usager ? ` <button class="lien-mini" data-role="deconnexion">${mot('defi.deconnexion')}</button>` : ''
+                    }</p>
+                    <button class="bouton-defi ${DEFI.miens.has(String(p.numero)) ? 'actif' : ''}" data-defi="${echapper(p.numero)}">${
+                      !DEFI.usager ? mot('defi.connexion') : DEFI.miens.has(String(p.numero)) ? mot('defi.retirer') : mot('defi.demander')
+                    }</button>
+                  </div>`
+                : ''
+            }
+            <div class="partage">
+              <span class="legende">${mot('partage.titre')}</span>
+              <button class="bouton-partage" data-partage="x" aria-label="X">𝕏</button>
+              <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
+              <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
+            </div>
+          </aside>
+        </div>
+      </details>
+    </article>`;
+  }
 
-    // Les résumés en clair vivent dans data/site/resumes-<langue>.json et n'arrivent qu'au
-    // premier pli ouvert : dans bills.json, ils faisaient presque doubler le poids de la page
-    // (voir build-site-data.js). Ils passent AVANT la note officielle — c'est ce qu'on vient
-    // chercher —, et la note reste dessous, mot pour mot : le résumé y mène, il ne la remplace pas.
-    const remplirResume = async (details) => {
-      const zone = details.querySelector('.zone-resume');
-      if (!zone || zone.dataset.rempli) return;
-      zone.dataset.rempli = '1';   // posé tout de suite : deux ouvertures rapides ne chargent qu'une fois
-      const numero = zone.dataset.numero;
-      const donnees = await chargerResumes(langue);
-      if (!donnees) { delete zone.dataset.rempli; return; }   // réseau : on réessaiera au prochain pli
-      let r = donnees[numero];
-      let enAnglais = false;
-      // 52 projets n'ont pas de texte français sur ola.org, donc pas de résumé français. On
-      // montre alors l'anglais, en le disant, plutôt que rien ou une traduction maison.
-      if (!r && langue === 'fr') {
-        r = (await chargerResumes('en'))?.[numero];
-        enAnglais = !!r;
-      }
-      // Un projet tout juste déposé n'a pas encore son résumé (il s'écrit au rafraîchissement
-      // du matin) : on le dit, plutôt qu'une colonne vide.
-      if (!r) {
-        zone.innerHTML = `<p class="legende avis-ia">${mot('projet.sansResume')}</p>`;
-        return;
-      }
-      zone.innerHTML = `<h4 class="sous-titre">${mot('projet.resume')}</h4>
-        <ul class="resume"${enAnglais ? ' lang="en"' : ''}>${r.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
-        <p class="legende avis-ia">${mot('projet.resumeIA')}${r.t ? ` ${mot('projet.resumeTronque')}` : ''}${
-          enAnglais ? ` ${mot('projet.resumeAnglais')}` : ''
-        }</p>`;
-    };
+  // Les résumés en clair vivent dans data/site/resumes-<langue>.json et n'arrivent qu'au
+  // premier pli ouvert : dans bills.json, ils faisaient presque doubler le poids de la page
+  // (voir build-site-data.js). Ils passent AVANT la note officielle — c'est ce qu'on vient
+  // chercher —, et la note reste dessous, mot pour mot : le résumé y mène, il ne la remplace pas.
+  async function remplirResume(details) {
+    const zone = details.querySelector('.zone-resume');
+    if (!zone || zone.dataset.rempli) return;
+    zone.dataset.rempli = '1';   // posé tout de suite : deux ouvertures rapides ne chargent qu'une fois
+    const numero = zone.dataset.numero;
+    const donnees = await chargerResumes(langue);
+    if (!donnees) { delete zone.dataset.rempli; return; }   // réseau : on réessaiera au prochain pli
+    let r = donnees[numero];
+    let enAnglais = false;
+    // 52 projets n'ont pas de texte français sur ola.org, donc pas de résumé français. On
+    // montre alors l'anglais, en le disant, plutôt que rien ou une traduction maison.
+    if (!r && langue === 'fr') {
+      r = (await chargerResumes('en'))?.[numero];
+      enAnglais = !!r;
+    }
+    // Un projet tout juste déposé n'a pas encore son résumé (il s'écrit au rafraîchissement
+    // du matin) : on le dit, plutôt qu'une colonne vide.
+    if (!r) {
+      zone.innerHTML = `<p class="legende avis-ia">${mot('projet.sansResume')}</p>`;
+      return;
+    }
+    zone.innerHTML = `<h4 class="sous-titre">${mot('projet.resume')}</h4>
+      <ul class="resume"${enAnglais ? ' lang="en"' : ''}>${r.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
+      <p class="legende avis-ia">${mot('projet.resumeIA')}${r.t ? ` ${mot('projet.resumeTronque')}` : ''}${
+        enAnglais ? ` ${mot('projet.resumeAnglais')}` : ''
+      }</p>`;
+  }
+
+  // Branche une zone qui contient des cartes de projet (page des projets, accueil) : le
+  // résumé au premier pli, le clic n'importe où sur la carte, et ses boutons. Une seule fois
+  // par zone ; `redessiner` refait la liste après un challenge ou une déconnexion.
+  function brancherCartes(cible, projets, redessiner) {
     // « toggle » ne remonte pas dans le DOM : on l'écoute en phase de capture, une seule fois
     // pour toute la section, même si la vue est redessinée (changement de langue, filtres).
     if (!cible.dataset.ecouteResumes) {
@@ -831,6 +856,54 @@
         if (pli) pli.open = !pli.open;
       });
     }
+
+    // Les boutons d'une carte : challenger, se déconnecter, partager.
+    const rouvrir = (numero) => {
+      const c = cible.querySelector(`.carte-projet[data-numero="${CSS.escape(numero)}"] .projet-detail`);
+      if (c) c.open = true;
+    };
+    if (!cible.dataset.ecouteBoutons) {
+      cible.dataset.ecouteBoutons = '1';
+      cible.addEventListener('click', async (e) => {
+        const b = e.target.closest?.('button');
+        if (!b) return;
+        const carte = b.closest('.carte-projet');
+        const numero = carte?.dataset.numero;
+        if (b.dataset.defi) {
+          if (!DEFI.usager) return ouvrirConnexion();
+          b.disabled = true;
+          await basculerDefi(b.dataset.defi);
+          redessiner();
+          rouvrir(b.dataset.defi);
+        } else if (b.dataset.role === 'deconnexion') {
+          try { await (await clientSupabase()).auth.signOut(); } catch (err) {}
+          DEFI.usager = null;
+          DEFI.miens = new Set();
+          redessiner();
+          if (numero) rouvrir(numero);
+        } else if (b.dataset.partage && numero) {
+          const p = projets.find((x) => String(x.numero) === numero);
+          partager(numero, selonLangue(p?.titreEn, p?.titreFr) ?? '', b.dataset.partage, b);
+        }
+      });
+    }
+  }
+
+  VUES.projets = () => {
+    const cible = document.querySelector('section[data-vue="projets"]');
+    const projets = DONNEES.bills?.projets;
+    if (!cible || !projets) return;
+
+    let filtre = 'tous';
+    // « Recent activity » : un MODE d'affichage, pas un filtre de plus. Il se combine avec
+    // les filtres (projets du gouvernement les plus récemment actifs, par exemple) et
+    // remplace le classement par étape par une liste du plus récent au plus ancien.
+    let recent = false;
+    let recherche = '';
+
+    const carte = (p) => carteProjet(p, recent);
+
+
 
     const retenu = (p, f) =>
       f === 'tous' ||
@@ -939,36 +1012,7 @@
     });
     dessiner();
 
-    // Les boutons d'une carte : challenger, se déconnecter, partager.
-    const rouvrir = (numero) => {
-      const c = cible.querySelector(`.carte-projet[data-numero="${CSS.escape(numero)}"] .projet-detail`);
-      if (c) c.open = true;
-    };
-    if (!cible.dataset.ecouteBoutons) {
-      cible.dataset.ecouteBoutons = '1';
-      cible.addEventListener('click', async (e) => {
-        const b = e.target.closest?.('button');
-        if (!b) return;
-        const carte = b.closest('.carte-projet');
-        const numero = carte?.dataset.numero;
-        if (b.dataset.defi) {
-          if (!DEFI.usager) return ouvrirConnexion();
-          b.disabled = true;
-          await basculerDefi(b.dataset.defi);
-          dessiner();
-          rouvrir(b.dataset.defi);
-        } else if (b.dataset.role === 'deconnexion') {
-          try { await (await clientSupabase()).auth.signOut(); } catch (err) {}
-          DEFI.usager = null;
-          DEFI.miens = new Set();
-          dessiner();
-          if (numero) rouvrir(numero);
-        } else if (b.dataset.partage && numero) {
-          const p = projets.find((x) => String(x.numero) === numero);
-          partager(numero, selonLangue(p?.titreEn, p?.titreFr) ?? '', b.dataset.partage, b);
-        }
-      });
-    }
+    brancherCartes(cible, projets, dessiner);
 
     // Un lien partagé (/bills?bill=9) ouvre SA carte à l'arrivée. On attend les compteurs de
     // demandes, qui redessinent la liste : sinon la carte ouverte se refermait aussitôt.

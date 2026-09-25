@@ -15,8 +15,8 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="commun/on.css?v=d451cf30e0">
-<script src="commun/on.js?v=94966f2173" defer></script>
+<link rel="stylesheet" href="commun/on.css?v=48954fff38">
+<script src="commun/on.js?v=53d147f04a" defer></script>
 </head>
 <body data-vue="accueil" data-donnees="apercu">
 
@@ -77,6 +77,12 @@
     <p class="defis-sous" data-i18n="defis.sous">The moment one person asks for an explanation, the bill appears here.</p>
     <div data-role="defis-liste"></div>
   </div>
+</div>
+<div class="colonne recents-accueil" data-role="recents" hidden>
+  <h2 class="titre-groupe" data-i18n="recents.titre">Recently active bills</h2>
+  <p class="legende recents-indice" data-i18n="recents.indice">↓ Click anywhere in a card to read what the bill does ↓</p>
+  <div class="liste-projets" data-role="recents-liste"></div>
+  <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
 </div>
 <div class="bande bande-mission">
   <div class="colonne">

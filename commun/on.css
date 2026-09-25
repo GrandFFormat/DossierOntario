@@ -574,3 +574,9 @@ img{max-width:100%;}
    projets challengés s'empile, titre au-dessus des cartes. Même spécificité, écrite après. */
 .bande-defis .colonne{display:block;}
 .bande-defis{margin:0;}
+
+/* Les projets récemment actifs, sous la bande jaune de l'accueil (mêmes cartes que /bills). */
+.recents-accueil{display:flex; flex-direction:column; gap:12px; padding-top:40px; padding-bottom:44px;}
+.recents-accueil .titre-groupe{margin:0;}
+.recents-indice{margin:-4px 0 6px; text-transform:none; letter-spacing:0;}
+.recents-accueil > .lien-source{align-self:flex-start; margin-top:6px;}
