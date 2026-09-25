@@ -144,6 +144,10 @@
       'deputes.compteMinistres': (n) => `${n} ministers — official titles from ONTERM`,
       'deputes.compteDeputes': (n) => `${n} MPPs`, 'deputes.parPartis': 'By party',
       'deputes.votesNote': '“Recorded votes”: the divisions in which the member’s name appears, out of those held since their first one. Ontario records only who voted — a missed vote can be an absence or a choice, and the Speaker does not vote — so this is not an official attendance rate. “Bills sponsored” counts co-sponsorships.', 'deputes.parti': 'Party', 'deputes.courriel': 'Email',
+      'presence.titre': 'Reading the voting record', 'presence.pour100': (p) => `: of every 100 recorded votes held since their first vote this Parliament, the member's name appears in ${p} — for or against, either way.`,
+      'presence.mediane': 'median', 'presence.vert': 'Green', 'presence.jaune': 'Yellow', 'presence.sans': 'No colour',
+      'presence.vertTxt': (m) => `${m} % and up — the Legislature's median`, 'presence.jauneTxt': (j, m) => `${j} % to ${m - 1} % — ${j} % is the median of members under ${m} %`,
+      'presence.sansTxt': (j) => `under ${j} %`, 'presence.etendue': (n, a, b, m) => `Across the ${n} members counted: ${a} % to ${b} %; half are at ${m} % or more. Recalculated every morning from the Legislature's division records.`,
       'cabinet.titre': 'Cabinet',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
       'accueil.titre1': 'WHAT THE', 'accueil.titre2': 'LEGISLATURE', 'accueil.titre3': 'IS DOING',
@@ -285,6 +289,10 @@
       'deputes.compteMinistres': (n) => `${n} ministres — titres officiels d’ONTERM`,
       'deputes.compteDeputes': (n) => `${n} député·e·s`, 'deputes.parPartis': 'Par parti',
       'deputes.votesNote': '« Votes nominatifs » : les votes où le nom de la personne figure, sur ceux tenus depuis son premier. L’Ontario ne consigne que qui a voté — un vote manqué peut être une absence ou un choix, et le président de la Chambre ne vote pas — : ce n’est donc pas un taux de présence officiel. « Projets parrainés » compte aussi les coparrainages.', 'deputes.parti': 'Parti', 'deputes.courriel': 'Courriel',
+      'presence.titre': 'Lire la présence aux votes', 'presence.pour100': (p) => ` : sur 100 votes par appel nominal tenus depuis son premier vote de la législature, le nom de la personne figure dans ${p} — pour ou contre, peu importe le sens.`,
+      'presence.mediane': 'médiane', 'presence.vert': 'Vert', 'presence.jaune': 'Jaune', 'presence.sans': 'Sans couleur',
+      'presence.vertTxt': (m) => `${m} % et plus — la médiane de l’Assemblée`, 'presence.jauneTxt': (j, m) => `de ${j} % à ${m - 1} % — ${j} % est la médiane des élu·e·s sous ${m} %`,
+      'presence.sansTxt': (j) => `moins de ${j} %`, 'presence.etendue': (n, a, b, m) => `Chez les ${n} élu·e·s compté·e·s : de ${a} % à ${b} % ; la moitié est à ${m} % ou plus. Recalculé chaque matin à partir du registre des votes de l’Assemblée.`,
       'cabinet.titre': 'Conseil des ministres',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
       'accueil.titre1': 'CE QUE', 'accueil.titre2': 'L’ASSEMBLÉE', 'accueil.titre3': 'FAIT',
@@ -1465,6 +1473,33 @@
       })
       .join('');
 
+    // Présence aux votes, lue comme sur DQ : vert à partir de la médiane de l'Assemblée, jaune
+    // à partir de la médiane de celles et ceux qui sont sous cette première médiane.
+    const mediane = (t) => (t.length ? t[Math.floor((t.length - 1) / 2)] : 0);
+    const taux = (m) => (m.votesTenus ? Math.round((100 * m.votesExprimes) / m.votesTenus) : null);
+    const tous = d.deputes.map(taux).filter((t) => t !== null).sort((x, y) => y - x);
+    const seuilVert = mediane(tous);
+    const seuilJaune = mediane(tous.filter((t) => t < seuilVert));
+    const classe = (t) => (t === null ? '' : t >= seuilVert ? 'taux-vert' : t >= seuilJaune ? 'taux-jaune' : '');
+    const nVert = tous.filter((t) => t >= seuilVert).length;
+    const nJaune = tous.filter((t) => t < seuilVert && t >= seuilJaune).length;
+    const exemple = tous[Math.floor(tous.length / 3)] ?? 0;
+    const encadrePresence = `<div class="encadre presence">
+      <h3 class="presence-titre">${mot('presence.titre')}</h3>
+      <p><span class="taux taux-exemple">${exemple} %</span>${mot('presence.pour100', exemple)}</p>
+      <div class="presence-barre" aria-hidden="true">
+        <span class="zone-jaune" style="left:${seuilJaune}%;width:${seuilVert - seuilJaune}%"></span>
+        <span class="zone-vert" style="left:${seuilVert}%;width:${100 - seuilVert}%"></span>
+        <span class="repere-mediane" style="left:${seuilVert}%">${mot('presence.mediane')} ${seuilVert} %</span>
+      </div>
+      <div class="presence-bornes"><span>0 %</span><span>100 %</span></div>
+      <p><span class="taux taux-vert">${mot('presence.vert')} (${nVert})</span> ${mot('presence.vertTxt', seuilVert)}</p>
+      <p><span class="taux taux-jaune">${mot('presence.jaune')} (${nJaune})</span> ${mot('presence.jauneTxt', seuilJaune, seuilVert)}</p>
+      <p><span class="taux">${mot('presence.sans')} (${tous.length - nVert - nJaune})</span> ${mot('presence.sansTxt', seuilJaune)}</p>
+      <p>${mot('presence.etendue', tous.length, tous[tous.length - 1], tous[0], seuilVert)}</p>
+      <p class="presence-note">${mot('deputes.votesNote')}</p>
+    </div>`;
+
     // La carte suit celle des ministres de DQ : parti, NOM, rôle en couleur, puis trois faits
     // alignés (circonscription, votes, projets parrainés) et le courriel en pied.
     const carte = (m) => {
@@ -1477,7 +1512,7 @@
         ${m.adjointEn ? `<p class="depute-role depute-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
         <dl class="depute-faits">
           <div><dt>${mot('deputes.circo')}</dt><dd>${echapper(selonLangue(m.circonscription, m.circonscriptionFr) ?? '')}</dd></div>
-          <div><dt>${mot('deputes.votes')}</dt><dd>${m.votesTenus ? `${m.votesExprimes} / ${m.votesTenus}` : '—'}</dd></div>
+          <div><dt>${mot('deputes.votes')}</dt><dd>${m.votesTenus ? `<span class="taux ${classe(taux(m))}">${taux(m)} %</span> <span class="taux-detail">${m.votesExprimes} / ${m.votesTenus}</span>` : 'n/d'}</dd></div>
           <div><dt>${mot('deputes.parraines')}</dt><dd>${m.projetsParraines}</dd></div>
         </dl>
         ${m.courriel ? `<a class="depute-courriel" href="mailto:${echapper(m.courriel)}">✉ ${echapper(m.courriel)}</a>` : ''}
@@ -1488,7 +1523,7 @@
       <div class="chiffres">${etat}</div>
       ${d.avisEn ? `<div class="encadre">${echapper(selonLangue(d.avisEn, d.avisFr))}</div>` : ''}
       <div class="encadre">${mot('intro.cabinet')} ${mot('deputes.secretaire')}</div>
-      <div class="encadre">${mot('deputes.votesNote')}</div>
+      ${encadrePresence}
       <div class="barre-filtres">
         <input class="champ" type="search" data-role="recherche" placeholder="${mot('deputes.recherche')}" aria-label="${mot('deputes.recherche')}">
       </div>

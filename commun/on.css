@@ -641,3 +641,18 @@ main.colonne{min-height:100vh;}
 .haut-de-page:hover{transform:translate(-1px,-1px); box-shadow:5px 5px 0 #131313;}
 .haut-de-page[hidden]{display:none;}
 @media (max-width:600px){ .haut-de-page{right:14px; bottom:14px; width:42px; height:42px;} }
+
+/* ---------- Présence aux votes (comme DQ) ---------- */
+.taux{display:inline-block; border:2px solid var(--ink); padding:1px 8px; font-weight:800; font-size:13px; background:var(--card); color:var(--ink); white-space:nowrap;}
+.taux-vert{background:#1E7B45; color:#fff;}
+.taux-jaune{background:#FFD24A; color:#131313;}
+.taux-detail{font-size:12px; color:var(--slate);}
+.presence p{margin:8px 0; line-height:1.55;}
+.presence-titre{margin:0 0 10px; font-family:'Archivo Narrow',sans-serif; text-transform:uppercase; letter-spacing:.03em; font-size:17px;}
+.presence-barre{position:relative; height:14px; max-width:640px; border:2px solid var(--ink); background:var(--card); margin:30px 0 4px;}
+.presence-barre span{position:absolute; top:0; bottom:0;}
+.presence-barre .zone-jaune{background:#FFD24A; border-left:2px solid var(--ink);}
+.presence-barre .zone-vert{background:#1E7B45; border-left:2px solid var(--ink);}
+.presence-barre .repere-mediane{top:-22px; bottom:auto; transform:translateX(-50%); font-size:12px; font-weight:800; white-space:nowrap;}
+.presence-bornes{display:flex; justify-content:space-between; max-width:644px; font-size:12px; font-weight:700; color:var(--slate);}
+.presence-note{font-size:13px; color:var(--slate); border-top:1px solid var(--line-soft); padding-top:10px;}
