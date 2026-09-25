@@ -599,3 +599,10 @@ img{max-width:100%;}
 .petitions .bouton-source{margin-top:6px;}
 .petitions > .lien-source{align-self:flex-start;}
 @media (max-width:900px){ .accueil-deux{grid-template-columns:1fr;} }
+
+/* Le rôle sur la carte d'un·e député·e (page commune député·e·s et ministres). */
+.carte-depute .role{margin:0; font-size:14.5px; line-height:1.4;}
+.carte-depute .role-ministre{font-weight:700;}
+.carte-depute .role-adjoint{font-style:italic; color:var(--slate);}
+.carte-ministre{border-left-width:8px;}
+.carte-depute .pastille-parti{margin-right:8px;}

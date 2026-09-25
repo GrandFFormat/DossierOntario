@@ -23,5 +23,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/cabinet",
+      "destination": "/mpps#cabinet",
+      "permanent": true
+    }
   ]
 }

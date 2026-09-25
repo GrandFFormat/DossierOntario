@@ -146,23 +146,11 @@ const PAGES = [
     fichier: 'mpps.html',
     vue: 'deputes',
     donnees: 'members',
-    titre: 'MPPs',
-    description: 'The 124 members of provincial parliament, their party, riding and contact details.',
-    contenu: `  <h1 class="titre-vue" data-i18n="deputes.titre">Members of Provincial Parliament</h1>
+    titre: 'MPPs and cabinet',
+    // Une seule page depuis le 24 sept. 2026 : l'ancienne /cabinet redirige ici (vercel.json).
+    description: 'The 124 members of provincial parliament and the Ontario cabinet: ministers and parliamentary assistants, with their official titles, party, riding and contact details.',
+    contenu: `  <h1 class="titre-vue" data-i18n="deputes.titre">MPPs and cabinet</h1>
   <section data-vue="deputes"></section>`,
-  },
-  {
-    fichier: 'cabinet.html',
-    vue: 'cabinet',
-    donnees: 'cabinet',
-    titre: 'Cabinet',
-    description: 'Ontario ministers and parliamentary assistants, with their official titles in English and French.',
-    contenu: `  <h1 class="titre-vue" data-i18n="cabinet.titre">Cabinet</h1>
-  <div class="encadre" data-i18n="intro.cabinet">
-    Official titles come from the Ontario government's own bilingual reference list (ONTERM),
-    published in the Ontario Data Catalogue. We do not translate a title ourselves.
-  </div>
-  <section data-vue="cabinet"></section>`,
   },
   {
     fichier: 'glossary.html',

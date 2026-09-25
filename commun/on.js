@@ -21,7 +21,7 @@
   const MOTS = {
     en: {
       'nav.accueil': 'Home', 'nav.projets': 'Bills', 'nav.votes': 'Votes',
-      'nav.deputes': 'MPPs', 'nav.cabinet': 'Cabinet', 'nav.sources': 'Sources',
+      'nav.deputes': 'MPPs & cabinet', 'nav.sources': 'Sources',
       'nav.lexique': 'Lexicon', 'nav.comites': 'Committees',
       'comites.titre': 'Standing committees',
       'comites.intro': 'A bill sent to committee is gone over line by line, witnesses are heard, and it can be amended. Committees also sit while the House is adjourned — which is why a bill can move in August with the Legislature away.',
@@ -138,10 +138,10 @@
       'votes.ajournement-chambre': 'Motion to adjourn the House',
       'votes.ajournement-debat': 'Motion to adjourn the debate',
       'votes.proposePar': 'moved by',
-      'deputes.titre': 'Members of Provincial Parliament', 'deputes.recherche': 'Search by name or riding',
+      'deputes.titre': 'MPPs and cabinet', 'deputes.autres': 'The rest of the Legislature', 'deputes.aucun': 'No MPP matches.',
+      'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding',
       'deputes.circo': 'Riding', 'deputes.parti': 'Party', 'deputes.courriel': 'Email',
-      'cabinet.titre': 'Cabinet', 'cabinet.adjoints': 'Parliamentary assistants',
-      'cabinet.titreOfficiel': 'Official title',
+      'cabinet.titre': 'Cabinet',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
       'accueil.titre1': 'WHAT THE', 'accueil.titre2': 'LEGISLATURE', 'accueil.titre3': 'IS DOING',
       'intro.projets': '<b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee, third reading and royal assent. Most bills introduced by members never leave first reading — that is not a failure of this site, it is what the record shows.',
@@ -159,7 +159,7 @@
     },
     fr: {
       'nav.accueil': 'Accueil', 'nav.projets': 'Projets de loi', 'nav.votes': 'Votes',
-      'nav.deputes': 'Député·e·s', 'nav.cabinet': 'Conseil des ministres', 'nav.sources': 'Sources',
+      'nav.deputes': 'Député·e·s et ministres', 'nav.sources': 'Sources',
       'nav.lexique': 'Lexique', 'nav.comites': 'Comités',
       'comites.titre': 'Les comités permanents',
       'comites.intro': 'Un projet de loi renvoyé en comité y est étudié article par article ; des témoins sont entendus et le texte peut être amendé. Les comités siègent aussi pendant l’ajournement de la Chambre — c’est pourquoi un projet peut avancer en août, l’Assemblée absente.',
@@ -276,10 +276,10 @@
       'votes.ajournement-chambre': 'Motion d’ajournement de l’Assemblée',
       'votes.ajournement-debat': 'Motion d’ajournement du débat',
       'votes.proposePar': 'proposée par',
-      'deputes.titre': 'Député·e·s', 'deputes.recherche': 'Chercher par nom ou circonscription',
+      'deputes.titre': 'Député·e·s et ministres', 'deputes.autres': 'Le reste de l’Assemblée', 'deputes.aucun': 'Aucun·e député·e ne correspond.',
+      'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription',
       'deputes.circo': 'Circonscription', 'deputes.parti': 'Parti', 'deputes.courriel': 'Courriel',
-      'cabinet.titre': 'Conseil des ministres', 'cabinet.adjoints': 'Adjoint·e·s parlementaires',
-      'cabinet.titreOfficiel': 'Titre officiel',
+      'cabinet.titre': 'Conseil des ministres',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
       'accueil.titre1': 'CE QUE', 'accueil.titre2': 'L’ASSEMBLÉE', 'accueil.titre3': 'FAIT',
       'intro.projets': '<b>44e législature, 1re session.</b> Un projet de loi passe par la première lecture, la deuxième lecture, le comité, la troisième lecture et la sanction royale. La plupart des projets déposés par des député·e·s ne dépassent jamais la première lecture — ce n’est pas un trou dans ce site, c’est ce que dit le compte rendu.',
@@ -1442,6 +1442,10 @@
            target="_blank" rel="noopener">${mot('lexique.officiel')}</a></p>`;
   };
 
+  // Député·e·s ET Conseil des ministres, sur une seule page (24 sept. 2026, comme « Ministres et
+  // député·e·s » sur DQ). Le Conseil en tête, dans son ordre officiel ; puis le reste de
+  // l'Assemblée. Chaque carte dit le rôle : ministre, ou adjoint·e parlementaire. Les titres
+  // viennent d'ONTERM (build-site-data.js), jamais d'une traduction maison.
   VUES.deputes = () => {
     const cible = document.querySelector('section[data-vue="deputes"]');
     const d = DONNEES.members;
@@ -1454,47 +1458,50 @@
       })
       .join('');
 
-    const carte = (m) => `<article class="carte">
-      <h3 class="carte-titre"><a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a></h3>
-      <p><span class="pastille pastille-parti" style="background:${echapper(m.couleurParti ?? '#8B8578')}">${echapper(
-        selonLangue(m.parti, m.partiFr) ?? ''
-      )}</span></p>
-      <p class="courant">${echapper(selonLangue(m.circonscription, m.circonscriptionFr) ?? '')}</p>
-      ${m.courriel ? `<p class="legende"><a class="lien-source" href="mailto:${echapper(m.courriel)}">${echapper(m.courriel)}</a></p>` : ''}
-    </article>`;
+    const carte = (m) => {
+      const parti = selonLangue(m.parti, m.partiFr) ?? '';
+      return `<article class="carte carte-depute ${m.ministreEn ? 'carte-ministre' : ''}">
+        <h3 class="carte-titre"><a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a></h3>
+        ${m.ministreEn ? `<p class="role role-ministre">${echapper(selonLangue(m.ministreEn, m.ministreFr))}</p>` : ''}
+        ${m.adjointEn ? `<p class="role role-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
+        <p><span class="pastille pastille-parti" title="${echapper(parti)}" style="background:${echapper(m.couleurParti ?? '#8B8578')};
+          border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span>
+          <span class="courant">${echapper(selonLangue(m.circonscription, m.circonscriptionFr) ?? '')}</span></p>
+        ${m.courriel ? `<p class="legende"><a class="lien-source" href="mailto:${echapper(m.courriel)}">${echapper(m.courriel)}</a></p>` : ''}
+      </article>`;
+    };
 
     cible.innerHTML = `
       <div class="chiffres">${etat}</div>
-      ${d.avis ? `<div class="encadre">${echapper(selonLangue(d.avisEn, d.avisFr))}</div>` : ''}
+      ${d.avisEn ? `<div class="encadre">${echapper(selonLangue(d.avisEn, d.avisFr))}</div>` : ''}
+      <div class="encadre">${mot('intro.cabinet')} ${mot('deputes.secretaire')}</div>
       <div class="barre-filtres">
         <input class="champ" type="search" data-role="recherche" placeholder="${mot('deputes.recherche')}" aria-label="${mot('deputes.recherche')}">
       </div>
-      <div class="grille" data-role="liste">${d.deputes.map(carte).join('')}</div>`;
+      <div data-role="liste"></div>`;
 
-    cible.querySelector('[data-role="recherche"]').addEventListener('input', (e) => {
-      const q = e.target.value.trim().toLowerCase();
-      const visibles = d.deputes.filter((m) =>
-        `${m.nom} ${m.circonscription} ${m.circonscriptionFr ?? ''} ${m.parti}`.toLowerCase().includes(q)
-      );
-      cible.querySelector('[data-role="liste"]').innerHTML = visibles.map(carte).join('');
-    });
-  };
-
-  VUES.cabinet = () => {
-    const cible = document.querySelector('section[data-vue="cabinet"]');
-    const c = DONNEES.cabinet;
-    if (!cible || !c) return;
-
-    const carte = (m) => `<article class="carte">
-      <h3 class="carte-titre">${echapper(m.nom)}</h3>
-      <p class="courant">${echapper(selonLangue(m.titreEn, m.titreFr) ?? '')}</p>
-      ${m.url ? `<a class="lien-source" href="${echapper(m.url)}" target="_blank" rel="noopener">ola.org →</a>` : ''}
-    </article>`;
-
-    cible.innerHTML = `
-      <div class="grille">${c.ministres.map(carte).join('')}</div>
-      <h2 class="titre-vue">${mot('cabinet.adjoints')}</h2>
-      <div class="grille">${(c.adjointsParlementaires ?? []).map(carte).join('')}</div>`;
+    const dessiner = (q = '') => {
+      const correspond = (m) =>
+        !q ||
+        `${m.nom} ${m.circonscription} ${m.circonscriptionFr ?? ''} ${m.parti} ${m.ministreEn ?? ''} ${m.ministreFr ?? ''} ${m.adjointEn ?? ''} ${m.adjointFr ?? ''}`
+          .toLowerCase()
+          .includes(q);
+      const ministres = d.deputes.filter((m) => m.ministreEn && correspond(m)).sort((x, y) => x.ordreCabinet - y.ordreCabinet);
+      const autres = d.deputes.filter((m) => !m.ministreEn && correspond(m));
+      cible.querySelector('[data-role="liste"]').innerHTML =
+        (ministres.length
+          ? `<h2 class="titre-groupe" id="cabinet">${mot('cabinet.titre')} <span class="compte">${ministres.length}</span></h2>
+             <div class="grille">${ministres.map(carte).join('')}</div>`
+          : '') +
+          (autres.length
+            ? `<h2 class="titre-groupe">${mot('deputes.autres')} <span class="compte">${autres.length}</span></h2>
+               <div class="grille">${autres.map(carte).join('')}</div>`
+            : '') || `<p class="courant">${mot('deputes.aucun')}</p>`;
+    };
+    dessiner();
+    cible.querySelector('[data-role="recherche"]').addEventListener('input', (e) => dessiner(e.target.value.trim().toLowerCase()));
+    // /cabinet renvoie ici, sur #cabinet : l'ancienne page n'existe plus.
+    if (location.hash === '#cabinet') document.getElementById('cabinet')?.scrollIntoView({ block: 'start' });
   };
 
   /** La bande jaune ne s'affiche que s'il y a vraiment relâche, et dit jusqu'à quand. */

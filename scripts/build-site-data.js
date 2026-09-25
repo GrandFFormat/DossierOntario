@@ -193,8 +193,17 @@ function main() {
 
   // ------------------------------------------------------------------ député·e·s
   if (members) {
+    // Une seule page pour les député·e·s et le Conseil des ministres (24 sept. 2026, comme
+    // « Ministres et député·e·s » sur DQ) : le rôle de chacun est joint ICI à sa fiche. Titre
+    // de ministre par l'identifiant ola.org ; titre d'adjoint·e parlementaire par le nom
+    // (cleNom), la liste ONTERM n'ayant pas d'identifiant. `ordreCabinet` garde l'ordre officiel
+    // du Conseil, première ministre en tête.
+    const ministreParId = new Map((ministers?.ministres ?? []).filter((m) => !m.horsAssemblee).map((m, i) => [m.identifiant, { ...m, ordre: i }]));
+    const adjointParNom = new Map((ministers?.adjointsParlementaires ?? []).map((a) => [cleNom(a.nom), a]));
     ecrire('members', {
       maj: members.lus,
+      titresSource: ministers ? 'ONTERM — Ontario Data Catalogue' : null,
+      titresLicence: ministers?.source?.licence ?? null,
       totalSieges: members.totalSieges,
       etatPartis: members.etatPartis,
       etatPartisFr: members.etatPartisFr,
@@ -210,19 +219,23 @@ function main() {
         couleurParti: d.couleurParti,
         courriel: d.courriel,
         url: d.url,
+        ...(() => {
+          const m = ministreParId.get(d.identifiant);
+          const a = adjointParNom.get(cleNom(d.nom));
+          return {
+            ministreEn: m?.titreEn ?? null,
+            ministreFr: m?.titreFr ?? null,
+            ordreCabinet: m ? m.ordre : null,
+            adjointEn: a?.titreEn ?? null,
+            adjointFr: a?.titreFr ?? null,
+          };
+        })(),
       })),
     });
   }
 
-  // ------------------------------------------------------------------ cabinet
-  if (ministers) {
-    ecrire('cabinet', {
-      maj: ministers.lus,
-      ministres: ministers.ministres,
-      adjointsParlementaires: ministers.adjointsParlementaires,
-      licence: ministers.source?.licence ?? null,
-    });
-  }
+  // (Le fichier cabinet.json n'est plus produit : ministres et adjoint·e·s vivent dans
+  //  members.json, sur la page commune — voir plus haut.)
 
   // ------------------------------------------------------------------ comités
   //
