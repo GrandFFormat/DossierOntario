@@ -127,9 +127,6 @@
       'cabinet.titre': 'Cabinet', 'cabinet.adjoints': 'Parliamentary assistants',
       'cabinet.titreOfficiel': 'Official title',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
-      'porte.projets': 'What is being proposed', 'porte.votes': 'Who voted how',
-      'porte.deputes': 'Who represents you', 'porte.cabinet': 'Who runs what',
-      'porte.lexique': 'What the words mean',
       'accueil.titre1': 'WHAT THE', 'accueil.titre2': 'LEGISLATURE', 'accueil.titre3': 'IS DOING',
       'intro.projets': '<b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee, third reading and royal assent. Most bills introduced by members never leave first reading — that is not a failure of this site, it is what the record shows.',
       'intro.votes': 'A recorded division happens when five or more MPPs stand to ask for one. Only then are individual names recorded. MPPs who were absent are not listed — the Assembly does not publish absences, so neither do we.',
@@ -252,9 +249,6 @@
       'cabinet.titre': 'Conseil des ministres', 'cabinet.adjoints': 'Adjoint·e·s parlementaires',
       'cabinet.titreOfficiel': 'Titre officiel',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
-      'porte.projets': 'Ce qui est proposé', 'porte.votes': 'Qui a voté quoi',
-      'porte.deputes': 'Qui vous représente', 'porte.cabinet': 'Qui dirige quoi',
-      'porte.lexique': 'Ce que les mots veulent dire',
       'accueil.titre1': 'CE QUE', 'accueil.titre2': 'L’ASSEMBLÉE', 'accueil.titre3': 'FAIT',
       'intro.projets': '<b>44e législature, 1re session.</b> Un projet de loi passe par la première lecture, la deuxième lecture, le comité, la troisième lecture et la sanction royale. La plupart des projets déposés par des député·e·s ne dépassent jamais la première lecture — ce n’est pas un trou dans ce site, c’est ce que dit le compte rendu.',
       'intro.votes': 'Il y a vote nominatif quand cinq député·e·s ou plus se lèvent pour le demander. Les noms ne sont consignés qu’à ce moment-là. Les absent·e·s n’apparaissent pas : l’Assemblée ne publie pas les absences, et nous n’en déduisons rien.',
@@ -566,19 +560,11 @@
       .map(([n, cle]) => `<div class="chiffre"><b>${n}</b><span>${mot(cle)}</span></div>`)
       .join('');
 
-    const portes = [
-      ['/bills', 'nav.projets', 'porte.projets'],
-      ['/votes', 'nav.votes', 'porte.votes'],
-      ['/mpps', 'nav.deputes', 'porte.deputes'],
-      ['/cabinet', 'nav.cabinet', 'porte.cabinet'],
-      ['/glossary', 'nav.lexique', 'porte.lexique'],
-    ]
-      .map(([lien, titre, sous]) => `<a class="porte" href="${lien}"><b>${mot(titre)}</b><span>${mot(sous)}</span></a>`)
-      .join('');
+    // Les cinq cases de navigation (Bills, Votes, MPPs, Cabinet, Lexicon) sont parties le
+    // 24 sept. 2026, décision de Martin : elles doublaient le menu du haut.
 
     cible.innerHTML = `
-      <div class="chiffres">${chiffres}</div>
-      <div class="portes">${portes}</div>`;
+      <div class="chiffres">${chiffres}</div>`;
     // Le tableau « Latest activity » est parti (24 sept. 2026, décision de Martin) : il doublait
     // le bouton « Recent activity » de la page des projets. La bande des projets challengés,
     // juste en dessous, prend sa place.
