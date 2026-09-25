@@ -544,3 +544,33 @@ img{max-width:100%;}
 .dialogue::backdrop{background:rgba(19,19,19,.55);}
 .dialogue-corps{display:flex; flex-direction:column; gap:12px; padding:22px;}
 .dialogue-boutons{display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap;}
+
+/* ---------- La bande des projets challengés (accueil) ----------
+   Même bande jaune que DossierQuébec : grand titre, trois cartes blanches à ombre dure. */
+.bande-defis{background:var(--yellow); color:#131313; border-top:3px solid #131313; border-bottom:3px solid #131313; padding:46px 0 50px;}
+.defis-titre{margin:0; font-weight:900; font-size:clamp(26px,3.6vw,42px); line-height:1.05; text-transform:uppercase; letter-spacing:-.01em;}
+.defis-sous{margin:8px 0 22px; font-size:14px; font-weight:600;}
+.defis-plus{margin:0 0 18px; background:#FFFFFF; color:#131313; border-color:#131313;}
+.defis-grille{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px;}
+.defi-carte{
+  background:#FFFFFF; color:#131313; border:3px solid #131313; box-shadow:6px 6px 0 #131313;
+  padding:18px 20px; display:flex; flex-direction:column; gap:10px; cursor:pointer;
+}
+.defi-carte-tete{display:flex; justify-content:space-between; align-items:center; gap:10px;}
+.defi-numero{font-weight:900; color:#C8102E; font-size:15px;}
+.defi-carte-titre{margin:0; font-weight:700; font-size:17px; line-height:1.3; flex:1;}
+.defi-etape{
+  margin:0; padding-top:10px; border-top:2px solid #131313; font-family:'Archivo Narrow',sans-serif;
+  font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:#555550;
+}
+.defi-carte .bouton-defi{background:#FFFFFF; color:#131313; border-color:#131313;}
+.defi-carte .bouton-defi.actif{background:#131313; color:var(--yellow);}
+.defi-carte .bouton-partage{background:#FFFFFF; color:#131313; border-color:#131313;}
+.partage-gauche{justify-content:flex-start;}
+.defis-vide{background:#FFFFFF; border:2px dashed #131313; padding:22px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:14px;}
+.defis-vide .bouton-defi{text-decoration:none; background:#FFFFFF; color:#131313; border-color:#131313;}
+@media (max-width:900px){ .defis-grille{grid-template-columns:1fr;} }
+/* « .bande .colonne » est en flex (l'icône à côté du texte de l'alerte) : la bande des
+   projets challengés s'empile, titre au-dessus des cartes. Même spécificité, écrite après. */
+.bande-defis .colonne{display:block;}
+.bande-defis{margin:0;}

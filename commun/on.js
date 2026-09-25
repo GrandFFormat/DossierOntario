@@ -70,6 +70,12 @@
       'projets.prive': 'Private', 'projets.sanctionne': 'Became law', 'projets.encours': 'In progress',
       'projets.aucun': 'No bill matches.',
       'projets.recent': 'Recent activity', 'projets.sansDate': 'No known activity date',
+      'projets.defis': 'Challenged',
+      'defis.titre': 'Bills challenged by citizens',
+      'defis.sous': 'The moment one person asks for an explanation, the bill appears here — back it in one click.',
+      'defis.vide': 'No one has challenged a bill yet. Open a bill in progress and ask for an explanation: it will appear here.',
+      'defis.aller': 'Go to the bills', 'defis.plus': 'See more',
+      'defis.numero': (n) => `Bill ${n}`,
       'defi.demander': '✋ Ask for an explanation', 'defi.retirer': '✓ Challenged — remove',
       'defi.connexion': '🔒 Sign in to challenge',
       'defi.indice': 'Asks the sponsor to explain this bill in plain words. One request per person.',
@@ -190,6 +196,12 @@
       'projets.prive': "D'intérêt privé", 'projets.sanctionne': 'Devenu loi', 'projets.encours': 'En cours',
       'projets.aucun': 'Aucun projet ne correspond.',
       'projets.recent': 'Activité récente', 'projets.sansDate': 'Aucune date d’activité connue',
+      'projets.defis': 'Challengés',
+      'defis.titre': 'Projets challengés par les citoyen·ne·s',
+      'defis.sous': 'Dès qu’une personne demande une explication, le projet apparaît ici — appuyez en un clic.',
+      'defis.vide': 'Personne n’a encore challengé de projet. Ouvrez un projet en cours et demandez une explication : il apparaîtra ici.',
+      'defis.aller': 'Aller aux projets de loi', 'defis.plus': 'Voir plus',
+      'defis.numero': (n) => `Projet ${n}`,
       'defi.demander': '✋ Demander une explication', 'defi.retirer': '✓ Challengé — retirer',
       'defi.connexion': '🔒 Se connecter pour challenger',
       'defi.indice': 'Demande au parrain d’expliquer ce projet en langage clair. Une demande par personne.',
@@ -584,7 +596,112 @@
       <div class="portes">${portes}</div>
       <h2 class="titre-groupe">${mot('accueil.mouvements')}</h2>
       <table class="tableau"><tbody>${mouvements}</tbody></table>`;
+
+    bandeDefis();
   };
+
+  // ---------------------------------------------------------------- la bande des projets challengés
+  // Comme sur l'accueil de DossierQuébec : les projets que des gens ont challengés, les plus
+  // demandés d'abord, trois à la fois, avec le compteur, le bouton et le partage. L'accueil ne
+  // charge pas les projets : bills.json (15 ko compressés) n'est demandé que s'il y a au
+  // moins une demande à afficher.
+  let _projetsP = null;
+  const chargerProjets = () =>
+    (_projetsP ??= fetch('/data/site/bills.json')
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null)
+      .then((d) => { if (!d) _projetsP = null; return d?.projets ?? null; }));
+
+  async function bandeDefis() {
+    const bande = document.querySelector('[data-role="defis"]');
+    if (!bande) return;
+    if (!(await chargerDefi())) return;   // table absente : la bande reste cachée
+    const liste = bande.querySelector('[data-role="defis-liste"]');
+    let page = 0;
+
+    const dessiner = async () => {
+      const demandes = [...DEFI.comptes].filter(([, n]) => n > 0);
+      if (!demandes.length) {
+        // Personne n'a encore rien demandé : on le dit, et on montre où le faire. Seulement
+        // parce que les totaux ONT été lus — sinon la bande serait restée cachée.
+        liste.innerHTML = `<div class="defis-vide"><p class="courant">${mot('defis.vide')}</p>
+          <a class="bouton-defi" href="/bills">${mot('defis.aller')} →</a></div>`;
+        bande.hidden = false;
+        return;
+      }
+      const projets = await chargerProjets();
+      if (!projets) return;
+      const parNumero = new Map(projets.map((p) => [String(p.numero), p]));
+      const cartes = demandes
+        .map(([numero, n]) => ({ n, p: parNumero.get(numero) }))
+        .filter((x) => x.p)
+        .sort((a, b) => b.n - a.n || String(a.p.numero).localeCompare(String(b.p.numero), 'en', { numeric: true }))
+        .slice(0, 9);
+      const pages = Math.ceil(cartes.length / 3);
+      page = Math.min(page, pages - 1);
+
+      liste.innerHTML = `
+        ${pages > 1 ? `<button class="bouton-defi defis-plus" data-role="defis-plus">${mot('defis.plus')} →</button>` : ''}
+        <div class="defis-grille">${cartes
+          .slice(page * 3, page * 3 + 3)
+          .map(({ n, p }) => {
+            const numero = String(p.numero);
+            const fait = DEFI.miens.has(numero);
+            const etape = p.etape === 5 ? mot('projets.sanctionne') : mot(`groupe.${p.etape}`);
+            return `<article class="defi-carte" data-numero="${echapper(numero)}">
+              <div class="defi-carte-tete">
+                <span class="defi-numero">${mot('defis.numero', numero)}</span>
+                <span class="pastille pastille-defi">🔥 ${n}</span>
+              </div>
+              <h3 class="defi-carte-titre">${echapper(selonLangue(p.titreEn, p.titreFr))}</h3>
+              <p class="defi-etape">${echapper(etape)}</p>
+              ${
+                p.etape < 5
+                  ? `<button class="bouton-defi ${fait ? 'actif' : ''}" data-defi="${echapper(numero)}">${
+                      !DEFI.usager ? mot('defi.connexion') : fait ? mot('defi.retirer') : mot('defi.demander')
+                    }</button>`
+                  : ''
+              }
+              <div class="partage partage-gauche">
+                <span class="legende">${mot('partage.titre')}</span>
+                <button class="bouton-partage" data-partage="x" aria-label="X">𝕏</button>
+                <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
+                <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
+              </div>
+            </article>`;
+          })
+          .join('')}</div>`;
+      bande.hidden = false;
+    };
+
+    // Un seul écouteur pour toute la bande. Un clic sur la carte (hors bouton) mène à la
+    // carte complète du projet, sur la page des projets.
+    liste.addEventListener('click', async (e) => {
+      const b = e.target.closest('button');
+      const carte = e.target.closest('.defi-carte');
+      if (!b) {
+        if (carte) location.href = `/bills?bill=${encodeURIComponent(carte.dataset.numero)}`;
+        return;
+      }
+      if (b.dataset.role === 'defis-plus') {
+        page = (page + 1) % Math.ceil([...DEFI.comptes].filter(([, n]) => n > 0).length / 3 || 1);
+        return dessiner();
+      }
+      const numero = carte?.dataset.numero;
+      if (b.dataset.defi) {
+        if (!DEFI.usager) return ouvrirConnexion();
+        b.disabled = true;
+        await basculerDefi(b.dataset.defi);
+        return dessiner();
+      }
+      if (b.dataset.partage && numero) {
+        const p = (await chargerProjets())?.find((x) => String(x.numero) === numero);
+        partager(numero, selonLangue(p?.titreEn, p?.titreFr) ?? '', b.dataset.partage, b);
+      }
+    });
+
+    await dessiner();
+  }
 
   VUES.projets = () => {
     const cible = document.querySelector('section[data-vue="projets"]');
@@ -744,9 +861,15 @@
     }
 
     const retenu = (p, f) =>
-      f === 'tous' || (f === 'sanctionne' ? p.etape === 5 : f === 'encours' ? p.etape < 5 : p.typeProjet === f);
+      f === 'tous' ||
+      (f === 'defis'
+        ? (DEFI.comptes.get(String(p.numero)) ?? 0) > 0
+        : f === 'sanctionne' ? p.etape === 5 : f === 'encours' ? p.etape < 5 : p.typeProjet === f);
 
     const dessiner = () => {
+      // Le compte du filtre « 🔥 Challenged » suit les demandes qu'on ajoute ou retire.
+      const puceDefis = cible.querySelector('[data-filtre="defis"]');
+      if (puceDefis && !puceDefis.hidden) puceDefis.querySelector('.compte').textContent = projets.filter((p) => retenu(p, 'defis')).length;
       const visibles = projets.filter((p) => {
         const texte = `${p.numero} ${p.titreEn} ${p.titreFr ?? ''}`.toLowerCase();
         return retenu(p, filtre) && (!recherche || texte.includes(recherche));
@@ -810,7 +933,10 @@
           `projets.${f}`
         )} <span class="compte">${n}</span></button>`;
       })
-      .join('');
+      .join('') +
+      // « 🔥 Challenged », comme sur DQ. Caché tant que les totaux ne sont pas lus : son compte
+      // n'existe qu'à ce moment-là (voir chargerDefi plus bas).
+      `<button class="filtre" data-filtre="defis" hidden>🔥 ${mot('projets.defis')} <span class="compte">0</span></button>`;
 
     cible.innerHTML = `
       <div class="barre-filtres">
@@ -884,7 +1010,14 @@
       window.scrollBy(0, -120);
     };
     chargerDefi().then((ok) => {
-      if (ok) dessiner();
+      if (ok) {
+        const puce = cible.querySelector('[data-filtre="defis"]');
+        if (puce) {
+          puce.querySelector('.compte').textContent = projets.filter((p) => retenu(p, 'defis')).length;
+          puce.hidden = false;
+        }
+        dessiner();
+      }
       ouvrirDepuisAdresse();
     });
   };

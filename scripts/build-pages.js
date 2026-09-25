@@ -39,7 +39,16 @@ const PAGES = [
     </div>
   </div>
 </div>`,
-    bandesBas: `<div class="bande bande-mission">
+    // La bande jaune des projets challengés, comme sur DossierQuébec. Cachée jusqu'à ce que
+    // commun/on.js ait lu les totaux : si la table n'existe pas, elle ne s'affiche jamais.
+    bandesBas: `<div class="bande bande-defis" data-role="defis" hidden>
+  <div class="colonne">
+    <h2 class="defis-titre" data-i18n="defis.titre">Bills challenged by citizens</h2>
+    <p class="defis-sous" data-i18n="defis.sous">The moment one person asks for an explanation, the bill appears here.</p>
+    <div data-role="defis-liste"></div>
+  </div>
+</div>
+<div class="bande bande-mission">
   <div class="colonne">
     <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>
     <p class="enonce" data-i18n-html="mission.enonce">The Assembly's own site is the most reliable source
