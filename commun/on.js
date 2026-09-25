@@ -74,6 +74,19 @@
       'recents.titre': 'Recently active bills',
       'recents.indice': '↓ Click anywhere in a card to read what the bill does ↓',
       'recents.tous': 'All bills →',
+      'neuf.titre': 'What’s new', 'neuf.sous': 'The latest real activity at the Legislature',
+      'neuf.relache': (fin, retour) => `The House has not sat since ${fin}; it returns on ${retour}. That is normal — committees can still sit in the meantime, and their work is below.`,
+      'neuf.relacheSansRetour': (fin) => `The House has not sat since ${fin}, and no return date has been announced. Committees can still sit in the meantime; their work is below.`,
+      'neuf.normal': 'The latest days on which a bill moved or a committee sat, from the official record.',
+      'neuf.autres': (n) => `and ${n} other bill${n > 1 ? 's' : ''} that day`,
+      'petitions.titre': 'Petitions to the Legislature', 'petitions.sous': 'On paper only in Ontario',
+      'petitions.comment': 'Ontario has no online petitions. A petition is signed by hand, an MPP presents it in the House, and the government has 24 sitting days to answer.',
+      'petitions.chiffres': (s, p, r) => `${s} subjects this session · ${p} presentations · ${r} answered by the government`,
+      'petitions.presentee': (m, d) => `presented by ${m}, ${d}`,
+      'petitions.repondue': (d) => `answered ${d}`,
+      'petitions.attente': 'awaiting the government’s answer',
+      'petitions.anglais': 'The Assembly publishes this index in English only.',
+      'petitions.bouton': 'How to petition — on ola.org', 'petitions.index': 'The full index on ola.org',
       'defis.titre': 'Bills challenged by citizens',
       'defis.sous': 'The moment one person asks for an explanation, the bill appears here — back it in one click.',
       'defis.vide': 'No one has challenged a bill yet. Open a bill in progress and ask for an explanation: it will appear here.',
@@ -199,6 +212,19 @@
       'recents.titre': 'Projets de loi récemment actifs',
       'recents.indice': '↓ Cliquez n’importe où dans une carte pour voir ce que fait le projet ↓',
       'recents.tous': 'Tous les projets de loi →',
+      'neuf.titre': 'Quoi de neuf', 'neuf.sous': 'Les dernières activités réelles à l’Assemblée',
+      'neuf.relache': (fin, retour) => `La Chambre n’a pas siégé depuis le ${fin} ; elle reprend le ${retour}. C’est normal — les comités peuvent siéger entre-temps, et leur travail est ci-dessous.`,
+      'neuf.relacheSansRetour': (fin) => `La Chambre n’a pas siégé depuis le ${fin}, et aucune date de reprise n’est annoncée. Les comités peuvent siéger entre-temps ; leur travail est ci-dessous.`,
+      'neuf.normal': 'Les dernières journées où un projet a bougé ou un comité a siégé, d’après le compte rendu officiel.',
+      'neuf.autres': (n) => `et ${n} autre${n > 1 ? 's' : ''} projet${n > 1 ? 's' : ''} ce jour-là`,
+      'petitions.titre': 'Pétitions à l’Assemblée', 'petitions.sous': 'Sur papier seulement en Ontario',
+      'petitions.comment': 'L’Ontario n’a pas de pétition électronique. Une pétition se signe à la main, un ou une député·e la présente à la Chambre, et le gouvernement a 24 jours de séance pour y répondre.',
+      'petitions.chiffres': (s, p, r) => `${s} sujets cette session · ${p} présentations · ${r} avec la réponse du gouvernement`,
+      'petitions.presentee': (m, d) => `présentée par ${m}, le ${d}`,
+      'petitions.repondue': (d) => `réponse le ${d}`,
+      'petitions.attente': 'en attente de la réponse du gouvernement',
+      'petitions.anglais': 'L’Assemblée publie cet index en anglais seulement.',
+      'petitions.bouton': 'Comment présenter une pétition — sur ola.org', 'petitions.index': 'L’index complet sur ola.org',
       'defis.titre': 'Projets challengés par les citoyen·ne·s',
       'defis.sous': 'Dès qu’une personne demande une explication, le projet apparaît ici — appuyez en un clic.',
       'defis.vide': 'Personne n’a encore challengé de projet. Ouvrez un projet en cours et demandez une explication : il apparaîtra ici.',
@@ -578,7 +604,72 @@
     // Les projets récemment actifs viennent APRÈS la bande : ils attendent les totaux de
     // demandes, sinon leurs cartes s'afficheraient d'abord sans bouton ni compteur.
     bandeDefis().then(recentsAccueil, recentsAccueil);
+    nouvellesAccueil(a);
   };
+
+  // « What's new » et « Petitions », côte à côte, comme « Quoi de neuf » et « Pétitions » sur
+  // DossierQuébec. Tout vient de apercu.json (build-site-data.js).
+  function nouvellesAccueil(a) {
+    const zone = document.querySelector('[data-role="nouvelles"]');
+    if (!zone || !a) return;
+
+    // --- Quoi de neuf : un encadré qui dit où en est la Chambre, puis les journées.
+    const cal = a.calendrier;
+    const contexte = cal?.enRelache && cal.derniereSeance
+      ? cal.prochaineSeance
+        ? mot('neuf.relache', date(cal.derniereSeance), date(cal.prochaineSeance))
+        : mot('neuf.relacheSansRetour', date(cal.derniereSeance))
+      : mot('neuf.normal');
+    const ligne = (l) =>
+      l.type === 'projet'
+        ? `<li><a href="/bills?bill=${encodeURIComponent(l.numero)}">${mot('defis.numero', l.numero)} — ${echapper(
+            selonLangue(l.titreEn, l.titreFr)
+          )}</a> : ${echapper(selonLangue(l.evenementEn, l.evenementFr) ?? '')}${
+            l.comiteEn ? ` <span class="legende">· ${echapper(selonLangue(l.comiteEn, l.comiteFr))}</span>` : ''
+          }</li>`
+        : `<li><b>${echapper(selonLangue(l.comiteEn, l.comiteFr))}</b> : ${l.sujets
+            .map((s) => echapper(selonLangue(s.en, s.fr)))
+            .join(' · ')} <a class="lien-source" href="${echapper(l.transcription)}" target="_blank" rel="noopener">${mot(
+            'comites.transcription'
+          )}</a></li>`;
+    zone.querySelector('[data-role="neuf"]').innerHTML = `
+      <div class="encadre-neuf">${echapper(contexte)}</div>
+      ${(a.quoiDeNeuf ?? [])
+        .map(
+          (j) => `<div class="jour-neuf">
+            <p class="date-neuf">${date(j.date)}</p>
+            <ul class="liste-neuf">${j.lignes.map(ligne).join('')}</ul>
+            ${j.autres ? `<p class="legende">${mot('neuf.autres', j.autres)}</p>` : ''}
+          </div>`
+        )
+        .join('')}`;
+
+    // --- Pétitions : ce qui existe en Ontario, c'est-à-dire des pétitions sur papier.
+    const p = a.petitions;
+    zone.querySelector('[data-role="petitions"]').innerHTML = p
+      ? `<p class="courant">${mot('petitions.comment')}</p>
+        <p class="petitions-chiffres">${mot('petitions.chiffres', p.sujets, p.presentations, p.repondues)}</p>
+        <ul class="liste-petitions">${p.recentes
+          .map(
+            (x) => `<li>
+              <span class="legende">No. ${x.numero}</span>
+              <b>${echapper(x.sujet)}</b>
+              <span class="legende">${mot('petitions.presentee', echapper(x.membre), date(x.depot))} · ${
+                x.reponse ? mot('petitions.repondue', date(x.reponse)) : mot('petitions.attente')
+              }</span>
+            </li>`
+          )
+          .join('')}</ul>
+        ${langue === 'fr' ? `<p class="legende avis-ia">${mot('petitions.anglais')}</p>` : ''}
+        <a class="bouton-source" href="${selonLangue(
+          'https://www.ola.org/en/get-involved/petitions',
+          'https://www.ola.org/fr/participer/petitions'
+        )}" target="_blank" rel="noopener">${mot('petitions.bouton')} →</a>
+        <a class="lien-source" href="${echapper(p.source)}" target="_blank" rel="noopener">${mot('petitions.index')} →</a>`
+      : `<p class="courant">${mot('petitions.comment')}</p>`;
+
+    zone.hidden = false;
+  }
 
   // Sous la bande jaune, comme sur DossierQuébec : les quatre projets qui ont bougé le plus
   // récemment, avec EXACTEMENT la carte de la page des projets (carteProjet) — elle s'ouvre

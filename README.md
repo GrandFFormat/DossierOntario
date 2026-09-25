@@ -51,6 +51,7 @@ npm run scrape:votes            # les votes nominatifs, trouvés par liens (~8 m
 npm run scrape:votes-sans-noms  # les votes dont l'Assemblée ne publie que le compte
 npm run scrape:members          # les 124 député·e·s + coordonnées
 npm run scrape:ministers        # le Conseil des ministres, EN et FR
+npm run scrape:petitions        # l'index des pétitions présentées (papier seulement en Ontario)
 npm run scrape:seances          # de quoi parle chaque séance de comité (seules les nouvelles)
 npm run verifier:votes          # contrôle : notre récolte contre les procès-verbaux
 ```

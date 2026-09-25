@@ -64,6 +64,10 @@ jobs:
       - name: Lire les sujets des séances de comité
         run: npm run scrape:seances
 
+      # Les pétitions : l'index de la greffière (sur papier en Ontario, une seule page).
+      - name: Lire les pétitions présentées
+        run: npm run scrape:petitions
+
       - name: Lire les député·e·s
         run: npm run scrape:members
 

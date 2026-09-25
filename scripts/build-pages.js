@@ -54,6 +54,18 @@ const PAGES = [
   <div class="liste-projets" data-role="recents-liste"></div>
   <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
 </div>
+<div class="colonne accueil-deux" data-role="nouvelles" hidden>
+  <section class="nouvelles">
+    <h2 class="grand-titre" data-i18n="neuf.titre">What's new</h2>
+    <p class="legende sous-grand-titre" data-i18n="neuf.sous">The latest real activity at the Legislature</p>
+    <div data-role="neuf"></div>
+  </section>
+  <section class="petitions">
+    <h2 class="grand-titre" data-i18n="petitions.titre">Petitions to the Legislature</h2>
+    <p class="legende sous-grand-titre" data-i18n="petitions.sous">On paper only in Ontario</p>
+    <div data-role="petitions"></div>
+  </section>
+</div>
 <div class="bande bande-mission">
   <div class="colonne">
     <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>

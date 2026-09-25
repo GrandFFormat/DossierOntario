@@ -352,8 +352,80 @@ function main() {
   }
 
   // ------------------------------------------------------------------ aperçu
+  // « What's new », comme le « Quoi de neuf » de DQ : les dernières journées où un projet a
+  // bougé au compte rendu, cinq journées, six lignes au plus par journée. Chaque ligne dit
+  // l'événement MOT POUR MOT (et le comité quand il y en a un : les comités siègent pendant
+  // la relâche, c'est ce qui explique une date d'août).
+  const parJour = new Map();
+  for (const projet of projets) {
+    for (const etape of fiches[projet.numero]?.etapes ?? []) {
+      if (!etape.date) continue;
+      if (!parJour.has(etape.date)) parJour.set(etape.date, []);
+      const jour = parJour.get(etape.date);
+      if (jour.some((x) => x.numero === projet.numero)) continue;   // une ligne par projet et par jour
+      jour.push({
+        type: 'projet',
+        numero: projet.numero,
+        titreEn: projet.titreEn,
+        titreFr: projet.titreFr,
+        evenementEn: [etape.etape, etape.evenement].filter(Boolean).join(' — '),
+        evenementFr: [etape.etapeFr, etape.evenementFr].filter(Boolean).join(' — ') || null,
+        comiteEn: etape.comite ?? null,
+        comiteFr: etape.comiteFr ?? null,
+      });
+    }
+  }
+  // Les séances de comité qui ne portent sur aucun projet de la journée (nominations, budget
+  // des dépenses, vérificatrice générale…) : sans elles, l'été n'était qu'une suite de
+  // journées du seul projet 109, alors que d'autres comités siégeaient.
+  for (const c of comites?.comites ?? []) {
+    for (const t of c.transcriptions) {
+      if (!t.date) continue;
+      if (!parJour.has(t.date)) parJour.set(t.date, []);
+      const jour = parJour.get(t.date);
+      if (jour.some((x) => x.type === 'projet' && x.comiteEn === c.nomEn)) continue;   // déjà dit par la ligne du projet
+      const sujets = sujetsDe(t.url);
+      if (!sujets.length) continue;
+      jour.push({
+        type: 'comite',
+        comiteEn: c.nomEn,
+        comiteFr: c.nomFr,
+        sujets,
+        transcription: t.url,
+      });
+    }
+  }
+  const quoiDeNeuf = [...parJour]
+    .sort(([a], [b]) => b.localeCompare(a))
+    .slice(0, 5)
+    .map(([date, lignes]) => ({ date, lignes: lignes.slice(0, 6), autres: Math.max(0, lignes.length - 6) }));
+
+  // Les pétitions (scrapers/petitions.js) : sur papier en Ontario, présentées par un ou une
+  // député·e, le gouvernement devant répondre dans les 24 jours de séance. On montre les
+  // dernières présentées et combien ont reçu leur réponse — pas de signatures à compter.
+  const petitionsLues = lireJson('data/petitions.json');
+  let petitionsSite = null;
+  if (petitionsLues) {
+    const presentations = petitionsLues.petitions.flatMap((p) =>
+      p.presentations.map((x) => ({ numero: p.numero, sujet: p.sujet, ...x }))
+    );
+    petitionsSite = {
+      source: petitionsLues.source,
+      lus: petitionsLues.lus,
+      sujets: petitionsLues.petitions.length,
+      presentations: presentations.length,
+      repondues: presentations.filter((x) => x.reponse).length,
+      recentes: presentations
+        .filter((x) => x.depot)
+        .sort((a, b) => b.depot.localeCompare(a.depot) || b.numero - a.numero)
+        .slice(0, 6),
+    };
+  }
+
   ecrire('apercu', {
     maj: details?.lus ?? bills.lus,
+    quoiDeNeuf,
+    petitions: petitionsSite,
     legislature: bills.legislature,
     session: bills.session,
     chiffres: {

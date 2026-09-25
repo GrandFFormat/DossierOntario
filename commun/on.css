@@ -580,3 +580,22 @@ img{max-width:100%;}
 .recents-accueil .titre-groupe{margin:0;}
 .recents-indice{margin:-4px 0 6px; text-transform:none; letter-spacing:0;}
 .recents-accueil > .lien-source{align-self:flex-start; margin-top:6px;}
+
+/* « What's new » et « Petitions », côte à côte sous les projets récents (comme DQ). */
+.accueil-deux{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:44px; padding-top:30px; padding-bottom:54px;}
+.accueil-deux section{display:flex; flex-direction:column; gap:12px; min-width:0;}
+.grand-titre{margin:0; font-weight:900; font-size:clamp(28px,3.4vw,44px); line-height:1.02; text-transform:uppercase; letter-spacing:-.01em;}
+.sous-grand-titre{margin:-4px 0 6px; text-transform:none; letter-spacing:0;}
+.encadre-neuf{border:3px solid var(--line); padding:14px 16px; background:var(--card); font-size:14px; line-height:1.55; color:var(--slate);}
+.jour-neuf{border-left:4px solid var(--gold); padding:2px 0 2px 16px; display:flex; flex-direction:column; gap:6px;}
+.date-neuf{margin:0; font-family:'Archivo Narrow',sans-serif; font-weight:800; font-size:12.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--gold);}
+.liste-neuf, .liste-petitions{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
+.liste-neuf li{font-size:15px; line-height:1.45;}
+.liste-neuf a:not(.lien-source){color:var(--ink); font-weight:700; text-decoration:none;}
+.liste-neuf a:not(.lien-source):hover{color:var(--gold);}
+.petitions-chiffres{margin:0; font-weight:800; font-size:15px;}
+.liste-petitions li{display:flex; flex-direction:column; gap:2px; padding-bottom:8px; border-bottom:1px solid var(--line-soft); font-size:15px;}
+.liste-petitions .legende{text-transform:none; letter-spacing:0;}
+.petitions .bouton-source{margin-top:6px;}
+.petitions > .lien-source{align-self:flex-start;}
+@media (max-width:900px){ .accueil-deux{grid-template-columns:1fr;} }
