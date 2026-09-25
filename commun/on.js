@@ -70,6 +70,23 @@
       'projets.prive': 'Private', 'projets.sanctionne': 'Became law', 'projets.encours': 'In progress',
       'projets.aucun': 'No bill matches.',
       'projets.recent': 'Recent activity', 'projets.sansDate': 'No known activity date',
+      'defi.demander': '✋ Ask for an explanation', 'defi.retirer': '✓ Challenged — remove',
+      'defi.connexion': '🔒 Sign in to challenge',
+      'defi.indice': 'Asks the sponsor to explain this bill in plain words. One request per person.',
+      'defi.indiceAnonyme': 'An account (email) is required: one request per person, no anonymous requests.',
+      'defi.compte': (n) => `🔥 ${n} request${n > 1 ? 's' : ''}`,
+      'defi.limite': 'You have made 10 requests in the last 30 days — the limit. Come back later.',
+      'defi.consultation': 'This is a read-only account: it cannot make requests.',
+      'defi.erreur': 'Your request could not be recorded. Try again in a moment.',
+      'defi.deconnexion': 'Sign out',
+      'defi.connexionTitre': 'Sign in to DossierOntario',
+      'defi.connexionTexte': 'Enter your email and you will receive a link that signs you in — no password. The same account works on DossierQuébec. We keep your email and the bills you challenged; only the totals are public, never names.',
+      'defi.courriel': 'Your email', 'defi.courrielInvalide': 'That email address does not look right.',
+      'defi.envoyer': 'Send the link', 'defi.annuler': 'Cancel',
+      'defi.lienEnvoye': 'Link sent — check your inbox (and your spam folder).',
+      'defi.erreurLien': 'The link could not be sent. Check the address and try again.',
+      'partage.titre': 'Share:', 'partage.copier': 'Copy the link',
+      'partage.texte': (num, titre) => `Bill ${num} — ${titre}. In plain words on DossierOntario:`,
       'projets.compte': (n) => `${n} bill${n > 1 ? 's' : ''}`,
       'etape.1': '1st reading', 'etape.2': '2nd reading', 'etape.3': 'Committee',
       'etape.4': '3rd reading', 'etape.5': 'Royal assent',
@@ -173,6 +190,23 @@
       'projets.prive': "D'intérêt privé", 'projets.sanctionne': 'Devenu loi', 'projets.encours': 'En cours',
       'projets.aucun': 'Aucun projet ne correspond.',
       'projets.recent': 'Activité récente', 'projets.sansDate': 'Aucune date d’activité connue',
+      'defi.demander': '✋ Demander une explication', 'defi.retirer': '✓ Challengé — retirer',
+      'defi.connexion': '🔒 Se connecter pour challenger',
+      'defi.indice': 'Demande au parrain d’expliquer ce projet en langage clair. Une demande par personne.',
+      'defi.indiceAnonyme': 'Un compte (courriel) est requis : une demande par personne, aucune demande anonyme.',
+      'defi.compte': (n) => `🔥 ${n} demande${n > 1 ? 's' : ''}`,
+      'defi.limite': 'Vous avez fait 10 demandes dans les 30 derniers jours — c’est la limite. Revenez plus tard.',
+      'defi.consultation': 'Ce compte est en consultation seulement : il ne peut pas faire de demande.',
+      'defi.erreur': 'Votre demande n’a pas pu être enregistrée. Réessayez dans un instant.',
+      'defi.deconnexion': 'Se déconnecter',
+      'defi.connexionTitre': 'Se connecter à DossierOntario',
+      'defi.connexionTexte': 'Entrez votre courriel : vous recevrez un lien qui vous connecte, sans mot de passe. Le même compte sert sur DossierQuébec. Nous gardons votre courriel et les projets que vous avez challengés ; seuls les totaux sont publics, jamais les noms.',
+      'defi.courriel': 'Votre courriel', 'defi.courrielInvalide': 'Cette adresse courriel ne semble pas valide.',
+      'defi.envoyer': 'Envoyer le lien', 'defi.annuler': 'Annuler',
+      'defi.lienEnvoye': 'Lien envoyé — vérifiez votre boîte de réception (et les indésirables).',
+      'defi.erreurLien': 'Le lien n’a pas pu être envoyé. Vérifiez l’adresse et réessayez.',
+      'partage.titre': 'Partager :', 'partage.copier': 'Copier le lien',
+      'partage.texte': (num, titre) => `Projet de loi ${num} — ${titre}. En clair sur DossierOntario :`,
       'projets.compte': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
       'etape.1': '1re lecture', 'etape.2': '2e lecture', 'etape.3': 'Comité',
       'etape.4': '3e lecture', 'etape.5': 'Sanction royale',
@@ -364,6 +398,147 @@
     );
   }
 
+  // ---------------------------------------------------------------- « challenger » un projet
+  // Le geste central de la famille Dossier : une personne connectée demande que le parrain
+  // explique un projet de loi. Même compte que DossierQuébec (même projet Supabase), table à
+  // part — voir scripts/supabase-ontario.sql, qui porte toutes les règles (une demande par
+  // personne et par projet, 10 par 30 jours, comptes de consultation refusés).
+  //
+  // La clé ci-dessous est la clé PUBLIQUE (« publishable ») du projet : elle est faite pour
+  // être dans le navigateur, et ne donne que ce que les règles RLS permettent. Aucun secret.
+  //
+  // Tant que le SQL n'est pas installé, on_flag_counts répond une erreur : le bouton ne
+  // s'affiche simplement pas, rien ne casse.
+  const SUPABASE = {
+    url: 'https://wfgcqftgtmptfutrbujz.supabase.co',
+    cle: 'sb_publishable_CutVYEz29QYUV3tCDsAhSQ_RvZUQ3G6',
+  };
+  const DEFI = { dispo: false, comptes: new Map(), miens: new Set(), usager: null };
+
+  // La bibliothèque Supabase n'est chargée que si on en a besoin (une session à reprendre, ou
+  // quelqu'un qui clique) : les totaux se lisent par un simple fetch.
+  let _clientP = null;
+  const clientSupabase = () =>
+    (_clientP ??= new Promise((ok, ko) => {
+      const creer = () => ok(window.supabase.createClient(SUPABASE.url, SUPABASE.cle));
+      if (window.supabase) return creer();
+      const s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js';
+      s.onload = creer;
+      s.onerror = () => { _clientP = null; ko(new Error('supabase-js')); };
+      document.head.append(s);
+    }));
+
+  async function chargerDefi() {
+    try {
+      const r = await fetch(`${SUPABASE.url}/rest/v1/rpc/on_flag_counts`, {
+        method: 'POST',
+        headers: { apikey: SUPABASE.cle, Authorization: `Bearer ${SUPABASE.cle}`, 'Content-Type': 'application/json' },
+        body: '{}',
+      });
+      if (!r.ok) return false;
+      DEFI.comptes = new Map((await r.json()).map((x) => [String(x.numero), Number(x.cnt)]));
+      DEFI.dispo = true;
+    } catch (e) {
+      return false;
+    }
+    // Une session à reprendre : le retour du lien de connexion (#access_token=…), ou un jeton
+    // déjà rangé par une visite précédente. Sinon, pas de bibliothèque à télécharger.
+    let session = /access_token/.test(location.hash);
+    try { session ||= Object.keys(localStorage).some((k) => k.startsWith('sb-') && k.endsWith('-auth-token')); } catch (e) {}
+    if (session) {
+      try {
+        const c = await clientSupabase();
+        const { data } = await c.auth.getSession();
+        DEFI.usager = data.session?.user ?? null;
+        if (DEFI.usager) {
+          const { data: lignes } = await c.from('on_bill_flags').select('numero').eq('legislature', 44).eq('session', 1);
+          DEFI.miens = new Set((lignes ?? []).map((x) => String(x.numero)));
+        }
+        if (/access_token/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search);
+      } catch (e) {}
+    }
+    return true;
+  }
+
+  function ouvrirConnexion() {
+    let d = document.getElementById('dialogue-connexion');
+    if (!d) {
+      d = document.createElement('dialog');
+      d.id = 'dialogue-connexion';
+      d.className = 'dialogue';
+      document.body.append(d);
+    }
+    d.innerHTML = `<div class="dialogue-corps">
+      <h3 class="carte-titre">${mot('defi.connexionTitre')}</h3>
+      <p class="courant">${mot('defi.connexionTexte')}</p>
+      <input class="champ" type="email" autocomplete="email" placeholder="${mot('defi.courriel')}" aria-label="${mot('defi.courriel')}">
+      <p class="legende" data-role="etat" aria-live="polite"></p>
+      <div class="dialogue-boutons">
+        <button class="filtre" data-role="annuler">${mot('defi.annuler')}</button>
+        <button class="bouton-defi" data-role="envoyer">${mot('defi.envoyer')}</button>
+      </div></div>`;
+    const champ = d.querySelector('input');
+    const etat = d.querySelector('[data-role="etat"]');
+    d.querySelector('[data-role="annuler"]').onclick = () => d.close();
+    d.querySelector('[data-role="envoyer"]').onclick = async (e) => {
+      const courriel = champ.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(courriel)) { etat.textContent = mot('defi.courrielInvalide'); return; }
+      e.currentTarget.disabled = true;
+      try {
+        const c = await clientSupabase();
+        const { error } = await c.auth.signInWithOtp({ email: courriel, options: { emailRedirectTo: `${location.origin}/bills` } });
+        etat.textContent = error ? mot('defi.erreurLien') : mot('defi.lienEnvoye');
+      } catch (err) {
+        etat.textContent = mot('defi.erreurLien');
+      }
+      e.currentTarget.disabled = false;
+    };
+    d.showModal();
+    champ.focus();
+  }
+
+  async function basculerDefi(numero) {
+    const c = await clientSupabase();
+    const deja = DEFI.miens.has(numero);
+    const { error } = deja
+      ? await c.from('on_bill_flags').delete().eq('user_id', DEFI.usager.id).eq('numero', numero).eq('legislature', 44).eq('session', 1)
+      : await c.from('on_bill_flags').insert({ user_id: DEFI.usager.id, numero });
+    if (error && error.code !== '23505') {
+      // 42501 = refusé par la règle : la limite de 10 demandes par 30 jours. Le déclencheur des
+      // comptes de consultation, lui, se reconnaît à son message.
+      alert(/consultation/i.test(error.message ?? '') ? mot('defi.consultation') : error.code === '42501' ? mot('defi.limite') : mot('defi.erreur'));
+      return;
+    }
+    if (deja) {
+      DEFI.miens.delete(numero);
+      DEFI.comptes.set(numero, Math.max(0, (DEFI.comptes.get(numero) ?? 1) - 1));
+    } else {
+      DEFI.miens.add(numero);
+      if (!error) DEFI.comptes.set(numero, (DEFI.comptes.get(numero) ?? 0) + 1);
+    }
+  }
+
+  // Partager un projet : un lien vers SA carte (/bills?bill=9, qui s'ouvre à l'arrivée).
+  function partager(numero, titre, ou, bouton) {
+    const url = `https://dossierontario.ca/bills?bill=${encodeURIComponent(numero)}`;
+    const texte = mot('partage.texte', numero, titre);
+    if (ou === 'x') {
+      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(texte)}&url=${encodeURIComponent(url)}`, '_blank', 'noopener,width=600,height=520');
+    } else if (ou === 'fb') {
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener,width=600,height=520');
+    } else {
+      // Accusé de réception SUR le bouton, pas une fenêtre à fermer (leçon de DQ).
+      (navigator.clipboard ? navigator.clipboard.writeText(`${texte} ${url}`) : Promise.reject())
+        .then(() => {
+          const avant = bouton.textContent;
+          bouton.textContent = '✓';
+          setTimeout(() => { bouton.textContent = avant; }, 1500);
+        })
+        .catch(() => prompt(mot('partage.copier'), `${texte} ${url}`));
+    }
+  }
+
   // ---------------------------------------------------------------- rendus
   const VUES = {};
 
@@ -454,7 +629,8 @@
       // côté de deux cartes vides, et les cinq étapes se cassaient sur deux lignes. Fermée :
       // numéro, titre, parrain, pastilles, étapes. Ouverte : le texte à gauche (résumé, puis
       // note officielle), l'état du projet et la sortie vers ola.org à droite.
-      return `<article class="carte carte-projet">
+      const nDefi = DEFI.comptes.get(String(p.numero)) ?? 0;
+      return `<article class="carte carte-projet" data-numero="${echapper(p.numero)}">
         <div class="projet-tete">
           <span class="numero">${echapper(p.numero)}</span>
           <div class="projet-tete-texte">
@@ -466,6 +642,7 @@
             }</p>
           </div>
           <div class="projet-pastilles">
+            ${nDefi ? `<span class="pastille pastille-defi">${mot('defi.compte', nDefi)}</span>` : ''}
             ${pastilleParti}
             ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
             <span class="pastille ${pastille}">${echapper(etiquette)}</span>
@@ -489,6 +666,26 @@
                 ${p.votes ? `<span>${mot('projet.compteVotes', p.votes)}</span>` : ''}
               </div>
               <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+              ${
+                // Challenger : seulement un projet qui n'est pas devenu loi, et seulement quand
+                // la table existe (DEFI.dispo). Voir chargerDefi().
+                DEFI.dispo && p.etape < 5
+                  ? `<div class="defi">
+                      <p class="legende defi-indice">${DEFI.usager ? mot('defi.indice') : mot('defi.indiceAnonyme')}${
+                        DEFI.usager ? ` <button class="lien-mini" data-role="deconnexion">${mot('defi.deconnexion')}</button>` : ''
+                      }</p>
+                      <button class="bouton-defi ${DEFI.miens.has(String(p.numero)) ? 'actif' : ''}" data-defi="${echapper(p.numero)}">${
+                        !DEFI.usager ? mot('defi.connexion') : DEFI.miens.has(String(p.numero)) ? mot('defi.retirer') : mot('defi.demander')
+                      }</button>
+                    </div>`
+                  : ''
+              }
+              <div class="partage">
+                <span class="legende">${mot('partage.titre')}</span>
+                <button class="bouton-partage" data-partage="x" aria-label="X">𝕏</button>
+                <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
+                <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
+              </div>
             </aside>
           </div>
         </details>
@@ -643,6 +840,53 @@
       dessiner();
     });
     dessiner();
+
+    // Les boutons d'une carte : challenger, se déconnecter, partager.
+    const rouvrir = (numero) => {
+      const c = cible.querySelector(`.carte-projet[data-numero="${CSS.escape(numero)}"] .projet-detail`);
+      if (c) c.open = true;
+    };
+    if (!cible.dataset.ecouteBoutons) {
+      cible.dataset.ecouteBoutons = '1';
+      cible.addEventListener('click', async (e) => {
+        const b = e.target.closest?.('button');
+        if (!b) return;
+        const carte = b.closest('.carte-projet');
+        const numero = carte?.dataset.numero;
+        if (b.dataset.defi) {
+          if (!DEFI.usager) return ouvrirConnexion();
+          b.disabled = true;
+          await basculerDefi(b.dataset.defi);
+          dessiner();
+          rouvrir(b.dataset.defi);
+        } else if (b.dataset.role === 'deconnexion') {
+          try { await (await clientSupabase()).auth.signOut(); } catch (err) {}
+          DEFI.usager = null;
+          DEFI.miens = new Set();
+          dessiner();
+          if (numero) rouvrir(numero);
+        } else if (b.dataset.partage && numero) {
+          const p = projets.find((x) => String(x.numero) === numero);
+          partager(numero, selonLangue(p?.titreEn, p?.titreFr) ?? '', b.dataset.partage, b);
+        }
+      });
+    }
+
+    // Un lien partagé (/bills?bill=9) ouvre SA carte à l'arrivée. On attend les compteurs de
+    // demandes, qui redessinent la liste : sinon la carte ouverte se refermait aussitôt.
+    const ouvrirDepuisAdresse = () => {
+      const voulu = new URLSearchParams(location.search).get('bill');
+      if (!voulu) return;
+      const carte = cible.querySelector(`.carte-projet[data-numero="${CSS.escape(voulu)}"]`);
+      if (!carte) return;
+      carte.querySelector('.projet-detail').open = true;
+      carte.scrollIntoView({ block: 'start' });
+      window.scrollBy(0, -120);
+    };
+    chargerDefi().then((ok) => {
+      if (ok) dessiner();
+      ouvrirDepuisAdresse();
+    });
   };
 
   VUES.votes = () => {

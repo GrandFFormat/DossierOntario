@@ -512,3 +512,35 @@ img{max-width:100%;}
 .explication p:last-child{margin-bottom:0;}
 .explication b{font-weight:800;}
 .explication .legende{border-top:2px solid var(--line-soft); padding-top:10px; margin-top:14px;}
+
+/* ---------- Challenger et partager (page des projets de loi) ----------
+   Mêmes gestes et même allure que sur DossierQuébec : un bouton plein pour le geste, trois
+   petits carrés pour le partage, et le compteur en pastille noire et jaune dans la tête. */
+.pastille-defi{background:#131313; border-color:#131313; color:var(--yellow);}
+.defi{display:flex; flex-direction:column; gap:8px; border-top:2px dashed var(--line-soft); padding-top:12px;}
+.defi-indice{text-transform:none; letter-spacing:0; line-height:1.4;}
+.bouton-defi{
+  background:var(--card); color:var(--ink); border:3px solid var(--line); box-shadow:var(--shadow);
+  padding:10px 14px; cursor:pointer; font-family:'Archivo Narrow',sans-serif; font-weight:800;
+  font-size:12.5px; text-transform:uppercase; letter-spacing:.06em;
+}
+.bouton-defi:hover{background:var(--yellow); color:#131313;}
+.bouton-defi.actif{background:var(--yellow); color:#131313;}
+.bouton-defi:disabled{opacity:.6; cursor:wait;}
+.lien-mini{
+  background:none; border:0; padding:0; cursor:pointer; color:var(--gold); font:inherit;
+  text-decoration:underline; text-underline-offset:2px;
+}
+.partage{display:flex; align-items:center; justify-content:flex-end; gap:8px;}
+.bouton-partage{
+  width:36px; height:32px; display:inline-flex; align-items:center; justify-content:center;
+  background:var(--card); color:var(--ink); border:2px solid var(--line); cursor:pointer;
+  font-weight:800; font-size:12px;
+}
+.bouton-partage:hover{background:var(--yellow); color:#131313;}
+
+/* La fenêtre de connexion : un courriel, un lien, pas de mot de passe. */
+.dialogue{border:3px solid var(--line); box-shadow:var(--shadow); background:var(--card); color:var(--ink); padding:0; max-width:460px; width:calc(100% - 32px);}
+.dialogue::backdrop{background:rgba(19,19,19,.55);}
+.dialogue-corps{display:flex; flex-direction:column; gap:12px; padding:22px;}
+.dialogue-boutons{display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap;}
