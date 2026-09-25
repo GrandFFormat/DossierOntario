@@ -154,7 +154,7 @@
       'intro.projets': '<b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee, third reading and royal assent. Most bills introduced by members never leave first reading — that is not a failure of this site, it is what the record shows.',
       'intro.votes': 'A recorded division happens when five or more MPPs stand to ask for one. Only then are individual names recorded. MPPs who were absent are not listed — the Assembly does not publish absences, so neither do we.',
       'projets.plus': (n, r) => (r > n ? `+ ${n} more (${r} left)` : `+ ${n} more`),
-      'projet.omnibus': (n) => `Omnibus · ${n} schedules`, 'projet.annexe': (n) => `Schedule ${n}`,
+      'projets.omnibus': 'Omnibus', 'projet.omnibus': (n) => `Omnibus · ${n} schedules`, 'projet.annexe': (n) => `Schedule ${n}`,
       'projet.omnibusAide': 'An omnibus bill bundles changes to several different laws, one per schedule.',
       'projet.omnibusAvis': (n) => `<b>Omnibus bill.</b> It touches ${n} laws, one per schedule — some amended, sometimes a new one: the title only names part of it. Summarised from the official explanatory note, schedule by schedule.`,
       'intro.projetsCourt': '<b>44th Parliament, 1st session.</b> Summaries are written by AI from the official text, which is one click away on ola.org.',
@@ -304,7 +304,7 @@
       'intro.projets': '<b>44e législature, 1re session.</b> Un projet de loi passe par la première lecture, la deuxième lecture, le comité, la troisième lecture et la sanction royale. La plupart des projets déposés par des député·e·s ne dépassent jamais la première lecture — ce n’est pas un trou dans ce site, c’est ce que dit le compte rendu.',
       'intro.votes': 'Il y a vote nominatif quand cinq député·e·s ou plus se lèvent pour le demander. Les noms ne sont consignés qu’à ce moment-là. Les absent·e·s n’apparaissent pas : l’Assemblée ne publie pas les absences, et nous n’en déduisons rien.',
       'projets.plus': (n, r) => (r > n ? `+ ${n} de plus (${r} restants)` : `+ ${n} de plus`),
-      'projet.omnibus': (n) => `Omnibus · ${n} annexes`, 'projet.annexe': (n) => `Annexe ${n}`,
+      'projets.omnibus': 'Omnibus', 'projet.omnibus': (n) => `Omnibus · ${n} annexes`, 'projet.annexe': (n) => `Annexe ${n}`,
       'projet.omnibusAide': 'Un projet de loi omnibus regroupe des changements à plusieurs lois différentes, une par annexe.',
       'projet.omnibusAvis': (n) => `<b>Projet de loi omnibus.</b> Il touche ${n} lois, une par annexe — certaines modifiées, parfois une nouvelle : le titre n’en nomme qu’une partie. Résumé à partir de la note explicative officielle, annexe par annexe.`,
       'intro.projetsCourt': '<b>44e législature, 1re session.</b> Les résumés sont rédigés par une IA à partir du texte officiel, à un clic sur ola.org.',
@@ -1045,7 +1045,9 @@
 
     const retenu = (p, f) =>
       f === 'tous' ||
-      (f === 'defis'
+      (f === 'omnibus'
+        ? p.omnibus > 0
+        : f === 'defis'
         ? (DEFI.comptes.get(String(p.numero)) ?? 0) > 0
         : f === 'sanctionne' ? p.etape === 5 : f === 'encours' ? p.etape < 5 : p.typeProjet === f);
 
@@ -1125,7 +1127,9 @@
       .join('') +
       // « 🔥 Challenged », comme sur DQ. Caché tant que les totaux ne sont pas lus : son compte
       // n'existe qu'à ce moment-là (voir chargerDefi plus bas).
-      `<button class="filtre" data-filtre="defis" hidden>🔥 ${mot('projets.defis')} <span class="compte">0</span></button>`;
+      `<button class="filtre" data-filtre="defis" hidden>🔥 ${mot('projets.defis')} <span class="compte">0</span></button>` +
+      // Les lois omnibus (plusieurs annexes), juste après « Challengés ».
+      `<button class="filtre" data-filtre="omnibus">${mot('projets.omnibus')} <span class="compte">${projets.filter((p) => p.omnibus > 0).length}</span></button>`;
 
     cible.innerHTML = `
       <div class="barre-filtres">
