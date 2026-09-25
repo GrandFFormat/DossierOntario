@@ -153,6 +153,7 @@
       'accueil.titre1': 'WHAT THE', 'accueil.titre2': 'LEGISLATURE', 'accueil.titre3': 'IS DOING',
       'intro.projets': '<b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee, third reading and royal assent. Most bills introduced by members never leave first reading — that is not a failure of this site, it is what the record shows.',
       'intro.votes': 'A recorded division happens when five or more MPPs stand to ask for one. Only then are individual names recorded. MPPs who were absent are not listed — the Assembly does not publish absences, so neither do we.',
+      'projets.plus': (n, r) => (r > n ? `+ ${n} more (${r} left)` : `+ ${n} more`),
       'intro.projetsCourt': '<b>44th Parliament, 1st session.</b> Summaries are written by AI from the official text, which is one click away on ola.org.',
       'intro.deduction': 'ola.org does not say whether a bill comes from the government: we work it out from the sponsor — a minister, with a portfolio in brackets. Everything else on this page is taken from the record word for word.',
       'intro.cabinet': "Official titles come from the Ontario government's own bilingual reference list (ONTERM), published in the Ontario Data Catalogue. We do not translate a title ourselves.",
@@ -299,6 +300,7 @@
       'accueil.titre1': 'CE QUE', 'accueil.titre2': 'L’ASSEMBLÉE', 'accueil.titre3': 'FAIT',
       'intro.projets': '<b>44e législature, 1re session.</b> Un projet de loi passe par la première lecture, la deuxième lecture, le comité, la troisième lecture et la sanction royale. La plupart des projets déposés par des député·e·s ne dépassent jamais la première lecture — ce n’est pas un trou dans ce site, c’est ce que dit le compte rendu.',
       'intro.votes': 'Il y a vote nominatif quand cinq député·e·s ou plus se lèvent pour le demander. Les noms ne sont consignés qu’à ce moment-là. Les absent·e·s n’apparaissent pas : l’Assemblée ne publie pas les absences, et nous n’en déduisons rien.',
+      'projets.plus': (n, r) => (r > n ? `+ ${n} de plus (${r} restants)` : `+ ${n} de plus`),
       'intro.projetsCourt': '<b>44e législature, 1re session.</b> Les résumés sont rédigés par une IA à partir du texte officiel, à un clic sur ola.org.',
       'intro.deduction': 'ola.org n’écrit nulle part qu’un projet vient du gouvernement : on le déduit du parrain — un ministre, avec son portefeuille entre parenthèses. Tout le reste de cette page est repris du compte rendu, mot pour mot.',
       'intro.cabinet': 'Les titres officiels viennent de la liste bilingue du gouvernement de l’Ontario (ONTERM), publiée dans le Catalogue de données. Nous ne traduisons jamais un titre nous-mêmes.',
@@ -1011,6 +1013,12 @@
     let recherche = '';
 
     const carte = (p) => carteProjet(p, recent);
+    // 5 cartes par groupe, puis un bouton « +10 » qui dévoile les 10 suivantes, et ainsi de
+    // suite : les cartes cachées sont déjà dans la page, le bouton ne fait que les montrer.
+    const paquet = (liste) =>
+      `<div class="liste-projets">${liste
+        .map((p, i) => (i < 5 ? carte(p) : carte(p).replace('<article', '<article hidden')))
+        .join('')}</div>${liste.length > 5 ? `<button class="filtre plus-projets" data-role="plus">${mot('projets.plus', Math.min(10, liste.length - 5), liste.length - 5)}</button>` : ''}`;
 
 
 
@@ -1050,7 +1058,7 @@
               .map(
                 ([cle, liste]) => `<h2 class="titre-groupe">${nomMois(cle)}
                   <span class="compte">${mot('projets.compte', liste.length)}</span></h2>
-                <div class="liste-projets">${liste.map(carte).join('')}</div>`
+                ${paquet(liste)}`
               )
               .join('')
           : `<p class="courant">${mot('projets.aucun')}</p>`;
@@ -1073,7 +1081,7 @@
             .map(
               (g) => `<h2 class="titre-groupe">${mot(`groupe.${g.etape}`)}
                   <span class="compte">${mot('projets.compte', g.projets.length)}</span></h2>
-                <div class="liste-projets">${g.projets.map(carte).join('')}</div>`
+                ${paquet(g.projets)}`
             )
             .join('')
         : `<p class="courant">${mot('projets.aucun')}</p>`;
@@ -1100,6 +1108,16 @@
       </div>
       <p class="legende" data-role="compte"></p>
       <div data-role="liste"></div>`;
+
+    cible.querySelector('[data-role="liste"]').addEventListener('click', (e) => {
+      const bouton = e.target.closest('[data-role="plus"]');
+      if (!bouton) return;
+      const caches = [...bouton.previousElementSibling.querySelectorAll(':scope > [hidden]')];
+      caches.slice(0, 10).forEach((c) => (c.hidden = false));
+      const reste = caches.length - 10;
+      if (reste > 0) bouton.textContent = mot('projets.plus', Math.min(10, reste), reste);
+      else bouton.remove();
+    });
 
     cible.querySelectorAll('[data-filtre]').forEach((b) =>
       b.addEventListener('click', () => {
