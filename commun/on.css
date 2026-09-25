@@ -55,7 +55,7 @@ body:not(.pret) main.colonne{min-height:100vh;}
 .marque{display:flex; align-items:center; gap:14px;}
 .mot-symbole{
   font-weight:900; font-size:24px; letter-spacing:-0.03em; text-transform:uppercase;
-  text-decoration:none; display:inline-flex; align-items:center; gap:12px;
+  text-decoration:none; display:inline-flex; align-items:center; gap:0;  /* un seul mot : DossierOntario */
 }
 .mot-symbole .province{color:var(--gold);}
 /* La feuille d'érable mène à DossierCanada. Toutes les 20 s elle bascule SUR ELLE-MÊME
