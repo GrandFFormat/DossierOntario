@@ -101,15 +101,7 @@ const PAGES = [
     description:
       '139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor and a plain-language summary, with a link to the official text.',
     contenu: `  <h1 class="titre-vue" data-i18n="projets.titre">Bills</h1>
-  <div class="encadre" data-i18n-html="intro.projets">
-    <b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee,
-    third reading and royal assent. Most bills introduced by members never leave first reading —
-    that is not a failure of this site, it is what the record shows.
-  </div>
-  <div class="encadre"><span data-i18n="projet.avertissement">Open a bill to read a plain-language summary,
-    written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.</span></div>
-  <div class="encadre"><span data-i18n="intro.deduction">ola.org does not say whether a bill comes from the
-    government: we work it out from the sponsor — a minister, with a portfolio in brackets.</span></div>
+  <div class="encadre" data-i18n-html="intro.projetsCourt"><b>44th Parliament, 1st session.</b> Summaries are written by AI from the official text, which is one click away on ola.org.</div>
   <section data-vue="projets"></section>`,
   },
   {
