@@ -27,7 +27,7 @@ const lireJson = (chemin) => (existsSync(chemin) ? JSON.parse(readFileSync(chemi
 /** Les puces d'un projet dans une langue, ou null s'il n'y en a pas (ou pas d'utiles). */
 const puces = (resumes, numero, langue) => {
   const r = resumes?.resumes?.[numero]?.[langue];
-  return r && !r.sansContenu && r.puces?.length ? r.puces : null;
+  return r && !r.sansContenu && (r.puces?.length || r.annexes?.length) ? r.puces ?? [] : null;
 };
 
 function etapeDe(fiche) {
@@ -99,6 +99,8 @@ function main() {
       premiereLecture: f?.premiereLecture ?? null,
       derniereActivite: f?.derniereActivite ?? null,
       votes: f?.votes?.length ?? 0,
+      // Loi omnibus : combien d'annexes, lu dans la note explicative par scrapers/resumes.js.
+      omnibus: resumes?.resumes?.[p.numero]?.en?.omnibus ?? resumes?.resumes?.[p.numero]?.fr?.omnibus ?? 0,
       url: p.url,
       urlFr: p.urlFr,
     };
@@ -117,7 +119,13 @@ function main() {
     const parNumero = {};
     for (const p of projets) {
       const liste = puces(resumes, p.numero, langue);
-      if (liste) parNumero[p.numero] = { p: liste, ...(resumes.resumes[p.numero][langue].tronque ? { t: true } : {}) };
+      const r = resumes?.resumes?.[p.numero]?.[langue];
+      if (liste) parNumero[p.numero] = {
+        p: liste,
+        ...(r.tronque ? { t: true } : {}),
+        // Loi omnibus : les puces par annexe (n = numéro, t = titre de la loi touchée, p = puces).
+        ...(r.annexes?.length ? { a: r.annexes.map((x) => ({ n: x.numero, t: x.titre, p: x.puces })) } : {}),
+      };
     }
     ecrire(`resumes-${langue}`, parNumero);
   }

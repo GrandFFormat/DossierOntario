@@ -154,6 +154,9 @@
       'intro.projets': '<b>44th Parliament, 1st session.</b> A bill goes through first reading, second reading, committee, third reading and royal assent. Most bills introduced by members never leave first reading — that is not a failure of this site, it is what the record shows.',
       'intro.votes': 'A recorded division happens when five or more MPPs stand to ask for one. Only then are individual names recorded. MPPs who were absent are not listed — the Assembly does not publish absences, so neither do we.',
       'projets.plus': (n, r) => (r > n ? `+ ${n} more (${r} left)` : `+ ${n} more`),
+      'projet.omnibus': (n) => `Omnibus · ${n} schedules`, 'projet.annexe': (n) => `Schedule ${n}`,
+      'projet.omnibusAide': 'An omnibus bill bundles changes to several different laws, one per schedule.',
+      'projet.omnibusAvis': (n) => `<b>Omnibus bill.</b> It touches ${n} laws, one per schedule — some amended, sometimes a new one: the title only names part of it. Summarised from the official explanatory note, schedule by schedule.`,
       'intro.projetsCourt': '<b>44th Parliament, 1st session.</b> Summaries are written by AI from the official text, which is one click away on ola.org.',
       'intro.deduction': 'ola.org does not say whether a bill comes from the government: we work it out from the sponsor — a minister, with a portfolio in brackets. Everything else on this page is taken from the record word for word.',
       'intro.cabinet': "Official titles come from the Ontario government's own bilingual reference list (ONTERM), published in the Ontario Data Catalogue. We do not translate a title ourselves.",
@@ -301,6 +304,9 @@
       'intro.projets': '<b>44e législature, 1re session.</b> Un projet de loi passe par la première lecture, la deuxième lecture, le comité, la troisième lecture et la sanction royale. La plupart des projets déposés par des député·e·s ne dépassent jamais la première lecture — ce n’est pas un trou dans ce site, c’est ce que dit le compte rendu.',
       'intro.votes': 'Il y a vote nominatif quand cinq député·e·s ou plus se lèvent pour le demander. Les noms ne sont consignés qu’à ce moment-là. Les absent·e·s n’apparaissent pas : l’Assemblée ne publie pas les absences, et nous n’en déduisons rien.',
       'projets.plus': (n, r) => (r > n ? `+ ${n} de plus (${r} restants)` : `+ ${n} de plus`),
+      'projet.omnibus': (n) => `Omnibus · ${n} annexes`, 'projet.annexe': (n) => `Annexe ${n}`,
+      'projet.omnibusAide': 'Un projet de loi omnibus regroupe des changements à plusieurs lois différentes, une par annexe.',
+      'projet.omnibusAvis': (n) => `<b>Projet de loi omnibus.</b> Il touche ${n} lois, une par annexe — certaines modifiées, parfois une nouvelle : le titre n’en nomme qu’une partie. Résumé à partir de la note explicative officielle, annexe par annexe.`,
       'intro.projetsCourt': '<b>44e législature, 1re session.</b> Les résumés sont rédigés par une IA à partir du texte officiel, à un clic sur ola.org.',
       'intro.deduction': 'ola.org n’écrit nulle part qu’un projet vient du gouvernement : on le déduit du parrain — un ministre, avec son portefeuille entre parenthèses. Tout le reste de cette page est repris du compte rendu, mot pour mot.',
       'intro.cabinet': 'Les titres officiels viennent de la liste bilingue du gouvernement de l’Ontario (ONTERM), publiée dans le Catalogue de données. Nous ne traduisons jamais un titre nous-mêmes.',
@@ -865,6 +871,7 @@
           ${nDefi ? `<span class="pastille pastille-defi">${mot('defi.compte', nDefi)}</span>` : ''}
           ${pastilleParti}
           ${p.type === 'prive' ? `<span class="pastille">${mot('projets.prive')}</span>` : ''}
+          ${p.omnibus ? `<span class="pastille pastille-omnibus" title="${mot('projet.omnibusAide')}">${mot('projet.omnibus', p.omnibus)}</span>` : ''}
           <span class="pastille ${pastille}">${echapper(etiquette)}</span>
         </div>
       </div>
@@ -938,8 +945,17 @@
       zone.innerHTML = `<p class="legende avis-ia">${mot('projet.sansResume')}</p>`;
       return;
     }
+    const lg = enAnglais ? ' lang="en"' : '';
+    // Loi omnibus : un aperçu, puis chaque annexe sous le nom de la loi qu'elle touche.
+    const annexes = (r.a ?? [])
+      .map((a) => `<h5 class="annexe-titre"${lg}><span>${mot('projet.annexe', a.n)}</span> ${echapper(a.t)}</h5>
+        <ul class="resume"${lg}>${a.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>`)
+      .join('');
     zone.innerHTML = `<h4 class="sous-titre">${mot('projet.resume')}</h4>
-      <ul class="resume"${enAnglais ? ' lang="en"' : ''}>${r.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
+      ${r.a ? `<p class="avis-omnibus">${mot('projet.omnibusAvis', r.a.length)}</p>` : ''}
+      ${r.p.length ? `<ul class="resume"${lg}>${r.p.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>` : ''}
+      ${annexes}`
+      + `
       <p class="legende avis-ia">${mot('projet.resumeIA')}${r.t ? ` ${mot('projet.resumeTronque')}` : ''}${
         enAnglais ? ` ${mot('projet.resumeAnglais')}` : ''
       }</p>`;
