@@ -672,7 +672,8 @@ body:not(.pret) main.colonne{min-height:100vh;}
 .actions-petitions{display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px; margin-top:18px;}
 .actions-petitions .bouton-source{margin:0;}
 .actions-petitions .lien-source{font-size:14px; font-weight:700; margin:0;}
-.plus-projets{display:block; margin:14px auto 8px; font-weight:800;}
+.plus-projets{display:block; width:100%; margin:14px 0 8px; padding:12px; font-size:14px; font-weight:800; border:3px solid var(--ink); background:var(--card); box-shadow:4px 4px 0 var(--ink); cursor:pointer;}
+.plus-projets:hover{background:var(--yellow); color:var(--sur-clair);}
 /* Lois omnibus : la pastille, l'avis, et une tête par annexe dans le résumé. */
 .pastille-omnibus{background:var(--ink); color:var(--paper); border-color:var(--ink);}
 .avis-omnibus{border-left:4px solid var(--gold); padding:6px 10px; margin:0 0 12px; font-size:14px; line-height:1.5; background:var(--paper-2);}
