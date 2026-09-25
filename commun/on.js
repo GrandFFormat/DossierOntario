@@ -677,11 +677,11 @@
           )
           .join('')}</ul>
         ${langue === 'fr' ? `<p class="legende avis-ia">${mot('petitions.anglais')}</p>` : ''}
-        <a class="bouton-source" href="${selonLangue(
+        <div class="actions-petitions"><a class="bouton-source" href="${selonLangue(
           'https://www.ola.org/en/get-involved/petitions',
           'https://www.ola.org/fr/participer/petitions'
         )}" target="_blank" rel="noopener">${mot('petitions.bouton')} →</a>
-        <a class="lien-source" href="${echapper(p.source)}" target="_blank" rel="noopener">${mot('petitions.index')} →</a>`
+        <a class="lien-source" href="${echapper(p.source)}" target="_blank" rel="noopener">${mot('petitions.index')} →</a></div>`
       : `<p class="courant">${mot('petitions.comment')}</p>`;
 
     zone.hidden = false;

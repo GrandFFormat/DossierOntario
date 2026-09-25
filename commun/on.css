@@ -669,3 +669,6 @@ body:not(.pret) main.colonne{min-height:100vh;}
 :root[data-theme="dark"] .bouton-theme .icone-lune{display:none;}
 :root[data-theme="dark"] .bouton-theme .icone-soleil{display:block;}
 .controles > [data-action="langue"]{border-width:2px; font-weight:800;}
+.actions-petitions{display:flex; flex-wrap:wrap; align-items:center; gap:10px 20px; margin-top:18px;}
+.actions-petitions .bouton-source{margin:0;}
+.actions-petitions .lien-source{font-size:14px; font-weight:700; margin:0;}
