@@ -74,6 +74,15 @@ function main() {
   const comites = lireJson('data/comites.json');
   const resumes = lireJson('data/resumes.json');
 
+  // De quoi parle chaque séance de comité (scrapers/seances.js). Le français d'un sujet ne
+  // vient que de l'Assemblée : quand une transcription donne un titre en anglais seulement
+  // (« Estimates »), on reprend la traduction qu'elle a publiée ailleurs pour le même titre
+  // (« Budget des dépenses ») ; sinon le titre reste en anglais. Rien n'est traduit par nous.
+  const seancesLues = lireJson('data/seances.json')?.sujets ?? {};
+  const frPublie = new Map();
+  for (const liste of Object.values(seancesLues)) for (const s of liste) if (s.fr) frPublie.set(s.en, s.fr);
+  const sujetsDe = (url) => (seancesLues[url] ?? []).map((s) => ({ en: s.en, fr: s.fr ?? frPublie.get(s.en) ?? null }));
+
   if (!bills) throw new Error('data/bills.json manquant — lancer les scrapers d\'abord.');
   mkdirSync(SORTIE, { recursive: true });
 
@@ -337,7 +346,7 @@ function main() {
             );
             return c.transcriptions
               .filter((t) => t.url && !dejaMontrees.has(t.url))
-              .map((t) => ({ date: t.date ?? null, url: t.url }))
+              .map((t) => ({ date: t.date ?? null, url: t.url, sujets: sujetsDe(t.url) }))
               .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
           })(),
         };

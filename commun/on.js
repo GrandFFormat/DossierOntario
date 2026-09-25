@@ -810,6 +810,7 @@
                    <ul class="liste-sobre journees">${c.seances
                      .map(
                        (s) => `<li><span class="legende">${date(s.date) ?? ''}</span>
+                         ${(s.sujets ?? []).map((x) => echapper(selonLangue(x.en, x.fr))).join(' · ')}
                          <a class="lien-source" href="${echapper(s.url)}" target="_blank" rel="noopener">${mot('comites.transcription')}</a></li>`
                      )
                      .join('')}</ul>`

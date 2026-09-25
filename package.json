@@ -18,7 +18,8 @@
     "scrape:comites": "node scrapers/comites.js",
     "verifier:votes": "node scripts/verifier-votes.js",
     "resumes": "node scrapers/resumes.js",
-    "resumes:estimation": "node scrapers/resumes.js --dry-run"
+    "resumes:estimation": "node scrapers/resumes.js --dry-run",
+    "scrape:seances": "node scrapers/seances.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

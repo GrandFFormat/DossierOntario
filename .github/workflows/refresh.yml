@@ -59,6 +59,11 @@ jobs:
       - name: Lire les comités
         run: npm run scrape:comites
 
+      # De quoi parle chaque séance de comité. Une transcription ne change plus : seules
+      # les nouvelles sont lues.
+      - name: Lire les sujets des séances de comité
+        run: npm run scrape:seances
+
       - name: Lire les député·e·s
         run: npm run scrape:members
 
