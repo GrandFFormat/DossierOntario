@@ -27,7 +27,7 @@
       'comites.intro': 'A bill sent to committee is gone over line by line, witnesses are heard, and it can be amended. Committees also sit while the House is adjourned — which is why a bill can move in August with the Legislature away.',
       'comites.votes': 'Committees hold recorded votes too — about three times as many as the House, on amendments. The Assembly publishes them only inside the transcripts, in running prose, and only when a member asks for one: roughly one committee decision in seven. They are not listed on this site yet.',
       'comites.projets': (n) => `${n} bill${n > 1 ? 's' : ''}`,
-      'comites.jours': (n) => `${n} sitting day${n > 1 ? 's' : ''}`,
+      'comites.jours': (n) => `${n} committee sitting${n > 1 ? 's' : ''}`,
       'comites.transcriptions': (n) => `${n} transcript${n > 1 ? 's' : ''}`,
       'comites.transcription': 'Transcript →',
       'comites.sansTranscription': 'no committee transcript (decided in the House)',
@@ -129,7 +129,7 @@
       'comites.intro': 'Un projet de loi renvoyé en comité y est étudié article par article ; des témoins sont entendus et le texte peut être amendé. Les comités siègent aussi pendant l’ajournement de la Chambre — c’est pourquoi un projet peut avancer en août, l’Assemblée absente.',
       'comites.votes': 'Les comités tiennent eux aussi des votes nominatifs — environ trois fois plus que la Chambre, sur des amendements. L’Assemblée ne les publie qu’à l’intérieur des transcriptions, au fil du texte, et seulement quand un·e député·e le demande : à peu près une décision de comité sur sept. Ils ne sont pas encore recensés sur ce site.',
       'comites.projets': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
-      'comites.jours': (n) => `${n} jour${n > 1 ? 's' : ''} de séance`,
+      'comites.jours': (n) => `${n} séance${n > 1 ? 's' : ''} du comité`,
       'comites.transcriptions': (n) => `${n} transcription${n > 1 ? 's' : ''}`,
       'comites.transcription': 'Transcription →',
       'comites.sansTranscription': 'pas de transcription de comité (décidé à la Chambre)',
@@ -766,7 +766,15 @@
         <summary>
           <span class="numero">${echapper(p.numero)}</span>
           <span class="projet-titre">${echapper(selonLangue(p.titreEn, p.titreFr))}</span>
-          <span class="legende">${mot('comites.jours', p.jours)} · ${date(p.derniereDate) ?? ''}</span>
+          <span class="legende">${
+            // On compte les SÉANCES du comité (un jour = une transcription), pas toutes les dates
+            // du parcours : « renvoyé au comité » et « rapport fait » sont des décisions de la
+            // Chambre. Le projet 105 affichait « 4 sitting days » pour 2 séances réelles.
+            (() => {
+              const n = p.journees.filter((j) => j.transcription).length;
+              return n ? `${mot('comites.jours', n)} · ` : '';
+            })()
+          }${date(p.derniereDate) ?? ''}</span>
         </summary>
         <ul class="liste-sobre journees">${journees}</ul>
       </details>`;
