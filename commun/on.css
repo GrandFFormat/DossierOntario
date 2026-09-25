@@ -463,7 +463,11 @@ img{max-width:100%;}
    Un bloc pleine largeur par comité, et non trois colonnes de cartes : chaque comité a
    un mandat à lire, une composition et des travaux. Empilés en trois cartes étroites,
    les trois se lisaient mal. */
-.comite{border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow); padding:18px 20px; margin:0 0 20px;}
+.comite{border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow); padding:18px 20px; margin:0 0 20px; cursor:pointer;}
+/* Le comité est replié : même pli que la carte d'un projet de loi. */
+.comite-pli{border-top:2px dashed var(--line); padding-top:12px; margin-top:12px;}
+.comite-pli > summary{color:var(--gold);}
+.comite-pli-corps{display:flex; flex-direction:column; gap:16px; padding-top:14px; cursor:auto;}
 .comite-entete{display:flex; gap:10px 18px; align-items:baseline; flex-wrap:wrap; margin-bottom:10px;}
 .comite-nom{margin:0; font-weight:900; font-size:clamp(17px,2vw,22px); letter-spacing:-.01em; line-height:1.15;}
 .comite-mandat{

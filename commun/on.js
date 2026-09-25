@@ -34,6 +34,7 @@
       'comites.activite': 'Latest work on bills',
       'comites.aucune': 'No bill has been referred to this committee this session.',
       'comites.page': 'The committee on ola.org →',
+      'comites.ouvrir': 'What it does, the bills it studied, who sits on it',
       'comites.etudies': 'Bills it studied', 'comites.composition': 'Who sits on it',
       'comites.legislatifs': 'Committees that studied bills',
       'comites.surveillance': 'Oversight committees',
@@ -133,6 +134,7 @@
       'comites.activite': 'Derniers travaux sur des projets de loi',
       'comites.aucune': 'Aucun projet de loi ne lui a été renvoyé cette session.',
       'comites.page': 'Le comité sur ola.org →',
+      'comites.ouvrir': 'Son rôle, les projets étudiés, ses membres',
       'comites.etudies': 'Projets de loi étudiés', 'comites.composition': 'Qui y siège',
       'comites.legislatifs': 'Comités qui ont étudié des projets de loi',
       'comites.surveillance': 'Comités de surveillance',
@@ -778,6 +780,9 @@
           <h2 class="comite-nom">${echapper(selonLangue(c.nomEn, c.nomFr))}</h2>
           <p class="legende">${chiffres.join(' · ')}</p>
         </div>
+        <details class="projet-detail comite-pli">
+          <summary>${mot('comites.ouvrir')}</summary>
+          <div class="comite-pli-corps">
         ${mandat ? `<p class="comite-mandat">${echapper(mandat)}</p>` : ''}
         <div class="comite-colonnes">
           <section>
@@ -793,6 +798,8 @@
                target="_blank" rel="noopener">${mot('comites.page')}</a>
           </section>
         </div>
+          </div>
+        </details>
       </article>`;
     };
 
@@ -809,6 +816,21 @@
         ? `<h2 class="titre-groupe">${mot('comites.surveillance')}
             <span class="compte">${surveillance.length}</span></h2>` + surveillance.map(carte).join('')
         : '');
+
+    // Chaque comité est REPLIÉ : ouverts, les huit empilaient mandat, projets et membres sur
+    // des écrans et des écrans. Comme les projets de loi, un clic n'importe où sur la carte
+    // l'ouvre ou la ferme — sauf un lien, une ligne de pli (un projet étudié se déplie
+    // lui-même) ou du texte qu'on vient de sélectionner.
+    if (!cible.dataset.ecouteClic) {
+      cible.dataset.ecouteClic = '1';
+      cible.addEventListener('click', (e) => {
+        const carte = e.target.closest?.('.comite');
+        if (!carte || e.target.closest('a, button, summary')) return;
+        if (String(window.getSelection?.() ?? '').trim()) return;
+        const pli = carte.querySelector(':scope > .comite-pli');
+        if (pli) pli.open = !pli.open;
+      });
+    }
   };
 
   VUES.lexique = () => {
