@@ -1006,6 +1006,10 @@
     if (!cible || !projets) return;
 
     let filtre = 'tous';
+    // L'étape (devenu loi / en cours) se combine avec le type : « du gouvernement » ET
+    // « devenus lois », par exemple. Un second clic sur l'étape la retire.
+    let statut = '';
+    const STATUTS = ['sanctionne', 'encours'];
     // « Recent activity » : un MODE d'affichage, pas un filtre de plus. Il se combine avec
     // les filtres (projets du gouvernement les plus récemment actifs, par exemple) et
     // remplace le classement par étape par une liste du plus récent au plus ancien.
@@ -1032,9 +1036,14 @@
       // Le compte du filtre « 🔥 Challenged » suit les demandes qu'on ajoute ou retire.
       const puceDefis = cible.querySelector('[data-filtre="defis"]');
       if (puceDefis && !puceDefis.hidden) puceDefis.querySelector('.compte').textContent = projets.filter((p) => retenu(p, 'defis')).length;
+      // Les comptes des étapes suivent le type choisi : ils disent ce qu'un clic montrera.
+      for (const s of STATUTS) {
+        const b = cible.querySelector(`[data-statut="${s}"] .compte`);
+        if (b) b.textContent = projets.filter((p) => retenu(p, filtre) && retenu(p, s)).length;
+      }
       const visibles = projets.filter((p) => {
         const texte = `${p.numero} ${p.titreEn} ${p.titreFr ?? ''}`.toLowerCase();
-        return retenu(p, filtre) && (!recherche || texte.includes(recherche));
+        return retenu(p, filtre) && (!statut || retenu(p, statut)) && (!recherche || texte.includes(recherche));
       });
       cible.querySelector('[data-role="compte"]').textContent = mot('projets.compte', visibles.length);
 
@@ -1091,7 +1100,8 @@
     const filtres = ['tous', 'gouvernement', 'depute', 'prive', 'sanctionne', 'encours']
       .map((f) => {
         const n = projets.filter((p) => retenu(p, f)).length;
-        return `<button class="filtre ${f === 'tous' ? 'actif' : ''}" data-filtre="${f}">${mot(
+        const attr = STATUTS.includes(f) ? `data-statut="${f}"` : `data-filtre="${f}"`;
+        return `<button class="filtre ${f === 'tous' ? 'actif' : ''}" ${attr}>${mot(
           `projets.${f}`
         )} <span class="compte">${n}</span></button>`;
       })
@@ -1124,6 +1134,13 @@
         cible.querySelectorAll('[data-filtre]').forEach((x) => x.classList.remove('actif'));
         b.classList.add('actif');
         filtre = b.dataset.filtre;
+        dessiner();
+      })
+    );
+    cible.querySelectorAll('[data-statut]').forEach((b) =>
+      b.addEventListener('click', () => {
+        statut = statut === b.dataset.statut ? '' : b.dataset.statut;
+        cible.querySelectorAll('[data-statut]').forEach((x) => x.classList.toggle('actif', x.dataset.statut === statut));
         dessiner();
       })
     );
