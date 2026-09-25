@@ -1503,8 +1503,13 @@
       const autres = d.deputes.filter((m) => !m.ministreEn && correspond(m));
       cible.querySelector('[data-role="liste"]').innerHTML =
         (ministres.length
-          ? `<div class="tete-section" id="cabinet"><h2 class="grand-titre">${mot('cabinet.titre')}</h2><span class="legende">${mot('deputes.compteMinistres', ministres.length)}</span></div>
-             <div class="grille">${ministres.map(carte).join('')}</div>`
+          ? // Le Conseil se replie derrière son titre (demande de Martin) : sinon ses 38 cartes
+            // repoussaient le reste de l'Assemblée loin sous la ligne de flottaison. Il s'ouvre
+            // de lui-même quand on arrive par /cabinet ou qu'une recherche trouve un·e ministre.
+            `<details class="section-pli" id="cabinet" ${q || location.hash === '#cabinet' ? 'open' : ''}>
+              <summary class="tete-section"><h2 class="grand-titre">${mot('cabinet.titre')}</h2><span class="legende">${mot('deputes.compteMinistres', ministres.length)}</span></summary>
+              <div class="grille">${ministres.map(carte).join('')}</div>
+            </details>`
           : '') +
           (autres.length
             ? `<div class="tete-section"><h2 class="grand-titre">${mot('deputes.autres')}</h2><span class="legende">${mot('deputes.compteDeputes', autres.length)}</span></div>
