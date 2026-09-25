@@ -1669,5 +1669,11 @@
     await charger();
     rendre();
     document.body.classList.add('pret');
+    // Un seul projet ouvert à la fois : en ouvrir un referme celui qui l'était.
+    document.addEventListener('toggle', (e) => {
+      const d = e.target;
+      if (!d.matches?.('.projet-detail') || !d.open) return;
+      document.querySelectorAll('.projet-detail[open]').forEach((x) => { if (x !== d) x.open = false; });
+    }, true);
   });
 })();
