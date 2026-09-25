@@ -1630,5 +1630,6 @@
     appliquerLangue();
     await charger();
     rendre();
+    document.body.classList.add('pret');
   });
 })();

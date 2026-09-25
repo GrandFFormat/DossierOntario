@@ -42,7 +42,7 @@ img{max-width:100%;}
 @media (max-width:640px){ :root{ --gouttiere:18px; } }
 /* Le contenu arrive par on.js une fraction de seconde après l'en-tête : sans cette hauteur
    réservée, le pied de page noir remonte sous les onglets le temps d'un éclair. */
-main.colonne{min-height:100vh;}
+body:not(.pret) main.colonne{min-height:100vh;}
 
 /* ---------- En-tête ---------- */
 .entete{background:var(--paper); border-bottom:3px solid var(--ink); position:sticky; top:0; z-index:50;}
