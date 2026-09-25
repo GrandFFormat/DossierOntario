@@ -35,6 +35,8 @@
       'comites.aucune': 'No bill has been referred to this committee this session.',
       'comites.page': 'The committee on ola.org →',
       'comites.ouvrir': 'What it does, the bills it studied, who sits on it',
+      'comites.seances': 'Its sittings — one transcript each (in English only, as published)',
+      'comites.autresSeances': 'Other sittings — on business other than a bill',
       'comites.etudies': 'Bills it studied', 'comites.composition': 'Who sits on it',
       'comites.legislatifs': 'Committees that studied bills',
       'comites.surveillance': 'Oversight committees',
@@ -135,6 +137,8 @@
       'comites.aucune': 'Aucun projet de loi ne lui a été renvoyé cette session.',
       'comites.page': 'Le comité sur ola.org →',
       'comites.ouvrir': 'Son rôle, les projets étudiés, ses membres',
+      'comites.seances': 'Ses séances — une transcription chacune (en anglais seulement, telle que publiée)',
+      'comites.autresSeances': 'Autres séances — sur autre chose qu’un projet de loi',
       'comites.etudies': 'Projets de loi étudiés', 'comites.composition': 'Qui y siège',
       'comites.legislatifs': 'Comités qui ont étudié des projets de loi',
       'comites.surveillance': 'Comités de surveillance',
@@ -790,6 +794,19 @@
             ${c.projets.length
               ? `<ul class="liste-sobre">${c.projets.map(projet).join('')}</ul>`
               : `<p class="courant">${mot('comites.aucune')}</p>`}
+            ${
+              // Les séances hors projet de loi (build-site-data.js) : sans cette liste, la carte
+              // annonçait des transcriptions qu'on ne trouvait nulle part.
+              c.seances?.length
+                ? `<h3 class="comite-soustitre">${mot(c.projets.length ? 'comites.autresSeances' : 'comites.seances')}</h3>
+                   <ul class="liste-sobre journees">${c.seances
+                     .map(
+                       (s) => `<li><span class="legende">${date(s.date) ?? ''}</span>
+                         <a class="lien-source" href="${echapper(s.url)}" target="_blank" rel="noopener">${mot('comites.transcription')}</a></li>`
+                     )
+                     .join('')}</ul>`
+                : ''
+            }
           </section>
           <section>
             <h3 class="comite-soustitre">${mot('comites.composition')}</h3>

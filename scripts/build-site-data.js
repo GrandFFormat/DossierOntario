@@ -327,7 +327,19 @@ function main() {
           projets: projetsDuComite,
           jours: new Set(projetsDuComite.flatMap((p) => p.derniereDate ?? [])).size,
           transcriptions: c.transcriptions.length,
-
+          // Les séances qui ne se rattachent à AUCUN projet de loi étudié. Sans elles, la
+          // carte annonçait « 11 transcriptions » sans en montrer une seule : les comités de
+          // surveillance (Comptes publics, Règlement…) ne reçoivent pas de projets, et leurs
+          // transcriptions n'étaient affichées nulle part. Les plus récentes d'abord.
+          seances: (() => {
+            const dejaMontrees = new Set(
+              projetsDuComite.flatMap((p) => p.journees.map((j) => j.transcription).filter(Boolean))
+            );
+            return c.transcriptions
+              .filter((t) => t.url && !dejaMontrees.has(t.url))
+              .map((t) => ({ date: t.date ?? null, url: t.url }))
+              .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
+          })(),
         };
       }),
     });
