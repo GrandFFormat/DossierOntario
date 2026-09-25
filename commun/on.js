@@ -1036,6 +1036,15 @@
     const carte = (p) => carteProjet(p, recent);
     // 5 cartes par groupe, puis un bouton « +10 » qui dévoile les 10 suivantes, et ainsi de
     // suite : les cartes cachées sont déjà dans la page, le bouton ne fait que les montrer.
+    // Chaque groupe se replie derrière son titre, comme sur la page Député·e·s : la liste
+    // entière faisait défiler 191 cartes. On retient les groupes ouverts d'un dessin à
+    // l'autre (filtres, langue) ; une recherche ouvre tous ceux qui ont un résultat.
+    const ouverts = new Set();
+    const pli = (cle, titre, compte, liste) =>
+      `<details class="section-pli pli-projets" data-cle="${cle}" ${recherche || ouverts.has(cle) ? 'open' : ''}>
+        <summary class="tete-section"><h2 class="grand-titre">${titre}</h2><span class="legende">${compte}</span></summary>
+        ${paquet(liste)}
+      </details>`;
     const paquet = (liste) =>
       `<div class="liste-projets">${liste
         .map((p, i) => (i < 5 ? carte(p) : carte(p).replace('<article', '<article hidden')))
@@ -1084,9 +1093,7 @@
         cible.querySelector('[data-role="liste"]').innerHTML = tries.length
           ? [...parMois]
               .map(
-                ([cle, liste]) => `<h2 class="titre-groupe">${nomMois(cle)}
-                  <span class="compte">${mot('projets.compte', liste.length)}</span></h2>
-                ${paquet(liste)}`
+                ([cle, liste]) => pli(`mois-${cle}`, nomMois(cle), mot('projets.compte', liste.length), liste)
               )
               .join('')
           : `<p class="courant">${mot('projets.aucun')}</p>`;
@@ -1107,9 +1114,7 @@
       cible.querySelector('[data-role="liste"]').innerHTML = groupes.length
         ? groupes
             .map(
-              (g) => `<h2 class="titre-groupe">${mot(`groupe.${g.etape}`)}
-                  <span class="compte">${mot('projets.compte', g.projets.length)}</span></h2>
-                ${paquet(g.projets)}`
+              (g) => pli(`etape-${g.etape}`, mot(`groupe.${g.etape}`), mot('projets.compte', g.projets.length), g.projets)
             )
             .join('')
         : `<p class="courant">${mot('projets.aucun')}</p>`;
@@ -1140,6 +1145,11 @@
       <p class="legende" data-role="compte"></p>
       <div data-role="liste"></div>`;
 
+    cible.querySelector('[data-role="liste"]').addEventListener('toggle', (e) => {
+      const d = e.target;
+      if (!d.matches?.('.pli-projets')) return;
+      if (d.open) ouverts.add(d.dataset.cle); else ouverts.delete(d.dataset.cle);
+    }, true);
     cible.querySelector('[data-role="liste"]').addEventListener('click', (e) => {
       const bouton = e.target.closest('[data-role="plus"]');
       if (!bouton) return;
