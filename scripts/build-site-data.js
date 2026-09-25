@@ -41,29 +41,6 @@ function etapeDe(fiche) {
   return 1;
 }
 
-/**
- * Le mandat, ramené à ce qui s'y lit.
- *
- * Le texte officiel s'ouvre sur le nom du comité suivi de « Terms of Reference », puis
- * enchaîne les renvois au Règlement sur plusieurs centaines de mots. On retire cette
- * en-tête et on garde les deux premières phrases : de quoi comprendre à quoi sert le
- * comité. Le texte entier reste dans data/comites.json, et la page renvoie à ola.org.
- */
-function mandatCourt(texte, nom) {
-  if (!texte) return null;
-  let t = texte.trim();
-  if (nom && t.startsWith(nom)) t = t.slice(nom.length).trim();
-  t = t.replace(/^(Terms of Reference|Mandat|Cadre de référence)\s*/i, '').trim();
-
-  const phrases = t.split(/(?<=\.)\s+/);
-  let court = '';
-  for (const phrase of phrases) {
-    if (court && (court + phrase).length > 360) break;
-    court += (court ? ' ' : '') + phrase;
-  }
-  return court.length > 40 ? court : t.slice(0, 360);
-}
-
 function main() {
   const bills = lireJson('data/bills.json');
   const details = lireJson('data/bill-details.json');
@@ -313,14 +290,34 @@ function main() {
           }))
           .sort((a, b) => (b.derniereDate ?? '').localeCompare(a.derniereDate ?? ''));
 
+        // Une séance qui ne tombe sur aucune date du parcours officiel d'un projet peut quand
+        // même porter sur lui : son sujet (scrapers/seances.js) est alors le TITRE du projet.
+        // Le 3 juin 2025, le comité de l'Intérieur a siégé sur le projet 5, mais la séance
+        // s'affichait sous « autres séances — sur autre chose qu'un projet de loi ». On la
+        // rattache à son projet, sous un libellé qui dit seulement ce qu'elle est : une séance.
+        const dejaRattachees = new Set(projetsDuComite.flatMap((p) => p.journees.map((j) => j.transcription).filter(Boolean)));
+        for (const t of c.transcriptions) {
+          if (!t.url || dejaRattachees.has(t.url)) continue;
+          const titres = new Set(sujetsDe(t.url).map((s) => s.en));
+          const projet = projetsDuComite.find((p) => titres.has(p.titreEn));
+          if (!projet) continue;
+          projet.journees.push({
+            date: t.date ?? null,
+            evenementEn: 'Committee sitting on the bill',
+            evenementFr: 'Séance du comité sur le projet',
+            transcription: t.url,
+          });
+          projet.journees.sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
+          if ((t.date ?? '') > (projet.derniereDate ?? '')) projet.derniereDate = t.date;
+          dejaRattachees.add(t.url);
+        }
+
         return {
           cle: c.cle,
           nomEn: c.nomEn,
           nomFr: c.nomFr,
           url: c.url,
           urlFr: c.urlFr,
-          mandatEn: mandatCourt(c.mandatEn, c.nomEn),
-          mandatFr: mandatCourt(c.mandatFr, c.nomFr),
           // La couleur du parti vient de la fiche du ou de la député·e, jamais d'ailleurs.
           membres: c.membres.map((m) => {
             const d = parNom.get(m.identifiant);

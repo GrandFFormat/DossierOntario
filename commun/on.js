@@ -34,7 +34,7 @@
       'comites.activite': 'Latest work on bills',
       'comites.aucune': 'No bill has been referred to this committee this session.',
       'comites.page': 'The committee on ola.org →',
-      'comites.ouvrir': 'What it does, the bills it studied, who sits on it',
+      'comites.ouvrir': 'The bills it studied, its sittings, who sits on it',
       'comites.seances': 'Its sittings — one transcript each (in English only, as published)',
       'comites.autresSeances': 'Other sittings — on business other than a bill',
       'comites.etudies': 'Bills it studied', 'comites.composition': 'Who sits on it',
@@ -136,7 +136,7 @@
       'comites.activite': 'Derniers travaux sur des projets de loi',
       'comites.aucune': 'Aucun projet de loi ne lui a été renvoyé cette session.',
       'comites.page': 'Le comité sur ola.org →',
-      'comites.ouvrir': 'Son rôle, les projets étudiés, ses membres',
+      'comites.ouvrir': 'Les projets étudiés, ses séances, ses membres',
       'comites.seances': 'Ses séances — une transcription chacune (en anglais seulement, telle que publiée)',
       'comites.autresSeances': 'Autres séances — sur autre chose qu’un projet de loi',
       'comites.etudies': 'Projets de loi étudiés', 'comites.composition': 'Qui y siège',
@@ -781,7 +781,6 @@
     };
 
     const carte = (c) => {
-      const mandat = selonLangue(c.mandatEn, c.mandatFr);
       const chiffres = [
         c.projets.length ? mot('comites.projets', c.projets.length) : null,
         c.transcriptions ? mot('comites.transcriptions', c.transcriptions) : null,
@@ -795,7 +794,9 @@
         <details class="projet-detail comite-pli">
           <summary>${mot('comites.ouvrir')}</summary>
           <div class="comite-pli-corps">
-        ${mandat ? `<p class="comite-mandat">${echapper(mandat)}</p>` : ''}
+        <!-- Le mandat officiel n'est plus recopié (24 sept. 2026) : c'est le texte du Règlement
+             (« As per Standing Order 110(d)… »), qui ne dit pas à quoi sert le comité. Le rôle
+             d'un comité s'explique dans le lexique ; le mandat reste sur la page ola.org. -->
         <div class="comite-colonnes">
           <section>
             <h3 class="comite-soustitre">${mot('comites.etudies')}</h3>
@@ -843,7 +844,7 @@
             <span class="compte">${surveillance.length}</span></h2>` + surveillance.map(carte).join('')
         : '');
 
-    // Chaque comité est REPLIÉ : ouverts, les huit empilaient mandat, projets et membres sur
+    // Chaque comité est REPLIÉ : ouverts, les huit empilaient projets, séances et membres sur
     // des écrans et des écrans. Comme les projets de loi, un clic n'importe où sur la carte
     // l'ouvre ou la ferme — sauf un lien, une ligne de pli (un projet étudié se déplie
     // lui-même) ou du texte qu'on vient de sélectionner.
