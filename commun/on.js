@@ -879,13 +879,7 @@
             <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
           </div>
           <aside class="projet-cote">
-            <h4 class="sous-titre">${mot('projet.derniere')}</h4>
-            <div class="boite-activite">
-              ${p.derniereActivite ? `<b>${date(p.derniereActivite)}</b>` : ''}
-              ${statut ? `<span>${echapper(statut)}</span>` : ''}
-              ${p.votes ? `<span>${mot('projet.compteVotes', p.votes)}</span>` : ''}
-            </div>
-            <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
+            <!-- Challenger et partager en tête de la colonne : on les voit sans descendre. -->
             ${
               // Challenger : seulement un projet qui n'est pas devenu loi, et seulement quand
               // la table existe (DEFI.dispo). Voir chargerDefi().
@@ -906,6 +900,13 @@
               <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
               <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
             </div>
+            <h4 class="sous-titre">${mot('projet.derniere')}</h4>
+            <div class="boite-activite">
+              ${p.derniereActivite ? `<b>${date(p.derniereActivite)}</b>` : ''}
+              ${statut ? `<span>${echapper(statut)}</span>` : ''}
+              ${p.votes ? `<span>${mot('projet.compteVotes', p.votes)}</span>` : ''}
+            </div>
+            <a class="bouton-source" href="${echapper(lien)}" target="_blank" rel="noopener">${mot('projet.source')} →</a>
           </aside>
         </div>
       </details>
