@@ -127,7 +127,6 @@
       'cabinet.titre': 'Cabinet', 'cabinet.adjoints': 'Parliamentary assistants',
       'cabinet.titreOfficiel': 'Official title',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
-      'accueil.mouvements': 'Latest activity',
       'porte.projets': 'What is being proposed', 'porte.votes': 'Who voted how',
       'porte.deputes': 'Who represents you', 'porte.cabinet': 'Who runs what',
       'porte.lexique': 'What the words mean',
@@ -253,7 +252,6 @@
       'cabinet.titre': 'Conseil des ministres', 'cabinet.adjoints': 'Adjoint·e·s parlementaires',
       'cabinet.titreOfficiel': 'Titre officiel',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
-      'accueil.mouvements': 'Derniers mouvements',
       'porte.projets': 'Ce qui est proposé', 'porte.votes': 'Qui a voté quoi',
       'porte.deputes': 'Qui vous représente', 'porte.cabinet': 'Qui dirige quoi',
       'porte.lexique': 'Ce que les mots veulent dire',
@@ -568,19 +566,6 @@
       .map(([n, cle]) => `<div class="chiffre"><b>${n}</b><span>${mot(cle)}</span></div>`)
       .join('');
 
-    const mouvements = (a.derniersMouvements ?? [])
-      .map(
-        (m) => `<tr>
-          <td>${date(m.date) ?? ''}</td>
-          <td><span class="numero">${echapper(m.numero)}</span></td>
-          <td>${echapper(selonLangue(m.titreEn, m.titreFr))}</td>
-          <td>${echapper(selonLangue(m.evenementEn, m.evenementFr) ?? '')}${
-            m.comiteEn ? `<span class="legende"> · ${echapper(selonLangue(m.comiteEn, m.comiteFr))}</span>` : ''
-          }</td>
-        </tr>`
-      )
-      .join('');
-
     const portes = [
       ['/bills', 'nav.projets', 'porte.projets'],
       ['/votes', 'nav.votes', 'porte.votes'],
@@ -593,9 +578,10 @@
 
     cible.innerHTML = `
       <div class="chiffres">${chiffres}</div>
-      <div class="portes">${portes}</div>
-      <h2 class="titre-groupe">${mot('accueil.mouvements')}</h2>
-      <table class="tableau"><tbody>${mouvements}</tbody></table>`;
+      <div class="portes">${portes}</div>`;
+    // Le tableau « Latest activity » est parti (24 sept. 2026, décision de Martin) : il doublait
+    // le bouton « Recent activity » de la page des projets. La bande des projets challengés,
+    // juste en dessous, prend sa place.
 
     bandeDefis();
   };

@@ -352,27 +352,6 @@ function main() {
   }
 
   // ------------------------------------------------------------------ aperçu
-  const mouvements = [];
-  for (const projet of projets) {
-    const f = fiches[projet.numero];
-    for (const etape of f?.etapes ?? []) {
-      if (!etape.date) continue;
-      mouvements.push({
-        date: etape.date,
-        numero: projet.numero,
-        titreEn: projet.titreEn,
-        titreFr: projet.titreFr,
-        evenementEn: [etape.etape, etape.evenement].filter(Boolean).join(' — '),
-        evenementFr: [etape.etapeFr, etape.evenementFr].filter(Boolean).join(' — ') || null,
-        // Sans le comité, une ligne datée d'août semble contredire la bande « la Chambre
-        // ne siège pas » : les comités, eux, siègent pendant l'ajournement.
-        comiteEn: etape.comite ?? null,
-        comiteFr: etape.comiteFr ?? null,
-      });
-    }
-  }
-  mouvements.sort((a, b) => b.date.localeCompare(a.date));
-
   ecrire('apercu', {
     maj: details?.lus ?? bills.lus,
     legislature: bills.legislature,
@@ -388,7 +367,6 @@ function main() {
       projetsEnComite: projets.filter((p) => p.type === 'public' && fiches[p.numero]?.etapes?.some((e) => e.comite)).length,
       sieges: members?.totalSieges ?? null,
     },
-    derniersMouvements: mouvements.slice(0, 15),
     // De quoi dire honnêtement pourquoi rien ne bouge : la Chambre est en relâche.
     calendrier: calendrier
       ? {
