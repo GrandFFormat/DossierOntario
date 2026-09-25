@@ -1477,7 +1477,7 @@
     const lex = DONNEES.lexique;
     if (!cible || !lex) return;
 
-    const entree = (e) => `<article class="carte">
+    const entree = (e) => `<article class="carte carte-lex">
       <h3 class="carte-titre">${echapper(selonLangue(e.terme.en, e.terme.fr))}</h3>
       <p class="courant">${echapper(selonLangue(e.texte.en, e.texte.fr))}</p>
     </article>`;
@@ -1511,14 +1511,18 @@
     cible.innerHTML =
       // Cinq groupes et vingt-quatre termes : des raccourcis évitent de tout faire défiler.
       `<nav class="raccourcis" aria-label="${mot('lexique.titre')}">${lex.groupes
-        .map((g, i) => `<a href="#${ancre(i)}">${echapper(selonLangue(g.titre.en, g.titre.fr))}</a>`)
+        .map((g, i) => `<a href="#${ancre(i)}" class="teinte-${i % 5}"><b>${i + 1}</b> ${echapper(selonLangue(g.titre.en, g.titre.fr))}</a>`)
         .join('')}</nav>` +
       lex.groupes
         .map(
-          (g, i) => `<h2 class="titre-groupe" id="${ancre(i)}">${echapper(selonLangue(g.titre.en, g.titre.fr))}
+          // Une teinte par groupe (dans la palette du site, jamais celle d'un parti) : le
+          // numéro, le bandeau du titre, le filet des fiches.
+          (g, i) => `<section class="groupe-lex teinte-${i % 5}">
+            <h2 class="titre-lex" id="${ancre(i)}"><span class="num-lex">${i + 1}</span>${echapper(selonLangue(g.titre.en, g.titre.fr))}
               <span class="compte">${g.entrees.length}</span></h2>
             ${explication(g)}
-            <div class="grille">${g.entrees.map(entree).join('')}</div>`
+            <div class="grille">${g.entrees.map(entree).join('')}</div>
+          </section>`
         )
         .join('') +
       `<p class="legende" style="margin-top:22px">

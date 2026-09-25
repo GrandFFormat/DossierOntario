@@ -684,3 +684,31 @@ body:not(.pret) main.colonne{min-height:100vh;}
 .entete-rang > .onglets{padding:0; margin:0 auto 0 4px; max-width:none; flex:0 1 auto; gap:2px; flex-wrap:nowrap;}
 .entete-rang > .onglets a{padding:6px 9px; white-space:nowrap;}
 @media (max-width:1100px){ .entete-rang > .onglets{order:3; flex-basis:100%; margin:0; flex-wrap:wrap;} }
+
+/* ---------- Lexique en couleur ----------
+   Une teinte par groupe, prise dans la palette du site (rouge de l'Ontario, jaune commun,
+   noir) — jamais une couleur de parti. --t : la teinte ; --t-txt : le texte posé dessus ;
+   --t-pale : le fond clair de l'explication. */
+.teinte-0{--t:#C8102E; --t-txt:#fff; --t-pale:#fde8e6;}
+.teinte-1{--t:#FFD24D; --t-txt:#131313; --t-pale:#fff6d6;}
+.teinte-2{--t:#131313; --t-txt:#fff; --t-pale:#ecebe6;}
+.teinte-3{--t:#851420; --t-txt:#fff; --t-pale:#f6e3e3;}
+.teinte-4{--t:#E8A200; --t-txt:#131313; --t-pale:#fdf0cf;}
+:root[data-theme="dark"] .groupe-lex, :root[data-theme="dark"] .raccourcis a{--t-pale:var(--paper-2);}
+:root[data-theme="dark"] .teinte-2{--t:#F3F1EA; --t-txt:#131313;}
+
+.raccourcis a[class^="teinte-"]{border-left:8px solid var(--t);}
+.raccourcis a b{display:inline-grid; place-items:center; width:20px; height:20px; margin-right:4px;
+  background:var(--t); color:var(--t-txt); font-size:11px;}
+
+.groupe-lex{margin:34px 0 10px;}
+.titre-lex{display:flex; align-items:center; gap:14px; margin:0 0 14px; padding:12px 16px;
+  background:var(--t); color:var(--t-txt); border:3px solid var(--ink); box-shadow:5px 5px 0 var(--ink);
+  font-size:26px; font-weight:900; text-transform:uppercase; letter-spacing:-.01em; line-height:1.1;}
+.titre-lex .compte{margin-left:auto; font-size:13px; font-weight:800; background:var(--card); color:var(--ink);
+  border:2px solid var(--ink); padding:2px 9px;}
+.num-lex{flex:none; display:grid; place-items:center; width:40px; height:40px; background:var(--card); color:var(--ink);
+  border:3px solid var(--ink); font-size:20px;}
+.groupe-lex .explication{background:var(--t-pale); border-left:8px solid var(--t);}
+.carte-lex{border-top:8px solid var(--t);}
+.carte-lex .carte-titre{display:inline; background:linear-gradient(transparent 60%, color-mix(in srgb, var(--t) 35%, transparent) 60%);}
