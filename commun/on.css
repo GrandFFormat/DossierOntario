@@ -656,3 +656,16 @@ main.colonne{min-height:100vh;}
 .presence-barre .repere-mediane{top:-22px; bottom:auto; transform:translateX(-50%); font-size:12px; font-weight:800; white-space:nowrap;}
 .presence-bornes{display:flex; justify-content:space-between; max-width:644px; font-size:12px; font-weight:700; color:var(--slate);}
 .presence-note{font-size:13px; color:var(--slate); border-top:1px solid var(--line-soft); padding-top:10px;}
+
+/* Contrôles de l'en-tête, comme DQ : A− 100 % A+ dans une seule boîte, lune ou soleil pour le thème. */
+.controles > .groupe-taille{display:flex; align-items:center; gap:2px; padding:0 4px; cursor:default; border-width:2px;}
+.controles > .groupe-taille:hover{background:var(--card); color:var(--ink);}
+.groupe-taille button{border:0; background:none; color:inherit; font:inherit; font-weight:800; font-size:13px; padding:0 10px; height:100%; cursor:pointer;}
+.groupe-taille button:hover{background:var(--yellow); color:var(--sur-clair);}
+.niveau-taille{font-size:11px; font-weight:700; color:var(--gold); min-width:36px; text-align:center;}
+.controles > .bouton-theme{width:var(--h-ctrl); padding:0; display:grid; place-items:center; border-width:2px;}
+.bouton-theme svg{width:18px; height:18px;}
+.bouton-theme .icone-soleil{display:none;}
+:root[data-theme="dark"] .bouton-theme .icone-lune{display:none;}
+:root[data-theme="dark"] .bouton-theme .icone-soleil{display:block;}
+.controles > [data-action="langue"]{border-width:2px; font-weight:800;}

@@ -411,8 +411,9 @@
 
     let zoom = Number(lire('dossier:zoom')) || 100;
     const appliquerZoom = () => {
-      document.documentElement.style.fontSize = `${zoom}%`;
+      document.body.style.zoom = zoom === 100 ? '' : String(zoom / 100);  // les tailles sont en px : seul zoom agrandit vraiment
       ranger('dossier:zoom', String(zoom));
+      const n = document.querySelector('[data-role="zoom"]'); if (n) n.textContent = `${zoom}%`;
     };
     document.querySelector('[data-action="plus"]')?.addEventListener('click', () => {
       zoom = Math.min(160, zoom + 10); appliquerZoom();

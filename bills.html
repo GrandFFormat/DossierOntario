@@ -15,8 +15,8 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="commun/on.css?v=5f8a86d170">
-<script src="commun/on.js?v=967b2fca22" defer></script>
+<link rel="stylesheet" href="commun/on.css?v=75defcd461">
+<script src="commun/on.js?v=900c3bbf04" defer></script>
 </head>
 <body data-vue="projets" data-donnees="bills">
 
@@ -32,9 +32,15 @@
       </a>
     </div>
     <div class="controles">
-      <button type="button" data-action="moins" data-i18n="entete.moins" aria-label="A−">A−</button>
-      <button type="button" data-action="plus" data-i18n="entete.plus" aria-label="A+">A+</button>
-      <button type="button" data-action="theme" data-i18n="entete.theme">Theme</button>
+      <div class="groupe-taille">
+        <button type="button" data-action="moins" aria-label="A−">A−</button>
+        <span class="niveau-taille" data-role="zoom">100%</span>
+        <button type="button" data-action="plus" aria-label="A+">A+</button>
+      </div>
+      <button type="button" class="bouton-theme" data-action="theme" data-i18n-title="entete.theme" title="Theme" aria-label="Theme">
+        <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+      </button>
       <button type="button" data-action="langue" data-i18n="entete.langue">Français</button>
     </div>
   </div>
