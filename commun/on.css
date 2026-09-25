@@ -600,9 +600,18 @@ img{max-width:100%;}
 .petitions > .lien-source{align-self:flex-start;}
 @media (max-width:900px){ .accueil-deux{grid-template-columns:1fr;} }
 
-/* Le rôle sur la carte d'un·e député·e (page commune député·e·s et ministres). */
-.carte-depute .role{margin:0; font-size:14.5px; line-height:1.4;}
-.carte-depute .role-ministre{font-weight:700;}
-.carte-depute .role-adjoint{font-style:italic; color:var(--slate);}
-.carte-ministre{border-left-width:8px;}
-.carte-depute .pastille-parti{margin-right:8px;}
+/* La carte d'un·e député·e, sur le plan des cartes de ministres de DQ : parti, NOM, rôle en
+   couleur, puis trois faits alignés et le courriel en pied. */
+.carte-depute{gap:8px; padding:16px 18px;}
+.depute-tete{display:flex; justify-content:space-between; align-items:center;}
+.depute-nom{margin:4px 0 0; font-weight:900; font-size:17px; line-height:1.2; text-transform:uppercase; letter-spacing:.01em;}
+.depute-nom a{color:var(--ink); text-decoration:none;}
+.depute-nom a:hover{color:var(--gold);}
+.depute-role{margin:0; font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12px; line-height:1.35; text-transform:uppercase; letter-spacing:.04em; color:var(--gold);}
+.depute-adjoint{color:var(--slate); text-transform:none; letter-spacing:0; font-style:italic; font-size:13px;}
+.depute-faits{margin:auto 0 0; padding-top:12px; display:flex; flex-direction:column; gap:5px;}
+.depute-faits div{display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid var(--line-soft); padding-bottom:4px;}
+.depute-faits dt{font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--slate);}
+.depute-faits dd{margin:0; font-weight:700; font-size:13.5px; text-align:right;}
+.depute-courriel{font-size:12px; color:var(--gold); text-decoration:underline; text-underline-offset:2px; word-break:break-all;}
+.tete-section{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; margin:34px 0 16px;}

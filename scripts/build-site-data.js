@@ -200,6 +200,25 @@ function main() {
     // du Conseil, première ministre en tête.
     const ministreParId = new Map((ministers?.ministres ?? []).filter((m) => !m.horsAssemblee).map((m, i) => [m.identifiant, { ...m, ordre: i }]));
     const adjointParNom = new Map((ministers?.adjointsParlementaires ?? []).map((a) => [cleNom(a.nom), a]));
+
+    // Deux faits par personne, comptés sur les données du site, comme sur les cartes de DQ :
+    //  - les votes nominatifs où son nom figure, sur ceux tenus DEPUIS son premier vote (une
+    //    personne élue en partielle n'est pas comptée absente des votes d'avant son arrivée).
+    //    L'Ontario ne consigne que qui a voté : un vote manqué peut être une absence ou un
+    //    choix, et le président de la Chambre ne vote pas. Ce n'est donc pas un taux de
+    //    présence officiel, et la page le dit ;
+    //  - les projets de loi qu'elle parraine (cleNom sur les parrains).
+    const votesNommes = votesSite.filter((v) => Array.isArray(v.votants) && v.votants.length);
+    const premierVote = new Map();
+    const exprimes = new Map();
+    for (const v of votesNommes) {
+      for (const [id] of v.votants) {
+        exprimes.set(id, (exprimes.get(id) ?? 0) + 1);
+        if (!premierVote.has(id) || v.date < premierVote.get(id)) premierVote.set(id, v.date);
+      }
+    }
+    const parraines = new Map();
+    for (const p of projets) for (const n of p.parrains) parraines.set(cleNom(n), (parraines.get(cleNom(n)) ?? 0) + 1);
     ecrire('members', {
       maj: members.lus,
       titresSource: ministers ? 'ONTERM — Ontario Data Catalogue' : null,
@@ -228,6 +247,11 @@ function main() {
             ordreCabinet: m ? m.ordre : null,
             adjointEn: a?.titreEn ?? null,
             adjointFr: a?.titreFr ?? null,
+            votesExprimes: exprimes.get(d.identifiant) ?? 0,
+            votesTenus: premierVote.has(d.identifiant)
+              ? votesNommes.filter((v) => v.date >= premierVote.get(d.identifiant)).length
+              : 0,
+            projetsParraines: parraines.get(cleNom(d.nom)) ?? 0,
           };
         })(),
       })),

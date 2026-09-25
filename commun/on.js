@@ -140,7 +140,10 @@
       'votes.proposePar': 'moved by',
       'deputes.titre': 'MPPs and cabinet', 'deputes.autres': 'The rest of the Legislature', 'deputes.aucun': 'No MPP matches.',
       'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding',
-      'deputes.circo': 'Riding', 'deputes.parti': 'Party', 'deputes.courriel': 'Email',
+      'deputes.circo': 'Riding', 'deputes.votes': 'Recorded votes', 'deputes.parraines': 'Bills sponsored',
+      'deputes.compteMinistres': (n) => `${n} ministers — official titles from ONTERM`,
+      'deputes.compteDeputes': (n) => `${n} MPPs`,
+      'deputes.votesNote': '“Recorded votes”: the divisions in which the member’s name appears, out of those held since their first one. Ontario records only who voted — a missed vote can be an absence or a choice, and the Speaker does not vote — so this is not an official attendance rate. “Bills sponsored” counts co-sponsorships.', 'deputes.parti': 'Party', 'deputes.courriel': 'Email',
       'cabinet.titre': 'Cabinet',
       'accueil.chapo': "Ontario's 124 MPPs pass the laws that shape schools, housing, health care and mining. DossierOntario follows every bill, every recorded vote and every member — from the official record, with a link back to it on each item.",
       'accueil.titre1': 'WHAT THE', 'accueil.titre2': 'LEGISLATURE', 'accueil.titre3': 'IS DOING',
@@ -278,7 +281,10 @@
       'votes.proposePar': 'proposée par',
       'deputes.titre': 'Député·e·s et ministres', 'deputes.autres': 'Le reste de l’Assemblée', 'deputes.aucun': 'Aucun·e député·e ne correspond.',
       'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription',
-      'deputes.circo': 'Circonscription', 'deputes.parti': 'Parti', 'deputes.courriel': 'Courriel',
+      'deputes.circo': 'Circonscription', 'deputes.votes': 'Votes nominatifs', 'deputes.parraines': 'Projets parrainés',
+      'deputes.compteMinistres': (n) => `${n} ministres — titres officiels d’ONTERM`,
+      'deputes.compteDeputes': (n) => `${n} député·e·s`,
+      'deputes.votesNote': '« Votes nominatifs » : les votes où le nom de la personne figure, sur ceux tenus depuis son premier. L’Ontario ne consigne que qui a voté — un vote manqué peut être une absence ou un choix, et le président de la Chambre ne vote pas — : ce n’est donc pas un taux de présence officiel. « Projets parrainés » compte aussi les coparrainages.', 'deputes.parti': 'Parti', 'deputes.courriel': 'Courriel',
       'cabinet.titre': 'Conseil des ministres',
       'accueil.chapo': "Les 124 député·e·s de l'Ontario adoptent les lois qui touchent les écoles, le logement, les soins et les mines. DossierOntario suit chaque projet de loi, chaque vote nominatif et chaque élu·e — à partir du compte rendu officiel, avec un lien vers lui sur chaque élément.",
       'accueil.titre1': 'CE QUE', 'accueil.titre2': 'L’ASSEMBLÉE', 'accueil.titre3': 'FAIT',
@@ -1458,16 +1464,22 @@
       })
       .join('');
 
+    // La carte suit celle des ministres de DQ : parti, NOM, rôle en couleur, puis trois faits
+    // alignés (circonscription, votes, projets parrainés) et le courriel en pied.
     const carte = (m) => {
       const parti = selonLangue(m.parti, m.partiFr) ?? '';
-      return `<article class="carte carte-depute ${m.ministreEn ? 'carte-ministre' : ''}">
-        <h3 class="carte-titre"><a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a></h3>
-        ${m.ministreEn ? `<p class="role role-ministre">${echapper(selonLangue(m.ministreEn, m.ministreFr))}</p>` : ''}
-        ${m.adjointEn ? `<p class="role role-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
-        <p><span class="pastille pastille-parti" title="${echapper(parti)}" style="background:${echapper(m.couleurParti ?? '#8B8578')};
-          border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span>
-          <span class="courant">${echapper(selonLangue(m.circonscription, m.circonscriptionFr) ?? '')}</span></p>
-        ${m.courriel ? `<p class="legende"><a class="lien-source" href="mailto:${echapper(m.courriel)}">${echapper(m.courriel)}</a></p>` : ''}
+      return `<article class="carte carte-depute">
+        <div class="depute-tete"><span class="pastille pastille-parti" title="${echapper(parti)}" style="background:${echapper(m.couleurParti ?? '#8B8578')};
+          border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span></div>
+        <h3 class="depute-nom"><a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a></h3>
+        ${m.ministreEn ? `<p class="depute-role">${echapper(selonLangue(m.ministreEn, m.ministreFr))}</p>` : ''}
+        ${m.adjointEn ? `<p class="depute-role depute-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
+        <dl class="depute-faits">
+          <div><dt>${mot('deputes.circo')}</dt><dd>${echapper(selonLangue(m.circonscription, m.circonscriptionFr) ?? '')}</dd></div>
+          <div><dt>${mot('deputes.votes')}</dt><dd>${m.votesTenus ? `${m.votesExprimes} / ${m.votesTenus}` : '—'}</dd></div>
+          <div><dt>${mot('deputes.parraines')}</dt><dd>${m.projetsParraines}</dd></div>
+        </dl>
+        ${m.courriel ? `<a class="depute-courriel" href="mailto:${echapper(m.courriel)}">✉ ${echapper(m.courriel)}</a>` : ''}
       </article>`;
     };
 
@@ -1475,6 +1487,7 @@
       <div class="chiffres">${etat}</div>
       ${d.avisEn ? `<div class="encadre">${echapper(selonLangue(d.avisEn, d.avisFr))}</div>` : ''}
       <div class="encadre">${mot('intro.cabinet')} ${mot('deputes.secretaire')}</div>
+      <div class="encadre">${mot('deputes.votesNote')}</div>
       <div class="barre-filtres">
         <input class="champ" type="search" data-role="recherche" placeholder="${mot('deputes.recherche')}" aria-label="${mot('deputes.recherche')}">
       </div>
@@ -1490,11 +1503,11 @@
       const autres = d.deputes.filter((m) => !m.ministreEn && correspond(m));
       cible.querySelector('[data-role="liste"]').innerHTML =
         (ministres.length
-          ? `<h2 class="titre-groupe" id="cabinet">${mot('cabinet.titre')} <span class="compte">${ministres.length}</span></h2>
+          ? `<div class="tete-section" id="cabinet"><h2 class="grand-titre">${mot('cabinet.titre')}</h2><span class="legende">${mot('deputes.compteMinistres', ministres.length)}</span></div>
              <div class="grille">${ministres.map(carte).join('')}</div>`
           : '') +
           (autres.length
-            ? `<h2 class="titre-groupe">${mot('deputes.autres')} <span class="compte">${autres.length}</span></h2>
+            ? `<div class="tete-section"><h2 class="grand-titre">${mot('deputes.autres')}</h2><span class="legende">${mot('deputes.compteDeputes', autres.length)}</span></div>
                <div class="grille">${autres.map(carte).join('')}</div>`
             : '') || `<p class="courant">${mot('deputes.aucun')}</p>`;
     };
