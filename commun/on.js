@@ -421,7 +421,10 @@
       const pastille =
         p.etape === 5 ? 'pastille-sanctionne' : p.etape >= 2 ? 'pastille-encours' : '';
       const etapes = [1, 2, 3, 4, 5]
-        .map((n) => `<div class="etape ${p.etape >= n ? 'franchie' : ''}">${mot(`etape.${n}`)}</div>`)
+        // Comme sur DQ : les étapes passées pleines, l'étape ACTUELLE en jaune, les suivantes
+        // en creux. Avant, les cinq étaient pleines pour une loi sanctionnée : on ne voyait pas
+        // où le projet s'était arrêté.
+        .map((n) => `<div class="etape ${p.etape > n ? 'franchie' : p.etape === n ? 'courante' : ''}">${mot(`etape.${n}`)}</div>`)
         .join('');
       const lien = selonLangue(p.url, p.urlFr);
       const parti = selonLangue(p.parrainParti, p.parrainPartiFr);
@@ -514,6 +517,17 @@
       cible.addEventListener('toggle', (e) => {
         if (e.target.matches?.('.projet-detail') && e.target.open) remplirResume(e.target);
       }, true);
+      // Un clic N'IMPORTE OÙ sur la carte l'ouvre ou la ferme, comme sur DossierQuébec — pas
+      // seulement sur la petite ligne « What this bill does » en bas. Sauf sur un lien ou un
+      // bouton (ils font leur travail), sur la ligne du pli elle-même (le navigateur s'en
+      // charge déjà), et quand on vient de sélectionner du texte pour le copier.
+      cible.addEventListener('click', (e) => {
+        const carte = e.target.closest?.('.carte-projet');
+        if (!carte || e.target.closest('a, button, summary')) return;
+        if (String(window.getSelection?.() ?? '').trim()) return;
+        const pli = carte.querySelector('.projet-detail');
+        if (pli) pli.open = !pli.open;
+      });
     }
 
     const retenu = (p, f) =>

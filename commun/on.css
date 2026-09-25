@@ -201,8 +201,16 @@ img{max-width:100%;}
 .projet-tete-texte{display:flex; flex-direction:column; gap:5px; min-width:0;}
 .carte-projet .carte-titre{font-size:20px;}
 .projet-pastilles{display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end;}
-.carte-projet .etapes{flex-wrap:nowrap; margin:0;}
-.carte-projet .etape{flex:1 1 0;}
+.carte-projet{cursor:pointer;}
+/* Les étapes en petites pastilles, comme sur DQ : passées pleines, actuelle en jaune, suivantes
+   en creux. Cinq barres rouges pleine largeur se lisaient comme une alerte, pas comme un chemin. */
+.carte-projet .etapes{flex-wrap:wrap; margin:0;}
+.carte-projet .etape{flex:0 0 auto; border-color:var(--line); padding:6px 11px; font-size:11px; color:var(--slate);}
+.carte-projet .etape.franchie{color:var(--sur-fonce);}
+.carte-projet .etape.courante{background:var(--yellow); border-color:var(--line); color:#131313;}
+.carte-projet .projet-detail{border-top:2px dashed var(--line); padding-top:12px;}
+.carte-projet .projet-detail > summary{color:var(--gold);}
+.carte-projet .sous-titre{color:var(--gold); font-weight:800; font-size:13px; letter-spacing:.05em;}
 .projet-detail-corps{
   display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:30px; padding-top:16px;
 }
@@ -220,13 +228,12 @@ img{max-width:100%;}
   .carte-projet{padding:16px;}
   .projet-tete{grid-template-columns:auto minmax(0,1fr);}
   .projet-pastilles{grid-column:1 / -1; justify-content:flex-start;}
-  .carte-projet .etapes{flex-wrap:wrap;}
-  .carte-projet .etape{flex:1 1 90px;}
   .projet-detail-corps{grid-template-columns:1fr; gap:18px;}
 }
-.resume{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px;}
-.resume li{font-size:15.5px; line-height:1.5;}
-.resume li::marker{color:var(--gold); font-weight:900;}
+/* Des puces qui se lisent d'un trait, comme sur DQ : plus grandes, plus serrées. */
+.resume{margin:0; padding-left:22px; display:flex; flex-direction:column; gap:3px;}
+.resume li{font-size:16.5px; line-height:1.35; color:var(--ink);}
+.resume li::marker{color:var(--ink);}
 /* L'avertissement colle au résumé qu'il concerne, pas à la note officielle en dessous. */
 .avis-ia{margin-top:-4px; text-transform:none; letter-spacing:0; font-style:italic;}
 .sous-titre{
