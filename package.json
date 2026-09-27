@@ -11,9 +11,10 @@
     "scrape:votes": "node scrapers/votes.js",
     "scrape:members": "node scrapers/members.js",
     "scrape:ministers": "node scrapers/ministers.js",
+    "build:analytics": "npx esbuild commun/analytics.js --bundle --format=iife --outfile=commun/analytics.bundle.js --platform=browser --minify",
     "build:data": "node scripts/build-site-data.js",
     "build:pages": "node scripts/build-pages.js",
-    "build": "npm run build:data && npm run build:pages",
+    "build": "npm run build:analytics && npm run build:data && npm run build:pages",
     "scrape:votes-sans-noms": "node scrapers/votes-sans-noms.js",
     "scrape:comites": "node scrapers/comites.js",
     "verifier:votes": "node scripts/verifier-votes.js",
@@ -24,7 +25,11 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
+    "@vercel/analytics": "^2.0.1",
     "cheerio": "^1.0.0",
     "csv-parse": "^7.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }

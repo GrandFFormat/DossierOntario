@@ -104,8 +104,8 @@
 </footer>
 
 <button class="haut-de-page" data-role="haut" data-i18n-title="haut.titre" title="Back to top" aria-label="Back to top" hidden>↑</button>
-<!-- Vercel Web Analytics, comme DQ : sans témoin (cookie), sans donnée personnelle. -->
-<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-<script defer src="/_vercel/insights/script.js"></script>
+<!-- Vercel Web Analytics with @vercel/analytics package -->
+<!-- Modern approach: no cookies, no personal data collection -->
+<script src="commun/analytics.bundle.js?v=623d15675c" defer></script>
 </body>
 </html>

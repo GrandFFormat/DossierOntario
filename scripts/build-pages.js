@@ -20,7 +20,11 @@ const MODELE = 'gabarit.html';
 // (?v=…) : une page neuve demande la paire neuve, une page en cache garde sa paire à elle —
 // jamais un mélange des deux.
 const empreinte = (chemin) => createHash('sha1').update(readFileSync(chemin)).digest('hex').slice(0, 10);
-const VERSIONS = { 'commun/on.css': empreinte('commun/on.css'), 'commun/on.js': empreinte('commun/on.js') };
+const VERSIONS = { 
+  'commun/on.css': empreinte('commun/on.css'), 
+  'commun/on.js': empreinte('commun/on.js'),
+  'commun/analytics.bundle.js': empreinte('commun/analytics.bundle.js')
+};
 
 const PAGES = [
   {
@@ -220,7 +224,7 @@ for (const page of PAGES) {
     .replace(/\{\{BANDES\}\}/g, () => page.bandes ?? '')
     .replace(/\{\{BANDES_BAS\}\}/g, () => page.bandesBas ?? '')
     .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
-    .replace(/(href|src)="(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="${chemin}?v=${VERSIONS[chemin]}"`);
+    .replace(/(href|src)="(commun\/(?:on\.(?:css|js)|analytics\.bundle\.js))"/g, (_, attr, chemin) => `${attr}="${chemin}?v=${VERSIONS[chemin]}"`);
 
   for (const autre of PAGES) {
     html = html.replace(`{{ACTIF_${autre.vue}}}`, autre.fichier === page.fichier ? 'actif' : '');
