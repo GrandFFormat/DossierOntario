@@ -160,6 +160,18 @@ const PAGES = [
   <section data-vue="lexique"></section>`,
   },
   {
+    // « …et moi » dans le pied de page : pourquoi ce site existe, et ses mises à jour.
+    fichier: 'about.html',
+    vue: 'apropos',
+    donnees: 'contenu:journal',
+    titre: 'Why this site exists',
+    description: 'Who is behind DossierOntario, why it exists, and every update made to the site.',
+    contenu: `  <h1 class="titre-vue" data-i18n="etmoi.titre">Why this site exists</h1>
+  <div class="encadre texte-apropos" data-i18n-html="etmoi.texte"></div>
+  <h2 class="titre-vue" data-i18n="etmoi.maj">Site updates</h2>
+  <section data-vue="apropos"><ul class="journal" data-role="journal"></ul></section>`,
+  },
+  {
     fichier: 'sources.html',
     vue: 'sources',
     donnees: '',

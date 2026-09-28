@@ -719,20 +719,11 @@ body:not(.pret) main.colonne{min-height:100vh;}
 .lien-icone svg{width:15px; height:15px;}
 .pied-claude{font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:13px; text-transform:uppercase;
   letter-spacing:.06em; color:#B8B4AA;}
-.pied-etmoi{background:none; border:0; padding:0; margin-left:4px; font:inherit; letter-spacing:inherit;
-  text-transform:inherit; color:var(--yellow); cursor:pointer;}
+.pied-liens a.pied-etmoi{margin-left:4px; color:var(--yellow); font-size:inherit;}
 .pied-etmoi:hover{text-decoration:underline;}
 
-/* La fenêtre « et moi » */
-.etmoi{max-width:620px; width:calc(100% - 32px); border:3px solid var(--ink); box-shadow:8px 8px 0 var(--ink);
-  background:var(--card); color:var(--ink); padding:26px 28px;}
-.etmoi::backdrop{background:rgba(19,19,19,.6);}
-.etmoi h2{margin:0 0 14px; font-size:26px; font-weight:900; text-transform:uppercase; border-bottom:4px solid var(--yellow); padding-bottom:8px;}
-.etmoi p{margin:0 0 12px; font-size:16px; line-height:1.6;}
-.etmoi form{margin-top:16px; text-align:right;}
-.etmoi{max-height:88vh; overflow:auto;}
-.etmoi-maj{margin:22px 0 8px; font-size:15px; font-weight:900; text-transform:uppercase; letter-spacing:.03em;
-  border-top:3px solid var(--ink); padding-top:14px;}
+.texte-apropos p{margin:0 0 12px; font-size:17px; line-height:1.65; max-width:70ch;}
+.texte-apropos p:last-child{margin-bottom:0;}
 .journal{list-style:none; margin:0; padding:0;}
 .journal li{padding:7px 0; border-bottom:1px solid var(--line-soft); font-size:14px; line-height:1.5;}
 .journal time{display:inline-block; min-width:118px; font-family:'Archivo Narrow',sans-serif; font-weight:700;
