@@ -62,7 +62,9 @@
       'mission.eux': '<li>Organises everything by official document — bills, minutes, Hansard</li><li>The legal, complete and authoritative source</li><li>Neutral: it never summarises and never compares</li>',
       'mission.nousTitre': 'What this site tries to do',
       'mission.nous': '<li>Organises everything by bill: one card, its whole path</li><li>Translates the jargon into ordinary words (see the Lexicon)</li><li>Says what is missing and why, and links back to the source on every item</li>',
-      'pied.code': 'Source code',
+      'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
+      'etmoi.titre': 'Why this site exists', 'etmoi.fermer': 'Close',
+      'etmoi.texte': '<p>If people are going to understand politics, it has to be brought down to their level. When I first tried to get into politics, not only did I not know the lingo — the bills themselves were two lines and fifty PDFs. Most people would have just moved on.</p><p>So I had the idea of using artificial intelligence, first to analyse all of it, and then to explain it in plain words. That is how DossierCanada.ca was born. On top of the AI summaries, I put together a lexicon that explains the basics of political jargon. Think of me as the plain-language legal guide — but for politics!</p><p><b>I’m Martin Archambault, I’m 45, and dossiercanada.ca is your first step into democracy!</b></p>',
       'mission.titre': 'Read the record, not the press release',
       'mission.texte': "Every bill, every recorded vote and every member, taken from the Assembly's own record and linked back to it. Free, bilingual, and not official.",
       'projets.titre': 'Bills', 'projets.recherche': 'Search by number or title',
@@ -212,7 +214,9 @@
       'mission.eux': '<li>Organise tout par document officiel — projets, procès-verbaux, Journal des débats</li><li>La source légale, complète et qui fait foi</li><li>Neutre : il ne résume jamais et ne compare jamais</li>',
       'mission.nousTitre': 'Ce que ce site essaie de faire',
       'mission.nous': '<li>Organise tout par projet de loi : une carte, tout son parcours</li><li>Traduit le jargon en mots de tous les jours (voir le Lexique)</li><li>Dit ce qui manque et pourquoi, et renvoie à la source sur chaque élément</li>',
-      'pied.code': 'Code source',
+      'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
+      'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.fermer': 'Fermer',
+      'etmoi.texte': '<p>Si les gens veulent comprendre la politique, il faut la ramener à leur niveau. Quand j’ai voulu m’intéresser à la politique, en plus de ne pas connaître le jargon, je tombais sur des projets de loi de deux lignes et cinquante PDF. Le commun des mortels aurait passé son chemin.</p><p>J’ai eu l’idée d’utiliser l’intelligence artificielle pour, dans un premier temps, tout analyser et, dans un deuxième temps, tout vulgariser. C’est comme ça que DossierCanada.ca est né. En plus des résumés produits par l’IA, j’ai mis à la disposition des gens un lexique qui explique les fondements du jargon politique. Je suis l’Éducaloi de la politique!</p><p><b>Moi, c’est Martin Archambault, j’ai 45 ans, et dossiercanada.ca, c’est votre premier pas vers la démocratie!</b></p>',
       'mission.titre': 'Lire le compte rendu, pas le communiqué',
       'mission.texte': "Chaque projet de loi, chaque vote nominatif et chaque élu·e, pris dans le compte rendu de l'Assemblée et reliés à lui. Gratuit, bilingue, et non officiel.",
       'projets.titre': 'Projets de loi', 'projets.recherche': 'Chercher par numéro ou par titre',
@@ -418,6 +422,11 @@
       appliquerLangue();
       rendre();
     });
+
+    // « …et moi » dans le pied de page ouvre le mot de Martin.
+    document.querySelector('[data-role="etmoi"]')?.addEventListener('click', () =>
+      document.querySelector('[data-role="etmoi-boite"]')?.showModal()
+    );
 
     let zoom = Number(lire('dossier:zoom')) || 100;
     const appliquerZoom = () => {
