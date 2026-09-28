@@ -22,8 +22,8 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="commun/on.css?v=6ad84b14ad">
-<script src="commun/on.js?v=0526c8a61e" defer></script>
+<link rel="stylesheet" href="commun/on.css?v=15cf448109">
+<script src="commun/on.js?v=4c1628cdc2" defer></script>
 </head>
 <body data-vue="apropos" data-donnees="contenu:journal">
 
@@ -64,7 +64,23 @@
 
 <main class="colonne">
   <h1 class="titre-vue" data-i18n="etmoi.titre">Why this site exists</h1>
-  <div class="encadre texte-apropos" data-i18n-html="etmoi.texte"></div>
+  <!-- Le même bloc que DQ : photo, bulle, puis le mot. -->
+  <div class="createur">
+    <div class="createur-tete">
+      <img class="createur-photo" src="/commun/martin.jpg" width="120" height="120" alt="Martin Archambault">
+      <div class="createur-bulle">
+        <span data-i18n="bd.intro1">Hi! My name is</span>
+        <strong class="createur-nom">Martin Archambault</strong>
+        <span data-i18n="bd.intro3">I'm 45, and dossiercanada.ca is your first step into democracy!</span>
+      </div>
+    </div>
+    <div class="createur-mot">
+      <p class="createur-lead" data-i18n="bd.mot1"></p>
+      <p data-i18n="bd.mot2"></p>
+      <p data-i18n="bd.mot3"></p>
+      <p data-i18n="bd.mot4"></p>
+    </div>
+  </div>
   <h2 class="titre-vue" data-i18n="etmoi.maj">Site updates</h2>
   <section data-vue="apropos"><ul class="journal" data-role="journal"></ul></section>
 </main>

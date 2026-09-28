@@ -167,7 +167,23 @@ const PAGES = [
     titre: 'Why this site exists',
     description: 'Who is behind DossierOntario, why it exists, and every update made to the site.',
     contenu: `  <h1 class="titre-vue" data-i18n="etmoi.titre">Why this site exists</h1>
-  <div class="encadre texte-apropos" data-i18n-html="etmoi.texte"></div>
+  <!-- Le même bloc que DQ : photo, bulle, puis le mot. -->
+  <div class="createur">
+    <div class="createur-tete">
+      <img class="createur-photo" src="/commun/martin.jpg" width="120" height="120" alt="Martin Archambault">
+      <div class="createur-bulle">
+        <span data-i18n="bd.intro1">Hi! My name is</span>
+        <strong class="createur-nom">Martin Archambault</strong>
+        <span data-i18n="bd.intro3">I'm 45, and dossiercanada.ca is your first step into democracy!</span>
+      </div>
+    </div>
+    <div class="createur-mot">
+      <p class="createur-lead" data-i18n="bd.mot1"></p>
+      <p data-i18n="bd.mot2"></p>
+      <p data-i18n="bd.mot3"></p>
+      <p data-i18n="bd.mot4"></p>
+    </div>
+  </div>
   <h2 class="titre-vue" data-i18n="etmoi.maj">Site updates</h2>
   <section data-vue="apropos"><ul class="journal" data-role="journal"></ul></section>`,
   },
