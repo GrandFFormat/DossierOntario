@@ -1,0 +1,21 @@
+{
+  "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
+  "entrees": [
+    { "date": "2026-09-28", "fr": "Le pied de page mène à la page Facebook, au code source, et à ce mot.", "en": "The footer now links to the Facebook page, the source code, and this note." },
+    { "date": "2026-09-26", "fr": "Mesure d'audience sans témoin (cookie) ni donnée personnelle.", "en": "Visitor counts, with no cookies and no personal data." },
+    { "date": "2026-09-25", "fr": "Lexique en couleur : chaque groupe de mots a sa teinte et son numéro.", "en": "The lexicon in colour: each group of terms has its own shade and number." },
+    { "date": "2026-09-25", "fr": "Projets de loi : chaque groupe se replie derrière son titre, 5 projets à la fois, puis « Voir 10 de plus ».", "en": "Bills: each group folds behind its heading, 5 bills at a time, then “Show 10 more”." },
+    { "date": "2026-09-25", "fr": "L'en-tête tient sur une seule rangée.", "en": "The header fits on a single row." },
+    { "date": "2026-09-25", "fr": "Lois omnibus : 28 projets qui touchent plusieurs lois à la fois sont signalés, et résumés annexe par annexe. Un filtre « Omnibus » les regroupe.", "en": "Omnibus bills: 28 bills that change several laws at once are flagged and summarised schedule by schedule. An “Omnibus” filter groups them." },
+    { "date": "2026-09-25", "fr": "Un seul projet de loi ouvert à la fois ; « Challenger » et « Partager » en haut de la carte.", "en": "One bill open at a time; “Challenge” and “Share” at the top of the card." },
+    { "date": "2026-09-25", "fr": "Les filtres « Devenus lois » et « En cours » se combinent avec le type de projet.", "en": "The “Became law” and “In progress” filters combine with the bill type." },
+    { "date": "2026-09-24", "fr": "Député·e·s : la présence aux votes en %, en couleur, avec un encadré pour la lire.", "en": "MPPs: voting attendance as a percentage, in colour, with a box explaining how to read it." },
+    { "date": "2026-09-24", "fr": "Député·e·s et Conseil des ministres sur une seule page, un bouton par groupe et par parti.", "en": "MPPs and cabinet on one page, with a button per group and per party." },
+    { "date": "2026-09-24", "fr": "Accueil : les projets challengés, les projets récemment actifs, « Quoi de neuf » et les pétitions.", "en": "Home: challenged bills, recently active bills, “What's new” and petitions." },
+    { "date": "2026-09-24", "fr": "Challenger un projet de loi une fois connecté, et le partager.", "en": "Challenge a bill once signed in, and share it." },
+    { "date": "2026-09-24", "fr": "Chaque projet de loi a son résumé en langage clair, rédigé par une IA à partir du texte officiel.", "en": "Every bill has a plain-language summary, written by AI from the official text." },
+    { "date": "2026-09-24", "fr": "Un onglet Comités : chaque séance, de quoi elle a parlé, et sa transcription.", "en": "A Committees tab: every sitting, what it covered, and its transcript." },
+    { "date": "2026-09-24", "fr": "Un lexique : les mots du Parlement, expliqués avec des mots de tous les jours.", "en": "A lexicon: the words of Parliament, explained in everyday words." },
+    { "date": "2026-09-24", "fr": "Mise en ligne de DossierOntario : projets de loi, votes, député·e·s et ministres.", "en": "DossierOntario goes live: bills, votes, MPPs and ministers." }
+  ]
+}
