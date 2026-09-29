@@ -62,6 +62,8 @@
       'mission.eux': '<li>Organises everything by official document — bills, minutes, Hansard</li><li>The legal, complete and authoritative source</li><li>Neutral: it never summarises and never compares</li>',
       'mission.nousTitre': 'What this site tries to do',
       'mission.nous': '<li>Organises everything by bill: one card, its whole path</li><li>Translates the jargon into ordinary words (see the Lexicon)</li><li>Says what is missing and why, and links back to the source on every item</li>',
+      'temoins.texte': 'This site uses Google Analytics cookies to count visits. Nothing is set unless you accept.',
+      'temoins.oui': 'Accept', 'temoins.non': 'Refuse',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       'bd.intro1': 'Hi! My name is', 'bd.intro3': 'I’m 45, and dossiercanada.ca is your first step into democracy!',
@@ -218,6 +220,8 @@
       'mission.eux': '<li>Organise tout par document officiel — projets, procès-verbaux, Journal des débats</li><li>La source légale, complète et qui fait foi</li><li>Neutre : il ne résume jamais et ne compare jamais</li>',
       'mission.nousTitre': 'Ce que ce site essaie de faire',
       'mission.nous': '<li>Organise tout par projet de loi : une carte, tout son parcours</li><li>Traduit le jargon en mots de tous les jours (voir le Lexique)</li><li>Dit ce qui manque et pourquoi, et renvoie à la source sur chaque élément</li>',
+      'temoins.texte': 'Ce site utilise les témoins (cookies) de Google Analytics pour compter les visites. Rien n’est enregistré sans votre accord.',
+      'temoins.oui': 'Accepter', 'temoins.non': 'Refuser',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       'bd.intro1': 'Bonjour, moi c’est', 'bd.intro3': 'j’ai 45 ans et dossiercanada.ca, c’est votre premier pas vers la démocratie !',
@@ -430,6 +434,18 @@
       appliquerLangue();
       rendre();
     });
+
+    // Témoins : le bandeau ne revient pas une fois qu'on a répondu, oui ou non.
+    const bandeau = document.querySelector('[data-role="temoins"]');
+    if (bandeau && !lire('dossier:temoins')) bandeau.hidden = false;
+    bandeau?.querySelectorAll('[data-temoins]').forEach((b) =>
+      b.addEventListener('click', () => {
+        const oui = b.dataset.temoins === 'oui';
+        ranger('dossier:temoins', oui ? 'oui' : 'non');
+        if (oui && typeof window.gtag === 'function') window.gtag('consent', 'update', { analytics_storage: 'granted' });
+        bandeau.hidden = true;
+      })
+    );
 
     // « …et moi » dans le pied de page ouvre le mot de Martin.
 

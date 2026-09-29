@@ -7,6 +7,12 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  // Consentement : refusé par défaut ; accordé seulement si la personne a dit oui (bandeau).
+  var choix = null; try { choix = localStorage.getItem('dossier:temoins'); } catch (e) {}
+  gtag('consent', 'default', {
+    analytics_storage: choix === 'oui' ? 'granted' : 'denied',
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
+  });
   gtag('js', new Date());
   gtag('config', 'G-0N4BYF7Y2Z');
 </script>
@@ -30,8 +36,8 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="commun/on.css?v=15cf448109">
-<script src="commun/on.js?v=4c1628cdc2" defer></script>
+<link rel="stylesheet" href="commun/on.css?v=8585626ba8">
+<script src="commun/on.js?v=512000227e" defer></script>
 </head>
 <body data-vue="projets" data-donnees="bills">
 
@@ -107,6 +113,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Bandeau des témoins (cookies) : Google Analytics n'en pose aucun avant un « oui ». -->
+<div class="bandeau-temoins" data-role="temoins" hidden>
+  <p data-i18n="temoins.texte">This site uses Google Analytics cookies to count visits. Nothing is set unless you accept.</p>
+  <div class="bandeau-temoins-boutons">
+    <button type="button" class="filtre" data-temoins="non" data-i18n="temoins.non">Refuse</button>
+    <button type="button" class="filtre actif" data-temoins="oui" data-i18n="temoins.oui">Accept</button>
+  </div>
+</div>
 
 <button class="haut-de-page" data-role="haut" data-i18n-title="haut.titre" title="Back to top" aria-label="Back to top" hidden>↑</button>
 <!-- Vercel Web Analytics, comme DQ : sans témoin (cookie), sans donnée personnelle. -->

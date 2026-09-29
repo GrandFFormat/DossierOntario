@@ -750,3 +750,11 @@ body:not(.pret) main.colonne{min-height:100vh;}
   .createur-bulle{padding:11px 14px 12px; font-size:13.5px;}
   .createur-nom{font-size:18px;}
 }
+
+/* Bandeau des témoins, en bas de l'écran */
+.bandeau-temoins{position:fixed; left:16px; right:16px; bottom:16px; z-index:60; max-width:760px; margin:0 auto;
+  display:flex; flex-wrap:wrap; align-items:center; gap:12px 20px; padding:14px 18px;
+  background:var(--card); color:var(--ink); border:3px solid var(--ink); box-shadow:6px 6px 0 var(--ink);}
+.bandeau-temoins[hidden]{display:none;}
+.bandeau-temoins p{margin:0; flex:1 1 320px; font-size:14px; line-height:1.5;}
+.bandeau-temoins-boutons{display:flex; gap:8px;}
