@@ -758,3 +758,12 @@ body:not(.pret) main.colonne{min-height:100vh;}
 .bandeau-temoins[hidden]{display:none;}
 .bandeau-temoins p{margin:0; flex:1 1 320px; font-size:14px; line-height:1.5;}
 .bandeau-temoins-boutons{display:flex; gap:8px;}
+
+/* ---------- La bande noire qui défile, recopiée de DossierCanada (.dq-ticker) ---------- */
+:root{--t-rose:#FF90C8; --t-cyan:#7DE0E6; --t-lime:#C6F24E;}
+.ticker{background:#131313; color:#F2F0EA; overflow:hidden;}
+.ticker-piste{display:flex; white-space:nowrap; width:max-content; animation:onTicker 32s linear infinite;
+  font-family:'Archivo Narrow',sans-serif; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; padding:7px 0;}
+.ticker:hover .ticker-piste{animation-play-state:paused;}
+@keyframes onTicker{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){ .ticker-piste{animation:none;} }

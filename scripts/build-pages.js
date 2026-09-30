@@ -240,7 +240,7 @@ for (const page of PAGES) {
     .replace(/\{\{DESCRIPTION\}\}/g, page.description)
     .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
     .replace(/\{\{VUE\}\}/g, page.vue)
-    .replace(/\{\{DONNEES\}\}/g, page.donnees)
+    .replace(/\{\{DONNEES\}\}/g, page.donnees.split(/\s+/).includes('apercu') ? page.donnees : `${page.donnees} apercu`.trim())
     // Les bandes pleine largeur vivent hors de la colonne : seule l'accueil en a.
     // L'alerte se lit AVANT les chiffres ; la mission se lit APRÈS, en bas de page,
     // comme sur DossierQuébec — on explique ce qu'on essaie de faire à qui a déjà vu

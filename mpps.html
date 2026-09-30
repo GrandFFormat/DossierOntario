@@ -36,10 +36,14 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="commun/on.css?v=8585626ba8">
-<script src="commun/on.js?v=512000227e" defer></script>
+<link rel="stylesheet" href="commun/on.css?v=62e5447425">
+<script src="commun/on.js?v=583fb8d3e6" defer></script>
 </head>
-<body data-vue="deputes" data-donnees="members">
+<body data-vue="deputes" data-donnees="members apercu">
+
+<!-- La bande qui défile, recopiée de DossierCanada (.dq-ticker). Remplie par on.js
+     avec les chiffres du jour (apercu.json) ; contenu en double pour boucler sans couture. -->
+<div class="ticker" aria-hidden="true"><div class="ticker-piste" data-role="ticker"></div></div>
 
 <header class="entete">
   <div class="entete-rang">

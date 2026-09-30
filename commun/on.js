@@ -64,6 +64,10 @@
       'mission.nous': '<li>Organises everything by bill: one card, its whole path</li><li>Translates the jargon into ordinary words (see the Lexicon)</li><li>Says what is missing and why, and links back to the source on every item</li>',
       'temoins.texte': 'This site uses Google Analytics cookies to count visits. Nothing is set unless you accept.',
       'temoins.oui': 'Accept', 'temoins.non': 'Refuse',
+      'ticker.legislature': (l, s) => `${l}th Parliament — ${s === 1 ? '1st' : s === 2 ? '2nd' : s === 3 ? '3rd' : s + 'th'} session`,
+      'ticker.votes': (n) => `${n} recorded votes`, 'ticker.projets': (n) => `${n} bills tracked`,
+      'ticker.lois': (n) => `${n} became law`, 'ticker.sieges': (n) => `${n} seats`,
+      'ticker.defis': 'Bills challenged by citizens', 'ticker.devise': 'Independent citizen site · real public data',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       'bd.intro1': 'Hi! My name is', 'bd.intro3': 'I’m 45, and dossiercanada.ca is your first step into democracy!',
@@ -222,6 +226,10 @@
       'mission.nous': '<li>Organise tout par projet de loi : une carte, tout son parcours</li><li>Traduit le jargon en mots de tous les jours (voir le Lexique)</li><li>Dit ce qui manque et pourquoi, et renvoie à la source sur chaque élément</li>',
       'temoins.texte': 'Ce site utilise les témoins (cookies) de Google Analytics pour compter les visites. Rien n’est enregistré sans votre accord.',
       'temoins.oui': 'Accepter', 'temoins.non': 'Refuser',
+      'ticker.legislature': (l, s) => `${l}e législature — ${s === 1 ? '1re' : s + 'e'} session`,
+      'ticker.votes': (n) => `${n} votes nominatifs enregistrés`, 'ticker.projets': (n) => `${n} projets de loi suivis`,
+      'ticker.lois': (n) => `${n} devenus lois`, 'ticker.sieges': (n) => `${n} sièges`,
+      'ticker.defis': 'Projets challengés par les citoyen·ne·s', 'ticker.devise': 'Site citoyen indépendant · vraies données publiques',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       'bd.intro1': 'Bonjour, moi c’est', 'bd.intro3': 'j’ai 45 ans et dossiercanada.ca, c’est votre premier pas vers la démocratie !',
@@ -1716,8 +1724,33 @@
       : mot('relache.texteSansRetour', date(cal.derniereSeance));
   }
 
+  // La bande noire : législature, votes, projets, sièges, puis la devise. Sans apercu.json,
+  // elle se tait plutôt que d'afficher un faux zéro (même règle que DQ).
+  function remplirTicker() {
+    const piste = document.querySelector('[data-role="ticker"]');
+    const a = DONNEES.apercu;
+    if (!piste) return;
+    const c = a?.chiffres;
+    const items = [
+      [mot('ticker.legislature', a?.legislature ?? 44, a?.session ?? 1), 'var(--yellow)'],
+      ...(c ? [
+        [mot('ticker.votes', c.votes), 'var(--t-rose)'],
+        [mot('ticker.projets', c.projets), 'var(--t-cyan)'],
+        [mot('ticker.lois', c.sanctionnes), 'var(--t-lime)'],
+        [mot('ticker.sieges', c.sieges), 'var(--t-rose)'],
+      ] : []),
+      [mot('ticker.defis'), 'var(--t-lime)'],
+      [mot('ticker.devise'), 'var(--yellow)'],
+    ];
+    const ligne = `<span>&nbsp;${items
+      .map(([txt, coul]) => `<span style="color:${coul}">●</span> ${echapper(txt)}`)
+      .join('&nbsp;&nbsp;&nbsp;')}&nbsp;&nbsp;&nbsp;</span>`;
+    piste.innerHTML = ligne + ligne;
+  }
+
   function rendre() {
     appliquerLangue();
+    remplirTicker();
     const vue = document.body.dataset.vue;
     if (VUES[vue]) VUES[vue]();
     poserRelache();

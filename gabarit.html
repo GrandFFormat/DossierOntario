@@ -44,6 +44,10 @@
 </head>
 <body data-vue="{{VUE}}" data-donnees="{{DONNEES}}">
 
+<!-- La bande qui défile, recopiée de DossierCanada (.dq-ticker). Remplie par on.js
+     avec les chiffres du jour (apercu.json) ; contenu en double pour boucler sans couture. -->
+<div class="ticker" aria-hidden="true"><div class="ticker-piste" data-role="ticker"></div></div>
+
 <header class="entete">
   <div class="entete-rang">
     <div class="marque">

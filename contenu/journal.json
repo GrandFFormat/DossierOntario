@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-09-30",
+      "fr": "Une bande noire qui défile en haut de chaque page, avec les chiffres du jour, comme sur DossierCanada.",
+      "en": "A scrolling black band at the top of every page with the day’s numbers, as on DossierCanada."
+    },
+    {
       "date": "2026-09-29",
       "fr": "Un bandeau demande votre accord avant tout témoin (cookie) de Google Analytics.",
       "en": "A banner asks for your consent before any Google Analytics cookie is set."
