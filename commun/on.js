@@ -1816,7 +1816,8 @@
     // clic sur la même flèche revient à l'ordre habituel.
     let tri = null;
     let derniereRecherche = '';
-    const trier = (l) => (tri ? [...l].sort((x, y) => ((taux(x) ?? -1) - (taux(y) ?? -1)) * (tri === 'asc' ? 1 : -1)) : l);
+    // Sans vote (n/d) : toujours à la fin, dans les deux sens.
+    const trier = (l) => (tri ? [...l].sort((x, y) => (taux(x) === null) - (taux(y) === null) || (taux(x) - taux(y)) * (tri === 'asc' ? 1 : -1)) : l);
     const dessiner = (q = '') => {
       derniereRecherche = q;
       // « 90+ » : présence aux votes de 90 % et plus ; « 60- » : 60 % et moins.
@@ -1863,6 +1864,16 @@
             })
           );
         }
+      }
+
+      // Une flèche active : TOUS les élu·e·s dans une seule liste, triée (demande de Martin),
+      // au lieu des groupes.
+      if (tri) {
+        const tous = trier(d.deputes.filter(correspond));
+        cible.querySelector('[data-role="liste"]').innerHTML = tous.length
+          ? `<div class="grille grille-triee">${tous.map(carte).join('')}</div>`
+          : `<p class="courant">${mot('deputes.aucun')}</p>`;
+        return;
       }
 
       cible.querySelector('[data-role="liste"]').innerHTML =
