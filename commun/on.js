@@ -173,7 +173,7 @@
       'votes.ajournement-debat': 'Motion to adjourn the debate',
       'votes.proposePar': 'moved by',
       'deputes.titre': 'MPPs and cabinet', 'deputes.autres': 'The rest of the Legislature', 'deputes.aucun': 'No MPP matches.',
-      'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding', 'deputes.aide': '<b>90+</b>',
+      'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding', 'deputes.aide': '<b>90+</b>', 'deputes.triAsc': 'Recorded votes, lowest first', 'deputes.triDesc': 'Recorded votes, highest first',
       'deputes.circo': 'Riding', 'deputes.votes': 'Recorded votes', 'deputes.parraines': 'Bills sponsored',
       'deputes.compteMinistres': (n) => `${n} ministers — official titles from ONTERM`,
       'deputes.compteDeputes': (n) => `${n} MPPs`, 'deputes.parPartis': 'By party',
@@ -357,7 +357,7 @@
       'votes.ajournement-debat': 'Motion d’ajournement du débat',
       'votes.proposePar': 'proposée par',
       'deputes.titre': 'Député·e·s et ministres', 'deputes.autres': 'Le reste de l’Assemblée', 'deputes.aucun': 'Aucun·e député·e ne correspond.',
-      'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription', 'deputes.aide': '<b>90+</b>',
+      'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription', 'deputes.aide': '<b>90+</b>', 'deputes.triAsc': 'Votes nominatifs, du plus bas au plus haut', 'deputes.triDesc': 'Votes nominatifs, du plus haut au plus bas',
       'deputes.circo': 'Circonscription', 'deputes.votes': 'Votes nominatifs', 'deputes.parraines': 'Projets parrainés',
       'deputes.compteMinistres': (n) => `${n} ministres — titres officiels d’ONTERM`,
       'deputes.compteDeputes': (n) => `${n} député·e·s`, 'deputes.parPartis': 'Par parti',
@@ -1807,10 +1807,18 @@
       <div class="barre-filtres">
         <input class="champ" type="search" data-role="recherche" placeholder="${mot('deputes.recherche')}" aria-label="${mot('deputes.recherche')}">
         <p class="legende aide-recherche">${mot('deputes.aide')}</p>
+        <button class="filtre tri-presence" data-tri="asc" title="${mot('deputes.triAsc')}" aria-label="${mot('deputes.triAsc')}">↑</button>
+        <button class="filtre tri-presence" data-tri="desc" title="${mot('deputes.triDesc')}" aria-label="${mot('deputes.triDesc')}">↓</button>
       </div>
       <div data-role="liste"></div>`;
 
+    // ↑ / ↓ : chaque groupe trié par présence aux votes, croissante ou décroissante ; un second
+    // clic sur la même flèche revient à l'ordre habituel.
+    let tri = null;
+    let derniereRecherche = '';
+    const trier = (l) => (tri ? [...l].sort((x, y) => ((taux(x) ?? -1) - (taux(y) ?? -1)) * (tri === 'asc' ? 1 : -1)) : l);
     const dessiner = (q = '') => {
+      derniereRecherche = q;
       // « 90+ » : présence aux votes de 90 % et plus ; « 60- » : 60 % et moins.
       const seuil = /^(\d{1,3})\s*%?\s*([+-])$/.exec(q);
       const correspond = (m) =>
@@ -1833,7 +1841,7 @@
               <summary class="tete-section" ${couleur ? `style="border-left:10px solid ${echapper(couleur)}"` : ''}>
                 <h2 class="grand-titre">${echapper(titre)}</h2><span class="legende">${compte}</span>
               </summary>
-              <div class="grille">${liste.map(carte).join('')}</div>
+              <div class="grille">${trier(liste).map(carte).join('')}</div>
             </details>`
           : '';
 
@@ -1866,6 +1874,13 @@
     };
     dessiner();
     cible.querySelector('[data-role="recherche"]').addEventListener('input', (e) => dessiner(e.target.value.trim().toLowerCase()));
+    cible.querySelectorAll('[data-tri]').forEach((b) =>
+      b.addEventListener('click', () => {
+        tri = tri === b.dataset.tri ? null : b.dataset.tri;
+        cible.querySelectorAll('[data-tri]').forEach((x) => x.classList.toggle('actif', x.dataset.tri === tri));
+        dessiner(derniereRecherche);
+      })
+    );
     // /cabinet renvoie ici, sur #cabinet : l'ancienne page n'existe plus.
     if (location.hash === '#cabinet') document.getElementById('cabinet')?.scrollIntoView({ block: 'start' });
   };
