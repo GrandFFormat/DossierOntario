@@ -978,3 +978,5 @@ main.colonne > .une{margin-top:28px;}
 .mission-boite li{font-size:14px; line-height:1.7;}
 .mission-rouge + .bande-rouge-grille{padding-top:40px;}
 
+/* La bande « Notre mission » : sur l’accueil seulement (demande de Martin, 30 sept. 2026). */
+body:not([data-vue="accueil"]) .mission-rouge{display:none;}
