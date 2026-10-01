@@ -1484,11 +1484,26 @@
 
     cible.innerHTML = [...parJour.entries()]
       .map(
-        ([jour, duJour]) => `<h2 class="titre-groupe">${date(jour) ?? jour}
+        ([jour, duJour]) => `<div class="jour-votes"><h2 class="titre-groupe">${date(jour) ?? jour}
             <span class="compte">${mot('votes.compte', duJour.length)}</span></h2>
-          ${duJour.map(carteVote).join('')}`
+          ${duJour.map(carteVote).join('')}</div>`
       )
-      .join('');
+      .join('') + `<button class="filtre plus-projets" data-role="plus-votes" hidden></button>`;
+
+    // 6 votes d'abord, puis « Voir 10 de plus », et ainsi de suite (demande de Martin). Un
+    // jour dont aucun vote n'est encore montré cache aussi son titre.
+    let montres = 6;
+    const cartes = [...cible.querySelectorAll('.jour-votes > .carte')];
+    const bouton = cible.querySelector('[data-role="plus-votes"]');
+    const appliquer = () => {
+      cartes.forEach((c, i) => (c.hidden = i >= montres));
+      cible.querySelectorAll('.jour-votes').forEach((j) => (j.hidden = !j.querySelector('.carte:not([hidden])')));
+      const reste = cartes.length - montres;
+      bouton.hidden = reste <= 0;
+      if (reste > 0) bouton.textContent = mot('projets.plus', Math.min(10, reste), reste);
+    };
+    bouton.addEventListener('click', () => { montres += 10; appliquer(); });
+    appliquer();
   };
 
   VUES.comites = () => {
