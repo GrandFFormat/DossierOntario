@@ -1013,3 +1013,6 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 .aide-recherche{margin:0; font-size:13px; align-self:center;} .aide-recherche b{color:var(--rouge); font-weight:800;}
 .tri-presence{min-width:38px; font-size:16px; padding:4px 10px;}
 .grille-triee{margin-top:22px;}
+/* Flèche « haut de page » : le jaune était devenu gris (refonte), elle se confondait avec le fond. */
+.haut-de-page{background:var(--rouge) !important; color:#fff !important; border:1px solid var(--rouge) !important; font-weight:800;}
+.haut-de-page:hover{background:var(--gold-hover) !important; transform:none;}
