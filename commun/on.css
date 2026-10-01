@@ -963,3 +963,17 @@ main.colonne > .une{margin-top:28px;}
 .chiffre{background:var(--paper) !important;}
 .chiffre b{font-weight:900;}
 .bande-rouge-grille{grid-template-columns:1fr;}
+
+/* La mission dans la bande rouge, d'après la bande « Notre mission » de DQ. */
+.mission-rouge{padding-top:46px; color:#fff;}
+.mission-sur{margin:0 0 14px; font-family:'Archivo Narrow',sans-serif; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#FFD9D2;}
+.mission-enonce{margin:0 0 30px; max-width:30ch; font-size:clamp(26px,3vw,36px); font-weight:900; text-transform:uppercase; line-height:1.15; letter-spacing:-.01em;}
+.mission-enonce .surlignage{background:#FFD24D; color:#131313; padding:0 8px; box-decoration-break:clone; -webkit-box-decoration-break:clone;}
+.mission-boites{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;}
+.mission-boite{border:3px solid #fff; padding:16px 20px;}
+.mission-boite.nous{border-color:#FFD24D; background:rgb(255 255 255 / .08);}
+.mission-boite h3{margin:0 0 8px; font-family:'Archivo Narrow',sans-serif; font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#FFD9D2;}
+.mission-boite.nous h3{color:#FFD24D;}
+.mission-boite ul{margin:0; padding-left:18px;}
+.mission-boite li{font-size:14px; line-height:1.7;}
+.mission-rouge + .bande-rouge-grille{padding-top:40px;}
