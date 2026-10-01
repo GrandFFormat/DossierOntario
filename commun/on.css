@@ -980,3 +980,16 @@ main.colonne > .une{margin-top:28px;}
 
 /* La bande « Notre mission » : sur l’accueil seulement (demande de Martin, 30 sept. 2026). */
 body:not([data-vue="accueil"]) .mission-rouge{display:none;}
+/* Comités en couleur : une teinte par comité — bandeau du nom, filet gauche, sous-titres. */
+.teinte-comite-0{--c:#E8341C; --c-txt:#fff;}
+.teinte-comite-1{--c:#1F5FAD; --c-txt:#fff;}
+.teinte-comite-2{--c:#F2B600; --c-txt:#161616;}
+.teinte-comite-3{--c:#2E7D4F; --c-txt:#fff;}
+.teinte-comite-4{--c:#7A3FA0; --c-txt:#fff;}
+.teinte-comite-5{--c:#0E8C8C; --c-txt:#fff;}
+.comite[class*="teinte-comite-"]{border-left:8px solid var(--c) !important; padding:0 20px 18px;}
+.comite[class*="teinte-comite-"] .comite-entete{background:var(--c); color:var(--c-txt); margin:0 -20px 12px; padding:12px 20px;}
+.comite[class*="teinte-comite-"] .comite-entete *{color:var(--c-txt) !important;}
+.comite[class*="teinte-comite-"] .comite-soustitre{color:var(--c); border-color:var(--c);}
+.comite[class*="teinte-comite-"] .comite-pli > summary{color:var(--c);}
+.comite[class*="teinte-comite-"]:hover{background:color-mix(in srgb, var(--c) 6%, var(--paper)) !important;}

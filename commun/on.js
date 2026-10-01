@@ -1554,13 +1554,16 @@
       </details>`;
     };
 
+    // Une teinte par comité (demande de Martin : plus de couleur), dans un ordre fixe.
+    let rang = 0;
     const carte = (c) => {
+      const teinte = rang++ % 6;
       const chiffres = [
         c.projets.length ? mot('comites.projets', c.projets.length) : null,
         c.transcriptions ? mot('comites.transcriptions', c.transcriptions) : null,
       ].filter(Boolean);
 
-      return `<article class="comite">
+      return `<article class="comite teinte-comite-${teinte}">
         <div class="comite-entete">
           <h2 class="comite-nom">${echapper(selonLangue(c.nomEn, c.nomFr))}</h2>
           <p class="legende">${chiffres.join(' · ')}</p>
