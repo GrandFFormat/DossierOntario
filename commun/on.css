@@ -1010,3 +1010,4 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 .defi-carte .bouton-defi, .defi-carte .bouton-partage, .defis-plus{background:var(--paper) !important; color:var(--ink) !important; border-color:var(--line) !important;}
 [hidden]{display:none !important;}
 .barre-filtres .champ{min-width:min(100%,420px);}
+.aide-recherche{margin:0; font-size:13px; align-self:center;} .aide-recherche b{color:var(--rouge); font-weight:800;}
