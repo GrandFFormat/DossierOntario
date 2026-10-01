@@ -993,3 +993,18 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 .comite[class*="teinte-comite-"] .comite-soustitre{color:var(--c); border-color:var(--c);}
 .comite[class*="teinte-comite-"] .comite-pli > summary{color:var(--c);}
 .comite[class*="teinte-comite-"]:hover{background:color-mix(in srgb, var(--c) 6%, var(--paper)) !important;}
+/* Plus d'air autour de « Quoi de neuf », « Derniers votes » et « Projets challengés ». */
+[data-role="votes-recents"], [data-role="nouvelles"]{padding:34px 32px 36px;}
+[data-role="votes-recents"] .titre-case, [data-role="nouvelles"] .titre-case{margin-bottom:10px;}
+[data-role="votes-recents"] .cles-votes{margin:0 0 18px;}
+[data-role="nouvelles"] > .legende{margin:0 0 18px;}
+[data-role="nouvelles"] .jour-neuf{margin-top:18px;}
+.vote-ligne{padding:16px 0 18px;}
+.bande-defis{padding:52px 0 58px !important; margin-top:40px !important;}
+.bande-defis .defis-sous{margin:8px 0 0;}
+.bande-defis [data-role="defis-liste"]{margin-top:26px;}
+/* Cartes challengées : suivre le thème (les titres disparaissaient en mode sombre). */
+.defi-carte{color:var(--ink) !important; border-color:var(--line) !important;}
+.defi-etape{border-top-color:var(--line-soft) !important;}
+.defi-numero{color:var(--rouge) !important;}
+.defi-carte .bouton-defi, .defi-carte .bouton-partage, .defis-plus{background:var(--paper) !important; color:var(--ink) !important; border-color:var(--line) !important;}
