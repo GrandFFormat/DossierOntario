@@ -173,7 +173,7 @@
       'votes.ajournement-debat': 'Motion to adjourn the debate',
       'votes.proposePar': 'moved by',
       'deputes.titre': 'MPPs and cabinet', 'deputes.autres': 'The rest of the Legislature', 'deputes.aucun': 'No MPP matches.',
-      'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding',
+      'deputes.secretaire': 'The Secretary of the Cabinet, who heads the public service, is not an MPP and is not listed here.', 'deputes.recherche': 'Search by name or riding — or 90+ for voting attendance',
       'deputes.circo': 'Riding', 'deputes.votes': 'Recorded votes', 'deputes.parraines': 'Bills sponsored',
       'deputes.compteMinistres': (n) => `${n} ministers — official titles from ONTERM`,
       'deputes.compteDeputes': (n) => `${n} MPPs`, 'deputes.parPartis': 'By party',
@@ -357,7 +357,7 @@
       'votes.ajournement-debat': 'Motion d’ajournement du débat',
       'votes.proposePar': 'proposée par',
       'deputes.titre': 'Député·e·s et ministres', 'deputes.autres': 'Le reste de l’Assemblée', 'deputes.aucun': 'Aucun·e député·e ne correspond.',
-      'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription',
+      'deputes.secretaire': 'La secrétaire du Conseil des ministres, qui dirige la fonction publique, n’est pas députée et n’est pas listée ici.', 'deputes.recherche': 'Chercher par nom ou circonscription — ou 90+ pour la présence aux votes',
       'deputes.circo': 'Circonscription', 'deputes.votes': 'Votes nominatifs', 'deputes.parraines': 'Projets parrainés',
       'deputes.compteMinistres': (n) => `${n} ministres — titres officiels d’ONTERM`,
       'deputes.compteDeputes': (n) => `${n} député·e·s`, 'deputes.parPartis': 'Par parti',
@@ -1810,11 +1810,14 @@
       <div data-role="liste"></div>`;
 
     const dessiner = (q = '') => {
+      // « 90+ » : présence aux votes de 90 % et plus ; « 60- » : 60 % et moins.
+      const seuil = /^(\d{1,3})\s*%?\s*([+-])$/.exec(q);
       const correspond = (m) =>
         !q ||
+        (seuil ? taux(m) !== null && (seuil[2] === '+' ? taux(m) >= +seuil[1] : taux(m) <= +seuil[1]) :
         `${m.nom} ${m.circonscription} ${m.circonscriptionFr ?? ''} ${m.parti} ${m.ministreEn ?? ''} ${m.ministreFr ?? ''} ${m.adjointEn ?? ''} ${m.adjointFr ?? ''}`
           .toLowerCase()
-          .includes(q);
+          .includes(q));
       const ministres = d.deputes.filter((m) => m.ministreEn && correspond(m)).sort((x, y) => x.ordreCabinet - y.ordreCabinet);
       const autres = d.deputes.filter((m) => !m.ministreEn && correspond(m));
 

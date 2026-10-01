@@ -1009,3 +1009,4 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 .defi-numero{color:var(--rouge) !important;}
 .defi-carte .bouton-defi, .defi-carte .bouton-partage, .defis-plus{background:var(--paper) !important; color:var(--ink) !important; border-color:var(--line) !important;}
 [hidden]{display:none !important;}
+.barre-filtres .champ{min-width:min(100%,420px);}
