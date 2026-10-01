@@ -962,3 +962,4 @@ main.colonne > .une{margin-top:28px;}
 .chiffre, .tableau, .encadre-mission, .parti-boite, .colonne-votants, .comite, .dialogue, .encadre-neuf, .taux, .presence-barre, .carte, .carte-vote, .projet-detail{border-width:1px !important;}
 .chiffre{background:var(--paper) !important;}
 .chiffre b{font-weight:900;}
+.bande-rouge-grille{grid-template-columns:1fr;}
