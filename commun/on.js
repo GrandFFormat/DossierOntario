@@ -87,6 +87,8 @@
       'comp.eux.4': 'The authoritative record', 'comp.nous.4': 'A link back to it on every item',
       'rouge.titre': 'Free.<br>No advertising.', 'rouge.sur': 'Same idea, other legislatures',
       'pied.naviguer': 'Navigate', 'pied.donnees': 'Data', 'pied.ailleurs': 'Elsewhere',
+      'comites.cherche': 'Search a bill by number or title', 'comites.trouves': (n) => `${n} committee stud${n > 1 ? 'ies' : 'y'} of this bill`,
+      'comites.aucunTrouve': 'No committee has studied a bill matching this search.',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       'bd.intro1': 'Hi! My name is', 'bd.intro3': 'I’m 45, and dossiercanada.ca is your first step into democracy!',
@@ -269,6 +271,8 @@
       'comp.eux.4': 'Le compte rendu qui fait foi', 'comp.nous.4': 'Un lien vers lui sur chaque élément',
       'rouge.titre': 'Gratuit.<br>Sans publicité.', 'rouge.sur': 'La même idée, d’autres assemblées',
       'pied.naviguer': 'Naviguer', 'pied.donnees': 'Données', 'pied.ailleurs': 'Ailleurs',
+      'comites.cherche': 'Chercher un projet de loi par numéro ou titre', 'comites.trouves': (n) => `${n} étude${n > 1 ? 's' : ''} en comité pour cette recherche`,
+      'comites.aucunTrouve': 'Aucun comité n’a étudié de projet de loi qui correspond à cette recherche.',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       'bd.intro1': 'Bonjour, moi c’est', 'bd.intro3': 'j’ai 45 ans et dossiercanada.ca, c’est votre premier pas vers la démocratie !',
@@ -1536,7 +1540,7 @@
         )
         .join('');
 
-      return `<details class="projet-comite">
+      return `<details class="projet-comite" data-cherche="${echapper(`${p.numero} ${p.titreEn} ${p.titreFr ?? ''}`.toLowerCase())}">
         <summary>
           <span class="numero">${echapper(p.numero)}</span>
           <span class="projet-titre">${echapper(selonLangue(p.titreEn, p.titreFr))}</span>
@@ -1613,6 +1617,11 @@
     const surveillance = donnees.comites.filter((c) => !c.projets.length);
 
     cible.innerHTML =
+      // Chercher un projet de loi : seuls les comités qui l'ont étudié restent, ouverts, avec
+      // le projet trouvé déplié (demande de Martin).
+      `<div class="barre-filtres"><input class="champ" type="search" data-role="cherche-comite"
+        placeholder="${mot('comites.cherche')}" aria-label="${mot('comites.cherche')}"></div>
+      <p class="legende" data-role="cherche-resultat" hidden></p>` +
       `<h2 class="titre-groupe">${mot('comites.legislatifs')}
         <span class="compte">${avecProjets.length}</span></h2>` +
       avecProjets.map(carte).join('') +
@@ -1620,6 +1629,28 @@
         ? `<h2 class="titre-groupe">${mot('comites.surveillance')}
             <span class="compte">${surveillance.length}</span></h2>` + surveillance.map(carte).join('')
         : '');
+
+    const champ = cible.querySelector('[data-role="cherche-comite"]');
+    const resultat = cible.querySelector('[data-role="cherche-resultat"]');
+    champ.addEventListener('input', () => {
+      const q = champ.value.trim().toLowerCase();
+      let trouves = 0;
+      cible.querySelectorAll('.comite').forEach((c) => {
+        const projets = [...c.querySelectorAll('.projet-comite')];
+        const bons = q ? projets.filter((p) => p.dataset.cherche.includes(q)) : [];
+        projets.forEach((p) => {
+          p.hidden = !!q && !bons.includes(p);
+          p.open = !!q && bons.includes(p);
+        });
+        c.hidden = !!q && !bons.length;
+        const pli = c.querySelector(':scope > .comite-pli');
+        if (pli) pli.open = !!q && bons.length > 0;
+        trouves += bons.length;
+      });
+      cible.querySelectorAll('h2.titre-groupe').forEach((h) => (h.hidden = !!q));
+      resultat.hidden = !q;
+      if (q) resultat.textContent = trouves ? mot('comites.trouves', trouves) : mot('comites.aucunTrouve');
+    });
 
     // Chaque comité est REPLIÉ : ouverts, les huit empilaient projets, séances et membres sur
     // des écrans et des écrans. Comme les projets de loi, un clic n'importe où sur la carte
