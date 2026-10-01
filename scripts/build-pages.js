@@ -45,6 +45,7 @@ const PAGES = [
   <div class="colonne">
     <h2 class="defis-titre" data-i18n="defis.titre">Bills challenged by citizens</h2>
     <p class="defis-sous" data-i18n="defis.sous">The moment one person asks for an explanation, the bill appears here.</p>
+    <p class="defis-sous" data-i18n-html="defis.petitions"><b>** In Ontario, petitions are signed on paper only: the Assembly does not accept electronic petitions. **</b></p>
     <div data-role="defis-liste"></div>
   </div>
 </div>
