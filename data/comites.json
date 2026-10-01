@@ -2,7 +2,7 @@
   "source": "https://www.ola.org/en/legislative-business/committees",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-09-30T17:29:53.401Z",
+  "lus": "2026-10-01T17:59:52.723Z",
   "nombre": 8,
   "comites": [
     {
@@ -1211,6 +1211,11 @@
           "date": "2025-05-05",
           "libelle": "Committee Transcript 2025-May-05",
           "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2025-may-05"
+        },
+        {
+          "date": null,
+          "libelle": "Committee Transcript 2026-Sept-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-sept-28"
         }
       ]
     }

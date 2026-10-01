@@ -1266,8 +1266,26 @@
         "en": "Appointment of subcommittee",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-sept-28": [
+      {
+        "en": "Estimates",
+        "fr": "Budget des dépenses"
+      },
+      {
+        "en": "Ministry of Health",
+        "fr": "Ministère de la Santé"
+      },
+      {
+        "en": "Ministry of Children, Community and Social Services",
+        "fr": null
+      },
+      {
+        "en": "Ministry for Seniors and Accessibility",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-09-30T17:29:53.545Z",
-  "nombre": 143
+  "lus": "2026-10-01T17:59:54.036Z",
+  "nombre": 144
 }
