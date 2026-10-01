@@ -484,6 +484,21 @@ function main() {
       projetsEnComite: projets.filter((p) => p.type === 'public' && fiches[p.numero]?.etapes?.some((e) => e.comite)).length,
       sieges: members?.totalSieges ?? null,
     },
+    // L'accueil éditorial (30 sept. 2026) : les sièges par parti, où en sont les projets
+    // publics, et les derniers votes — tous lus, jamais illustratifs.
+    sieges: (members?.etatPartis ?? []).map((p, i) => ({
+      parti: p.parti,
+      partiFr: members.etatPartisFr?.[i]?.parti ?? p.parti,
+      sieges: p.sieges,
+      couleur: members.deputes.find((d) => d.parti === p.parti)?.couleurParti ?? null,
+    })),
+    prives: projets.filter((p) => p.type !== 'public').length,
+    etapes: Object.fromEntries([1, 2, 3, 4, 5].map((n) => [n, projets.filter((p) => p.type === 'public' && p.etape === n).length])),
+    derniersVotes: votesSite.filter((v) => v.sujetEn).slice(0, 4).map((v) => ({
+      date: v.date, url: v.url, urlFr: v.urlFr,
+      sujetEn: v.sujetEn, sujetFr: v.sujetFr, typeEn: v.typeEn, typeFr: v.typeFr,
+      resultatEn: v.resultatEn, resultatFr: v.resultatFr, pour: v.pour, contre: v.contre,
+    })),
     // De quoi dire honnêtement pourquoi rien ne bouge : la Chambre est en relâche.
     calendrier: calendrier
       ? {

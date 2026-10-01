@@ -26,7 +26,7 @@ const PAGES = [
   {
     fichier: 'index.html',
     vue: 'accueil',
-    donnees: 'apercu',
+    donnees: 'apercu contenu:lexique',
     titre: 'What the Ontario Legislature is doing',
     description:
       "Bills, recorded votes, MPPs and cabinet of the Legislative Assembly of Ontario, in plain language. Unofficial, free, bilingual.",
@@ -41,7 +41,21 @@ const PAGES = [
 </div>`,
     // La bande jaune des projets challengés, comme sur DossierQuébec. Cachée jusqu'à ce que
     // commun/on.js ait lu les totaux : si la table n'existe pas, elle ne s'affiche jamais.
-    bandesBas: `<div class="bande bande-defis" data-role="defis" hidden>
+    // Accueil éditorial (30 sept. 2026, maquette de Martin) : des cases séparées par des
+    // filets, une grille. Tous les chiffres sont LUS (apercu.json), jamais illustratifs ; le
+    // bloc « What the bills are about » de la maquette n'existe pas ici : aucune source ne
+    // classe les projets par sujet.
+    bandesBas: `<div class="colonne">
+  <section class="grille-2 cases">
+    <div class="case" data-role="votes-recents"></div>
+    <div class="case" data-role="nouvelles" hidden>
+      <h2 class="titre-case" data-i18n="neuf.titre">What's new</h2>
+      <p class="legende" data-i18n="neuf.sous">The latest real activity at the Legislature</p>
+      <div data-role="neuf"></div>
+    </div>
+  </section>
+</div>
+<div class="bande bande-defis" data-role="defis" hidden>
   <div class="colonne">
     <h2 class="defis-titre" data-i18n="defis.titre">Bills challenged by citizens</h2>
     <p class="defis-sous" data-i18n="defis.sous">The moment one person asks for an explanation, the bill appears here.</p>
@@ -50,48 +64,43 @@ const PAGES = [
   </div>
 </div>
 <div class="colonne recents-accueil" data-role="recents" hidden>
-  <h2 class="titre-groupe" data-i18n="recents.titre">Recently active bills</h2>
+  <h2 class="titre-case" data-i18n="recents.titre">Recently active bills</h2>
   <p class="legende recents-indice" data-i18n="recents.indice">↓ Click anywhere in a card to read what the bill does ↓</p>
   <div class="liste-projets" data-role="recents-liste"></div>
   <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
 </div>
-<div class="colonne accueil-deux" data-role="nouvelles" hidden>
-  <section class="nouvelles">
-    <h2 class="grand-titre" data-i18n="neuf.titre">What's new</h2>
-    <p class="legende sous-grand-titre" data-i18n="neuf.sous">The latest real activity at the Legislature</p>
-    <div data-role="neuf"></div>
+<div class="colonne">
+  <section class="grille-2 cases">
+    <div class="case">
+      <p class="sur-titre" data-i18n="petitions.titre">Petitions to the Legislature</p>
+      <h2 class="titre-case" data-i18n="petitions.sous">On paper only in Ontario</h2>
+      <div data-role="petitions"></div>
+    </div>
+    <div class="case">
+      <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>
+      <p class="enonce-case" data-i18n="mission.enonceSimple">The Assembly's site is the most reliable source there is. This one just makes it easier to follow.</p>
+      <table class="comparatif" data-role="comparatif"></table>
+    </div>
   </section>
-  <section class="petitions">
-    <h2 class="grand-titre" data-i18n="petitions.titre">Petitions to the Legislature</h2>
-    <p class="legende sous-grand-titre" data-i18n="petitions.sous">On paper only in Ontario</p>
-    <div data-role="petitions"></div>
-  </section>
-</div>
-<div class="bande bande-mission">
-  <div class="colonne">
-    <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>
-    <p class="enonce" data-i18n-html="mission.enonce">The Assembly's own site is the most reliable source
-      there is. This one just makes it <span class="surlignage">easier to follow.</span></p>
-    <div class="comparaison">
-      <div class="encadre-mission">
-        <h3 data-i18n="mission.euxTitre">What ola.org does</h3>
-        <ul data-i18n-html="mission.eux"><li>Organises everything by official document</li></ul>
-      </div>
-      <div class="encadre-mission nous">
-        <h3 data-i18n="mission.nousTitre">What this site tries to do</h3>
-        <ul data-i18n-html="mission.nous"><li>Groups everything by bill</li></ul>
+  <section class="cases case-lexique" data-role="lexique-accueil"></section>
+</div>`,
+    contenu: `  <section class="grille-2 cases une">
+    <div class="case">
+      <p class="sur-titre" data-role="legislature"></p>
+      <h1 class="titre-une">
+        <span data-i18n="accueil.titre1">WHAT THE</span>
+        <span data-i18n="accueil.titre2">LEGISLATURE</span>
+        <span data-i18n="accueil.titre3">IS DOING</span>
+      </h1>
+      <p class="chapo" data-i18n="accueil.chapo">Ontario's 124 MPPs pass the laws that shape schools, housing,
+        health care and mining.</p>
+      <div class="boutons-une">
+        <a class="bouton-plein" href="/bills"><span data-i18n="accueil.tousProjets">All bills</span> <span aria-hidden="true">→</span></a>
+        <a class="bouton-trait" href="/votes"><span data-i18n="accueil.votes">Recorded votes</span> <span aria-hidden="true">→</span></a>
       </div>
     </div>
-  </div>
-</div>`,
-    contenu: `  <h1 class="titre-une">
-    <span data-i18n="accueil.titre1">WHAT THE</span>
-    <span class="titre-contour" data-i18n="accueil.titre2">LEGISLATURE</span>
-    <span class="titre-accent" data-i18n="accueil.titre3">IS DOING</span>
-  </h1>
-  <p class="chapo" data-i18n="accueil.chapo">Ontario's 124 MPPs pass the laws that shape schools, housing,
-    health care and mining. DossierOntario follows every bill, every recorded vote and every member —
-    from the official record, with a link back to it on each item.</p>
+    <div class="case" data-role="sieges"></div>
+  </section>
   <section data-vue="accueil"></section>`,
   },
   {

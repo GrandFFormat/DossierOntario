@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-09-30",
+      "fr": "Nouveau design, plus sobre : des filets fins, un seul accent rouge. L’accueil montre qui siège, où en sont les projets et les derniers votes.",
+      "en": "A new, calmer design: thin rules and a single red accent. The home page shows who sits, where bills stand and the latest votes."
+    },
+    {
+      "date": "2026-09-30",
       "fr": "Une bande noire qui défile en haut de chaque page, avec les chiffres du jour, comme sur DossierCanada.",
       "en": "A scrolling black band at the top of every page with the day’s numbers, as on DossierCanada."
     },

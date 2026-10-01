@@ -36,8 +36,8 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="commun/on.css?v=4692873cfa">
-<script src="commun/on.js?v=bf77dc5c18" defer></script>
+<link rel="stylesheet" href="commun/on.css?v=d6730d26f1">
+<script src="commun/on.js?v=8a91e16f36" defer></script>
 </head>
 <body data-vue="votes" data-donnees="votes members apercu">
 
@@ -92,10 +92,27 @@
 
 
 
+<!-- La bande rouge de fin, sur toutes les pages (refonte éditoriale du 30 sept. 2026). -->
+<section class="bande-rouge">
+  <div class="colonne bande-rouge-grille">
+    <p class="bande-rouge-titre" data-i18n-html="rouge.titre">Free. No subscription.<br>No advertising.</p>
+    <div class="bande-rouge-liens">
+      <p class="bande-rouge-sur" data-i18n="rouge.sur">Same idea, other legislatures</p>
+      <a href="https://dossierquebec.ca/" target="_blank" rel="noopener">DossierQuébec <span aria-hidden="true">→</span></a>
+      <a href="https://dossiercanada.ca/" target="_blank" rel="noopener">DossierCanada <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
 <footer class="pied">
-  <div class="colonne">
-    <nav class="pied-nav" aria-label="Sections">
-      <a href="/" data-i18n="nav.accueil">Home</a>
+  <div class="colonne pied-grille">
+    <div class="pied-col">
+      <a class="pied-marque" href="/">DossierOntario</a>
+      <p data-i18n="pied.nonOfficiel">Unofficial site — not affiliated with the Legislative Assembly of Ontario</p>
+      <p data-role="maj"></p>
+    </div>
+    <nav class="pied-col" aria-label="Sections">
+      <h2 data-i18n="pied.naviguer">Navigate</h2>
       <a href="/bills" data-i18n="nav.projets">Bills</a>
       <a href="/votes" data-i18n="nav.votes">Votes</a>
       <a href="/committees" data-i18n="nav.comites">Committees</a>
@@ -103,21 +120,15 @@
       <a href="/glossary" data-i18n="nav.lexique">Lexicon</a>
       <a href="/sources" data-i18n="nav.sources">Sources</a>
     </nav>
-    <div class="pied-bas">
-      <div>
-        <p class="non-officiel" data-i18n="pied.nonOfficiel">Unofficial site — not affiliated with the Legislative Assembly of Ontario</p>
-        <p data-i18n="pied.sources">Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue</p>
-        <p data-i18n="pied.gratuit">Free, no subscription, no advertising.</p>
-        <p data-role="maj"></p>
-      </div>
-      <div class="pied-liens">
-        <a href="https://dossierquebec.ca/" target="_blank" rel="noopener">DossierQuébec</a>
-        <a href="https://dossiercanada.ca/" target="_blank" rel="noopener">DossierCanada</a>
-        <a href="https://www.facebook.com/dossierontario" target="_blank" rel="noopener" class="lien-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg><span>Facebook</span></a>
-        <a href="https://github.com/GrandFFormat/DossierOntario" target="_blank" rel="noopener" class="lien-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg><span data-i18n="pied.code">Source code</span></a>
-        <span class="pied-claude"><span data-i18n="pied.claude">Built with Claude</span>
-          <a class="pied-etmoi" href="/about" data-i18n="pied.etmoi">and me</a></span>
-      </div>
+    <div class="pied-col">
+      <h2 data-i18n="pied.donnees">Data</h2>
+      <p data-i18n="pied.sources">Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue</p>
+    </div>
+    <div class="pied-col">
+      <h2 data-i18n="pied.ailleurs">Elsewhere</h2>
+      <a href="https://www.facebook.com/dossierontario" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://github.com/GrandFFormat/DossierOntario" target="_blank" rel="noopener" data-i18n="pied.code">Source code</a>
+      <a href="/about"><span data-i18n="pied.claude">Built with Claude</span> <span data-i18n="pied.etmoi">and me</span></a>
     </div>
   </div>
 </footer>

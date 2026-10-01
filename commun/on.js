@@ -68,6 +68,25 @@
       'ticker.votes': (n) => `${n} recorded votes`, 'ticker.projets': (n) => `${n} bills tracked`,
       'ticker.lois': (n) => `${n} became law`, 'ticker.sieges': (n) => `${n} seats`,
       'ticker.defis': 'Bills challenged by citizens', 'ticker.devise': 'Independent citizen site · real public data',
+      'une.quiSiege': 'Who sits at Queen’s Park', 'une.majorite': (n) => `${n} seats for a majority`, 'une.membres': 'members of provincial parliament',
+      'une.publics': 'public bills', 'une.publicsSous': 'Government and members’ bills that change the law for everyone',
+      'une.prives': 'private bills', 'une.privesSous': 'Narrow bills for one person, company or municipality',
+      'une.votes': 'recorded votes', 'une.votesSous': 'Divisions where each MPP’s name is recorded',
+      'une.pub': 'ads, fees or subscriptions', 'une.pubSous': 'Unofficial, free and bilingual',
+      'une.etapesTitre': (n) => `Where the ${n} public bills stand`,
+      'une.etapeSous.1': 'Introduced, no debate', 'une.etapeSous.2': 'Debate on the principle', 'une.etapeSous.3': 'Clause-by-clause study',
+      'une.etapeSous.4': 'Final vote', 'une.etapeSous.5': 'Now law',
+      'une.derniersVotes': 'Latest recorded votes', 'une.pour': 'Yea', 'une.contre': 'Nay',
+      'une.pourContre': (p, c) => `${p} yea · ${c} nay`, 'une.tousVotes': 'All recorded votes',
+      'une.lexique': 'From the lexicon', 'une.tousTermes': 'All terms',
+      'accueil.tousProjets': 'All bills', 'accueil.votes': 'Recorded votes',
+      'mission.enonceSimple': 'The Assembly’s site is the most reliable source there is. This one just makes it easier to follow.',
+      'comp.eux.1': 'Organised by official document', 'comp.nous.1': 'Grouped by bill',
+      'comp.eux.2': 'Votes in the Journals, day by day', 'comp.nous.2': 'Every vote, MPP by MPP',
+      'comp.eux.3': 'Legal text of each bill', 'comp.nous.3': 'Plain-language summary, linked to the text',
+      'comp.eux.4': 'The authoritative record', 'comp.nous.4': 'A link back to it on every item',
+      'rouge.titre': 'Free. No subscription.<br>No advertising.', 'rouge.sur': 'Same idea, other legislatures',
+      'pied.naviguer': 'Navigate', 'pied.donnees': 'Data', 'pied.ailleurs': 'Elsewhere',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       'bd.intro1': 'Hi! My name is', 'bd.intro3': 'I’m 45, and dossiercanada.ca is your first step into democracy!',
@@ -231,6 +250,25 @@
       'ticker.votes': (n) => `${n} votes nominatifs enregistrés`, 'ticker.projets': (n) => `${n} projets de loi suivis`,
       'ticker.lois': (n) => `${n} devenus lois`, 'ticker.sieges': (n) => `${n} sièges`,
       'ticker.defis': 'Projets challengés par les citoyen·ne·s', 'ticker.devise': 'Site citoyen indépendant · vraies données publiques',
+      'une.quiSiege': 'Qui siège à Queen’s Park', 'une.majorite': (n) => `${n} sièges pour la majorité`, 'une.membres': 'député·e·s provinciaux',
+      'une.publics': 'projets de loi publics', 'une.publicsSous': 'Du gouvernement et des député·e·s : ils changent la loi pour tout le monde',
+      'une.prives': 'projets de loi d’intérêt privé', 'une.privesSous': 'Pour une seule personne, entreprise ou municipalité',
+      'une.votes': 'votes nominatifs', 'une.votesSous': 'Les votes où le nom de chaque député·e est consigné',
+      'une.pub': 'publicité, frais ou abonnement', 'une.pubSous': 'Non officiel, gratuit et bilingue',
+      'une.etapesTitre': (n) => `Où en sont les ${n} projets de loi publics`,
+      'une.etapeSous.1': 'Déposé, sans débat', 'une.etapeSous.2': 'Débat sur le principe', 'une.etapeSous.3': 'Étude article par article',
+      'une.etapeSous.4': 'Vote final', 'une.etapeSous.5': 'Devenu loi',
+      'une.derniersVotes': 'Derniers votes nominatifs', 'une.pour': 'Pour', 'une.contre': 'Contre',
+      'une.pourContre': (p, c) => `${p} pour · ${c} contre`, 'une.tousVotes': 'Tous les votes nominatifs',
+      'une.lexique': 'Tiré du lexique', 'une.tousTermes': 'Tous les termes',
+      'accueil.tousProjets': 'Tous les projets de loi', 'accueil.votes': 'Votes nominatifs',
+      'mission.enonceSimple': 'Le site de l’Assemblée est la source la plus fiable qui existe. Celui-ci la rend juste plus facile à suivre.',
+      'comp.eux.1': 'Organisé par document officiel', 'comp.nous.1': 'Regroupé par projet de loi',
+      'comp.eux.2': 'Les votes dans les procès-verbaux, jour par jour', 'comp.nous.2': 'Chaque vote, député·e par député·e',
+      'comp.eux.3': 'Le texte légal de chaque projet', 'comp.nous.3': 'Un résumé en langage clair, lié au texte',
+      'comp.eux.4': 'Le compte rendu qui fait foi', 'comp.nous.4': 'Un lien vers lui sur chaque élément',
+      'rouge.titre': 'Gratuit. Sans abonnement.<br>Sans publicité.', 'rouge.sur': 'La même idée, d’autres assemblées',
+      'pied.naviguer': 'Naviguer', 'pied.donnees': 'Données', 'pied.ailleurs': 'Ailleurs',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       'bd.intro1': 'Bonjour, moi c’est', 'bd.intro3': 'j’ai 45 ans et dossiercanada.ca, c’est votre premier pas vers la démocratie !',
@@ -644,31 +682,99 @@
   // ---------------------------------------------------------------- rendus
   const VUES = {};
 
+  // L'accueil éditorial (30 sept. 2026, maquette de Martin). Tout est lu dans apercu.json.
   VUES.accueil = () => {
     const a = DONNEES.apercu;
     const cible = document.querySelector('section[data-vue="accueil"]');
     if (!cible || !a) return;
+    const c = a.chiffres;
 
+    const leg = document.querySelector('[data-role="legislature"]');
+    if (leg) leg.textContent = mot('ticker.legislature', a.legislature ?? 44, a.session ?? 1);
+
+    // --- Qui siège : 124 cases, une par siège, colonne par colonne, dans l'ordre des partis.
+    // Teintes de la maquette (noir, rouge, rose, gris) : on lit la PLACE, pas le parti — la
+    // légende nomme chaque parti en clair.
+    const TEINTES = ['var(--ink)', 'var(--rouge)', '#F4A08F', '#9A9A9A', '#D4D4D4'];
+    const sieges = (a.sieges ?? []).map((s, i) => ({ ...s, teinte: TEINTES[i] ?? '#D4D4D4' }));
+    const total = sieges.reduce((n, s) => n + s.sieges, 0);
+    const majorite = Math.floor(total / 2) + 1;
+    const cases = sieges.flatMap((s) => Array(s.sieges).fill(s.teinte));
+    const zoneSieges = document.querySelector('[data-role="sieges"]');
+    if (zoneSieges && total) {
+      zoneSieges.innerHTML = `
+        <div class="tete-case"><p class="sur-titre sur-titre-noir">${mot('une.quiSiege')}</p><span class="legende">${mot('une.majorite', majorite)}</span></div>
+        <p class="grand-chiffre">${total} <span>${mot('une.membres')}</span></p>
+        <div class="gaufre" style="--lignes:5">${cases.map((coul, i) => `<i style="background:${coul}"${i === majorite - 1 ? ' class="seuil"' : ''}></i>`).join('')}</div>
+        <div class="legende-partis">${sieges
+          .map((s) => `<div><span class="pastille-teinte" style="background:${s.teinte}"></span><b>${s.sieges}</b><span>${echapper(selonLangue(s.parti, s.partiFr))}</span></div>`)
+          .join('')}</div>`;
+    }
+
+    // --- Quatre chiffres, puis où en sont les projets publics.
     const chiffres = [
-      [a.chiffres.projets, 'chiffre.projets'],
-      [a.chiffres.sanctionnes, 'chiffre.sanctionnes'],
-      [a.chiffres.votes, 'chiffre.votes'],
-      [a.chiffres.sieges, 'chiffre.deputes'],
-    ]
-      .map(([n, cle]) => `<div class="chiffre"><b>${n}</b><span>${mot(cle)}</span></div>`)
-      .join('');
-
-    // Les cinq cases de navigation (Bills, Votes, MPPs, Cabinet, Lexicon) sont parties le
-    // 24 sept. 2026, décision de Martin : elles doublaient le menu du haut.
-
+      [c.projets, 'une.publics', 'une.publicsSous'],
+      [a.prives, 'une.prives', 'une.privesSous'],
+      [c.votes, 'une.votes', 'une.votesSous'],
+      [0, 'une.pub', 'une.pubSous'],
+    ];
+    const etapes = a.etapes ?? {};
+    const totalEtapes = [1, 2, 3, 4, 5].reduce((n, k) => n + (etapes[k] ?? 0), 0);
     cible.innerHTML = `
-      <div class="chiffres">${chiffres}</div>`;
-    // Le tableau « Latest activity » est parti (24 sept. 2026, décision de Martin) : il doublait
-    // le bouton « Recent activity » de la page des projets. La bande des projets challengés,
-    // juste en dessous, prend sa place.
+      <div class="cases rangee-chiffres">${chiffres
+        .map(([n, cle, sous], i) => `<div class="case"><b class="${i === 3 ? '' : ''}">${n ?? '—'}</b><span>${mot(cle)}</span><small>${mot(sous)}</small></div>`)
+        .join('')}</div>
+      ${totalEtapes ? `<div class="cases case-etapes"><div class="case">
+        <h2 class="titre-case">${mot('une.etapesTitre', totalEtapes)}</h2>
+        <div class="barre-etapes">${[1, 2, 3, 4, 5]
+          .filter((k) => etapes[k])
+          .map((k) => `<span class="etape-${k}" style="flex:${etapes[k]}">${etapes[k]}</span>`)
+          .join('')}</div>
+        <ol class="noms-etapes">${[1, 2, 3, 4, 5]
+          .map((k) => `<li><b>0${k}</b> ${mot(`etape.${k}`)}<small>${mot(`une.etapeSous.${k}`)}</small></li>`)
+          .join('')}</ol>
+      </div></div>` : ''}`;
 
-    // Les projets récemment actifs viennent APRÈS la bande : ils attendent les totaux de
-    // demandes, sinon leurs cartes s'afficheraient d'abord sans bouton ni compteur.
+    // --- Les derniers votes, avec la part des pour et des contre.
+    const zv = document.querySelector('[data-role="votes-recents"]');
+    if (zv && a.derniersVotes?.length) {
+      zv.innerHTML = `<h2 class="titre-case">${mot('une.derniersVotes')}</h2>
+        <p class="legende cles-votes"><span class="cle-pour"></span>${mot('une.pour')} <span class="cle-contre"></span>${mot('une.contre')}</p>
+        ${a.derniersVotes
+          .map((v) => {
+            const n = (v.pour ?? 0) + (v.contre ?? 0) || 1;
+            const adopte = /carried|adopt/i.test(v.resultatEn ?? '');
+            return `<a class="vote-ligne" href="${echapper(selonLangue(v.url, v.urlFr))}" target="_blank" rel="noopener">
+              <span class="vote-tete"><b>${echapper(selonLangue(v.sujetEn, v.sujetFr))}</b><em class="${adopte ? '' : 'rejete'}">${echapper(selonLangue(v.resultatEn, v.resultatFr))}</em></span>
+              <span class="barre-vote"><span class="pour" style="width:${(100 * v.pour) / n}%"></span><span class="contre" style="width:${(100 * v.contre) / n}%"></span></span>
+              <small>${date(v.date)} · ${echapper(selonLangue(v.typeEn, v.typeFr))} · ${mot('une.pourContre', v.pour, v.contre)}</small>
+            </a>`;
+          })
+          .join('')}
+        <a class="bouton-trait" href="/votes"><span>${mot('une.tousVotes')}</span> <span aria-hidden="true">→</span></a>`;
+    }
+
+    // --- La mission en tableau : ola.org à gauche, ce site à droite.
+    const comp = document.querySelector('[data-role="comparatif"]');
+    if (comp) {
+      const rangs = [1, 2, 3, 4].map((k) => `<tr><td>${mot(`comp.eux.${k}`)}</td><td>${mot(`comp.nous.${k}`)}</td></tr>`).join('');
+      comp.innerHTML = `<thead><tr><th>ola.org</th><th>DossierOntario</th></tr></thead><tbody>${rangs}</tbody>`;
+    }
+
+    // --- Quatre mots du lexique.
+    const zl = document.querySelector('[data-role="lexique-accueil"]');
+    const lex = DONNEES.lexique;
+    if (zl && lex) {
+      const voulus = ['Royal assent', 'Recorded division', 'Private bill', 'Second reading'];
+      const entrees = lex.groupes.flatMap((g) => g.entrees).filter((x) => voulus.includes(x.terme.en))
+        .sort((x, y) => voulus.indexOf(x.terme.en) - voulus.indexOf(y.terme.en));
+      zl.innerHTML = `<div class="case">
+        <div class="tete-case"><h2 class="titre-case">${mot('une.lexique')}</h2><a class="lien-rouge" href="/glossary">${mot('une.tousTermes')} →</a></div>
+        <div class="grille-4">${entrees
+          .map((x) => `<div><h3>${echapper(selonLangue(x.terme.en, x.terme.fr))}</h3><p>${echapper(selonLangue(x.texte.en, x.texte.fr))}</p></div>`)
+          .join('')}</div></div>`;
+    }
+
     bandeDefis().then(recentsAccueil, recentsAccueil);
     nouvellesAccueil(a);
   };
@@ -712,7 +818,8 @@
 
     // --- Pétitions : ce qui existe en Ontario, c'est-à-dire des pétitions sur papier.
     const p = a.petitions;
-    zone.querySelector('[data-role="petitions"]').innerHTML = p
+    const zp = document.querySelector('[data-role="petitions"]');
+    if (zp) zp.innerHTML = p
       ? `<p class="courant">${mot('petitions.comment')}</p>
         <p class="petitions-chiffres">${mot('petitions.chiffres', p.sujets, p.presentations, p.repondues)}</p>
         <ul class="liste-petitions">${p.recentes
