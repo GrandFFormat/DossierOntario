@@ -206,7 +206,7 @@ const PAGES = [
     contenu: `  <h1 class="titre-vue" data-i18n="nav.sources">Sources</h1>
   <div class="encadre" data-i18n-html="sources.intro">
     <b>This site is not official.</b> It has no link with the Legislative Assembly of Ontario or the
-    Government of Ontario. It is free: no subscription, no advertising. It reproduces short extracts
+    Government of Ontario. It is free, with no advertising. It reproduces short extracts
     and links back to the source, as the Assembly's terms of use allow for reasonable, fair and
     non-commercial use.
   </div>
