@@ -89,6 +89,7 @@
       'pied.naviguer': 'Navigate', 'pied.donnees': 'Data', 'pied.ailleurs': 'Elsewhere',
       'comites.cherche': 'Search a bill by number or title', 'comites.trouves': (n) => `${n} committee stud${n > 1 ? 'ies' : 'y'} of this bill`,
       'comites.aucunTrouve': 'No committee has studied a bill matching this search.',
+      'projet.retour': '← All bills', 'projet.lienPage': 'This bill’s own page',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       'bd.intro1': 'Hi! My name is', 'bd.intro3': 'I’m 45, and dossiercanada.ca is your first step into democracy!',
@@ -273,6 +274,7 @@
       'pied.naviguer': 'Naviguer', 'pied.donnees': 'Données', 'pied.ailleurs': 'Ailleurs',
       'comites.cherche': 'Chercher un projet de loi par numéro ou titre', 'comites.trouves': (n) => `${n} étude${n > 1 ? 's' : ''} en comité pour cette recherche`,
       'comites.aucunTrouve': 'Aucun comité n’a étudié de projet de loi qui correspond à cette recherche.',
+      'projet.retour': '← Tous les projets de loi', 'projet.lienPage': 'La page de ce projet de loi',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       'bd.intro1': 'Bonjour, moi c’est', 'bd.intro3': 'j’ai 45 ans et dossiercanada.ca, c’est votre premier pas vers la démocratie !',
@@ -530,7 +532,7 @@
       voulus.map(async (nom) => {
         try {
           // « contenu:x » = un fichier ÉCRIT (le lexique) ; sinon, une donnée RÉCOLTÉE.
-          const chemin = nom.startsWith('contenu:') ? `contenu/${nom.slice(8)}.json` : `data/site/${nom}.json`;
+          const chemin = nom.startsWith('contenu:') ? `/contenu/${nom.slice(8)}.json` : `/data/site/${nom}.json`;
           const res = await fetch(chemin, { cache: 'no-cache' });
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           DONNEES[nom.replace('contenu:', '')] = await res.json();
@@ -663,9 +665,9 @@
     }
   }
 
-  // Partager un projet : un lien vers SA carte (/bills?bill=9, qui s'ouvre à l'arrivée).
+  // Partager un projet : un lien vers SA page (/bill/9).
   function partager(numero, titre, ou, bouton) {
-    const url = `https://dossierontario.ca/bills?bill=${encodeURIComponent(numero)}`;
+    const url = `https://dossierontario.ca/bill/${encodeURIComponent(String(numero).toLowerCase())}`;
     const texte = mot('partage.texte', numero, titre);
     if (ou === 'x') {
       window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(texte)}&url=${encodeURIComponent(url)}`, '_blank', 'noopener,width=600,height=520');
@@ -798,7 +800,7 @@
       : mot('neuf.normal');
     const ligne = (l) =>
       l.type === 'projet'
-        ? `<li><a href="/bills?bill=${encodeURIComponent(l.numero)}">${mot('defis.numero', l.numero)} — ${echapper(
+        ? `<li><a href="/bill/${encodeURIComponent(String(l.numero).toLowerCase())}">${mot('defis.numero', l.numero)} — ${echapper(
             selonLangue(l.titreEn, l.titreFr)
           )}</a> : ${echapper(selonLangue(l.evenementEn, l.evenementFr) ?? '')}${
             l.comiteEn ? ` <span class="legende">· ${echapper(selonLangue(l.comiteEn, l.comiteFr))}</span>` : ''
@@ -949,7 +951,7 @@
       const b = e.target.closest('button');
       const carte = e.target.closest('.defi-carte');
       if (!b) {
-        if (carte) location.href = `/bills?bill=${encodeURIComponent(carte.dataset.numero)}`;
+        if (carte) location.href = `/bill/${encodeURIComponent(String(carte.dataset.numero).toLowerCase())}`;
         return;
       }
       if (b.dataset.role === 'defis-plus') {
@@ -1009,9 +1011,9 @@
     const nDefi = DEFI.comptes.get(String(p.numero)) ?? 0;
     return `<article class="carte carte-projet" data-numero="${echapper(p.numero)}">
       <div class="projet-tete">
-        <span class="numero">${echapper(p.numero)}</span>
+        <a class="numero" href="/bill/${encodeURIComponent(String(p.numero).toLowerCase())}" title="${mot('projet.lienPage')}">${echapper(p.numero)}</a>
         <div class="projet-tete-texte">
-          <h3 class="carte-titre">${echapper(titre)}</h3>
+          <h3 class="carte-titre"><a class="lien-titre" href="/bill/${encodeURIComponent(String(p.numero).toLowerCase())}">${echapper(titre)}</a></h3>
           <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}${
             // En mode « activité récente », la date est ce qu'on vient voir : elle monte dans
             // la tête de la carte au lieu d'attendre qu'on l'ouvre.
@@ -1345,6 +1347,10 @@
     const ouvrirDepuisAdresse = () => {
       const voulu = new URLSearchParams(location.search).get('bill');
       if (!voulu) return;
+      if (projets.some((p) => String(p.numero).toLowerCase() === voulu.toLowerCase())) {
+        location.replace(`/bill/${encodeURIComponent(voulu.toLowerCase())}`);
+        return;
+      }
       const carte = cible.querySelector(`.carte-projet[data-numero="${CSS.escape(voulu)}"]`);
       if (!carte) return;
       carte.querySelector('.projet-detail').open = true;
@@ -1362,6 +1368,27 @@
       }
       ouvrirDepuisAdresse();
     });
+  };
+
+  // La page d'un seul projet de loi (/bill/109) : la vraie carte, ouverte d'office, à la
+  // place du texte écrit pour Google (build-pages.js).
+  VUES.projet = () => {
+    const cible = document.querySelector('section[data-vue="projet"]');
+    const projets = DONNEES.bills?.projets;
+    if (!cible || !projets) return;
+    const p = projets.find((x) => String(x.numero) === cible.dataset.numero);
+    if (!p) return;
+    const titre = document.querySelector('[data-i18n-numero]');
+    if (titre) titre.textContent = mot('defis.numero', p.numero);
+    const dessiner = () => {
+      cible.innerHTML = `<div class="liste-projets">${carteProjet(p, true)}</div>`;
+      const d = cible.querySelector('.projet-detail');
+      if (d) d.open = true;
+    };
+    dessiner();
+    brancherCartes(cible, projets, dessiner);
+    chargerDefi().then((ok) => ok && dessiner());
+    document.title = `${mot('defis.numero', p.numero)} — ${selonLangue(p.titreEn, p.titreFr)} — DossierOntario`;
   };
 
   VUES.votes = () => {

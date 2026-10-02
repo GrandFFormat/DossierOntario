@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-10-01",
+      "fr": "Chaque projet de loi a sa propre page (ex. /bill/109), à partager et que Google peut trouver.",
+      "en": "Every bill has its own page (e.g. /bill/109), to share and for search engines to find."
+    },
+    {
       "date": "2026-09-30",
       "fr": "Nouveau design, plus sobre : des filets fins, un seul accent rouge. L’accueil montre qui siège, où en sont les projets et les derniers votes.",
       "en": "A new, calmer design: thin rules and a single red accent. The home page shows who sits, where bills stand and the latest votes."

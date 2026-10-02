@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0N4BYF7Y2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Consentement : refusé par défaut ; accordé seulement si la personne a dit oui (bandeau).
+  var choix = null; try { choix = localStorage.getItem('dossier:temoins'); } catch (e) {}
+  gtag('consent', 'default', {
+    analytics_storage: choix === 'oui' ? 'granted' : 'denied',
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
+  });
+  gtag('js', new Date());
+  gtag('config', 'G-0N4BYF7Y2Z');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bill 83 — Christian Heritage Month Act, 2025 — DossierOntario</title>
+<meta name="description" content="Proclaims December of each year as Christian Heritage Month in Ontario">
+<link rel="canonical" href="https://dossierontario.ca/bill/83">
+<link rel="alternate" hreflang="en" href="https://dossierontario.ca/bill/83">
+<meta property="og:title" content="Bill 83 — Christian Heritage Month Act, 2025 — DossierOntario">
+<meta property="og:description" content="Proclaims December of each year as Christian Heritage Month in Ontario">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dossierontario.ca/bill/83">
+<meta property="og:image" content="https://dossierontario.ca/partage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DossierOntario — what the Ontario Legislature is doing">
+<meta property="og:site_name" content="DossierOntario">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#C8102E">
+<link rel="stylesheet" href="/commun/on.css?v=0f6f1c4747">
+<script src="/commun/on.js?v=c1d9aff52c" defer></script>
+</head>
+<body data-vue="projet" data-donnees="bills apercu">
+
+<!-- La bande qui défile, recopiée de DossierCanada (.dq-ticker). Remplie par on.js
+     avec les chiffres du jour (apercu.json) ; contenu en double pour boucler sans couture. -->
+<div class="ticker" aria-hidden="true"><div class="ticker-piste" data-role="ticker"></div></div>
+
+<header class="entete">
+  <div class="entete-rang">
+    <div class="marque">
+      <a class="mot-symbole" href="/">
+        Dossier<span class="province">Ontario</span>
+      </a>
+      <a class="erable" href="https://dossiercanada.ca/" target="_blank" rel="noopener"
+         data-i18n-title="entete.erable" title="Go to the federal site — DossierCanada">
+        <svg viewBox="-2015 -2000 4030 4030" aria-hidden="true"><path fill="currentColor" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></svg>
+      </a>
+    </div>
+    <nav class="onglets" aria-label="Sections">
+      <a href="/" data-i18n="nav.accueil" class="">Home</a>
+      <a href="/bills" data-i18n="nav.projets" class="actif">Bills</a>
+      <a href="/votes" data-i18n="nav.votes" class="">Votes</a>
+      <a href="/committees" data-i18n="nav.comites" class="">Committees</a>
+      <a href="/mpps" data-i18n="nav.deputes" class="">MPPs &amp; cabinet</a>
+      <a href="/glossary" data-i18n="nav.lexique" class="">Lexicon</a>
+    </nav>
+    <div class="controles">
+      <div class="groupe-taille">
+        <button type="button" data-action="moins" aria-label="A−">A−</button>
+        <span class="niveau-taille" data-role="zoom">100%</span>
+        <button type="button" data-action="plus" aria-label="A+">A+</button>
+      </div>
+      <button type="button" class="bouton-theme" data-action="theme" data-i18n-title="entete.theme" title="Theme" aria-label="Theme">
+        <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+      </button>
+      <button type="button" data-action="langue" data-i18n="entete.langue">Français</button>
+    </div>
+  </div>
+</header>
+
+
+<main class="colonne">
+  <p class="fil"><a href="/bills" data-i18n="projet.retour">← All bills</a></p>
+  <h1 class="titre-vue titre-projet"><span data-i18n-numero="83">Bill 83</span></h1>
+  <section data-vue="projet" data-numero="83">
+    <article class="carte carte-projet">
+      <h2 class="carte-titre">Christian Heritage Month Act, 2025</h2>
+      <p class="legende">Sponsored by Blais, Stephen · First Reading Ordered for Second Reading</p>
+      <ul class="resume"><li>Proclaims December of each year as Christian Heritage Month in Ontario</li><li>States purpose is to reflect on and celebrate historical roots and contributions of Ontario's Christian community</li><li>Preamble notes Christian pioneers' role in shaping Ontario's cultural, social and artistic development since before Confederation</li><li>Preamble highlights diversity of Ontario's Christian community including Latin American, European, First Nations, African, Asian and Middle Eastern heritage</li><li>Act takes effect on the day it receives Royal Assent</li><li>Short title is the Christian Heritage Month Act, 2025</li></ul>
+      <a class="bouton-source" href="https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-83">Read the bill on ola.org →</a>
+    </article>
+  </section>
+</main>
+
+
+
+<!-- La bande rouge de fin, sur toutes les pages (refonte éditoriale du 30 sept. 2026). -->
+<section class="bande-rouge">
+  <!-- La mission, comme la bande de DQ (« Notre mission »), sur toutes les pages. -->
+  <div class="colonne mission-rouge">
+    <p class="mission-sur" data-i18n="mission.surTitre">Our mission</p>
+    <p class="mission-enonce" data-i18n-html="mission.enonce">The Assembly's own site is the most reliable source there is. This one just makes it <span class="surlignage">easier to follow.</span></p>
+    <div class="mission-boites">
+      <div class="mission-boite">
+        <h3 data-i18n="mission.euxTitre">What ola.org does</h3>
+        <ul data-i18n-html="mission.eux"></ul>
+      </div>
+      <div class="mission-boite nous">
+        <h3 data-i18n="mission.nousTitre">What this site tries to do</h3>
+        <ul data-i18n-html="mission.nous"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="colonne bande-rouge-grille">
+    <p class="bande-rouge-titre" data-i18n-html="rouge.titre">Free.<br>No advertising.</p>
+  </div>
+</section>
+
+<footer class="pied">
+  <div class="colonne pied-grille">
+    <div class="pied-col">
+      <a class="pied-marque" href="/">DossierOntario</a>
+      <p data-i18n="pied.nonOfficiel">Unofficial site — not affiliated with the Legislative Assembly of Ontario</p>
+      <p data-role="maj"></p>
+    </div>
+    <nav class="pied-col" aria-label="Sections">
+      <h2 data-i18n="pied.naviguer">Navigate</h2>
+      <a href="/bills" data-i18n="nav.projets">Bills</a>
+      <a href="/votes" data-i18n="nav.votes">Votes</a>
+      <a href="/committees" data-i18n="nav.comites">Committees</a>
+      <a href="/mpps" data-i18n="nav.deputes">MPPs &amp; cabinet</a>
+      <a href="/glossary" data-i18n="nav.lexique">Lexicon</a>
+      <a href="/sources" data-i18n="nav.sources">Sources</a>
+    </nav>
+    <div class="pied-col">
+      <h2 data-i18n="pied.donnees">Data</h2>
+      <p data-i18n="pied.sources">Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue</p>
+    </div>
+    <div class="pied-col">
+      <h2 data-i18n="pied.ailleurs">Elsewhere</h2>
+      <a href="https://www.facebook.com/dossierontario" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://github.com/GrandFFormat/DossierOntario" target="_blank" rel="noopener" data-i18n="pied.code">Source code</a>
+      <a href="/about"><span data-i18n="pied.claude">Built with Claude</span> <span data-i18n="pied.etmoi">and me</span></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bandeau des témoins (cookies) : Google Analytics n'en pose aucun avant un « oui ». -->
+<div class="bandeau-temoins" data-role="temoins" hidden>
+  <p data-i18n="temoins.texte">This site uses Google Analytics cookies to count visits. Nothing is set unless you accept.</p>
+  <div class="bandeau-temoins-boutons">
+    <button type="button" class="filtre" data-temoins="non" data-i18n="temoins.non">Refuse</button>
+    <button type="button" class="filtre actif" data-temoins="oui" data-i18n="temoins.oui">Accept</button>
+  </div>
+</div>
+
+<button class="haut-de-page" data-role="haut" data-i18n-title="haut.titre" title="Back to top" aria-label="Back to top" hidden>↑</button>
+<!-- Vercel Web Analytics, comme DQ : sans témoin (cookie), sans donnée personnelle. -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

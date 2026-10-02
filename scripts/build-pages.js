@@ -258,7 +258,7 @@ for (const page of PAGES) {
     .replace(/\{\{BANDES\}\}/g, () => page.bandes ?? '')
     .replace(/\{\{BANDES_BAS\}\}/g, () => page.bandesBas ?? '')
     .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
-    .replace(/(href|src)="(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="${chemin}?v=${VERSIONS[chemin]}"`);
+    .replace(/(href|src)="\/(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="/${chemin}?v=${VERSIONS[chemin]}"`);
 
   for (const autre of PAGES) {
     html = html.replace(`{{ACTIF_${autre.vue}}}`, autre.fichier === page.fichier ? 'actif' : '');
@@ -269,10 +269,58 @@ for (const page of PAGES) {
   console.log(`${page.fichier} (${(html.length / 1024).toFixed(1)} ko)`);
 }
 
+// ---------------------------------------------------------------- une page par projet de loi
+// Chaque projet a SA page, /bill/109 (1er oct. 2026, demande de Martin) : une adresse qu'on
+// partage, et que Google trouve avec son propre titre et sa propre description. Le texte
+// lisible sans JavaScript (titre, parrain, état, résumé en clair) est écrit dans la page ;
+// on.js y pose ensuite la vraie carte, ouverte, avec Challenger et Partager.
+import { mkdirSync, readdirSync, unlinkSync, existsSync } from 'node:fs';
+const echapperHtml = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const slug = (numero) => String(numero).toLowerCase();
+const projetsSite = JSON.parse(readFileSync('data/site/bills.json', 'utf8')).projets;
+const resumesEn = existsSync('data/site/resumes-en.json') ? JSON.parse(readFileSync('data/site/resumes-en.json', 'utf8')) : {};
+mkdirSync('bill', { recursive: true });
+for (const vieux of readdirSync('bill')) if (vieux.endsWith('.html')) unlinkSync(`bill/${vieux}`);
+const PAGES_PROJETS = [];
+for (const p of projetsSite) {
+  const r = resumesEn[p.numero];
+  const puces = r ? [...(r.p ?? []), ...(r.a ?? []).flatMap((a) => a.p)].slice(0, 8) : [];
+  const fichier = `bill/${slug(p.numero)}.html`;
+  const titre = `Bill ${p.numero} — ${p.titreEn}`;
+  const description = (puces[0] ?? `${p.titreEn}: sponsor, stage reached and recorded votes, from the Legislative Assembly of Ontario.`).slice(0, 300);
+  const contenu = `  <p class="fil"><a href="/bills" data-i18n="projet.retour">← All bills</a></p>
+  <h1 class="titre-vue titre-projet"><span data-i18n-numero="${echapperHtml(p.numero)}">Bill ${echapperHtml(p.numero)}</span></h1>
+  <section data-vue="projet" data-numero="${echapperHtml(p.numero)}">
+    <article class="carte carte-projet">
+      <h2 class="carte-titre">${echapperHtml(p.titreEn)}</h2>
+      <p class="legende">Sponsored by ${echapperHtml(p.parrains.join(', '))}${p.statutEn ? ` · ${echapperHtml(p.statutEn)}` : ''}</p>
+      ${puces.length ? `<ul class="resume">${puces.map((x) => `<li>${echapperHtml(x)}</li>`).join('')}</ul>` : ''}
+      <a class="bouton-source" href="${echapperHtml(p.url)}">Read the bill on ola.org →</a>
+    </article>
+  </section>`;
+  PAGES_PROJETS.push({ fichier, vue: 'projet', donnees: 'bills', titre, description, contenu, actif: 'projets' });
+}
+for (const page of PAGES_PROJETS) {
+  let html = modele
+    .replace(/\{\{TITRE\}\}/g, () => echapperHtml(page.titre))
+    .replace(/\{\{DESCRIPTION\}\}/g, () => echapperHtml(page.description))
+    .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
+    .replace(/\{\{VUE\}\}/g, page.vue)
+    .replace(/\{\{DONNEES\}\}/g, `${page.donnees} apercu`)
+    .replace(/\{\{BANDES\}\}/g, '')
+    .replace(/\{\{BANDES_BAS\}\}/g, '')
+    .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
+    .replace(/(href|src)="\/(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="/${chemin}?v=${VERSIONS[chemin]}"`)
+    .replace(/\{\{ACTIF_projets\}\}/g, 'actif')
+    .replace(/\{\{ACTIF_[a-z]+\}\}/g, '');
+  writeFileSync(page.fichier, html);
+}
+console.log(`${PAGES_PROJETS.length} pages de projets de loi dans bill/`);
+
 // Le plan du site, pour que Google trouve les six pages (leçon de DossierQuébec).
 const plan = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${PAGES.map(
+${[...PAGES, ...PAGES_PROJETS].map(
   (p) => `  <url><loc>https://dossierontario.ca/${adressePropre(p.fichier)}</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`
 ).join('\n')}

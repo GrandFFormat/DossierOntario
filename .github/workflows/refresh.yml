@@ -96,7 +96,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A data *.html sitemap.xml
+          git add -A data *.html bill sitemap.xml
           if git diff --staged --quiet; then
             echo 'Rien de neuf du côté de l’Assemblée.'
           else

@@ -1016,3 +1016,9 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 /* Flèche « haut de page » : le jaune était devenu gris (refonte), elle se confondait avec le fond. */
 .haut-de-page{background:var(--rouge) !important; color:#fff !important; border:1px solid var(--rouge) !important; font-weight:800;}
 .haut-de-page:hover{background:var(--gold-hover) !important; transform:none;}
+
+/* La page d'un projet de loi */
+.fil{margin:26px 0 0; font-size:13.5px;}
+.fil a{color:var(--rouge); font-weight:600;}
+.titre-projet{margin-top:10px;}
+a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;} .lien-titre:hover{color:var(--rouge); text-decoration:underline;}
