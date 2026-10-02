@@ -1284,8 +1284,26 @@
         "en": "Ministry for Seniors and Accessibility",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-sept-28": [
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Labour, Immigration, Training and Skills Development",
+        "fr": null
+      },
+      {
+        "en": "Treasury Board Secretariat",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Economic Development, Job Creation and Trade",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-01T17:59:54.036Z",
-  "nombre": 144
+  "lus": "2026-10-02T17:12:12.980Z",
+  "nombre": 145
 }
