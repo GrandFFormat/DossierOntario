@@ -2,7 +2,7 @@
   "source": "https://www.ola.org — une page par projet de loi, versions anglaise et française",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-02T16:45:50.739Z",
+  "lus": "2026-10-05T19:44:57.403Z",
   "nombre": 191,
   "fiches": {
     "1": {
@@ -64,7 +64,7 @@
       "longueurTexteEn": 916,
       "longueurTexteFr": 1063,
       "votes": [],
-      "lu": "2026-10-02T16:33:40.390Z"
+      "lu": "2026-10-05T19:32:43.631Z"
     },
     "2": {
       "numero": "2",
@@ -411,7 +411,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-2-protect-ontario-through-free-trade-within-canada-act-2025-vote-third-reading"
       ],
-      "lu": "2026-10-02T16:33:46.937Z"
+      "lu": "2026-10-05T19:32:49.333Z"
     },
     "3": {
       "numero": "3",
@@ -532,7 +532,7 @@
       "longueurTexteEn": 2408,
       "longueurTexteFr": 2792,
       "votes": [],
-      "lu": "2026-10-02T16:33:50.183Z"
+      "lu": "2026-10-05T19:32:52.502Z"
     },
     "4": {
       "numero": "4",
@@ -599,7 +599,7 @@
       "longueurTexteEn": 11173,
       "longueurTexteFr": 12479,
       "votes": [],
-      "lu": "2026-10-02T16:33:54.273Z"
+      "lu": "2026-10-05T19:32:56.337Z"
     },
     "5": {
       "numero": "5",
@@ -993,7 +993,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:34:02.815Z"
+      "lu": "2026-10-05T19:33:04.099Z"
     },
     "6": {
       "numero": "6",
@@ -1237,7 +1237,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-6-safer-municipalities-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-6-safer-municipalities-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:34:13.522Z"
+      "lu": "2026-10-05T19:33:09.780Z"
     },
     "7": {
       "numero": "7",
@@ -1304,7 +1304,7 @@
       "longueurTexteEn": 4886,
       "longueurTexteFr": 5599,
       "votes": [],
-      "lu": "2026-10-02T16:34:17.128Z"
+      "lu": "2026-10-05T19:33:13.181Z"
     },
     "8": {
       "numero": "8",
@@ -1369,7 +1369,7 @@
       "longueurTexteEn": 1072,
       "longueurTexteFr": 1552,
       "votes": [],
-      "lu": "2026-10-02T16:34:20.785Z"
+      "lu": "2026-10-05T19:33:16.989Z"
     },
     "9": {
       "numero": "9",
@@ -1724,7 +1724,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2025-adoption-committee-report",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:34:29.098Z"
+      "lu": "2026-10-05T19:33:24.885Z"
     },
     "10": {
       "numero": "10",
@@ -1966,7 +1966,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-10-protect-ontario-through-safer-streets-stronger-communities-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-10-protect-ontario-through-safer-streets-stronger-communities-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:34:35.305Z"
+      "lu": "2026-10-05T19:33:31.834Z"
     },
     "11": {
       "numero": "11",
@@ -2205,7 +2205,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-11-more-convenient-care-act-2025-vote-third-reading"
       ],
-      "lu": "2026-10-02T16:34:40.516Z"
+      "lu": "2026-10-05T19:33:36.746Z"
     },
     "12": {
       "numero": "12",
@@ -2270,7 +2270,7 @@
       "longueurTexteEn": 1919,
       "longueurTexteFr": 2035,
       "votes": [],
-      "lu": "2026-10-02T16:34:43.891Z"
+      "lu": "2026-10-05T19:33:40.169Z"
     },
     "13": {
       "numero": "13",
@@ -2495,7 +2495,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-13-primary-care-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:34:48.829Z"
+      "lu": "2026-10-05T19:33:45.320Z"
     },
     "14": {
       "numero": "14",
@@ -2562,7 +2562,7 @@
       "longueurTexteEn": 21534,
       "longueurTexteFr": 25193,
       "votes": [],
-      "lu": "2026-10-02T16:34:52.023Z"
+      "lu": "2026-10-05T19:33:48.543Z"
     },
     "15": {
       "numero": "15",
@@ -2623,7 +2623,7 @@
       "longueurTexteEn": 2389,
       "longueurTexteFr": 3202,
       "votes": [],
-      "lu": "2026-10-02T16:34:56.154Z"
+      "lu": "2026-10-05T19:33:52.354Z"
     },
     "16": {
       "numero": "16",
@@ -2684,7 +2684,7 @@
       "longueurTexteEn": 5254,
       "longueurTexteFr": 5892,
       "votes": [],
-      "lu": "2026-10-02T16:35:00.049Z"
+      "lu": "2026-10-05T19:33:56.378Z"
     },
     "17": {
       "numero": "17",
@@ -2914,7 +2914,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-17-protect-ontario-building-faster-smarter-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-17-protect-ontario-building-faster-smarter-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:35:05.724Z"
+      "lu": "2026-10-05T19:34:03.359Z"
     },
     "18": {
       "numero": "18",
@@ -3087,7 +3087,7 @@
       "longueurTexteEn": 14621,
       "longueurTexteFr": 16131,
       "votes": [],
-      "lu": "2026-10-02T16:35:09.628Z"
+      "lu": "2026-10-05T19:34:06.570Z"
     },
     "19": {
       "numero": "19",
@@ -3152,7 +3152,7 @@
       "longueurTexteEn": 1610,
       "longueurTexteFr": 2222,
       "votes": [],
-      "lu": "2026-10-02T16:35:13.118Z"
+      "lu": "2026-10-05T19:34:10.616Z"
     },
     "20": {
       "numero": "20",
@@ -3217,7 +3217,7 @@
       "longueurTexteEn": 1418,
       "longueurTexteFr": 1587,
       "votes": [],
-      "lu": "2026-10-02T16:35:17.240Z"
+      "lu": "2026-10-05T19:34:14.502Z"
     },
     "21": {
       "numero": "21",
@@ -3282,7 +3282,7 @@
       "longueurTexteEn": 5377,
       "longueurTexteFr": 6595,
       "votes": [],
-      "lu": "2026-10-02T16:35:20.810Z"
+      "lu": "2026-10-05T19:34:18.540Z"
     },
     "22": {
       "numero": "22",
@@ -3505,7 +3505,7 @@
       "longueurTexteEn": 1440,
       "longueurTexteFr": 1736,
       "votes": [],
-      "lu": "2026-10-02T16:35:24.976Z"
+      "lu": "2026-10-05T19:34:22.603Z"
     },
     "23": {
       "numero": "23",
@@ -3616,7 +3616,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-23-protecting-seniors-rights-care-homes-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:35:31.335Z"
+      "lu": "2026-10-05T19:34:28.487Z"
     },
     "24": {
       "numero": "24",
@@ -3880,7 +3880,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-24-plan-protect-ontario-act-budget-measures-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-24-plan-protect-ontario-act-budget-measures-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:35:36.557Z"
+      "lu": "2026-10-05T19:34:35.334Z"
     },
     "25": {
       "numero": "25",
@@ -4112,7 +4112,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-25-emergency-management-modernization-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-25-emergency-management-modernization-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:35:41.861Z"
+      "lu": "2026-10-05T19:34:40.408Z"
     },
     "26": {
       "numero": "26",
@@ -4389,7 +4389,7 @@
       "longueurTexteEn": 8627,
       "longueurTexteFr": 9555,
       "votes": [],
-      "lu": "2026-10-02T16:35:46.112Z"
+      "lu": "2026-10-05T19:34:43.801Z"
     },
     "27": {
       "numero": "27",
@@ -4643,7 +4643,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-27-resource-management-safety-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-27-resource-management-safety-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:35:51.580Z"
+      "lu": "2026-10-05T19:34:52.409Z"
     },
     "28": {
       "numero": "28",
@@ -4748,7 +4748,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-28-homelessness-ends-housing-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:35:55.308Z"
+      "lu": "2026-10-05T19:34:56.133Z"
     },
     "29": {
       "numero": "29",
@@ -4815,7 +4815,7 @@
       "longueurTexteEn": 3657,
       "longueurTexteFr": 4871,
       "votes": [],
-      "lu": "2026-10-02T16:35:59.007Z"
+      "lu": "2026-10-05T19:34:59.761Z"
     },
     "30": {
       "numero": "30",
@@ -5040,7 +5040,7 @@
       "longueurTexteEn": 69950,
       "longueurTexteFr": 79601,
       "votes": [],
-      "lu": "2026-10-02T16:36:03.315Z"
+      "lu": "2026-10-05T19:35:04.766Z"
     },
     "31": {
       "numero": "31",
@@ -5267,7 +5267,7 @@
       "longueurTexteEn": 2478,
       "longueurTexteFr": 2724,
       "votes": [],
-      "lu": "2026-10-02T16:36:07.649Z"
+      "lu": "2026-10-05T19:35:08.072Z"
     },
     "32": {
       "numero": "32",
@@ -5332,7 +5332,7 @@
       "longueurTexteEn": 3944,
       "longueurTexteFr": 4653,
       "votes": [],
-      "lu": "2026-10-02T16:36:11.189Z"
+      "lu": "2026-10-05T19:35:11.894Z"
     },
     "33": {
       "numero": "33",
@@ -5610,7 +5610,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-33-supporting-children-students-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-33-supporting-children-students-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:36:16.841Z"
+      "lu": "2026-10-05T19:35:20.261Z"
     },
     "34": {
       "numero": "34",
@@ -5775,7 +5775,7 @@
       "longueurTexteEn": 15554,
       "longueurTexteFr": 17950,
       "votes": [],
-      "lu": "2026-10-02T16:36:20.375Z"
+      "lu": "2026-10-05T19:35:24.090Z"
     },
     "35": {
       "numero": "35",
@@ -5840,7 +5840,7 @@
       "longueurTexteEn": 17228,
       "longueurTexteFr": 20055,
       "votes": [],
-      "lu": "2026-10-02T16:36:24.059Z"
+      "lu": "2026-10-05T19:35:27.634Z"
     },
     "36": {
       "numero": "36",
@@ -5905,7 +5905,7 @@
       "longueurTexteEn": 6799,
       "longueurTexteFr": 8667,
       "votes": [],
-      "lu": "2026-10-02T16:36:28.224Z"
+      "lu": "2026-10-05T19:35:31.485Z"
     },
     "37": {
       "numero": "37",
@@ -5972,7 +5972,7 @@
       "longueurTexteEn": 3629,
       "longueurTexteFr": 4721,
       "votes": [],
-      "lu": "2026-10-02T16:36:32.203Z"
+      "lu": "2026-10-05T19:35:35.513Z"
     },
     "38": {
       "numero": "38",
@@ -6153,7 +6153,7 @@
       "longueurTexteEn": 14488,
       "longueurTexteFr": 16206,
       "votes": [],
-      "lu": "2026-10-02T16:36:36.230Z"
+      "lu": "2026-10-05T19:35:39.438Z"
     },
     "39": {
       "numero": "39",
@@ -6214,7 +6214,7 @@
       "longueurTexteEn": 3040,
       "longueurTexteFr": 3452,
       "votes": [],
-      "lu": "2026-10-02T16:36:40.154Z"
+      "lu": "2026-10-05T19:35:43.443Z"
     },
     "40": {
       "numero": "40",
@@ -6572,7 +6572,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-40-protect-ontario-securing-affordable-energy-generations-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-40-protect-ontario-securing-affordable-energy-generations-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:36:46.176Z"
+      "lu": "2026-10-05T19:35:51.130Z"
     },
     "41": {
       "numero": "41",
@@ -6637,7 +6637,7 @@
       "longueurTexteEn": 7772,
       "longueurTexteFr": 9246,
       "votes": [],
-      "lu": "2026-10-02T16:36:49.627Z"
+      "lu": "2026-10-05T19:35:54.305Z"
     },
     "42": {
       "numero": "42",
@@ -6698,7 +6698,7 @@
       "longueurTexteEn": 1781,
       "longueurTexteFr": 2228,
       "votes": [],
-      "lu": "2026-10-02T16:36:53.556Z"
+      "lu": "2026-10-05T19:35:58.511Z"
     },
     "43": {
       "numero": "43",
@@ -6759,7 +6759,7 @@
       "longueurTexteEn": 3348,
       "longueurTexteFr": 4317,
       "votes": [],
-      "lu": "2026-10-02T16:36:57.331Z"
+      "lu": "2026-10-05T19:36:02.294Z"
     },
     "44": {
       "numero": "44",
@@ -6820,7 +6820,7 @@
       "longueurTexteEn": 6465,
       "longueurTexteFr": 8218,
       "votes": [],
-      "lu": "2026-10-02T16:37:01.328Z"
+      "lu": "2026-10-05T19:36:06.262Z"
     },
     "45": {
       "numero": "45",
@@ -7077,7 +7077,7 @@
       "longueurTexteEn": 27382,
       "longueurTexteFr": 30464,
       "votes": [],
-      "lu": "2026-10-02T16:37:05.906Z"
+      "lu": "2026-10-05T19:36:10.767Z"
     },
     "46": {
       "numero": "46",
@@ -7398,7 +7398,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-46-protect-ontario-cutting-red-tape-act-2025-vote-third-reading"
       ],
-      "lu": "2026-10-02T16:37:10.670Z"
+      "lu": "2026-10-05T19:36:18.243Z"
     },
     "47": {
       "numero": "47",
@@ -7463,7 +7463,7 @@
       "longueurTexteEn": 1587,
       "longueurTexteFr": 1813,
       "votes": [],
-      "lu": "2026-10-02T16:37:13.821Z"
+      "lu": "2026-10-05T19:36:21.341Z"
     },
     "48": {
       "numero": "48",
@@ -7524,7 +7524,7 @@
       "longueurTexteEn": 2222,
       "longueurTexteFr": 2523,
       "votes": [],
-      "lu": "2026-10-02T16:37:17.815Z"
+      "lu": "2026-10-05T19:36:25.894Z"
     },
     "49": {
       "numero": "49",
@@ -7635,7 +7635,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-49-northern-highway-11-17-safety-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:37:22.789Z"
+      "lu": "2026-10-05T19:36:30.879Z"
     },
     "50": {
       "numero": "50",
@@ -7702,7 +7702,7 @@
       "longueurTexteEn": 3310,
       "longueurTexteFr": 4325,
       "votes": [],
-      "lu": "2026-10-02T16:37:26.113Z"
+      "lu": "2026-10-05T19:36:34.514Z"
     },
     "51": {
       "numero": "51",
@@ -7769,7 +7769,7 @@
       "longueurTexteEn": 17110,
       "longueurTexteFr": 19381,
       "votes": [],
-      "lu": "2026-10-02T16:37:30.051Z"
+      "lu": "2026-10-05T19:36:38.043Z"
     },
     "52": {
       "numero": "52",
@@ -7834,7 +7834,7 @@
       "longueurTexteEn": 2860,
       "longueurTexteFr": 3392,
       "votes": [],
-      "lu": "2026-10-02T16:37:34.066Z"
+      "lu": "2026-10-05T19:36:42.298Z"
     },
     "53": {
       "numero": "53",
@@ -7901,7 +7901,7 @@
       "longueurTexteEn": 14412,
       "longueurTexteFr": 16243,
       "votes": [],
-      "lu": "2026-10-02T16:37:37.969Z"
+      "lu": "2026-10-05T19:36:46.254Z"
     },
     "54": {
       "numero": "54",
@@ -7966,7 +7966,7 @@
       "longueurTexteEn": 8631,
       "longueurTexteFr": 9188,
       "votes": [],
-      "lu": "2026-10-02T16:37:41.907Z"
+      "lu": "2026-10-05T19:36:49.914Z"
     },
     "55": {
       "numero": "55",
@@ -8027,7 +8027,7 @@
       "longueurTexteEn": 3237,
       "longueurTexteFr": 3656,
       "votes": [],
-      "lu": "2026-10-02T16:37:46.141Z"
+      "lu": "2026-10-05T19:36:54.121Z"
     },
     "56": {
       "numero": "56",
@@ -8331,7 +8331,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-56-building-a-more-competitive-economy-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-56-building-a-more-competitive-economy-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:37:52.006Z"
+      "lu": "2026-10-05T19:37:01.002Z"
     },
     "57": {
       "numero": "57",
@@ -8392,7 +8392,7 @@
       "longueurTexteEn": 6595,
       "longueurTexteFr": 7668,
       "votes": [],
-      "lu": "2026-10-02T16:37:55.231Z"
+      "lu": "2026-10-05T19:37:04.174Z"
     },
     "58": {
       "numero": "58",
@@ -8501,7 +8501,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-58-franco-ontarian-bookstore-promotion-protection-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:00.080Z"
+      "lu": "2026-10-05T19:37:08.839Z"
     },
     "59": {
       "numero": "59",
@@ -8566,7 +8566,7 @@
       "longueurTexteEn": 2000,
       "longueurTexteFr": 2405,
       "votes": [],
-      "lu": "2026-10-02T16:38:03.194Z"
+      "lu": "2026-10-05T19:37:12.655Z"
     },
     "60": {
       "numero": "60",
@@ -8844,7 +8844,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-60-fighting-delays-building-faster-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-60-fighting-delays-building-faster-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:09.326Z"
+      "lu": "2026-10-05T19:37:18.404Z"
     },
     "61": {
       "numero": "61",
@@ -8949,7 +8949,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-61-ontario-artificial-intelligence-talent-innovation-strategy-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:13.343Z"
+      "lu": "2026-10-05T19:37:22.418Z"
     },
     "62": {
       "numero": "62",
@@ -9014,7 +9014,7 @@
       "longueurTexteEn": 11131,
       "longueurTexteFr": 11690,
       "votes": [],
-      "lu": "2026-10-02T16:38:16.614Z"
+      "lu": "2026-10-05T19:37:25.562Z"
     },
     "63": {
       "numero": "63",
@@ -9079,7 +9079,7 @@
       "longueurTexteEn": 1221,
       "longueurTexteFr": 1441,
       "votes": [],
-      "lu": "2026-10-02T16:38:21.046Z"
+      "lu": "2026-10-05T19:37:29.643Z"
     },
     "64": {
       "numero": "64",
@@ -9146,7 +9146,7 @@
       "longueurTexteEn": 20008,
       "longueurTexteFr": 22446,
       "votes": [],
-      "lu": "2026-10-02T16:38:25.304Z"
+      "lu": "2026-10-05T19:37:33.709Z"
     },
     "65": {
       "numero": "65",
@@ -9255,7 +9255,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-65-remembrance-day-observance-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:30.309Z"
+      "lu": "2026-10-05T19:37:38.726Z"
     },
     "66": {
       "numero": "66",
@@ -9478,7 +9478,7 @@
       "longueurTexteEn": 4958,
       "longueurTexteFr": 6600,
       "votes": [],
-      "lu": "2026-10-02T16:38:33.655Z"
+      "lu": "2026-10-05T19:37:42.277Z"
     },
     "67": {
       "numero": "67",
@@ -9703,7 +9703,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-67-hospitality-workers-appreciation-day-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:40.775Z"
+      "lu": "2026-10-05T19:37:47.389Z"
     },
     "68": {
       "numero": "68",
@@ -9987,7 +9987,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-68-plan-protect-ontario-act-budget-measures-2025-no-2-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-68-plan-protect-ontario-act-budget-measures-2025-no-2-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:46.319Z"
+      "lu": "2026-10-05T19:37:49.689Z"
     },
     "69": {
       "numero": "69",
@@ -10048,7 +10048,7 @@
       "longueurTexteEn": 4667,
       "longueurTexteFr": 5416,
       "votes": [],
-      "lu": "2026-10-02T16:38:49.513Z"
+      "lu": "2026-10-05T19:37:54.572Z"
     },
     "70": {
       "numero": "70",
@@ -10159,7 +10159,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-70-supporting-mobility-affordability-reliable-transportation-ontario-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:38:54.669Z"
+      "lu": "2026-10-05T19:37:59.240Z"
     },
     "71": {
       "numero": "71",
@@ -10220,7 +10220,7 @@
       "longueurTexteEn": 10439,
       "longueurTexteFr": 11624,
       "votes": [],
-      "lu": "2026-10-02T16:38:57.890Z"
+      "lu": "2026-10-05T19:38:02.423Z"
     },
     "72": {
       "numero": "72",
@@ -10465,7 +10465,7 @@
       "longueurTexteEn": 43454,
       "longueurTexteFr": 49896,
       "votes": [],
-      "lu": "2026-10-02T16:39:02.354Z"
+      "lu": "2026-10-05T19:38:06.948Z"
     },
     "73": {
       "numero": "73",
@@ -10526,7 +10526,7 @@
       "longueurTexteEn": 6253,
       "longueurTexteFr": 8004,
       "votes": [],
-      "lu": "2026-10-02T16:39:05.915Z"
+      "lu": "2026-10-05T19:38:10.874Z"
     },
     "74": {
       "numero": "74",
@@ -10605,7 +10605,7 @@
       "longueurTexteEn": 3113,
       "longueurTexteFr": 3430,
       "votes": [],
-      "lu": "2026-10-02T16:39:09.975Z"
+      "lu": "2026-10-05T19:38:14.807Z"
     },
     "75": {
       "numero": "75",
@@ -10988,7 +10988,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-75-keeping-criminals-behind-bars-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:39:15.593Z"
+      "lu": "2026-10-05T19:38:23.054Z"
     },
     "76": {
       "numero": "76",
@@ -11214,7 +11214,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-76-barrie-oro-medonte-springwater-boundary-adjustment-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-76-barrie-oro-medonte-springwater-boundary-adjustment-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:39:20.788Z"
+      "lu": "2026-10-05T19:38:31.590Z"
     },
     "77": {
       "numero": "77",
@@ -11279,7 +11279,7 @@
       "longueurTexteEn": 5278,
       "longueurTexteFr": 5815,
       "votes": [],
-      "lu": "2026-10-02T16:39:24.096Z"
+      "lu": "2026-10-05T19:38:34.777Z"
     },
     "78": {
       "numero": "78",
@@ -11384,7 +11384,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-78-commissioner-democratic-rights-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:39:28.652Z"
+      "lu": "2026-10-05T19:38:39.632Z"
     },
     "79": {
       "numero": "79",
@@ -11449,7 +11449,7 @@
       "longueurTexteEn": 1432,
       "longueurTexteFr": 1731,
       "votes": [],
-      "lu": "2026-10-02T16:39:32.199Z"
+      "lu": "2026-10-05T19:38:42.869Z"
     },
     "80": {
       "numero": "80",
@@ -11510,7 +11510,7 @@
       "longueurTexteEn": 6280,
       "longueurTexteFr": 7713,
       "votes": [],
-      "lu": "2026-10-02T16:39:36.037Z"
+      "lu": "2026-10-05T19:38:46.968Z"
     },
     "81": {
       "numero": "81",
@@ -11571,7 +11571,7 @@
       "longueurTexteEn": 26311,
       "longueurTexteFr": 33600,
       "votes": [],
-      "lu": "2026-10-02T16:39:40.117Z"
+      "lu": "2026-10-05T19:38:50.683Z"
     },
     "82": {
       "numero": "82",
@@ -11680,7 +11680,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-82-protecting-renters-unfair-above-guideline-rent-increases-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:39:44.971Z"
+      "lu": "2026-10-05T19:38:58.035Z"
     },
     "83": {
       "numero": "83",
@@ -11741,7 +11741,7 @@
       "longueurTexteEn": 1748,
       "longueurTexteFr": 1996,
       "votes": [],
-      "lu": "2026-10-02T16:39:48.325Z"
+      "lu": "2026-10-05T19:39:01.332Z"
     },
     "84": {
       "numero": "84",
@@ -11864,7 +11864,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-84-mandatory-blood-testing-amendment-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:39:52.818Z"
+      "lu": "2026-10-05T19:39:08.269Z"
     },
     "85": {
       "numero": "85",
@@ -11925,7 +11925,7 @@
       "longueurTexteEn": 6411,
       "longueurTexteFr": 7744,
       "votes": [],
-      "lu": "2026-10-02T16:39:56.026Z"
+      "lu": "2026-10-05T19:39:11.692Z"
     },
     "86": {
       "numero": "86",
@@ -12034,7 +12034,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-86-meredith-act-fair-compensation-injured-workers-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:40:02.373Z"
+      "lu": "2026-10-05T19:39:18.608Z"
     },
     "87": {
       "numero": "87",
@@ -12099,7 +12099,7 @@
       "longueurTexteEn": 2435,
       "longueurTexteFr": 3161,
       "votes": [],
-      "lu": "2026-10-02T16:40:05.506Z"
+      "lu": "2026-10-05T19:39:22.143Z"
     },
     "88": {
       "numero": "88",
@@ -12166,7 +12166,7 @@
       "longueurTexteEn": 7101,
       "longueurTexteFr": 8552,
       "votes": [],
-      "lu": "2026-10-02T16:40:09.667Z"
+      "lu": "2026-10-05T19:39:25.877Z"
     },
     "89": {
       "numero": "89",
@@ -12227,7 +12227,7 @@
       "longueurTexteEn": 1745,
       "longueurTexteFr": 2008,
       "votes": [],
-      "lu": "2026-10-02T16:40:13.747Z"
+      "lu": "2026-10-05T19:39:29.674Z"
     },
     "90": {
       "numero": "90",
@@ -12292,7 +12292,7 @@
       "longueurTexteEn": 4566,
       "longueurTexteFr": 5077,
       "votes": [],
-      "lu": "2026-10-02T16:40:17.678Z"
+      "lu": "2026-10-05T19:39:33.895Z"
     },
     "91": {
       "numero": "91",
@@ -12357,7 +12357,7 @@
       "longueurTexteEn": 20314,
       "longueurTexteFr": 24415,
       "votes": [],
-      "lu": "2026-10-02T16:40:21.501Z"
+      "lu": "2026-10-05T19:39:38.226Z"
     },
     "92": {
       "numero": "92",
@@ -12418,7 +12418,7 @@
       "longueurTexteEn": 6846,
       "longueurTexteFr": 8006,
       "votes": [],
-      "lu": "2026-10-02T16:40:25.720Z"
+      "lu": "2026-10-05T19:39:41.698Z"
     },
     "93": {
       "numero": "93",
@@ -12485,7 +12485,7 @@
       "longueurTexteEn": 3184,
       "longueurTexteFr": 3620,
       "votes": [],
-      "lu": "2026-10-02T16:40:29.757Z"
+      "lu": "2026-10-05T19:39:45.845Z"
     },
     "94": {
       "numero": "94",
@@ -12550,7 +12550,7 @@
       "longueurTexteEn": 1470,
       "longueurTexteFr": 1663,
       "votes": [],
-      "lu": "2026-10-02T16:40:33.597Z"
+      "lu": "2026-10-05T19:39:49.830Z"
     },
     "95": {
       "numero": "95",
@@ -12737,7 +12737,7 @@
       "longueurTexteEn": 15717,
       "longueurTexteFr": 17391,
       "votes": [],
-      "lu": "2026-10-02T16:40:38.088Z"
+      "lu": "2026-10-05T19:39:53.809Z"
     },
     "96": {
       "numero": "96",
@@ -12798,7 +12798,7 @@
       "longueurTexteEn": 16458,
       "longueurTexteFr": 18863,
       "votes": [],
-      "lu": "2026-10-02T16:40:41.649Z"
+      "lu": "2026-10-05T19:39:58.118Z"
     },
     "97": {
       "numero": "97",
@@ -13151,7 +13151,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:40:49.941Z"
+      "lu": "2026-10-05T19:40:04.833Z"
     },
     "98": {
       "numero": "98",
@@ -13563,7 +13563,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:40:59.733Z"
+      "lu": "2026-10-05T19:40:11.293Z"
     },
     "99": {
       "numero": "99",
@@ -13674,7 +13674,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-99-fair-free-elections-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:41:03.832Z"
+      "lu": "2026-10-05T19:40:15.321Z"
     },
     "100": {
       "numero": "100",
@@ -14056,7 +14056,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:41:12.456Z"
+      "lu": "2026-10-05T19:40:26.252Z"
     },
     "101": {
       "numero": "101",
@@ -14476,7 +14476,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:41:22.820Z"
+      "lu": "2026-10-05T19:40:33.183Z"
     },
     "102": {
       "numero": "102",
@@ -14541,7 +14541,7 @@
       "longueurTexteEn": 1078,
       "longueurTexteFr": 1261,
       "votes": [],
-      "lu": "2026-10-02T16:41:26.001Z"
+      "lu": "2026-10-05T19:40:36.382Z"
     },
     "103": {
       "numero": "103",
@@ -14610,7 +14610,7 @@
       "longueurTexteEn": 18852,
       "longueurTexteFr": 21532,
       "votes": [],
-      "lu": "2026-10-02T16:41:29.994Z"
+      "lu": "2026-10-05T19:40:40.317Z"
     },
     "104": {
       "numero": "104",
@@ -14677,7 +14677,7 @@
       "longueurTexteEn": 6819,
       "longueurTexteFr": 7474,
       "votes": [],
-      "lu": "2026-10-02T16:41:34.156Z"
+      "lu": "2026-10-05T19:40:44.407Z"
     },
     "105": {
       "numero": "105",
@@ -14948,7 +14948,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-105-protecting-ontarios-workers-economic-resilience-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:41:39.937Z"
+      "lu": "2026-10-05T19:40:52.565Z"
     },
     "106": {
       "numero": "106",
@@ -15065,7 +15065,7 @@
       "longueurTexteEn": 805,
       "longueurTexteFr": 989,
       "votes": [],
-      "lu": "2026-10-02T16:41:43.817Z"
+      "lu": "2026-10-05T19:40:55.851Z"
     },
     "107": {
       "numero": "107",
@@ -15174,7 +15174,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-107-stop-harmful-gambling-advertising-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:41:47.829Z"
+      "lu": "2026-10-05T19:41:00.374Z"
     },
     "108": {
       "numero": "108",
@@ -15239,7 +15239,7 @@
       "longueurTexteEn": 2162,
       "longueurTexteFr": 2515,
       "votes": [],
-      "lu": "2026-10-02T16:41:51.172Z"
+      "lu": "2026-10-05T19:41:03.739Z"
     },
     "109": {
       "numero": "109",
@@ -15482,7 +15482,7 @@
       "longueurTexteEn": 168820,
       "longueurTexteFr": 190616,
       "votes": [],
-      "lu": "2026-10-02T16:41:55.494Z"
+      "lu": "2026-10-05T19:41:07.961Z"
     },
     "110": {
       "numero": "110",
@@ -15850,7 +15850,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:42:09.508Z"
+      "lu": "2026-10-05T19:41:15.418Z"
     },
     "111": {
       "numero": "111",
@@ -15911,7 +15911,7 @@
       "longueurTexteEn": 2654,
       "longueurTexteFr": 3068,
       "votes": [],
-      "lu": "2026-10-02T16:42:12.922Z"
+      "lu": "2026-10-05T19:41:18.679Z"
     },
     "112": {
       "numero": "112",
@@ -16016,7 +16016,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-112-lydias-law-accountability-transparency-handling-sexual-assault-cases-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:42:17.691Z"
+      "lu": "2026-10-05T19:41:23.341Z"
     },
     "113": {
       "numero": "113",
@@ -16121,7 +16121,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-113-fair-prices-tax-free-groceries-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-02T16:42:21.504Z"
+      "lu": "2026-10-05T19:41:28.897Z"
     },
     "114": {
       "numero": "114",
@@ -16350,7 +16350,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-114-hst-relief-implementation-act-residential-property-rebates-2026-vote-third-reading"
       ],
-      "lu": "2026-10-02T16:42:27.138Z"
+      "lu": "2026-10-05T19:41:33.152Z"
     },
     "115": {
       "numero": "115",
@@ -16411,7 +16411,7 @@
       "longueurTexteEn": 12590,
       "longueurTexteFr": 16338,
       "votes": [],
-      "lu": "2026-10-02T16:42:30.505Z"
+      "lu": "2026-10-05T19:41:36.363Z"
     },
     "116": {
       "numero": "116",
@@ -16478,7 +16478,7 @@
       "longueurTexteEn": 13053,
       "longueurTexteFr": 14684,
       "votes": [],
-      "lu": "2026-10-02T16:42:34.224Z"
+      "lu": "2026-10-05T19:41:40.570Z"
     },
     "117": {
       "numero": "117",
@@ -16539,7 +16539,7 @@
       "longueurTexteEn": 2688,
       "longueurTexteFr": 3147,
       "votes": [],
-      "lu": "2026-10-02T16:42:38.253Z"
+      "lu": "2026-10-05T19:41:44.406Z"
     },
     "118": {
       "numero": "118",
@@ -16600,17 +16600,31 @@
       "longueurTexteEn": 2237,
       "longueurTexteFr": 2671,
       "votes": [],
-      "lu": "2026-10-02T16:42:42.485Z"
+      "lu": "2026-10-05T19:41:48.358Z"
     },
     "119": {
       "numero": "119",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-119",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-119",
-      "statutEn": null,
-      "statutFr": null,
-      "statutSource": "derniere-etape",
-      "statutDerniereEtape": "Second Reading — Ordered referred to Standing Committee",
+      "statutEn": "Second Reading Consideration of a Bill",
+      "statutFr": "Deuxième lecture étude d'un projet de loi",
+      "statutSource": "entete",
+      "statutDerniereEtape": "Second Reading — Consideration of a Bill",
       "etapes": [
+        {
+          "dateAffichee": "October 5, 2026",
+          "date": "2026-10-05",
+          "etape": "Second Reading",
+          "evenement": "Consideration of a Bill",
+          "resultat": null,
+          "comite": "Standing Committee on Justice Policy",
+          "vote": null,
+          "etapeFr": "Deuxième lecture",
+          "evenementFr": "étude d'un projet de loi",
+          "resultatFr": null,
+          "comiteFr": "Comité permanent de la justice",
+          "dateAfficheeFr": "5 octobre 2026"
+        },
         {
           "dateAffichee": "June 2, 2026",
           "date": "2026-06-02",
@@ -16753,7 +16767,7 @@
         }
       ],
       "premiereLecture": "2026-05-25",
-      "derniereActivite": "2026-06-02",
+      "derniereActivite": "2026-10-05",
       "noteEn": "SCHEDULE 1 CHILD, YOUTH AND FAMILY SERVICES ACT, 2017\n\nThe Schedule makes various amendments to the Child, Youth and Family Services Act, 2017 in respect of adoption. Among those amendments are the following:\n\n1. A new section 191.1 allows a Director to grant approvals authorizing a person to act as an adoption practitioner if the person meets certain criteria. The approval allows its holder to, for the purposes of the Act, prepare adoption homestudies as well as reports of the adjustment of a child in the home of a person who has applied to adopt the child. Section 191.1 also provides that a Director may issue a direction to the holder of an approval requiring them to take any steps outlined in the direction in order to address concerns identified by the Director.\n\n2. A new section 230.1 provides that a Director may, if certain criteria are met, grant a term on a licence to place children for adoption that permits the licensee to act under subsection 183 (2) of the Act to bring children who are not residents of Canada from a specified country into Ontario to be placed for adoption. Notably, a Director may refuse to grant such a term on the grounds that it would be inappropriate in the circumstances or contrary to the public interest. A new section 234.1 provides for an appeal procedure for certain decisions respecting the granting of such a term. A new section 236.1 allows the Director to, in certain circumstances, suspend such a term.\n\n3. Amendments are made to the grounds upon which a Director may propose to refuse to issue a licence to place children for adoption or may propose to revoke or to refuse to renew such a licence. In particular, a new section 231.1 provides that a Director may refuse to issue such a licence if doing so would be contrary to the public interest, having regard to the number of licensees licensed to place children for adoption and the number of children in Ontario who are available for adoption.\n\nIn addition, the Act is amended to permit a person in charge of a place of secure custody or a place of secure temporary detention to place a young person in a locked room in the circumstances, and in accordance with the procedures, that are prescribed by the regulations. The locked room must also meet any standards prescribed by the regulations.\n\nSCHEDULE 2 CHRISTOPHER’S LAW (SEX OFFENDER REGISTRY), 2000\n\nThe Schedule amends Christopher’s Law (Sex Offender Registry), 2000 as follows:\n\nThe Act currently applies to persons who are convicted or found not criminally responsible on account of mental disorder of a sex offence, as defined by the Act to include specified offences. The Act is amended to apply to a person who is subject to an order or obligation that requires the person to comply with the Sex Offender Information Registration Act (Canada). Related amendments are made to the definitions of “sex offence” and “offender” and new definitions of “obligation” and “order” are added.\n\nAmendments are made to require that offenders comply with the reporting requirements under the Act for the duration of time that they are a sex offender for the purposes of the Sex Offender Information Registration Act (Canada). Transitional rules are included with respect to how the new reporting requirements apply to offenders who are subject to an order or obligation before the day the amendments come into force.\n\nThe Schedule repeals the provisions that relate to what occurs when an offender is pardoned in respect of a sex offence or when their conviction or finding of not criminally responsible on account of mental disorder is overturned, including requirements to delete references to an offender from the sex offender registry. The Act is amended to require the Minister to ensure that such information that relates to an offender is destroyed and permanently removed from the sex offender registry as required by and in accordance with the regulations.\n\nThe Lieutenant Governor in Council’s regulation-making powers are amended to include, among other things, the authority to prescribe and govern exceptions respecting the application of the Act and governing the destruction and permanent removal of information from the sex offender registry.\n\nExisting references to “the ministry” throughout the Act are updated to refer to “the Minister”. Other technical amendments are made to the Act.\n\nSCHEDULE 3 COMMUNITY SAFETY AND POLICING ACT, 2019\n\nThe Schedule amends the Community Safety and Policing Act, 2019 . The major elements are described below:\n\n1. Several provisions throughout the Act relating to misconduct, complaints and investigations are expanded to apply to prescribed persons.\n\n2. The duties of the Minister in section 3 of the Act are expanded to include consulting with and advising on the effective operation of police service boards, O.P.P. detachment boards and First Nation O.P.P. boards and monitoring trends in policing.\n\n3. New section 3.1 is added to give the Minister the power to issue directives to police service boards establishing priorities that the board must reflect in their strategic plan.\n\n4. Section 22 is amended to allow the Minister to require the Inspector General to investigate and report on whether appropriate arrangements have been made for the provision of adequate and effective policing if an arrangement were to be approved by the Minister under that section. A similar existing power in subsection 30 (3) is amended to allow the Minister to require the Inspector General to investigate and report, rather than ask for the investigation and report.\n\n5. Section 44 is amended to provide that meetings of a police service board, or of a committee of the board, are also closed to prescribed persons. The duty of confidentiality in subsection 44 (4) is expanded to apply to any person who attends a meeting or part of the meeting that is closed to the public.\n\n6. New section 49.1 prohibits certain contracts between police service boards and current or former members of a police service board.\n\n7. Section 80 is amended to require disclosure of personal information to the Commissioner in specified cases where the information has been disclosed for the purpose of the protection of the public. New section 80.1 requires the Commissioner to disclose this information on a publicly accessible website. Provisions are set out for corrections to and the removal of this information.\n\n8. New section 101.2 authorizes officers of the Royal Canadian Mounted Police or other prescribed persons who are peace officers under the law of a Canadian jurisdiction other than Ontario to exercise the prescribed powers of a police officer under Ontario legislation. It also allows prescribed employees of a government in a Canadian jurisdiction other than Ontario to be peace officers in prescribed areas of Ontario.\n\n9. Currently, subsection 107 (6) requires the Inspector General to forward certain policy or procedure complaints to the Minister. This subsection is amended to provide that the Inspector General may, but is not required to, forward the complaints if the Inspector General has investigated certain matters in the complaint and determined that there are no further grounds to investigate those matters.\n\n10. New section 110.1 authorizes the Inspector General to consolidate certain related complaints.\n\n11. Section 119 is amended to allow the Inspector General to disclose specified information to the Minister.\n\n12. Section 122 is amended to allow the Inspector General to amend or rescind a direction to a board member under that section.\n\n13. Currently, the powers in section 124 may be exercised if the report made under subsection 123 (1) discloses evidence that a member of a board has committed misconduct. This section is amended so that the powers may be used only if the Inspector General is of the opinion that a member of a board has committed misconduct. The report provisions in sections 124 and 125 are expanded to also apply to any decisions of the Inspector General to not take action under those sections.\n\n14. Certain related regulation-making powers are added to section 261.\n\nSCHEDULE 4 ENFORCEMENT OF CANADIAN RESTRAINING ORDERS ACT, 2026\n\nThe Schedule enacts the Enforcement of Canadian Restraining Orders Act, 2026 . Under the Act, restraining orders made by courts in Canada but outside of Ontario are deemed to be Ontario court orders and enforceable as such. The restraining orders may also be registered with the Ontario court. A party to a final non-Ontario restraining order can apply in Ontario under the Family Law Rules to have the order varied or set aside if specified criteria are met.\n\nA complementary amendment is made to section 21.8 of the Courts of Justice Act so that applications to vary or set aside a non-Ontario restraining order fall within the jurisdiction of the Family Court of the Superior Court of Justice where it sits (and the Superior Court of Justice otherwise), and to provide the Family Rules Committee with sufficient related rule-making authority under section 68 of that Act.\n\nSCHEDULE 5 INTERCOUNTRY ADOPTION ACT, 1998\n\nThe Schedule makes various amendments to the Intercountry Adoption Act, 1998 . Among those amendments are the following:\n\n1. Currently, the Act provides that a person who is habitually resident in Ontario may make an application to a licensee or to a Director for approval to leave Ontario for the purpose of an intercountry adoption or to finalize an intercountry adoption. The Act is amended so that such an application may only be made to a licensee.\n\n2. A new section 7.1 allows a Director to grant approvals authorizing a person to act as an adoption practitioner if the person meets certain criteria. The Act is further amended to provide that the report of an adoption homestudy for the purposes of an intercountry adoption must be prepared by a person who holds such an approval. Section 7.1 also provides that a Director may issue a direction to the holder of an approval requiring them to take any steps outlined in the direction in order to address concerns identified by the Director.\n\n3. A new section 8.2 provides that a Director may grant a term on a licence permitting the licensee to facilitate intercountry adoptions from a specific country if certain criteria are met. Notably, a Director may refuse to grant such a term on the grounds that it would be inappropriate in the circumstances or contrary to the public interest. A new section 12.1 provides for an appeal procedure for certain decisions respecting the granting of such a term. A new section 14.1 allows the Director to, in certain circumstances, suspend such a term.\n\n4. Amendments are made to the grounds upon which a Director may propose to refuse to issue a licence to facilitate intercountry adoptions or may propose to revoke or to refuse to renew such a licence.\n\n5. A new section 18.1 provides for the issuance of binding directives, to licensees, in respect of any matters prescribed by the regulations. A new section 18.2 provides for the issuance of compliance orders in cases of non-compliance with the Act, its regulations, a directive issued under section 18.1 or a condition on a licensee’s licence.\n\nSCHEDULE 6 PILL PRESSES AND PRECURSORS ACT, 2026\n\nThe Pill Presses and Precursors Act, 2026 is enacted.\n\nThe terms “pill press” and “precursor” are defined.\n\nThe use, possession or sale of pill presses or precursors in certain circumstances is prohibited. The Act also includes a prohibition on the possession of proceeds of an offence under the Act and a requirement to report stolen pill presses.\n\nThe Act includes a number of enforcement provisions. A police officer who has reasonable grounds to believe a person is guilty of an offence may require the person to identify themself. Provisions are included to provide for offences, penalties, searches and seizures.\n\nSCHEDULE 7 PLANNING ACT\n\nThe Schedule amends the Planning Act to give local municipalities the power to impose an administrative penalty on a person if the local municipality is satisfied that the person has failed to comply with any provisions of a by-law of the local municipality respecting the matter described in paragraph 1 of subsection 34 (1) of the Act (restricting use of land). The amendments also provide that such an administrative penalty constitutes a debt to the local municipality, which, if not paid within 15 days after the day it becomes due and payable, may be added to the tax roll and collected in the same manner as municipal taxes.\n\nSCHEDULE 8 POLICE RECORD CHECKS REFORM ACT, 2015\n\nThe Schedule amends the Police Record Checks Reform Act, 2015 to authorize a chief of police or a member of a police service designated by a chief of police for the purposes of this Act to apply to the Minister for an eligible body to be designated as an authorized body for the purposes of section 6.3 of the Criminal Records Act (Canada).\n\nThe Minister is authorized to make regulations governing the designation of an eligible body as an authorized body.\n\nSCHEDULE 9 PREVENTION OF AND REMEDIES FOR HUMAN TRAFFICKING ACT, 2017\n\nThe Schedule re-enacts Part IV of the Act respecting coerced debts: debts incurred as a result of the debtor being a victim of human trafficking. The Part sets out prohibitions against the collection or attempted collection of debts that have been established to be coerced debts under the Part (subsection 22 (1)). It also contains prohibitions against taking established coerced debts into account when determining whether to provide specified services or products (section 23). Contraventions of the prohibitions are offences subject to specified penalties on conviction (sections 24 and 25).\n\nA debt can be established to be a coerced debt in one of three ways: by written agreement between the debtor and creditor, on application to a court for a determination or on application to an adjudicator for a determination (subsection 18 (2)). The Part sets out the framework for establishing a coerced debt, as well as related procedural preconditions and requirements, which may be supplemented by regulations made under the Part.\n\nAn application may not be brought without the involvement of a designated organization. Designated organizations are entities with experience working with victims of human trafficking and that meet other specified requirements (section 34). They may enter into agreements with other organizations that provide support services to victims of human trafficking for the referral of debts that the debtor believes to be a coerced debt (section 26). A designated organization is required to review a debt referred to it and, if it is satisfied that the debt is a coerced debt, must notify the creditor. On receiving the notice the creditor is, in most cases, required to ensure that debt collection is paused for a specified period (section 27). If the debtor and creditor, with the involvement of the designated organization, do not agree that the debt is a coerced debt, an application may be brought for a determination. Section 28 specifies when an application must be made to a court and when a determination by an adjudicator under a simplified dispute resolution process is available under the Part. Applications heard by adjudicators are in writing only, in accordance with procedures to be set out by regulations made under the Part (section 29).\n\nThe Part sets out implications of the establishment of a coerced debt, including requirements for the creditor to notify specified persons and entities (section 31), implications for the civil enforcement of court orders under the rules of court (section 32) and requirements for authorities that issue specified licences and permits to take certain steps if the debtor’s licence or permit was previously implicated by the debtor’s failure to pay a debt (section 33).\n\nAdditional amendments are made to support the re-enactment of Part IV, including the following:\n\n1. The definition of “human trafficking” in section 1 is re-enacted. The substance of the previous definition is incorporated into Part II, which is renamed as a consequence (restraining orders).\n\n2. Related amendments are made to the Consumer Reporting Act and the Personal Property Security Act .\n\n3. The Protection from Coerced Debts Incurred in relation to Human Trafficking Act, 2023 is repealed. The main substance of that Act is retained and expanded on in the Schedule.\n\nFinally, the Schedule makes other amendments to the Act, including the following:\n\n1. Amendments to section 10 to expand the list of people who must or may be the subject of an order under that section (order restricting publication, etc.).\n\n2. Amendments to replace gendered language.\n\n3. Grammatical amendments to the French version of references to “human trafficking”.\n\nSCHEDULE 10 PRIVATE SECURITY AND INVESTIGATIVE SERVICES ACT, 2005\n\nThe Schedule makes various amendments to the Private Security and Investigative Services Act, 2005 , including the following:\n\n1. Currently, subsection 2 (4) provides that a security guard is a person who performs work, for remuneration, that consists primarily of guarding or patrolling for the purpose of protecting persons or property. The subsection is amended to provide that a security guard is a person who performs work, for renumeration, that consists of guarding and patrolling for the purpose of protecting persons or property.\n\n2. Section 3 currently provides that the Lieutenant Governor in Council shall appoint a Registrar of Private Investigators and Security Guards and one or more deputy registrars. The section is amended to provide that the Minister shall appoint a Registrar of Private Investigators and Security Guards and deputy registrars.\n\n3. Subsection 10 (1) is amended to make the payment of the required fee for the issuance or renewal of the appropriate licence a requirement for a person to be eligible to hold a licence.\n\n4. Section 12 is amended to provide that, when a person must do certain things with respect to their licence, these actions extend to their digital licence or to the hard copy of their digital licence.\n\n5. Subsections 19 (7) to (10), which set out a facilitation process in cases where a complaint to the Registrar is in regard to a breach of the code of conduct established under the regulations, are repealed. Subsection 19 (6) is amended and subsection 19 (7) is re-enacted to provide that, in such cases, the Registrar must review the complaint to determine whether an investigation is warranted and, if so, initiate an investigation.\n\n6. A new section 23.1 authorizes justices of the peace to issue production orders to investigators.\n\n7. Section 37 is amended so that a person is no longer required to return their licence to the Registrar in certain circumstances but is instead required to destroy their licence. Related amendments are made to sections 10, 25 and 29.\n\nSCHEDULE 11 PROVINCIAL ANIMAL WELFARE SERVICES ACT, 2019\n\nCurrently, section 14.1 of the Provincial Animal Welfare Services Act, 2019 provides for a record-keeping requirement in respect of dogs. The section is amended so that the requirement applies in respect of dogs, cats and any other animals prescribed by the Lieutenant Governor in Council.\n\nSCHEDULE 12 PROVINCIAL OFFENCES ACT\n\nThe Schedule amends section 5.1 of the Provincial Offences Act respecting early resolution meetings between defendants and prosecutors in relation to offence notices served under Part I of the Act. The amendments set out a process by which the clerk of the court may enter a conviction and impose a fine in accordance with an agreement between the defendant and prosecutor in which the defendant agrees to plead guilty and they both agree to a resulting penalty. If specified requirements are not met, the matter must proceed to trial before a justice. Section 13 is amended to add related regulation-making authority, and various consequential amendments are made.\n\nThe Schedule also re-enacts the definition of “court” in subsection 1 (1) to expressly refer to a justice, and makes related consequential amendments throughout the Act.\n\nFinally, the Schedule makes various housekeeping amendments, such as repealing spent provisions.\n\nSCHEDULE 13 SOCIAL WORK AND SOCIAL SERVICE WORK ACT, 1998\n\nCurrently, the Social Work and Social Service Work Act, 1998 authorizes the Council of the Ontario College of Social Workers and Social Service Workers or its Executive Committee to make interim orders suspending the certificate of registration of a member of the College or imposing terms, conditions or limitations on a member’s certificate of registration in certain circumstances. Notably, an allegation respecting the member must have been referred for a hearing before the Discipline Committee or the Fitness to Practise Committee. The Schedule amends the Act to, in particular, allow the Council or Executive Committee to make such interim orders at any point after a complaint regarding the conduct or actions of a member has been filed with the Registrar of the College or the Registrar has appointed one or more investigators to conduct an investigation in respect of a member.\n\nSCHEDULE 14 SPECIAL INVESTIGATIONS UNIT ACT, 2019\n\nThe Schedule amends the Special Investigations Unit Act, 2019 .\n\nThe definition of “official” is amended so that additional persons may be prescribed as “officials” for the purposes of the Act.\n\nSubsection 36 (1) currently provides that the SIU Director may refer certain matters involving officials, other than police officers, to a chief of police. The subsection is amended so that the Director may refer those matters to a prescribed person instead, though the Director may still refer the matter to a chief of police if no person has been prescribed.\n\nRegulation-making powers are added to allow the regulations to clarify or modify the application of the Act or the regulations to persons prescribed as “officials” or to exempt them from certain provisions.\n\nSCHEDULE 15 TOWING AND STORAGE SAFETY AND ENFORCEMENT ACT, 2021\n\nThe Schedule makes various amendments to the Towing and Storage Safety and Enforcement Act, 2021 . Here are some highlights:\n\n1. Currently, section 9 of the Act provides that an appeal of certain decisions does not operate as a stay of the decision. The section is amended to provide that a further appeal of a decision does not operate as a stay of the appeal body’s decision unless the Divisional Court orders a stay.\n\n2. Currently, section 28 of the Act requires the Director of Towing and Vehicle Storage Standards to publish the amounts for towing services and vehicle storage services that tow operators and vehicle storage operators are required to submit to the Director. The section is amended to require the Director to publish changes in the amounts submitted within the time period specified by the regulations.\n\n3. Subsection 38 (1) of the Act is re-enacted to provide for two separate restrictions on the provision of towing services at a collision. Tow truck drivers, tow operators and persons acting on their behalf must not provide or offer towing services within 200 metres of a collision. Tow truck drivers and tow operators are prohibited from parking or stopping a tow truck within 200 metres of a collision.\n\n4. New section 47.1 provides that an offence notice or summons that is provided to a tow truck driver is deemed to be served on the tow operator of the tow truck.\n\n5. New subsection 49 (2) authorizes the Director to delegate their powers and duties under the Act to a person employed in the Ministry.\n\nSCHEDULE 16 VICTIMS’ BILL OF RIGHTS, 1995\n\nThe Victims’ Bill of Rights, 1995 is amended with respect to harassment:\n\n1. Subsection 3 (2) lists victims of crimes that are presumed to have suffered emotional distress for the purposes of subsection 3 (1), which establishes a specified cause of action against persons convicted of crimes prescribed by the regulations made under the Act. Victims of criminal harassment are added to the list.\n\n2. A new cause of action against persons who engage in harassment is added in section 3.1. The cause of action is not contingent on a charge or conviction of criminal harassment against the defendant. Section 4.1 is added to provide that if a plaintiff brings multiple actions for harassment against the same person under the Act, the court must take into account any damages already awarded in respect of the harassing conduct in another action.\n\nA number of housekeeping amendments are also made to the Act, including amendments to remove gendered language.\n\nCONTENTS\n\nPreamble\n\n1.\n\nContents of this Act\n\n2.\n\nCommencement\n\n3.\n\nShort title\n\nSchedule 1\n\nChild, Youth and Family Services Act, 2017\n\nSchedule 2\n\nChristopher’s Law (Sex Offender Registry), 2000\n\nSchedule 3\n\nCommunity Safety and Policing Act, 2019\n\nSchedule 4\n\nEnforcement of Canadian Restraining Orders Act, 2026\n\nSchedule 5\n\nIntercountry Adoption Act, 1998\n\nSchedule 6\n\nPill Presses and Precursors Act, 2026\n\nSchedule 7\n\nPlanning Act\n\nSchedule 8\n\nPolice Record Checks Reform Act, 2015\n\nSchedule 9\n\nPrevention of and Remedies for Human Trafficking Act, 2017\n\nSchedule 10\n\nPrivate Security and Investigative Services Act, 2005\n\nSchedule 11\n\nProvincial Animal Welfare Services Act, 2019\n\nSchedule 12\n\nProvincial Offences Act\n\nSchedule 13\n\nSocial Work and Social Service Work Act, 1998\n\nSchedule 14\n\nSpecial Investigations Unit Act, 2019\n\nSchedule 15\n\nTowing and Storage Safety and Enforcement Act, 2021\n\nSchedule 16\n\nVictims’ Bill of Rights, 1995\n\nPreamble",
       "noteFr": "ANNEXE 1 LOI DE 2017 SUR LES SERVICES À L’ENFANCE, À LA JEUNESSE ET À LA FAMILLE\n\nL’annexe apporte diverses modifications à la Loi de 2017 sur les services à l’enfance, à la jeunesse et à la famille , dont les suivantes :\n\n1. Le nouvel article 191.1 permet au directeur d’agréer la personne qui satisfait à certains critères en vue de l’autoriser à agir à titre d’intervenant en adoption. Le titulaire d’un agrément est alors autorisé, pour l’application de la Loi, à établir des études du milieu familial ainsi que des rapports sur l’adaptation d’un enfant au foyer de la personne ayant demandé, par voie de requête, de l’adopter. De plus, l’article 191.1 prévoit qu’un directeur peut donner au titulaire d’un agrément une directive lui enjoignant de prendre les mesures qui y sont énoncées afin de répondre aux préoccupations du directeur.\n\n2. Le nouvel article 230.1 prévoit qu’un directeur peut, si certains critères sont remplis, assortir un permis autorisant le placement d’enfants en vue de leur adoption d’une clause qui autorise le titulaire de permis à agir dans le cadre du paragraphe 183 (2) de la Loi et à amener en Ontario des enfants qui ne résident pas au Canada et qui proviennent d’un pays précisé pour les placer en vue de leur adoption. Le directeur peut en particulier refuser d’assortir un permis d’une telle clause si son octroi est inapproprié dans les circonstances ou contraire à l’intérêt public. Le nouvel article 234.1 prévoit un mécanisme d’appel de certaines décisions relatives à l’octroi d’une telle clause. Enfin, le nouvel article 236.1 permet au directeur, dans certaines circonstances, de suspendre une telle clause.\n\n3. Des modifications sont apportées aux motifs en vertu desquels un directeur peut proposer soit de refuser de délivrer un permis pour placer des enfants en vue de leur adoption, soit de révoquer ou de refuser de renouveler un tel permis. Le nouvel article 231.1 prévoit notamment qu’un directeur peut refuser de délivrer un tel permis si la délivrance du permis est contraire à l’intérêt public, compte tenu du nombre de titulaires de permis autorisés à placer des enfants en vue de leur adoption et du nombre d’enfants en Ontario pouvant être adoptés.\n\nEn outre, la Loi est modifiée pour permettre au responsable d’un lieu de garde en milieu fermé ou d’un lieu de détention provisoire en milieu fermé de placer un adolescent dans une pièce fermée à clé dans les circonstances prescrites et conformément aux protocoles prescrits par les règlements. Cette pièce doit également être conforme aux normes prescrites par les règlements.\n\nANNEXE 2 LOI CHRISTOPHER DE 2000 SUR LE REGISTRE DES DÉLINQUANTS SEXUELS\n\nL’annexe apporte à la Loi Christopher de 2000 sur le registre des délinquants sexuels les modifications suivantes :\n\nLa Loi s’applique actuellement aux personnes qui sont déclarées coupables d’une infraction sexuelle ou déclarées criminellement non responsables pour cause de troubles mentaux d’une infraction sexuelle, ce terme étant défini par la Loi comme incluant des infractions précises. La Loi est modifiée pour s’appliquer à toute personne qui est visée par une ordonnance ou assujettie à une obligation lui enjoignant de se conformer à la Loi sur l’enregistrement des renseignements sur les délinquants sexuels (Canada). Des modifications connexes sont apportées aux définitions des termes «infraction sexuelle» et «délinquant». Sont également ajoutées les définitions des termes «obligation» et «ordonnance».\n\nDes modifications sont apportées pour exiger que les délinquants se conforment aux exigences de se présenter prévues par la Loi tant qu’ils sont des délinquants sexuels pour l’application de la Loi sur l’enregistrement des renseignements sur les délinquants sexuels (Canada). Sont prévues des règles transitoires concernant la manière dont les nouvelles exigences de se présenter s’appliquent aux délinquants qui sont visés par une ordonnance ou assujettis à une obligation avant le jour de l’entrée en vigueur des modifications.\n\nL’annexe abroge les dispositions qui se rapportent à ce qui se passe lorsqu’un délinquant est réhabilité relativement à une infraction sexuelle ou lorsqu’est infirmée la déclaration de culpabilité ou la déclaration de non-responsabilité criminelle pour cause de troubles mentaux, y compris les exigences de suppression de toute mention du délinquant du registre des délinquants sexuels. La Loi est modifiée pour exiger que le ministre veille à ce que les renseignements qui se rapportent à un délinquant soient supprimés définitivement du registre des délinquants sexuels et détruits, comme l’exigent les règlements et conformément à ceux-ci.\n\nLes pouvoirs réglementaires du lieutenant-gouverneur en conseil sont modifiés afin de comprendre, entre autres, le pouvoir de prescrire et de régir les exceptions relatives à l’application de la Loi, ainsi que celui de régir la suppression définitive des renseignements du registre des délinquants sexuels et leur destruction.\n\nLes mentions actuelles de «ministère» dans l’ensemble de la Loi sont remplacées par celles de «ministre». Enfin, d’autres modifications de forme sont apportées à la Loi.\n\nANNEXE 3 LOI DE 2019 SUR LA SÉCURITÉ COMMUNAUTAIRE ET LES SERVICES POLICIERS\n\nL’annexe modifie la Loi de 2019 sur la sécurité communautaire et les services policiers . Les principaux éléments sont exposés ci-dessous :\n\n1. Plusieurs dispositions de la Loi portant sur les fautes, les plaintes et les enquêtes sont élargies pour s’appliquer aux personnes prescrites.\n\n2. Les fonctions du ministre énoncées à l’article 3 de la Loi sont élargies pour inclure la consultation des commissions de service de police, des conseils de détachement de la Police provinciale et des conseils de Première Nation sur la Police provinciale, la fourniture de conseils à ces commissions et conseils en ce qui concerne leur bon fonctionnement ainsi que la surveillance des tendances en matière de services policiers.\n\n3. L’article 3.1 est ajouté pour conférer au ministre le pouvoir de donner aux commissions de service de police la directive d’établir les priorités dont elles doivent tenir compte dans leur plan stratégique.\n\n4. L’article 22 est modifié pour permettre au ministre d’exiger que l’inspecteur général enquête et lui présente un rapport sur la question de savoir si des dispositions appropriées ont été prises pour la prestation de services policiers convenables et efficaces en cas d’approbation par le ministre d’un arrangement en vertu de cet article. Un pouvoir semblable que confère le paragraphe 30 (3) est modifié pour permettre au ministre d’exiger que l’inspecteur général enquête et lui présente un rapport, plutôt que de lui demander de faire cela.\n\n5. L’article 44 est modifié pour prévoir que les réunions des commissions de service de police ou de leurs comités sont également interdites d’accès aux personnes prescrites. L’obligation de confidentialité prévue au paragraphe 44 (4) est étendue pour s’appliquer désormais aux personnes qui assistent aux réunions, en totalité ou en partie, qui se tiennent à huis clos.\n\n6. Le nouvel article 49.1 interdit aux commissions de service de police de conclure certains contrats avec des membres actuels ou anciens d’une commission de service de police.\n\n7. L’article 80 est modifié pour exiger la divulgation des renseignements personnels au commissaire dans des cas précis où les renseignements ont été divulgués à des fins de protection du public. Le nouvel article 80.1 exige que le commissaire divulgue ces renseignements sur un site Web public. Des dispositions relatives à la rectification et à la suppression de ces renseignements y sont prévues.\n\n8. Le nouvel article 101.2 autorise les agents de la Gendarmerie royale du Canada ou les autres personnes prescrites qui sont des agents de la paix sous le régime de la loi d’une autorité législative canadienne autre que l’Ontario à exercer les pouvoirs prescrits d’agent de police que confère la législation ontarienne. Il permet également à des employés prescrits du gouvernement d’une autorité législative canadienne autre que l’Ontario d’être des agents de la paix dans des secteurs prescrits de l’Ontario.\n\n9. À l’heure actuelle, le paragraphe 107 (6) exige que l’inspecteur général transmette au ministre certaines plaintes touchant les politiques ou procédures. Ce paragraphe est modifié pour prévoir que l’inspecteur général peut, sans toutefois y être tenu, transmettre les plaintes si l’inspecteur général a enquêté sur certaines questions faisant l’objet de la plainte et a établi qu’il ne semble pas y avoir de motifs pour procéder à un complément d’enquête sur ces questions.\n\n10. Le nouvel article 110.1 autorise l’inspecteur général à joindre des plaintes connexes.\n\n11. L’article 119 est modifié pour permettre à l’inspecteur général de divulguer certains renseignements au ministre.\n\n12. L’article 122 est modifié pour permettre à l’inspecteur général de modifier ou d’annuler une directive donnée à un membre d’une commission ou d’un conseil en vertu de cet article.\n\n13. Actuellement, les pouvoirs conférés par l’article 124 peuvent être exercés si le rapport présenté aux termes du paragraphe 123 (1) révèle des preuves de la commission d’une faute par un membre d’une commission ou d’un conseil. Cet article est modifié de sorte que ces pouvoirs ne puissent être exercés que si l’inspecteur général est d’avis qu’un membre d’une commission ou d’un conseil a commis une faute. Les dispositions des articles 124 et 125 relatives au rapport sont élargies afin de s’appliquer également à toute décision de l’inspecteur général de ne pas prendre de mesures en vertu de ces articles.\n\n14. Certains pouvoirs réglementaires connexes sont ajoutés à l’article 261.\n\nANNEXE 4 LOI DE 2026 SUR L’EXÉCUTION DES ORDONNANCES INTERDICTIVES CANADIENNES\n\nL’annexe édicte la Loi de 2026 sur l’exécution des ordonnances interdictives canadiennes . La Loi prévoit que les ordonnances interdictives rendues par les tribunaux canadiens, à l’exclusion des tribunaux ontariens, sont réputées être des ordonnances judiciaires de l’Ontario et avoir force exécutoire à ce titre. Les ordonnances interdictives peuvent également être enregistrées auprès du tribunal de l’Ontario. Une partie à une ordonnance interdictive définitive qui n’a pas été rendue en Ontario peut présenter une requête en Ontario dans le cadre des Règles en matière de droit de la famille pour faire modifier ou annuler l’ordonnance s’il est satisfait aux critères prévus.\n\nUne modification complémentaire est apportée à l’article 21.8 de la Loi sur les tribunaux judiciaires de sorte que les requêtes en modification ou en annulation d’une ordonnance interdictive qui n’a pas été rendue en Ontario relèvent de la compétence de la Cour de la famille de la Cour supérieure de justice là où elle siège (et de la Cour supérieure de justice dans les autres cas), et pour conférer au Comité des règles en matière de droit de la famille des pouvoirs suffisants d’établissement de règles connexes dans le cadre de l’article 68 de cette loi.\n\nANNEXE 5 LOI DE 1998 SUR L’ADOPTION INTERNATIONALE\n\nL’annexe apporte diverses modifications à la Loi de 1998 sur l’adoption internationale , dont les suivantes :\n\n1. À l’heure actuelle, la Loi prévoit qu’une personne qui réside habituellement en Ontario peut présenter au titulaire d’un permis ou à un directeur une demande d’approbation pour quitter l’Ontario en vue d’une adoption internationale ou pour en compléter les formalités. La Loi est modifiée pour qu’une telle demande ne soit présentée qu’au titulaire d’un permis.\n\n2. Le nouvel article 7.1 permet au directeur d’agréer la personne qui satisfait à certains critères en vue de l’autoriser à agir à titre d’intervenant en adoption. La Loi est également modifiée pour prévoir que le rapport sur une étude du milieu familial en vue d’une adoption internationale doit être établi par une personne titulaire d’un tel agrément. De plus, l’article 7.1 prévoit qu’un directeur peut donner au titulaire d’un agrément une directive lui enjoignant de prendre, dans le délai qui y est énoncé, les mesures qui y sont énoncées afin de répondre aux préoccupations du directeur.\n\n3. Le nouvel article 8.2 prévoit qu’un directeur peut assortir un permis d’une clause autorisant le titulaire de permis à faciliter les adoptions internationales en provenance d’un pays précisé si certaines conditions sont réunies. Le directeur peut en particulier refuser d’assortir le permis d’une telle clause si son octroi serait inapproprié dans les circonstances ou contraire à l’intérêt public. Le nouvel article 12.1 prévoit un mécanisme d’appel de certaines décisions relatives à l’octroi d’une telle clause. Enfin, le nouvel article 14.1 permet au directeur, dans certaines circonstances, de suspendre une telle clause.\n\n4. Des modifications sont apportées aux motifs en vertu desquels un directeur peut proposer soit de refuser de délivrer un permis en vue de faciliter les adoptions internationales, soit de révoquer ou de refuser de renouveler un tel permis.\n\n5. Le nouvel article 18.1 prévoit que le directeur peut donner aux titulaires de permis des directives contraignantes à l’égard de toute question prescrite par les règlements. Le nouvel article 18.2 prévoit que le directeur peut donner des ordres de conformité en cas de non-conformité à la Loi ou à ses règlements, à une directive donnée en vertu de l’article 18.1 ou à une condition dont est assorti le permis du titulaire d’un permis.\n\nANNEXE 6 LOI DE 2026 SUR LES PRESSES À COMPRIMÉS ET LES PRÉCURSEURS\n\nLa Loi de 2026 sur les presses à comprimés et les précurseurs est édictée.\n\nLes termes «presse à comprimés» et «précurseur» sont définis.\n\nIl est interdit d’utiliser, de posséder ou de vendre des presses à comprimés et des précurseurs dans certaines circonstances. La Loi prévoit également une interdiction de posséder le produit d’une infraction à la Loi ainsi qu’une obligation de signaler le vol de presses à comprimés.\n\nLa Loi comporte un certain nombre de dispositions en matière d’exécution. L’agent de police qui a des motifs raisonnables de croire qu’une personne est coupable d’une infraction peut exiger d’elle qu’elle révèle son identité. Enfin sont ajoutées des dispositions en vue de prévoir des infractions, des peines, des perquisitions et des saisies.\n\nANNEXE 7 LOI SUR L’AMÉNAGEMENT DU TERRITOIRE\n\nL’annexe modifie la Loi sur l’aménagement du territoire pour donner aux municipalités locales le pouvoir d’imposer une pénalité administrative à une personne si la municipalité est convaincue que la personne n’a pas observé des dispositions d’un règlement de la municipalité locale portant sur le sujet visé à la disposition 1 du paragraphe 34 (1) de la Loi (restrictions relatives à l’utilisation du sol). Les modifications prévoient également que cette pénalité administrative constitue une dette envers la municipalité locale qui, à défaut d’être payée dans les 15 jours qui suivent le jour où elle devient exigible, peut être ajoutée au rôle d’imposition et être perçue de la même manière que les impôts municipaux.\n\nANNEXE 8 LOI DE 2015 SUR LA RÉFORME DES VÉRIFICATIONS DE DOSSIERS DE POLICE\n\nL’annexe modifie la Loi de 2015 sur la réforme des vérifications de dossiers de police afin d’autoriser un chef de police ou un membre d’un service de police désigné par un chef de police pour l’application de la présente loi à demander au ministre qu’un organisme admissible soit désigné comme organisme autorisé pour l’application de l’article 6.3 de la Loi sur le casier judiciaire (Canada).\n\nLe ministre est autorisé, par règlement, à régir la désignation d’un organisme admissible comme organisme autorisé.\n\nANNEXE 9 LOI DE 2017 SUR LA PRÉVENTION DE LA TRAITE DE PERSONNES ET LES RECOURS EN LA MATIÈRE\n\nL’annexe réédicte la partie IV de la Loi qui porte sur les dettes contractées sous la contrainte, soit les dettes contractées du fait que le débiteur a été victime de la traite des personnes. Cette partie prévoit l’interdiction de recouvrement ou de tentative de recouvrement de créances liées à des dettes qui ont été établies comme étant des dettes contractées sous la contrainte aux termes de cette partie (paragraphe 22 (1)). Elle interdit également, au moment de décider s’il y a lieu de fournir certains services ou produits, de prendre en compte les dettes établies comme étant contractées sous la contrainte (article 23). Le fait de contrevenir à ces interdictions constitue des infractions passibles de peines déterminées à la suite d’une déclaration de culpabilité (articles 24 et 25).\n\nUne dette peut être établie comme étant contractée sous la contrainte de trois façons : par accord écrit conclu entre le débiteur et le créancier; sur présentation d’une requête au tribunal pour qu’il rende une décision; sur présentation d’une demande à un arbitre pour qu’il prenne une décision (paragraphe 18 (2)). La partie fixe le cadre servant à établir qu’une dette constitue une dette contractée sous la contrainte, ainsi que les conditions préalables et exigences procédurales connexes, lesquelles peuvent être complétées par des règlements pris en vertu de cette partie.\n\nAucune requête ne peut être introduite sans l’intervention d’un organisme désigné. Les organismes désignés sont des entités qui possèdent une expérience de travail auprès des victimes de la traite des personnes et qui satisfont à d’autres exigences déterminées (article 34). Ils peuvent conclure avec d’autres organismes fournissant des services de soutien aux victimes de la traite des personnes des ententes concernant le renvoi de dettes que le débiteur estime avoir contractées sous la contrainte (article 26). Un organisme désigné est tenu d’examiner toute dette qui lui est renvoyée et, s’il est convaincu qu’il s’agit d’une dette contractée sous la contrainte, il doit en aviser le créancier. À la réception d’un tel avis, le créancier est tenu, dans la plupart des cas, de veiller à ce que le recouvrement de la créance soit suspendu pendant une période déterminée (article 27). Si le débiteur et le créancier, avec l’intervention de l’organisme désigné, ne s’entendent pas sur le fait q ue la dette constitue une dette contractée sous la contrainte, une requête peut être introduite en vue d’une décision. L’article 28 prévoit les cas où une requête doit être présentée auprès d’un tribunal et les cas où il est possible de se prévaloir, en vertu de la partie, d’un processus simplifié de règlement des différends pour qu’un arbitre rende une décision. Les demandes entendues par les arbitres se font uniquement sur pièces, conformément à la procédure qui sera établie par les règlements pris en vertu de la partie (article 29).\n\nLa partie énonce les conséquences de l’établissement d’une dette comme étant une dette contractée sous la contrainte, notamment l’obligation pour le créancier d’aviser les personnes et entités désignées (article 31), les conséquences pour l’exécution en matière civile des ordonnances judiciaires conformément aux règles de pratique (article 32) et l’obligation pour les autorités responsables des permis, licences ou certificats désignés de prendre certaines mesures si le non-acquittement d’une dette par son débiteur a déjà eu des conséquences sur le permis, la licence ou le certificat qu’il détient (article 33).\n\nDes modifications supplémentaires sont apportées pour soutenir la réédiction de la partie IV, notamment les suivantes :\n\n1. La définition de «traite de personnes» à l’article 1 est réédictée. La substance de la définition antérieure est intégrée à la partie II, laquelle est redésignée en conséquence (ordonnances interdictives).\n\n2. Des modifications connexes sont apportées à la Loi sur les renseignements concernant le consommateur et à la Loi sur les sûretés mobilières .\n\n3. La Loi de 2023 sur la protection contre les dettes contractées sous la contrainte dans un contexte de traite de personnes est abrogée. L’essentiel de cette loi est conservé et développé dans l’annexe.\n\nEnfin, l’annexe apporte d’autres modifications à la Loi, notamment les suivantes :\n\n1. Des modifications à l’article 10 pour élargir la liste des personnes qui doivent ou peuvent faire l’objet d’une ordonnance prévue à cet article (ordonnance limitant la publication ou la diffusion).\n\n2. Des modifications visant à remplacer les formulations genrées.\n\n3. Des modifications d’ordre grammatical, dans la version française, aux mentions de «traite de personnes».\n\nANNEXE 10 LOI DE 2005 SUR LES SERVICES PRIVÉS DE SÉCURITÉ ET D’ENQUÊTE\n\nL’annexe apporte à la Loi de 2005 sur les services privés de sécurité et d’enquête diverses modifications, dont les suivantes :\n\n1. À l’heure actuelle, le paragraphe 2 (4) prévoit qu’un agent de sécurité est une personne qui accomplit un travail rémunéré consistant principalement à assurer la garde ou à effectuer des rondes de surveillance afin de protéger des personnes ou des biens. Le paragraphe est modifié pour prévoir qu’un agent de sécurité est une personne qui accomplit un travail rémunéré consistant à assurer la garde ou à effectuer des rondes de surveillance afin de protéger des personnes ou des biens.\n\n2. L’article 3 prévoit actuellement que le lieutenant-gouverneur en conseil nomme un registrateur des enquêteurs privés et des agents de sécurité ainsi qu’un ou plusieurs registrateurs adjoints. L’article est modifié pour prévoir que le ministre nomme un registrateur des enquêteurs privés et des agents de sécurité ainsi que des registrateurs adjoints.\n\n3. Le paragraphe 10 (1) est modifié pour exiger d’une personne qu’elle acquitte les droits requis pour la délivrance ou le renouvellement du permis approprié afin d’avoir droit à un permis.\n\n4. L’article 12 est modifié pour prévoir que lorsqu’une personne doit prendre certaines mesures à l’égard de son permis, elle peut les prendre à l’égard de son permis numérique ou de sa version papier.\n\n5. Sont abrogés les paragraphes 19 (7) à (10), lesquels prévoient un processus de facilitation dans les cas où une plainte adressée au registrateur porte sur une infraction au code de conduite établi en vertu des règlements. Le paragraphe 19 (6) est modifié et le paragraphe 19 (7) est réédicté afin que, dans de tels cas, le registrateur doive examiner la plainte pour décider s’il y a lieu d’enquêter et, le cas échéant, d’ouvrir une enquête.\n\n6. Le nouvel article 23.1 autorise les juges de paix à rendre des ordonnances de production de documents à l’endroit des enquêteurs.\n\n7. L’article 37 est modifié pour faire en sorte qu’une personne ne soit plus tenue de retourner son permis au registrateur dans certaines circonstances, mais qu’elle soit plutôt tenue de le détruire. Des modifications connexes sont apportées aux articles 10, 25 et 29.\n\nANNEXE 11 LOI DE 2019 SUR LES SERVICES PROVINCIAUX VISANT LE BIEN-ÊTRE DES ANIMAUX\n\nÀ l’heure actuelle, l’article 14.1 de la Loi de 2019 sur les services provinciaux visant le bien-être des animaux prévoit une obligation de tenue de dossiers à l’égard des chiens. Cet article est modifié de manière que l’obligation s’applique à l’égard des chiens, des chats et de tout autre animal prescrit par le lieutenant-gouverneur en conseil.\n\nANNEXE 12 LOI SUR LES INFRACTIONS PROVINCIALES\n\nL’annexe modifie l’article 5.1 de la Loi sur les infractions provinciales en ce qui concerne les rencontres pour règlement rapide entre défendeurs et poursuivants portant sur les avis d’infraction signifiés en application de la partie I de la Loi. Les modifications prévoient un processus selon lequel le greffier du tribunal peut inscrire une déclaration de culpabilité et imposer une amende conformément à l’entente conclue par le défendeur et le poursuivant et dans laquelle le défendeur convient de plaider coupable et les deux parties conviennent de la peine qui en découle. En cas de non-respect d’exigences données, la question doit être instruite devant un juge. L’article 13 est modifié pour ajouter des pouvoirs réglementaires connexes, et diverses modifications corrélatives y sont apportées.\n\nL’annexe réédicte également la définition de «tribunal» au paragraphe 1 (1) pour faire expressément référence à un juge. Elle apporte en outre des modifications corrélatives connexes dans l’ensemble de la Loi.\n\nEnfin, l’annexe apporte diverses modifications d’ordre administratif, comme l’abrogation des dispositions caduques.\n\nANNEXE 13 LOI DE 1998 SUR LE TRAVAIL SOCIAL ET LES TECHNIQUES DE TRAVAIL SOCIAL\n\nÀ l’heure actuelle, la Loi de 1998 sur le travail social et les techniques de travail social autorise le conseil de l’Ordre des travailleurs sociaux et des techniciens en travail social de l’Ontario ou son bureau à rendre des ordonnances provisoires ayant pour effet de suspendre le certificat d’inscription d’un membre de l’Ordre ou d’assortir le certificat d’un tel membre de conditions ou de restrictions dans certaines circonstances. En particulier, une allégation faite à l’endroit d’un membre doit avoir été renvoyée en vue d’une audience devant le comité de discipline ou le comité d’aptitude professionnelle. L’annexe modifie la Loi afin, notamment, d’autoriser le conseil ou le bureau à rendre une ordonnance provisoire en tout temps après soit le dépôt d’une plainte relativement à la conduite ou aux actes d’un membre auprès du registraire de l’Ordre, soit la nomination, par le registraire, d’un ou de plusieurs enquêteurs de mener une enquête à l’égard d’un membre.\n\nANNEXE 14 LOI DE 2019 SUR L’UNITÉ DES ENQUÊTES SPÉCIALES\n\nL’annexe modifie la Loi de 2019 sur l’Unité des enquêtes spéciales .\n\nLa définition de «agent» est modifiée de sorte que d’autres personnes peuvent être prescrites comme «agents» pour l’application de la Loi.\n\nLe paragraphe 36 (1) prévoit actuellement que le directeur de l’UES peut renvoyer à un chef de police certaines affaires mettant en cause des agents qui ne sont pas des agents de police. Ce paragraphe est modifié de manière que le directeur puisse plutôt renvoyer ces affaires à une personne prescrite par les règlements. Toutefois, si aucune personne n’a été prescrite par les règlements, le directeur peut toujours renvoyer l’affaire à un chef de police.\n\nDes pouvoirs réglementaires sont ajoutés pour permettre que les règlements précisent ou modifient les modalités d’application de la Loi ou des règlements aux personnes prescrites comme «agents» ou pour soustraire celles-ci à l’application de certaines dispositions.\n\nANNEXE 15 LOI DE 2021 SUR LA SÉCURITÉ ET L’ENCADREMENT DU REMORQUAGE ET DE L’ENTREPOSAGE DE VÉHICULES\n\nL’annexe apporte diverses modifications à la Loi de 2021 sur la sécurité et l’encadrement du remorquage et de l’entreposage de véhicules . En voici quelques points saillants :\n\n1. À l’heure actuelle, l’article 9 de la Loi prévoit que l’appel de certaines décisions n’a pas pour effet de suspendre les décisions. L’article est modifié afin de prévoir que l’appel d’une décision prise par un organisme d’appel n’a pas pour effet de suspendre la décision, sauf si la Cour divisionnaire l’ordonne.\n\n2. À l’heure actuelle, l’article 28 de la Loi exige que le directeur des normes relatives au remorquage et à l’entreposage des véhicules publie le montant des services de remorquage et des services d’entreposage de véhicules que les exploitants de services de remorquage et les exploitants de services d’entreposage de véhicules doivent lui communiquer. L’article est modifié afin d’exiger que le directeur publie les changements apportés à ces montants dans le délai que précisent les règlements.\n\n3. Le paragraphe 38 (1) de la Loi est réédicté afin de prévoir deux restrictions distinctes en ce qui concerne la prestation de services de remorquage sur les lieux d’une collision. Les conducteurs de dépanneuse, les exploitants de services de remorquage et les personnes agissant pour leur compte ne doivent pas fournir ou offrir de fournir des services de remorquage dans les 200 mètres d’une collision. De plus, il est interdit aux conducteurs de dépanneuse et aux exploitants de services de remorquage de stationner ou d’arrêter une dépanneuse dans les 200 mètres d’une collision.\n\n4. Selon le nouvel article 47.1, la délivrance d’un avis d’infraction ou d’une assignation à un conducteur de dépanneuse est réputée une signification à l’exploitant de services de remorquage de la dépanneuse.\n\n5. Le nouveau paragraphe 49 (2) autorise le directeur à déléguer les pouvoirs et fonctions que lui confère la Loi à une personne employée dans le ministère.\n\nANNEXE 16 CHARTE DE 1995 DES DROITS DES VICTIMES D’INFRACTIONS CRIMINELLES\n\nLa Charte de 1995 des droits des victimes d’infractions criminelles est modifiée à l’égard du harcèlement.\n\n1. Le paragraphe 3 (2) énumère les victimes d’infractions criminelles qui sont présumées avoir eu des troubles affectifs pour l’application du paragraphe 3 (1), qui établit une cause d’action particulière contre les personnes déclarées coupables d’infractions criminelles prescrites par les règlements pris en vertu de la Loi. Les victimes de harcèlement criminel sont ajoutées à cette liste.\n\n2. Est ajoutée à l’article 3.1 une nouvelle cause d’action contre les personnes qui se livrent à du harcèlement. La cause d’action ne dépend pas d’une accusation de harcèlement criminel ou d’une déclaration de culpabilité pour harcèlement criminel à l’encontre du défendeur. L’article 4.1 est ajouté pour prévoir que si un demandeur intente plusieurs actions pour harcèlement contre la même personne en vertu de la Loi, le tribunal doit tenir compte des dommages-intérêts déjà accordés à l’égard du comportement harcelant dans le cadre d’une autre action.\n\nUn certain nombre de modifications d’ordre administratif sont également apportées à la Loi, notamment des modifications visant à supprimer les formulations genrées.\n\nSOMMAIRE\n\nPréambule\n\n1.\n\nContenu de la présente loi\n\n2.\n\nEntrée en vigueur\n\n3.\n\nTitre abrégé\n\nAnnexe 1\n\nLoi de 2017 sur les services à l’enfance, à la jeunesse et à la famille\n\nAnnexe 2\n\nLoi Christopher de 2000 sur le registre des délinquants sexuels\n\nAnnexe 3\n\nLoi de 2019 sur la sécurité communautaire et les services policiers\n\nAnnexe 4\n\nLoi de 2026 sur l’exécution des ordonnances interdictives canadiennes\n\nAnnexe 5\n\nLoi de 1998 sur l’adoption internationale\n\nAnnexe 6\n\nLoi de 2026 sur les presses à comprimés et les précurseurs\n\nAnnexe 7\n\nLoi sur l’aménagement du territoire\n\nAnnexe 8\n\nLoi de 2015 sur la réforme des vérifications de dossiers de police\n\nAnnexe 9\n\nLoi de 2017 sur la prévention de la traite de personnes et les recours en la matière\n\nAnnexe 10\n\nLoi de 2005 sur les services privés de sécurité et d’enquête\n\nAnnexe 11\n\nLoi de 2019 sur les services provinciaux visant le bien-être des animaux\n\nAnnexe 12\n\nLoi sur les infractions provinciales\n\nAnnexe 13\n\nLoi de 1998 sur le travail social et les techniques de travail social\n\nAnnexe 14\n\nLoi de 2019 sur l’Unité des enquêtes spéciales\n\nAnnexe 15\n\nLoi de 2021 sur la sécurité et l’encadrement du remorquage et de l’entreposage de véhicules\n\nAnnexe 16\n\nCharte de 1995 des droits des victimes d’infractions criminelles\n\nPréambule",
       "versionsEn": [
@@ -16815,7 +16829,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-119-protecting-ontarios-streets-communities-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-02T16:42:47.886Z"
+      "lu": "2026-10-05T19:41:54.492Z"
     },
     "120": {
       "numero": "120",
@@ -16876,7 +16890,7 @@
       "longueurTexteEn": 2387,
       "longueurTexteFr": 2838,
       "votes": [],
-      "lu": "2026-10-02T16:42:51.460Z"
+      "lu": "2026-10-05T19:41:57.661Z"
     },
     "121": {
       "numero": "121",
@@ -16937,7 +16951,7 @@
       "longueurTexteEn": 8178,
       "longueurTexteFr": 8708,
       "votes": [],
-      "lu": "2026-10-02T16:42:55.298Z"
+      "lu": "2026-10-05T19:42:01.756Z"
     },
     "122": {
       "numero": "122",
@@ -16998,7 +17012,7 @@
       "longueurTexteEn": 1872,
       "longueurTexteFr": 2304,
       "votes": [],
-      "lu": "2026-10-02T16:42:59.080Z"
+      "lu": "2026-10-05T19:42:05.636Z"
     },
     "123": {
       "numero": "123",
@@ -17063,7 +17077,7 @@
       "longueurTexteEn": 4841,
       "longueurTexteFr": 5967,
       "votes": [],
-      "lu": "2026-10-02T16:43:03.225Z"
+      "lu": "2026-10-05T19:42:09.570Z"
     },
     "124": {
       "numero": "124",
@@ -17124,7 +17138,7 @@
       "longueurTexteEn": 1066,
       "longueurTexteFr": 1366,
       "votes": [],
-      "lu": "2026-10-02T16:43:07.325Z"
+      "lu": "2026-10-05T19:42:13.817Z"
     },
     "125": {
       "numero": "125",
@@ -17189,7 +17203,7 @@
       "longueurTexteEn": 11116,
       "longueurTexteFr": 12198,
       "votes": [],
-      "lu": "2026-10-02T16:43:11.098Z"
+      "lu": "2026-10-05T19:42:17.865Z"
     },
     "126": {
       "numero": "126",
@@ -17254,7 +17268,7 @@
       "longueurTexteEn": 1894,
       "longueurTexteFr": 2396,
       "votes": [],
-      "lu": "2026-10-02T16:43:15.101Z"
+      "lu": "2026-10-05T19:42:21.739Z"
     },
     "127": {
       "numero": "127",
@@ -17319,7 +17333,7 @@
       "longueurTexteEn": 2723,
       "longueurTexteFr": 3222,
       "votes": [],
-      "lu": "2026-10-02T16:43:18.933Z"
+      "lu": "2026-10-05T19:42:25.647Z"
     },
     "128": {
       "numero": "128",
@@ -17384,7 +17398,7 @@
       "longueurTexteEn": 2918,
       "longueurTexteFr": 3595,
       "votes": [],
-      "lu": "2026-10-02T16:43:22.952Z"
+      "lu": "2026-10-05T19:42:29.648Z"
     },
     "129": {
       "numero": "129",
@@ -17449,7 +17463,7 @@
       "longueurTexteEn": 22940,
       "longueurTexteFr": 26586,
       "votes": [],
-      "lu": "2026-10-02T16:43:27.109Z"
+      "lu": "2026-10-05T19:42:33.796Z"
     },
     "130": {
       "numero": "130",
@@ -17514,7 +17528,7 @@
       "longueurTexteEn": 42835,
       "longueurTexteFr": 54755,
       "votes": [],
-      "lu": "2026-10-02T16:43:31.268Z"
+      "lu": "2026-10-05T19:42:37.823Z"
     },
     "131": {
       "numero": "131",
@@ -17575,7 +17589,7 @@
       "longueurTexteEn": 1747,
       "longueurTexteFr": 2298,
       "votes": [],
-      "lu": "2026-10-02T16:43:35.095Z"
+      "lu": "2026-10-05T19:42:41.851Z"
     },
     "132": {
       "numero": "132",
@@ -17636,7 +17650,7 @@
       "longueurTexteEn": 5116,
       "longueurTexteFr": 5001,
       "votes": [],
-      "lu": "2026-10-02T16:43:39.079Z"
+      "lu": "2026-10-05T19:42:46.354Z"
     },
     "133": {
       "numero": "133",
@@ -17701,7 +17715,7 @@
       "longueurTexteEn": 14521,
       "longueurTexteFr": 17619,
       "votes": [],
-      "lu": "2026-10-02T16:43:43.100Z"
+      "lu": "2026-10-05T19:42:49.649Z"
     },
     "134": {
       "numero": "134",
@@ -17766,7 +17780,7 @@
       "longueurTexteEn": 6775,
       "longueurTexteFr": 8041,
       "votes": [],
-      "lu": "2026-10-02T16:43:47.352Z"
+      "lu": "2026-10-05T19:42:53.927Z"
     },
     "135": {
       "numero": "135",
@@ -17827,7 +17841,7 @@
       "longueurTexteEn": 1892,
       "longueurTexteFr": 2280,
       "votes": [],
-      "lu": "2026-10-02T16:43:51.251Z"
+      "lu": "2026-10-05T19:42:57.705Z"
     },
     "136": {
       "numero": "136",
@@ -17888,7 +17902,7 @@
       "longueurTexteEn": 1958,
       "longueurTexteFr": 2292,
       "votes": [],
-      "lu": "2026-10-02T16:43:54.938Z"
+      "lu": "2026-10-05T19:43:01.920Z"
     },
     "137": {
       "numero": "137",
@@ -17953,7 +17967,7 @@
       "longueurTexteEn": 4932,
       "longueurTexteFr": 5858,
       "votes": [],
-      "lu": "2026-10-02T16:43:59.009Z"
+      "lu": "2026-10-05T19:43:05.636Z"
     },
     "138": {
       "numero": "138",
@@ -18014,7 +18028,7 @@
       "longueurTexteEn": 2202,
       "longueurTexteFr": 2593,
       "votes": [],
-      "lu": "2026-10-02T16:44:03.220Z"
+      "lu": "2026-10-05T19:43:09.763Z"
     },
     "139": {
       "numero": "139",
@@ -18079,7 +18093,7 @@
       "longueurTexteEn": 9142,
       "longueurTexteFr": 10925,
       "votes": [],
-      "lu": "2026-10-02T16:44:07.238Z"
+      "lu": "2026-10-05T19:43:13.686Z"
     },
     "PR1": {
       "numero": "PR1",
@@ -18223,7 +18237,7 @@
       "longueurTexteEn": 2698,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:08.849Z"
+      "lu": "2026-10-05T19:43:14.700Z"
     },
     "PR2": {
       "numero": "PR2",
@@ -18367,7 +18381,7 @@
       "longueurTexteEn": 2950,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:10.885Z"
+      "lu": "2026-10-05T19:43:16.697Z"
     },
     "PR3": {
       "numero": "PR3",
@@ -18511,7 +18525,7 @@
       "longueurTexteEn": 3098,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:13.043Z"
+      "lu": "2026-10-05T19:43:18.695Z"
     },
     "PR4": {
       "numero": "PR4",
@@ -18655,7 +18669,7 @@
       "longueurTexteEn": 2766,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:14.868Z"
+      "lu": "2026-10-05T19:43:20.801Z"
     },
     "PR5": {
       "numero": "PR5",
@@ -18799,7 +18813,7 @@
       "longueurTexteEn": 2798,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:16.886Z"
+      "lu": "2026-10-05T19:43:22.747Z"
     },
     "PR6": {
       "numero": "PR6",
@@ -18943,7 +18957,7 @@
       "longueurTexteEn": 2918,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:18.802Z"
+      "lu": "2026-10-05T19:43:24.728Z"
     },
     "PR7": {
       "numero": "PR7",
@@ -19087,7 +19101,7 @@
       "longueurTexteEn": 2578,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:20.862Z"
+      "lu": "2026-10-05T19:43:26.780Z"
     },
     "PR8": {
       "numero": "PR8",
@@ -19231,7 +19245,7 @@
       "longueurTexteEn": 2704,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:22.798Z"
+      "lu": "2026-10-05T19:43:28.744Z"
     },
     "PR9": {
       "numero": "PR9",
@@ -19375,7 +19389,7 @@
       "longueurTexteEn": 2712,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:24.912Z"
+      "lu": "2026-10-05T19:43:30.687Z"
     },
     "PR10": {
       "numero": "PR10",
@@ -19519,7 +19533,7 @@
       "longueurTexteEn": 2774,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:27.106Z"
+      "lu": "2026-10-05T19:43:32.676Z"
     },
     "PR12": {
       "numero": "PR12",
@@ -19663,7 +19677,7 @@
       "longueurTexteEn": 2628,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:28.913Z"
+      "lu": "2026-10-05T19:43:34.729Z"
     },
     "PR13": {
       "numero": "PR13",
@@ -19807,7 +19821,7 @@
       "longueurTexteEn": 2834,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:30.901Z"
+      "lu": "2026-10-05T19:43:37.543Z"
     },
     "PR14": {
       "numero": "PR14",
@@ -19951,7 +19965,7 @@
       "longueurTexteEn": 2802,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:32.706Z"
+      "lu": "2026-10-05T19:43:39.521Z"
     },
     "PR15": {
       "numero": "PR15",
@@ -20095,7 +20109,7 @@
       "longueurTexteEn": 2780,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:34.914Z"
+      "lu": "2026-10-05T19:43:41.646Z"
     },
     "PR16": {
       "numero": "PR16",
@@ -20239,7 +20253,7 @@
       "longueurTexteEn": 2776,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:36.923Z"
+      "lu": "2026-10-05T19:43:43.499Z"
     },
     "PR17": {
       "numero": "PR17",
@@ -20383,7 +20397,7 @@
       "longueurTexteEn": 2652,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:38.825Z"
+      "lu": "2026-10-05T19:43:45.412Z"
     },
     "PR18": {
       "numero": "PR18",
@@ -20527,7 +20541,7 @@
       "longueurTexteEn": 2756,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:41.099Z"
+      "lu": "2026-10-05T19:43:47.529Z"
     },
     "PR19": {
       "numero": "PR19",
@@ -20671,7 +20685,7 @@
       "longueurTexteEn": 1748,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:42.799Z"
+      "lu": "2026-10-05T19:43:49.421Z"
     },
     "PR20": {
       "numero": "PR20",
@@ -20815,7 +20829,7 @@
       "longueurTexteEn": 2698,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:44.750Z"
+      "lu": "2026-10-05T19:43:51.388Z"
     },
     "PR21": {
       "numero": "PR21",
@@ -20959,7 +20973,7 @@
       "longueurTexteEn": 2656,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:46.881Z"
+      "lu": "2026-10-05T19:43:53.637Z"
     },
     "PR22": {
       "numero": "PR22",
@@ -21103,7 +21117,7 @@
       "longueurTexteEn": 2656,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:49.061Z"
+      "lu": "2026-10-05T19:43:55.540Z"
     },
     "PR23": {
       "numero": "PR23",
@@ -21247,7 +21261,7 @@
       "longueurTexteEn": 2936,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:50.800Z"
+      "lu": "2026-10-05T19:43:57.550Z"
     },
     "PR24": {
       "numero": "PR24",
@@ -21391,7 +21405,7 @@
       "longueurTexteEn": 2754,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:52.907Z"
+      "lu": "2026-10-05T19:43:59.553Z"
     },
     "PR25": {
       "numero": "PR25",
@@ -21535,7 +21549,7 @@
       "longueurTexteEn": 2762,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:54.842Z"
+      "lu": "2026-10-05T19:44:01.431Z"
     },
     "PR26": {
       "numero": "PR26",
@@ -21679,7 +21693,7 @@
       "longueurTexteEn": 2754,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:57.052Z"
+      "lu": "2026-10-05T19:44:03.489Z"
     },
     "PR27": {
       "numero": "PR27",
@@ -21823,7 +21837,7 @@
       "longueurTexteEn": 2654,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:44:59.016Z"
+      "lu": "2026-10-05T19:44:05.485Z"
     },
     "PR28": {
       "numero": "PR28",
@@ -21967,7 +21981,7 @@
       "longueurTexteEn": 2874,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:00.937Z"
+      "lu": "2026-10-05T19:44:07.619Z"
     },
     "PR29": {
       "numero": "PR29",
@@ -22111,7 +22125,7 @@
       "longueurTexteEn": 2964,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:02.826Z"
+      "lu": "2026-10-05T19:44:09.462Z"
     },
     "PR31": {
       "numero": "PR31",
@@ -22255,7 +22269,7 @@
       "longueurTexteEn": 2698,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:04.950Z"
+      "lu": "2026-10-05T19:44:11.482Z"
     },
     "PR32": {
       "numero": "PR32",
@@ -22399,7 +22413,7 @@
       "longueurTexteEn": 2314,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:06.793Z"
+      "lu": "2026-10-05T19:44:13.509Z"
     },
     "PR33": {
       "numero": "PR33",
@@ -22543,7 +22557,7 @@
       "longueurTexteEn": 2764,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:08.868Z"
+      "lu": "2026-10-05T19:44:15.591Z"
     },
     "PR34": {
       "numero": "PR34",
@@ -22687,7 +22701,7 @@
       "longueurTexteEn": 14611,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:10.790Z"
+      "lu": "2026-10-05T19:44:17.448Z"
     },
     "PR35": {
       "numero": "PR35",
@@ -22831,7 +22845,7 @@
       "longueurTexteEn": 2018,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:12.819Z"
+      "lu": "2026-10-05T19:44:19.479Z"
     },
     "PR36": {
       "numero": "PR36",
@@ -22975,7 +22989,7 @@
       "longueurTexteEn": 2682,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:14.987Z"
+      "lu": "2026-10-05T19:44:21.586Z"
     },
     "PR37": {
       "numero": "PR37",
@@ -23119,7 +23133,7 @@
       "longueurTexteEn": 2816,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:16.884Z"
+      "lu": "2026-10-05T19:44:23.452Z"
     },
     "PR38": {
       "numero": "PR38",
@@ -23263,7 +23277,7 @@
       "longueurTexteEn": 2972,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:18.839Z"
+      "lu": "2026-10-05T19:44:25.754Z"
     },
     "PR39": {
       "numero": "PR39",
@@ -23407,7 +23421,7 @@
       "longueurTexteEn": 3028,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:20.766Z"
+      "lu": "2026-10-05T19:44:27.505Z"
     },
     "PR40": {
       "numero": "PR40",
@@ -23551,7 +23565,7 @@
       "longueurTexteEn": 2808,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:22.717Z"
+      "lu": "2026-10-05T19:44:29.489Z"
     },
     "PR41": {
       "numero": "PR41",
@@ -23695,7 +23709,7 @@
       "longueurTexteEn": 2720,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:24.888Z"
+      "lu": "2026-10-05T19:44:31.590Z"
     },
     "PR43": {
       "numero": "PR43",
@@ -23839,7 +23853,7 @@
       "longueurTexteEn": 2658,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:26.795Z"
+      "lu": "2026-10-05T19:44:33.409Z"
     },
     "PR44": {
       "numero": "PR44",
@@ -23983,7 +23997,7 @@
       "longueurTexteEn": 2904,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:28.882Z"
+      "lu": "2026-10-05T19:44:35.532Z"
     },
     "PR45": {
       "numero": "PR45",
@@ -24127,7 +24141,7 @@
       "longueurTexteEn": 2792,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:30.946Z"
+      "lu": "2026-10-05T19:44:37.400Z"
     },
     "PR46": {
       "numero": "PR46",
@@ -24271,7 +24285,7 @@
       "longueurTexteEn": 53274,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:32.848Z"
+      "lu": "2026-10-05T19:44:39.578Z"
     },
     "PR47": {
       "numero": "PR47",
@@ -24327,7 +24341,7 @@
       "longueurTexteEn": 1418,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:34.888Z"
+      "lu": "2026-10-05T19:44:41.391Z"
     },
     "PR48": {
       "numero": "PR48",
@@ -24383,7 +24397,7 @@
       "longueurTexteEn": 1468,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:37.285Z"
+      "lu": "2026-10-05T19:44:43.602Z"
     },
     "PR49": {
       "numero": "PR49",
@@ -24527,7 +24541,7 @@
       "longueurTexteEn": 2830,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:38.750Z"
+      "lu": "2026-10-05T19:44:45.538Z"
     },
     "PR50": {
       "numero": "PR50",
@@ -24583,7 +24597,7 @@
       "longueurTexteEn": 1364,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:40.726Z"
+      "lu": "2026-10-05T19:44:47.461Z"
     },
     "PR51": {
       "numero": "PR51",
@@ -24639,7 +24653,7 @@
       "longueurTexteEn": 1554,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:42.930Z"
+      "lu": "2026-10-05T19:44:49.463Z"
     },
     "PR52": {
       "numero": "PR52",
@@ -24695,7 +24709,7 @@
       "longueurTexteEn": 1398,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:44.982Z"
+      "lu": "2026-10-05T19:44:51.595Z"
     },
     "PR53": {
       "numero": "PR53",
@@ -24751,7 +24765,7 @@
       "longueurTexteEn": 1343,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:46.761Z"
+      "lu": "2026-10-05T19:44:53.508Z"
     },
     "PR54": {
       "numero": "PR54",
@@ -24807,7 +24821,7 @@
       "longueurTexteEn": 1443,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:48.782Z"
+      "lu": "2026-10-05T19:44:55.589Z"
     },
     "PR55": {
       "numero": "PR55",
@@ -24863,7 +24877,7 @@
       "longueurTexteEn": 1495,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-02T16:45:50.739Z"
+      "lu": "2026-10-05T19:44:57.403Z"
     }
   }
 }

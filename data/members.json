@@ -6,7 +6,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-02T17:12:21.775Z",
+  "lus": "2026-10-05T20:10:10.251Z",
   "totalSieges": 124,
   "etatPartis": [
     {
@@ -1807,9 +1807,9 @@
         },
         {
           "type": "Constituency office",
-          "adresse": "Unit 2, 115 Erie St. N",
+          "adresse": "Suite 1, 22 Queens Ave.",
           "ville": "Leamington",
-          "codePostal": "N8H 3A3",
+          "codePostal": "N8H 3G8",
           "telephone": "519-326-3367",
           "courriel": null
         }

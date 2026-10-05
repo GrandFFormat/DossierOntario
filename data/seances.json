@@ -1302,8 +1302,22 @@
         "en": "Ministry of Economic Development, Job Creation and Trade",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-sept-29": [
+      {
+        "en": "Estimates",
+        "fr": "Budget des dépenses"
+      },
+      {
+        "en": "Ministry of Finance",
+        "fr": "Ministère des Finances"
+      },
+      {
+        "en": "Cabinet Office Office of the Premier",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-02T17:12:12.980Z",
-  "nombre": 145
+  "lus": "2026-10-05T20:10:02.593Z",
+  "nombre": 146
 }
