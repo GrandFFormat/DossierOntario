@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-10-05",
+      "fr": "Nouvelle page « Les règles » (/rules), dans le pied de page : d’où viennent les données, ce que le site s’interdit, et ce qu’il dit quand quelque chose manque.",
+      "en": "New page “The rules” (/rules), in the footer: where the data comes from, what the site refuses to do, and what it says when something is missing."
+    },
+    {
       "date": "2026-10-01",
       "fr": "Chaque projet de loi a sa propre page (ex. /bill/109), à partager et que Google peut trouver.",
       "en": "Every bill has its own page (e.g. /bill/109), to share and for search engines to find."

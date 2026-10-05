@@ -1022,3 +1022,14 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 .fil a{color:var(--rouge); font-weight:600;}
 .titre-projet{margin-top:10px;}
 a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;} .lien-titre:hover{color:var(--rouge); text-decoration:underline;}
+
+/* ---------- « The rules » (/rules) : les règles en cartes numérotées, comme /regles sur DQ ---------- */
+.regles-liste{list-style:none; margin:24px 0 0; padding:0; display:grid; gap:14px; max-width:880px;}
+.regle{border:1.5px solid var(--line); background:var(--card); padding:18px 22px;}
+.regle-titre{display:flex; align-items:baseline; gap:12px; margin:0 0 8px; font-family:'Archivo',sans-serif; font-size:20px; font-weight:800; line-height:1.2; letter-spacing:-.01em; text-transform:none;}
+.regle-no{flex:none; min-width:32px; padding:2px 8px; background:var(--rouge); color:#fff; font-size:16px; text-align:center;}
+.regle p{margin:0; font-size:15px; line-height:1.6; max-width:75ch;}
+.regle p b{font-weight:800;}
+.regles-suite{margin:24px 0 0; font-size:15px; line-height:1.6; max-width:880px;}
+.regles-suite a{color:var(--rouge); font-weight:700; text-decoration:underline; text-underline-offset:3px;}
+@media (max-width:600px){ .regle{padding:16px;} .regle-titre{font-size:18px;} }

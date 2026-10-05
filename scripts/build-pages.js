@@ -198,6 +198,53 @@ const PAGES = [
   <section data-vue="apropos"><ul class="journal" data-role="journal"></ul></section>`,
   },
   {
+    // « The rules » dans le pied de page, à côté de Facebook (5 oct. 2026), comme /regles sur
+    // DossierQuébec. Le contenu est propre à l'Ontario : pas de promesses ni de partis ici.
+    // Chaque règle doit rester VRAIE : si le site change, la règle change avec lui.
+    fichier: 'rules.html',
+    vue: 'regles',
+    donnees: '',
+    titre: 'The rules',
+    description: 'The sourcing rules of DossierOntario: official sources only, nothing invented, robots.txt respected, free and non-commercial, and what is missing is said.',
+    contenu: `  <h1 class="titre-vue" data-i18n="regles.titre">The rules</h1>
+  <div class="encadre" data-i18n-html="regles.intro">This site publishes only what the Legislative Assembly of Ontario and the Government of Ontario have themselves published, with a link to the original. <b>And it says clearly what is missing.</b></div>
+  <ol class="regles-liste">
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">1</span><span data-i18n="regles.1.h">No invented data</span></h2>
+      <p data-i18n-html="regles.1.p">This is rule number one. If a piece of information is missing, the field stays empty or the site says it is unknown. We do not guess and we do not fill in.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">2</span><span data-i18n="regles.2.h">Official sources only</span></h2>
+      <p data-i18n-html="regles.2.p">Everything on this site is read from two places: the <b>Legislative Assembly of Ontario</b> (ola.org) for bills, their stages and official texts, recorded votes, MPPs, committees and petitions; and the <b>Ontario Data Catalogue</b> (data.ontario.ca) for ministers and their official titles. Nothing is taken from the news media or from any other website.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">3</span><span data-i18n="regles.3.h">We respect a website’s refusal</span></h2>
+      <p data-i18n-html="regles.3.p">Our reader says honestly who it is and never pretends to be a browser. It follows each site’s robots.txt: that is why we follow links instead of using the Assembly’s own search engine. It waits between two requests: 2 seconds on ola.org, and 10 seconds on data.ontario.ca, which asks for it. We never get around a protection: a refusal is an answer, not an obstacle.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">4</span><span data-i18n="regles.4.h">Free and non-commercial</span></h2>
+      <p data-i18n-html="regles.4.p">The Assembly’s terms of use allow extracts to be reproduced for reasonable, fair and non-commercial use. So this site is free, with no advertising and nothing for sale. It reproduces short extracts, names its sources and links back to the official page.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">5</span><span data-i18n="regles.5.h">The official text always prevails</span></h2>
+      <p data-i18n-html="regles.5.p">Plain-language summaries are written by AI from the official text published on ola.org, and each one is marked as such. The AI is instructed to add nothing that is not in the text and to make no judgement. When a text is too thin to be summarised honestly, we show no summary at all. The official text is always one click away, and it is the one that counts. This site is independent and has no official status.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">6</span><span data-i18n="regles.6.h">What we work out, we say</span></h2>
+      <p data-i18n-html="regles.6.p">One thing on this site is deduced rather than read: ola.org does not say whether a bill comes from the government, so the “Government” filter is worked out from the sponsor, a minister. Ministers’ official titles come from the Ontario government’s own bilingual list: we do not translate a title ourselves.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">7</span><span data-i18n="regles.7.h">Our vote count is checked</span></h2>
+      <p data-i18n-html="regles.7.p">At every refresh, the site counts the recorded votes announced in the Assembly’s official minutes, sitting day by sitting day, and compares that number with its own.</p>
+    </li>
+    <li class="regle">
+      <h2 class="regle-titre"><span class="regle-no">8</span><span data-i18n="regles.8.h">We explain what is missing</span></h2>
+      <p data-i18n-html="regles.8.p">When the Assembly does not publish something, the page says so: divisions published with their totals only, without the names; absences, which the Assembly does not publish; committee votes, which are not listed here yet; bills with no French text, whose summary is shown in English with a note. Ontario has no electronic petitions, and Hansard is not translated.</p>
+    </li>
+  </ol>
+  <p class="regles-suite" data-i18n-html="regles.suite">These rules apply everywhere on the site. See where each piece of data comes from on the <a href="/sources">Sources</a> page, and follow what changes in the <a href="/about">site updates</a>.</p>`,
+  },
+  {
     fichier: 'sources.html',
     vue: 'sources',
     donnees: '',
