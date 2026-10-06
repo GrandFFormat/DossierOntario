@@ -50,7 +50,7 @@ export function construireLlms() {
   const lignes = [
     '# DossierOntario',
     '',
-    '> Independent, UNOFFICIAL citizen website that makes the work of the Legislative Assembly of Ontario readable in plain language: bills, recorded votes, committees, MPPs and cabinet. Free, with no advertising and nothing for sale. English by default, with a full French version.',
+    '> Independent, UNOFFICIAL citizen website that makes the work of the Legislative Assembly of Ontario readable in plain language: bills, recorded votes, committees, MPPs and cabinet. Free, with no advertising and no subscription. English by default, with a full French version.',
     '',
     'What to know before citing this site:',
     '',
