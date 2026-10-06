@@ -90,6 +90,10 @@
       'comites.cherche': 'Search a bill by number or title', 'comites.trouves': (n) => `${n} committee stud${n > 1 ? 'ies' : 'y'} of this bill`,
       'comites.aucunTrouve': 'No committee has studied a bill matching this search.',
       'projet.retour': '← All bills', 'projet.lienPage': 'This bill’s own page',
+      'e404.sur': 'Error 404 · Motion defeated', 'e404.titre': 'This page was prorogued.',
+      'e404.texte': 'It was tabled, sent to committee, and never heard from again. No recorded vote, no Hansard, not even a petition on paper.',
+      'e404.pour': 'Yeas', 'e404.contre': 'Nays', 'e404.speaker': 'The Speaker rules the address out of order.',
+      'e404.accueil': 'Back to the House', 'e404.projets': 'Bills that do exist',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       // La page « The rules » (/rules), 5 oct. 2026 : chaque règle a sa preuve dans le dépôt.
@@ -295,6 +299,10 @@
       'comites.cherche': 'Chercher un projet de loi par numéro ou titre', 'comites.trouves': (n) => `${n} étude${n > 1 ? 's' : ''} en comité pour cette recherche`,
       'comites.aucunTrouve': 'Aucun comité n’a étudié de projet de loi qui correspond à cette recherche.',
       'projet.retour': '← Tous les projets de loi', 'projet.lienPage': 'La page de ce projet de loi',
+      'e404.sur': 'Erreur 404 · Motion rejetée', 'e404.titre': 'Cette page a été prorogée.',
+      'e404.texte': 'Déposée, renvoyée en comité, et plus jamais revue. Aucun vote nominatif, rien au Journal des débats, même pas une pétition sur papier.',
+      'e404.pour': 'Pour', 'e404.contre': 'Contre', 'e404.speaker': 'La présidence déclare cette adresse irrecevable.',
+      'e404.accueil': 'Retour à la Chambre', 'e404.projets': 'Les projets de loi qui existent',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       // La page « The rules » (/rules), 5 oct. 2026 : chaque règle a sa preuve dans le dépôt.

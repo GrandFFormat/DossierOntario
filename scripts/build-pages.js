@@ -245,6 +245,30 @@ const PAGES = [
   <p class="regles-suite" data-i18n-html="regles.suite">These rules apply everywhere on the site. See where each piece of data comes from on the <a href="/sources">Sources</a> page, and follow what changes in the <a href="/about">site updates</a>.</p>`,
   },
   {
+    // La page introuvable : Vercel sert 404.html, à la racine, pour toute adresse inconnue.
+    // Hors du plan du site (horsPlan), et jamais indexée.
+    fichier: '404.html',
+    vue: 'introuvable',
+    donnees: '',
+    horsPlan: true,
+    titre: 'Page not found',
+    description: 'This page does not exist on DossierOntario.',
+    contenu: `  <section class="introuvable">
+    <p class="sur-titre" data-i18n="e404.sur">Error 404 · Motion defeated</p>
+    <h1 class="titre-vue" data-i18n="e404.titre">This page was prorogued.</h1>
+    <p class="chapo" data-i18n="e404.texte">It was tabled, sent to committee, and never heard from again. No recorded vote, no Hansard, not even a petition on paper.</p>
+    <div class="vote-404" aria-hidden="true">
+      <div><b>0</b><span data-i18n="e404.pour">Yeas</span></div>
+      <div class="contre"><b>404</b><span data-i18n="e404.contre">Nays</span></div>
+    </div>
+    <p class="legende" data-i18n="e404.speaker">The Speaker rules the address out of order.</p>
+    <div class="boutons-une">
+      <a class="bouton-plein" href="/"><span data-i18n="e404.accueil">Back to the House</span> <span aria-hidden="true">→</span></a>
+      <a class="bouton-trait" href="/bills"><span data-i18n="e404.projets">Bills that do exist</span> <span aria-hidden="true">→</span></a>
+    </div>
+  </section>`,
+  },
+  {
     fichier: 'sources.html',
     vue: 'sources',
     donnees: '',
@@ -312,6 +336,9 @@ for (const page of PAGES) {
   }
   html = html.replace(/\{\{ACTIF_[a-z]+\}\}/g, '');
 
+  if (page.horsPlan) {
+    html = html.replace(/<link rel="canonical"[^>]*>\n/, '<meta name="robots" content="noindex">\n').replace(/<link rel="alternate"[^>]*>\n/, '');
+  }
   writeFileSync(page.fichier, html);
   console.log(`${page.fichier} (${(html.length / 1024).toFixed(1)} ko)`);
 }
@@ -367,7 +394,7 @@ console.log(`${PAGES_PROJETS.length} pages de projets de loi dans bill/`);
 // Le plan du site, pour que Google trouve les six pages (leçon de DossierQuébec).
 const plan = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...PAGES, ...PAGES_PROJETS].map(
+${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS].map(
   (p) => `  <url><loc>https://dossierontario.ca/${adressePropre(p.fichier)}</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`
 ).join('\n')}
