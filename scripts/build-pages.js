@@ -375,3 +375,8 @@ ${[...PAGES, ...PAGES_PROJETS].map(
 `;
 writeFileSync('sitemap.xml', plan);
 console.log('sitemap.xml');
+
+// /llms.txt : le site expliqué aux assistants IA, avec les nombres du jour (scripts/build-llms.js).
+// En dernier : il vérifie que chaque page qu'il annonce existe, donc après leur fabrication.
+const { construireLlms } = await import('./build-llms.js');
+construireLlms();

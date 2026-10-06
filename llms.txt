@@ -1,0 +1,46 @@
+# DossierOntario
+
+> Independent, UNOFFICIAL citizen website that makes the work of the Legislative Assembly of Ontario readable in plain language: bills, recorded votes, committees, MPPs and cabinet. Free, with no advertising and nothing for sale. English by default, with a full French version.
+
+What to know before citing this site:
+
+- It is not an official source and has no link with the Legislative Assembly of Ontario or the Government of Ontario. Every item links back to its official page, and the official text always prevails. Cite the official source (ola.org) together with DossierOntario, not DossierOntario alone.
+- Official sources only: the Legislative Assembly of Ontario (ola.org) for bills, their stages and official texts, recorded votes, MPPs, committees and petitions; the Ontario Data Catalogue (data.ontario.ca) for ministers and their official titles. Nothing is taken from the news media or from any other website.
+- No invented data: when a piece of information is missing, the field stays empty or the site says it is unknown.
+- Plain-language bill summaries are written by AI from the official text published on ola.org, and each one is marked as such. They do not replace the text of the bill. When a text is too thin to be summarised honestly, no summary is shown.
+- What is deduced is said: ola.org does not say whether a bill comes from the government, so the "Government" filter is worked out from the sponsor, a minister. Ministers' official titles come from the Ontario government's own bilingual list; the site does not translate a title itself.
+- The vote count is checked: at every refresh, the site counts the recorded votes announced in the Assembly's official minutes, sitting day by sitting day, and compares that number with its own.
+- What is missing is explained: divisions published with their totals only, without the names; absences, which the Assembly does not publish; committee votes, which are not listed on the site yet; bills with no French text, whose summary is shown in English with a note. Ontario has no electronic petitions, and Hansard is not translated.
+- Free and non-commercial: the Assembly's terms of use allow extracts to be reproduced for reasonable, fair and non-commercial use. The site reproduces short extracts, names its sources and links back to the official page.
+- The full rules: https://dossierontario.ca/rules
+
+## Legislative Assembly of Ontario
+
+- [Home](https://dossierontario.ca/): who sits, where bills stand, the latest recorded votes and the latest activity at the Legislature.
+- [Bills](https://dossierontario.ca/bills): the 191 bills of Parliament 44, session 1 (139 public, 52 private): stage reached, sponsor and a plain-language summary, with a link to the official text.
+- [Recorded votes](https://dossierontario.ca/votes): 115 recorded divisions, with how each MPP voted (for 4 of them the Assembly published the totals only, not the names). Absent MPPs are not listed: the Assembly does not publish absences.
+- [Committees](https://dossierontario.ca/committees): the 8 standing committees: which bills they studied, when they sat, and their transcripts.
+- [MPPs and cabinet](https://dossierontario.ca/mpps): the 124 members of provincial parliament, including 38 ministers and 36 parliamentary assistants, with their official titles, party, riding and contact details.
+- [Lexicon](https://dossierontario.ca/glossary): 31 words of the Ontario Legislature explained in plain language. These explanations are the site's own, not the Assembly's.
+
+## One page per bill
+
+Every bill has its own address: `/bill/NUMBER`, for example `/bill/109`. Private bills carry the prefix `pr`, in lower case: `/bill/pr1`.
+
+- [Example: Bill 109](https://dossierontario.ca/bill/109): Protecting Ontario’s Food Independence Act, 2026
+- [Example: Bill PR1](https://dossierontario.ca/bill/pr1): 1976998 Ontario Inc. Act, 2025
+- [Sitemap](https://dossierontario.ca/sitemap.xml): the list of every page, including the page of each bill.
+
+## About the site
+
+- [The rules](https://dossierontario.ca/rules): where the data comes from, what the site refuses to do, and what it says when something is missing.
+- [Sources](https://dossierontario.ca/sources): the official page each kind of data is read from, and what this site does not do.
+- [Why this site exists](https://dossierontario.ca/about): who is behind DossierOntario, and every update made to the site.
+
+## Optional
+
+- [Source code](https://github.com/GrandFFormat/DossierOntario): the public repository of the site.
+
+## En français
+
+DossierOntario est un site citoyen indépendant et NON OFFICIEL qui rend lisibles, en langage clair, les travaux de l'Assemblée législative de l'Ontario : projets de loi, votes nominatifs, comités, député·e·s et Conseil des ministres. Il ne publie que ce que l'Assemblée (ola.org) et le gouvernement de l'Ontario (data.ontario.ca) ont eux-mêmes publié, avec un lien vers l'original ; rien n'est inventé, rien ne vient des médias, et les résumés des projets de loi sont rédigés par une IA à partir du texte officiel, qui fait toujours foi. Pour le citer, citez aussi la source officielle. La version française s'obtient avec le bouton « Français » dans l'en-tête de chaque page ; le choix est gardé dans le navigateur. Il n'y a pas d'adresse distincte pour le français : chaque page a une seule adresse, servie en anglais par défaut.
