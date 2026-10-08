@@ -1316,8 +1316,44 @@
         "en": "Cabinet Office Office of the Premier",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-sept-29": [
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Energy and Mines",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Natural Resources",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Agriculture, Food and Agribusiness",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/transcripts/committee-transcript-2026-oct-01": [
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Education",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Long-Term Care",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Colleges, Universities, Research Excellence and Security",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-07T18:24:47.414Z",
-  "nombre": 146
+  "lus": "2026-10-08T18:25:58.590Z",
+  "nombre": 148
 }
