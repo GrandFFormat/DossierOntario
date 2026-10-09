@@ -1352,8 +1352,26 @@
         "en": "Ministry of Colleges, Universities, Research Excellence and Security",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-oct-01": [
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Northern Economic Development and Growth",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Rural Affairs",
+        "fr": null
+      },
+      {
+        "en": "Ministry of the Environment, Conservation and Parks",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-08T18:25:58.590Z",
-  "nombre": 148
+  "lus": "2026-10-09T17:59:18.156Z",
+  "nombre": 149
 }
