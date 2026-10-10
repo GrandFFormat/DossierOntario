@@ -94,6 +94,7 @@
       'e404.texte': 'It was tabled, sent to committee, and never heard from again. No recorded vote, no Hansard, not even a petition on paper.',
       'e404.pour': 'Yeas', 'e404.contre': 'Nays', 'e404.speaker': 'The Speaker rules the address out of order.',
       'e404.accueil': 'Back to the House', 'e404.projets': 'Bills that do exist',
+      'avis.reprise': 'This site might be shut down due to low traffic and a desire to focus on Quebec. Want to take it over? You would still be part of the web of Canadian provinces, attached via <a href="https://dossiercanada.ca/">dossiercanada.ca</a>. Money-wise, it would probably cost you about $30 a month for a Claude subscription, and that’s pretty much it. If you want it, shoot me an email: <a href="mailto:info@dossierquebec.ca">info@dossierquebec.ca</a>',
       'pied.code': 'Source code', 'pied.claude': 'Built with Claude', 'pied.etmoi': 'and me',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       // La page « The rules » (/rules), 5 oct. 2026 : chaque règle a sa preuve dans le dépôt.
@@ -303,6 +304,7 @@
       'e404.texte': 'Déposée, renvoyée en comité, et plus jamais revue. Aucun vote nominatif, rien au Journal des débats, même pas une pétition sur papier.',
       'e404.pour': 'Pour', 'e404.contre': 'Contre', 'e404.speaker': 'La présidence déclare cette adresse irrecevable.',
       'e404.accueil': 'Retour à la Chambre', 'e404.projets': 'Les projets de loi qui existent',
+      'avis.reprise': 'Ce site pourrait fermer, faute d’achalandage et pour me concentrer sur le Québec. Envie de le reprendre ? Il resterait dans le réseau des provinces canadiennes, rattaché par <a href="https://dossiercanada.ca/">dossiercanada.ca</a>. Côté argent, ça vous coûterait probablement environ 30 $ par mois pour un abonnement Claude, et c’est à peu près tout. Si ça vous intéresse, écrivez-moi : <a href="mailto:info@dossierquebec.ca">info@dossierquebec.ca</a>',
       'pied.code': 'Code source', 'pied.claude': 'Construit avec Claude', 'pied.etmoi': 'et moi',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       // La page « The rules » (/rules), 5 oct. 2026 : chaque règle a sa preuve dans le dépôt.

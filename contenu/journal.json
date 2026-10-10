@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-10-10",
+      "fr": "Un avis sous l’en-tête : le site pourrait fermer, et cherche quelqu’un pour le reprendre.",
+      "en": "A notice under the header: the site may shut down, and is looking for someone to take it over."
+    },
+    {
       "date": "2026-10-06",
       "fr": "Nouveau fichier /llms.txt : le site expliqué aux assistants IA (ce qu’il contient, ses règles, et la consigne de citer la source officielle).",
       "en": "New file /llms.txt: the site explained to AI assistants (what it contains, its rules, and the instruction to cite the official source)."
