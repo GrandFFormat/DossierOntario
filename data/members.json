@@ -6,7 +6,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-09T17:59:24.563Z",
+  "lus": "2026-10-12T20:44:51.211Z",
   "totalSieges": 124,
   "etatPartis": [
     {
@@ -3090,7 +3090,15 @@
           "ville": "Scarborough",
           "codePostal": "M1M 1P2",
           "telephone": "416-261-9525",
-          "courriel": null
+          "courriel": "FShaban-CO@ndp.on.ca"
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 384, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": null,
+          "courriel": "FShaban-QP@ndp.on.ca"
         }
       ]
     },

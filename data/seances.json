@@ -1370,8 +1370,26 @@
         "en": "Ministry of the Environment, Conservation and Parks",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-oct-05": [
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Municipal Affairs and Housing",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Citizenship and Multiculturalism",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Transportation",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-09T17:59:18.156Z",
-  "nombre": 149
+  "lus": "2026-10-12T20:44:45.692Z",
+  "nombre": 150
 }
