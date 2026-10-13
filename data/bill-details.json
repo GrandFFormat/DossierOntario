@@ -2,7 +2,7 @@
   "source": "https://www.ola.org — une page par projet de loi, versions anglaise et française",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-12T20:22:25.601Z",
+  "lus": "2026-10-13T18:15:01.494Z",
   "nombre": 191,
   "fiches": {
     "1": {
@@ -64,7 +64,7 @@
       "longueurTexteEn": 916,
       "longueurTexteFr": 1063,
       "votes": [],
-      "lu": "2026-10-12T20:10:56.206Z"
+      "lu": "2026-10-13T18:02:49.542Z"
     },
     "2": {
       "numero": "2",
@@ -411,7 +411,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-2-protect-ontario-through-free-trade-within-canada-act-2025-vote-third-reading"
       ],
-      "lu": "2026-10-12T20:11:02.136Z"
+      "lu": "2026-10-13T18:02:54.922Z"
     },
     "3": {
       "numero": "3",
@@ -532,7 +532,7 @@
       "longueurTexteEn": 2408,
       "longueurTexteFr": 2792,
       "votes": [],
-      "lu": "2026-10-12T20:11:05.458Z"
+      "lu": "2026-10-13T18:02:58.499Z"
     },
     "4": {
       "numero": "4",
@@ -599,7 +599,7 @@
       "longueurTexteEn": 11173,
       "longueurTexteFr": 12479,
       "votes": [],
-      "lu": "2026-10-12T20:11:09.544Z"
+      "lu": "2026-10-13T18:03:02.368Z"
     },
     "5": {
       "numero": "5",
@@ -993,7 +993,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:11:13.038Z"
+      "lu": "2026-10-13T18:03:10.571Z"
     },
     "6": {
       "numero": "6",
@@ -1237,7 +1237,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-6-safer-municipalities-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-6-safer-municipalities-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:11:18.996Z"
+      "lu": "2026-10-13T18:03:15.440Z"
     },
     "7": {
       "numero": "7",
@@ -1304,7 +1304,7 @@
       "longueurTexteEn": 4886,
       "longueurTexteFr": 5599,
       "votes": [],
-      "lu": "2026-10-12T20:11:22.216Z"
+      "lu": "2026-10-13T18:03:18.955Z"
     },
     "8": {
       "numero": "8",
@@ -1369,7 +1369,7 @@
       "longueurTexteEn": 1072,
       "longueurTexteFr": 1552,
       "votes": [],
-      "lu": "2026-10-12T20:11:26.514Z"
+      "lu": "2026-10-13T18:03:22.817Z"
     },
     "9": {
       "numero": "9",
@@ -1724,7 +1724,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2025-adoption-committee-report",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:11:32.997Z"
+      "lu": "2026-10-13T18:03:31.099Z"
     },
     "10": {
       "numero": "10",
@@ -1966,7 +1966,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-10-protect-ontario-through-safer-streets-stronger-communities-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-10-protect-ontario-through-safer-streets-stronger-communities-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:11:37.900Z"
+      "lu": "2026-10-13T18:03:38.678Z"
     },
     "11": {
       "numero": "11",
@@ -2205,7 +2205,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-11-more-convenient-care-act-2025-vote-third-reading"
       ],
-      "lu": "2026-10-12T20:11:42.373Z"
+      "lu": "2026-10-13T18:03:45.367Z"
     },
     "12": {
       "numero": "12",
@@ -2270,7 +2270,7 @@
       "longueurTexteEn": 1919,
       "longueurTexteFr": 2035,
       "votes": [],
-      "lu": "2026-10-12T20:11:45.820Z"
+      "lu": "2026-10-13T18:03:48.887Z"
     },
     "13": {
       "numero": "13",
@@ -2495,7 +2495,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-13-primary-care-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:11:51.397Z"
+      "lu": "2026-10-13T18:03:55.773Z"
     },
     "14": {
       "numero": "14",
@@ -2562,7 +2562,7 @@
       "longueurTexteEn": 21534,
       "longueurTexteFr": 25193,
       "votes": [],
-      "lu": "2026-10-12T20:11:53.833Z"
+      "lu": "2026-10-13T18:03:58.979Z"
     },
     "15": {
       "numero": "15",
@@ -2623,7 +2623,7 @@
       "longueurTexteEn": 2389,
       "longueurTexteFr": 3202,
       "votes": [],
-      "lu": "2026-10-12T20:11:58.799Z"
+      "lu": "2026-10-13T18:04:03.065Z"
     },
     "16": {
       "numero": "16",
@@ -2684,7 +2684,7 @@
       "longueurTexteEn": 5254,
       "longueurTexteFr": 5892,
       "votes": [],
-      "lu": "2026-10-12T20:12:02.675Z"
+      "lu": "2026-10-13T18:04:06.964Z"
     },
     "17": {
       "numero": "17",
@@ -2914,7 +2914,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-17-protect-ontario-building-faster-smarter-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-17-protect-ontario-building-faster-smarter-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:12:05.974Z"
+      "lu": "2026-10-13T18:04:12.815Z"
     },
     "18": {
       "numero": "18",
@@ -3087,7 +3087,7 @@
       "longueurTexteEn": 14621,
       "longueurTexteFr": 16131,
       "votes": [],
-      "lu": "2026-10-12T20:12:09.792Z"
+      "lu": "2026-10-13T18:04:16.673Z"
     },
     "19": {
       "numero": "19",
@@ -3152,7 +3152,7 @@
       "longueurTexteEn": 1610,
       "longueurTexteFr": 2222,
       "votes": [],
-      "lu": "2026-10-12T20:12:14.688Z"
+      "lu": "2026-10-13T18:04:20.055Z"
     },
     "20": {
       "numero": "20",
@@ -3217,7 +3217,7 @@
       "longueurTexteEn": 1418,
       "longueurTexteFr": 1587,
       "votes": [],
-      "lu": "2026-10-12T20:12:18.496Z"
+      "lu": "2026-10-13T18:04:24.185Z"
     },
     "21": {
       "numero": "21",
@@ -3282,7 +3282,7 @@
       "longueurTexteEn": 5377,
       "longueurTexteFr": 6595,
       "votes": [],
-      "lu": "2026-10-12T20:12:21.790Z"
+      "lu": "2026-10-13T18:04:28.188Z"
     },
     "22": {
       "numero": "22",
@@ -3505,7 +3505,7 @@
       "longueurTexteEn": 1440,
       "longueurTexteFr": 1736,
       "votes": [],
-      "lu": "2026-10-12T20:12:26.792Z"
+      "lu": "2026-10-13T18:04:32.464Z"
     },
     "23": {
       "numero": "23",
@@ -3616,7 +3616,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-23-protecting-seniors-rights-care-homes-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:12:29.848Z"
+      "lu": "2026-10-13T18:04:37.672Z"
     },
     "24": {
       "numero": "24",
@@ -3880,7 +3880,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-24-plan-protect-ontario-act-budget-measures-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-24-plan-protect-ontario-act-budget-measures-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:12:36.434Z"
+      "lu": "2026-10-13T18:04:45.505Z"
     },
     "25": {
       "numero": "25",
@@ -4112,7 +4112,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-25-emergency-management-modernization-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-25-emergency-management-modernization-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:12:41.241Z"
+      "lu": "2026-10-13T18:04:52.636Z"
     },
     "26": {
       "numero": "26",
@@ -4389,7 +4389,7 @@
       "longueurTexteEn": 8627,
       "longueurTexteFr": 9555,
       "votes": [],
-      "lu": "2026-10-12T20:12:44.733Z"
+      "lu": "2026-10-13T18:04:56.411Z"
     },
     "27": {
       "numero": "27",
@@ -4643,7 +4643,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-27-resource-management-safety-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-27-resource-management-safety-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:12:50.623Z"
+      "lu": "2026-10-13T18:05:02.100Z"
     },
     "28": {
       "numero": "28",
@@ -4748,7 +4748,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-28-homelessness-ends-housing-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:12:55.719Z"
+      "lu": "2026-10-13T18:05:07.460Z"
     },
     "29": {
       "numero": "29",
@@ -4815,7 +4815,7 @@
       "longueurTexteEn": 3657,
       "longueurTexteFr": 4871,
       "votes": [],
-      "lu": "2026-10-12T20:12:59.032Z"
+      "lu": "2026-10-13T18:05:10.895Z"
     },
     "30": {
       "numero": "30",
@@ -5040,7 +5040,7 @@
       "longueurTexteEn": 69950,
       "longueurTexteFr": 79601,
       "votes": [],
-      "lu": "2026-10-12T20:13:02.270Z"
+      "lu": "2026-10-13T18:05:16.074Z"
     },
     "31": {
       "numero": "31",
@@ -5267,7 +5267,7 @@
       "longueurTexteEn": 2478,
       "longueurTexteFr": 2724,
       "votes": [],
-      "lu": "2026-10-12T20:13:07.235Z"
+      "lu": "2026-10-13T18:05:20.079Z"
     },
     "32": {
       "numero": "32",
@@ -5332,7 +5332,7 @@
       "longueurTexteEn": 3944,
       "longueurTexteFr": 4653,
       "votes": [],
-      "lu": "2026-10-12T20:13:11.175Z"
+      "lu": "2026-10-13T18:05:23.463Z"
     },
     "33": {
       "numero": "33",
@@ -5610,7 +5610,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-33-supporting-children-students-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-33-supporting-children-students-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:13:16.628Z"
+      "lu": "2026-10-13T18:05:29.088Z"
     },
     "34": {
       "numero": "34",
@@ -5775,7 +5775,7 @@
       "longueurTexteEn": 15554,
       "longueurTexteFr": 17950,
       "votes": [],
-      "lu": "2026-10-12T20:13:19.852Z"
+      "lu": "2026-10-13T18:05:32.735Z"
     },
     "35": {
       "numero": "35",
@@ -5840,7 +5840,7 @@
       "longueurTexteEn": 17228,
       "longueurTexteFr": 20055,
       "votes": [],
-      "lu": "2026-10-12T20:13:23.061Z"
+      "lu": "2026-10-13T18:05:36.427Z"
     },
     "36": {
       "numero": "36",
@@ -5905,7 +5905,7 @@
       "longueurTexteEn": 6799,
       "longueurTexteFr": 8667,
       "votes": [],
-      "lu": "2026-10-12T20:13:28.053Z"
+      "lu": "2026-10-13T18:05:40.549Z"
     },
     "37": {
       "numero": "37",
@@ -5972,7 +5972,7 @@
       "longueurTexteEn": 3629,
       "longueurTexteFr": 4721,
       "votes": [],
-      "lu": "2026-10-12T20:13:32.020Z"
+      "lu": "2026-10-13T18:05:44.439Z"
     },
     "38": {
       "numero": "38",
@@ -6153,7 +6153,7 @@
       "longueurTexteEn": 14488,
       "longueurTexteFr": 16206,
       "votes": [],
-      "lu": "2026-10-12T20:13:36.077Z"
+      "lu": "2026-10-13T18:05:48.374Z"
     },
     "39": {
       "numero": "39",
@@ -6214,7 +6214,7 @@
       "longueurTexteEn": 3040,
       "longueurTexteFr": 3452,
       "votes": [],
-      "lu": "2026-10-12T20:13:39.923Z"
+      "lu": "2026-10-13T18:05:52.375Z"
     },
     "40": {
       "numero": "40",
@@ -6572,7 +6572,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-40-protect-ontario-securing-affordable-energy-generations-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-40-protect-ontario-securing-affordable-energy-generations-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:13:45.630Z"
+      "lu": "2026-10-13T18:06:00.252Z"
     },
     "41": {
       "numero": "41",
@@ -6637,7 +6637,7 @@
       "longueurTexteEn": 7772,
       "longueurTexteFr": 9246,
       "votes": [],
-      "lu": "2026-10-12T20:13:48.834Z"
+      "lu": "2026-10-13T18:06:03.624Z"
     },
     "42": {
       "numero": "42",
@@ -6698,7 +6698,7 @@
       "longueurTexteEn": 1781,
       "longueurTexteFr": 2228,
       "votes": [],
-      "lu": "2026-10-12T20:13:53.026Z"
+      "lu": "2026-10-13T18:06:07.519Z"
     },
     "43": {
       "numero": "43",
@@ -6759,7 +6759,7 @@
       "longueurTexteEn": 3348,
       "longueurTexteFr": 4317,
       "votes": [],
-      "lu": "2026-10-12T20:13:56.996Z"
+      "lu": "2026-10-13T18:06:11.571Z"
     },
     "44": {
       "numero": "44",
@@ -6820,7 +6820,7 @@
       "longueurTexteEn": 6465,
       "longueurTexteFr": 8218,
       "votes": [],
-      "lu": "2026-10-12T20:14:00.978Z"
+      "lu": "2026-10-13T18:06:15.544Z"
     },
     "45": {
       "numero": "45",
@@ -7077,7 +7077,7 @@
       "longueurTexteEn": 27382,
       "longueurTexteFr": 30464,
       "votes": [],
-      "lu": "2026-10-12T20:14:05.395Z"
+      "lu": "2026-10-13T18:06:19.806Z"
     },
     "46": {
       "numero": "46",
@@ -7398,7 +7398,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-46-protect-ontario-cutting-red-tape-act-2025-vote-third-reading"
       ],
-      "lu": "2026-10-12T20:14:10.138Z"
+      "lu": "2026-10-13T18:06:26.175Z"
     },
     "47": {
       "numero": "47",
@@ -7463,7 +7463,7 @@
       "longueurTexteEn": 1587,
       "longueurTexteFr": 1813,
       "votes": [],
-      "lu": "2026-10-12T20:14:13.705Z"
+      "lu": "2026-10-13T18:06:29.329Z"
     },
     "48": {
       "numero": "48",
@@ -7524,7 +7524,7 @@
       "longueurTexteEn": 2222,
       "longueurTexteFr": 2523,
       "votes": [],
-      "lu": "2026-10-12T20:14:17.394Z"
+      "lu": "2026-10-13T18:06:33.483Z"
     },
     "49": {
       "numero": "49",
@@ -7635,7 +7635,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-49-northern-highway-11-17-safety-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:14:22.483Z"
+      "lu": "2026-10-13T18:06:39.606Z"
     },
     "50": {
       "numero": "50",
@@ -7702,7 +7702,7 @@
       "longueurTexteEn": 3310,
       "longueurTexteFr": 4325,
       "votes": [],
-      "lu": "2026-10-12T20:14:25.932Z"
+      "lu": "2026-10-13T18:06:43.076Z"
     },
     "51": {
       "numero": "51",
@@ -7769,7 +7769,7 @@
       "longueurTexteEn": 17110,
       "longueurTexteFr": 19381,
       "votes": [],
-      "lu": "2026-10-12T20:14:29.951Z"
+      "lu": "2026-10-13T18:06:46.897Z"
     },
     "52": {
       "numero": "52",
@@ -7834,7 +7834,7 @@
       "longueurTexteEn": 2860,
       "longueurTexteFr": 3392,
       "votes": [],
-      "lu": "2026-10-12T20:14:33.715Z"
+      "lu": "2026-10-13T18:06:50.914Z"
     },
     "53": {
       "numero": "53",
@@ -7901,7 +7901,7 @@
       "longueurTexteEn": 14412,
       "longueurTexteFr": 16243,
       "votes": [],
-      "lu": "2026-10-12T20:14:37.929Z"
+      "lu": "2026-10-13T18:06:55.119Z"
     },
     "54": {
       "numero": "54",
@@ -7966,7 +7966,7 @@
       "longueurTexteEn": 8631,
       "longueurTexteFr": 9188,
       "votes": [],
-      "lu": "2026-10-12T20:14:41.668Z"
+      "lu": "2026-10-13T18:06:59.245Z"
     },
     "55": {
       "numero": "55",
@@ -8027,7 +8027,7 @@
       "longueurTexteEn": 3237,
       "longueurTexteFr": 3656,
       "votes": [],
-      "lu": "2026-10-12T20:14:44.942Z"
+      "lu": "2026-10-13T18:07:03.074Z"
     },
     "56": {
       "numero": "56",
@@ -8331,7 +8331,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-56-building-a-more-competitive-economy-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-56-building-a-more-competitive-economy-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:14:49.040Z"
+      "lu": "2026-10-13T18:07:08.645Z"
     },
     "57": {
       "numero": "57",
@@ -8392,7 +8392,7 @@
       "longueurTexteEn": 6595,
       "longueurTexteFr": 7668,
       "votes": [],
-      "lu": "2026-10-12T20:14:53.710Z"
+      "lu": "2026-10-13T18:07:11.907Z"
     },
     "58": {
       "numero": "58",
@@ -8501,7 +8501,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-58-franco-ontarian-bookstore-promotion-protection-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:14:59.156Z"
+      "lu": "2026-10-13T18:07:18.018Z"
     },
     "59": {
       "numero": "59",
@@ -8566,7 +8566,7 @@
       "longueurTexteEn": 2000,
       "longueurTexteFr": 2405,
       "votes": [],
-      "lu": "2026-10-12T20:15:02.410Z"
+      "lu": "2026-10-13T18:07:21.406Z"
     },
     "60": {
       "numero": "60",
@@ -8844,7 +8844,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-60-fighting-delays-building-faster-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-60-fighting-delays-building-faster-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:15:08.526Z"
+      "lu": "2026-10-13T18:07:27.085Z"
     },
     "61": {
       "numero": "61",
@@ -8949,7 +8949,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-61-ontario-artificial-intelligence-talent-innovation-strategy-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:15:12.466Z"
+      "lu": "2026-10-13T18:07:31.125Z"
     },
     "62": {
       "numero": "62",
@@ -9014,7 +9014,7 @@
       "longueurTexteEn": 11131,
       "longueurTexteFr": 11690,
       "votes": [],
-      "lu": "2026-10-12T20:15:16.027Z"
+      "lu": "2026-10-13T18:07:34.290Z"
     },
     "63": {
       "numero": "63",
@@ -9079,7 +9079,7 @@
       "longueurTexteEn": 1221,
       "longueurTexteFr": 1441,
       "votes": [],
-      "lu": "2026-10-12T20:15:19.883Z"
+      "lu": "2026-10-13T18:07:38.375Z"
     },
     "64": {
       "numero": "64",
@@ -9146,7 +9146,7 @@
       "longueurTexteEn": 20008,
       "longueurTexteFr": 22446,
       "votes": [],
-      "lu": "2026-10-12T20:15:23.938Z"
+      "lu": "2026-10-13T18:07:42.296Z"
     },
     "65": {
       "numero": "65",
@@ -9255,7 +9255,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-65-remembrance-day-observance-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:15:29.682Z"
+      "lu": "2026-10-13T18:07:49.317Z"
     },
     "66": {
       "numero": "66",
@@ -9478,7 +9478,7 @@
       "longueurTexteEn": 4958,
       "longueurTexteFr": 6600,
       "votes": [],
-      "lu": "2026-10-12T20:15:31.879Z"
+      "lu": "2026-10-13T18:07:53.047Z"
     },
     "67": {
       "numero": "67",
@@ -9703,7 +9703,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-67-hospitality-workers-appreciation-day-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:15:36.103Z"
+      "lu": "2026-10-13T18:07:59.452Z"
     },
     "68": {
       "numero": "68",
@@ -9987,7 +9987,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-68-plan-protect-ontario-act-budget-measures-2025-no-2-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-68-plan-protect-ontario-act-budget-measures-2025-no-2-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:15:42.788Z"
+      "lu": "2026-10-13T18:08:04.523Z"
     },
     "69": {
       "numero": "69",
@@ -10048,7 +10048,7 @@
       "longueurTexteEn": 4667,
       "longueurTexteFr": 5416,
       "votes": [],
-      "lu": "2026-10-12T20:15:46.392Z"
+      "lu": "2026-10-13T18:08:07.676Z"
     },
     "70": {
       "numero": "70",
@@ -10159,7 +10159,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-70-supporting-mobility-affordability-reliable-transportation-ontario-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:15:52.352Z"
+      "lu": "2026-10-13T18:08:13.891Z"
     },
     "71": {
       "numero": "71",
@@ -10220,7 +10220,7 @@
       "longueurTexteEn": 10439,
       "longueurTexteFr": 11624,
       "votes": [],
-      "lu": "2026-10-12T20:15:54.808Z"
+      "lu": "2026-10-13T18:08:17.144Z"
     },
     "72": {
       "numero": "72",
@@ -10465,7 +10465,7 @@
       "longueurTexteEn": 43454,
       "longueurTexteFr": 49896,
       "votes": [],
-      "lu": "2026-10-12T20:15:58.849Z"
+      "lu": "2026-10-13T18:08:22.375Z"
     },
     "73": {
       "numero": "73",
@@ -10526,7 +10526,7 @@
       "longueurTexteEn": 6253,
       "longueurTexteFr": 8004,
       "votes": [],
-      "lu": "2026-10-12T20:16:03.677Z"
+      "lu": "2026-10-13T18:08:24.542Z"
     },
     "74": {
       "numero": "74",
@@ -10605,7 +10605,7 @@
       "longueurTexteEn": 3113,
       "longueurTexteFr": 3430,
       "votes": [],
-      "lu": "2026-10-12T20:16:07.723Z"
+      "lu": "2026-10-13T18:08:28.543Z"
     },
     "75": {
       "numero": "75",
@@ -10988,7 +10988,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-75-keeping-criminals-behind-bars-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:16:10.957Z"
+      "lu": "2026-10-13T18:08:34.995Z"
     },
     "76": {
       "numero": "76",
@@ -11214,7 +11214,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-76-barrie-oro-medonte-springwater-boundary-adjustment-act-2025-vote-third-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-76-barrie-oro-medonte-springwater-boundary-adjustment-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:16:17.544Z"
+      "lu": "2026-10-13T18:08:42.176Z"
     },
     "77": {
       "numero": "77",
@@ -11279,7 +11279,7 @@
       "longueurTexteEn": 5278,
       "longueurTexteFr": 5815,
       "votes": [],
-      "lu": "2026-10-12T20:16:20.862Z"
+      "lu": "2026-10-13T18:08:45.526Z"
     },
     "78": {
       "numero": "78",
@@ -11384,7 +11384,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-78-commissioner-democratic-rights-act-2025-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:16:26.982Z"
+      "lu": "2026-10-13T18:08:51.472Z"
     },
     "79": {
       "numero": "79",
@@ -11449,7 +11449,7 @@
       "longueurTexteEn": 1432,
       "longueurTexteFr": 1731,
       "votes": [],
-      "lu": "2026-10-12T20:16:30.154Z"
+      "lu": "2026-10-13T18:08:54.786Z"
     },
     "80": {
       "numero": "80",
@@ -11510,7 +11510,7 @@
       "longueurTexteEn": 6280,
       "longueurTexteFr": 7713,
       "votes": [],
-      "lu": "2026-10-12T20:16:34.187Z"
+      "lu": "2026-10-13T18:08:58.954Z"
     },
     "81": {
       "numero": "81",
@@ -11571,7 +11571,7 @@
       "longueurTexteEn": 26311,
       "longueurTexteFr": 33600,
       "votes": [],
-      "lu": "2026-10-12T20:16:38.206Z"
+      "lu": "2026-10-13T18:09:02.801Z"
     },
     "82": {
       "numero": "82",
@@ -11680,7 +11680,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-82-protecting-renters-unfair-above-guideline-rent-increases-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:16:43.134Z"
+      "lu": "2026-10-13T18:09:09.058Z"
     },
     "83": {
       "numero": "83",
@@ -11741,7 +11741,7 @@
       "longueurTexteEn": 1748,
       "longueurTexteFr": 1996,
       "votes": [],
-      "lu": "2026-10-12T20:16:46.578Z"
+      "lu": "2026-10-13T18:09:12.390Z"
     },
     "84": {
       "numero": "84",
@@ -11864,7 +11864,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-84-mandatory-blood-testing-amendment-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:16:51.097Z"
+      "lu": "2026-10-13T18:09:18.250Z"
     },
     "85": {
       "numero": "85",
@@ -11925,7 +11925,7 @@
       "longueurTexteEn": 6411,
       "longueurTexteFr": 7744,
       "votes": [],
-      "lu": "2026-10-12T20:16:54.350Z"
+      "lu": "2026-10-13T18:09:21.564Z"
     },
     "86": {
       "numero": "86",
@@ -12034,7 +12034,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-86-meredith-act-fair-compensation-injured-workers-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:16:59.181Z"
+      "lu": "2026-10-13T18:09:26.252Z"
     },
     "87": {
       "numero": "87",
@@ -12099,7 +12099,7 @@
       "longueurTexteEn": 2435,
       "longueurTexteFr": 3161,
       "votes": [],
-      "lu": "2026-10-12T20:17:02.461Z"
+      "lu": "2026-10-13T18:09:29.585Z"
     },
     "88": {
       "numero": "88",
@@ -12166,7 +12166,7 @@
       "longueurTexteEn": 7101,
       "longueurTexteFr": 8552,
       "votes": [],
-      "lu": "2026-10-12T20:17:06.433Z"
+      "lu": "2026-10-13T18:09:33.641Z"
     },
     "89": {
       "numero": "89",
@@ -12227,7 +12227,7 @@
       "longueurTexteEn": 1745,
       "longueurTexteFr": 2008,
       "votes": [],
-      "lu": "2026-10-12T20:17:09.469Z"
+      "lu": "2026-10-13T18:09:37.539Z"
     },
     "90": {
       "numero": "90",
@@ -12292,7 +12292,7 @@
       "longueurTexteEn": 4566,
       "longueurTexteFr": 5077,
       "votes": [],
-      "lu": "2026-10-12T20:17:13.615Z"
+      "lu": "2026-10-13T18:09:41.545Z"
     },
     "91": {
       "numero": "91",
@@ -12357,7 +12357,7 @@
       "longueurTexteEn": 20314,
       "longueurTexteFr": 24415,
       "votes": [],
-      "lu": "2026-10-12T20:17:18.496Z"
+      "lu": "2026-10-13T18:09:45.510Z"
     },
     "92": {
       "numero": "92",
@@ -12418,7 +12418,7 @@
       "longueurTexteEn": 6846,
       "longueurTexteFr": 8006,
       "votes": [],
-      "lu": "2026-10-12T20:17:22.417Z"
+      "lu": "2026-10-13T18:09:49.850Z"
     },
     "93": {
       "numero": "93",
@@ -12485,7 +12485,7 @@
       "longueurTexteEn": 3184,
       "longueurTexteFr": 3620,
       "votes": [],
-      "lu": "2026-10-12T20:17:26.632Z"
+      "lu": "2026-10-13T18:09:53.679Z"
     },
     "94": {
       "numero": "94",
@@ -12550,7 +12550,7 @@
       "longueurTexteEn": 1470,
       "longueurTexteFr": 1663,
       "votes": [],
-      "lu": "2026-10-12T20:17:29.588Z"
+      "lu": "2026-10-13T18:09:57.620Z"
     },
     "95": {
       "numero": "95",
@@ -12737,7 +12737,7 @@
       "longueurTexteEn": 15717,
       "longueurTexteFr": 17391,
       "votes": [],
-      "lu": "2026-10-12T20:17:35.000Z"
+      "lu": "2026-10-13T18:10:02.048Z"
     },
     "96": {
       "numero": "96",
@@ -12798,7 +12798,7 @@
       "longueurTexteEn": 16458,
       "longueurTexteFr": 18863,
       "votes": [],
-      "lu": "2026-10-12T20:17:38.467Z"
+      "lu": "2026-10-13T18:10:05.776Z"
     },
     "97": {
       "numero": "97",
@@ -13151,7 +13151,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:17:41.928Z"
+      "lu": "2026-10-13T18:10:11.970Z"
     },
     "98": {
       "numero": "98",
@@ -13563,7 +13563,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:17:49.558Z"
+      "lu": "2026-10-13T18:10:19.815Z"
     },
     "99": {
       "numero": "99",
@@ -13674,7 +13674,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-99-fair-free-elections-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:17:54.656Z"
+      "lu": "2026-10-13T18:10:25.308Z"
     },
     "100": {
       "numero": "100",
@@ -14056,7 +14056,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:18:01.001Z"
+      "lu": "2026-10-13T18:10:31.336Z"
     },
     "101": {
       "numero": "101",
@@ -14476,7 +14476,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:18:03.767Z"
+      "lu": "2026-10-13T18:10:37.991Z"
     },
     "102": {
       "numero": "102",
@@ -14541,7 +14541,7 @@
       "longueurTexteEn": 1078,
       "longueurTexteFr": 1261,
       "votes": [],
-      "lu": "2026-10-12T20:18:08.467Z"
+      "lu": "2026-10-13T18:10:41.354Z"
     },
     "103": {
       "numero": "103",
@@ -14610,7 +14610,7 @@
       "longueurTexteEn": 18852,
       "longueurTexteFr": 21532,
       "votes": [],
-      "lu": "2026-10-12T20:18:12.234Z"
+      "lu": "2026-10-13T18:10:45.352Z"
     },
     "104": {
       "numero": "104",
@@ -14677,7 +14677,7 @@
       "longueurTexteEn": 6819,
       "longueurTexteFr": 7474,
       "votes": [],
-      "lu": "2026-10-12T20:18:15.310Z"
+      "lu": "2026-10-13T18:10:49.310Z"
     },
     "105": {
       "numero": "105",
@@ -14948,7 +14948,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-105-protecting-ontarios-workers-economic-resilience-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:18:21.575Z"
+      "lu": "2026-10-13T18:10:54.377Z"
     },
     "106": {
       "numero": "106",
@@ -15065,7 +15065,7 @@
       "longueurTexteEn": 805,
       "longueurTexteFr": 989,
       "votes": [],
-      "lu": "2026-10-12T20:18:23.985Z"
+      "lu": "2026-10-13T18:10:57.817Z"
     },
     "107": {
       "numero": "107",
@@ -15174,7 +15174,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-107-stop-harmful-gambling-advertising-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:18:27.825Z"
+      "lu": "2026-10-13T18:11:02.572Z"
     },
     "108": {
       "numero": "108",
@@ -15239,7 +15239,7 @@
       "longueurTexteEn": 2162,
       "longueurTexteFr": 2515,
       "votes": [],
-      "lu": "2026-10-12T20:18:32.920Z"
+      "lu": "2026-10-13T18:11:05.932Z"
     },
     "109": {
       "numero": "109",
@@ -15482,7 +15482,7 @@
       "longueurTexteEn": 168820,
       "longueurTexteFr": 190616,
       "votes": [],
-      "lu": "2026-10-12T20:18:37.229Z"
+      "lu": "2026-10-13T18:11:10.207Z"
     },
     "110": {
       "numero": "110",
@@ -15850,7 +15850,7 @@
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-vote-second-reading",
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:18:45.828Z"
+      "lu": "2026-10-13T18:11:18.997Z"
     },
     "111": {
       "numero": "111",
@@ -15911,7 +15911,7 @@
       "longueurTexteEn": 2654,
       "longueurTexteFr": 3068,
       "votes": [],
-      "lu": "2026-10-12T20:18:49.217Z"
+      "lu": "2026-10-13T18:11:22.360Z"
     },
     "112": {
       "numero": "112",
@@ -16016,7 +16016,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-112-lydias-law-accountability-transparency-handling-sexual-assault-cases-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:18:55.063Z"
+      "lu": "2026-10-13T18:11:27.777Z"
     },
     "113": {
       "numero": "113",
@@ -16121,7 +16121,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-113-fair-prices-tax-free-groceries-act-2026-vote-second-reading"
       ],
-      "lu": "2026-10-12T20:18:57.524Z"
+      "lu": "2026-10-13T18:11:32.754Z"
     },
     "114": {
       "numero": "114",
@@ -16350,7 +16350,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-114-hst-relief-implementation-act-residential-property-rebates-2026-vote-third-reading"
       ],
-      "lu": "2026-10-12T20:19:01.486Z"
+      "lu": "2026-10-13T18:11:38.492Z"
     },
     "115": {
       "numero": "115",
@@ -16411,7 +16411,7 @@
       "longueurTexteEn": 12590,
       "longueurTexteFr": 16338,
       "votes": [],
-      "lu": "2026-10-12T20:19:05.528Z"
+      "lu": "2026-10-13T18:11:41.841Z"
     },
     "116": {
       "numero": "116",
@@ -16478,7 +16478,7 @@
       "longueurTexteEn": 13053,
       "longueurTexteFr": 14684,
       "votes": [],
-      "lu": "2026-10-12T20:19:09.458Z"
+      "lu": "2026-10-13T18:11:45.852Z"
     },
     "117": {
       "numero": "117",
@@ -16539,7 +16539,7 @@
       "longueurTexteEn": 2688,
       "longueurTexteFr": 3147,
       "votes": [],
-      "lu": "2026-10-12T20:19:13.317Z"
+      "lu": "2026-10-13T18:11:49.935Z"
     },
     "118": {
       "numero": "118",
@@ -16600,7 +16600,7 @@
       "longueurTexteEn": 2237,
       "longueurTexteFr": 2671,
       "votes": [],
-      "lu": "2026-10-12T20:19:17.516Z"
+      "lu": "2026-10-13T18:11:53.917Z"
     },
     "119": {
       "numero": "119",
@@ -16843,7 +16843,7 @@
       "votes": [
         "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-119-protecting-ontarios-streets-communities-act-2026-closure-second-reading"
       ],
-      "lu": "2026-10-12T20:19:21.613Z"
+      "lu": "2026-10-13T18:11:59.219Z"
     },
     "120": {
       "numero": "120",
@@ -16904,7 +16904,7 @@
       "longueurTexteEn": 2387,
       "longueurTexteFr": 2838,
       "votes": [],
-      "lu": "2026-10-12T20:19:25.504Z"
+      "lu": "2026-10-13T18:12:02.585Z"
     },
     "121": {
       "numero": "121",
@@ -16965,7 +16965,7 @@
       "longueurTexteEn": 8178,
       "longueurTexteFr": 8708,
       "votes": [],
-      "lu": "2026-10-12T20:19:29.471Z"
+      "lu": "2026-10-13T18:12:06.655Z"
     },
     "122": {
       "numero": "122",
@@ -17026,7 +17026,7 @@
       "longueurTexteEn": 1872,
       "longueurTexteFr": 2304,
       "votes": [],
-      "lu": "2026-10-12T20:19:33.466Z"
+      "lu": "2026-10-13T18:12:10.542Z"
     },
     "123": {
       "numero": "123",
@@ -17091,7 +17091,7 @@
       "longueurTexteEn": 4841,
       "longueurTexteFr": 5967,
       "votes": [],
-      "lu": "2026-10-12T20:19:37.492Z"
+      "lu": "2026-10-13T18:12:14.571Z"
     },
     "124": {
       "numero": "124",
@@ -17152,7 +17152,7 @@
       "longueurTexteEn": 1066,
       "longueurTexteFr": 1366,
       "votes": [],
-      "lu": "2026-10-12T20:19:41.356Z"
+      "lu": "2026-10-13T18:12:18.532Z"
     },
     "125": {
       "numero": "125",
@@ -17217,7 +17217,7 @@
       "longueurTexteEn": 11116,
       "longueurTexteFr": 12198,
       "votes": [],
-      "lu": "2026-10-12T20:19:45.466Z"
+      "lu": "2026-10-13T18:12:22.447Z"
     },
     "126": {
       "numero": "126",
@@ -17282,7 +17282,7 @@
       "longueurTexteEn": 1894,
       "longueurTexteFr": 2396,
       "votes": [],
-      "lu": "2026-10-12T20:19:49.565Z"
+      "lu": "2026-10-13T18:12:26.570Z"
     },
     "127": {
       "numero": "127",
@@ -17347,7 +17347,7 @@
       "longueurTexteEn": 2723,
       "longueurTexteFr": 3222,
       "votes": [],
-      "lu": "2026-10-12T20:19:53.557Z"
+      "lu": "2026-10-13T18:12:30.566Z"
     },
     "128": {
       "numero": "128",
@@ -17412,7 +17412,7 @@
       "longueurTexteEn": 2918,
       "longueurTexteFr": 3595,
       "votes": [],
-      "lu": "2026-10-12T20:19:57.510Z"
+      "lu": "2026-10-13T18:12:34.598Z"
     },
     "129": {
       "numero": "129",
@@ -17477,7 +17477,7 @@
       "longueurTexteEn": 22940,
       "longueurTexteFr": 26586,
       "votes": [],
-      "lu": "2026-10-12T20:20:01.483Z"
+      "lu": "2026-10-13T18:12:38.433Z"
     },
     "130": {
       "numero": "130",
@@ -17542,7 +17542,7 @@
       "longueurTexteEn": 42835,
       "longueurTexteFr": 54755,
       "votes": [],
-      "lu": "2026-10-12T20:20:05.716Z"
+      "lu": "2026-10-13T18:12:42.471Z"
     },
     "131": {
       "numero": "131",
@@ -17603,7 +17603,7 @@
       "longueurTexteEn": 1747,
       "longueurTexteFr": 2298,
       "votes": [],
-      "lu": "2026-10-12T20:20:09.534Z"
+      "lu": "2026-10-13T18:12:46.594Z"
     },
     "132": {
       "numero": "132",
@@ -17664,7 +17664,7 @@
       "longueurTexteEn": 5116,
       "longueurTexteFr": 5001,
       "votes": [],
-      "lu": "2026-10-12T20:20:13.554Z"
+      "lu": "2026-10-13T18:12:50.620Z"
     },
     "133": {
       "numero": "133",
@@ -17729,7 +17729,7 @@
       "longueurTexteEn": 14521,
       "longueurTexteFr": 17619,
       "votes": [],
-      "lu": "2026-10-12T20:20:17.599Z"
+      "lu": "2026-10-13T18:12:53.414Z"
     },
     "134": {
       "numero": "134",
@@ -17794,7 +17794,7 @@
       "longueurTexteEn": 6775,
       "longueurTexteFr": 8041,
       "votes": [],
-      "lu": "2026-10-12T20:20:21.454Z"
+      "lu": "2026-10-13T18:12:58.540Z"
     },
     "135": {
       "numero": "135",
@@ -17855,7 +17855,7 @@
       "longueurTexteEn": 1892,
       "longueurTexteFr": 2280,
       "votes": [],
-      "lu": "2026-10-12T20:20:25.577Z"
+      "lu": "2026-10-13T18:13:02.547Z"
     },
     "136": {
       "numero": "136",
@@ -17916,7 +17916,7 @@
       "longueurTexteEn": 1958,
       "longueurTexteFr": 2292,
       "votes": [],
-      "lu": "2026-10-12T20:20:29.520Z"
+      "lu": "2026-10-13T18:13:06.501Z"
     },
     "137": {
       "numero": "137",
@@ -17981,7 +17981,7 @@
       "longueurTexteEn": 4932,
       "longueurTexteFr": 5858,
       "votes": [],
-      "lu": "2026-10-12T20:20:33.503Z"
+      "lu": "2026-10-13T18:13:10.556Z"
     },
     "138": {
       "numero": "138",
@@ -18042,7 +18042,7 @@
       "longueurTexteEn": 2202,
       "longueurTexteFr": 2593,
       "votes": [],
-      "lu": "2026-10-12T20:20:37.518Z"
+      "lu": "2026-10-13T18:13:14.434Z"
     },
     "139": {
       "numero": "139",
@@ -18107,7 +18107,7 @@
       "longueurTexteEn": 9142,
       "longueurTexteFr": 10925,
       "votes": [],
-      "lu": "2026-10-12T20:20:42.428Z"
+      "lu": "2026-10-13T18:13:18.535Z"
     },
     "PR1": {
       "numero": "PR1",
@@ -18251,7 +18251,7 @@
       "longueurTexteEn": 2698,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:43.500Z"
+      "lu": "2026-10-13T18:13:19.413Z"
     },
     "PR2": {
       "numero": "PR2",
@@ -18395,7 +18395,7 @@
       "longueurTexteEn": 2950,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:45.470Z"
+      "lu": "2026-10-13T18:13:21.405Z"
     },
     "PR3": {
       "numero": "PR3",
@@ -18539,7 +18539,7 @@
       "longueurTexteEn": 3098,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:47.451Z"
+      "lu": "2026-10-13T18:13:23.424Z"
     },
     "PR4": {
       "numero": "PR4",
@@ -18683,7 +18683,7 @@
       "longueurTexteEn": 2766,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:49.498Z"
+      "lu": "2026-10-13T18:13:25.420Z"
     },
     "PR5": {
       "numero": "PR5",
@@ -18827,7 +18827,7 @@
       "longueurTexteEn": 2798,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:51.555Z"
+      "lu": "2026-10-13T18:13:27.426Z"
     },
     "PR6": {
       "numero": "PR6",
@@ -18971,7 +18971,7 @@
       "longueurTexteEn": 2918,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:53.439Z"
+      "lu": "2026-10-13T18:13:29.433Z"
     },
     "PR7": {
       "numero": "PR7",
@@ -19115,7 +19115,7 @@
       "longueurTexteEn": 2578,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:55.562Z"
+      "lu": "2026-10-13T18:13:31.444Z"
     },
     "PR8": {
       "numero": "PR8",
@@ -19259,7 +19259,7 @@
       "longueurTexteEn": 2704,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:57.544Z"
+      "lu": "2026-10-13T18:13:33.453Z"
     },
     "PR9": {
       "numero": "PR9",
@@ -19403,7 +19403,7 @@
       "longueurTexteEn": 2712,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:20:59.536Z"
+      "lu": "2026-10-13T18:13:35.409Z"
     },
     "PR10": {
       "numero": "PR10",
@@ -19547,7 +19547,7 @@
       "longueurTexteEn": 2774,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:01.342Z"
+      "lu": "2026-10-13T18:13:37.431Z"
     },
     "PR12": {
       "numero": "PR12",
@@ -19691,7 +19691,7 @@
       "longueurTexteEn": 2628,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:03.525Z"
+      "lu": "2026-10-13T18:13:39.440Z"
     },
     "PR13": {
       "numero": "PR13",
@@ -19835,7 +19835,7 @@
       "longueurTexteEn": 2834,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:05.508Z"
+      "lu": "2026-10-13T18:13:41.602Z"
     },
     "PR14": {
       "numero": "PR14",
@@ -19979,7 +19979,7 @@
       "longueurTexteEn": 2802,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:07.519Z"
+      "lu": "2026-10-13T18:13:43.434Z"
     },
     "PR15": {
       "numero": "PR15",
@@ -20123,7 +20123,7 @@
       "longueurTexteEn": 2780,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:09.516Z"
+      "lu": "2026-10-13T18:13:45.442Z"
     },
     "PR16": {
       "numero": "PR16",
@@ -20267,7 +20267,7 @@
       "longueurTexteEn": 2776,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:11.507Z"
+      "lu": "2026-10-13T18:13:47.430Z"
     },
     "PR17": {
       "numero": "PR17",
@@ -20411,7 +20411,7 @@
       "longueurTexteEn": 2652,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:13.524Z"
+      "lu": "2026-10-13T18:13:49.442Z"
     },
     "PR18": {
       "numero": "PR18",
@@ -20555,7 +20555,7 @@
       "longueurTexteEn": 2756,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:15.524Z"
+      "lu": "2026-10-13T18:13:51.423Z"
     },
     "PR19": {
       "numero": "PR19",
@@ -20699,7 +20699,7 @@
       "longueurTexteEn": 1748,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:17.491Z"
+      "lu": "2026-10-13T18:13:53.432Z"
     },
     "PR20": {
       "numero": "PR20",
@@ -20843,7 +20843,7 @@
       "longueurTexteEn": 2698,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:19.468Z"
+      "lu": "2026-10-13T18:13:55.430Z"
     },
     "PR21": {
       "numero": "PR21",
@@ -20987,7 +20987,7 @@
       "longueurTexteEn": 2656,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:21.514Z"
+      "lu": "2026-10-13T18:13:57.434Z"
     },
     "PR22": {
       "numero": "PR22",
@@ -21131,7 +21131,7 @@
       "longueurTexteEn": 2656,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:23.314Z"
+      "lu": "2026-10-13T18:13:59.439Z"
     },
     "PR23": {
       "numero": "PR23",
@@ -21275,7 +21275,7 @@
       "longueurTexteEn": 2936,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:25.535Z"
+      "lu": "2026-10-13T18:14:01.469Z"
     },
     "PR24": {
       "numero": "PR24",
@@ -21419,7 +21419,7 @@
       "longueurTexteEn": 2754,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:27.546Z"
+      "lu": "2026-10-13T18:14:03.432Z"
     },
     "PR25": {
       "numero": "PR25",
@@ -21563,7 +21563,7 @@
       "longueurTexteEn": 2762,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:29.604Z"
+      "lu": "2026-10-13T18:14:05.437Z"
     },
     "PR26": {
       "numero": "PR26",
@@ -21707,7 +21707,7 @@
       "longueurTexteEn": 2754,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:31.560Z"
+      "lu": "2026-10-13T18:14:07.453Z"
     },
     "PR27": {
       "numero": "PR27",
@@ -21851,7 +21851,7 @@
       "longueurTexteEn": 2654,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:33.610Z"
+      "lu": "2026-10-13T18:14:09.436Z"
     },
     "PR28": {
       "numero": "PR28",
@@ -21995,7 +21995,7 @@
       "longueurTexteEn": 2874,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:35.551Z"
+      "lu": "2026-10-13T18:14:11.459Z"
     },
     "PR29": {
       "numero": "PR29",
@@ -22139,7 +22139,7 @@
       "longueurTexteEn": 2964,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:37.540Z"
+      "lu": "2026-10-13T18:14:13.446Z"
     },
     "PR31": {
       "numero": "PR31",
@@ -22283,7 +22283,7 @@
       "longueurTexteEn": 2698,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:39.616Z"
+      "lu": "2026-10-13T18:14:15.460Z"
     },
     "PR32": {
       "numero": "PR32",
@@ -22427,7 +22427,7 @@
       "longueurTexteEn": 2314,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:41.518Z"
+      "lu": "2026-10-13T18:14:17.451Z"
     },
     "PR33": {
       "numero": "PR33",
@@ -22571,7 +22571,7 @@
       "longueurTexteEn": 2764,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:43.488Z"
+      "lu": "2026-10-13T18:14:19.442Z"
     },
     "PR34": {
       "numero": "PR34",
@@ -22715,7 +22715,7 @@
       "longueurTexteEn": 14611,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:45.551Z"
+      "lu": "2026-10-13T18:14:21.479Z"
     },
     "PR35": {
       "numero": "PR35",
@@ -22859,7 +22859,7 @@
       "longueurTexteEn": 2018,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:47.477Z"
+      "lu": "2026-10-13T18:14:23.463Z"
     },
     "PR36": {
       "numero": "PR36",
@@ -23003,7 +23003,7 @@
       "longueurTexteEn": 2682,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:49.573Z"
+      "lu": "2026-10-13T18:14:25.471Z"
     },
     "PR37": {
       "numero": "PR37",
@@ -23147,7 +23147,7 @@
       "longueurTexteEn": 2816,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:51.486Z"
+      "lu": "2026-10-13T18:14:27.537Z"
     },
     "PR38": {
       "numero": "PR38",
@@ -23291,7 +23291,7 @@
       "longueurTexteEn": 2972,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:53.556Z"
+      "lu": "2026-10-13T18:14:29.466Z"
     },
     "PR39": {
       "numero": "PR39",
@@ -23435,7 +23435,7 @@
       "longueurTexteEn": 3028,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:55.687Z"
+      "lu": "2026-10-13T18:14:31.468Z"
     },
     "PR40": {
       "numero": "PR40",
@@ -23579,7 +23579,7 @@
       "longueurTexteEn": 2808,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:57.608Z"
+      "lu": "2026-10-13T18:14:33.463Z"
     },
     "PR41": {
       "numero": "PR41",
@@ -23723,7 +23723,7 @@
       "longueurTexteEn": 2720,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:21:59.537Z"
+      "lu": "2026-10-13T18:14:35.467Z"
     },
     "PR43": {
       "numero": "PR43",
@@ -23867,7 +23867,7 @@
       "longueurTexteEn": 2658,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:01.525Z"
+      "lu": "2026-10-13T18:14:37.460Z"
     },
     "PR44": {
       "numero": "PR44",
@@ -24011,7 +24011,7 @@
       "longueurTexteEn": 2904,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:03.464Z"
+      "lu": "2026-10-13T18:14:39.467Z"
     },
     "PR45": {
       "numero": "PR45",
@@ -24155,7 +24155,7 @@
       "longueurTexteEn": 2792,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:05.607Z"
+      "lu": "2026-10-13T18:14:41.467Z"
     },
     "PR46": {
       "numero": "PR46",
@@ -24299,7 +24299,7 @@
       "longueurTexteEn": 53274,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:07.667Z"
+      "lu": "2026-10-13T18:14:43.543Z"
     },
     "PR47": {
       "numero": "PR47",
@@ -24355,7 +24355,7 @@
       "longueurTexteEn": 1418,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:09.547Z"
+      "lu": "2026-10-13T18:14:45.489Z"
     },
     "PR48": {
       "numero": "PR48",
@@ -24411,7 +24411,7 @@
       "longueurTexteEn": 1468,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:11.419Z"
+      "lu": "2026-10-13T18:14:47.490Z"
     },
     "PR49": {
       "numero": "PR49",
@@ -24555,7 +24555,7 @@
       "longueurTexteEn": 2830,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:13.490Z"
+      "lu": "2026-10-13T18:14:49.469Z"
     },
     "PR50": {
       "numero": "PR50",
@@ -24611,7 +24611,7 @@
       "longueurTexteEn": 1364,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:15.547Z"
+      "lu": "2026-10-13T18:14:51.483Z"
     },
     "PR51": {
       "numero": "PR51",
@@ -24667,7 +24667,7 @@
       "longueurTexteEn": 1554,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:17.601Z"
+      "lu": "2026-10-13T18:14:53.503Z"
     },
     "PR52": {
       "numero": "PR52",
@@ -24723,7 +24723,7 @@
       "longueurTexteEn": 1398,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:19.563Z"
+      "lu": "2026-10-13T18:14:55.538Z"
     },
     "PR53": {
       "numero": "PR53",
@@ -24779,7 +24779,7 @@
       "longueurTexteEn": 1343,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:21.431Z"
+      "lu": "2026-10-13T18:14:57.373Z"
     },
     "PR54": {
       "numero": "PR54",
@@ -24835,7 +24835,7 @@
       "longueurTexteEn": 1443,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:23.280Z"
+      "lu": "2026-10-13T18:14:59.504Z"
     },
     "PR55": {
       "numero": "PR55",
@@ -24891,7 +24891,7 @@
       "longueurTexteEn": 1495,
       "longueurTexteFr": null,
       "votes": [],
-      "lu": "2026-10-12T20:22:25.601Z"
+      "lu": "2026-10-13T18:15:01.493Z"
     }
   }
 }
