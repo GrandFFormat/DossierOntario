@@ -1412,8 +1412,26 @@
         "en": "Ministry of the Solicitor General",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-oct-06": [
+      {
+        "en": "Estimates",
+        "fr": "Budget des dépenses"
+      },
+      {
+        "en": "Ministry of Public and Business Service Delivery and Procurement",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Francophone Affairs",
+        "fr": "Ministère des Affaires francophones"
+      },
+      {
+        "en": "Ministry of Emergency Preparedness and Response",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-15T16:11:37.752Z",
-  "nombre": 152
+  "lus": "2026-10-16T15:49:40.481Z",
+  "nombre": 153
 }

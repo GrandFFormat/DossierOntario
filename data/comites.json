@@ -2,7 +2,7 @@
   "source": "https://www.ola.org/en/legislative-business/committees",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-15T16:11:35.427Z",
+  "lus": "2026-10-16T15:49:40.125Z",
   "nombre": 8,
   "comites": [
     {
@@ -833,6 +833,11 @@
         }
       ],
       "transcriptions": [
+        {
+          "date": "2026-10-06",
+          "libelle": "Committee Transcript 2026-Oct-06",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-oct-06"
+        },
         {
           "date": "2026-10-05",
           "libelle": "Committee Transcript 2026-Oct-05",
