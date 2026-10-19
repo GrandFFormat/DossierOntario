@@ -1430,8 +1430,28 @@
         "en": "Ministry of Emergency Preparedness and Response",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-oct-08": [
+      {
+        "en": "Protecting Ontario’s Streets and Communities Act, 2026",
+        "fr": "Loi de 2026 visant à protéger les rues et les collectivités de l’Ontario"
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-oct-07": [
+      {
+        "en": "Estimates",
+        "fr": "Budget des dépenses"
+      },
+      {
+        "en": "Ministry of the Attorney General",
+        "fr": null
+      },
+      {
+        "en": "Ministry of the Solicitor General",
+        "fr": "Ministère du Solliciteur général"
+      }
     ]
   },
-  "lus": "2026-10-16T15:49:40.481Z",
-  "nombre": 153
+  "lus": "2026-10-19T18:07:59.927Z",
+  "nombre": 155
 }
