@@ -6,7 +6,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-22T16:29:06.296Z",
+  "lus": "2026-10-23T16:19:48.125Z",
   "totalSieges": 124,
   "etatPartis": [
     {
@@ -241,7 +241,7 @@
         },
         {
           "type": "Legislative office",
-          "adresse": "Room 384, Main Legislative Building, Queen's Park",
+          "adresse": "Room 202, North Wing, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-1620",
@@ -326,7 +326,7 @@
       "bureaux": [
         {
           "type": "Legislative office",
-          "adresse": "Room 267, Main Legislative Building, Queen's Park",
+          "adresse": "Room 160, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-0169",
@@ -624,7 +624,7 @@
     },
     {
       "identifiant": "stan-cho",
-      "nom": "Hon. Stan Cho",
+      "nom": "Stan Cho",
       "parti": "Progressive Conservative Party of Ontario",
       "circonscription": "Willowdale",
       "couleurParti": "#006AD1",
@@ -636,10 +636,10 @@
       "courriel": "stan.cho@pc.ola.org",
       "bureaux": [
         {
-          "type": "Ministry office",
-          "adresse": "Ministry of Tourism, Culture and Gaming, 6th Floor, 438 University Ave.",
+          "type": "Legislative office",
+          "adresse": "Whitney Block, Room 1310, 99 Wellesley St. W",
           "ville": "Toronto",
-          "codePostal": "M7A 1N3",
+          "codePostal": "M7A 1A2",
           "telephone": "416-326-9326",
           "courriel": null
         },
@@ -2109,7 +2109,7 @@
         },
         {
           "type": "Legislative office",
-          "adresse": "Room 202, North Wing, Main Legislative Building, Queen's Park",
+          "adresse": "Room 201, North Wing, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-1796",
@@ -2830,7 +2830,7 @@
       "bureaux": [
         {
           "type": "Legislative office",
-          "adresse": "Room 160, Main Legislative Building, Queen's Park",
+          "adresse": "Room 267, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-3028",
@@ -3621,9 +3621,9 @@
       "bureaux": [
         {
           "type": "Legislative office",
-          "adresse": "Whitney Block, Room 1308, 99 Wellesley St. W",
+          "adresse": "Queen's Park, Room 250, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
-          "codePostal": "M7A 1A2",
+          "codePostal": "M7A 1A5",
           "telephone": "416-325-1069",
           "courriel": null
         },

@@ -5,7 +5,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-22T15:49:14.965Z",
+  "lus": "2026-10-23T15:40:38.801Z",
   "nombre": {
     "total": 191,
     "publics": 139,
@@ -3710,12 +3710,7 @@
       "type": "prive",
       "titreEn": "J.C.C. Corp. Act, 2026",
       "titreFr": null,
-      "parrains": [
-        {
-          "nom": "Cooper, Michelle",
-          "role": null
-        }
-      ],
+      "parrains": [],
       "typeProjet": "prive",
       "typeProjetSource": "numero-pr",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr53",
@@ -3744,12 +3739,7 @@
       "type": "prive",
       "titreEn": "London Hydro Holdings Inc. Act, 2026",
       "titreFr": null,
-      "parrains": [
-        {
-          "nom": "Rae, Matthew",
-          "role": null
-        }
-      ],
+      "parrains": [],
       "typeProjet": "prive",
       "typeProjetSource": "numero-pr",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr55",
