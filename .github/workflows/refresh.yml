@@ -13,7 +13,7 @@ name: Rafraîchir les données
 
 on:
   schedule:
-    - cron: '0 11 * * 1-5' # 7 h (heure de l'Est) du lundi au vendredi
+    - cron: '0 11 * * 1' # 7 h (heure de l'Est), le lundi seulement (décision de Martin, 24 oct. 2026)
   workflow_dispatch:
 
 permissions:
