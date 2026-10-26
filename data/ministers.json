@@ -6,14 +6,14 @@
     "fichiers": {
       "ministresEn": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/0891604d-0a27-4f51-ae45-87384ab8db59/download/mpbsd-minister-list-2026-09-10-en-utf8-2026-09-10-en.csv",
       "ministresFr": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/9d02d374-6a13-472d-8155-55bb86a565b7/download/mpbsd-minister-list-2026-09-10-fr-utf8-2026-09-10-fr.csv",
-      "adjointsEn": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/ce115985-d6ad-478e-9459-e48066fb204c/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-en-2026-09-10-utf8-2026-09-10_1_1.csv",
-      "adjointsFr": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/9021f4e6-9421-4730-8dce-269750142085/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-fr-2026-09-10-utf8-2026-09-10_1_1.csv"
+      "adjointsEn": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/ce115985-d6ad-478e-9459-e48066fb204c/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-en-2026-10-22-utf8-2026-10-22_1_1.csv",
+      "adjointsFr": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/9021f4e6-9421-4730-8dce-269750142085/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-fr-2026-10-22-utf8-2026-10-22_1_1.csv"
     },
     "licence": "Licence du gouvernement ouvert – Ontario"
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-23T16:20:33.584Z",
+  "lus": "2026-10-26T17:48:56.419Z",
   "nombre": 39,
   "ministres": [
     {
@@ -455,8 +455,8 @@
     },
     {
       "nom": "Deepak Anand",
-      "titreEn": "Parliamentary Assistant to the Minister of Colleges, Universities, Research Excellence and Security (Research Excellence)",
-      "titreFr": "adjoint parlementaire au ministre des Collèges et Universités, de l'Excellence en recherche et de la Sécurité (Excellence en recherche)"
+      "titreEn": "Parliamentary Assistant to the Minister for Seniors and Accessibility",
+      "titreFr": "adjoint parlementaire au ministre des Services aux aînés et de l’Accessibilité"
     },
     {
       "nom": "Aris Babikian",
@@ -469,19 +469,29 @@
       "titreFr": "adjoint parlementaire à la ministre des Affaires rurales"
     },
     {
+      "nom": "Jeff Beattie",
+      "titreEn": "Parliamentary Assistant to the Minister of Agriculture, Food and Agribusiness",
+      "titreFr": "adjoint parlementaire au ministre de l’Agriculture, de l’Alimentation et de l’Agroentreprise"
+    },
+    {
       "nom": "Will Bouma",
-      "titreEn": "Parliamentary Assistant to the Premier and Parliamentary Assistant to the Minister of Intergovernmental Affairs and Parliamentary Assistant to the Minister of Indigenous Affairs and First Nations Economic Reconciliation and Parliamentary Assistant to the Minister of Northern Economic Development and Growth",
-      "titreFr": "adjoint parlementaire au premier ministre et ministre des Affaires intergouvernementales, au ministre des Affaires autochtones et de la Réconciliation économique avec les Premières Nations et au ministre du Développement et de la croissance économique du Nord"
+      "titreEn": "Parliamentary Assistant to the Minister of Intergovernmental Affairs and Parliamentary Assistant to the Minister of Indigenous Affairs and First Nations Economic Reconciliation and Minister Responsible for Ring of Fire Economic and Community Partnerships and Parliamentary Assistant to the Minister of Northern Economic Development and Growth",
+      "titreFr": "adjoint parlementaire au ministre des Affaires intergouvernementales et au ministre des Affaires autochtones et de la Réconciliation économique avec les Premières Nations et ministre responsable des Partenariats économiques et communautaires pour le développement du Cercle de feu et au ministre du Développement et de la croissance économique du Nord"
     },
     {
       "nom": "Ric Bresee",
-      "titreEn": "Parliamentary Assistant to the Minister of Transportation and Parliamentary Assistant to the Minister for Seniors and Accessibility",
-      "titreFr": "adjoint parlementaire au ministre des Transports et au ministre des Services aux aînés et de l’Accessibilité"
+      "titreEn": "Parliamentary Assistant to the Associate Minister of Forestry and Forest Products",
+      "titreFr": "adjoint parlementaire au ministre associé des Forêts et des Produits forestiers"
+    },
+    {
+      "nom": "Stan Cho",
+      "titreEn": "Parliamentary Assistant to the Minister of Education",
+      "titreFr": "adjoint parlementaire au ministre de l'Éducation"
     },
     {
       "nom": "Monica Ciriello",
-      "titreEn": "Parliamentary Assistant to the Attorney General",
-      "titreFr": "adjointe parlementaire au procureur général"
+      "titreEn": "Parliamentary Assistant to the Solicitor General",
+      "titreFr": "adjointe parlementaire au solliciteur général"
     },
     {
       "nom": "Steve Clark",
@@ -490,8 +500,8 @@
     },
     {
       "nom": "Lorne Coe",
-      "titreEn": "Parliamentary Assistant to the Minister of Colleges, Universities, Research Excellence and Security and Parliamentary Assistant to the Minister of Children, Community and Social Services",
-      "titreFr": "adjoint parlementaire au ministre des Collèges et Universités, de l'Excellence en recherche et de la Sécurité et au ministre des Services à l’enfance et des Services sociaux et communautaires"
+      "titreEn": "Parliamentary Assistant to the Minister of Colleges, Universities, Research Excellence and Security",
+      "titreFr": "adjoint parlementaire au ministre des Collèges et Universités, de l'Excellence en recherche et de la Sécurité"
     },
     {
       "nom": "Rudy Cuzzetto",
@@ -500,18 +510,18 @@
     },
     {
       "nom": "George Darouze",
-      "titreEn": "Parliamentary Assistant to the Minister of Children, Community and Social Services and Parliamentary Assistant to the President of the Treasury Board",
-      "titreFr": "adjoint parlementaire au ministre des Services à l’enfance et des Services sociaux et communautaires et à la présidente du Conseil du Trésor"
+      "titreEn": "Parliamentary Assistant to the Minister of Children, Community and Social Services",
+      "titreFr": "adjoint parlementaire au ministre des Services à l’enfance et des Services sociaux et communautaires"
     },
     {
       "nom": "Billy Denault",
-      "titreEn": "Parliamentary Assistant to the Minister of Tourism, Culture and Gaming",
-      "titreFr": "adjoint parlementaire au ministre du Tourisme, de la Culture et des Jeux"
+      "titreEn": "Parliamentary Assistant to the Minister of Municipal Affairs and Housing",
+      "titreFr": "adjoint parlementaire au ministre des Affaires municipales et du Logement"
     },
     {
       "nom": "Jess Dixon",
-      "titreEn": "Parliamentary Assistant to the Minister of Education",
-      "titreFr": "adjointe parlementaire au ministre de l'Éducation"
+      "titreEn": "Parliamentary Assistant to the Minister of Sport",
+      "titreFr": "adjointe parlementaire au ministre du Sport"
     },
     {
       "nom": "Andrew Dowie",
@@ -520,28 +530,33 @@
     },
     {
       "nom": "Mohamed Firin",
-      "titreEn": "Parliamentary Assistant to the Minister of Labour, Immigration, Training and Skills Development and Parliamentary Assistant to the Minister of Tourism, Culture and Gaming",
-      "titreFr": "adjoint parlementaire au ministre du Travail, de l’Immigration, de la Formation et du Développement des compétences et au ministre du Tourisme, de la Culture et des Jeux"
+      "titreEn": "Parliamentary Assistant to the Solicitor General",
+      "titreFr": "adjoint parlementaire au solliciteur général"
     },
     {
       "nom": "Hardeep Singh Grewal",
-      "titreEn": "Parliamentary Assistant to the Minister of Transportation",
-      "titreFr": "adjoint parlementaire au ministre des Transports"
+      "titreEn": "Parliamentary Assistant to the Minister of Emergency Preparedness and Response",
+      "titreFr": "adjoint parlementaire à la ministre de la Protection civile et de l'Intervention en cas d'urgence"
     },
     {
       "nom": "Silvia Gualtieri",
-      "titreEn": "Parliamentary Assistant to the Solicitor General",
-      "titreFr": "adjointe parlementaire au solliciteur général"
+      "titreEn": "Parliamentary Assistant to the Minister of Infrastructure",
+      "titreFr": "adjointe parlementaire au ministre de l’Infrastructure"
     },
     {
       "nom": "John Jordan",
-      "titreEn": "Parliamentary Assistant to the Minister of Health and Parliamentary Assistant to the Minister of Long-Term Care",
-      "titreFr": "adjoint parlementaire à la ministre de la Santé et à la ministre des Soins de longue durée"
+      "titreEn": "Parliamentary Assistant to the Minister of Long-Term Care",
+      "titreFr": "adjoint parlementaire à la ministre des Soins de longue durée"
     },
     {
       "nom": "Logan Kanapathi",
       "titreEn": "Parliamentary Assistant to the Minister of Red Tape Reduction",
       "titreFr": "adjoint parlementaire à la ministre de la Réduction des formalités administratives"
+    },
+    {
+      "nom": "Susan Lahey",
+      "titreEn": "Parliamentary Assistant to the Associate Minister of Mental Health and Addictions",
+      "titreFr": "adjointe parlementaire à la ministre associée déléguée à la Santé mentale et à la Lutte contre les dépendances"
     },
     {
       "nom": "Anthony Leardi",
@@ -550,8 +565,8 @@
     },
     {
       "nom": "Dawn Gallagher Murphy",
-      "titreEn": "Parliamentary Assistant to the Minister of Long-Term Care and Parliamentary Assistant to the Minister of Natural Resources",
-      "titreFr": "adjointe parlementaire à la ministre des Soins de longue durée et au ministre des Richesses naturelles"
+      "titreEn": "Parliamentary Assistant to the Associate Minister of Artificial Intelligence Adoption",
+      "titreFr": "adjointe parlementaire au ministre associé de l'Adoption de l'intelligence artificielle"
     },
     {
       "nom": "Billy Pang",
@@ -560,18 +575,18 @@
     },
     {
       "nom": "Natalie Pierre",
-      "titreEn": "Parliamentary Assistant to the Minister of Children, Community and Social Services and Parliamentary Assistant to the Minister of Sport",
-      "titreFr": "adjointe parlementaire au ministre des Services à l’enfance et des Services sociaux et communautaires et au ministre du Sport"
+      "titreEn": "Parliamentary Assistant to the President of the Treasury Board",
+      "titreFr": "adjointe parlementaire à la présidente du Conseil du Trésor"
     },
     {
       "nom": "Steve Pinsonneault",
-      "titreEn": "Parliamentary Assistant to the Minister of Emergency Preparedness and Response and Parliamentary Assistant to the Minister of Rural Affairs",
-      "titreFr": "adjoint parlementaire à la ministre de la Protection civile et de l'Intervention en cas d'urgence et à la ministre des Affaires rurales"
+      "titreEn": "Parliamentary Assistant to the Minister of Transportation",
+      "titreFr": "adjoint parlementaire au ministre des Transports"
     },
     {
       "nom": "Joseph Racinsky",
-      "titreEn": "Parliamentary Assistant to the Minister of Red Tape Reduction",
-      "titreFr": "adjoint parlementaire à la ministre de la Réduction des formalités administratives"
+      "titreEn": "Parliamentary Assistant to the President of the Treasury Board",
+      "titreFr": "adjoint parlementaire à la présidente du Conseil du Trésor"
     },
     {
       "nom": "Brian Riddell",
@@ -580,8 +595,8 @@
     },
     {
       "nom": "Bill Rosenberg",
-      "titreEn": "Parliamentary Assistant to the Minister of Agriculture, Food and Agribusiness and Parliamentary Assistant to the President of the Treasury Board",
-      "titreFr": "adjoint parlementaire au ministre de l'Agriculture, de l'Alimentation et de l'Agroentreprise et à la présidente du Conseil du Trésor"
+      "titreEn": "Parliamentary Assistant to the Minister of Agriculture, Food and Agribusiness",
+      "titreFr": "adjoint parlementaire au ministre de l'Agriculture, de l'Alimentation et de l'Agroentreprise"
     },
     {
       "nom": "Sheref Sabawy",
@@ -590,13 +605,13 @@
     },
     {
       "nom": "Amarjot Sandhu",
-      "titreEn": "Parliamentary Assistant to the Minister of Infrastructure",
-      "titreFr": "adjoint parlementaire au ministre de l’Infrastructure"
+      "titreEn": "Parliamentary Assistant to the Minister of Public and Business Service Delivery and Procurement",
+      "titreFr": "adjoint parlementaire au ministre des Services au public et aux entreprises et de l'Approvisionnement"
     },
     {
       "nom": "Stéphane Sarrazin",
-      "titreEn": "Parliamentary Assistant to the Minister of Economic Development, Job Creation and Trade (Small Business) and Parliamentary Assistant to the Minister of Francophone Affairs",
-      "titreFr": "adjoint parlementaire au ministre du Développement économique, de la Création d’emplois et du Commerce (Petites Entreprises) et à la ministre des Affaires francophones"
+      "titreEn": "Parliamentary Assistant to the Minister of Francophone Affairs",
+      "titreFr": "adjoint parlementaire à la ministre des Affaires francophones"
     },
     {
       "nom": "Dave Smith",
@@ -610,8 +625,8 @@
     },
     {
       "nom": "Laura Smith",
-      "titreEn": "Parliamentary Assistant to the Minister of Municipal Affairs and Housing (Housing)",
-      "titreFr": "adjointe parlementaire au ministre des Affaires municipales et du Logement (Logement)"
+      "titreEn": "Parliamentary Assistant to the Minister of Infrastructure",
+      "titreFr": "adjointe parlementaire au ministre de l’Infrastructure"
     },
     {
       "nom": "Effie Triantafilopoulos",
@@ -620,13 +635,13 @@
     },
     {
       "nom": "Paul Vickers",
-      "titreEn": "Parliamentary Assistant to the Minister of Agriculture, Food and Agribusiness",
-      "titreFr": "adjoint parlementaire au ministre de l'Agriculture, de l'Alimentation et de l'Agroentreprise"
+      "titreEn": "Parliamentary Assistant to the Minister of Natural Resources",
+      "titreFr": "adjoint parlementaire au ministre des Richesses naturelles"
     },
     {
       "nom": "Daisy Wai",
-      "titreEn": "Parliamentary Assistant to the Minister of Citizenship and Multiculturalism and Parliamentary Assistant to the Minister for Seniors and Accessibility",
-      "titreFr": "adjointe parlementaire au ministre des Affaires civiques et du Multiculturalisme et au ministre des Services aux aînés et de l’Accessibilité"
+      "titreEn": "Parliamentary Assistant to the Minister for Seniors and Accessibility",
+      "titreFr": "adjointe parlementaire au ministre des Services aux aînés et de l’Accessibilité"
     }
   ],
   "ecartsDeTitre": []

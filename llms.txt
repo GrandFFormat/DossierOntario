@@ -20,7 +20,7 @@ What to know before citing this site:
 - [Bills](https://dossierontario.ca/bills): the 191 bills of Parliament 44, session 1 (139 public, 52 private): stage reached, sponsor and a plain-language summary, with a link to the official text.
 - [Recorded votes](https://dossierontario.ca/votes): 115 recorded divisions, with how each MPP voted (for 4 of them the Assembly published the totals only, not the names). Absent MPPs are not listed: the Assembly does not publish absences.
 - [Committees](https://dossierontario.ca/committees): the 8 standing committees: which bills they studied, when they sat, and their transcripts.
-- [MPPs and cabinet](https://dossierontario.ca/mpps): the 124 members of provincial parliament, including 38 ministers and 36 parliamentary assistants, with their official titles, party, riding and contact details.
+- [MPPs and cabinet](https://dossierontario.ca/mpps): the 124 members of provincial parliament, including 38 ministers and 39 parliamentary assistants, with their official titles, party, riding and contact details.
 - [Lexicon](https://dossierontario.ca/glossary): 31 words of the Ontario Legislature explained in plain language. These explanations are the site's own, not the Assembly's.
 
 ## One page per bill
