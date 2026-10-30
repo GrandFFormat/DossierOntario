@@ -1857,13 +1857,51 @@
       <p class="presence-note">${mot('deputes.votesNote')}</p>
     </div>`;
 
+    // Partager une fiche (30 oct. 2026, comme sur DossierCanada) : un clic copie un court résumé
+    // (rôle, circonscription, parti, présence aux votes, projets parrainés et devenus lois) et un
+    // lien lisible, qui rouvre la page avec ce nom dans la recherche. ✓ le confirme.
+    const ICONE_PARTAGE = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"/><circle cx="6" cy="12" r="3.2"/><circle cx="18" cy="19" r="3.2"/><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"/></svg>';
+    // « Hon. Doug Ford » → « doug-ford »
+    const slugMp = (n) => String(n || '').replace(/^Hon\.\s+/i, '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    const resumeDepute = (m) => {
+      const en = langue !== 'fr';
+      const nom = m.nom.replace(/^Hon\.\s+/i, '');
+      const role = m.ministreEn ? selonLangue(m.ministreEn, m.ministreFr) + ', ' : '';
+      const tete = `${nom} (${selonLangue(m.parti, m.partiFr)}), ${role}${en ? 'MPP for' : 'député·e de'} ${selonLangue(m.circonscription, m.circonscriptionFr)}`;
+      const t = taux(m);
+      const faits = [
+        t !== null ? (en ? `Recorded-vote attendance: ${t}%` : `Présence aux votes : ${t} %`) : '',
+        en ? `Bills sponsored: ${m.projetsParraines}${m.projetsLois ? `, ${m.projetsLois} became law` : ''}`
+          : `Projets de loi parrainés : ${m.projetsParraines}${m.projetsLois ? `, dont ${m.projetsLois} devenus lois` : ''}`,
+      ].filter(Boolean).join(' · ');
+      return `${tete}. ${faits}.`;
+    };
+    window.partageDepute = (bouton, id) => {
+      const m = d.deputes.find((x) => x.identifiant === id);
+      if (!m) return;
+      // Une seule page pour les deux langues : la langue vient du réglage du lecteur.
+      const texte = `${resumeDepute(m)} https://dossierontario.ca/mpps?mp=${slugMp(m.nom)}`;
+      const fait = () => {
+        const avant = bouton.innerHTML;
+        bouton.textContent = '✓';
+        setTimeout(() => { bouton.innerHTML = avant; }, 1500);
+      };
+      (navigator.clipboard ? navigator.clipboard.writeText(texte) : Promise.reject()).then(fait).catch(() => window.prompt(langue === 'fr' ? 'Copiez :' : 'Copy:', texte));
+    };
+    // Le bouton W : la page anglaise sur le site anglais, la française sur le site français, l'autre à défaut.
+    const actions = (m) => {
+      const w = m.wiki && (langue === 'fr' ? (m.wiki.fr || m.wiki.en) : (m.wiki.en || m.wiki.fr));
+      const nom = echapper(m.nom.replace(/^Hon\.\s+/i, ''));
+      return `<span class="mp-actions"><button class="part-btn" type="button" title="${langue === 'fr' ? 'Partager' : 'Share'}" aria-label="${langue === 'fr' ? 'Partager la fiche de' : 'Share the profile of'} ${nom}" onclick="event.stopPropagation(); partageDepute(this, '${echapper(m.identifiant)}')">${ICONE_PARTAGE}</button>${w ? `<a class="wiki-btn" href="${echapper(w)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="${langue === 'fr' ? 'Page Wikipédia de' : 'Wikipedia page of'} ${nom}">W</a>` : ''}</span>`;
+    };
+
     // La carte suit celle des ministres de DQ : parti, NOM, rôle en couleur, puis trois faits
     // alignés (circonscription, votes, projets parrainés) et le courriel en pied.
     const carte = (m) => {
       const parti = selonLangue(m.parti, m.partiFr) ?? '';
       return `<article class="carte carte-depute">
         <div class="depute-tete"><span class="pastille pastille-parti" title="${echapper(parti)}" style="background:${echapper(m.couleurParti ?? '#8B8578')};
-          border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span></div>
+          border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span>${actions(m)}</div>
         <h3 class="depute-nom"><a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a></h3>
         ${m.ministreEn ? `<p class="depute-role">${echapper(selonLangue(m.ministreEn, m.ministreFr))}</p>` : ''}
         ${m.adjointEn ? `<p class="depute-role depute-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
@@ -1969,6 +2007,15 @@
         dessiner(derniereRecherche);
       })
     );
+    // Le lien partagé (?mp=doug-ford) remplit la recherche ; un ancien lien avec le nom complet marche encore.
+    const demande = new URLSearchParams(location.search).get('mp');
+    if (demande) {
+      const champ = cible.querySelector('[data-role="recherche"]');
+      const vrai = d.deputes.find((x) => slugMp(x.nom) === slugMp(demande));
+      champ.value = vrai ? vrai.nom.replace(/^Hon\.\s+/i, '') : demande;
+      champ.dispatchEvent(new Event('input', { bubbles: true }));
+      champ.scrollIntoView({ block: 'center' });
+    }
     // /cabinet renvoie ici, sur #cabinet : l'ancienne page n'existe plus.
     if (location.hash === '#cabinet') document.getElementById('cabinet')?.scrollIntoView({ block: 'start' });
   };

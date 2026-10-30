@@ -1,0 +1,478 @@
+{
+  "source": "en.wikipedia.org (API publique)",
+  "lu": "2026-10-30",
+  "liens": {
+    "tyler-allsopp": {
+      "en": "https://en.wikipedia.org/wiki/Tyler_Allsopp",
+      "fr": "https://fr.wikipedia.org/wiki/Tyler_Allsopp"
+    },
+    "deepak-anand": {
+      "en": "https://en.wikipedia.org/wiki/Deepak_Anand",
+      "fr": "https://fr.wikipedia.org/wiki/Deepak_Anand"
+    },
+    "aris-babikian": {
+      "en": "https://en.wikipedia.org/wiki/Aris_Babikian",
+      "fr": null
+    },
+    "jeff-beattie": {
+      "en": "https://en.wikipedia.org/wiki/Jeff_Beattie",
+      "fr": null
+    },
+    "peter-bethlenfalvy": {
+      "en": "https://en.wikipedia.org/wiki/Peter_Bethlenfalvy",
+      "fr": "https://fr.wikipedia.org/wiki/Peter_Bethlenfalvy"
+    },
+    "stephen-blais": {
+      "en": "https://en.wikipedia.org/wiki/Stephen_Blais",
+      "fr": "https://fr.wikipedia.org/wiki/Stephen_Blais"
+    },
+    "will-bouma": {
+      "en": "https://en.wikipedia.org/wiki/Will_Bouma",
+      "fr": null
+    },
+    "guy-bourgouin": {
+      "en": "https://en.wikipedia.org/wiki/Guy_Bourgouin",
+      "fr": "https://fr.wikipedia.org/wiki/Guy_Bourgouin"
+    },
+    "stephanie-bowman": {
+      "en": "https://en.wikipedia.org/wiki/Stephanie_Bowman",
+      "fr": null
+    },
+    "bobbi-ann-brady": {
+      "en": "https://en.wikipedia.org/wiki/Bobbi_Ann_Brady",
+      "fr": "https://fr.wikipedia.org/wiki/Bobbi_Ann_Brady"
+    },
+    "ric-bresee": {
+      "en": "https://en.wikipedia.org/wiki/Ric_Bresee",
+      "fr": "https://fr.wikipedia.org/wiki/Ric_Bresee"
+    },
+    "jeff-burch": {
+      "en": "https://en.wikipedia.org/wiki/Jeff_Burch",
+      "fr": "https://fr.wikipedia.org/wiki/Jeff_Burch"
+    },
+    "paul-calandra": {
+      "en": "https://en.wikipedia.org/wiki/Paul_Calandra",
+      "fr": "https://fr.wikipedia.org/wiki/Paul_Calandra"
+    },
+    "rob-cerjanec": {
+      "en": "https://en.wikipedia.org/wiki/Rob_Cerjanec",
+      "fr": "https://fr.wikipedia.org/wiki/Robert_Cerjanec"
+    },
+    "stan-cho": {
+      "en": "https://en.wikipedia.org/wiki/Stan_Cho",
+      "fr": "https://fr.wikipedia.org/wiki/Stan_Cho"
+    },
+    "monica-ciriello": {
+      "en": "https://en.wikipedia.org/wiki/Monica_Ciriello",
+      "fr": null
+    },
+    "aislinn-clancy": {
+      "en": "https://en.wikipedia.org/wiki/Aislinn_Clancy",
+      "fr": null
+    },
+    "lorne-coe": {
+      "en": "https://en.wikipedia.org/wiki/Lorne_Coe",
+      "fr": "https://fr.wikipedia.org/wiki/Lorne_Coe"
+    },
+    "lucille-collard": {
+      "en": "https://en.wikipedia.org/wiki/Lucille_Collard",
+      "fr": null
+    },
+    "rudy-cuzzetto": {
+      "en": "https://en.wikipedia.org/wiki/Rudy_Cuzzetto",
+      "fr": "https://fr.wikipedia.org/wiki/Rudy_Cuzzetto"
+    },
+    "george-darouze": {
+      "en": "https://en.wikipedia.org/wiki/George_Darouze",
+      "fr": "https://fr.wikipedia.org/wiki/George_Darouze"
+    },
+    "billy-denault": {
+      "en": "https://en.wikipedia.org/wiki/Billy_Denault",
+      "fr": null
+    },
+    "jess-dixon": {
+      "en": "https://en.wikipedia.org/wiki/Jess_Dixon",
+      "fr": "https://fr.wikipedia.org/wiki/Jess_Dixon"
+    },
+    "andrew-dowie": {
+      "en": "https://en.wikipedia.org/wiki/Andrew_Dowie",
+      "fr": "https://fr.wikipedia.org/wiki/Andrew_Dowie"
+    },
+    "doug-downey": {
+      "en": "https://en.wikipedia.org/wiki/Doug_Downey",
+      "fr": "https://fr.wikipedia.org/wiki/Doug_Downey"
+    },
+    "jill-dunlop": {
+      "en": "https://en.wikipedia.org/wiki/Jill_Dunlop",
+      "fr": null
+    },
+    "lee-fairclough": {
+      "en": "https://en.wikipedia.org/wiki/Lee_Fairclough",
+      "fr": null
+    },
+    "victor-fedeli": {
+      "en": "https://en.wikipedia.org/wiki/Vic_Fedeli",
+      "fr": "https://fr.wikipedia.org/wiki/Vic_Fedeli"
+    },
+    "catherine-fife": {
+      "en": "https://en.wikipedia.org/wiki/Catherine_Fife",
+      "fr": "https://fr.wikipedia.org/wiki/Catherine_Fife"
+    },
+    "mohamed-firin": {
+      "en": "https://en.wikipedia.org/wiki/Mohamed_Firin",
+      "fr": null
+    },
+    "rob-flack": {
+      "en": "https://en.wikipedia.org/wiki/Rob_Flack",
+      "fr": null
+    },
+    "doug-ford": {
+      "en": "https://en.wikipedia.org/wiki/Doug_Ford",
+      "fr": "https://fr.wikipedia.org/wiki/Doug_Ford_(homme_politique)"
+    },
+    "dawn-gallagher-murphy": {
+      "en": "https://en.wikipedia.org/wiki/Dawn_Gallagher_Murphy",
+      "fr": "https://fr.wikipedia.org/wiki/Dawn_Gallagher_Murphy"
+    },
+    "wayne-gates": {
+      "en": "https://en.wikipedia.org/wiki/Wayne_Gates",
+      "fr": "https://fr.wikipedia.org/wiki/Wayne_Gates"
+    },
+    "france-gelinas": {
+      "en": "https://en.wikipedia.org/wiki/France_G%C3%A9linas",
+      "fr": "https://fr.wikipedia.org/wiki/France_G%C3%A9linas"
+    },
+    "alexa-gilmour": {
+      "en": "https://en.wikipedia.org/wiki/Alexa_Gilmour",
+      "fr": null
+    },
+    "chris-glover": {
+      "en": "https://en.wikipedia.org/wiki/Chris_Glover",
+      "fr": "https://fr.wikipedia.org/wiki/Chris_Glover"
+    },
+    "lisa-gretzky": {
+      "en": "https://en.wikipedia.org/wiki/Lisa_Gretzky",
+      "fr": "https://fr.wikipedia.org/wiki/Lisa_Gretzky"
+    },
+    "silvia-gualtieri": {
+      "en": "https://en.wikipedia.org/wiki/Silvia_Gualtieri",
+      "fr": null
+    },
+    "zee-hamid": {
+      "en": "https://en.wikipedia.org/wiki/Zee_Hamid",
+      "fr": null
+    },
+    "ernie-hardeman": {
+      "en": "https://en.wikipedia.org/wiki/Ernie_Hardeman",
+      "fr": null
+    },
+    "mike-harris": {
+      "en": "https://en.wikipedia.org/wiki/Mike_Harris",
+      "fr": "https://fr.wikipedia.org/wiki/Mike_Harris"
+    },
+    "andrea-hazell": {
+      "en": "https://en.wikipedia.org/wiki/Andrea_Hazell",
+      "fr": null
+    },
+    "ted-hsu": {
+      "en": "https://en.wikipedia.org/wiki/Ted_Hsu",
+      "fr": "https://fr.wikipedia.org/wiki/Ted_Hsu"
+    },
+    "sylvia-jones": {
+      "en": "https://en.wikipedia.org/wiki/Sylvia_Jones",
+      "fr": null
+    },
+    "logan-kanapathi": {
+      "en": "https://en.wikipedia.org/wiki/Logan_Kanapathi",
+      "fr": "https://fr.wikipedia.org/wiki/Logan_Kanapathi"
+    },
+    "terence-kernaghan": {
+      "en": "https://en.wikipedia.org/wiki/Terence_Kernaghan",
+      "fr": "https://fr.wikipedia.org/wiki/Terence_Kernaghan"
+    },
+    "natalia-kusendova-bashta": {
+      "en": "https://en.wikipedia.org/wiki/Natalia_Kusendova-Bashta",
+      "fr": "https://fr.wikipedia.org/wiki/Natalia_Kusendova"
+    },
+    "susan-lahey": {
+      "en": "https://en.wikipedia.org/wiki/Susan_Lahey",
+      "fr": null
+    },
+    "anthony-leardi": {
+      "en": "https://en.wikipedia.org/wiki/Anthony_Leardi",
+      "fr": null
+    },
+    "stephen-lecce": {
+      "en": "https://en.wikipedia.org/wiki/Stephen_Lecce",
+      "fr": "https://fr.wikipedia.org/wiki/Stephen_Lecce"
+    },
+    "robin-lennox": {
+      "en": "https://en.wikipedia.org/wiki/Robin_Lennox",
+      "fr": null
+    },
+    "sol-mamakwa": {
+      "en": "https://en.wikipedia.org/wiki/Sol_Mamakwa",
+      "fr": "https://fr.wikipedia.org/wiki/Sol_Mamakwa"
+    },
+    "karen-mccrimmon": {
+      "en": "https://en.wikipedia.org/wiki/Karen_McCrimmon",
+      "fr": "https://fr.wikipedia.org/wiki/Karen_McCrimmon"
+    },
+    "catherine-mckenney": {
+      "en": "https://en.wikipedia.org/wiki/Catherine_McKenney",
+      "fr": "https://fr.wikipedia.org/wiki/Catherine_McKenney"
+    },
+    "mary-margaret-mcmahon": {
+      "en": "https://en.wikipedia.org/wiki/Mary-Margaret_McMahon",
+      "fr": "https://fr.wikipedia.org/wiki/Mary-Margaret_McMahon"
+    },
+    "sam-oosterhoff": {
+      "en": "https://en.wikipedia.org/wiki/Sam_Oosterhoff",
+      "fr": "https://fr.wikipedia.org/wiki/Sam_Oosterhoff"
+    },
+    "billy-pang": {
+      "en": "https://en.wikipedia.org/wiki/Billy_Pang",
+      "fr": "https://fr.wikipedia.org/wiki/Billy_Pang"
+    },
+    "michael-parsa": {
+      "en": "https://en.wikipedia.org/wiki/Michael_Parsa",
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Parsa"
+    },
+    "chandra-pasma": {
+      "en": "https://en.wikipedia.org/wiki/Chandra_Pasma",
+      "fr": "https://fr.wikipedia.org/wiki/Chandra_Pasma"
+    },
+    "david-piccini": {
+      "en": "https://en.wikipedia.org/wiki/David_Piccini",
+      "fr": "https://fr.wikipedia.org/wiki/David_Piccini"
+    },
+    "natalie-pierre": {
+      "en": "https://en.wikipedia.org/wiki/Natalie_Pierre",
+      "fr": null
+    },
+    "steve-pinsonneault": {
+      "en": "https://en.wikipedia.org/wiki/Steve_Pinsonneault",
+      "fr": null
+    },
+    "nolan-quinn": {
+      "en": "https://en.wikipedia.org/wiki/Nolan_Quinn",
+      "fr": null
+    },
+    "joseph-racinsky": {
+      "en": "https://en.wikipedia.org/wiki/Joseph_Racinsky",
+      "fr": null
+    },
+    "matthew-rae": {
+      "en": "https://en.wikipedia.org/wiki/Matthew_Rae",
+      "fr": null
+    },
+    "tom-rakocevic": {
+      "en": "https://en.wikipedia.org/wiki/Tom_Rakocevic",
+      "fr": "https://fr.wikipedia.org/wiki/Tom_Rakocevic"
+    },
+    "greg-rickford": {
+      "en": "https://en.wikipedia.org/wiki/Greg_Rickford",
+      "fr": "https://fr.wikipedia.org/wiki/Greg_Rickford"
+    },
+    "brian-riddell": {
+      "en": "https://en.wikipedia.org/wiki/Brian_Riddell",
+      "fr": "https://fr.wikipedia.org/wiki/Brian_Riddell"
+    },
+    "bill-rosenberg": {
+      "en": "https://en.wikipedia.org/wiki/Bill_Rosenberg",
+      "fr": null
+    },
+    "sheref-sabawy": {
+      "en": "https://en.wikipedia.org/wiki/Sheref_Sabawy",
+      "fr": "https://fr.wikipedia.org/wiki/Sheref_Sabawy"
+    },
+    "amarjot-sandhu": {
+      "en": "https://en.wikipedia.org/wiki/Amarjot_Sandhu",
+      "fr": null
+    },
+    "prabmeet-singh-sarkaria": {
+      "en": "https://en.wikipedia.org/wiki/Prabmeet_Sarkaria",
+      "fr": null
+    },
+    "peggy-sattler": {
+      "en": "https://en.wikipedia.org/wiki/Peggy_Sattler",
+      "fr": "https://fr.wikipedia.org/wiki/Peggy_Sattler"
+    },
+    "brian-saunderson": {
+      "en": "https://en.wikipedia.org/wiki/Brian_Saunderson",
+      "fr": null
+    },
+    "mike-schreiner": {
+      "en": "https://en.wikipedia.org/wiki/Mike_Schreiner",
+      "fr": "https://fr.wikipedia.org/wiki/Mike_Schreiner"
+    },
+    "fatima-shaban": {
+      "en": "https://en.wikipedia.org/wiki/Fatima_Shaban",
+      "fr": null
+    },
+    "adil-shamji": {
+      "en": "https://en.wikipedia.org/wiki/Adil_Shamji",
+      "fr": "https://fr.wikipedia.org/wiki/Adil_Shamji"
+    },
+    "donna-skelly": {
+      "en": "https://en.wikipedia.org/wiki/Donna_Skelly",
+      "fr": "https://fr.wikipedia.org/wiki/Donna_Skelly"
+    },
+    "graydon-smith": {
+      "en": "https://en.wikipedia.org/wiki/Graydon_Smith",
+      "fr": null
+    },
+    "stephanie-smyth": {
+      "en": "https://en.wikipedia.org/wiki/Stephanie_Smyth",
+      "fr": null
+    },
+    "marit-stiles": {
+      "en": "https://en.wikipedia.org/wiki/Marit_Stiles",
+      "fr": "https://fr.wikipedia.org/wiki/Marit_Stiles"
+    },
+    "kinga-surma": {
+      "en": "https://en.wikipedia.org/wiki/Kinga_Surma",
+      "fr": null
+    },
+    "peter-tabuns": {
+      "en": "https://en.wikipedia.org/wiki/Peter_Tabuns",
+      "fr": "https://fr.wikipedia.org/wiki/Peter_Tabuns"
+    },
+    "nina-tangri": {
+      "en": "https://en.wikipedia.org/wiki/Nina_Tangri",
+      "fr": "https://fr.wikipedia.org/wiki/Nina_Tangri"
+    },
+    "vijay-thanigasalam": {
+      "en": "https://en.wikipedia.org/wiki/Vijay_Thanigasalam",
+      "fr": null
+    },
+    "jonathan-tsao": {
+      "en": "https://en.wikipedia.org/wiki/Jonathan_Tsao",
+      "fr": null
+    },
+    "john-vanthof": {
+      "en": "https://en.wikipedia.org/wiki/John_Vanthof",
+      "fr": "https://fr.wikipedia.org/wiki/John_Vanthof"
+    },
+    "lise-vaugeois": {
+      "en": "https://en.wikipedia.org/wiki/Lise_Vaugeois",
+      "fr": "https://fr.wikipedia.org/wiki/Lise_Vaugeois"
+    },
+    "daisy-wai": {
+      "en": "https://en.wikipedia.org/wiki/Daisy_Wai",
+      "fr": null
+    },
+    "tyler-watt": {
+      "en": "https://en.wikipedia.org/wiki/Tyler_Watt",
+      "fr": null
+    },
+    "jamie-west": {
+      "en": "https://en.wikipedia.org/wiki/Jamie_West",
+      "fr": null
+    },
+    "kristyn-wong-tam": {
+      "en": "https://en.wikipedia.org/wiki/Kristyn_Wong-Tam",
+      "fr": "https://fr.wikipedia.org/wiki/Kristyn_Wong-Tam"
+    },
+    "jessica-bell": {
+      "en": "https://en.wikipedia.org/wiki/Jessica_Bell_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Jessica_Bell_(femme_politique)"
+    },
+    "michelle-cooper": {
+      "en": "https://en.wikipedia.org/wiki/Michelle_Cooper_(politician)",
+      "fr": null
+    },
+    "stephen-crawford": {
+      "en": "https://en.wikipedia.org/wiki/Stephen_Crawford_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Stephen_Crawford_(homme_politique)"
+    },
+    "graham-mcgregor": {
+      "en": "https://en.wikipedia.org/wiki/Graham_McGregor_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Graham_McGregor_(homme_politique)"
+    },
+    "george-pirie": {
+      "en": "https://en.wikipedia.org/wiki/George_Pirie_(politician)",
+      "fr": null
+    },
+    "stephane-sarrazin": {
+      "en": "https://en.wikipedia.org/wiki/St%C3%A9phane_Sarrazin_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/St%C3%A9phane_Sarrazin_(homme_politique)"
+    },
+    "chris-scott": {
+      "en": "https://en.wikipedia.org/wiki/Chris_Scott_(politician)",
+      "fr": null
+    },
+    "laurie-scott": {
+      "en": "https://en.wikipedia.org/wiki/Laurie_Scott_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Laurie_Scott_(femme_politique)"
+    },
+    "sandy-shaw": {
+      "en": "https://en.wikipedia.org/wiki/Sandy_Shaw_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Sandy_Shaw_(femme_politique)"
+    },
+    "paul-vickers": {
+      "en": "https://en.wikipedia.org/wiki/Paul_Vickers_(politician)",
+      "fr": null
+    },
+    "john-fraser": {
+      "en": "https://en.wikipedia.org/wiki/John_Fraser_(Ontario_MP)",
+      "fr": "https://fr.wikipedia.org/wiki/John_Fraser_(homme_politique_ontarien%2C_Lambton-Est)"
+    },
+    "robert-bailey": {
+      "en": "https://en.wikipedia.org/wiki/Bob_Bailey_(politician)",
+      "fr": null
+    },
+    "kevin-holland": {
+      "en": "https://en.wikipedia.org/wiki/Kevin_Holland_(Canadian_politician)",
+      "fr": null
+    },
+    "trevor-jones": {
+      "en": "https://en.wikipedia.org/wiki/Trevor_Jones_(Canadian_politician)",
+      "fr": null
+    },
+    "john-jordan": {
+      "en": "https://en.wikipedia.org/wiki/John_Jordan_(Canadian_politician)",
+      "fr": "https://fr.wikipedia.org/wiki/John_Jordan_(homme_politique_canadien)"
+    },
+    "laura-smith": {
+      "en": "https://en.wikipedia.org/wiki/Laura_Smith_(Canadian_politician)",
+      "fr": null
+    },
+    "teresa-j-armstrong": {
+      "en": "https://en.wikipedia.org/wiki/Teresa_Armstrong",
+      "fr": "https://fr.wikipedia.org/wiki/Teresa_Armstrong"
+    },
+    "michael-s-kerzner": {
+      "en": "https://en.wikipedia.org/wiki/Michael_Kerzner",
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Kerzner"
+    },
+    "jennifer-jennie-stevens": {
+      "en": "https://en.wikipedia.org/wiki/Jennie_Stevens",
+      "fr": "https://fr.wikipedia.org/wiki/Jennie_Stevens"
+    },
+    "michael-a-tibollo": {
+      "en": "https://en.wikipedia.org/wiki/Michael_Tibollo",
+      "fr": "https://fr.wikipedia.org/wiki/Michael_Tibollo"
+    },
+    "effie-j-triantafilopoulos": {
+      "en": "https://en.wikipedia.org/wiki/Effie_Triantafilopoulos",
+      "fr": "https://fr.wikipedia.org/wiki/Effie_Triantafilopoulos"
+    },
+    "charmaine-a-williams": {
+      "en": "https://en.wikipedia.org/wiki/Charmaine_Williams",
+      "fr": "https://fr.wikipedia.org/wiki/Charmaine_Williams"
+    },
+    "jennifer-k-french": {
+      "en": "https://en.wikipedia.org/wiki/Jennifer_French_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Jennifer_French_(femme_politique)"
+    },
+    "todd-j-mccarthy": {
+      "en": "https://en.wikipedia.org/wiki/Todd_McCarthy_(politician)",
+      "fr": null
+    },
+    "lisa-m-thompson": {
+      "en": "https://en.wikipedia.org/wiki/Lisa_Thompson_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Lisa_Thompson_(femme_politique)"
+    }
+  }
+}

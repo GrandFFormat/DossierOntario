@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-10-30",
+      "fr": "Chaque fiche de député·e porte deux boutons : Partager copie un court résumé avec le lien ; W ouvre sa page Wikipédia.",
+      "en": "Every MPP card has two buttons: Share copies a short summary with the link; W opens their Wikipedia page."
+    },
+    {
       "date": "2026-10-10",
       "fr": "Un avis sous l’en-tête : le site pourrait fermer, et cherche quelqu’un pour le reprendre.",
       "en": "A notice under the header: the site may shut down, and is looking for someone to take it over."

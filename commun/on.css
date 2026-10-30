@@ -607,6 +607,12 @@ body:not(.pret) main.colonne{min-height:100vh;}
    couleur, puis trois faits alignés et le courriel en pied. */
 .carte-depute{gap:8px; padding:16px 18px;}
 .depute-tete{display:flex; justify-content:space-between; align-items:center;}
+/* Partager et Wikipédia, comme sur DossierCanada (30 oct. 2026). */
+.mp-actions{display:inline-flex; gap:6px; align-items:center;}
+.part-btn{width:34px; height:34px; padding:0; border:2px solid var(--ink); background:var(--card, #fff); color:var(--ink); cursor:pointer; display:inline-flex; align-items:center; justify-content:center;}
+.part-btn:hover, .part-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
+.wiki-btn{width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border:2px solid var(--ink); background:var(--card, #fff); color:var(--ink); font-family:Georgia,'Times New Roman',serif; font-size:18px; font-weight:700; line-height:1; text-decoration:none;}
+.wiki-btn:hover, .wiki-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
 .depute-nom{margin:4px 0 0; font-weight:900; font-size:17px; line-height:1.2; text-transform:uppercase; letter-spacing:.01em;}
 .depute-nom a{color:var(--ink); text-decoration:none;}
 .depute-nom a:hover{color:var(--gold);}

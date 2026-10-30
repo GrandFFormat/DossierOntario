@@ -227,6 +227,11 @@ function main() {
     }
     const parraines = new Map();
     for (const p of projets) for (const n of p.parrains) parraines.set(cleNom(n), (parraines.get(cleNom(n)) ?? 0) + 1);
+    // Ceux qui ont reçu la sanction royale (étape 5), pour le résumé partagé (« dont N devenus lois »).
+    const devenusLois = new Map();
+    for (const p of projets) if (p.etape === 5) for (const n of p.parrains) devenusLois.set(cleNom(n), (devenusLois.get(cleNom(n)) ?? 0) + 1);
+    // La page Wikipédia de chacun (scrapers/wikipedia.js, lancé à la main) : { en, fr }.
+    const wiki = lireJson('data/wikipedia.json')?.liens ?? {};
     ecrire('members', {
       maj: members.lus,
       titresSource: ministers ? 'ONTERM — Ontario Data Catalogue' : null,
@@ -260,6 +265,8 @@ function main() {
               ? votesNommes.filter((v) => v.date >= premierVote.get(d.identifiant)).length
               : 0,
             projetsParraines: parraines.get(cleNom(d.nom)) ?? 0,
+            projetsLois: devenusLois.get(cleNom(d.nom)) ?? 0,
+            wiki: wiki[d.identifiant] ?? null,
           };
         })(),
       })),
