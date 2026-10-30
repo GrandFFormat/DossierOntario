@@ -802,6 +802,8 @@ body{font-size:15px;}
 .mot-symbole::before{content:''; width:13px; height:13px; background:var(--rouge); margin-right:9px; flex:none;}
 .mot-symbole .province{color:inherit;}
 .erable svg{width:18px; height:18px;}
+/* --yellow est devenu un gris presque égal au fond : la feuille disparaissait (Martin, 30 oct. 2026). */
+.erable{color:var(--ink);}
 .entete-rang > .onglets a, .onglets a{text-transform:none; font-family:'Archivo',sans-serif; font-size:14px; font-weight:500;
   letter-spacing:0; border:0; border-bottom:2px solid transparent; padding:6px 2px; margin:0 9px;}
 .onglets a.actif, :root[data-theme="dark"] .onglets a.actif{background:none; color:var(--ink); border-bottom-color:var(--rouge);}
