@@ -112,7 +112,8 @@ const PAGES = [
       '139 public bills and 52 private bills of the 44th Parliament: stage reached, sponsor and a plain-language summary, with a link to the official text.',
     contenu: `  <h1 class="titre-vue" data-i18n="projets.titre">Bills</h1>
   <div class="encadre" data-i18n-html="intro.projetsCourt"><b>44th Parliament, 1st session.</b> Summaries are written by AI from the official text, which is one click away on ola.org.</div>
-  <section data-vue="projets"></section>`,
+  <section data-vue="projets"></section>
+  <p class="lien-tous-votes"><a class="lien-source" href="/votes" data-i18n="projets.tousVotes">All recorded votes, motions included →</a></p>`,
   },
   {
     fichier: 'votes.html',

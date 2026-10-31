@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-10-30",
+      "fr": "L’onglet Votes quitte la barre du haut : les votes se lisent dans la carte de chaque projet de loi. La liste complète des votes nominaux, motions comprises, reste accessible depuis le pied de page et la page des projets de loi.",
+      "en": "The Votes tab leaves the top bar: votes are now read in each bill’s card. The full list of recorded votes, motions included, is still linked from the footer and the bills page."
+    },
+    {
+      "date": "2026-10-30",
       "fr": "La carte d’un projet de loi montre maintenant qui a voté pour ou contre : le décompte du dernier vote dans le titre de la boîte, puis chaque vote nominatif avec les noms et la répartition par parti.",
       "en": "A bill’s card now shows who voted for and against: the latest vote’s tally in the box title, then each recorded vote with names and the party breakdown."
     },

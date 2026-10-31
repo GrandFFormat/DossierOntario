@@ -37,7 +37,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
 <link rel="stylesheet" href="/commun/on.css?v=0df285ef2c">
-<script src="/commun/on.js?v=64bdbf065d" defer></script>
+<script src="/commun/on.js?v=39c5043306" defer></script>
 </head>
 <body data-vue="projets" data-donnees="bills apercu">
 
@@ -59,7 +59,8 @@
     <nav class="onglets" aria-label="Sections">
       <a href="/" data-i18n="nav.accueil" class="">Home</a>
       <a href="/bills" data-i18n="nav.projets" class="actif">Bills</a>
-      <a href="/votes" data-i18n="nav.votes" class="">Votes</a>
+      <!-- Votes a quitté la barre le 30 oct. 2026, comme sur DQ : /votes reste lié du pied de
+           page et de la page des projets de loi. -->
       <a href="/committees" data-i18n="nav.comites" class="">Committees</a>
       <a href="/mpps" data-i18n="nav.deputes" class="">MPPs &amp; cabinet</a>
       <a href="/glossary" data-i18n="nav.lexique" class="">Lexicon</a>
@@ -91,6 +92,7 @@
   <h1 class="titre-vue" data-i18n="projets.titre">Bills</h1>
   <div class="encadre" data-i18n-html="intro.projetsCourt"><b>44th Parliament, 1st session.</b> Summaries are written by AI from the official text, which is one click away on ola.org.</div>
   <section data-vue="projets"></section>
+  <p class="lien-tous-votes"><a class="lien-source" href="/votes" data-i18n="projets.tousVotes">All recorded votes, motions included →</a></p>
 </main>
 
 

@@ -34,6 +34,7 @@
   const MOTS = {
     en: {
       'nav.accueil': 'Home', 'nav.projets': 'Bills', 'nav.votes': 'Votes',
+      'projets.tousVotes': 'All recorded votes, motions included →',
       'nav.deputes': 'MPPs & cabinet', 'nav.sources': 'Sources',
       'nav.lexique': 'Lexicon', 'nav.comites': 'Committees', 'nav.archives': 'Archives',
       'archives.titre': 'Archives',
@@ -253,6 +254,7 @@
     },
     fr: {
       'nav.accueil': 'Accueil', 'nav.projets': 'Projets de loi', 'nav.votes': 'Votes',
+      'projets.tousVotes': 'Tous les votes nominaux, motions comprises →',
       'nav.deputes': 'Député·e·s et ministres', 'nav.sources': 'Sources',
       'nav.lexique': 'Lexique', 'nav.comites': 'Comités', 'nav.archives': 'Archives',
       'archives.titre': 'Archives',
