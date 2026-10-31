@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-10-30",
+      "fr": "Les fiches de député·e·s présentent la présence aux votes et les projets parrainés par législature. Le nombre de projets mène à la liste de ces projets.",
+      "en": "MPP cards now show recorded-vote attendance and bills sponsored by Parliament. The bill count links to the list of those bills."
+    },
+    {
+      "date": "2026-10-30",
       "fr": "Chaque fiche de député·e porte deux boutons : Partager copie un court résumé avec le lien ; W ouvre sa page Wikipédia.",
       "en": "Every MPP card has two buttons: Share copies a short summary with the link; W opens their Wikipedia page."
     },

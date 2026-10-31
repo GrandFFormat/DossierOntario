@@ -613,6 +613,18 @@ body:not(.pret) main.colonne{min-height:100vh;}
 .part-btn:hover, .part-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
 .wiki-btn{width:34px; height:34px; display:inline-flex; align-items:center; justify-content:center; border:2px solid var(--ink); background:var(--card, #fff); color:var(--ink); font-family:Georgia,'Times New Roman',serif; font-size:18px; font-weight:700; line-height:1; text-decoration:none;}
 .wiki-btn:hover, .wiki-btn:focus-visible{background:var(--ink); color:var(--card, #fff);}
+/* Une colonne par législature (30 oct. 2026) : filet à gauche, la courante en noir, les passées en gris. */
+.leg-ruban{display:flex; gap:10px; align-items:stretch; margin-top:2px;}
+.leg-bloc{flex:1; min-width:0; padding:0 0 0 10px; border-left:2px solid var(--ink); font-size:12.5px; line-height:1.5; font-weight:600;}
+.leg-bloc.leg-passe{border-left-color:var(--line-soft); color:var(--slate);}
+.leg-bloc.leg-cache{display:none;}
+.leg-num{font-family:'Archivo Narrow',sans-serif; font-weight:800; font-size:12.5px; letter-spacing:.02em; color:var(--slate); margin-bottom:2px;}
+.leg-bloc:not(.leg-passe) .leg-num{color:var(--ink);}
+.leg-pres{white-space:nowrap; margin:2px 0;}
+.leg-fleche{flex:none; border:1px solid var(--line); background:var(--card); color:var(--ink); font-weight:800; padding:0 7px; cursor:pointer;}
+.leg-fleche:hover, .leg-fleche:focus-visible{border-color:var(--gold); color:var(--gold);}
+.leg-lien{color:inherit; text-decoration:underline; text-decoration-color:var(--gold); text-underline-offset:2px;}
+.leg-lien:hover{color:var(--gold);}
 .depute-nom{margin:4px 0 0; font-weight:900; font-size:17px; line-height:1.2; text-transform:uppercase; letter-spacing:.01em;}
 .depute-nom a{color:var(--ink); text-decoration:none;}
 .depute-nom a:hover{color:var(--gold);}

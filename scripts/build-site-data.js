@@ -232,7 +232,36 @@ function main() {
     for (const p of projets) if (p.etape === 5) for (const n of p.parrains) devenusLois.set(cleNom(n), (devenusLois.get(cleNom(n)) ?? 0) + 1);
     // La page Wikipédia de chacun (scrapers/wikipedia.js, lancé à la main) : { en, fr }.
     const wiki = lireJson('data/wikipedia.json')?.liens ?? {};
+    // L'historique par législature (30 oct. 2026, comme DossierQuébec) : présence aux votes et
+    // projets parrainés de chaque élu·e. La législature en cours s'y réécrit à chaque construction ;
+    // quand bills.json passe à la 45e, la 44e reste figée telle qu'à sa dernière construction.
+    const HISTORIQUE = 'data/historique-legislatures.json';
+    const legCourante = Number(bills.legislature) || null;
+    const historique = lireJson(HISTORIQUE) ?? {};
+    if (legCourante && votesNommes.length) {
+      const presences = {};
+      for (const d of members.deputes) {
+        if (!premierVote.has(d.identifiant)) continue;
+        const tenus = votesNommes.filter((v) => v.date >= premierVote.get(d.identifiant)).length;
+        presences[d.identifiant] = [exprimes.get(d.identifiant) ?? 0, tenus];
+      }
+      const pl = {};
+      for (const [cle, n] of parraines) pl[cle] = [n, devenusLois.get(cle) ?? 0];
+      historique[legCourante] = { presences, pl };
+      writeFileSync(HISTORIQUE, JSON.stringify(historique) + '\n');
+    }
+    // Sur chaque carte, les législatures TERMINÉES seulement (la courante a ses propres champs).
+    const passees = Object.keys(historique).map(Number).filter((l) => l !== legCourante).sort((a, b) => b - a);
+    const historiqueDe = (d) =>
+      passees
+        .map((l) => {
+          const p = historique[l].presences?.[d.identifiant];
+          const b = historique[l].pl?.[cleNom(d.nom)];
+          return p || b ? { leg: l, exprimes: p?.[0] ?? 0, tenus: p?.[1] ?? 0, pl: b?.[0] ?? 0, lois: b?.[1] ?? 0 } : null;
+        })
+        .filter(Boolean);
     ecrire('members', {
+      legislature: legCourante,
       maj: members.lus,
       titresSource: ministers ? 'ONTERM — Ontario Data Catalogue' : null,
       titresLicence: ministers?.source?.licence ?? null,
@@ -267,6 +296,7 @@ function main() {
             projetsParraines: parraines.get(cleNom(d.nom)) ?? 0,
             projetsLois: devenusLois.get(cleNom(d.nom)) ?? 0,
             wiki: wiki[d.identifiant] ?? null,
+            legislatures: historiqueDe(d),
           };
         })(),
       })),

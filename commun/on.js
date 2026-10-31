@@ -1235,6 +1235,20 @@
     // remplace le classement par étape par une liste du plus récent au plus ancien.
     let recent = false;
     let recherche = '';
+    // ?sponsor=Doug Ford (lien « N bills sponsored » d'une carte de député·e) : la recherche se
+    // remplit de ce nom et la liste ne garde QUE ses projets. Même rapprochement que cleNom()
+    // de scrapers/ola.js : « Ford, Hon. Doug » = « Doug Ford ». Modifier la recherche le retire.
+    const cleNom = (nom) => {
+      const s = (nom ?? '').replace(/\b(The Honourable|L[’']honorable|Hon\.)\s*/gi, '').trim();
+      let famille, prenoms;
+      if (s.includes(',')) [famille, prenoms = ''] = s.split(',');
+      else { const mots = s.split(/\s+/).filter(Boolean); famille = mots.pop() ?? ''; prenoms = mots.join(' '); }
+      const utiles = (c) => c.split(/\s+/).map((x) => x.trim()).filter((x) => x && !/^[A-Za-zÀ-ÿ]\.$/.test(x));
+      const norm = (x) => (x ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/g, '');
+      return `${norm(utiles(prenoms)[0])}|${norm(utiles(famille).pop())}`;
+    };
+    const sponsorDemande = new URLSearchParams(location.search).get('sponsor');
+    let parrain = sponsorDemande ? cleNom(sponsorDemande) : '';
 
     const carte = (p) => carteProjet(p, recent);
     // 5 cartes par groupe, puis un bouton « +10 » qui dévoile les 10 suivantes, et ainsi de
@@ -1274,7 +1288,8 @@
       }
       const visibles = projets.filter((p) => {
         const texte = `${p.numero} ${p.titreEn} ${p.titreFr ?? ''}`.toLowerCase();
-        return retenu(p, filtre) && (!statut || retenu(p, statut)) && (!recherche || texte.includes(recherche));
+        const cherche = parrain ? p.parrains.some((n) => cleNom(n) === parrain) : !recherche || texte.includes(recherche);
+        return retenu(p, filtre) && (!statut || retenu(p, statut)) && cherche;
       });
       cible.querySelector('[data-role="compte"]').textContent = mot('projets.compte', visibles.length);
 
@@ -1386,8 +1401,14 @@
     });
     cible.querySelector('[data-role="recherche"]').addEventListener('input', (e) => {
       recherche = e.target.value.trim().toLowerCase();
+      parrain = '';
       dessiner();
     });
+    if (parrain) {
+      const champ = cible.querySelector('[data-role="recherche"]');
+      champ.value = sponsorDemande;
+      recherche = sponsorDemande.toLowerCase();   // ouvre les groupes qui ont un résultat
+    }
     dessiner();
 
     brancherCartes(cible, projets, dessiner);
@@ -1895,6 +1916,56 @@
       return `<span class="mp-actions"><button class="part-btn" type="button" title="${langue === 'fr' ? 'Partager' : 'Share'}" aria-label="${langue === 'fr' ? 'Partager la fiche de' : 'Share the profile of'} ${nom}" onclick="event.stopPropagation(); partageDepute(this, '${echapper(m.identifiant)}')">${ICONE_PARTAGE}</button>${w ? `<a class="wiki-btn" href="${echapper(w)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="${langue === 'fr' ? 'Page Wikipédia de' : 'Wikipedia page of'} ${nom}">W</a>` : ''}</span>`;
     };
 
+    // Une colonne par législature (30 oct. 2026, comme DossierQuébec) : présence aux votes et
+    // projets parrainés. La courante en noir, les précédentes en gris (build-site-data.js les
+    // garde dans data/historique-legislatures.json). Deux visibles ; au-delà, ‹ › les font circuler.
+    const fr = () => langue === 'fr';
+    const ordinal = (n) => (fr() ? `${n}e` : n + ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] || 'th'));
+    const nomLeg = (n) => (fr() ? `${ordinal(n)} législature` : `${ordinal(n)} Parliament`);
+    const pctTxt = (t) => (fr() ? `${t} %` : `${t}%`);
+    const plTxt = (m, pl, lois, courante) => {
+      const t = fr()
+        ? `${pl} ${pl > 1 ? 'projets parrainés' : 'projet parrainé'}${lois ? ` · ${lois} ${lois > 1 ? 'devenus lois' : 'devenu loi'}` : ''}`
+        : `${pl} ${pl === 1 ? 'bill sponsored' : 'bills sponsored'}${lois ? ` · ${lois} became law` : ''}`;
+      // Le site n'a pas d'archive des projets : seul le compte de la législature en cours mène à la liste.
+      return pl && courante
+        ? `<a class="leg-lien" href="/bills?sponsor=${encodeURIComponent(m.nom.replace(/^Hon\.\s+/i, ''))}" onclick="event.stopPropagation()">${t}</a>`
+        : t;
+    };
+    const legislatures = (m) => {
+      const blocs = [{
+        leg: d.legislature ?? 44,
+        pres: m.votesTenus ? `<span class="taux ${classe(taux(m))}">${pctTxt(taux(m))}</span> <span class="taux-detail">${m.votesExprimes} / ${m.votesTenus}</span>` : 'n/d',
+        pl: plTxt(m, m.projetsParraines, m.projetsLois, true),
+      }];
+      for (const h of m.legislatures ?? []) {
+        blocs.push({
+          leg: h.leg,
+          pres: h.tenus ? `${pctTxt(Math.round((100 * h.exprimes) / h.tenus))} <span class="taux-detail">${h.exprimes} / ${h.tenus}</span>` : 'n/d',
+          pl: plTxt(m, h.pl, h.lois, false),
+          passe: true,
+        });
+      }
+      const fleches = blocs.length > 2;
+      const fleche = (sens, txt, aria) =>
+        `<button class="leg-fleche" type="button" aria-label="${aria}" onclick="event.stopPropagation(); defilerLeg(this, ${sens})">${txt}</button>`;
+      return `<div class="leg-ruban" data-debut="0" title="${fr() ? 'Présence : part des votes nominatifs où la personne a voté.' : 'Attendance: share of recorded votes the member took part in.'}">${
+        fleches ? fleche(-1, '‹', fr() ? 'Plus récente' : 'More recent') : ''
+      }${blocs
+        .map((b, i) => `<div class="leg-bloc${b.passe ? ' leg-passe' : ''}${i > 1 ? ' leg-cache' : ''}">
+          <div class="leg-num">${nomLeg(b.leg)}</div>
+          <div class="leg-pres">${fr() ? 'présence' : 'attendance'} ${b.pres}</div>
+          <div class="leg-pl">${b.pl}</div></div>`)
+        .join('')}${fleches ? fleche(1, '›', fr() ? 'Plus ancienne' : 'Earlier') : ''}</div>`;
+    };
+    window.defilerLeg = (bouton, sens) => {
+      const ruban = bouton.closest('.leg-ruban');
+      const blocs = [...ruban.querySelectorAll('.leg-bloc')];
+      const debut = Math.max(0, Math.min(blocs.length - 2, Number(ruban.dataset.debut) + sens));
+      ruban.dataset.debut = debut;
+      blocs.forEach((b, i) => b.classList.toggle('leg-cache', i < debut || i > debut + 1));
+    };
+
     // La carte suit celle des ministres de DQ : parti, NOM, rôle en couleur, puis trois faits
     // alignés (circonscription, votes, projets parrainés) et le courriel en pied.
     const carte = (m) => {
@@ -1907,9 +1978,8 @@
         ${m.adjointEn ? `<p class="depute-role depute-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
         <dl class="depute-faits">
           <div><dt>${mot('deputes.circo')}</dt><dd>${echapper(selonLangue(m.circonscription, m.circonscriptionFr) ?? '')}</dd></div>
-          <div><dt>${mot('deputes.votes')}</dt><dd>${m.votesTenus ? `<span class="taux ${classe(taux(m))}">${taux(m)} %</span> <span class="taux-detail">${m.votesExprimes} / ${m.votesTenus}</span>` : 'n/d'}</dd></div>
-          <div><dt>${mot('deputes.parraines')}</dt><dd>${m.projetsParraines}</dd></div>
         </dl>
+        ${legislatures(m)}
         ${m.courriel ? `<a class="depute-courriel" href="mailto:${echapper(m.courriel)}">✉ ${echapper(m.courriel)}</a>` : ''}
       </article>`;
     };
