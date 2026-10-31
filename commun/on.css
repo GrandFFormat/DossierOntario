@@ -1079,7 +1079,7 @@ a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;
 
 /* Boîte des votes d'un projet (30 oct. 2026) : filets fins, accent rouge. */
 .boite-votes{margin-top:18px; border-top:1px solid var(--ink); padding-top:10px;}
-.boite-votes > summary{cursor:pointer; list-style:none; display:flex; flex-wrap:wrap; gap:4px 10px; align-items:baseline;}
+.boite-votes > summary{cursor:pointer; list-style:none;}
 .boite-votes > summary::-webkit-details-marker{display:none;}
 .boite-votes > summary::before{content:'+'; color:var(--rouge); font-weight:700; width:12px;}
 .boite-votes[open] > summary::before{content:'\2212';}

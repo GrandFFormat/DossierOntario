@@ -205,9 +205,7 @@
       'projet.sansResume': 'No plain-language summary for this bill yet: it is written the morning after a bill is tabled. The official text is on ola.org.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
-      'projet.boiteVotes': 'Who voted for and against',
-      'projet.boiteTally': (pour, contre) => `${pour} ayes / ${contre} nays`,
-      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.',
+      'projet.boiteVotes': 'Who voted for and against',      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.',
       'projet.derniere': 'Last activity',
       'votes.titre': 'Recorded votes', 'votes.pour': 'Ayes', 'votes.contre': 'Nays',
       'votes.resultat': 'Outcome', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -426,9 +424,7 @@
       'projet.sansResume': 'Pas encore de résumé en clair pour ce projet : il s’écrit le matin qui suit son dépôt. Le texte officiel est sur ola.org.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
-      'projet.boiteVotes': 'Qui a voté pour ou contre',
-      'projet.boiteTally': (pour, contre) => `${pour} pour / ${contre} contre`,
-      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel. Le texte officiel lui-même est sur ola.org, à un clic.',
+      'projet.boiteVotes': 'Qui a voté pour ou contre',      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel. Le texte officiel lui-même est sur ola.org, à un clic.',
       'projet.derniere': 'Dernière activité',
       'votes.titre': 'Votes nominatifs', 'votes.pour': 'Pour', 'votes.contre': 'Contre',
       'votes.resultat': 'Résultat', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -1181,12 +1177,12 @@
   function caseVotes(p) {
     const r = p.vr;
     if (!r?.n) return '';
-    const tally = mot('projet.boiteTally', r.pour, r.contre);
-    const resume = r.n > 1 ? `${etapeVote(selonLangue(r.en, r.fr))} : ${tally}` : tally;
-    const resumeEn = langue === 'en' ? resume.replace(' : ', ': ') : resume;
+    // Format de Martin (DQ a9bbb02) : « titre : pour / contre », puis (étape · N votes) s'il y en a
+    // plusieurs. L'Ontario ne consigne pas d'abstention : deux nombres, dans l'ordre du titre.
+    const deuxPoints = langue === 'fr' ? ' :' : ':';
+    const suite = r.n > 1 ? ` <span class="legende">(${echapper(etapeVote(selonLangue(r.en, r.fr)))} · ${mot('projet.compteVotes', r.n)})</span>` : '';
     return `<details class="boite-votes" data-numero="${echapper(p.numero)}">
-      <summary><span class="boite-votes-titre">${mot('projet.boiteVotes')}</span>
-        <span class="legende">(${mot('projet.compteVotes', r.n)} · ${echapper(resumeEn)})</span></summary>
+      <summary><span class="boite-votes-titre">${mot('projet.boiteVotes')}</span>${deuxPoints} <b>${r.pour} / ${r.contre}</b>${suite}</summary>
       <div class="zone-votes-projet"></div>
     </details>`;
   }
