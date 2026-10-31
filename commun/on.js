@@ -1091,7 +1091,8 @@
     // côté de deux cartes vides, et les cinq étapes se cassaient sur deux lignes. Fermée :
     // numéro, titre, parrain, pastilles, étapes. Ouverte : le texte à gauche (résumé, puis
     // note officielle), l'état du projet et la sortie vers ola.org à droite.
-    const nDefi = DEFI.comptes.get(String(p.numero)) ?? 0;
+    // Une législature terminée (?archives=N) ne se challenge plus : ni bouton ni compteur.
+    const nDefi = ARCHIVE ? 0 : DEFI.comptes.get(String(p.numero)) ?? 0;
     return `<article class="carte carte-projet" data-numero="${echapper(p.numero)}">
       <div class="projet-tete">
         <a class="numero" href="${echapper(lienProjet(p))}" title="${mot('projet.lienPage')}">${echapper(p.numero)}</a>
@@ -1126,7 +1127,7 @@
             ${
               // Challenger : seulement un projet qui n'est pas devenu loi, et seulement quand
               // la table existe (DEFI.dispo). Voir chargerDefi().
-              DEFI.dispo && p.etape < 5
+              !ARCHIVE && DEFI.dispo && p.etape < 5
                 ? `<div class="defi">
                     <p class="legende defi-indice">${DEFI.usager ? mot('defi.indice') : mot('defi.indiceAnonyme')}${
                       DEFI.usager ? ` <button class="lien-mini" data-role="deconnexion">${mot('defi.deconnexion')}</button>` : ''
