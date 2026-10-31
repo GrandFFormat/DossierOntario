@@ -1076,3 +1076,14 @@ a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;
 .archives-attente{margin:18px 0 0;}
 .bandeau-archive{border-left:4px solid var(--rouge);}
 .bandeau-archive a{color:var(--rouge); font-weight:700; white-space:nowrap;}
+
+/* Boîte des votes d'un projet (30 oct. 2026) : filets fins, accent rouge. */
+.boite-votes{margin-top:18px; border-top:1px solid var(--ink); padding-top:10px;}
+.boite-votes > summary{cursor:pointer; list-style:none; display:flex; flex-wrap:wrap; gap:4px 10px; align-items:baseline;}
+.boite-votes > summary::-webkit-details-marker{display:none;}
+.boite-votes > summary::before{content:'+'; color:var(--rouge); font-weight:700; width:12px;}
+.boite-votes[open] > summary::before{content:'\2212';}
+.boite-votes-titre{font-weight:700; border-bottom:2px solid var(--rouge);}
+.zone-votes-projet{display:flex; flex-direction:column; gap:10px; margin-top:12px;}
+.zone-votes-projet .carte-vote-projet{border:0; border-top:1px solid var(--line, rgba(0,0,0,.2)); border-radius:0; box-shadow:none; padding:10px 0 0;}
+

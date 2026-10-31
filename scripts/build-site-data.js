@@ -197,6 +197,40 @@ function main() {
     votesSite.sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
 
     ecrire('votes', { maj: votes.lus, nombre: votesSite.length, anciens, votes: votesSite });
+
+    // Les votes de chaque projet (30 oct. 2026, comme DossierQuébec) : la boîte « Who voted for,
+    // against or abstained » de la carte d'un projet. Un fichier à part, chargé seulement quand
+    // on ouvre la boîte, avec les noms déjà résolus (n) : la page des projets ne charge ni
+    // votes.json ni members.json. Le décompte du dernier vote monte dans bills.json (vr) pour
+    // s'afficher dans le titre de la boîte sans clic.
+    const parId = new Map((members?.deputes ?? []).map((d) => [d.identifiant, d]));
+    const noms = {};
+    const parProjet = {};
+    for (const v of [...votesSite].reverse()) {   // du plus ancien au plus récent
+      if (!v.projet || v.sansNoms) continue;
+      (parProjet[v.projet] ??= []).push({
+        url: v.url, urlFr: v.urlFr, date: v.date, typeEn: v.typeEn, typeFr: v.typeFr,
+        resultatEn: v.resultatEn, resultatFr: v.resultatFr, pour: v.pour, contre: v.contre,
+        votants: v.votants,
+      });
+      for (const [id] of v.votants) {
+        if (noms[id]) continue;
+        const d = parId.get(id);
+        const a = anciens[id];
+        noms[id] = d ? [d.nom, d.couleurParti ?? null, d.parti ?? null, d.partiFr ?? null]
+          : [a?.nom ?? id, null, a?.parti ?? null, a?.partiFr ?? null, 1];
+      }
+    }
+    ecrire('votes-projets', { projets: parProjet, noms });
+    const resumeVotes = {};
+    for (const [num, liste] of Object.entries(parProjet)) {
+      const d = liste[liste.length - 1];
+      resumeVotes[num] = { n: liste.length, en: d.typeEn, fr: d.typeFr, pour: d.pour, contre: d.contre };
+    }
+    const billsEcrit = lireJson(`${SORTIE}/bills.json`);
+    for (const p of billsEcrit.projets) if (resumeVotes[p.numero]) p.vr = resumeVotes[p.numero];
+    ecrire('bills', billsEcrit);
+    console.log(`Boîte des votes : ${Object.keys(parProjet).length} projets`);
   }
 
   // ------------------------------------------------------------------ député·e·s
@@ -558,7 +592,7 @@ function archiver(legislature) {
   if (!n) return;
   const dossier = `data/archives/${n}`;
   mkdirSync(dossier, { recursive: true });
-  for (const nom of ['bills', 'resumes-en', 'resumes-fr', 'votes']) {
+  for (const nom of ['bills', 'resumes-en', 'resumes-fr', 'votes', 'votes-projets']) {
     if (existsSync(`${SORTIE}/${nom}.json`)) copyFileSync(`${SORTIE}/${nom}.json`, `${dossier}/${nom}.json`);
   }
   const legislatures = readdirSync('data/archives')

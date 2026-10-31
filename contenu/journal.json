@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-10-30",
+      "fr": "La carte d’un projet de loi montre maintenant qui a voté pour ou contre : le décompte du dernier vote dans le titre de la boîte, puis chaque vote nominatif avec les noms et la répartition par parti.",
+      "en": "A bill’s card now shows who voted for and against: the latest vote’s tally in the box title, then each recorded vote with names and the party breakdown."
+    },
+    {
+      "date": "2026-10-30",
       "fr": "Nouvel onglet Archives : quand une législature prend fin, ses projets de loi et ses votes y restent consultables. Sur les fiches de député·e·s, les projets parrainés d’une législature terminée mènent à son archive.",
       "en": "New Archives tab: when a Parliament ends, its bills and recorded votes stay available there. On MPP cards, bills sponsored in a past Parliament link to its archive."
     },

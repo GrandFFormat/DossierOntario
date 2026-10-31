@@ -25,7 +25,7 @@
     const n = Number(new URLSearchParams(location.search).get('archives'));
     return Number.isInteger(n) && n > 0 ? n : null;
   })();
-  const ARCHIVABLES = { bills: 'bills', votes: 'votes', 'resumes-en': 'resumes-en', 'resumes-fr': 'resumes-fr' };
+  const ARCHIVABLES = { bills: 'bills', votes: 'votes', 'votes-projets': 'votes-projets', 'resumes-en': 'resumes-en', 'resumes-fr': 'resumes-fr' };
   const cheminDonnee = (nom) => (ARCHIVE && ARCHIVABLES[nom] ? `/data/archives/${ARCHIVE}/${nom}.json` : `/data/site/${nom}.json`);
   const lienProjet = (p) =>
     ARCHIVE ? p.url : `/bill/${encodeURIComponent(String(p.numero).toLowerCase())}`;
@@ -205,6 +205,8 @@
       'projet.sansResume': 'No plain-language summary for this bill yet: it is written the morning after a bill is tabled. The official text is on ola.org.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
+      'projet.boiteVotes': 'Who voted for and against',
+      'projet.boiteTally': (pour, contre) => `${pour} ayes / ${contre} nays`,
       'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.',
       'projet.derniere': 'Last activity',
       'votes.titre': 'Recorded votes', 'votes.pour': 'Ayes', 'votes.contre': 'Nays',
@@ -424,6 +426,8 @@
       'projet.sansResume': 'Pas encore de résumé en clair pour ce projet : il s’écrit le matin qui suit son dépôt. Le texte officiel est sur ola.org.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
+      'projet.boiteVotes': 'Qui a voté pour ou contre',
+      'projet.boiteTally': (pour, contre) => `${pour} pour / ${contre} contre`,
       'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel. Le texte officiel lui-même est sur ola.org, à un clic.',
       'projet.derniere': 'Dernière activité',
       'votes.titre': 'Votes nominatifs', 'votes.pour': 'Pour', 'votes.contre': 'Contre',
@@ -515,6 +519,14 @@
 
   // Un fichier de résumés par langue, demandé une seule fois. Un échec ne reste pas collé :
   // on l'oublie, pour que le pli suivant réessaie.
+  // Les votes de chaque projet (votes-projets.json), demandés à la première boîte ouverte.
+  let _votesProjets = null;
+  const chargerVotesProjets = () =>
+    (_votesProjets ??= fetch(cheminDonnee('votes-projets'))
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null)
+      .then((d) => { if (!d) _votesProjets = null; return d; }));
+
   const _resumes = {};
   const chargerResumes = (lg) =>
     (_resumes[lg] ??= fetch(cheminDonnee(`resumes-${lg}`))
@@ -1121,6 +1133,7 @@
                  sous le résumé, c'était un mur de prose juridique en double d'une page
                  qu'ola.org publie déjà, à un clic du bouton à droite. -->
             <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
+            ${caseVotes(p)}
           </div>
           <aside class="projet-cote">
             <!-- Challenger et partager en tête de la colonne : on les voit sans descendre. -->
@@ -1161,6 +1174,76 @@
   // premier pli ouvert : dans bills.json, ils faisaient presque doubler le poids de la page
   // (voir build-site-data.js). Ils passent AVANT la note officielle — c'est ce qu'on vient
   // chercher —, et la note reste dessous, mot pour mot : le résumé y mène, il ne la remplace pas.
+  // La boîte des votes d'un projet (comme DossierQuébec) : le décompte du dernier vote dans le
+  // titre, sans clic ; les cartes de vote, du plus ancien au plus récent, dessinées comme sur
+  // /votes, et les noms chargés seulement à l'ouverture (votes-projets.json).
+  const etapeVote = (t) => (t ?? '').replace(/^Vote (on|de la|du|de l’|de l')\s*/i, '').replace(/^./, (c) => c.toUpperCase());
+  function caseVotes(p) {
+    const r = p.vr;
+    if (!r?.n) return '';
+    const tally = mot('projet.boiteTally', r.pour, r.contre);
+    const resume = r.n > 1 ? `${etapeVote(selonLangue(r.en, r.fr))} : ${tally}` : tally;
+    const resumeEn = langue === 'en' ? resume.replace(' : ', ': ') : resume;
+    return `<details class="boite-votes" data-numero="${echapper(p.numero)}">
+      <summary><span class="boite-votes-titre">${mot('projet.boiteVotes')}</span>
+        <span class="legende">(${mot('projet.compteVotes', r.n)} · ${echapper(resumeEn)})</span></summary>
+      <div class="zone-votes-projet"></div>
+    </details>`;
+  }
+
+  async function remplirVotesProjet(details) {
+    const zone = details.querySelector('.zone-votes-projet');
+    if (!zone || zone.dataset.rempli) return;
+    zone.dataset.rempli = '1';
+    const d = await chargerVotesProjets();
+    if (!d) { delete zone.dataset.rempli; return; }
+    const liste = d.projets?.[details.dataset.numero] ?? [];
+    const nom = (id) => d.noms?.[id] ?? [id, null, null, null];
+    const colonne = (v, camp) => {
+      const noms = v.votants.filter((x) => x[1] === camp).map((x) => {
+        const [n, couleur, , , ancien] = nom(x[0]);
+        return `<li><span class="puce-parti" style="background:${echapper(couleur ?? '#8B8578')}" aria-hidden="true"></span>${echapper(n)}${
+          ancien ? ` <span class="legende">· ${mot('votes.ancien')}</span>` : ''}</li>`;
+      }).join('');
+      return `<div class="colonne-votants"><h4 class="tete-${camp}">${mot(`votes.${camp}`)} — ${camp === 'pour' ? v.pour : v.contre}</h4><ul>${noms}</ul></div>`;
+    };
+    const partis = (v) => {
+      const m = new Map();
+      for (const [id, camp] of v.votants) {
+        const [, couleur, en, fr] = nom(id);
+        const n = selonLangue(en, fr) ?? '—';
+        if (!m.has(n)) m.set(n, { n, couleur: couleur ?? '#8B8578', pour: 0, contre: 0 });
+        m.get(n)[camp]++;
+      }
+      return [...m.values()].sort((a, b) => b.pour + b.contre - (a.pour + a.contre)).map((x) => `<div class="parti-boite">
+          <h4 style="background:${echapper(x.couleur)}">${echapper(x.n)}</h4>
+          <dl><dt>${mot('votes.pour')}</dt><dd class="pour">${x.pour}</dd><dt>${mot('votes.contre')}</dt><dd class="contre">${x.contre}</dd></dl>
+        </div>`).join('');
+    };
+    const barre = (v) => {
+      const t = (v.pour ?? 0) + (v.contre ?? 0);
+      if (!t) return '';
+      const part = (n) => `${((n / t) * 100).toFixed(1)}%`;
+      return `<div class="barre-proportion" role="img" aria-label="${mot('votes.pour')} ${v.pour}, ${mot('votes.contre')} ${v.contre}">
+        <span class="part-pour" style="width:${part(v.pour)}"></span><span class="part-contre" style="width:${part(v.contre)}"></span></div>`;
+    };
+    zone.innerHTML = liste.map((v) => {
+      const adopte = /^Carried|^Adopt/i.test(v.resultatEn ?? v.resultatFr ?? '');
+      return `<details class="carte carte-vote-projet">
+        <summary class="vote-entete">
+          <span class="pastille ${adopte ? 'pastille-adopte' : 'pastille-rejete'}">${echapper(selonLangue(v.resultatEn, v.resultatFr) ?? '')}</span>
+          <h3 class="carte-titre">${echapper(etapeVote(selonLangue(v.typeEn, v.typeFr)) || mot('votes.titre'))}</h3>
+          <span class="vote-comptes"><b class="pour">${v.pour}</b> ${mot('votes.pour')} <b class="contre">${v.contre}</b> ${mot('votes.contre')}</span>
+        </summary>
+        <p class="legende">${echapper([date(v.date), mot('votes.nominatif')].filter(Boolean).join(' · '))}</p>
+        ${barre(v)}
+        <div class="partis">${partis(v)}</div>
+        <div class="colonnes-votants">${colonne(v, 'pour')}${colonne(v, 'contre')}</div>
+        <a class="bouton bouton-jaune" href="${echapper(selonLangue(v.url, v.urlFr))}" target="_blank" rel="noopener">${mot('votes.page')}</a>
+      </details>`;
+    }).join('') + `<p class="legende note-vote">${mot('votes.absences')}</p>`;
+  }
+
   async function remplirResume(details) {
     const zone = details.querySelector('.zone-resume');
     if (!zone || zone.dataset.rempli) return;
@@ -1208,6 +1291,7 @@
       cible.dataset.ecouteResumes = '1';
       cible.addEventListener('toggle', (e) => {
         if (e.target.matches?.('.projet-detail') && e.target.open) remplirResume(e.target);
+        if (e.target.matches?.('.boite-votes') && e.target.open) remplirVotesProjet(e.target);
       }, true);
       // Un clic N'IMPORTE OÙ sur la carte l'ouvre ou la ferme, comme sur DossierQuébec — pas
       // seulement sur la petite ligne « What this bill does » en bas. Sauf sur un lien ou un
@@ -1215,7 +1299,7 @@
       // charge déjà), et quand on vient de sélectionner du texte pour le copier.
       cible.addEventListener('click', (e) => {
         const carte = e.target.closest?.('.carte-projet');
-        if (!carte || e.target.closest('a, button, summary')) return;
+        if (!carte || e.target.closest('a, button, summary, .boite-votes')) return;
         if (String(window.getSelection?.() ?? '').trim()) return;
         const pli = carte.querySelector('.projet-detail');
         if (pli) pli.open = !pli.open;
@@ -1792,7 +1876,7 @@
       cible.dataset.ecouteClic = '1';
       cible.addEventListener('click', (e) => {
         const carte = e.target.closest?.('.comite');
-        if (!carte || e.target.closest('a, button, summary')) return;
+        if (!carte || e.target.closest('a, button, summary, .boite-votes')) return;
         if (String(window.getSelection?.() ?? '').trim()) return;
         const pli = carte.querySelector(':scope > .comite-pli');
         if (pli) pli.open = !pli.open;
