@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-10-30",
+      "fr": "Nouvel onglet Archives : quand une législature prend fin, ses projets de loi et ses votes y restent consultables. Sur les fiches de député·e·s, les projets parrainés d’une législature terminée mènent à son archive.",
+      "en": "New Archives tab: when a Parliament ends, its bills and recorded votes stay available there. On MPP cards, bills sponsored in a past Parliament link to its archive."
+    },
+    {
+      "date": "2026-10-30",
       "fr": "Les fiches de député·e·s présentent la présence aux votes et les projets parrainés par législature. Le nombre de projets mène à la liste de ces projets.",
       "en": "MPP cards now show recorded-vote attendance and bills sponsored by Parliament. The bill count links to the list of those bills."
     },

@@ -17,12 +17,34 @@
   const ranger = (cle, valeur) => { try { localStorage.setItem(cle, valeur); } catch (e) {} };
   const lire = (cle) => { try { return localStorage.getItem(cle); } catch (e) { return null; } };
 
+  // ---------------------------------------------------------------- archives
+  // ?archives=44 sur /bills ou /votes : la copie figée d'une législature terminée
+  // (data/archives/<n>/, écrite par scripts/build-site-data.js), avec un bandeau.
+  const ordinalEn = (n) => n + ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] || 'th');
+  const ARCHIVE = (() => {
+    const n = Number(new URLSearchParams(location.search).get('archives'));
+    return Number.isInteger(n) && n > 0 ? n : null;
+  })();
+  const ARCHIVABLES = { bills: 'bills', votes: 'votes', 'resumes-en': 'resumes-en', 'resumes-fr': 'resumes-fr' };
+  const cheminDonnee = (nom) => (ARCHIVE && ARCHIVABLES[nom] ? `/data/archives/${ARCHIVE}/${nom}.json` : `/data/site/${nom}.json`);
+  const lienProjet = (p) =>
+    ARCHIVE ? p.url : `/bill/${encodeURIComponent(String(p.numero).toLowerCase())}`;
+
   // ---------------------------------------------------------------- les mots
   const MOTS = {
     en: {
       'nav.accueil': 'Home', 'nav.projets': 'Bills', 'nav.votes': 'Votes',
       'nav.deputes': 'MPPs & cabinet', 'nav.sources': 'Sources',
-      'nav.lexique': 'Lexicon', 'nav.comites': 'Committees',
+      'nav.lexique': 'Lexicon', 'nav.comites': 'Committees', 'nav.archives': 'Archives',
+      'archives.titre': 'Archives',
+      'archives.intro': 'When a Parliament ends, its bills and recorded votes stay here, frozen as they were on its last day.',
+      'archives.attente': (n) => `The ${ordinalEn(n)} Parliament will be archived here when the ${ordinalEn(n + 1)} opens.`,
+      'archives.carte': (n) => `${ordinalEn(n)} Parliament`,
+      'archives.projets': (n) => `Bills of the ${ordinalEn(n)} Parliament →`,
+      'archives.votes': (n) => `Votes of the ${ordinalEn(n)} Parliament →`,
+      'archives.bandeau': (n) => `<b>Archives of the ${ordinalEn(n)} Parliament.</b> These bills belong to a Parliament that has ended.`,
+      'archives.bandeauVotes': (n) => `<b>Archives of the ${ordinalEn(n)} Parliament.</b> These votes belong to a Parliament that has ended.`,
+      'archives.retourProjets': '← Current bills', 'archives.retourVotes': '← Current votes',
       'comites.titre': 'Standing committees',
       'comites.intro': 'A bill sent to committee is gone over line by line, witnesses are heard, and it can be amended. Committees also sit while the House is adjourned — which is why a bill can move in August with the Legislature away.',
       'comites.votes': 'Committees hold recorded votes too — about three times as many as the House, on amendments. The Assembly publishes them only inside the transcripts, in running prose, and only when a member asks for one: roughly one committee decision in seven. They are not listed on this site yet.',
@@ -232,7 +254,16 @@
     fr: {
       'nav.accueil': 'Accueil', 'nav.projets': 'Projets de loi', 'nav.votes': 'Votes',
       'nav.deputes': 'Député·e·s et ministres', 'nav.sources': 'Sources',
-      'nav.lexique': 'Lexique', 'nav.comites': 'Comités',
+      'nav.lexique': 'Lexique', 'nav.comites': 'Comités', 'nav.archives': 'Archives',
+      'archives.titre': 'Archives',
+      'archives.intro': 'Quand une législature prend fin, ses projets de loi et ses votes nominatifs restent ici, figés tels qu’à son dernier jour.',
+      'archives.attente': (n) => `La ${n}e législature sera archivée ici à l’ouverture de la ${n + 1}e.`,
+      'archives.carte': (n) => `${n}e législature`,
+      'archives.projets': (n) => `Projets de loi de la ${n}e législature →`,
+      'archives.votes': (n) => `Votes de la ${n}e législature →`,
+      'archives.bandeau': (n) => `<b>Archives de la ${n}e législature.</b> Ces projets de loi appartiennent à une législature terminée.`,
+      'archives.bandeauVotes': (n) => `<b>Archives de la ${n}e législature.</b> Ces votes appartiennent à une législature terminée.`,
+      'archives.retourProjets': '← Projets de loi en cours', 'archives.retourVotes': '← Votes en cours',
       'comites.titre': 'Les comités permanents',
       'comites.intro': 'Un projet de loi renvoyé en comité y est étudié article par article ; des témoins sont entendus et le texte peut être amendé. Les comités siègent aussi pendant l’ajournement de la Chambre — c’est pourquoi un projet peut avancer en août, l’Assemblée absente.',
       'comites.votes': 'Les comités tiennent eux aussi des votes nominatifs — environ trois fois plus que la Chambre, sur des amendements. L’Assemblée ne les publie qu’à l’intérieur des transcriptions, au fil du texte, et seulement quand un·e député·e le demande : à peu près une décision de comité sur sept. Ils ne sont pas encore recensés sur ce site.',
@@ -486,7 +517,7 @@
   // on l'oublie, pour que le pli suivant réessaie.
   const _resumes = {};
   const chargerResumes = (lg) =>
-    (_resumes[lg] ??= fetch(`/data/site/resumes-${lg}.json`)
+    (_resumes[lg] ??= fetch(cheminDonnee(`resumes-${lg}`))
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null)
       .then((d) => {
@@ -582,7 +613,9 @@
       voulus.map(async (nom) => {
         try {
           // « contenu:x » = un fichier ÉCRIT (le lexique) ; sinon, une donnée RÉCOLTÉE.
-          const chemin = nom.startsWith('contenu:') ? `/contenu/${nom.slice(8)}.json` : `/data/site/${nom}.json`;
+          const chemin = nom.startsWith('contenu:')
+            ? `/contenu/${nom.slice(8)}.json`
+            : nom === 'archives' ? '/data/archives/index.json' : cheminDonnee(nom);
           const res = await fetch(chemin, { cache: 'no-cache' });
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           DONNEES[nom.replace('contenu:', '')] = await res.json();
@@ -1061,9 +1094,9 @@
     const nDefi = DEFI.comptes.get(String(p.numero)) ?? 0;
     return `<article class="carte carte-projet" data-numero="${echapper(p.numero)}">
       <div class="projet-tete">
-        <a class="numero" href="/bill/${encodeURIComponent(String(p.numero).toLowerCase())}" title="${mot('projet.lienPage')}">${echapper(p.numero)}</a>
+        <a class="numero" href="${echapper(lienProjet(p))}" title="${mot('projet.lienPage')}">${echapper(p.numero)}</a>
         <div class="projet-tete-texte">
-          <h3 class="carte-titre"><a class="lien-titre" href="/bill/${encodeURIComponent(String(p.numero).toLowerCase())}">${echapper(titre)}</a></h3>
+          <h3 class="carte-titre"><a class="lien-titre" href="${echapper(lienProjet(p))}">${echapper(titre)}</a></h3>
           <p class="legende">${mot('projet.parraine')} ${echapper(p.parrains.join(', '))}${
             // En mode « activité récente », la date est ce qu'on vient voir : elle monte dans
             // la tête de la carte au lieu d'attendre qu'on l'ouvre.
@@ -1418,7 +1451,7 @@
     const ouvrirDepuisAdresse = () => {
       const voulu = new URLSearchParams(location.search).get('bill');
       if (!voulu) return;
-      if (projets.some((p) => String(p.numero).toLowerCase() === voulu.toLowerCase())) {
+      if (!ARCHIVE && projets.some((p) => String(p.numero).toLowerCase() === voulu.toLowerCase())) {
         location.replace(`/bill/${encodeURIComponent(voulu.toLowerCase())}`);
         return;
       }
@@ -1923,14 +1956,14 @@
     const ordinal = (n) => (fr() ? `${n}e` : n + ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] || 'th'));
     const nomLeg = (n) => (fr() ? `${ordinal(n)} législature` : `${ordinal(n)} Parliament`);
     const pctTxt = (t) => (fr() ? `${t} %` : `${t}%`);
-    const plTxt = (m, pl, lois, courante) => {
+    const plTxt = (m, pl, lois, courante, archive = null) => {
       const t = fr()
         ? `${pl} ${pl > 1 ? 'projets parrainés' : 'projet parrainé'}${lois ? ` · ${lois} ${lois > 1 ? 'devenus lois' : 'devenu loi'}` : ''}`
         : `${pl} ${pl === 1 ? 'bill sponsored' : 'bills sponsored'}${lois ? ` · ${lois} became law` : ''}`;
-      // Le site n'a pas d'archive des projets : seul le compte de la législature en cours mène à la liste.
-      return pl && courante
-        ? `<a class="leg-lien" href="/bills?sponsor=${encodeURIComponent(m.nom.replace(/^Hon\.\s+/i, ''))}" onclick="event.stopPropagation()">${t}</a>`
-        : t;
+      // Une législature terminée mène à son archive (?archives=N), si elle existe.
+      const sponsor = `sponsor=${encodeURIComponent(m.nom.replace(/^Hon\.\s+/i, ''))}`;
+      const href = courante ? `/bills?${sponsor}` : archive ? `/bills?archives=${archive}&${sponsor}` : null;
+      return pl && href ? `<a class="leg-lien" href="${href}" onclick="event.stopPropagation()">${t}</a>` : t;
     };
     const legislatures = (m) => {
       const blocs = [{
@@ -1942,7 +1975,7 @@
         blocs.push({
           leg: h.leg,
           pres: h.tenus ? `${pctTxt(Math.round((100 * h.exprimes) / h.tenus))} <span class="taux-detail">${h.exprimes} / ${h.tenus}</span>` : 'n/d',
-          pl: plTxt(m, h.pl, h.lois, false),
+          pl: plTxt(m, h.pl, h.lois, false, h.archive ? h.leg : null),
           passe: true,
         });
       }
@@ -2130,10 +2163,50 @@
     piste.innerHTML = ligne + ligne;
   }
 
+  // La page /archives : une ligne d'attente tant qu'aucune législature n'est terminée, puis une
+  // carte par législature terminée (data/archives/index.json).
+  VUES.archives = () => {
+    const cible = document.querySelector('section[data-vue="archives"]');
+    const idx = DONNEES.archives;
+    if (!cible) return;
+    const enDirect = idx?.enDirect ?? DONNEES.apercu?.legislature ?? 44;
+    const finies = (idx?.legislatures ?? []).filter((n) => n !== enDirect).sort((a, b) => b - a);
+    cible.innerHTML = `<p class="encadre">${echapper(mot('archives.intro'))}</p>${
+      finies.length
+        ? `<div class="archives-grille">${finies.map((n) => `<article class="case archive-carte">
+            <h2 class="titre-case">${echapper(mot('archives.carte', n))}</h2>
+            <a class="lien-source" href="/bills?archives=${n}">${echapper(mot('archives.projets', n))}</a>
+            <a class="lien-source" href="/votes?archives=${n}">${echapper(mot('archives.votes', n))}</a>
+          </article>`).join('')}</div>`
+        : ''
+    }<p class="legende archives-attente">${echapper(mot('archives.attente', enDirect))}</p>`;
+  };
+
+  // Le bandeau des pages archivées (?archives=N sur /bills et /votes).
+  function poserBandeauArchive(vue) {
+    if (!ARCHIVE || (vue !== 'projets' && vue !== 'votes')) return;
+    const section = document.querySelector(`section[data-vue="${vue}"]`);
+    if (!section) return;
+    let b = document.querySelector('[data-role="bandeau-archive"]');
+    if (!b) {
+      b = document.createElement('div');
+      b.className = 'encadre bandeau-archive';
+      b.dataset.role = 'bandeau-archive';
+      section.parentNode.insertBefore(b, section);
+      // L'encadré d'introduction parle de la législature en cours : il cède la place.
+      document.querySelectorAll('.colonne > .encadre:not(.bandeau-archive), main .encadre:not(.bandeau-archive)').forEach((e) => {
+        if (e.nextElementSibling === b || e.nextElementSibling === section) e.hidden = true;
+      });
+    }
+    const projets = vue === 'projets';
+    b.innerHTML = `${mot(projets ? 'archives.bandeau' : 'archives.bandeauVotes', ARCHIVE)} <a href="/${projets ? 'bills' : 'votes'}">${echapper(mot(projets ? 'archives.retourProjets' : 'archives.retourVotes'))}</a>`;
+  }
+
   function rendre() {
     appliquerLangue();
     remplirTicker();
     const vue = document.body.dataset.vue;
+    poserBandeauArchive(vue);
     if (VUES[vue]) VUES[vue]();
     poserRelache();
     const maj = DONNEES.apercu?.maj ?? DONNEES.bills?.maj ?? null;

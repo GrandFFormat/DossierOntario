@@ -245,6 +245,17 @@ const PAGES = [
   <p class="regles-suite" data-i18n-html="regles.suite">These rules apply everywhere on the site. See where each piece of data comes from on the <a href="/sources">Sources</a> page, and follow what changes in the <a href="/about">site updates</a>.</p>`,
   },
   {
+    // Les législatures terminées (30 oct. 2026, comme DossierQuébec) : une case par législature,
+    // vers ses projets (/bills?archives=N) et ses votes (/votes?archives=N). data/archives/index.json.
+    fichier: 'archives.html',
+    vue: 'archives',
+    donnees: 'archives',
+    titre: 'Archives',
+    description: 'Bills and recorded votes of past Parliaments of Ontario, frozen as they were on their last day.',
+    contenu: `  <h1 class="titre-vue" data-i18n="archives.titre">Archives</h1>
+  <section data-vue="archives"></section>`,
+  },
+  {
     // La page introuvable : Vercel sert 404.html, à la racine, pour toute adresse inconnue.
     // Hors du plan du site (horsPlan), et jamais indexée.
     fichier: '404.html',

@@ -17,7 +17,7 @@
 //
 // Usage : node scripts/build-site-data.js
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, copyFileSync, readdirSync } from 'node:fs';
 import { cleNom } from '../scrapers/ola.js';
 
 const SORTIE = 'data/site';
@@ -257,7 +257,7 @@ function main() {
         .map((l) => {
           const p = historique[l].presences?.[d.identifiant];
           const b = historique[l].pl?.[cleNom(d.nom)];
-          return p || b ? { leg: l, exprimes: p?.[0] ?? 0, tenus: p?.[1] ?? 0, pl: b?.[0] ?? 0, lois: b?.[1] ?? 0 } : null;
+          return p || b ? { leg: l, exprimes: p?.[0] ?? 0, tenus: p?.[1] ?? 0, pl: b?.[0] ?? 0, lois: b?.[1] ?? 0, archive: existsSync(`data/archives/${l}/bills.json`) } : null;
         })
         .filter(Boolean);
     ecrire('members', {
@@ -548,6 +548,27 @@ function main() {
   });
 }
 
+// ------------------------------------------------------------------ archives
+// Comme DossierQuébec (data/archives/<législature>/) : à chaque construction, la législature EN
+// DIRECT est recopiée telle que le site l'affiche (projets, résumés FR et EN, votes avec leur
+// détail). Le jour où bills.json passe à la 45e, la copie de la 44e n'est plus jamais réécrite :
+// elle reste figée telle qu'à sa dernière construction. index.json dit laquelle est en direct.
+function archiver(legislature) {
+  const n = Number(legislature);
+  if (!n) return;
+  const dossier = `data/archives/${n}`;
+  mkdirSync(dossier, { recursive: true });
+  for (const nom of ['bills', 'resumes-en', 'resumes-fr', 'votes']) {
+    if (existsSync(`${SORTIE}/${nom}.json`)) copyFileSync(`${SORTIE}/${nom}.json`, `${dossier}/${nom}.json`);
+  }
+  const legislatures = readdirSync('data/archives')
+    .filter((d) => /^\d+$/.test(d) && existsSync(`data/archives/${d}/bills.json`))
+    .map(Number)
+    .sort((a, b) => a - b);
+  writeFileSync('data/archives/index.json', JSON.stringify({ enDirect: n, legislatures }));
+  console.log(`data/archives/${n}/ (en direct) — archives : ${legislatures.join(', ')}`);
+}
+
 function ecrire(nom, contenu) {
   const chemin = `${SORTIE}/${nom}.json`;
   writeFileSync(chemin, JSON.stringify(contenu));
@@ -556,3 +577,4 @@ function ecrire(nom, contenu) {
 }
 
 main();
+archiver(lireJson('data/bills.json')?.legislature);

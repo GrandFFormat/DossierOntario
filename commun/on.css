@@ -1068,3 +1068,11 @@ a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;
 .avis-reprise p{margin:0 auto; padding-top:10px; padding-bottom:10px; font-size:13.5px; line-height:1.55; border-left:0;}
 .avis-reprise p::before{content:''; display:inline-block; width:9px; height:9px; background:var(--rouge); margin-right:8px;}
 .avis-reprise a{color:var(--rouge); font-weight:700;}
+
+/* Archives (30 oct. 2026) : une case par législature terminée, et le bandeau des pages archivées */
+.archives-grille{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); border-top:1px solid var(--line); border-left:1px solid var(--line); margin:22px 0;}
+.archive-carte{border-right:1px solid var(--line); border-bottom:1px solid var(--line); padding:20px 22px; display:flex; flex-direction:column; gap:8px;}
+.archive-carte .lien-source{color:var(--rouge); font-weight:700;}
+.archives-attente{margin:18px 0 0;}
+.bandeau-archive{border-left:4px solid var(--rouge);}
+.bandeau-archive a{color:var(--rouge); font-weight:700; white-space:nowrap;}
