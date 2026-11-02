@@ -6,7 +6,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-26T17:48:11.557Z",
+  "lus": "2026-11-02T21:14:38.997Z",
   "totalSieges": 124,
   "etatPartis": [
     {
@@ -624,7 +624,7 @@
     },
     {
       "identifiant": "stan-cho",
-      "nom": "Stan Cho",
+      "nom": "Hon. Stan Cho",
       "parti": "Progressive Conservative Party of Ontario",
       "circonscription": "Willowdale",
       "couleurParti": "#006AD1",
@@ -2012,7 +2012,7 @@
       "circonscriptionFr": "York—Simcoe",
       "urlFr": "https://www.ola.org/fr/deputes/tous/susan-lahey",
       "numeroMembre": "127",
-      "courriel": null,
+      "courriel": "susan.lahey@pc.ola.org",
       "bureaux": [
         {
           "type": "Constituency office",

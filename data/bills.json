@@ -5,11 +5,11 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-26T17:05:33.859Z",
+  "lus": "2026-11-02T20:36:36.989Z",
   "nombre": {
-    "total": 191,
-    "publics": 139,
-    "prives": 52
+    "total": 200,
+    "publics": 145,
+    "prives": 55
   },
   "projets": [
     {
@@ -2872,6 +2872,128 @@
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-139"
     },
     {
+      "numero": "140",
+      "numeroTri": 140,
+      "type": "public",
+      "titreEn": "Building Ontario Faster Act, 2026",
+      "titreFr": "Loi de 2026 visant à bâtir l’Ontario plus rapidement",
+      "parrains": [
+        {
+          "nom": "Khanjin, Hon. Andrea",
+          "role": "Minister of Red Tape Reduction"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-140",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-140"
+    },
+    {
+      "numero": "141",
+      "numeroTri": 141,
+      "type": "public",
+      "titreEn": "Ontario in Your Glass Act, 2026",
+      "titreFr": "Loi de 2026 sur les produits ontariens dans votre verre",
+      "parrains": [
+        {
+          "nom": "Hsu, Ted",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-141",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-141"
+    },
+    {
+      "numero": "142",
+      "numeroTri": 142,
+      "type": "public",
+      "titreEn": "Menopause Awareness Act, 2026",
+      "titreFr": "Loi de 2026 sur la sensibilisation à la ménopause",
+      "parrains": [
+        {
+          "nom": "Sattler, Peggy",
+          "role": null
+        },
+        {
+          "nom": "Fife, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-142",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-142"
+    },
+    {
+      "numero": "143",
+      "numeroTri": 143,
+      "type": "public",
+      "titreEn": "Plan to Protect Ontario Act (Budget Measures), 2026 (No. 2)",
+      "titreFr": "Loi de 2026 sur le plan pour protéger l’Ontario (mesures budgétaires) (no 2)",
+      "parrains": [
+        {
+          "nom": "Bethlenfalvy, Hon. Peter",
+          "role": "Minister of Finance"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-143",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-143"
+    },
+    {
+      "numero": "144",
+      "numeroTri": 144,
+      "type": "public",
+      "titreEn": "Plug into the Sun Act, 2026",
+      "titreFr": "Loi de 2026 pour la connexion au soleil",
+      "parrains": [
+        {
+          "nom": "Tabuns, Peter",
+          "role": null
+        },
+        {
+          "nom": "Bell, Jessica",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-144",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-144"
+    },
+    {
+      "numero": "145",
+      "numeroTri": 145,
+      "type": "public",
+      "titreEn": "Optometry Amendment Act, 2026",
+      "titreFr": "Loi de 2026 modifiant la Loi sur les optométristes",
+      "parrains": [
+        {
+          "nom": "Bouma, Will",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-145",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-145"
+    },
+    {
       "numero": "PR1",
       "numeroTri": 1,
       "type": "prive",
@@ -3710,7 +3832,12 @@
       "type": "prive",
       "titreEn": "J.C.C. Corp. Act, 2026",
       "titreFr": null,
-      "parrains": [],
+      "parrains": [
+        {
+          "nom": "Vickers, Paul",
+          "role": null
+        }
+      ],
       "typeProjet": "prive",
       "typeProjetSource": "numero-pr",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr53",
@@ -3739,11 +3866,67 @@
       "type": "prive",
       "titreEn": "London Hydro Holdings Inc. Act, 2026",
       "titreFr": null,
-      "parrains": [],
+      "parrains": [
+        {
+          "nom": "Pinsonneault, Steve",
+          "role": null
+        }
+      ],
       "typeProjet": "prive",
       "typeProjetSource": "numero-pr",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr55",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr55"
+    },
+    {
+      "numero": "PR57",
+      "numeroTri": 57,
+      "type": "prive",
+      "titreEn": "National Institute of Supply Chain Leaders Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr57",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr57"
+    },
+    {
+      "numero": "PR58",
+      "numeroTri": 58,
+      "type": "prive",
+      "titreEn": "5028833 Ontario Ltd. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Pang, Billy",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr58",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr58"
+    },
+    {
+      "numero": "PR61",
+      "numeroTri": 61,
+      "type": "prive",
+      "titreEn": "Befana Investments Ltd. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Firin, Mohamed",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr61",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr61"
     }
   ]
 }

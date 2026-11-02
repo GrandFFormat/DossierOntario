@@ -2,7 +2,7 @@
   "source": "https://www.ola.org/en/legislative-business/committees",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-10-26T17:48:02.832Z",
+  "lus": "2026-11-02T21:14:25.637Z",
   "nombre": 8,
   "comites": [
     {
@@ -30,6 +30,11 @@
           "role": "Second Vice-Chair"
         },
         {
+          "identifiant": "tyler-allsopp",
+          "nom": "Tyler Allsopp",
+          "role": "Members"
+        },
+        {
           "identifiant": "bobbi-ann-brady",
           "nom": "Bobbi Ann Brady",
           "role": "Members"
@@ -40,18 +45,18 @@
           "role": "Members"
         },
         {
+          "identifiant": "natalie-pierre",
+          "nom": "Natalie Pierre",
+          "role": "Members"
+        },
+        {
           "identifiant": "joseph-racinsky",
           "nom": "Joseph Racinsky",
           "role": "Members"
         },
         {
-          "identifiant": "bill-rosenberg",
-          "nom": "Bill Rosenberg",
-          "role": "Members"
-        },
-        {
-          "identifiant": "brian-saunderson",
-          "nom": "Hon. Brian Saunderson",
+          "identifiant": "sheref-sabawy",
+          "nom": "Sheref Sabawy",
           "role": "Members"
         },
         {
@@ -62,11 +67,6 @@
         {
           "identifiant": "dave-smith",
           "nom": "Dave Smith",
-          "role": "Members"
-        },
-        {
-          "identifiant": "effie-j-triantafilopoulos",
-          "nom": "Effie J. Triantafilopoulos",
           "role": "Members"
         }
       ],
@@ -223,8 +223,8 @@
           "role": "Chair"
         },
         {
-          "identifiant": "robert-bailey",
-          "nom": "Robert Bailey",
+          "identifiant": "deepak-anand",
+          "nom": "Deepak Anand",
           "role": "First Vice-Chair"
         },
         {
@@ -233,8 +233,13 @@
           "role": "Second Vice-Chair"
         },
         {
-          "identifiant": "billy-denault",
-          "nom": "Billy Denault",
+          "identifiant": "jeff-beattie",
+          "nom": "Jeff Beattie",
+          "role": "Members"
+        },
+        {
+          "identifiant": "ric-bresee",
+          "nom": "Ric Bresee",
           "role": "Members"
         },
         {
@@ -243,18 +248,13 @@
           "role": "Members"
         },
         {
-          "identifiant": "mohamed-firin",
-          "nom": "Mohamed Firin",
-          "role": "Members"
-        },
-        {
           "identifiant": "alexa-gilmour",
           "nom": "Alexa Gilmour",
           "role": "Members"
         },
         {
-          "identifiant": "matthew-rae",
-          "nom": "Hon. Matthew Rae",
+          "identifiant": "susan-lahey",
+          "nom": "Susan Lahey",
           "role": "Members"
         },
         {
@@ -263,8 +263,8 @@
           "role": "Members"
         },
         {
-          "identifiant": "laura-smith",
-          "nom": "Laura Smith",
+          "identifiant": "david-smith",
+          "nom": "David Smith",
           "role": "Members"
         },
         {
@@ -426,18 +426,18 @@
           "role": "Second Vice-Chair"
         },
         {
-          "identifiant": "deepak-anand",
-          "nom": "Deepak Anand",
+          "identifiant": "billy-denault",
+          "nom": "Billy Denault",
           "role": "Members"
         },
         {
-          "identifiant": "aris-babikian",
-          "nom": "Aris Babikian",
+          "identifiant": "jess-dixon",
+          "nom": "Jess Dixon",
           "role": "Members"
         },
         {
-          "identifiant": "hardeep-singh-grewal",
-          "nom": "Hardeep Singh Grewal",
+          "identifiant": "silvia-gualtieri",
+          "nom": "Silvia Gualtieri",
           "role": "Members"
         },
         {
@@ -446,13 +446,13 @@
           "role": "Members"
         },
         {
-          "identifiant": "amarjot-sandhu",
-          "nom": "Amarjot Sandhu",
+          "identifiant": "steve-pinsonneault",
+          "nom": "Steve Pinsonneault",
           "role": "Members"
         },
         {
-          "identifiant": "brian-saunderson",
-          "nom": "Hon. Brian Saunderson",
+          "identifiant": "laura-smith",
+          "nom": "Laura Smith",
           "role": "Members"
         }
       ],
@@ -619,6 +619,16 @@
           "role": "Second Vice-Chair"
         },
         {
+          "identifiant": "robert-bailey",
+          "nom": "Robert Bailey",
+          "role": "Members"
+        },
+        {
+          "identifiant": "jeff-beattie",
+          "nom": "Jeff Beattie",
+          "role": "Members"
+        },
+        {
           "identifiant": "guy-bourgouin",
           "nom": "Guy Bourgouin",
           "role": "Members"
@@ -634,22 +644,17 @@
           "role": "Members"
         },
         {
-          "identifiant": "dawn-gallagher-murphy",
-          "nom": "Dawn Gallagher Murphy",
-          "role": "Members"
-        },
-        {
-          "identifiant": "steve-pinsonneault",
-          "nom": "Steve Pinsonneault",
-          "role": "Members"
-        },
-        {
           "identifiant": "paul-vickers",
           "nom": "Paul Vickers",
           "role": "Members"
         }
       ],
       "transcriptions": [
+        {
+          "date": "2026-10-27",
+          "libelle": "Committee Transcript 2026-Oct-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-oct-27"
+        },
         {
           "date": "2026-10-01",
           "libelle": "Committee Transcript 2026-Oct-01",
@@ -807,8 +812,8 @@
           "role": "Second Vice-Chair"
         },
         {
-          "identifiant": "tyler-allsopp",
-          "nom": "Tyler Allsopp",
+          "identifiant": "will-bouma",
+          "nom": "Will Bouma",
           "role": "Members"
         },
         {
@@ -817,13 +822,13 @@
           "role": "Members"
         },
         {
-          "identifiant": "george-darouze",
-          "nom": "George Darouze",
+          "identifiant": "mohamed-firin",
+          "nom": "Mohamed Firin",
           "role": "Members"
         },
         {
-          "identifiant": "silvia-gualtieri",
-          "nom": "Silvia Gualtieri",
+          "identifiant": "hardeep-singh-grewal",
+          "nom": "Hardeep Singh Grewal",
           "role": "Members"
         },
         {
@@ -838,6 +843,11 @@
         }
       ],
       "transcriptions": [
+        {
+          "date": "2026-10-28",
+          "libelle": "Committee Transcript 2026-Oct-28",
+          "url": "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-oct-28"
+        },
         {
           "date": "2026-10-08",
           "libelle": "Committee Transcript 2026-Oct-08",
@@ -935,8 +945,8 @@
           "role": "Chair"
         },
         {
-          "identifiant": "laura-smith",
-          "nom": "Laura Smith",
+          "identifiant": "will-bouma",
+          "nom": "Will Bouma",
           "role": "First Vice-Chair"
         },
         {
@@ -960,22 +970,27 @@
           "role": "Members"
         },
         {
+          "identifiant": "mohamed-firin",
+          "nom": "Mohamed Firin",
+          "role": "Members"
+        },
+        {
           "identifiant": "dawn-gallagher-murphy",
           "nom": "Dawn Gallagher Murphy",
           "role": "Members"
         },
         {
-          "identifiant": "amarjot-sandhu",
-          "nom": "Amarjot Sandhu",
-          "role": "Members"
-        },
-        {
-          "identifiant": "paul-vickers",
-          "nom": "Paul Vickers",
+          "identifiant": "silvia-gualtieri",
+          "nom": "Silvia Gualtieri",
           "role": "Members"
         }
       ],
       "transcriptions": [
+        {
+          "date": "2026-10-27",
+          "libelle": "Committee Transcript 2026-Oct-27",
+          "url": "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-oct-27"
+        },
         {
           "date": "2026-07-31",
           "libelle": "Committee Transcript 2026-Jul-31",
@@ -1176,18 +1191,28 @@
           "role": "Second Vice-Chair"
         },
         {
+          "identifiant": "deepak-anand",
+          "nom": "Deepak Anand",
+          "role": "Members"
+        },
+        {
           "identifiant": "aislinn-clancy",
           "nom": "Aislinn Clancy",
           "role": "Members"
         },
         {
-          "identifiant": "jess-dixon",
-          "nom": "Jess Dixon",
+          "identifiant": "george-darouze",
+          "nom": "George Darouze",
           "role": "Members"
         },
         {
           "identifiant": "john-jordan",
           "nom": "John Jordan",
+          "role": "Members"
+        },
+        {
+          "identifiant": "susan-lahey",
+          "nom": "Susan Lahey",
           "role": "Members"
         },
         {
@@ -1203,16 +1228,6 @@
         {
           "identifiant": "billy-pang",
           "nom": "Billy Pang",
-          "role": "Members"
-        },
-        {
-          "identifiant": "natalie-pierre",
-          "nom": "Natalie Pierre",
-          "role": "Members"
-        },
-        {
-          "identifiant": "daisy-wai",
-          "nom": "Daisy Wai",
           "role": "Members"
         }
       ],

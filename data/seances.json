@@ -1460,8 +1460,30 @@
         "en": "Intended appointments",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-oct-27": [
+      {
+        "en": "Committee business",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/justice-policy/parliament-44/transcripts/committee-transcript-2026-oct-28": [
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Indigenous Affairs and First Nations Economic Reconciliation",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-oct-27": [
+      {
+        "en": "Committee business",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-10-26T17:48:03.895Z",
-  "nombre": 156
+  "lus": "2026-11-02T21:14:30.473Z",
+  "nombre": 159
 }

@@ -1,8 +1,63 @@
 {
   "source": "https://www.ola.org/en/legislative-business/status-business/petitions-responses-subject-index",
-  "lus": "2026-10-26T17:48:05.385Z",
-  "nombre": 225,
+  "lus": "2026-11-02T21:14:32.294Z",
+  "nombre": 230,
   "petitions": [
+    {
+      "numero": 230,
+      "sujet": "Owen Sound Family Health Team compensation",
+      "presentations": [
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-10-28",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 229,
+      "sujet": "Highway 413 cancellation",
+      "presentations": [
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-10-28",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 228,
+      "sujet": "Menopause awareness",
+      "presentations": [
+        {
+          "membre": "Peggy Sattler",
+          "depot": "2026-10-28",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 227,
+      "sujet": "Discovery Recovery Assistance for Ontarians",
+      "presentations": [
+        {
+          "membre": "Chandra Pasma",
+          "depot": "2026-10-28",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 226,
+      "sujet": "Illegal truck yards",
+      "presentations": [
+        {
+          "membre": "Joseph Racinsky",
+          "depot": "2026-10-27",
+          "reponse": null
+        }
+      ]
+    },
     {
       "numero": 225,
       "sujet": "Tree by-law applicability for building permits",
@@ -142,6 +197,11 @@
         {
           "membre": "Billy Denault",
           "depot": "2026-06-01",
+          "reponse": null
+        },
+        {
+          "membre": "Billy Denault",
+          "depot": "2026-10-27",
           "reponse": null
         }
       ]
@@ -399,6 +459,11 @@
       "sujet": "Billy Bishop Airport expansion",
       "presentations": [
         {
+          "membre": "Chris Glover",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
+        {
           "membre": "Alexa Gilmour",
           "depot": "2026-06-01",
           "reponse": null
@@ -500,6 +565,11 @@
       "numero": 187,
       "sujet": "Legal process respecting sexual assault cases",
       "presentations": [
+        {
+          "membre": "Catherine Fife",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
         {
           "membre": "Catherine Fife",
           "depot": "2026-05-14",
@@ -853,9 +923,14 @@
       "sujet": "Highway 69",
       "presentations": [
         {
+          "membre": "Sandy Shaw",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
+        {
           "membre": "France Gélinas",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Jamie West",
@@ -891,7 +966,7 @@
         {
           "membre": "Ted Hsu",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         }
       ]
     },
@@ -902,7 +977,7 @@
         {
           "membre": "Catherine Fife",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         }
       ]
     },
@@ -913,7 +988,7 @@
         {
           "membre": "Adil Shamji",
           "depot": "2026-04-02",
-          "reponse": null
+          "reponse": "2026-10-28"
         }
       ]
     },
@@ -924,7 +999,7 @@
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-01",
-          "reponse": null
+          "reponse": "2026-10-27"
         }
       ]
     },
@@ -935,7 +1010,7 @@
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-01",
-          "reponse": null
+          "reponse": "2026-10-27"
         }
       ]
     },
@@ -951,7 +1026,7 @@
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-04-01",
-          "reponse": null
+          "reponse": "2026-10-27"
         },
         {
           "membre": "Kristyn Wong-Tam",
@@ -1000,17 +1075,17 @@
         {
           "membre": "Deepak Anand",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Amarjot Sandhu",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
@@ -1030,47 +1105,47 @@
         {
           "membre": "Deepak Anand",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Deepak Anand",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Andrew Dowie",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Deepak Anand",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Steve Pinsonneault",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
@@ -1085,22 +1160,22 @@
         {
           "membre": "Anthony Leardi",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Deepak Anand",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Andrew Dowie",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Anthony Leardi",
@@ -1195,12 +1270,12 @@
         {
           "membre": "Jamie West",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "France Gélinas",
@@ -1210,7 +1285,7 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "France Gélinas",
@@ -1220,7 +1295,7 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-02"
         }
       ]
     },
@@ -1242,22 +1317,22 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Robin Lennox",
           "depot": "2026-06-02",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Tyler Watt",
@@ -1292,7 +1367,7 @@
         {
           "membre": "Stephen Blais",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Ted Hsu",
@@ -1317,27 +1392,27 @@
         {
           "membre": "Tyler Watt",
           "depot": "2026-05-25",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-05-27",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Sandy Shaw",
           "depot": "2026-05-27",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Karen McCrimmon",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Stephanie Bowman",
           "depot": "2026-05-07",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Peter Tabuns",
@@ -1402,17 +1477,17 @@
         {
           "membre": "Adil Shamji",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Catherine McKenney",
           "depot": "2026-05-28",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lise Vaugeois",
           "depot": "2026-05-28",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Tyler Watt",
@@ -1422,22 +1497,22 @@
         {
           "membre": "Aislinn Clancy",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lucille Collard",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         }
       ]
     },
@@ -1569,6 +1644,11 @@
       "numero": 143,
       "sujet": "Electoral boundaries",
       "presentations": [
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
         {
           "membre": "Ted Hsu",
           "depot": "2025-12-09",
@@ -1788,12 +1868,12 @@
         {
           "membre": "Peter Tabuns",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Catherine McKenney",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         }
       ]
     },
@@ -2385,42 +2465,42 @@
         {
           "membre": "Jennifer K. French",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Lisa Gretzky",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Wayne Gates",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Adil Shamji",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Lee Fairclough",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Doly Begum",
@@ -2430,77 +2510,77 @@
         {
           "membre": "Guy Bourgouin",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Jamie West",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Catherine McKenney",
           "depot": "2026-05-06",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Teresa J. Armstrong",
           "depot": "2026-05-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Ted Hsu",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Stephanie Bowman",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Terence Kernaghan",
           "depot": "2026-06-02",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Lucille Collard",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Jennifer (Jennie) Stevens",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-07",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Jessica Bell",
           "depot": "2026-05-13",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Aislinn Clancy",
           "depot": "2026-05-13",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Mike Schreiner",
@@ -2510,47 +2590,47 @@
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-28",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Alexa Gilmour",
           "depot": "2026-05-28",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Stephen Blais",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Andrea Hazell",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Sandy Shaw",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Robin Lennox",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Chris Glover",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Sol Mamakwa",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "France Gélinas",
@@ -2575,7 +2655,7 @@
         {
           "membre": "Stephanie Smyth",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         }
       ]
     },
@@ -3145,6 +3225,11 @@
       "numero": 67,
       "sujet": "Support for family caregivers",
       "presentations": [
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
         {
           "membre": "Ted Hsu",
           "depot": "2025-06-02",
@@ -3794,6 +3879,11 @@
           "reponse": "2025-11-05"
         },
         {
+          "membre": "Ted Hsu",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
+        {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
           "reponse": null
@@ -4008,6 +4098,11 @@
       "presentations": [
         {
           "membre": "Catherine Fife",
+          "depot": "2026-10-27",
+          "reponse": null
+        },
+        {
+          "membre": "Catherine Fife",
           "depot": "2025-05-05",
           "reponse": "2025-11-03"
         },
@@ -4145,22 +4240,22 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jamie West",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lisa Gretzky",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Stephanie Smyth",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Chandra Pasma",
@@ -4340,42 +4435,42 @@
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-06",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Wayne Gates",
           "depot": "2026-05-14",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Stephanie Bowman",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Sandy Shaw",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Peter Tabuns",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Sol Mamakwa",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lucille Collard",
           "depot": "2026-05-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jeff Burch",
           "depot": "2026-05-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Karen McCrimmon",
@@ -4385,37 +4480,37 @@
         {
           "membre": "Bobbi Ann Brady",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Mary-Margaret McMahon",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Aislinn Clancy",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Robin Lennox",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-27",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Stephen Blais",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jennifer (Jennie) Stevens",
@@ -4445,27 +4540,27 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Andrea Hazell",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Catherine McKenney",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Alexa Gilmour",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         }
       ]
     },
@@ -4643,31 +4738,36 @@
         {
           "membre": "Ted Hsu",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jamie West",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Bobbi Ann Brady",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lisa Gretzky",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lisa Gretzky",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-06-01",
+          "reponse": "2026-10-29"
+        },
+        {
+          "membre": "Lucille Collard",
+          "depot": "2026-10-27",
           "reponse": null
         },
         {
@@ -4943,17 +5043,17 @@
         {
           "membre": "Chandra Pasma",
           "depot": "2026-05-06",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-06",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Aislinn Clancy",
           "depot": "2026-05-11",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Catherine McKenney",
@@ -4978,17 +5078,17 @@
         {
           "membre": "Catherine McKenney",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lise Vaugeois",
           "depot": "2026-05-27",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-05-27",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Mary-Margaret McMahon",
@@ -5003,7 +5103,7 @@
         {
           "membre": "Jeff Burch",
           "depot": "2026-05-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Karen McCrimmon",
@@ -5013,67 +5113,67 @@
         {
           "membre": "Lise Vaugeois",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Aislinn Clancy",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lucille Collard",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Robin Lennox",
           "depot": "2026-05-28",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Catherine McKenney",
           "depot": "2026-05-28",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Mary-Margaret McMahon",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jessica Bell",
           "depot": "2026-04-22",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-22",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Ted Hsu",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Sol Mamakwa",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Jamie West",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-10-29"
         },
         {
           "membre": "Lise Vaugeois",
@@ -5088,7 +5188,7 @@
         {
           "membre": "Alexa Gilmour",
           "depot": "2026-04-13",
-          "reponse": null
+          "reponse": "2026-10-29"
         }
       ]
     },
@@ -5249,6 +5349,11 @@
       "presentations": [
         {
           "membre": "Ted Hsu",
+          "depot": "2026-10-28",
+          "reponse": null
+        },
+        {
+          "membre": "Ted Hsu",
           "depot": "2025-10-30",
           "reponse": "2026-03-26"
         },
@@ -5323,7 +5428,7 @@
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-10-28"
         },
         {
           "membre": "France Gélinas",
@@ -5408,22 +5513,22 @@
         {
           "membre": "Peter Tabuns",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-10-28"
         },
         {
           "membre": "Peter Tabuns",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-28"
         },
         {
           "membre": "Terence Kernaghan",
           "depot": "2026-04-02",
-          "reponse": null
+          "reponse": "2026-10-28"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-10-28"
         },
         {
           "membre": "France Gélinas",
@@ -5572,17 +5677,17 @@
         {
           "membre": "Ted Hsu",
           "depot": "2026-04-14",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Ted Hsu",
