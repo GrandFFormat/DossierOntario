@@ -190,7 +190,7 @@
       'defi.envoyer': 'Send the link', 'defi.annuler': 'Cancel',
       'defi.lienEnvoye': 'Link sent — check your inbox (and your spam folder).',
       'defi.erreurLien': 'The link could not be sent. Check the address and try again.',
-      'partage.titre': 'Share:', 'partage.copier': 'Copy the link',
+      'partage.titre': 'Share:', 'partage.copier': 'Copy the link', 'partage.sur': (r) => `Share on ${r}`,
       'partage.texte': (num, titre) => `Bill ${num} — ${titre}`,
       'projets.compte': (n) => `${n} bill${n > 1 ? 's' : ''}`,
       'etape.1': '1st reading', 'etape.2': '2nd reading', 'etape.3': 'Committee',
@@ -410,7 +410,7 @@
       'defi.envoyer': 'Envoyer le lien', 'defi.annuler': 'Annuler',
       'defi.lienEnvoye': 'Lien envoyé — vérifiez votre boîte de réception (et les indésirables).',
       'defi.erreurLien': 'Le lien n’a pas pu être envoyé. Vérifiez l’adresse et réessayez.',
-      'partage.titre': 'Partager :', 'partage.copier': 'Copier le lien',
+      'partage.titre': 'Partager :', 'partage.copier': 'Copier le lien', 'partage.sur': (r) => `Partager sur ${r}`,
       'partage.texte': (num, titre) => `Projet de loi ${num} — ${titre}`,
       'projets.compte': (n) => `${n} projet${n > 1 ? 's' : ''} de loi`,
       'etape.1': '1re lecture', 'etape.2': '2e lecture', 'etape.3': 'Comité',
@@ -758,6 +758,21 @@
     }
   }
 
+  // Les boutons de partage d'un projet (3 nov. 2026, comme DQ) : le vrai logo blanc sur la
+  // couleur du réseau, centrés, sans le mot « Share ». ⧉ copie le lien.
+  const LOGOS_PARTAGE = [
+    ['x', 'X', '<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg>'],
+    ['fb', 'Facebook', '<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.6 24V13.1h3.7l.55-4.3H13.6V6.1c0-1.24.35-2.09 2.13-2.09H18V.17A30 30 0 0 0 14.7 0C11.4 0 9.2 2 9.2 5.66v3.14H5.5v4.3h3.7V24z"/></svg>'],
+    ['li', 'LinkedIn', '<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.34 7.43a2.47 2.47 0 1 1 0-4.94 2.47 2.47 0 0 1 0 4.94zM7.48 20.45H3.2V9h4.28zM20.45 20.45h-4.26v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H7.94V9h4.1v1.56h.06c.57-1.08 1.96-2.22 4.04-2.22 4.32 0 5.12 2.84 5.12 6.54z"/></svg>'],
+    ['reddit', 'Reddit', '<svg width="15" height="15" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="11.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="7.6" cy="11" r="1.1" fill="currentColor"/><circle cx="12.4" cy="11" r="1.1" fill="currentColor"/><path d="M7.4 13.7c1.5 1 3.7 1 5.2 0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M10 5l1-3.3 3 .8" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="15.3" cy="2.8" r="1.3" fill="currentColor"/></svg>'],
+    ['threads', 'Threads', '<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.2 11.2c-.4-3-2.3-4.4-5-4.4-2 0-3.5.9-4.3 2.3M16.8 11.3c-2.6-.6-7.3-.5-7.3 2.2 0 2.6 4.6 2.7 6 .3 1-1.6 1.1-4 .6-5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 11.4c3.2 1.3 3.6 5 1.2 7.3-2.6 2.5-8.9 2.7-11.7-.9C4 14.7 4.2 7.6 7.3 4.6c2.6-2.6 8.3-2.8 11.2.3 1 1 1.6 2.2 1.9 3.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'],
+    ['bsky', 'Bluesky', '<svg width="15" height="14" viewBox="0 0 24 22" aria-hidden="true"><path fill="currentColor" d="M12 9.6C10.6 6.9 6.8 1.9 3.6 1.3 1.3.9 1 3 1 4.4c0 1.3.8 6.2 1.3 7.1 1 1.9 3.5 2.4 5.9 2-4 .8-5.6 3-3 5.4 3.6 3.3 5.6-.6 6.8-3.2.1.2 0 0 0 0 1.2 2.6 3.2 6.5 6.8 3.2 2.6-2.4 1-4.6-3-5.4 2.4.4 4.9-.1 5.9-2 .5-.9 1.3-5.8 1.3-7.1 0-1.4-.3-3.5-2.6-3.1-3.2.6-7 5.6-8.4 8.3z"/></svg>'],
+  ];
+  const boutonsPartage = () =>
+    LOGOS_PARTAGE.map(([cle, nom, svg]) =>
+      `<button class="bouton-partage" type="button" data-partage="${cle}" data-reseau="${cle}" aria-label="${mot('partage.sur', nom)}" title="${nom}">${svg}</button>`
+    ).join('') + `<button class="bouton-partage" type="button" data-partage="copie" aria-label="${mot('partage.copier')}" title="${mot('partage.copier')}">⧉</button>`;
+
   // Partager un projet : un lien vers SA page (/bill/9).
   function partager(numero, titre, ou, bouton) {
     const url = `https://dossierontario.ca/bill/${encodeURIComponent(String(numero).toLowerCase())}`;
@@ -766,6 +781,14 @@
       window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(texte)}&url=${encodeURIComponent(url)}`, '_blank', 'noopener,width=600,height=520');
     } else if (ou === 'fb') {
       window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener,width=600,height=520');
+    } else if (ou === 'li') {
+      window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank', 'noopener,width=600,height=560');
+    } else if (ou === 'reddit') {
+      window.open(`https://www.reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(texte)}`, '_blank', 'noopener,width=760,height=640');
+    } else if (ou === 'threads') {
+      window.open(`https://www.threads.net/intent/post?text=${encodeURIComponent(texte + ' ' + url)}`, '_blank', 'noopener,width=600,height=640');
+    } else if (ou === 'bsky') {
+      window.open(`https://bsky.app/intent/compose?text=${encodeURIComponent(texte + ' ' + url)}`, '_blank', 'noopener,width=600,height=640');
     } else {
       // Accusé de réception SUR le bouton, pas une fenêtre à fermer (leçon de DQ).
       (navigator.clipboard ? navigator.clipboard.writeText(`${texte} ${url}`) : Promise.reject())
@@ -1026,12 +1049,7 @@
                     }</button>`
                   : ''
               }
-              <div class="partage partage-gauche">
-                <span class="legende">${mot('partage.titre')}</span>
-                <button class="bouton-partage" data-partage="x" aria-label="X">𝕏</button>
-                <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
-                <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
-              </div>
+              <div class="partage">${boutonsPartage()}</div>
             </article>`;
           })
           .join('')}</div>`;
@@ -1149,12 +1167,7 @@
                   </div>`
                 : ''
             }
-            <div class="partage">
-              <span class="legende">${mot('partage.titre')}</span>
-              <button class="bouton-partage" data-partage="x" aria-label="X">𝕏</button>
-              <button class="bouton-partage" data-partage="fb" aria-label="Facebook">FB</button>
-              <button class="bouton-partage" data-partage="copie" aria-label="${mot('partage.copier')}">⧉</button>
-            </div>
+            <div class="partage">${boutonsPartage()}</div>
             <h4 class="sous-titre">${mot('projet.derniere')}</h4>
             <div class="boite-activite">
               ${p.derniereActivite ? `<b>${date(p.derniereActivite)}</b>` : ''}
@@ -2315,11 +2328,19 @@
     await charger();
     rendre();
     document.body.classList.add('pret');
-    // Un seul projet ouvert à la fois : en ouvrir un referme celui qui l'était.
+    // Un seul projet ouvert à la fois : en ouvrir un referme celui qui l'était. Ouvert d'un clic,
+    // la page défile pour amener son titre en haut de l'écran (scrollTo direct, comme DQ).
+    let dernierClic = 0;
+    document.addEventListener('click', () => { dernierClic = Date.now(); }, true);
     document.addEventListener('toggle', (e) => {
       const d = e.target;
       if (!d.matches?.('.projet-detail') || !d.open) return;
       document.querySelectorAll('.projet-detail[open]').forEach((x) => { if (x !== d) x.open = false; });
+      const carte = d.closest('.carte-projet');
+      if (carte && Date.now() - dernierClic < 600) {
+        const haut = document.querySelector('.entete')?.offsetHeight ?? 0;
+        window.scrollTo({ top: carte.getBoundingClientRect().top + scrollY - haut - 12, behavior: 'smooth' });
+      }
     }, true);
   });
 })();

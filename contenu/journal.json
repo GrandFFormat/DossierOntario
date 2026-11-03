@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-11-03",
+      "fr": "Chaque projet de loi se partage maintenant sur X, Facebook, LinkedIn, Reddit, Threads ou Bluesky, d’un clic sur le logo du réseau. Ouvrir un projet amène son titre en haut de l’écran.",
+      "en": "Every bill can now be shared on X, Facebook, LinkedIn, Reddit, Threads or Bluesky with one click on the network’s logo. Opening a bill brings its title to the top of the screen."
+    },
+    {
       "date": "2026-10-30",
       "fr": "L’onglet Votes quitte la barre du haut : les votes se lisent dans la carte de chaque projet de loi. La liste complète des votes nominaux, motions comprises, reste accessible depuis le pied de page et la page des projets de loi.",
       "en": "The Votes tab leaves the top bar: votes are now read in each bill’s card. The full list of recorded votes, motions included, is still linked from the footer and the bills page."
