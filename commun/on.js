@@ -206,7 +206,9 @@
       'projet.sansResume': 'No plain-language summary for this bill yet: it is written the morning after a bill is tabled. The official text is on ola.org.',
       'projet.source': 'Read the bill on ola.org', 'projet.votes': 'recorded votes',
       'projet.compteVotes': (n) => `${n} recorded vote${n > 1 ? 's' : ''}`,
-      'projet.boiteVotes': 'Who voted for and against',      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.',
+      'projet.boiteVotes': 'Who voted for and against',
+      'projet.boiteLois': (n) => `Laws and regulations affected (${n})`,
+      'projet.loisNote': 'The list from first reading, as published by the Assembly.',      'projet.avertissement': 'Open a bill to read a plain-language summary, written by AI from the official text and marked as such. The official text itself is on ola.org, one click away.',
       'projet.derniere': 'Last activity',
       'votes.titre': 'Recorded votes', 'votes.pour': 'Ayes', 'votes.contre': 'Nays',
       'votes.resultat': 'Outcome', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -426,7 +428,9 @@
       'projet.sansResume': 'Pas encore de résumé en clair pour ce projet : il s’écrit le matin qui suit son dépôt. Le texte officiel est sur ola.org.',
       'projet.source': 'Lire le projet sur ola.org', 'projet.votes': 'votes nominatifs',
       'projet.compteVotes': (n) => `${n} vote${n > 1 ? 's' : ''} nominati${n > 1 ? 'fs' : 'f'}`,
-      'projet.boiteVotes': 'Qui a voté pour ou contre',      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel. Le texte officiel lui-même est sur ola.org, à un clic.',
+      'projet.boiteVotes': 'Qui a voté pour ou contre',
+      'projet.boiteLois': (n) => `Lois et règlements touchés (${n})`,
+      'projet.loisNote': 'La liste de la première lecture, telle que publiée par l’Assemblée.',      'projet.avertissement': 'Ouvrez un projet pour lire un résumé en langage clair, rédigé par une IA à partir du texte officiel et signalé comme tel. Le texte officiel lui-même est sur ola.org, à un clic.',
       'projet.derniere': 'Dernière activité',
       'votes.titre': 'Votes nominatifs', 'votes.pour': 'Pour', 'votes.contre': 'Contre',
       'votes.resultat': 'Résultat', 'votes.date': 'Date', 'votes.sujet': 'Question',
@@ -1149,6 +1153,7 @@
                  sous le résumé, c'était un mur de prose juridique en double d'une page
                  qu'ola.org publie déjà, à un clic du bouton à droite. -->
             <div class="zone-resume" data-numero="${echapper(p.numero)}"></div>
+            ${caseLois(p)}
             ${caseVotes(p)}
           </div>
           <aside class="projet-cote">
@@ -1189,6 +1194,19 @@
   // titre, sans clic ; les cartes de vote, du plus ancien au plus récent, dessinées comme sur
   // /votes, et les noms chargés seulement à l'ouverture (votes-projets.json).
   const etapeVote = (t) => (t ?? '').replace(/^Vote (on|de la|du|de l’|de l')\s*/i, '').replace(/^./, (c) => c.toUpperCase());
+  // Lois et règlements touchés (7 nov. 2026), la boîte bill-lois de DossierQuébec. Le français
+  // vient de la version française d'ola.org ; sans elle, la liste reste en anglais, balisée telle.
+  function caseLois(p) {
+    const liste = (langue === 'fr' && p.lf) || p.le;
+    if (!liste?.length) return '';
+    const lg = langue === 'fr' && !p.lf ? ' lang="en"' : '';
+    return `<details class="bill-lois">
+      <summary>${mot('projet.boiteLois', liste.length)}</summary>
+      <ul${lg}>${liste.map((l) => `<li>${echapper(l)}</li>`).join('')}</ul>
+      <p class="legende bill-lois-note">${mot('projet.loisNote')}</p>
+    </details>`;
+  }
+
   function caseVotes(p) {
     const r = p.vr;
     if (!r?.n) return '';
@@ -1196,7 +1214,7 @@
     // plusieurs. L'Ontario ne consigne pas d'abstention : deux nombres, dans l'ordre du titre.
     const deuxPoints = langue === 'fr' ? ' :' : ':';
     const suite = r.n > 1 ? ` <span class="legende">(${echapper(etapeVote(selonLangue(r.en, r.fr)))} · ${mot('projet.compteVotes', r.n)})</span>` : '';
-    return `<details class="boite-votes" data-numero="${echapper(p.numero)}">
+    return `<details class="boite-votes bill-votes" data-numero="${echapper(p.numero)}">
       <summary><span class="boite-votes-titre">${mot('projet.boiteVotes')}</span>${deuxPoints} <b>${r.pour} / ${r.contre}</b>${suite}</summary>
       <div class="zone-votes-projet"></div>
     </details>`;
@@ -1310,6 +1328,13 @@
       // charge déjà), et quand on vient de sélectionner du texte pour le copier.
       cible.addEventListener('click', (e) => {
         const carte = e.target.closest?.('.carte-projet');
+        // Comme DQ : un clic dans la liste des lois ne ferme pas la carte ; ailleurs que sur le +
+        // ou un lien, il ouvre ou ferme la liste, et seulement elle.
+        const lois = e.target.closest?.('.bill-lois');
+        if (lois) {
+          if (!e.target.closest('summary, a')) lois.open = !lois.open;
+          return;
+        }
         if (!carte || e.target.closest('a, button, summary, .boite-votes')) return;
         if (String(window.getSelection?.() ?? '').trim()) return;
         const pli = carte.querySelector('.projet-detail');

@@ -99,6 +99,10 @@ function main() {
       premiereLecture: f?.premiereLecture ?? null,
       derniereActivite: f?.derniereActivite ?? null,
       votes: f?.votes?.length ?? 0,
+      // Lois et règlements touchés (7 nov. 2026, comme la boîte bill-lois de DossierQuébec) : la
+      // liste de la première lecture lue par scrapers/bill-details.js. Comme DQ, seulement à
+      // partir de deux textes ; une seule loi touchée est déjà dans le titre.
+      ...((f?.loisTouchees?.length ?? 0) >= 2 ? { le: f.loisTouchees, lf: f.loisToucheesFr?.length ? f.loisToucheesFr : null } : {}),
       // Loi omnibus : combien d'annexes, lu dans la note explicative par scrapers/resumes.js.
       omnibus: resumes?.resumes?.[p.numero]?.en?.omnibus ?? resumes?.resumes?.[p.numero]?.fr?.omnibus ?? 0,
       url: p.url,
