@@ -701,7 +701,8 @@ body:not(.pret) main.colonne{min-height:100vh;}
    dessous, sur toute la largeur. */
 .entete-rang > .onglets{padding:0; margin:0 auto 0 4px; max-width:none; flex:0 1 auto; gap:2px; flex-wrap:nowrap;}
 .entete-rang > .onglets a{padding:6px 9px; white-space:nowrap;}
-@media (max-width:1100px){ .entete-rang > .onglets{order:3; flex-basis:100%; margin:0; flex-wrap:wrap;} }
+/* Le passage des onglets sur une 2e rangée se décide en mesurant (on.js, ajusterBarre), plus à 1100 px fixes. */
+.entete-rang.barre-pliee > .onglets{order:3; flex-basis:100%; margin:0 !important; flex-wrap:wrap;}
 
 /* ---------- Lexique en couleur ----------
    Une teinte par groupe, prise dans la palette du site (rouge de l'Ontario, jaune commun,
@@ -1151,3 +1152,5 @@ a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;
 /* 9 nov. 2026 (Martin) : Cities juste après la feuille d'érable ; les onglets collés à droite, contre les contrôles. */
 .entete-rang > .onglets{margin:0 0 0 auto !important; justify-content:flex-end;}
 .marque .villes-menu{margin-left:4px;}
+/* 9 nov. 2026 (Martin) : onglets plus serrés, pour que la barre reste sur une rangée plus longtemps. */
+.entete-rang > .onglets a{margin:0 5px !important;}

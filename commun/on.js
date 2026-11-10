@@ -550,6 +550,20 @@
   };
 
   // ---------------------------------------------------------------- en-tête
+  // La barre du haut reste sur une rangée tant que logo, onglets et contrôles y tiennent
+  // vraiment (mesuré, dans la langue affichée) ; sinon les onglets passent dessous.
+  function ajusterBarre() {
+    const rang = document.querySelector('.entete-rang');
+    if (!rang) return;
+    rang.classList.remove('barre-pliee');
+    const st = getComputedStyle(rang);
+    const dispo = rang.clientWidth - parseFloat(st.paddingLeft) - parseFloat(st.paddingRight);
+    const enfants = [...rang.children];
+    const besoin = enfants.reduce((n, e) => n + e.scrollWidth, 0) + parseFloat(st.columnGap || 0) * (enfants.length - 1);
+    rang.classList.toggle('barre-pliee', besoin > dispo);
+  }
+  window.addEventListener('resize', ajusterBarre, { passive: true });
+
   function appliquerLangue() {
     document.documentElement.lang = langue;
     document.querySelectorAll('[data-i18n]').forEach((el) => {
@@ -565,6 +579,7 @@
     document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
       el.placeholder = mot(el.getAttribute('data-i18n-placeholder'));
     });
+    ajusterBarre();
   }
 
   function poserEntete() {
