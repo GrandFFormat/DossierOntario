@@ -1154,3 +1154,10 @@ a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;
 .marque .villes-menu{margin-left:4px;}
 /* 9 nov. 2026 (Martin) : onglets plus serrés, pour que la barre reste sur une rangée plus longtemps. */
 .entete-rang > .onglets a{margin:0 5px !important;}
+/* 9 nov. 2026 (Martin) : A−, 100 %, A+, thème et langue plus serrés aussi. */
+.controles{gap:2px !important;}
+.controles > *{padding:0 4px !important;}
+.groupe-taille{gap:0 !important; padding:0 !important;}
+.groupe-taille button{padding:0 4px !important;}
+.niveau-taille{min-width:30px !important;}
+.controles > .bouton-theme{width:28px !important;}
