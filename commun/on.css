@@ -1148,3 +1148,6 @@ a.numero{text-decoration:none;} .lien-titre{color:inherit; text-decoration:none;
 .onglets .onglet-villes summary::after{content:""; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid currentColor; opacity:.7;}
 .onglets .onglet-villes summary:hover, .onglets .onglet-villes[open] summary{color:var(--rouge);}
 .onglets .onglet-villes ul{left:0; right:auto;}
+/* 9 nov. 2026 (Martin) : Cities juste après la feuille d'érable ; les onglets collés à droite, contre les contrôles. */
+.entete-rang > .onglets{margin:0 0 0 auto !important; justify-content:flex-end;}
+.marque .villes-menu{margin-left:4px;}
