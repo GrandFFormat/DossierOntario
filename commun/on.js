@@ -2142,7 +2142,7 @@
       return `<article class="carte carte-depute">
         <div class="depute-tete"><span class="pastille pastille-parti" title="${echapper(parti)}" style="background:${echapper(m.couleurParti ?? '#8B8578')};
           border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span>${actions(m)}</div>
-        <h3 class="depute-nom">${m.ministreEn ? `<a href="/minister/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : `<a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a>`}</h3>
+        <h3 class="depute-nom">${CHEFS.includes(m.identifiant) ? `<a href="/leader/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : m.ministreEn ? `<a href="/minister/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : `<a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a>`}</h3>
         ${m.ministreEn ? `<p class="depute-role">${echapper(selonLangue(m.ministreEn, m.ministreFr))}</p>` : ''}
         ${m.adjointEn ? `<p class="depute-role depute-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
         <dl class="depute-faits">
@@ -2171,7 +2171,10 @@
     let tri = null;
     let derniereRecherche = '';
     // Sans vote (n/d) : toujours à la fin, dans les deux sens.
-    const trier = (l) => (tri ? [...l].sort((x, y) => (taux(x) === null) - (taux(y) === null) || (taux(x) - taux(y)) * (tri === 'asc' ? 1 : -1)) : l);
+    // Les chef·fe·s des partis d'opposition en tête, comme sur DossierQuébec (opposition officielle d'abord).
+    const CHEFS = ['marit-stiles', 'john-fraser', 'mike-schreiner'];
+    const rangChef = (m) => (CHEFS.indexOf(m.identifiant) + 1) || 99;
+    const trier = (l) => (tri ? [...l].sort((x, y) => (taux(x) === null) - (taux(y) === null) || (taux(x) - taux(y)) * (tri === 'asc' ? 1 : -1)) : [...l].sort((x, y) => rangChef(x) - rangChef(y)));
     const dessiner = (q = '') => {
       derniereRecherche = q;
       // « 90+ » : présence aux votes de 90 % et plus ; « 60- » : 60 % et moins.

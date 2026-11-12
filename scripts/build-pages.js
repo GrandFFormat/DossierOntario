@@ -420,6 +420,7 @@ const nomReseau = (u) => [[/\/\/x\.com|twitter/, 'X'], [/facebook/, 'Facebook'],
 // Sans identifiant ola.org (la secrétaire du Conseil, fonctionnaire hors Assemblée) : pas de fiche.
 const ministresOn = (JSON.parse(readFileSync('data/ministers.json', 'utf8')).ministres ?? []).filter((m) => m.identifiant);
 const deputesOn = JSON.parse(readFileSync('data/site/members.json', 'utf8')).deputes ?? [];
+const chefsOn = existsSync('data/site/chefs.json') ? JSON.parse(readFileSync('data/site/chefs.json', 'utf8')) : { chefs: [], gouvernement: {} };
 const reseauxOn = existsSync('data/site/ministresReseaux.json') ? JSON.parse(readFileSync('data/site/ministresReseaux.json', 'utf8')) : {};
 const sansHon = (s) => String(s).replace(/\bHon\.\s*/g, '').trim();
 const normNom = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
@@ -444,6 +445,7 @@ for (const m of ministresOn) {
   <section data-vue="ministre" class="min-fiche">
     <article class="carte">
       <p class="depute-role">${deux(echapperHtml(m.titreEn), echapperHtml(m.titreFr))}</p>
+      ${chefsOn.gouvernement?.[m.identifiant] ? `<p class="depute-role">${deux(echapperHtml(chefsOn.gouvernement[m.identifiant].roleEn), echapperHtml(chefsOn.gouvernement[m.identifiant].roleFr))}</p>` : ''}
       ${res.length ? `<p class="min-reseaux">${res.map((u) => `<a href="${echapperHtml(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] ?? nomReseau(u)}</a>`).join('')}</p>` : ''}
       <dl class="depute-faits">
         ${d.parti ? ligne('Party', 'Parti', deux(echapperHtml(d.parti), echapperHtml(d.partiFr ?? d.parti))) : ''}
@@ -485,10 +487,73 @@ for (const page of PAGES_MINISTRES) {
 }
 console.log(`${PAGES_MINISTRES.length} pages de ministres dans minister/`);
 
+// ---------------------------------------------------------------- une page par chef de parti
+// /leader/<identifiant> (11 nov. 2026) : chef·fe·s des partis d'opposition (data/site/chefs.json,
+// source de la fonction et des réseaux notée). Même fiche que celle d'un ministre.
+mkdirSync('leader', { recursive: true });
+for (const vieux of readdirSync('leader')) if (vieux.endsWith('.html')) unlinkSync(`leader/${vieux}`);
+const PAGES_CHEFS = [];
+for (const c of chefsOn.chefs ?? []) {
+  const d = deputesOn.find((x) => x.identifiant === c.identifiant);
+  if (!d) continue;
+  const fichier = `leader/${c.identifiant}.html`;
+  const url = `https://dossierontario.ca/${adressePropre(fichier)}`;
+  const nom = d.nom.replace(/^Hon\.\s+/, '');
+  const projets = projetsSite.filter((p) => (p.parrains ?? []).some((x) => parrainNorme(x) === normNom(nom)));
+  const presence = d.votesTenus ? `${Math.round((d.votesExprimes / d.votesTenus) * 100)}% (${d.votesExprimes}/${d.votesTenus})` : null;
+  const res = c.reseaux ?? [];
+  const ligne = (en, fr, valeur) => `<div><dt>${deux(en, fr)}</dt><dd>${valeur}</dd></div>`;
+  const contenu = `  <p class="fil"><a href="/mpps">${deux('← MPPs and cabinet', '← Député·e·s et Conseil des ministres')}</a></p>
+  <h1 class="titre-vue">${echapperHtml(nom)}</h1>
+  <section data-vue="chef" class="min-fiche">
+    <article class="carte">
+      <p class="depute-role">${deux(echapperHtml(c.roleEn), echapperHtml(c.roleFr))}</p>
+      ${res.length ? `<p class="min-reseaux">${res.map((u) => `<a href="${echapperHtml(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] ?? nomReseau(u)}</a>`).join('')}</p>` : ''}
+      <dl class="depute-faits">
+        ${ligne('Party', 'Parti', deux(echapperHtml(d.parti), echapperHtml(d.partiFr ?? d.parti)))}
+        ${ligne('Riding', 'Circonscription', deux(echapperHtml(d.circonscription), echapperHtml(d.circonscriptionFr ?? d.circonscription)))}
+        ${presence ? ligne('Recorded-vote attendance', 'Présence aux votes nominaux', echapperHtml(presence)) : ''}
+      </dl>
+      <h2 class="titre-case">${deux('Bills sponsored', 'Projets de loi parrainés')}</h2>
+      ${projets.length ? `<ul class="min-liste">${projets.map((p) => `<li><a href="/bill/${slug(p.numero)}">${deux(`Bill ${echapperHtml(p.numero)}`, `Projet de loi ${echapperHtml(p.numero)}`)}</a> — ${deux(echapperHtml(p.titreEn), echapperHtml(p.titreFr ?? p.titreEn))}</li>`).join('')}</ul>` : `<p>${deux('No bill sponsored in this session.', 'Aucun projet de loi parrainé pendant cette session.')}</p>`}
+      <h2 class="titre-case">${deux('Official links', 'Liens officiels')}</h2>
+      <ul class="min-liste">
+        <li><a href="${echapperHtml(d.url)}" rel="noopener">${deux('Profile on ola.org', 'Fiche sur ola.org')}</a></li>
+        <li><a href="${echapperHtml(c.source)}" rel="noopener">${deux('Party page', 'Page du parti')}</a></li>
+        ${d.courriel ? `<li><a href="mailto:${echapperHtml(d.courriel)}">${echapperHtml(d.courriel)}</a></li>` : ''}
+      </ul>
+    </article>
+  </section>`;
+  const ld = { '@context': 'https://schema.org', '@graph': [
+    { '@type': 'Person', name: nom, url, jobTitle: c.roleEn, affiliation: { '@type': 'PoliticalParty', name: d.parti }, sameAs: [d.url, ...res] },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'DossierOntario', item: 'https://dossierontario.ca/' },
+      { '@type': 'ListItem', position: 2, name: 'MPPs and cabinet', item: 'https://dossierontario.ca/mpps' },
+      { '@type': 'ListItem', position: 3, name: nom, item: url } ] } ] };
+  PAGES_CHEFS.push({ fichier, titre: `${nom}, ${c.roleEn.length + nom.length > 50 ? 'party leader' : c.roleEn}`, description: `${nom} (${d.circonscription}): ${c.roleEn}. Bills sponsored, voting attendance, official links and social media.`, contenu, ld });
+}
+for (const page of PAGES_CHEFS) {
+  const html = modele
+    .replace(/\{\{TITRE\}\}/g, () => echapperHtml(page.titre))
+    .replace(/\{\{DESCRIPTION\}\}/g, () => echapperHtml(page.description))
+    .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
+    .replace(/\{\{VUE\}\}/g, 'chef')
+    .replace(/\{\{DONNEES\}\}/g, 'apercu')
+    .replace(/\{\{BANDES\}\}/g, '')
+    .replace(/\{\{BANDES_BAS\}\}/g, '')
+    .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
+    .replace(/(href|src)="\/(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="/${chemin}?v=${VERSIONS[chemin]}"`)
+    .replace(/\{\{ACTIF_deputes\}\}/g, 'actif')
+    .replace(/\{\{ACTIF_[a-z]+\}\}/g, '')
+    .replace('</head>', () => `<script type="application/ld+json">\n${JSON.stringify(page.ld, null, 2).replace(/</g, '\\u003c')}\n</script>\n</head>`);
+  writeFileSync(page.fichier, html);
+}
+console.log(`${PAGES_CHEFS.length} pages de chefs dans leader/`);
+
 // Le plan du site, pour que Google trouve les six pages (leçon de DossierQuébec).
 const plan = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES].map(
+${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES, ...PAGES_CHEFS].map(
   (p) => `  <url><loc>https://dossierontario.ca/${adressePropre(p.fichier)}</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`
 ).join('\n')}

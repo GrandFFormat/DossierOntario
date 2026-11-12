@@ -1,0 +1,40 @@
+{
+ "_note": "Chef·fe·s des partis à l'Assemblée (11 nov. 2026). Source de la fonction et des réseaux notée pour chacun. Le premier ministre garde sa fiche de ministre (mention de chef ajoutée).",
+ "chefs": [
+  {
+   "identifiant": "marit-stiles",
+   "roleEn": "Leader of the Official Opposition and of the Ontario NDP",
+   "roleFr": "Cheffe de l'opposition officielle et du NPD de l'Ontario",
+   "source": "https://www.ontariondp.ca/marit",
+   "reseaux": [],
+   "reseauxSource": null
+  },
+  {
+   "identifiant": "john-fraser",
+   "roleEn": "Interim Leader of the Ontario Liberal Party",
+   "roleFr": "Chef intérimaire du Parti libéral de l'Ontario",
+   "source": "https://ontarioliberal.ca/ontario-liberal-party-confirms-john-fraser-as-interim-leader/",
+   "reseaux": [],
+   "reseauxSource": null
+  },
+  {
+   "identifiant": "mike-schreiner",
+   "roleEn": "Leader of the Green Party of Ontario",
+   "roleFr": "Chef du Parti vert de l'Ontario",
+   "source": "https://gpo.ca/mike-schreiner/",
+   "reseaux": [
+    "https://www.facebook.com/mike.schreiner",
+    "https://www.instagram.com/mikeschreinergpo",
+    "https://x.com/mikeschreiner"
+   ],
+   "reseauxSource": "https://gpo.ca/mike-schreiner/"
+  }
+ ],
+ "gouvernement": {
+  "doug-ford": {
+   "roleEn": "Leader of the Progressive Conservative Party of Ontario",
+   "roleFr": "Chef du Parti progressiste-conservateur de l'Ontario",
+   "source": "https://www.ontario.ca/page/premier"
+  }
+ }
+}
