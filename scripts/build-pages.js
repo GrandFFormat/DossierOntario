@@ -409,9 +409,8 @@ console.log(`${PAGES_PROJETS.length} pages de projets de loi dans bill/`);
 // Person en données structurées, sitemap. Texte anglais par défaut, français basculé par
 // html[lang] (.fr-txt / .en-txt, commun/on.css).
 // Réseaux sociaux : data/site/ministresReseaux.json, relevés sur une source officielle
-// seulement (source de chaque lien dans ministresReseaux-sources.json). Aucune source
-// officielle lisible le 11 nov. 2026 (ola.org refuse les lecteurs automatiques, ontariopc.ca
-// n'en publie pas) : le fichier est vide, rien n'est deviné.
+// seulement : le site de circonscription du ministre (11 nov. 2026). Source de chaque lien
+// dans ministresReseaux-sources.json. Rien n'est deviné : un nom affiché sans lien ne compte pas.
 // Pas de photo : les portraits d'ola.org ne sont pas sous licence ouverte.
 const deux = (en, fr) => `<span class="en-txt">${en}</span><span class="fr-txt">${fr}</span>`;
 const ICONES_RESEAUX = {
