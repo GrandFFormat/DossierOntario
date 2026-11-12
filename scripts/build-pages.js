@@ -418,7 +418,8 @@ const ICONES_RESEAUX = {
   Facebook: 'f', X: 'X', Instagram: 'IG', LinkedIn: 'in', YouTube: 'YT', TikTok: 'TT',
 };
 const nomReseau = (u) => [[/\/\/x\.com|twitter/, 'X'], [/facebook/, 'Facebook'], [/instagram/, 'Instagram'], [/linkedin/, 'LinkedIn'], [/youtube/, 'YouTube'], [/tiktok/, 'TikTok']].find(([r]) => r.test(u))?.[1] || 'Web';
-const ministresOn = JSON.parse(readFileSync('data/ministers.json', 'utf8')).ministres ?? [];
+// Sans identifiant ola.org (la secrétaire du Conseil, fonctionnaire hors Assemblée) : pas de fiche.
+const ministresOn = (JSON.parse(readFileSync('data/ministers.json', 'utf8')).ministres ?? []).filter((m) => m.identifiant);
 const deputesOn = JSON.parse(readFileSync('data/site/members.json', 'utf8')).deputes ?? [];
 const reseauxOn = existsSync('data/site/ministresReseaux.json') ? JSON.parse(readFileSync('data/site/ministresReseaux.json', 'utf8')) : {};
 const sansHon = (s) => String(s).replace(/\bHon\.\s*/g, '').trim();
