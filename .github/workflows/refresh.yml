@@ -12,9 +12,8 @@
 name: Rafraîchir les données
 
 on:
-  # EN PAUSE jusqu'au 18 nov. 2026 (limite Vercel de Martin, 7 nov.) : remettre les 3 lignes ci-dessous.
-  # schedule:
-    # - cron: '0 11 * * 1' # 7 h (heure de l'Est), le lundi seulement (décision de Martin, 24 oct. 2026)
+  schedule:
+    - cron: '0 11 * * 1' # 7 h (heure de l'Est), le lundi seulement (décision de Martin, 24 oct. 2026)
   workflow_dispatch:
 
 permissions:
