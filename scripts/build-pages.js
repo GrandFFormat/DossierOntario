@@ -403,10 +403,92 @@ for (const page of PAGES_PROJETS) {
 }
 console.log(`${PAGES_PROJETS.length} pages de projets de loi dans bill/`);
 
+// ---------------------------------------------------------------- une page par ministre
+// /minister/<identifiant> (11 nov. 2026), même mécanique que DossierQuébec : fonctions,
+// parti, circonscription, projets de loi parrainés, présence aux votes, coordonnées,
+// Person en données structurées, sitemap. Texte anglais par défaut, français basculé par
+// html[lang] (.fr-txt / .en-txt, commun/on.css).
+// Réseaux sociaux : data/site/ministresReseaux.json, relevés sur une source officielle
+// seulement (source de chaque lien dans ministresReseaux-sources.json). Aucune source
+// officielle lisible le 11 nov. 2026 (ola.org refuse les lecteurs automatiques, ontariopc.ca
+// n'en publie pas) : le fichier est vide, rien n'est deviné.
+// Pas de photo : les portraits d'ola.org ne sont pas sous licence ouverte.
+const deux = (en, fr) => `<span class="en-txt">${en}</span><span class="fr-txt">${fr}</span>`;
+const ICONES_RESEAUX = {
+  Facebook: 'f', X: 'X', Instagram: 'IG', LinkedIn: 'in', YouTube: 'YT', TikTok: 'TT',
+};
+const nomReseau = (u) => [[/\/\/x\.com|twitter/, 'X'], [/facebook/, 'Facebook'], [/instagram/, 'Instagram'], [/linkedin/, 'LinkedIn'], [/youtube/, 'YouTube'], [/tiktok/, 'TikTok']].find(([r]) => r.test(u))?.[1] || 'Web';
+const ministresOn = JSON.parse(readFileSync('data/ministers.json', 'utf8')).ministres ?? [];
+const deputesOn = JSON.parse(readFileSync('data/site/members.json', 'utf8')).deputes ?? [];
+const reseauxOn = existsSync('data/site/ministresReseaux.json') ? JSON.parse(readFileSync('data/site/ministresReseaux.json', 'utf8')) : {};
+const sansHon = (s) => String(s).replace(/\bHon\.\s*/g, '').trim();
+const normNom = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
+// « Ford, Hon. Doug » → « dougford »
+const parrainNorme = (p) => { const [nom, prenom] = sansHon(p).split(','); return normNom(`${prenom ?? ''}${nom}`); };
+mkdirSync('minister', { recursive: true });
+for (const vieux of readdirSync('minister')) if (vieux.endsWith('.html')) unlinkSync(`minister/${vieux}`);
+const PAGES_MINISTRES = [];
+for (const m of ministresOn) {
+  const d = deputesOn.find((x) => x.identifiant === m.identifiant) ?? {};
+  const fichier = `minister/${m.identifiant}.html`;
+  const url = `https://dossierontario.ca/${adressePropre(fichier)}`;
+  const projets = projetsSite.filter((p) => (p.parrains ?? []).some((x) => parrainNorme(x) === normNom(m.nom)));
+  const res = reseauxOn[m.identifiant] ?? [];
+  const presence = d.votesTenus ? `${Math.round((d.votesExprimes / d.votesTenus) * 100)}% (${d.votesExprimes}/${d.votesTenus})` : null;
+  const titreEn = m.titreEn.split(';')[0];
+  const titre = `${m.nom}, ${titreEn.length + m.nom.length > 50 ? 'Ontario minister' : titreEn}`;
+  const description = `${m.nom}${d.circonscription ? ` (${d.circonscription})` : ''}: ${m.titreEn}. Bills sponsored, voting attendance and official contact details.`.slice(0, 300);
+  const ligne = (en, fr, valeur) => `<div><dt>${deux(en, fr)}</dt><dd>${valeur}</dd></div>`;
+  const contenu = `  <p class="fil"><a href="/mpps#cabinet">${deux('← MPPs and cabinet', '← Député·e·s et Conseil des ministres')}</a></p>
+  <h1 class="titre-vue">${echapperHtml(m.nom)}</h1>
+  <section data-vue="ministre" class="min-fiche">
+    <article class="carte">
+      <p class="depute-role">${deux(echapperHtml(m.titreEn), echapperHtml(m.titreFr))}</p>
+      ${res.length ? `<p class="min-reseaux">${res.map((u) => `<a href="${echapperHtml(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] ?? nomReseau(u)}</a>`).join('')}</p>` : ''}
+      <dl class="depute-faits">
+        ${d.parti ? ligne('Party', 'Parti', deux(echapperHtml(d.parti), echapperHtml(d.partiFr ?? d.parti))) : ''}
+        ${d.circonscription ? ligne('Riding', 'Circonscription', deux(echapperHtml(d.circonscription), echapperHtml(d.circonscriptionFr ?? d.circonscription))) : ''}
+        ${presence ? ligne('Recorded-vote attendance', 'Présence aux votes nominaux', echapperHtml(presence)) : ''}
+      </dl>
+      <h2 class="titre-case">${deux('Bills sponsored', 'Projets de loi parrainés')}</h2>
+      ${projets.length ? `<ul class="min-liste">${projets.map((p) => `<li><a href="/bill/${slug(p.numero)}">${deux(`Bill ${echapperHtml(p.numero)}`, `Projet de loi ${echapperHtml(p.numero)}`)}</a> — ${deux(echapperHtml(p.titreEn), echapperHtml(p.titreFr ?? p.titreEn))}</li>`).join('')}</ul>` : `<p>${deux('No bill sponsored in this session.', 'Aucun projet de loi parrainé pendant cette session.')}</p>`}
+      <h2 class="titre-case">${deux('Official links', 'Liens officiels')}</h2>
+      <ul class="min-liste">
+        <li><a href="${echapperHtml(m.url)}" rel="noopener">${deux('Profile on ola.org', 'Fiche sur ola.org')}</a></li>
+        ${d.courriel ? `<li><a href="mailto:${echapperHtml(d.courriel)}">${echapperHtml(d.courriel)}</a></li>` : ''}
+      </ul>
+    </article>
+  </section>`;
+  const ld = { '@context': 'https://schema.org', '@graph': [
+    { '@type': 'Person', name: m.nom, url, jobTitle: m.titreEn, ...(d.parti ? { affiliation: { '@type': 'PoliticalParty', name: d.parti } } : {}), sameAs: [m.url, ...res] },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'DossierOntario', item: 'https://dossierontario.ca/' },
+      { '@type': 'ListItem', position: 2, name: 'MPPs and cabinet', item: 'https://dossierontario.ca/mpps' },
+      { '@type': 'ListItem', position: 3, name: m.nom, item: url } ] } ] };
+  PAGES_MINISTRES.push({ fichier, titre, description, contenu, ld });
+}
+for (const page of PAGES_MINISTRES) {
+  const html = modele
+    .replace(/\{\{TITRE\}\}/g, () => echapperHtml(page.titre))
+    .replace(/\{\{DESCRIPTION\}\}/g, () => echapperHtml(page.description))
+    .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
+    .replace(/\{\{VUE\}\}/g, 'ministre')
+    .replace(/\{\{DONNEES\}\}/g, 'apercu')
+    .replace(/\{\{BANDES\}\}/g, '')
+    .replace(/\{\{BANDES_BAS\}\}/g, '')
+    .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
+    .replace(/(href|src)="\/(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="/${chemin}?v=${VERSIONS[chemin]}"`)
+    .replace(/\{\{ACTIF_deputes\}\}/g, 'actif')
+    .replace(/\{\{ACTIF_[a-z]+\}\}/g, '')
+    .replace('</head>', () => `<script type="application/ld+json">\n${JSON.stringify(page.ld, null, 2).replace(/</g, '\\u003c')}\n</script>\n</head>`);
+  writeFileSync(page.fichier, html);
+}
+console.log(`${PAGES_MINISTRES.length} pages de ministres dans minister/`);
+
 // Le plan du site, pour que Google trouve les six pages (leçon de DossierQuébec).
 const plan = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS].map(
+${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES].map(
   (p) => `  <url><loc>https://dossierontario.ca/${adressePropre(p.fichier)}</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`
 ).join('\n')}

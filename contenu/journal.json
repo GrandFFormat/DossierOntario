@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-11-11",
+      "fr": "Chacun des 39 ministres a maintenant sa page : fonctions, parti, circonscription, projets de loi parrainés, présence aux votes et coordonnées officielles. Le nom sur la page Député·e·s et Conseil des ministres y mène.",
+      "en": "Each of the 39 ministers now has a page: roles, party, riding, bills sponsored, voting attendance and official contact details. The name on the MPPs and cabinet page leads to it."
+    },
+    {
       "date": "2026-11-03",
       "fr": "Chaque projet de loi se partage maintenant sur X, Facebook, LinkedIn, Reddit, Threads ou Bluesky, d’un clic sur le logo du réseau. Ouvrir un projet amène son titre en haut de l’écran.",
       "en": "Every bill can now be shared on X, Facebook, LinkedIn, Reddit, Threads or Bluesky with one click on the network’s logo. Opening a bill brings its title to the top of the screen."
