@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil : la bande des projets challengés passe au rouge.",
+      "en": "Home page: the band of challenged bills is now red."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil : un encadré sur les pétitions (signées à l’encre en Ontario, comparées au Québec et à Ottawa) remplace le bloc des pétitions, et la mission n’apparaît plus qu’une fois, dans la bande rouge.",
       "en": "Home page: a box on petitions (signed in ink in Ontario, compared with Quebec and Ottawa) replaces the petitions block, and the mission now appears only once, in the red band."
     },
