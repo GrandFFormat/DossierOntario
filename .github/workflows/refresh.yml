@@ -89,6 +89,13 @@ jobs:
         continue-on-error: true
         run: npm run resumes -- --batch
 
+      # Les résumés des séances de la Chambre (scrapers/hansard-resumes.js), comme sur DossierBC :
+      # seulement les journées pas encore résumées, environ 0,20 $ US chacune.
+      - name: Résumer les séances de la Chambre
+        if: env.ANTHROPIC_API_KEY != ''
+        continue-on-error: true
+        run: node scrapers/hansard-resumes.js
+
       - name: Préparer les données du site et les pages
         run: npm run build
 

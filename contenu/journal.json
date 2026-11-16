@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil : « Dernières activités à l’Assemblée », le résumé des trois dernières séances de la Chambre, écrit à partir du Hansard officiel, avec qui a parlé et un lien vers la transcription.",
+      "en": "Home page: “Latest at the Legislature”, a summary of the last three House sittings written from the official Hansard, with who spoke and a link to the transcript."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil : un seul rouge, plus foncé, sur tout le site, et les quatre termes du lexique retirés de l’accueil (le lexique complet reste dans le menu).",
       "en": "Home page: one darker red across the whole site, and the four glossary terms removed from the home page (the full glossary stays in the menu)."
     },
