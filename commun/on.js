@@ -1202,6 +1202,7 @@
         .slice(0, 4)
         .map((p) => carteProjet(p, true))
         .join('');
+      ouvrirPremiere(liste);
     };
     dessiner();
     zone.hidden = false;
@@ -1530,6 +1531,13 @@
   // Branche une zone qui contient des cartes de projet (page des projets, accueil) : le
   // résumé au premier pli, le clic n'importe où sur la carte, et ses boutons. Une seule fois
   // par zone ; `redessiner` refait la liste après un challenge ou une déconnexion.
+  // La première carte visible (hors d'un groupe fermé) est ouverte d'office (Martin, 16 nov. 2026).
+  function ouvrirPremiere(cible) {
+    const c = [...cible.querySelectorAll('.carte-projet .projet-detail')]
+      .find((d) => !d.closest('.carte-projet').parentElement.closest('details:not([open])'));
+    if (c) c.open = true;
+  }
+
   function brancherCartes(cible, projets, redessiner) {
     // « toggle » ne remonte pas dans le DOM : on l'écoute en phase de capture, une seule fois
     // pour toute la section, même si la vue est redessinée (changement de langue, filtres).
@@ -1648,7 +1656,7 @@
         ? (DEFI.comptes.get(String(p.numero)) ?? 0) > 0
         : f === 'sanctionne' ? p.etape === 5 : f === 'encours' ? p.etape < 5 : p.typeProjet === f);
 
-    const dessiner = () => {
+    const dessinerBase = () => {
       // Le compte du filtre « 🔥 Challenged » suit les demandes qu'on ajoute ou retire.
       const puceDefis = cible.querySelector('[data-filtre="defis"]');
       if (puceDefis && !puceDefis.hidden) puceDefis.querySelector('.compte').textContent = projets.filter((p) => retenu(p, 'defis')).length;
@@ -1708,6 +1716,8 @@
             .join('')
         : `<p class="courant">${mot('projets.aucun')}</p>`;
     };
+    // Martin, 16 nov. 2026 : la première carte visible est toujours ouverte.
+    const dessiner = () => { dessinerBase(); ouvrirPremiere(cible); };
 
     // Chaque filtre annonce combien de projets il montrera : on ne clique pas à l'aveugle.
     const filtres = ['tous', 'gouvernement', 'depute', 'prive', 'sanctionne', 'encours']

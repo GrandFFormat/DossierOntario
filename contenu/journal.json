@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Projets de loi : la première carte est ouverte d’office, sur l’accueil et dans la page des projets de loi.",
+      "en": "Bills: the first card is open by default, on the home page and on the bills page."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil : « Dernières activités à l’Assemblée », le résumé des trois dernières séances de la Chambre, écrit à partir du Hansard officiel, avec qui a parlé et un lien vers la transcription.",
       "en": "Home page: “Latest at the Legislature”, a summary of the last three House sittings written from the official Hansard, with who spoke and a link to the transcript."
     },
