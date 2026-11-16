@@ -70,7 +70,7 @@
       'entete.langue': 'Français', 'entete.theme': 'Theme', 'entete.plus': 'A+', 'entete.moins': 'A−',
       'pied.nonOfficiel': 'Unofficial site — not affiliated with the Legislative Assembly of Ontario',
       'pied.sources': 'Public data from the Legislative Assembly of Ontario (ola.org) and the Ontario Data Catalogue',
-      'pied.gratuit': 'Free, no advertising.', 'haut.titre': 'Back to top',
+      'pied.gratuit': 'Free, no advertising.', 'haut.titre': 'Go to the top of the page',
       'pied.maj': 'Data read on',
       'chiffre.projets': 'public bills', 'chiffre.sanctionnes': 'became law',
       'chiffre.votes': 'recorded votes', 'chiffre.deputes': 'seats',
