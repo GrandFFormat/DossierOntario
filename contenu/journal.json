@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Représentez votre ville : les villes de l’Ontario de plus de 40 000 habitants et leur prix par mois, avec la population du recensement de 2021 et, en couleur, ce que disent les conditions d’utilisation du site de chaque ville.",
+      "en": "Represent your city: Ontario cities over 40,000 and their monthly price, with the 2021 Census population and, in colour, what each city’s website terms of use say."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Le volet Ottawa est maintenant ouvert aux moteurs de recherche : ses huit pages sont au plan du site et peuvent apparaître dans Google.",
       "en": "The Ottawa section is now open to search engines: its eight pages are in the sitemap and can appear in Google."
     },

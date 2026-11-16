@@ -37,7 +37,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
 <link rel="stylesheet" href="/commun/on.css?v=31f9ee6158">
-<script src="/commun/on.js?v=03cb0ed3c8" defer></script>
+<script src="/commun/on.js?v=33ddc97429" defer></script>
 </head>
 <body data-vue="represente" data-donnees="apercu">
 
@@ -129,6 +129,14 @@
   .page-rtv .rtv-inconnu td{background:var(--bc-gris-fond); color:#17202b;}
   .page-rtv .rtv-legende{margin:18px 0 0; padding:14px 16px; border:1px solid var(--bc-filet);}
   .page-rtv .rtv-legende ul{margin:0; padding:0; list-style:none;}
+  .page-rtv .rtv-legende-titre{margin:0 0 10px; font-weight:700; font-size:11px; letter-spacing:.14em; text-transform:uppercase;}
+  .page-rtv .rtv-legende li{position:relative; padding:0 0 0 24px; margin:0 0 8px; font-size:13.5px; line-height:1.55;}
+  .page-rtv .rtv-legende li::before{content:""; position:absolute; left:0; top:4px; width:12px; height:12px; border:1px solid var(--bc-filet);}
+  .page-rtv .rtv-villes{border-collapse:collapse; margin:0 0 12px; font-size:15px; width:100%;}
+  .page-rtv .rtv-villes th, .page-rtv .rtv-villes td{padding:5px 10px 5px 0; border-bottom:1px solid var(--line, #ddd); text-align:left;}
+  .page-rtv .rtv-villes td:nth-child(3), .page-rtv .rtv-villes td:nth-child(4){text-align:right;}
+  .page-rtv .rtv-villes-plus{margin:0 0 12px;}
+  .page-rtv .rtv-villes-plus summary, .page-rtv .rtv-menu-titre{cursor:pointer; font-weight:700;}
   .page-rtv .rtv-legende li:last-child{margin-bottom:0;}
   .page-rtv .rtv-l-rouge::before{background:var(--bc-rouge); border-color:var(--bc-rouge) !important;}
   .page-rtv .rtv-l-jaune::before{background:var(--bc-jaune-fond);}
@@ -168,6 +176,90 @@
           <tr><td><span class="en-txt">500,000 to 1 million people</span><span class="fr-txt">De 500 000 à 1 million</span></td><td><span class="en-txt">$300</span><span class="fr-txt">300 $</span></td></tr>
           <tr><td><span class="en-txt">Over 1 million people</span><span class="fr-txt">Plus d'un million</span></td><td><span class="en-txt">$500</span><span class="fr-txt">500 $</span></td></tr>
         </table>
+        </details>
+
+        <details class="rtv-menu"><summary class="rtv-menu-titre"><span class="en-txt">Ontario cities and their prices</span><span class="fr-txt">Les villes de l’Ontario et leurs prix</span></summary>
+        <p class="rtv-villes-titre"><b class="en-txt">Every municipality over 50,000</b><b class="fr-txt">Toutes les municipalités de plus de 50 000</b>
+          <span class="rtv-archaique-legende"><span class="en-txt">In red: the city’s own website turns automated reading away. We do not get around that.</span><span class="fr-txt">En rouge : le site de la Ville refuse la lecture automatisée. On ne contourne pas.</span></span></p>
+        <table class="rtv-villes">
+          <tr><th>#</th><th><span class="en-txt">City</span><span class="fr-txt">Ville</span></th><th><span class="en-txt">Population (2021)</span><span class="fr-txt">Population (2021)</span></th><th><span class="en-txt">Price per month</span><span class="fr-txt">Prix par mois</span></th></tr>
+          <tr class="rtv-bloquee"><td>1</td><td>Toronto</td><td><span class="en-txt">2,794,356</span><span class="fr-txt">2 794 356</span></td><td><span class="en-txt">$500</span><span class="fr-txt">500 $</span></td></tr>
+          <tr><td>2</td><td>Ottawa <span class="pr-meta">(<a class="rtv-lien" href="/ottawa/"><span class="en-txt">on the site</span><span class="fr-txt">déjà sur le site</span></a>)</span></td><td><span class="en-txt">1,017,449</span><span class="fr-txt">1 017 449</span></td><td><span class="en-txt">$500</span><span class="fr-txt">500 $</span></td></tr>
+          <tr class="rtv-permission"><td>3</td><td>Mississauga</td><td><span class="en-txt">717,961</span><span class="fr-txt">717 961</span></td><td><span class="en-txt">$300</span><span class="fr-txt">300 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>4</td><td>Brampton</td><td><span class="en-txt">656,480</span><span class="fr-txt">656 480</span></td><td><span class="en-txt">$300</span><span class="fr-txt">300 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>5</td><td>Hamilton</td><td><span class="en-txt">569,353</span><span class="fr-txt">569 353</span></td><td><span class="en-txt">$300</span><span class="fr-txt">300 $</span></td></tr>
+          <tr class="rtv-permission"><td>6</td><td>London</td><td><span class="en-txt">422,324</span><span class="fr-txt">422 324</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>7</td><td>Markham</td><td><span class="en-txt">338,503</span><span class="fr-txt">338 503</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+        </table>
+        <details class="rtv-villes-plus"><summary><span class="en-txt">See the 35 other cities over 50,000</span><span class="fr-txt">Voir les 35 autres villes de plus de 50 000</span></summary>
+        <table class="rtv-villes">
+          <tr><th>#</th><th><span class="en-txt">City</span><span class="fr-txt">Ville</span></th><th><span class="en-txt">Population (2021)</span><span class="fr-txt">Population (2021)</span></th><th><span class="en-txt">Price per month</span><span class="fr-txt">Prix par mois</span></th></tr>
+          <tr class="rtv-inconnu"><td>8</td><td>Vaughan</td><td><span class="en-txt">323,103</span><span class="fr-txt">323 103</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>9</td><td>Kitchener</td><td><span class="en-txt">256,885</span><span class="fr-txt">256 885</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-permission"><td>10</td><td>Windsor</td><td><span class="en-txt">229,660</span><span class="fr-txt">229 660</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-permission"><td>11</td><td>Oakville</td><td><span class="en-txt">213,759</span><span class="fr-txt">213 759</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-permission"><td>12</td><td>Richmond Hill</td><td><span class="en-txt">202,022</span><span class="fr-txt">202 022</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-bloquee"><td>13</td><td>Burlington</td><td><span class="en-txt">186,948</span><span class="fr-txt">186 948</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-permission"><td>14</td><td>Oshawa</td><td><span class="en-txt">175,383</span><span class="fr-txt">175 383</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>15</td><td><span class="en-txt">Greater Sudbury</span><span class="fr-txt">Grand Sudbury</span></td><td><span class="en-txt">166,004</span><span class="fr-txt">166 004</span></td><td><span class="en-txt">$200</span><span class="fr-txt">200 $</span></td></tr>
+          <tr class="rtv-permission"><td>16</td><td>Barrie</td><td><span class="en-txt">147,829</span><span class="fr-txt">147 829</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>17</td><td>Guelph</td><td><span class="en-txt">143,740</span><span class="fr-txt">143 740</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>18</td><td>Whitby</td><td><span class="en-txt">138,501</span><span class="fr-txt">138 501</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-permission"><td>19</td><td>Cambridge</td><td><span class="en-txt">138,479</span><span class="fr-txt">138 479</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>20</td><td>St. Catharines</td><td><span class="en-txt">136,803</span><span class="fr-txt">136 803</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>21</td><td>Milton</td><td><span class="en-txt">132,979</span><span class="fr-txt">132 979</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>22</td><td>Kingston</td><td><span class="en-txt">132,485</span><span class="fr-txt">132 485</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>23</td><td>Ajax</td><td><span class="en-txt">126,666</span><span class="fr-txt">126 666</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>24</td><td>Waterloo</td><td><span class="en-txt">121,436</span><span class="fr-txt">121 436</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr><td>25</td><td>Thunder Bay</td><td><span class="en-txt">108,843</span><span class="fr-txt">108 843</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>26</td><td>Brantford</td><td><span class="en-txt">104,688</span><span class="fr-txt">104 688</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>27</td><td>Chatham-Kent</td><td><span class="en-txt">103,988</span><span class="fr-txt">103 988</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>28</td><td>Clarington</td><td><span class="en-txt">101,427</span><span class="fr-txt">101 427</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>29</td><td>Pickering</td><td><span class="en-txt">99,186</span><span class="fr-txt">99 186</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>30</td><td>Niagara Falls</td><td><span class="en-txt">94,415</span><span class="fr-txt">94 415</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-permission"><td>31</td><td>Newmarket</td><td><span class="en-txt">87,942</span><span class="fr-txt">87 942</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>32</td><td>Peterborough</td><td><span class="en-txt">83,651</span><span class="fr-txt">83 651</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>33</td><td>Kawartha Lakes</td><td><span class="en-txt">79,247</span><span class="fr-txt">79 247</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-permission"><td>34</td><td>Caledon</td><td><span class="en-txt">76,581</span><span class="fr-txt">76 581</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-permission"><td>35</td><td>Sault Ste. Marie</td><td><span class="en-txt">72,051</span><span class="fr-txt">72 051</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>36</td><td>Sarnia</td><td><span class="en-txt">72,047</span><span class="fr-txt">72 047</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>37</td><td>Norfolk County</td><td><span class="en-txt">67,490</span><span class="fr-txt">67 490</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr><td>38</td><td>Halton Hills</td><td><span class="en-txt">62,951</span><span class="fr-txt">62 951</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>39</td><td>Aurora</td><td><span class="en-txt">62,057</span><span class="fr-txt">62 057</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>40</td><td>Welland</td><td><span class="en-txt">55,750</span><span class="fr-txt">55 750</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-permission"><td>41</td><td>Belleville</td><td><span class="en-txt">55,071</span><span class="fr-txt">55 071</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+          <tr class="rtv-permission"><td>42</td><td>North Bay</td><td><span class="en-txt">52,662</span><span class="fr-txt">52 662</span></td><td><span class="en-txt">$100</span><span class="fr-txt">100 $</span></td></tr>
+        </table>
+        </details>
+        <details class="rtv-villes-plus"><summary><span class="en-txt">Just under the line, at $50 a month</span><span class="fr-txt">Juste sous la barre, à 50 $ par mois</span></summary>
+        <table class="rtv-villes">
+          <tr><th>#</th><th><span class="en-txt">City</span><span class="fr-txt">Ville</span></th><th><span class="en-txt">Population (2021)</span><span class="fr-txt">Population (2021)</span></th><th><span class="en-txt">Price per month</span><span class="fr-txt">Prix par mois</span></th></tr>
+          <tr class="rtv-permission"><td>43</td><td>Whitchurch-Stouffville</td><td><span class="en-txt">49,864</span><span class="fr-txt">49 864</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>44</td><td>Haldimand County</td><td><span class="en-txt">49,216</span><span class="fr-txt">49 216</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>45</td><td>Cornwall</td><td><span class="en-txt">47,845</span><span class="fr-txt">47 845</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-permission"><td>46</td><td>Georgina</td><td><span class="en-txt">47,642</span><span class="fr-txt">47 642</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>47</td><td>Woodstock</td><td><span class="en-txt">46,705</span><span class="fr-txt">46 705</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>48</td><td>Quinte West</td><td><span class="en-txt">46,560</span><span class="fr-txt">46 560</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>49</td><td>New Tecumseth</td><td><span class="en-txt">43,948</span><span class="fr-txt">43 948</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>50</td><td>Innisfil</td><td><span class="en-txt">43,326</span><span class="fr-txt">43 326</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>51</td><td>Bradford West Gwillimbury</td><td><span class="en-txt">42,880</span><span class="fr-txt">42 880</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>52</td><td>St. Thomas</td><td><span class="en-txt">42,840</span><span class="fr-txt">42 840</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-inconnu"><td>53</td><td>Timmins</td><td><span class="en-txt">41,145</span><span class="fr-txt">41 145</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+          <tr class="rtv-permission"><td>54</td><td>Lakeshore</td><td><span class="en-txt">40,410</span><span class="fr-txt">40 410</span></td><td><span class="en-txt">$50</span><span class="fr-txt">50 $</span></td></tr>
+        </table>
+        </details>
+        <p class="rtv-note"><span class="en-txt">Population from the 2021 Census of Canada. Any city not listed here is under 40,000, at $50 a month.</span><span class="fr-txt">Population du recensement de 2021 de Statistique Canada. Une ville absente de ces listes est sous les 40 000, à 50 $ par mois.</span></p>
+        <div class="rtv-legende">
+          <p class="rtv-legende-titre"><span class="en-txt">Reading the colours</span><span class="fr-txt">Lire les couleurs</span></p>
+          <ul>
+          <li class="rtv-l-rouge"><span class="en-txt">The city’s website turns automated reading away. We do not get around that, so we do not sell these. The price is what they would cost if we could.</span><span class="fr-txt">Le site de la Ville refuse la lecture automatisée. On ne contourne pas, donc on ne les vend pas. Le prix est ce qu’elles coûteraient si on pouvait.</span></li>
+          <li class="rtv-l-jaune"><span class="en-txt">The city requires written permission before anyone republishes its records. We ask before we sell.</span><span class="fr-txt">La Ville exige une permission écrite avant qu’on republie ses documents. On demande avant de vendre.</span></li>
+          <li class="rtv-l-gris"><span class="en-txt">No clause found either way, an unclear clause, or we could not read it. Nothing allows us, nothing forbids us, and silence is not permission. We ask too.</span><span class="fr-txt">Aucune clause trouvée, ni dans un sens ni dans l’autre, une clause floue, ou on n’a pas pu la lire. Rien ne nous autorise, rien ne nous interdit, et le silence n’est pas une permission. On demande aussi.</span></li>
+          <li><span class="en-txt">No colour: the city allows reproduction with credit, or it is already on the site.</span><span class="fr-txt">Sans couleur : la Ville permet de reproduire avec mention de la source, ou elle est déjà sur le site.</span></li>
+          </ul>
+          <p class="rtv-legende-source"><span class="en-txt">Terms of use read, or attempted, on each city’s own website on 16 November 2026.</span><span class="fr-txt">Conditions d’utilisation lues, ou tentées, sur le site de chaque ville le 16 novembre 2026.</span></p>
+        </div>
+        <p class="rtv-note"><span class="en-txt"><b>Toronto and Burlington cannot be delivered today.</b> Their websites answer an automated reader with a refusal instead of the document, and we do not work around those. If one of them is your city, raise your hand anyway: a single email from the city usually settles it, and we will take it from there.</span><span class="fr-txt"><b>Toronto et Burlington ne peuvent pas être livrées aujourd’hui.</b> Leurs sites répondent à un robot par un refus plutôt que par le document, et on ne contourne pas ça. Si c’est votre ville, levez la main quand même : un courriel de la Ville règle habituellement la chose, et on s’occupe du reste.</span></p>
         </details>
 
         <details class="rtv-menu"><summary class="rtv-menu-titre"><span class="en-txt">Terms</span><span class="fr-txt">Conditions</span></summary>
