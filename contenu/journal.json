@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil : un seul rouge, plus foncé, sur tout le site, et les quatre termes du lexique retirés de l’accueil (le lexique complet reste dans le menu).",
+      "en": "Home page: one darker red across the whole site, and the four glossary terms removed from the home page (the full glossary stays in the menu)."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil : la bande des projets challengés passe au rouge.",
       "en": "Home page: the band of challenged bills is now red."
     },

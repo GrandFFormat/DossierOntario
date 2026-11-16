@@ -72,7 +72,6 @@ const PAGES = [
 <div class="colonne">
   <!-- Comme l'encadré des pétitions de DossierBC (15 nov. 2026) : remplace le bloc des pétitions et la mission en double avec la bande rouge. -->
   <p class="encadre-petitions" data-i18n-html="petitions.papier"></p>
-  <section class="cases case-lexique" data-role="lexique-accueil"></section>
 </div>`,
     contenu: `  <section class="grille-2 cases une">
     <div class="case">
