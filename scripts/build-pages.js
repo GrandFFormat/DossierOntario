@@ -777,10 +777,12 @@ for (const page of PAGES_CHEFS) {
 }
 console.log(`${PAGES_CHEFS.length} pages de chefs dans leader/`);
 
+// Les pages d'Ottawa (indexées sur décision de Martin, 16 nov. 2026).
+function fs_ottawa() { return readdirSync('ottawa').filter((f) => f.endsWith('.html')).map((f) => ({ fichier: 'ottawa/' + f })); }
 // Le plan du site, pour que Google trouve les six pages (leçon de DossierQuébec).
 const plan = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES, ...PAGES_CHEFS].map(
+${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES, ...PAGES_CHEFS, ...fs_ottawa()].map(
   (p) => `  <url><loc>https://dossierontario.ca/${adressePropre(p.fichier)}</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`
 ).join('\n')}

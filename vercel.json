@@ -6,15 +6,6 @@
   "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ':(exclude,glob)**/*.md' ':(exclude,glob)scrapers/**' ':(exclude,glob)scripts/**' ':(exclude,glob).github/**'",
   "headers": [
     {
-      "source": "/ottawa/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
       "source": "/data/(.*)",
       "headers": [
         {
