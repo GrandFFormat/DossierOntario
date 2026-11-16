@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-11-16",
+      "fr": "Ottawa, Contrats : une légende en haut de la page précise que la Ville ne publie pas le nombre de soumissionnaires par contrat.",
+      "en": "Ottawa, Contracts: a note at the top of the page says the City does not publish the number of bidders per contract."
+    },
+    {
       "date": "2026-11-15",
       "fr": "Ottawa, Près de chez moi : une carte autour de votre adresse, avec un rayon réglable (− 1 km +), les travaux prévus par la Ville et les permis 2026 à proximité, des filtres (Routes, Permis, types) et un bouton « Impact sur la circulation ». Chaque pastille mène à l’endroit sur la carte.",
       "en": "Ottawa, Near me: a map around your address, with an adjustable radius (− 1 km +), the City’s planned construction and the 2026 permits nearby, filters (Roads, Permits, types) and a “Traffic impact” button. Each badge links to the spot on the map."
