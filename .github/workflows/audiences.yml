@@ -1,0 +1,49 @@
+# Les avis d'audiences publiques des comités, chaque jour (16 nov. 2026).
+#
+# Le grand rafraîchissement (refresh.yml) ne passe que le lundi ; les dates limites pour témoigner
+# ou envoyer un mémoire tombent souvent en quelques jours. Ce petit travail ne lit que la liste des
+# avis et chaque avis (3 ou 4 pages d'ola.org, 2 s d'écart, scrapers/ola.js), sans IA, et ne publie
+# que data/site/audiences.json, seulement s'il a changé. Lu par commun/audiences.js.
+
+name: Audiences publiques
+
+on:
+  schedule:
+    - cron: '30 11 * * *' # 7 h 30 (heure de l'Est), chaque jour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  audiences:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm ci
+
+      - name: Lire les avis d'audiences
+        run: node scrapers/audiences.js
+
+      - name: Publier s'il y a du neuf
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/site/audiences.json
+          if git diff --staged --quiet; then
+            echo 'Aucun avis nouveau.'
+          else
+            git commit -m "Audiences publiques au $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
