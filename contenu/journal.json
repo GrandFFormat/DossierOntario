@@ -3,8 +3,8 @@
   "entrees": [
     {
       "date": "2026-11-16",
-      "fr": "Projets de loi : la première carte est ouverte d’office, sur l’accueil et dans la page des projets de loi.",
-      "en": "Bills: the first card is open by default, on the home page and on the bills page."
+      "fr": "Projets de loi : le premier groupe et la première carte sont ouverts d’office ; ouvrir un autre groupe ou une autre carte ferme celui qui était ouvert.",
+      "en": "Bills: the first group and the first card are open by default; opening another group or card closes the one that was open."
     },
     {
       "date": "2026-11-16",

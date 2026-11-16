@@ -1544,7 +1544,11 @@
     if (!cible.dataset.ecouteResumes) {
       cible.dataset.ecouteResumes = '1';
       cible.addEventListener('toggle', (e) => {
-        if (e.target.matches?.('.projet-detail') && e.target.open) remplirResume(e.target);
+        if (e.target.matches?.('.projet-detail') && e.target.open) {
+          remplirResume(e.target);
+          // Une carte à la fois (Martin, 16 nov. 2026) : en ouvrir une ferme celle qui était ouverte.
+          cible.querySelectorAll('.projet-detail[open]').forEach((x) => { if (x !== e.target) x.open = false; });
+        }
         if (e.target.matches?.('.boite-votes') && e.target.open) remplirVotesProjet(e.target);
       }, true);
       // Un clic N'IMPORTE OÙ sur la carte l'ouvre ou la ferme, comme sur DossierQuébec — pas
@@ -1717,7 +1721,13 @@
         : `<p class="courant">${mot('projets.aucun')}</p>`;
     };
     // Martin, 16 nov. 2026 : la première carte visible est toujours ouverte.
-    const dessiner = () => { dessinerBase(); ouvrirPremiere(cible); };
+    const dessiner = () => {
+      dessinerBase();
+      // Le premier groupe (le mois ou l'étape la plus récente) est ouvert si aucun ne l'est.
+      const premier = cible.querySelector('.pli-projets');
+      if (premier && !recherche && !cible.querySelector('.pli-projets[open]')) { premier.open = true; ouverts.add(premier.dataset.cle); }
+      ouvrirPremiere(cible);
+    };
 
     // Chaque filtre annonce combien de projets il montrera : on ne clique pas à l'aveugle.
     const filtres = ['tous', 'gouvernement', 'depute', 'prive', 'sanctionne', 'encours']
@@ -1748,6 +1758,8 @@
       const d = e.target;
       if (!d.matches?.('.pli-projets')) return;
       if (d.open) ouverts.add(d.dataset.cle); else ouverts.delete(d.dataset.cle);
+      // Un mois à la fois (Martin, 16 nov. 2026) : en ouvrir un ferme les autres, sauf pendant une recherche.
+      if (d.open && !recherche) cible.querySelectorAll('.pli-projets[open]').forEach((x) => { if (x !== d) x.open = false; });
     }, true);
     cible.querySelector('[data-role="liste"]').addEventListener('click', (e) => {
       const bouton = e.target.closest('[data-role="plus"]');
