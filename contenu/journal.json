@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Le volet Ottawa est maintenant ouvert aux moteurs de recherche : ses huit pages sont au plan du site et peuvent apparaître dans Google.",
+      "en": "The Ottawa section is now open to search engines: its eight pages are in the sitemap and can appear in Google."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Ottawa, Contrats : une légende en haut de la page précise que la Ville ne publie pas le nombre de soumissionnaires par contrat.",
       "en": "Ottawa, Contracts: a note at the top of the page says the City does not publish the number of bidders per contract."
     },
