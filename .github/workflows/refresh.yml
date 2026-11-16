@@ -89,12 +89,7 @@ jobs:
         continue-on-error: true
         run: npm run resumes -- --batch
 
-      # Les résumés des séances de la Chambre (scrapers/hansard-resumes.js), comme sur DossierBC :
-      # seulement les journées pas encore résumées, environ 0,20 $ US chacune.
-      - name: Résumer les séances de la Chambre
-        if: env.ANTHROPIC_API_KEY != ''
-        continue-on-error: true
-        run: node scrapers/hansard-resumes.js
+      # Les séances de la Chambre ont leur propre petit travail quotidien : seances.yml.
 
       - name: Préparer les données du site et les pages
         run: npm run build
@@ -108,5 +103,15 @@ jobs:
             echo 'Rien de neuf du côté de l’Assemblée.'
           else
             git commit -m "Données de l'Assemblée au $(date -u +%Y-%m-%d)"
-            git push
+            # Si quelqu'un a poussé pendant les 50 minutes du passage, le push est refusé et tout
+            # le travail était perdu (16 nov. 2026). On garde nos données, on repart du dépôt à
+            # jour, on refait les pages avec le code à jour, et on renvoie.
+            if ! git push; then
+              cp -r data /tmp/data-robot
+              git fetch origin master && git reset --hard origin/master
+              cp -r /tmp/data-robot/. data/
+              npm run build
+              git add -A data *.html bill sitemap.xml llms.txt
+              git commit -m "Données de l'Assemblée au $(date -u +%Y-%m-%d)" && git push
+            fi
           fi
