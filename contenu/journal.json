@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil : « Derniers votes nominatifs » retiré (les votes restent dans leur page) ; « Quoi de neuf » prend toute la largeur.",
+      "en": "Home page: “Latest recorded votes” removed (votes stay on their own page); “What’s new” now takes the full width."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil réordonné : les projets récemment actifs montent sous les audiences ; les votes et « Quoi de neuf » passent entre la bande des projets challengés et la bande rouge.",
       "en": "Home page reordered: recently active bills move up under the hearings; the votes and “What’s new” now sit between the challenged-bills band and the red band."
     },
