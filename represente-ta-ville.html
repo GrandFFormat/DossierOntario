@@ -94,8 +94,9 @@
 <main class="colonne">
   <style>
   /* Styles de la page de DossierBC (commun/dq.css, commun/bc.css), avec les variables de DossierOntario. */
-  .page-rtv { --card: var(--sur-clair, #fff); --muted: #5b6270; --bc-filet: var(--line); --bc-estompe: #5b6270; --bc-gris-fond: #eef0f3; --bc-jaune-fond: #fff4cc; --bc-rouge: var(--rouge); }
+  .page-rtv { --muted: var(--slate, #5b6270); --bc-filet: var(--line); --bc-estompe: var(--slate, #5b6270); --bc-gris-fond: #eef0f3; --bc-jaune-fond: #fff4cc; --bc-rouge: var(--rouge); }
   html:not([lang="fr"]) .page-rtv .fr-txt, html[lang="fr"] .page-rtv .en-txt { display: none; }
+  .page-rtv .rtv-intro{max-width:760px; margin:0 0 8px; overflow-wrap:anywhere;}
   .page-rtv .rtv-pot { position: absolute; left: -9999px; }
   .page-rtv .hero-outline { display: block; }
   .page-rtv .rtv{max-width:760px; margin:0 auto; padding:28px 0 48px;}
@@ -138,21 +139,17 @@
   </style>
   <div class="page-rtv">
     <div class="view-hero">
-      <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet"><span class="en-txt">City volets</span><span class="fr-txt">Volets municipaux</span></span>
-        <span class="en-txt">Represent</span><span class="fr-txt">Représentez</span>
-        <span class="hero-outline"><span class="en-txt">your city.</span><span class="fr-txt">votre ville.</span></span>
-      </h1>
-      <p class="view-hero-sub">
-        <span class="en-txt">DossierOntario puts the Legislative Assembly of Ontario in plain language. The same can be done for a city council — its decisions, its votes, its spending. <b>No Ontario city is covered yet.</b> Raise your hand and yours could be the first. <a class="rtv-lien" href="https://dossierquebec.ca/montreal/?lang=en" target="_blank" rel="noopener">See what it looks like, on the City of Montréal →</a></span>
-        <span class="fr-txt">DossierOntario met l'Assemblée législative de l'Ontario en langage clair. On peut faire la même chose pour un conseil municipal — ses décisions, ses votes, ses dépenses. <b>Aucune ville de l'Ontario n'est couverte.</b> Levez la main et la vôtre pourrait être la première. <a class="rtv-lien" href="https://dossierquebec.ca/montreal/" target="_blank" rel="noopener">Voir à quoi ça ressemble, sur la Ville de Montréal →</a></span>
+      <h1 class="titre-vue"><span class="en-txt">Represent your city</span><span class="fr-txt">Représentez votre ville</span></h1>
+      <p class="rtv-intro">
+        <span class="en-txt">DossierOntario puts the Legislative Assembly of Ontario in plain language. The same can be done for a city council: its decisions, its votes, its spending. <b>No Ontario city is covered yet.</b> Raise your hand and yours could be the first. <a class="rtv-lien" href="https://dossierquebec.ca/montreal/?lang=en" target="_blank" rel="noopener">See what it looks like, on the City of Montréal →</a></span>
+        <span class="fr-txt">DossierOntario met l'Assemblée législative de l'Ontario en langage clair. On peut faire la même chose pour un conseil municipal : ses décisions, ses votes, ses dépenses. <b>Aucune ville de l'Ontario n'est couverte.</b> Levez la main et la vôtre pourrait être la première. <a class="rtv-lien" href="https://dossierquebec.ca/montreal/" target="_blank" rel="noopener">Voir à quoi ça ressemble, sur la Ville de Montréal →</a></span>
       </p>
     </div>
 
     <div class="band band-white bleed"><div class="rtv">
       <div class="rtv-etapes">
         <div class="rtv-etape"><b>1</b><p><span class="en-txt">You tell us which city you want to see on the site.</span><span class="fr-txt">Vous nous dites quelle ville vous voulez voir sur le site.</span></p></div>
-        <div class="rtv-etape"><b>2</b><p><span class="en-txt">We check how the city publishes its council minutes — some still scan handwritten pages — and come back to you with the cost.</span><span class="fr-txt">On vérifie comment la Ville publie ses procès-verbaux — certaines numérisent encore des pages écrites à la main — et on vous revient avec le coût.</span></p></div>
+        <div class="rtv-etape"><b>2</b><p><span class="en-txt">We check how the city publishes its council minutes (some still scan handwritten pages) and come back to you with the cost.</span><span class="fr-txt">On vérifie comment la Ville publie ses procès-verbaux (certaines numérisent encore des pages écrites à la main) et on vous revient avec le coût.</span></p></div>
         <div class="rtv-etape"><b>3</b><p><span class="en-txt">Your city appears in the Cities menu, with “Report offered by” and your name on it.</span><span class="fr-txt">Votre ville apparaît dans le menu Villes, avec la mention « Compte rendu offert par » et votre nom.</span></p></div>
       </div>
 
