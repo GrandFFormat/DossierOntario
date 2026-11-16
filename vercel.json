@@ -3,7 +3,7 @@
   "installCommand": "echo \"Aucune dependance a installer : le site est statique.\"",
   "buildCommand": "echo \"Rien a construire : les pages sont deja fabriquees et commitees.\"",
   "outputDirectory": ".",
-  "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ':(exclude,glob)**/*.md' ':(exclude,glob)scrapers/**' ':(exclude,glob)scripts/**' ':(exclude,glob).github/**'",
+  "ignoreCommand": "sh vercel-deployer.sh",
   "headers": [
     {
       "source": "/data/(.*)",
