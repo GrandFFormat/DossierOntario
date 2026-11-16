@@ -1313,5 +1313,5 @@ a.carte-lien:hover .carte-titre{color:var(--rouge);}
 :root[data-theme="dark"] .encadre-petitions{background:rgba(227,181,40,.14); color:var(--ink);}
 :root[data-theme="dark"] .encadre-petitions b, :root[data-theme="dark"] .encadre-petitions a{color:#F2CC5B;}
 /* Projets challengés : fond rouge, comme la bande rouge de fin (Martin, 16 nov. 2026). */
-.bande-defis{background:var(--rouge) !important; color:#fff !important; border-color:var(--rouge) !important;}
+.bande-defis{background:#A3221A !important; color:#fff !important; border-color:#A3221A !important;}
 .bande-defis > .colonne > :not([data-role="defis-liste"]), .bande-defis > .colonne > :not([data-role="defis-liste"]) *{color:#fff !important;}
