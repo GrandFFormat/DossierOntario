@@ -1616,7 +1616,7 @@
     // « Recent activity » : un MODE d'affichage, pas un filtre de plus. Il se combine avec
     // les filtres (projets du gouvernement les plus récemment actifs, par exemple) et
     // remplace le classement par étape par une liste du plus récent au plus ancien.
-    let recent = false;
+    let recent = true;   // Martin, 16 nov. 2026 : « Activité récente » par défaut
     let recherche = '';
     // ?sponsor=Doug Ford (lien « N bills sponsored » d'une carte de député·e) : la recherche se
     // remplit de ce nom et la liste ne garde QUE ses projets. Même rapprochement que cleNom()
@@ -1748,7 +1748,7 @@
     cible.innerHTML = `
       <div class="barre-filtres">
         <input class="champ" type="search" data-role="recherche" placeholder="${mot('projets.recherche')}" aria-label="${mot('projets.recherche')}">
-        <button class="filtre filtre-mode" data-role="recent" aria-pressed="false">↻ ${mot('projets.recent')}</button>
+        <button class="filtre filtre-mode actif" data-role="recent" aria-pressed="true">↻ ${mot('projets.recent')}</button>
         ${filtres}
       </div>
       <p class="legende" data-role="compte"></p>

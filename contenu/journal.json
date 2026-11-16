@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Projets de loi : la page s’ouvre sur « Activité récente », classée par mois.",
+      "en": "Bills: the page now opens on “Recent activity”, sorted by month."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Projets de loi : le premier groupe et la première carte sont ouverts d’office ; ouvrir un autre groupe ou une autre carte ferme celui qui était ouvert.",
       "en": "Bills: the first group and the first card are open by default; opening another group or card closes the one that was open."
     },
