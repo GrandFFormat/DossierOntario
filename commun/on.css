@@ -986,7 +986,7 @@ main.colonne > .une{margin-top:28px;}
 .bande-rouge-grille{grid-template-columns:1fr;}
 
 /* La mission dans la bande rouge, d'après la bande « Notre mission » de DQ. */
-.mission-rouge{padding-top:46px; color:#fff;}
+.mission-rouge{padding-top:46px; padding-bottom:56px; color:#fff;}   /* du rouge sous les boîtes (Martin, 16 nov. 2026) */
 .mission-sur{margin:0 0 14px; font-family:'Archivo Narrow',sans-serif; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#FFD9D2;}
 .mission-enonce{margin:0 0 30px; max-width:30ch; font-size:clamp(26px,3vw,36px); font-weight:900; text-transform:uppercase; line-height:1.15; letter-spacing:-.01em;}
 .mission-enonce .surlignage{background:#FFD24D; color:#131313; padding:0 8px; box-decoration-break:clone; -webkit-box-decoration-break:clone;}
