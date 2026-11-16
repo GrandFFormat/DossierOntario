@@ -208,7 +208,7 @@ async function lireAnneeArchivee(fichier) {
 async function chercherDansArchive(q) {
   const liste = $('#liste-decisions');
   if (!liste) return;
-  const manifeste = await charger('archives/index');
+  const manifeste = null; // Ottawa n'a pas d'archive par année.
   const annees = [...(manifeste?.annees ?? [])].sort((a, b) => (a.annee < b.annee ? 1 : -1));
   if (!annees.length) return;
   const avis = document.createElement('p');
@@ -1260,7 +1260,7 @@ async function init() {
   etat.parId = new Map((etat.resumes?.resumes ?? []).map((r) => [r.id, r]));
   // Le manifeste de l'archive vit dans un sous-dossier ; seule la page des sources le lit,
   // et elle ne lit que le manifeste, jamais les fichiers d'années eux-mêmes.
-  if (page === 'sources') etat.archives = await charger('archives/index');
+  // Ottawa n'a pas d'archive par année : rien à lire (le fichier n'existe pas).
 
   const requis = { accueil: 'decisions', decisions: 'decisions', votes: 'votes', conseil: 'elus', lexique: 'lexique', sources: null }[page];
   if (requis && !etat[requis]) {
