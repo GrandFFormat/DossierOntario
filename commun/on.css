@@ -1315,3 +1315,10 @@ a.carte-lien:hover .carte-titre{color:var(--rouge);}
 /* Projets challengés : fond rouge, comme la bande rouge de fin (Martin, 16 nov. 2026). */
 .bande-defis{background:#A3221A !important; color:#fff !important; border-color:#A3221A !important;}
 .bande-defis > .colonne > :not([data-role="defis-liste"]), .bande-defis > .colonne > :not([data-role="defis-liste"]) *{color:#fff !important;}
+
+/* Projets récemment actifs sur l'accueil : les titres seulement (16 nov. 2026). */
+.titres-recents{list-style:none; margin:14px 0 16px; padding:0;}
+.titres-recents li{padding:10px 0; border-bottom:1px solid var(--line); font-size:16px; line-height:1.45;}
+.titres-recents a{color:var(--ink); text-decoration:none;}
+.titres-recents a:hover b, .titres-recents a:hover{text-decoration:underline;}
+.titres-recents b{color:var(--rouge);}

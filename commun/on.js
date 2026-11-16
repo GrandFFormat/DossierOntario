@@ -249,7 +249,7 @@
       'projets.defis': 'Challenged',
       'recents.titre': 'Recently active bills',
       'recents.indice': '↓ Click anywhere in a card to read what the bill does ↓',
-      'recents.tous': 'All bills →',
+      'recents.tous': 'See more on the bills page →',
       'neuf.titre': 'What’s new', 'neuf.sous': 'The latest real activity at the Legislature',
       'neuf.relache': (fin, retour) => `The House has not sat since ${fin}; it returns on ${retour}. That is normal — committees can still sit in the meantime, and their work is below.`,
       'neuf.relacheSansRetour': (fin) => `The House has not sat since ${fin}, and no return date has been announced. Committees can still sit in the meantime; their work is below.`,
@@ -564,7 +564,7 @@
       'projets.defis': 'Challengés',
       'recents.titre': 'Projets de loi récemment actifs',
       'recents.indice': '↓ Cliquez n’importe où dans une carte pour voir ce que fait le projet ↓',
-      'recents.tous': 'Tous les projets de loi →',
+      'recents.tous': 'Voir plus dans la page des projets de loi →',
       'neuf.titre': 'Quoi de neuf', 'neuf.sous': 'Les dernières activités réelles à l’Assemblée',
       'neuf.relache': (fin, retour) => `La Chambre n’a pas siégé depuis le ${fin} ; elle reprend le ${retour}. C’est normal — les comités peuvent siéger entre-temps, et leur travail est ci-dessous.`,
       'neuf.relacheSansRetour': (fin) => `La Chambre n’a pas siégé depuis le ${fin}, et aucune date de reprise n’est annoncée. Les comités peuvent siéger entre-temps ; leur travail est ci-dessous.`,
@@ -1200,13 +1200,12 @@
       liste.innerHTML = [...projets]
         .sort((a, b) => (b.derniereActivite ?? '').localeCompare(a.derniereActivite ?? ''))
         .slice(0, 4)
-        .map((p) => carteProjet(p, true))
+        // Martin, 16 nov. 2026 : les titres seulement ; la carte complète est sur la page des projets.
+        .map((p) => `<li><a href="/bill/${encodeURIComponent(String(p.numero).toLowerCase())}"><b>${mot('defis.numero', p.numero)}</b> — ${echapper(selonLangue(p.titreEn ?? p.titre, p.titreFr ?? p.titre))}</a>${p.derniereActivite ? ` <span class="legende">· ${date(p.derniereActivite)}</span>` : ''}</li>`)
         .join('');
-      ouvrirPremiere(liste);
     };
     dessiner();
     zone.hidden = false;
-    brancherCartes(zone, projets, dessiner);
   }
 
   // ---------------------------------------------------------------- la bande des projets challengés

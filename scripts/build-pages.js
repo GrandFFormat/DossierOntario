@@ -69,8 +69,7 @@ const PAGES = [
 </div>
 <div class="colonne recents-accueil" data-role="recents" hidden>
   <h2 class="titre-case" data-i18n="recents.titre">Recently active bills</h2>
-  <p class="legende recents-indice" data-i18n="recents.indice">↓ Click anywhere in a card to read what the bill does ↓</p>
-  <div class="liste-projets" data-role="recents-liste"></div>
+  <ul class="titres-recents" data-role="recents-liste"></ul>
   <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
 </div>`,
     contenu: `  <section class="grille-2 cases une">

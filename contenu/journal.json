@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil : les projets de loi récemment actifs ne montrent que leur titre, avec un lien « Voir plus » vers la page des projets de loi.",
+      "en": "Home page: recently active bills now show only their title, with a “See more” link to the bills page."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Projets de loi : la page s’ouvre sur « Activité récente », classée par mois.",
       "en": "Bills: the page now opens on “Recent activity”, sorted by month."
     },
