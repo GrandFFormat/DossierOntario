@@ -141,3 +141,69 @@ ecrire('quartiers', {
 });
 
 console.log(`ottawa/data : ${decisions.length} décisions, ${votes.length} votes nominatifs, ${resumes.length} résumés, ${membres.length} élus, ${districts.length} quartiers, ${entrees.length} termes, ${K.c.length} contrats.`);
+
+// ---------------------------------------------------------------- la carte de « Près de chez moi »
+// Mêmes fichiers que Vancouver : adresses/<lettre>.json, adresses/index.json, permis/<quartier>.json,
+// chantiers.json. Les positions des adresses viennent des points d'adresse de la Ville
+// (scrapers/ottawa-adresses-points.js). Les travaux ont leur propre position (premier point du tracé).
+// Les permis 2026 n'ont AUCUNE position dans le classeur de la Ville : on prend celle du point d'adresse
+// de la Ville qui porte exactement la même adresse ; un permis sans adresse correspondante reste hors carte.
+import { existsSync, rmSync } from 'node:fs';
+if (existsSync('data/ottawa-brut/adresses-points.json')) {
+  const V = lire('data/ottawa-ville.json');
+  const PTS = lire('data/ottawa-brut/adresses-points.json');
+  // La même normalisation que la page (near-me-in-ottawa.html).
+  const cle = (nom) => String(nom ?? '').toUpperCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^A-Z0-9]+/g, ' ').trim()
+    .replace(/\bAVENUE\b/g, 'AV').replace(/\bAVE\b/g, 'AV').replace(/\bSTREET\b/g, 'ST').replace(/\bDRIVE\b/g, 'DR').replace(/\bROAD\b/g, 'RD')
+    .replace(/\bBOULEVARD\b/g, 'BLVD').replace(/\bPLACE\b/g, 'PL').replace(/\bCRESCENT\b/g, 'CRES').replace(/\bCOURT\b/g, 'CRT')
+    .replace(/\bHIGHWAY\b/g, 'HWY').replace(/\bWEST\b/g, 'W').replace(/\bEAST\b/g, 'E').replace(/\bNORTH\b/g, 'N').replace(/\bSOUTH\b/g, 'S')
+    .replace(/\s+/g, ' ');
+  const quartiersTries = [...C.quartiers].sort((a, b) => a.numero - b.numero);
+  const qiDe = (n) => quartiersTries.findIndex((q) => q.numero === Number(n));
+  const voies = {}, parAdresse = new Map();
+  for (const [num, , rueEn, rueFr, ward, lon, lat] of PTS) {
+    if (num == null || !rueEn) continue;
+    const qi = qiDe(ward);
+    for (const nom of new Set([rueEn, rueFr].filter(Boolean))) {
+      const k = cle(nom);
+      if (!k) continue;
+      (voies[k] ??= [nom, []])[1].push([num, num, qi, lat, lon]);
+    }
+    parAdresse.set(`${num} ${cle(rueEn)}`, [lat, lon]);
+  }
+  rmSync('ottawa/data/adresses', { recursive: true, force: true });
+  rmSync('ottawa/data/permis', { recursive: true, force: true });
+  mkdirSync('ottawa/data/adresses', { recursive: true });
+  mkdirSync('ottawa/data/permis', { recursive: true });
+  const parLettre = {};
+  for (const [k, v] of Object.entries(voies)) { v[1].sort((a, b) => a[0] - b[0]); (parLettre[k[0].replace(/[^A-Z0-9]/, '_')] ??= {})[k] = v; }
+  for (const [l, o] of Object.entries(parLettre)) writeFileSync(`ottawa/data/adresses/${l}.json`, JSON.stringify(o));
+  writeFileSync('ottawa/data/adresses/index.json', JSON.stringify({
+    source: C.sources?.adresses?.page ?? null, licence: LICENCE, attribution: ATTRIBUTION, adresses: PTS.length,
+    quartiers: quartiersTries.map((q) => q.nomEn), quartiersFr: quartiersTries.map((q) => q.nomFr), numeros: quartiersTries.map((q) => q.numero),
+  }));
+  // Permis : [date, adresse, genre, numéro, lat, lon, valeur, description]. Genre d'après le préfixe du numéro.
+  const genre = (n) => (/^DEMO/.test(n) ? 'Demolition' : /^POOL/.test(n) ? 'Pool' : /^CON/.test(n) ? 'Construction' : 'Other');
+  const permisQ = quartiersTries.map(() => []);
+  let places = 0;
+  for (const p of V.permis) {
+    const m = /^(\d+)\s+(.+)$/.exec(p.adresse.trim());
+    const pos = m ? parAdresse.get(`${Number(m[1])} ${cle(m[2])}`) : null;
+    if (pos) places++;
+    const qi = qiDe(p.quartier);
+    if (qi < 0) continue;
+    permisQ[qi].push([p.date, p.adresse, genre(p.numero), p.numero, pos?.[0] ?? null, pos?.[1] ?? null, p.valeur || null, p.description || null]);
+  }
+  permisQ.forEach((l, qi) => writeFileSync(`ottawa/data/permis/${qi}.json`, JSON.stringify(l.sort((a, b) => String(b[0]).localeCompare(String(a[0]))))));
+  // Chantiers : [type, classe, fin, page, lat, lon, impact sur la circulation, statut EN, statut FR, type FR, départ EN, départ FR].
+  const impact = (t) => (t && !/^\s*(none\.?|n\/a|no traffic)/i.test(t) ? t.trim() : null);
+  const parQuartier = {};
+  for (const t of V.travaux) {
+    const qi = qiDe(t.quartier);
+    if (qi < 0 || !t.point) continue;
+    (parQuartier[qi] ??= []).push([t.typeEn, /in progress/i.test(t.statutEn ?? '') ? 'en-cours' : 'a-venir', null, t.page, t.point[1], t.point[0], impact(t.circulation), t.statutEn, t.statutFr, t.typeFr, t.departEn, t.departFr]);
+  }
+  writeFileSync('ottawa/data/chantiers.json', JSON.stringify({ sources: [C.sources?.travauxLineaires, C.sources?.travauxPoints].filter(Boolean), licence: LICENCE, attribution: ATTRIBUTION, extraction: V.lus, parQuartier }));
+  console.log(`Carte : ${PTS.length} points d'adresse, ${Object.keys(voies).length} noms de rue ; permis placés ${places}/${V.permis.length} ; ${V.travaux.filter((t) => t.point).length} travaux placés.`);
+}

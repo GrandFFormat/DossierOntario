@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-15",
+      "fr": "Ottawa, Près de chez moi : une carte autour de votre adresse, avec un rayon réglable (− 1 km +), les travaux prévus par la Ville et les permis 2026 à proximité, des filtres (Routes, Permis, types) et un bouton « Impact sur la circulation ». Chaque pastille mène à l’endroit sur la carte.",
+      "en": "Ottawa, Near me: a map around your address, with an adjustable radius (− 1 km +), the City’s planned construction and the 2026 permits nearby, filters (Roads, Permits, types) and a “Traffic impact” button. Each badge links to the spot on the map."
+    },
+    {
+      "date": "2026-11-15",
       "fr": "Ottawa a une nouvelle présentation : un en-tête et un menu propres au volet, une page d’accueil avec les dernières décisions résumées, une carte des quartiers sur la page du conseil, et des pages Contrats, Budget et taxes et Près de chez moi refaites. Les adresses ont changé (par exemple « decisions-of-ottawa-city-council »).",
       "en": "Ottawa has a new look: its own header and menu, a home page with the latest summarized decisions, a ward map on the Council page, and redone Contracts, Budget and taxes and Near me pages. The page addresses changed (for example “decisions-of-ottawa-city-council”)."
     },
