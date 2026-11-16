@@ -1322,3 +1322,8 @@ a.carte-lien:hover .carte-titre{color:var(--rouge);}
 .titres-recents a{color:var(--ink); text-decoration:none;}
 .titres-recents a:hover b, .titres-recents a:hover{text-decoration:underline;}
 .titres-recents b{color:var(--rouge);}
+/* De l’espace entre la bande des projets challengés et Quoi de neuf (Martin, 16 nov. 2026). */
+.cases:has(> [data-role="nouvelles"]){margin-top:48px;}
+/* L’encadré des pétitions collé à la fenêtre des séances, comme sur DossierBC (Martin, 16 nov. 2026). */
+.encadre-petitions:has(+ #seances){margin-bottom:0;}
+.encadre-petitions + #seances{margin-top:0;}
