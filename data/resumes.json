@@ -7905,94 +7905,95 @@
     "109": {
       "en": {
         "puces": [
-          "A wide-ranging agriculture bill that restructures oversight of beef, milk and food safety rules, creates a new farmland ownership restriction, and updates tribunals, food dealer protections and veterinary regulation."
+          "Makes a wide range of changes to Ontario's agriculture and food sector laws, including new farmland foreign-ownership restrictions, updated licensing and inspection rules for beef, milk and food safety, and governance changes to agricultural tribunals and boards.",
+          "Also amends rules protecting farmers from non-payment by buyers and storage operators, and updates veterinary profession regulation."
         ],
         "annexes": [
           {
             "numero": 1,
             "titre": "Beef Cattle Marketing Act",
             "puces": [
-              "Producers providing cattle for custom processing must hold a licence, or are deemed to hold one",
-              "Producers processing their own cattle must pay prescribed licence fees as if cattle were sold",
-              "Producers can seek reimbursement of licence fees for up to two head processed for personal use",
-              "Repeals sections 10-16, removing carcass-weight purchase rules and related hearing/appeal processes"
+              "Producers providing cattle for custom processing must now hold a licence, or are deemed to hold one.",
+              "Producers processing their own cattle must pay prescribed licence fees as if cattle were sold.",
+              "Producers can seek reimbursement of licence fees for up to two head of cattle processed for personal consumption.",
+              "Repeals sections 10 to 16, removing rules on purchasing cattle by carcass weight and related hearings/appeals."
             ]
           },
           {
             "numero": 2,
             "titre": "Farming and Food Production Protection Act, 1998",
             "puces": [
-              "Transfers powers and duties of the Normal Farm Practices Protection Board to the Agriculture and Agri-Food Protection Tribunal",
-              "Makes other amendments, including transitional rules, to reflect this transfer"
+              "Transfers powers and duties of the Normal Farm Practices Protection Board to the Agriculture and Agri-Food Protection Tribunal.",
+              "Makes other amendments, including transitional provisions, to reflect this transfer."
             ]
           },
           {
             "numero": 3,
             "titre": "Farmland Security Act, 2026",
             "puces": [
-              "Prohibits designated persons, including foreign nationals or certain entities, from purchasing or acquiring farmland",
-              "Regulations may create exemptions from the prohibition",
-              "Requires conveyance information to be given to the Minister; registrars must refuse registration if missing",
-              "Sets up permission applications, inspectors, investigators, compliance orders and offences"
+              "Enacts a new Act prohibiting designated persons, including foreign nationals, from purchasing or acquiring farmland.",
+              "Regulations may provide exemptions from the prohibition.",
+              "Requires conveyance information to be given to the Minister; land registrars must refuse registration if missing.",
+              "Creates enforcement measures including inspectors, investigators, compliance orders and offences."
             ]
           },
           {
             "numero": 4,
             "titre": "Food Safety and Quality Act, 2001",
             "puces": [
-              "Expands the Act's scope to cover milk and milk products",
-              "Updates administrative penalty rules in re-enacted section 41 and new sections 41.1 and 41.2",
-              "Re-enacts Part VI with new rules on delegated authorities, replacing former section 49",
-              "Replaces Crown liability rules in section 50 and adds new section 50.1 on delegated authority liability"
+              "Expands the Act's scope to include milk and milk products as regulated foods.",
+              "Updates administrative penalty rules in re-enacted section 41 and new sections 41.1 and 41.2.",
+              "Re-enacts Part VI with new rules on delegated authorities, replacing former section 49.",
+              "Replaces Crown liability rules and adds new liability rules for delegated authorities."
             ]
           },
           {
             "numero": 5,
             "titre": "Milk Act",
             "puces": [
-              "Adds milk products to the definition of 'regulated product' and updates references from cream/cheese",
-              "Removes the Act's role in regulating the quality of milk and milk products",
-              "Removes the Act's governance of plants",
-              "Adds new inspection powers in re-enacted sections 8 and 9, and new transition regulation authority in section 26.1"
+              "Adds milk products to the definition of 'regulated product' and updates references from cream or cheese to milk products.",
+              "Removes the Act's role in controlling and regulating the quality of milk and milk products.",
+              "Removes the Act's governance over plants.",
+              "Adds new inspection powers and a Minister's transition regulation-making authority."
             ]
           },
           {
             "numero": 6,
             "titre": "Ministry of Agriculture, Food and Rural Affairs Act",
             "puces": [
-              "Renames the Agriculture, Food and Rural Affairs Appeal Tribunal as the Agriculture and Agri-Food Protection Tribunal",
-              "Extends the deadline for the Tribunal to send decisions and reasons from 20 to 30 days after a hearing",
-              "Applies the new 30-day period transitionally to hearings already completed before the amendment's effective date",
-              "Makes French-version amendments for consistency with the English text"
+              "Renames the Agriculture, Food and Rural Affairs Appeal Tribunal as the Agriculture and Agri-Food Protection Tribunal.",
+              "Extends the deadline for the Tribunal to send decision notices from 20 to 30 days after a hearing.",
+              "Makes the new 30-day period apply to hearings completed before the amendment takes effect.",
+              "Makes French-version amendments for consistency with the English text."
             ]
           },
           {
             "numero": 7,
             "titre": "Ontario Food Terminal Act",
             "puces": [
-              "Declares the Ontario Food Terminal Board an agent of the Crown in right of Ontario",
-              "Allows reserve funds under section 7 to include capital funds",
-              "Adds liability protections for the Crown, its employees/agents, and Board members, officers, employees and the manager"
+              "Declares the Ontario Food Terminal Board to be an agent of the Crown in right of Ontario.",
+              "Allows reserve funds set up under section 7 to include capital funds.",
+              "Adds liability protections for the Crown, Board members, officers, employees and the Terminal's manager."
             ]
           },
           {
             "numero": 8,
             "titre": "Protecting Farmers from Non-Payment Act (Regulating Agricultural Product Dealers and Storage Operators), 2023",
             "puces": [
-              "Repeals and replaces the definition of 'dealer'",
-              "Extends agreement rules to cover prescribed buyers and sellers, not just dealers and producers",
-              "Updates storage operator rules on weigh tickets, storage receipts and shortfall permits",
-              "Adds new Part VII.1 setting rules for collection and grading of designated agricultural products"
+              "Repeals and replaces the definition of 'dealer'.",
+              "Extends agreement rules in Part IV to cover prescribed buyers and sellers, not just dealers and producers.",
+              "Updates storage operator requirements for weigh tickets, storage receipts and shortfall permits.",
+              "Adds new Part VII.1 setting rules for collection and grading of designated agricultural products."
             ]
           },
           {
             "numero": 9,
             "titre": "Veterinary Professionals Act, 2024",
             "puces": [
-              "Adds a definition of 'ancillary services' and revises the definition of 'Minister'",
-              "Creates exceptions to the certificate of accreditation requirement in new subsections 21(3) and (4)",
-              "Amends rules on members who knew or should have known licence application information was false",
-              "Expands entry and inspection powers for veterinary facilities and other prescribed premises"
+              "Adds a definition of 'ancillary services' and revises the definition of 'Minister'.",
+              "Creates new exceptions to the requirement for a certificate of accreditation.",
+              "Addresses members who knew or should have known information given when applying for a licence was false.",
+              "Adds new entry and inspection powers for veterinary facilities and other prescribed places."
             ]
           }
         ],
@@ -8000,35 +8001,35 @@
         "sansContenu": false,
         "tronque": false,
         "source": "note-explicative",
-        "derniereActivite": "2026-08-12",
+        "derniereActivite": "2026-11-05",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-25T04:13:13.635Z",
+        "genereLe": "2026-11-16T21:39:57.604Z",
         "jetons": {
           "entree": 4804,
-          "sortie": 1439
+          "sortie": 1521
         }
       },
       "fr": {
         "puces": [
-          "Ce projet de loi omnibus modifie neuf lois liées à l'agriculture, à l'alimentation et aux affaires rurales en Ontario, touchant la commercialisation du bétail, les terres agricoles, la salubrité des aliments et la profession vétérinaire.",
-          "Il crée notamment une nouvelle loi limitant l'achat de terres agricoles par des étrangers et restructure plusieurs organismes de gouvernance agricole."
+          "Ce projet de loi omnibus (loi sur l'autonomie alimentaire de l'Ontario) modifie 8 lois existantes et édicte une nouvelle loi touchant l'agriculture, l'alimentation et les affaires rurales en Ontario.",
+          "Il restructure des organismes de gouvernance agricole, crée une loi limitant l'achat de terres agricoles par des étrangers, et met à jour les règles sur le lait, la salubrité des aliments, les paiements aux agriculteurs et la profession vétérinaire."
         ],
         "annexes": [
           {
             "numero": 1,
             "titre": "Loi sur la commercialisation des bovins de boucherie",
             "puces": [
-              "Un producteur ne peut plus fournir de bovins pour transformation sur demande sans permis, mais est réputé titulaire d'un permis",
-              "Le producteur qui transforme ses bovins paie les droits de permis prescrits comme s'ils étaient vendus",
-              "Remboursement possible des droits de permis pour un maximum de deux bovins transformés pour consommation personnelle",
-              "Abroge les règles interdisant l'achat de bovins au poids de la carcasse et les procédures d'audience et d'appel liées à la liste des usines"
+              "Interdit de fournir des bovins pour transformation sur demande sans permis; chaque producteur est réputé titulaire d'un permis",
+              "Le producteur qui transforme ses bovins doit payer les droits de permis prescrits, comme s'ils étaient vendus",
+              "Remboursement possible des droits de permis jusqu'à 2 bovins transformés pour consommation personnelle",
+              "Abroge les règles sur l'achat de bovins selon le poids de carcasse et les audiences/appels liés à l'inscription des usines"
             ]
           },
           {
             "numero": 2,
             "titre": "Loi de 1998 sur la protection de l'agriculture et de la production alimentaire",
             "puces": [
-              "Transfère les pouvoirs et fonctions de la Commission de protection des pratiques agricoles normales au nouveau Tribunal de protection des secteurs agricole et agroalimentaire",
+              "Transfère les pouvoirs de la Commission de protection des pratiques agricoles normales au nouveau Tribunal de protection des secteurs agricole et agroalimentaire",
               "Prévoit des mesures transitoires pour ce transfert"
             ]
           },
@@ -8036,10 +8037,10 @@
             "numero": 3,
             "titre": "Loi de 2026 sur la protection des terres agricoles",
             "puces": [
-              "Interdit à une «personne désignée» (pouvant être un étranger) d'acheter ou d'acquérir des terres agricoles, sauf exemptions prévues par règlement",
-              "Exige la fourniture de renseignements au ministre lors de la cession de terres agricoles; le registrateur refuse l'enregistrement si les renseignements manquent",
-              "Une personne désignée peut demander l'autorisation du ministre pour acquérir des terres agricoles, avec possibilité de réexamen en cas de refus",
-              "Prévoit des inspecteurs, des enquêteurs, des arrêtés de conformité, des infractions et des protections contre la responsabilité"
+              "Nouvelle loi interdisant à une « personne désignée » (pouvant être un étranger) d'acheter ou d'acquérir des terres agricoles, sauf exemptions prévues par règlement",
+              "Toute cession de terres agricoles doit être accompagnée de renseignements au ministre; le registrateur refuse l'enregistrement si l'information manque",
+              "Une personne désignée peut demander au ministre une autorisation d'achat; un réexamen du refus peut être prévu par règlement",
+              "Prévoit inspecteurs, enquêteurs, arrêtés de conformité, infractions et protections contre la responsabilité"
             ]
           },
           {
@@ -8047,19 +8048,19 @@
             "titre": "Loi de 2001 sur la qualité et la salubrité des aliments",
             "puces": [
               "Élargit la portée de la loi pour inclure le lait et les produits du lait",
-              "Met à jour les règles sur les pénalités administratives (articles 41, 41.1 et 41.2)",
-              "Réédicte la partie VI avec de nouvelles règles sur les organismes délégataires, remplaçant l'article 49",
-              "Réédicte les règles de responsabilité de la Couronne et ajoute des règles d'immunité pour les organismes délégataires (articles 50 et 50.1)"
+              "Met à jour les règles sur les pénalités administratives",
+              "Réédicte la partie VI pour établir de nouvelles règles sur les organismes délégataires, remplaçant l'ancien article 49",
+              "Remplace les règles sur la responsabilité de la Couronne et ajoute des règles d'immunité pour les organismes délégataires"
             ]
           },
           {
             "numero": 5,
             "titre": "Loi sur le lait",
             "puces": [
-              "Ajoute les produits du lait à la définition de «produit réglementé» et remplace les mentions de «crème» et «fromage» par «produits du lait»",
-              "Retire de la loi la régie de la qualité du lait et des produits du lait, ainsi que la réglementation des usines",
-              "Modifie les pouvoirs réglementaires du lieutenant-gouverneur en conseil et de la Commission, et ajoute de nouvelles règles d'inspection",
-              "Ajoute un pouvoir réglementaire du ministre pour les questions transitoires"
+              "Ajoute les produits du lait à la définition de « produit réglementé »; remplace « crème » et « fromage » par « produits du lait »",
+              "Retire de la loi la réglementation de la qualité du lait et des produits du lait, ainsi que la régie des usines",
+              "Modifie les pouvoirs réglementaires du lieutenant-gouverneur en conseil et de la Commission",
+              "Ajoute de nouvelles règles sur les pouvoirs d'inspection et un pouvoir ministériel pour les questions transitoires"
             ]
           },
           {
@@ -8067,37 +8068,37 @@
             "titre": "Loi sur le ministère de l'Agriculture, de l'Alimentation et des Affaires rurales",
             "puces": [
               "Renomme le Tribunal d'appel de l'agriculture, de l'alimentation et des affaires rurales en Tribunal de protection des secteurs agricole et agroalimentaire",
-              "Fait passer de 20 à 30 jours le délai pour que le Tribunal envoie sa décision et ses motifs après une audience, avec application transitoire aux audiences déjà conclues",
-              "Apporte des modifications de forme à la version française de la loi pour l'harmoniser avec la version anglaise"
+              "Fait passer de 20 à 30 jours le délai pour envoyer l'avis de décision du Tribunal après l'audition, y compris pour les audiences déjà conclues",
+              "Apporte des modifications de forme à la version française pour l'harmoniser avec la version anglaise"
             ]
           },
           {
             "numero": 7,
             "titre": "Loi sur le marché des produits alimentaires de l'Ontario",
             "puces": [
-              "Fait de la Commission du Marché des produits alimentaires de l'Ontario un mandataire de la Couronne",
-              "Permet que la création d'un fonds de réserve comprenne un fonds d'immobilisations",
-              "Ajoute des protections contre la responsabilité pour la Couronne, ses employés, les membres et employés de la Commission et de l'administrateur du Marché"
+              "Précise que la Commission du Marché des produits alimentaires de l'Ontario est mandataire de la Couronne",
+              "Permet la création d'un fonds d'immobilisations en plus du fonds de réserve",
+              "Ajoute des protections contre la responsabilité pour la Couronne, ses employés et les membres de la Commission"
             ]
           },
           {
             "numero": 8,
             "titre": "Loi de 2023 visant à protéger les agriculteurs contre les défauts de paiement (réglementation des activités des marchands de produits agricoles et des exploitants de services d'entreposage)",
             "puces": [
-              "Modifie la définition de «marchand» et étend certaines règles aux ententes entre acheteurs et vendeurs prescrits",
-              "Modifie les exigences pour les billets de pesée, récépissés d'entreposage et autorisations de niveau déficitaire des exploitants de services d'entreposage",
-              "Ajoute une nouvelle partie VII.1 sur la collecte et le classement de produits agricoles désignés par règlement",
-              "Modifie les mesures d'exécution: ordonnances de mise en conformité, ordonnances de blocage et pénalités administratives"
+              "Redéfinit « marchand » et étend certaines règles aux ententes entre acheteurs et vendeurs prescrits",
+              "Modifie les exigences pour les exploitants de services d'entreposage sur les billets de pesée, récépissés et autorisations de niveau déficitaire",
+              "Ajoute une nouvelle partie VII.1 sur la collecte et le classement de produits agricoles désignés",
+              "Modifie les mesures d'exécution (ordonnances de mise en conformité, de blocage, pénalités administratives) et les pouvoirs réglementaires du ministre"
             ]
           },
           {
             "numero": 9,
             "titre": "Loi de 2024 sur les professionnels vétérinaires",
             "puces": [
-              "Ajoute la définition de «services accessoires» et prévoit des exceptions à l'obligation d'obtenir un certificat d'agrément dans certains cas",
-              "Modifie les règles applicables aux membres ayant fourni des renseignements faux ou trompeurs lors d'une demande de permis",
-              "Retire la mention du plaignant comme partie aux instances devant le comité de discipline et d'aptitude professionnelle",
-              "Prévoit la divulgation de renseignements prescrits et de nouveaux pouvoirs d'inspection des établissements vétérinaires et autres lieux prescrits"
+              "Ajoute la définition de « services accessoires » et modifie celle de « ministre »",
+              "Prévoit de nouvelles exceptions à l'obligation d'obtenir un certificat d'agrément",
+              "Prévoit des conséquences pour les membres ayant fourni des renseignements faux ou trompeurs lors d'une demande de permis",
+              "Ajoute des pouvoirs d'entrée et d'inspection des établissements vétérinaires et autres lieux prescrits"
             ]
           }
         ],
@@ -8105,12 +8106,12 @@
         "sansContenu": false,
         "tronque": false,
         "source": "note-explicative",
-        "derniereActivite": "2026-08-12",
+        "derniereActivite": "2026-11-05",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-25T04:13:33.029Z",
+        "genereLe": "2026-11-16T21:39:57.605Z",
         "jetons": {
           "entree": 6660,
-          "sortie": 2125
+          "sortie": 2042
         }
       }
     },
@@ -8408,42 +8409,42 @@
     "117": {
       "fr": {
         "puces": [
-          "Le ministre de la Santé doit étudier un programme de subventions pour les frais de déplacement liés aux soins spécialisés non offerts localement",
-          "Pour être admissible, il faut être résident de l'Ontario et avoir été dirigé vers un service spécialisé par un clinicien",
-          "Le déplacement doit être d'au moins 100 kilomètres aller simple vers le spécialiste ou service le plus proche",
-          "Les frais ne doivent pas déjà être couverts par un autre programme, comme une assurance privée ou un régime fédéral",
-          "La demande doit être présentée dans les 12 mois suivant le traitement, avec les reçus originaux",
+          "Oblige le ministre de la Santé à étudier un programme de subventions pour les frais de déplacement liés à des soins spécialisés",
+          "Vise les Ontariens dirigés par un clinicien vers un service médical spécialisé non offert localement",
+          "Exige de parcourir au moins 100 kilomètres aller simple pour être admissible à la subvention",
+          "La demande doit être faite dans les 12 mois suivant le traitement, avec reçus originaux à l'appui",
+          "Les frais déjà couverts par un autre programme ou une assurance privée ne sont pas admissibles",
           "Le ministre doit déposer un rapport sur l'étude dans les six mois suivant l'entrée en vigueur de la loi",
-          "Le rapport doit expliquer comment le programme sera financé intégralement dans les six mois suivant son dépôt"
+          "Le rapport doit expliquer comment le programme sera financé intégralement dans les six mois suivants"
         ],
         "sansContenu": false,
         "tronque": false,
-        "derniereActivite": "2026-05-11",
+        "derniereActivite": "2026-10-29",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-24T23:25:24.926Z",
+        "genereLe": "2026-11-16T21:39:57.605Z",
         "jetons": {
           "entree": 2499,
-          "sortie": 340
+          "sortie": 308
         }
       },
       "en": {
         "puces": [
           "Requires the Minister of Health to examine creating a grant program for travel costs to access specialist care",
-          "Grants would help Ontarians who must travel for medical specialist services unavailable locally",
-          "Eligibility includes being an Ontario resident referred by a primary care clinician for specialist care",
-          "Applicants must travel at least 100 kilometres one-way to reach the nearest needed specialist or facility",
-          "Travel costs must not already be covered by programs like WSIB, federal Non-Insured Health Benefits, or private insurance",
-          "Applications must be made within 12 months of treatment, with original receipts provided",
-          "Minister must table a report within six months describing steps to fully fund the program within a further six months"
+          "Grants would help Ontarians travelling at least 100 kilometres one-way for specialist services unavailable locally",
+          "Eligibility requires a referral from a primary care clinician and no other coverage for travel costs",
+          "Applicants must apply within 12 months of treatment and provide original receipts",
+          "Minister must table a report on the examination within six months of the Act coming into force",
+          "Report must describe steps to fully fund the grant program within six months after it is tabled",
+          "Act takes effect on the day it receives Royal Assent"
         ],
         "sansContenu": false,
         "tronque": false,
-        "derniereActivite": "2026-05-11",
+        "derniereActivite": "2026-10-29",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-24T23:25:24.949Z",
+        "genereLe": "2026-11-16T21:39:57.605Z",
         "jetons": {
           "entree": 1936,
-          "sortie": 257
+          "sortie": 230
         }
       }
     },
@@ -8488,109 +8489,110 @@
     "119": {
       "fr": {
         "puces": [
-          "Le projet de loi 119 modifie 14 lois existantes et en édicte deux nouvelles, touchant notamment l'adoption, la sécurité policière, la traite de personnes, le remorquage et les services de sécurité privés.",
-          "Il vise à renforcer l'exécution de la loi, à mieux protéger les personnes vulnérables et à soutenir les victimes de la traite des personnes."
+          "Un projet de loi omnibus qui édicte deux nouvelles lois et modifie 14 autres lois touchant l'adoption, les services policiers, la sécurité et la protection des victimes",
+          "Les changements visent notamment l'adoption nationale et internationale, le registre des délinquants sexuels, la traite de personnes, le remorquage de véhicules et le harcèlement criminel"
         ],
         "annexes": [
           {
             "numero": 1,
             "titre": "Loi de 2017 sur les services à l'enfance, à la jeunesse et à la famille",
             "puces": [
-              "Permet à un directeur d'agréer des intervenants en adoption pour établir des études du milieu familial",
-              "Crée une clause de permis autorisant à amener en Ontario des enfants étrangers en vue d'adoption",
-              "Ajoute des motifs de refus, révocation ou non-renouvellement de permis de placement d'enfants",
-              "Autorise le placement d'un adolescent dans une pièce fermée à clé selon des normes prescrites"
+              "Permet d'agréer des intervenants en adoption pour établir des études du milieu familial et des rapports d'adaptation",
+              "Permet d'assortir un permis de placement d'adoption d'une clause autorisant l'adoption internationale d'enfants d'un pays précisé",
+              "Ajoute des motifs de refus, révocation ou non-renouvellement d'un permis de placement d'enfants en adoption",
+              "Permet de placer un adolescent dans une pièce fermée à clé en milieu fermé selon des protocoles réglementaires"
             ]
           },
           {
             "numero": 2,
             "titre": "Loi Christopher de 2000 sur le registre des délinquants sexuels",
             "puces": [
-              "Élargit l'application de la loi à toute personne visée par une ordonnance fédérale d'enregistrement des délinquants sexuels",
-              "Exige que les délinquants se présentent tant qu'ils restent délinquants sexuels au sens de la loi fédérale",
-              "Abroge les règles de suppression liées à la réhabilitation; le ministre doit désormais superviser la suppression définitive des données",
-              "Remplace les mentions de « ministère » par « ministre » et apporte des modifications de forme"
+              "Étend l'application de la loi à toute personne visée par une ordonnance ou obligation fédérale d'enregistrement",
+              "Exige que les délinquants se présentent tant qu'ils restent délinquants sexuels selon la loi fédérale",
+              "Abroge les règles de suppression du registre en cas de réhabilitation ou d'infirmation de la déclaration de culpabilité",
+              "Exige que le ministre veille à la suppression définitive et à la destruction des renseignements selon les règlements"
             ]
           },
           {
             "numero": 3,
             "titre": "Loi de 2019 sur la sécurité communautaire et les services policiers",
             "puces": [
-              "Élargit les fonctions du ministre, notamment la consultation des commissions de service de police",
-              "Interdit aux commissions de service de police de conclure certains contrats avec leurs membres actuels ou anciens",
-              "Exige la divulgation publique par le commissaire de certains renseignements personnels via un site Web",
-              "Autorise des agents d'autres autorités canadiennes (dont la GRC) à exercer des pouvoirs de police prescrits en Ontario"
+              "Élargit les fonctions du ministre : conseils aux commissions de police et surveillance des tendances en services policiers",
+              "Donne au ministre le pouvoir de diriger les priorités du plan stratégique des commissions de service de police",
+              "Interdit aux commissions de service de police de conclure certains contrats avec des membres actuels ou anciens",
+              "Permet aux agents de la GRC ou d'autres autorités canadiennes d'exercer certains pouvoirs d'agent de police en Ontario"
             ]
           },
           {
             "numero": 4,
-            "titre": "Loi de 2026 sur l'exécution des ordonnances interdictives canadiennes",
+            "titre": "Loi de 2026 sur l'exécution des ordonnances interdictives canadiennes (nouvelle loi)",
             "puces": [
-              "Édicte une nouvelle loi rendant les ordonnances interdictives des autres provinces exécutoires en Ontario",
+              "Rend les ordonnances interdictives des tribunaux canadiens hors Ontario exécutoires comme des ordonnances ontariennes",
               "Permet d'enregistrer ces ordonnances auprès d'un tribunal ontarien",
-              "Permet de demander la modification ou l'annulation d'une ordonnance interdictive hors Ontario devant la Cour de la famille"
+              "Permet de demander la modification ou l'annulation d'une telle ordonnance devant la Cour de la famille"
             ]
           },
           {
             "numero": 5,
             "titre": "Loi de 1998 sur l'adoption internationale",
             "puces": [
-              "Limite aux titulaires de permis la présentation de demandes d'approbation pour une adoption internationale",
-              "Crée un agrément pour les intervenants en adoption chargés des études du milieu familial",
-              "Permet d'assortir un permis d'une clause autorisant à faciliter des adoptions depuis un pays précisé",
-              "Ajoute des pouvoirs de directives contraignantes et d'ordres de conformité pour les titulaires de permis"
+              "Les demandes d'approbation pour une adoption internationale ne pourront être présentées qu'à un titulaire de permis",
+              "Permet d'agréer des intervenants en adoption chargés d'établir les études du milieu familial",
+              "Permet d'assortir un permis d'une clause pour faciliter les adoptions en provenance d'un pays précisé",
+              "Permet au directeur de donner des directives contraignantes et des ordres de conformité aux titulaires de permis"
             ]
           },
           {
             "numero": 6,
-            "titre": "Loi de 2026 sur les presses à comprimés et les précurseurs",
+            "titre": "Loi de 2026 sur les presses à comprimés et les précurseurs (nouvelle loi)",
             "puces": [
-              "Édicte une nouvelle loi interdisant l'utilisation, la possession ou la vente de presses à comprimés et de précurseurs dans certaines circonstances",
-              "Impose l'obligation de signaler le vol de presses à comprimés",
-              "Autorise un agent de police à exiger l'identité d'une personne soupçonnée d'infraction",
-              "Prévoit des infractions, peines, perquisitions et saisies"
+              "Interdit l'utilisation, la possession ou la vente de presses à comprimés et de précurseurs dans certaines circonstances",
+              "Interdit la possession du produit d'une infraction à la loi et impose le signalement du vol de presses à comprimés",
+              "Permet à un agent de police d'exiger l'identité d'une personne soupçonnée d'infraction",
+              "Prévoit des infractions, des peines, des perquisitions et des saisies"
             ]
           },
           {
             "numero": 7,
             "titre": "Loi sur l'aménagement du territoire",
             "puces": [
-              "Permet aux municipalités locales d'imposer une pénalité administrative en cas de non-respect des règlements de zonage",
-              "La pénalité non payée dans les 15 jours peut être ajoutée au rôle d'imposition et perçue comme un impôt municipal"
+              "Donne aux municipalités locales le pouvoir d'imposer une pénalité administrative pour non-respect des règlements sur l'utilisation du sol",
+              "La pénalité impayée après 15 jours peut être ajoutée au rôle d'imposition et perçue comme des impôts municipaux"
             ]
           },
           {
             "numero": 8,
             "titre": "Loi de 2015 sur la réforme des vérifications de dossiers de police",
             "puces": [
-              "Permet à un chef de police de demander au ministre qu'un organisme soit désigné organisme autorisé sous la loi fédérale sur le casier judiciaire"
+              "Permet à un chef de police de demander au ministre qu'un organisme soit désigné organisme autorisé selon la loi fédérale sur le casier judiciaire",
+              "Autorise le ministre à régir par règlement la désignation de ces organismes"
             ]
           },
           {
             "numero": 9,
             "titre": "Loi de 2017 sur la prévention de la traite de personnes et les recours en la matière",
             "puces": [
-              "Réédicte les règles sur les dettes contractées sous la contrainte et interdit leur recouvrement une fois établies comme telles",
-              "Crée un processus par entente écrite, requête au tribunal ou décision d'un arbitre pour établir une dette contractée sous la contrainte",
-              "Impose aux créanciers d'aviser certaines personnes et de suspendre le recouvrement pendant une période déterminée",
-              "Abroge la Loi de 2023 sur la protection contre les dettes contractées sous la contrainte, son contenu étant intégré à cette loi"
+              "Réédicte les règles sur les dettes contractées sous la contrainte par une victime de traite de personnes",
+              "Interdit le recouvrement de telles dettes et leur prise en compte pour fournir des services ou produits",
+              "Prévoit trois façons d'établir une dette contractée sous la contrainte : accord écrit, requête au tribunal, demande à un arbitre",
+              "Abroge la Loi de 2023 sur la protection contre les dettes contractées sous la contrainte, dont l'essentiel est repris ici"
             ]
           },
           {
             "numero": 10,
             "titre": "Loi de 2005 sur les services privés de sécurité et d'enquête",
             "puces": [
-              "Élargit la définition d'agent de sécurité à tout travail rémunéré de garde ou de surveillance",
-              "Transfère au ministre, plutôt qu'au lieutenant-gouverneur en conseil, la nomination du registrateur",
-              "Autorise les juges de paix à rendre des ordonnances de production de documents visant les enquêteurs",
-              "Remplace l'obligation de retourner un permis par celle de le détruire dans certains cas"
+              "Élargit la définition d'agent de sécurité à tout travail rémunéré de garde ou de surveillance, sans égard à l'activité principale",
+              "Le ministre, plutôt que le lieutenant-gouverneur en conseil, nommera le registrateur et les registrateurs adjoints",
+              "Permet de gérer son permis sous forme numérique ou papier et exige sa destruction plutôt que son retour",
+              "Autorise les juges de paix à rendre des ordonnances de production de documents à l'endroit des enquêteurs"
             ]
           },
           {
             "numero": 11,
             "titre": "Loi de 2019 sur les services provinciaux visant le bien-être des animaux",
             "puces": [
-              "Étend l'obligation de tenue de dossiers, actuellement limitée aux chiens, aux chats et aux autres animaux prescrits"
+              "Étend l'obligation de tenue de dossiers des chiens aux chats et à tout autre animal prescrit par règlement"
             ]
           },
           {
@@ -8598,42 +8600,41 @@
             "titre": "Loi sur les infractions provinciales",
             "puces": [
               "Permet au greffier d'inscrire une déclaration de culpabilité et une amende selon une entente de règlement rapide entre défendeur et poursuivant",
-              "En cas de non-respect des exigences, la question doit être instruite devant un juge",
-              "Précise que le terme « tribunal » renvoie désormais expressément à un juge",
-              "Abroge diverses dispositions caduques"
+              "En cas de non-respect des exigences, l'affaire doit être instruite devant un juge",
+              "Apporte diverses modifications d'ordre administratif, dont l'abrogation de dispositions caduques"
             ]
           },
           {
             "numero": 13,
             "titre": "Loi de 1998 sur le travail social et les techniques de travail social",
             "puces": [
-              "Permet de rendre une ordonnance provisoire de suspension ou de restriction dès le dépôt d'une plainte ou la nomination d'un enquêteur, sans attendre le renvoi à une audience"
+              "Permet de rendre une ordonnance provisoire contre un membre dès le dépôt d'une plainte ou la nomination d'un enquêteur, sans attendre le renvoi à une audience"
             ]
           },
           {
             "numero": 14,
             "titre": "Loi de 2019 sur l'Unité des enquêtes spéciales",
             "puces": [
-              "Permet de prescrire d'autres personnes comme « agents » aux fins de la loi",
-              "Permet au directeur de l'UES de renvoyer certaines affaires à une personne prescrite plutôt qu'à un chef de police uniquement"
+              "Permet de prescrire d'autres personnes comme « agents » visés par la loi",
+              "Permet au directeur de renvoyer certaines affaires à une personne prescrite par règlement plutôt qu'à un chef de police seulement"
             ]
           },
           {
             "numero": 15,
             "titre": "Loi de 2021 sur la sécurité et l'encadrement du remorquage et de l'entreposage de véhicules",
             "puces": [
-              "Prévoit que l'appel d'une décision ne suspend celle-ci que si la Cour divisionnaire l'ordonne",
-              "Interdit de fournir ou d'offrir des services de remorquage, ou de stationner une dépanneuse, dans les 200 mètres d'une collision",
-              "La délivrance d'un avis d'infraction à un conducteur de dépanneuse vaut signification à l'exploitant",
-              "Permet au directeur de déléguer ses pouvoirs à une personne employée du ministère"
+              "Un appel d'une décision d'un organisme d'appel ne suspend plus la décision, sauf ordonnance de la Cour divisionnaire",
+              "Interdit de fournir des services de remorquage ou de stationner une dépanneuse dans les 200 mètres d'une collision",
+              "Un avis d'infraction remis à un conducteur de dépanneuse vaut signification à l'exploitant du service de remorquage",
+              "Permet au directeur de déléguer ses pouvoirs à un employé du ministère"
             ]
           },
           {
             "numero": 16,
             "titre": "Charte de 1995 des droits des victimes d'infractions criminelles",
             "puces": [
-              "Ajoute les victimes de harcèlement criminel à la liste présumée avoir subi des troubles affectifs",
-              "Crée une nouvelle cause d'action contre les personnes se livrant à du harcèlement, sans exiger d'accusation ou de condamnation",
+              "Ajoute les victimes de harcèlement criminel à la liste des victimes présumées avoir subi des troubles affectifs",
+              "Crée une nouvelle cause d'action contre les personnes qui se livrent à du harcèlement, sans exiger d'accusation criminelle",
               "Exige que le tribunal tienne compte des dommages-intérêts déjà accordés lors d'actions multiples pour harcèlement"
             ]
           }
@@ -8642,153 +8643,155 @@
         "sansContenu": false,
         "tronque": false,
         "source": "note-explicative",
-        "derniereActivite": "2026-06-02",
+        "derniereActivite": "2026-11-16",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-25T04:14:18.822Z",
+        "genereLe": "2026-11-16T21:39:57.605Z",
         "jetons": {
           "entree": 13892,
-          "sortie": 2862
+          "sortie": 3089
         }
       },
       "en": {
         "puces": [
-          "A wide-ranging justice and public-safety bill that changes adoption rules, policing oversight, sex offender registry rules, human trafficking debt protections, and several other Acts.",
-          "It creates two new laws (on restraining orders from other provinces and on pill presses/precursors) and amends 14 existing Acts covering policing, licensing, and victim protections."
+          "Omnibus justice and public-safety bill that amends 14 existing Acts and creates 2 new ones, covering adoption, policing, sex offender registration, human trafficking debts, towing, and more.",
+          "Many schedules expand enforcement and regulatory powers for ministers, directors and police oversight bodies, and create new offences and penalties."
         ],
         "annexes": [
           {
             "numero": 1,
             "titre": "Child, Youth and Family Services Act, 2017",
             "puces": [
-              "Lets a Director approve people as adoption practitioners to prepare homestudies and adjustment reports.",
-              "Allows licensees to bring foreign children into Ontario for adoption under a new licence term.",
-              "Director may refuse such a licence term if contrary to the public interest.",
-              "Allows locking a young person in a room in secure custody under prescribed rules."
+              "Allows Directors to approve persons as adoption practitioners who can prepare homestudies and adjustment reports.",
+              "Lets Directors grant licence terms allowing licensees to bring foreign children into Ontario for adoption.",
+              "Adds grounds for Directors to refuse, revoke or not renew adoption placement licences, including public interest.",
+              "Permits locking young persons in secure custody rooms under prescribed circumstances and standards."
             ]
           },
           {
             "numero": 2,
             "titre": "Christopher's Law (Sex Offender Registry), 2000",
             "puces": [
-              "Applies the Act to anyone subject to an order/obligation under the federal Sex Offender Information Registration Act.",
-              "Reporting duties last as long as the person is a sex offender under federal law.",
-              "Removes rules on pardons/overturned convictions; adds rules for destroying registry information.",
-              "Updates references from 'the ministry' to 'the Minister' and other technical fixes."
+              "Applies the Act to anyone subject to an order or obligation under the federal Sex Offender Information Registration Act.",
+              "Requires offenders to report for as long as they remain a sex offender under the federal Act.",
+              "Repeals pardon/overturned-conviction deletion rules; Minister must now destroy registry information per regulations.",
+              "Updates regulation-making powers and replaces references to 'the ministry' with 'the Minister'."
             ]
           },
           {
             "numero": 3,
             "titre": "Community Safety and Policing Act, 2019",
             "puces": [
-              "Expands misconduct/complaint rules to cover prescribed persons beyond police officers.",
-              "Gives the Minister power to issue directives setting priorities for police service boards.",
-              "Requires public disclosure of certain personal information by the Commissioner on a website.",
-              "Lets out-of-province officers, like RCMP, exercise prescribed police powers in Ontario."
+              "Expands misconduct, complaint and investigation provisions to cover prescribed persons beyond police officers.",
+              "Gives the Minister power to issue directives setting priorities for police service board strategic plans.",
+              "Lets the Minister require the Inspector General to investigate policing arrangements before approval.",
+              "Creates a public website requirement for the Commissioner to disclose certain personal information."
             ]
           },
           {
             "numero": 4,
             "titre": "Enforcement of Canadian Restraining Orders Act, 2026",
             "puces": [
-              "New Act makes restraining orders from other Canadian courts enforceable as Ontario orders.",
-              "Such orders can be registered with an Ontario court.",
-              "Parties can apply to vary or set aside a non-Ontario restraining order under specified conditions."
+              "New Act deems out-of-province Canadian restraining orders enforceable as Ontario court orders.",
+              "Allows such orders to be registered with an Ontario court and varied or set aside under set criteria.",
+              "Gives the Family Court of the Superior Court of Justice jurisdiction over applications to vary or set aside these orders."
             ]
           },
           {
             "numero": 5,
             "titre": "Intercountry Adoption Act, 1998",
             "puces": [
-              "Applications to leave Ontario for adoption may now only go through a licensee, not a Director.",
-              "Directors may approve adoption practitioners and require corrective directions from them.",
-              "New licence terms let licensees facilitate adoptions from specific countries, subject to public-interest refusal.",
-              "Adds binding directives and compliance orders for licensees who break the rules."
+              "Restricts applications to leave Ontario for intercountry adoption to licensees only, not Directors.",
+              "Allows Directors to approve adoption practitioners and issue directions to address concerns.",
+              "Lets Directors grant licence terms permitting adoptions from a specific country, with refusal on public interest grounds.",
+              "Adds binding directives and compliance orders for licensees who fail to comply with the Act."
             ]
           },
           {
             "numero": 6,
             "titre": "Pill Presses and Precursors Act, 2026",
             "puces": [
-              "New Act defines and restricts use, possession or sale of pill presses and precursor chemicals.",
-              "Prohibits possessing proceeds from offences under the Act and requires reporting stolen pill presses.",
-              "Lets police demand identification from suspects and sets out search, seizure and penalty rules."
+              "New Act defining and prohibiting use, possession or sale of pill presses and precursors in certain circumstances.",
+              "Prohibits possessing proceeds from offences and requires reporting of stolen pill presses.",
+              "Gives police power to demand identification from suspects and sets out search, seizure and penalty provisions."
             ]
           },
           {
             "numero": 7,
             "titre": "Planning Act",
             "puces": [
-              "Lets municipalities impose administrative penalties for violations of land-use restriction by-laws.",
-              "Unpaid penalties become a debt collectible like municipal taxes if not paid within 15 days."
+              "Lets local municipalities impose administrative penalties for violating land-use by-laws.",
+              "Unpaid penalties become a debt collectible via the property tax roll after 15 days."
             ]
           },
           {
             "numero": 8,
             "titre": "Police Record Checks Reform Act, 2015",
             "puces": [
-              "Lets a chief of police apply to the Minister to have a body designated as an 'authorized body' under federal law.",
-              "Minister may make regulations governing this designation process."
+              "Allows a chief of police to apply to the Minister to have a body designated as 'authorized' under the federal Criminal Records Act.",
+              "Minister gains regulation-making power to govern this designation process."
             ]
           },
           {
             "numero": 9,
             "titre": "Prevention of and Remedies for Human Trafficking Act, 2017",
             "puces": [
-              "Re-enacts rules letting trafficking victims establish and stop collection of coerced debts.",
-              "Creditors must pause debt collection once a designated organization confirms a debt is coerced.",
-              "Sets up simplified adjudicator process, alongside courts, to decide contested coerced debt claims.",
-              "Repeals the 2023 coerced-debts Act, folding its substance into this Act."
+              "Re-enacts rules on 'coerced debts' incurred by trafficking victims, banning their collection or use in service decisions.",
+              "Sets three ways to establish a coerced debt: agreement, court application, or adjudicator application.",
+              "Requires involvement of a 'designated organization' and pauses on debt collection once a debt is flagged.",
+              "Repeals the 2023 Protection from Coerced Debts Act, folding its substance into this Act."
             ]
           },
           {
             "numero": 10,
             "titre": "Private Security and Investigative Services Act, 2005",
             "puces": [
-              "Redefines security guard work as guarding and patrolling, not just guarding or patrolling.",
-              "Minister, not Lieutenant Governor in Council, now appoints the Registrar and deputy registrars.",
-              "Paying licence fees becomes mandatory for licence eligibility.",
-              "Justices of the peace can now issue production orders to investigators."
+              "Broadens the definition of security guard to cover all guarding/patrolling work, not just primary duties.",
+              "Shifts registrar appointment power from Lieutenant Governor in Council to the Minister.",
+              "Requires licence fee payment as a condition of licence eligibility.",
+              "Replaces licence-return requirement with a requirement to destroy the licence in some cases."
             ]
           },
           {
             "numero": 11,
             "titre": "Provincial Animal Welfare Services Act, 2019",
             "puces": [
-              "Extends existing dog record-keeping requirement to also cover cats and other prescribed animals."
+              "Extends record-keeping requirements beyond dogs to cats and other prescribed animals."
             ]
           },
           {
             "numero": 12,
             "titre": "Provincial Offences Act",
             "puces": [
-              "Creates a process for court clerks to enter guilty pleas and fines agreed between defendant and prosecutor.",
-              "Cases proceed to trial before a justice if agreement requirements aren't met.",
-              "Re-enacts the definition of 'court' to expressly include a justice, with consequential changes."
+              "Creates a process for clerks to enter convictions and fines based on early resolution agreements between defendants and prosecutors.",
+              "Matters proceed to trial if agreement requirements aren't met.",
+              "Re-enacts the definition of 'court' to expressly mean a justice, with consequential changes.",
+              "Makes various housekeeping amendments, including repealing spent provisions."
             ]
           },
           {
             "numero": 13,
             "titre": "Social Work and Social Service Work Act, 1998",
             "puces": [
-              "Allows interim suspension or conditions on a member's certificate as soon as a complaint or investigation begins, not only after referral to a hearing."
+              "Allows interim suspension or conditions on a member's certificate as soon as a complaint or investigation begins, not only after a hearing referral."
             ]
           },
           {
             "numero": 14,
             "titre": "Special Investigations Unit Act, 2019",
             "puces": [
-              "Allows more people to be prescribed as 'officials' under the Act.",
-              "Lets the SIU Director refer certain matters to a prescribed person, not just a chief of police."
+              "Expands who can be prescribed as an 'official' under the Act.",
+              "Lets the SIU Director refer certain matters to a prescribed person instead of only a chief of police.",
+              "Adds regulation-making powers to modify or exempt prescribed officials from parts of the Act."
             ]
           },
           {
             "numero": 15,
             "titre": "Towing and Storage Safety and Enforcement Act, 2021",
             "puces": [
-              "Further appeals no longer automatically stay a decision unless the Divisional Court orders it.",
-              "Bans providing or offering towing services within 200 metres of a collision.",
-              "Also bans tow trucks from parking or stopping within 200 metres of a collision.",
-              "Lets the Director delegate powers to Ministry employees."
+              "Further appeals no longer automatically stay a decision unless the Divisional Court orders a stay.",
+              "Requires the Director to publish changes in towing/storage fee amounts within a prescribed time.",
+              "Bans towing services or truck parking within 200 metres of a collision scene.",
+              "Lets the Director delegate powers to ministry employees."
             ]
           },
           {
@@ -8796,8 +8799,8 @@
             "titre": "Victims' Bill of Rights, 1995",
             "puces": [
               "Adds victims of criminal harassment to those presumed to have suffered emotional distress.",
-              "Creates a new civil cause of action for harassment, even without a criminal charge or conviction.",
-              "Courts must account for damages already awarded when a victim brings multiple harassment claims against the same person."
+              "Creates a new harassment-based cause of action, independent of any criminal charge or conviction.",
+              "Requires courts to account for damages already awarded when multiple harassment actions are brought against the same person."
             ]
           }
         ],
@@ -8805,28 +8808,28 @@
         "sansContenu": false,
         "tronque": false,
         "source": "note-explicative",
-        "derniereActivite": "2026-06-02",
+        "derniereActivite": "2026-11-16",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-25T04:13:53.409Z",
+        "genereLe": "2026-11-16T21:39:57.606Z",
         "jetons": {
           "entree": 9527,
-          "sortie": 2129
+          "sortie": 2306
         }
       }
     },
     "120": {
       "fr": {
         "puces": [
-          "Proclame la semaine débutant le 1er mai de chaque année « Semaine de reconnaissance des médias ethniques et communautaires »",
-          "Souligne le rôle des médias en langues autres que le français et l'anglais pour informer les Ontariennes et Ontariens",
-          "Reconnaît l'apport des médias communautaires à la vie locale et civique",
+          "Proclame la semaine débutant le 1er mai de chaque année Semaine de reconnaissance des médias ethniques et communautaires",
+          "Souligne le rôle des médias en langues autres que le français et l'anglais pour informer les communautés",
+          "Reconnaît l'apport des médias communautaires à la couverture des enjeux locaux et à la vie civique",
           "La loi entre en vigueur dès qu'elle reçoit la sanction royale"
         ],
         "sansContenu": false,
         "tronque": false,
-        "derniereActivite": "2026-05-25",
+        "derniereActivite": "2026-11-04",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-24T23:25:24.949Z",
+        "genereLe": "2026-11-16T21:39:57.606Z",
         "jetons": {
           "entree": 2349,
           "sortie": 183
@@ -8834,21 +8837,21 @@
       },
       "en": {
         "puces": [
-          "Declares the week starting May 1 each year as Ethnic Media and Community Media Appreciation Week",
+          "Proclaims the week beginning May 1 each year as Ethnic Media and Community Media Appreciation Week",
           "Recognizes ethnic media outlets operating in languages other than English and French",
           "Acknowledges community media outlets covering local issues and neighbourhood events",
-          "Preamble notes these outlets help inform diverse and local communities about public affairs",
-          "Law takes effect on the day it receives Royal Assent",
+          "States these outlets help inform and connect diverse communities across Ontario",
+          "Act takes effect on the day it receives Royal Assent",
           "Short title is the Ethnic Media and Community Media Appreciation Week Act, 2026"
         ],
         "sansContenu": false,
         "tronque": false,
-        "derniereActivite": "2026-05-25",
+        "derniereActivite": "2026-11-04",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-24T23:25:24.967Z",
+        "genereLe": "2026-11-16T21:39:57.603Z",
         "jetons": {
           "entree": 1857,
-          "sortie": 198
+          "sortie": 197
         }
       }
     },
@@ -8898,36 +8901,39 @@
       "en": {
         "puces": [
           "Proclaims the first full week of December each year as Romanian Heritage Week in Ontario",
-          "Recognizes contributions of Ontario's approximately 150,000 Romanian Canadians",
-          "Honours Romanian Canadian community achievements in entrepreneurship, education, athletics, arts, science and public service",
+          "Recognizes Ontario's approximately 150,000 Romanian Canadians and their contributions",
+          "Notes immigration waves in the late 19th century and after World War II",
+          "Mentions organizations like Graiul Românesc (1929) and the Romanian Cultural Association (1957)",
+          "Aims to honour economic, political, social and cultural achievements of the community",
           "Act takes effect on the day it receives Royal Assent",
-          "Short title given is the Romanian Heritage Week Act, 2026"
+          "Short title is the Romanian Heritage Week Act, 2026"
         ],
         "sansContenu": false,
         "tronque": false,
-        "derniereActivite": "2026-05-26",
+        "derniereActivite": "2026-11-05",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-24T23:25:24.949Z",
+        "genereLe": "2026-11-16T21:39:57.604Z",
         "jetons": {
           "entree": 1726,
-          "sortie": 179
+          "sortie": 224
         }
       },
       "fr": {
         "puces": [
-          "Proclame la première semaine complète de décembre de chaque année « Semaine du patrimoine roumain » en Ontario",
-          "Vise à reconnaître les contributions des Ontariennes et Ontariens d'origine roumaine à la province",
-          "Rend hommage aux réalisations de cette communauté dans les secteurs économique, politique, social et culturel",
-          "La loi entre en vigueur le jour de la sanction royale"
+          "Proclame la première semaine complète de décembre de chaque année Semaine du patrimoine roumain en Ontario.",
+          "Souligne les contributions des Ontariennes et Ontariens d'origine roumaine aux domaines économique, politique, social et culturel.",
+          "Reconnaît la communauté canado-roumaine d'environ 150 000 personnes en Ontario.",
+          "Vise à honorer le passé et à encourager les jeunes générations à renouer avec leur patrimoine roumain.",
+          "Entre en vigueur dès l'obtention de la sanction royale."
         ],
         "sansContenu": false,
         "tronque": false,
-        "derniereActivite": "2026-05-26",
+        "derniereActivite": "2026-11-05",
         "modele": "claude-sonnet-5",
-        "genereLe": "2026-09-24T23:25:24.950Z",
+        "genereLe": "2026-11-16T21:39:57.604Z",
         "jetons": {
           "entree": 2193,
-          "sortie": 174
+          "sortie": 224
         }
       }
     },
@@ -9676,6 +9682,1585 @@
         "jetons": {
           "entree": 5675,
           "sortie": 407
+        }
+      }
+    },
+    "140": {
+      "en": {
+        "puces": [
+          "A 23-schedule omnibus bill that cuts licensing and permit requirements in several sectors, speeds up approvals for a highway project and environmental assessments, and amends energy, heritage, labour mobility and tax laws.",
+          "It creates two new Acts (for the Highway 69 expansion and for disability savings plan beneficiaries) and reduces or removes various licensing, permit and review requirements across agriculture, transportation and environmental laws."
+        ],
+        "annexes": [
+          {
+            "numero": 1,
+            "titre": "Agricultural Tile Drainage Installation Act",
+            "puces": [
+              "Repeals licensing requirements for machines used to install drainage work.",
+              "Shifts regulation-making power from the Lieutenant Governor in Council to the Minister.",
+              "Allows regulations to adopt and require compliance with guidelines or protocols that may change over time."
+            ]
+          },
+          {
+            "numero": 2,
+            "titre": "Animal Health Act, 2009",
+            "puces": [
+              "Replaces licensing with registration for the sale of livestock medicines and related premises.",
+              "Repeals certain not-yet-in-force provisions and makes a technical French-language correction."
+            ]
+          },
+          {
+            "numero": 3,
+            "titre": "Bees Act",
+            "puces": [
+              "Repeals permit requirements for moving bees to or from a quarantine area.",
+              "Repeals permit requirements for buying, selling or transporting bees-wax refuse or used honeycombs.",
+              "Updates terminology relating to community recreation centres."
+            ]
+          },
+          {
+            "numero": 4,
+            "titre": "Building Highway 69 Faster Act, 2026",
+            "puces": [
+              "Creates a project-specific environmental assessment process for the Highway 69 Expansion Project.",
+              "Exempts the project from the Environmental Assessment Act, subject to prescribed exceptions.",
+              "Removes Environmental Bill of Rights public comment rights for instruments related to the project.",
+              "Requires Indigenous consultation and an environmental study report, but allows early works to start sooner."
+            ]
+          },
+          {
+            "numero": 5,
+            "titre": "Construction Act",
+            "puces": [
+              "Lets prescribed owners set a fixed annual holdback payment date instead of the contract anniversary date.",
+              "Adds transition rules for contracts entered into between January 1, 2026 and the amendments' coming into force.",
+              "Extends the first application date of holdback rules for owners prescribed under the new provisions."
+            ]
+          },
+          {
+            "numero": 6,
+            "titre": "Courts of Justice Act",
+            "puces": [
+              "Removes references to statements of claim or notices of application from the definitions of action and application.",
+              "Authorizes regulations deeming such references to mean a notice of civil proceeding instead.",
+              "Corrects French terminology and clarifies that certain fees are prescribed under the Administration of Justice Act.",
+              "Repeals a spent provision about court sittings."
+            ]
+          },
+          {
+            "numero": 7,
+            "titre": "Environmental Assessment Act",
+            "puces": [
+              "Repeals the section requiring municipal support for landfilling sites."
+            ]
+          },
+          {
+            "numero": 8,
+            "titre": "Environmental Bill of Rights, 1993",
+            "puces": [
+              "Repeals sections requiring ministries to prepare statements of environmental values.",
+              "Exempts certain proposals under the Modernizing Ontario for People and Businesses Act, 2020 from notice and comment requirements.",
+              "Repeals provisions allowing applications for review, investigation and environmental protection actions.",
+              "Amends reprisal protections and allows retroactive transitional regulations and compensation provisions."
+            ]
+          },
+          {
+            "numero": 9,
+            "titre": "Environmental Protection Act",
+            "puces": [
+              "Expands the definition of renewable energy source to include prescribed biomass.",
+              "Repeals provisions allowing appeals to the Ontario Land Tribunal over renewable energy approvals, retroactively."
+            ]
+          },
+          {
+            "numero": 10,
+            "titre": "Family Members' Authority to Act on Behalf of Disability Savings Plan Beneficiaries Act, 2026",
+            "puces": [
+              "Allows certain family members to open or act as holder of a disability savings plan for an adult beneficiary.",
+              "Sets conditions under which a person is authorized, and when that authority ends."
+            ]
+          },
+          {
+            "numero": 11,
+            "titre": "Farm Implements Act",
+            "puces": [
+              "Removes the registration requirement for distributors of farm implements or parts.",
+              "Entitles dealer applicants to registration simply by submitting a completed application.",
+              "Updates rules on registration expiry, suspension, revocation, appeals and service of documents."
+            ]
+          },
+          {
+            "numero": 12,
+            "titre": "Fuel Tax Act",
+            "puces": [
+              "Eliminates the designated 'distributor' category for sellers of special fuel products."
+            ]
+          },
+          {
+            "numero": 13,
+            "titre": "Highway Traffic Act",
+            "puces": [
+              "Repeals the licence requirement for dealing in motor vehicles, operating used car lots, or vehicle wrecking.",
+              "Adds new powers to inquire into and examine such businesses and require them to submit records."
+            ]
+          },
+          {
+            "numero": 14,
+            "titre": "Metrolinx Act, 2006",
+            "puces": [
+              "Transfers responsibility for the regional transportation plan from Metrolinx to the Minister.",
+              "Requires the Minister to create, review and amend the transportation plan.",
+              "Requires Metrolinx to be guided by the Minister's transportation plan in its decisions."
+            ]
+          },
+          {
+            "numero": 15,
+            "titre": "Ministry of Infrastructure Act, 2011",
+            "puces": [
+              "Requires underground infrastructure information to be supplied to the Minister, on order if necessary.",
+              "Allows administrative penalties for failing to comply with such orders or related regulations.",
+              "Protects supplied information as confidential under freedom of information law."
+            ]
+          },
+          {
+            "numero": 16,
+            "titre": "Ontario Energy Board Act, 1998",
+            "puces": [
+              "Gives the Minister power to direct the Board on distributors' capital plans and unit sub-meter provider oversight.",
+              "Lets the Board exempt distributed energy resource participants from licensing requirements for up to five years.",
+              "Imposes new board-composition and operating restrictions on certain electricity distributors.",
+              "Extends allowable length of interim licences from six months up to two years."
+            ]
+          },
+          {
+            "numero": 17,
+            "titre": "Ontario Heritage Act",
+            "puces": [
+              "Creates registration and authorization requirements for exploratory and advanced archaeology activities.",
+              "Allows compliance orders, conservation orders and cost-compensation orders to be issued by the Minister.",
+              "Raises the general maximum fine from $50,000 to $1,000,000 and prison term from one to two years.",
+              "Makes corporate directors and officers jointly liable for fines imposed on their corporation."
+            ]
+          },
+          {
+            "numero": 18,
+            "titre": "Ontario Labour Mobility Act, 2009",
+            "puces": [
+              "Limits conditions an Ontario regulatory authority can impose on out-of-province certified applicants to those in the Canadian Free Trade Agreement.",
+              "Provides certain exceptions and a related consequential amendment."
+            ]
+          },
+          {
+            "numero": 19,
+            "titre": "Planning Act",
+            "puces": [
+              "Removes the right to appeal to the Ontario Land Tribunal over parts of a plan already referred to the Tribunal, unless appealed beforehand.",
+              "Applies this restriction retroactively to appeals filed before the amendment takes effect."
+            ]
+          },
+          {
+            "numero": 20,
+            "titre": "Public Transportation and Highway Improvement Act",
+            "puces": [
+              "Replaces roadside control rules along King's Highways with a permit system for specified activities.",
+              "Authorizes Minister directions, enforcement action and cost recovery for non-compliance.",
+              "Adds inspection and audit powers and new regulation-making authority on roadside control matters."
+            ]
+          },
+          {
+            "numero": 21,
+            "titre": "Regulated Health Professions Act, 1991",
+            "puces": [
+              "Limits conditions a health profession College can impose on out-of-province certified applicants to those listed in the Canadian Free Trade Agreement."
+            ]
+          },
+          {
+            "numero": 22,
+            "titre": "Resource Recovery and Circular Economy Act, 2016",
+            "puces": [
+              "Amends brand-holder responsibilities for products in designated recycling classes.",
+              "Clarifies obligations to offer services to municipalities and prescribed entities.",
+              "Adds regulation-making power on information sharing and agreements, usable retroactively for existing agreements."
+            ]
+          },
+          {
+            "numero": 23,
+            "titre": "Retail Sales Tax Act",
+            "puces": [
+              "Replaces the vendor permit requirement with a registration requirement for insurance-related sales activities.",
+              "Repeals spent provisions and makes related housekeeping amendments."
+            ]
+          }
+        ],
+        "omnibus": 23,
+        "sansContenu": false,
+        "tronque": false,
+        "source": "note-explicative",
+        "derniereActivite": "2026-11-02",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.605Z",
+        "jetons": {
+          "entree": 9158,
+          "sortie": 2739
+        }
+      },
+      "fr": {
+        "puces": [
+          "Un projet de loi omnibus qui modifie 21 lois existantes et en crée 2 nouvelles, touchant l'agriculture, l'environnement, l'énergie, les transports et les professions réglementées",
+          "Allège plusieurs exigences de permis, accélère certains projets d'infrastructure et réduit des protections environnementales ou droits d'appel du public"
+        ],
+        "annexes": [
+          {
+            "numero": 1,
+            "titre": "Loi sur les installations de drainage agricole",
+            "puces": [
+              "Abolit l'obligation d'un permis pour utiliser une machine installant des drains agricoles",
+              "Le ministre, plutôt que le lieutenant-gouverneur en conseil, pourra prendre les règlements",
+              "Les règlements pourront exiger l'observation de lignes directrices ou protocoles mis à jour"
+            ]
+          },
+          {
+            "numero": 2,
+            "titre": "Loi de 2009 sur la santé animale",
+            "puces": [
+              "Remplace les permis par de simples inscriptions pour contrôler la vente de médicaments pour le bétail",
+              "Abroge certaines dispositions pas encore en vigueur et corrige une erreur de traduction"
+            ]
+          },
+          {
+            "numero": 3,
+            "titre": "Loi sur l'apiculture",
+            "puces": [
+              "Supprime le permis requis pour déplacer des abeilles dans une zone en quarantaine",
+              "Supprime le permis requis pour acheter, vendre ou transporter cire et rayons de miel usagés"
+            ]
+          },
+          {
+            "numero": 4,
+            "titre": "Loi de 2026 visant à construire plus rapidement la route 69",
+            "puces": [
+              "Crée un processus d'évaluation environnementale propre à l'agrandissement de la route 69",
+              "Exempte le projet de la Loi sur les évaluations environnementales et de certaines règles de la Charte des droits environnementaux",
+              "Exige un plan de consultation des Autochtones et du public, et un rapport final d'étude environnementale",
+              "Permet des travaux préliminaires avant la fin du processus d'évaluation"
+            ]
+          },
+          {
+            "numero": 5,
+            "titre": "Loi sur la construction",
+            "puces": [
+              "Permet aux propriétaires prescrits de fixer une date annuelle fixe pour la retenue, au lieu de la date anniversaire du contrat",
+              "Prévoit des règles transitoires pour les contrats conclus entre le 1er janvier 2026 et l'entrée en vigueur"
+            ]
+          },
+          {
+            "numero": 6,
+            "titre": "Loi sur les tribunaux judiciaires",
+            "puces": [
+              "Remplace les notions de déclaration et d'avis de requête par celle d'avis d'instance civile",
+              "Permet par règlement de préciser si une instance est une action ou une requête",
+              "Corrections terminologiques et précision sur les frais prescrits sous une autre loi"
+            ]
+          },
+          {
+            "numero": 7,
+            "titre": "Loi sur les évaluations environnementales",
+            "puces": [
+              "Abroge l'exigence d'appui municipal pour l'établissement de lieux d'enfouissement"
+            ]
+          },
+          {
+            "numero": 8,
+            "titre": "Charte des droits environnementaux de 1993",
+            "puces": [
+              "Abroge les déclarations de valeurs environnementales et les demandes d'examen ou d'enquête du public",
+              "Certaines propositions liées à une autre loi de modernisation seront exemptées des avis et observations publics",
+              "Modifie les règles sur les représailles et prévoit une indemnisation ainsi que des règlements rétroactifs"
+            ]
+          },
+          {
+            "numero": 9,
+            "titre": "Loi sur la protection de l'environnement",
+            "puces": [
+              "Intègre la notion de biomasse prescrite à la définition de source d'énergie renouvelable",
+              "Abroge le droit de contester les autorisations de projets d'énergie renouvelable devant le Tribunal, effet rétroactif à la première lecture"
+            ]
+          },
+          {
+            "numero": 10,
+            "titre": "Loi de 2026 autorisant un membre de la famille à agir au nom d'un bénéficiaire d'un régime d'épargne-invalidité",
+            "puces": [
+              "Permet à un membre de la famille de contracter ou gérer un régime d'épargne-invalidité pour un adulte, sous conditions",
+              "Précise les circonstances où cette autorisation prend fin"
+            ]
+          },
+          {
+            "numero": 11,
+            "titre": "Loi sur les appareils agricoles",
+            "puces": [
+              "Supprime l'obligation d'inscription pour les distributeurs d'appareils agricoles",
+              "Les vendeurs ont désormais droit à l'inscription s'ils présentent une demande dûment remplie",
+              "Précise les règles d'expiration, de suspension, de révocation et d'appel pour les vendeurs"
+            ]
+          },
+          {
+            "numero": 12,
+            "titre": "Loi de la taxe sur les carburants",
+            "puces": [
+              "Supprime la catégorie de « distributeur » de produits spéciaux désigné par le ministre"
+            ]
+          },
+          {
+            "numero": 13,
+            "titre": "Code de la route",
+            "puces": [
+              "Abolit le permis requis pour les commerces de véhicules, aires de remisage et mise à la ferraille",
+              "Permet d'exiger des renseignements, des examens et la remise de dossiers au ministère pour ces activités"
+            ]
+          },
+          {
+            "numero": 14,
+            "titre": "Loi de 2006 sur Metrolinx",
+            "puces": [
+              "Transfère de Metrolinx au ministre la responsabilité d'élaborer le plan de transport régional",
+              "Metrolinx devra se laisser guider par ce plan dans toutes ses décisions et activités"
+            ]
+          },
+          {
+            "numero": 15,
+            "titre": "Loi de 2011 sur le ministère de l'Infrastructure",
+            "puces": [
+              "Le ministre pourra exiger des renseignements sur les infrastructures souterraines",
+              "Protège ces renseignements comme confidentiels et prévoit des pénalités administratives en cas de non-conformité"
+            ]
+          },
+          {
+            "numero": 16,
+            "titre": "Loi de 1998 sur la Commission de l'énergie de l'Ontario",
+            "puces": [
+              "Le ministre pourra donner des directives à la Commission sur les plans d'immobilisations des distributeurs et la protection des clients de compteurs divisionnaires",
+              "La Commission pourra dispenser certains participants aux ressources énergétiques décentralisées d'obligations de permis, jusqu'à 5 ans",
+              "Nouvelles restrictions pour les distributeurs municipaux, notamment sur la composition de leur conseil d'administration",
+              "Prolonge la durée des permis provisoires à 2 ans renouvelables et encadre les frais facturés par les fournisseurs de compteurs divisionnaires"
+            ]
+          },
+          {
+            "numero": 17,
+            "titre": "Loi sur le patrimoine de l'Ontario",
+            "puces": [
+              "Encadre l'archéologie exploratoire et de pointe par inscription ou autorisation obligatoire",
+              "Permet au ministre de prendre des arrêtés de conformité, de conservation et d'indemnisation",
+              "Fait passer l'amende maximale générale de 50 000 $ à 1 000 000 $ et l'emprisonnement maximal de 1 à 2 ans",
+              "Les administrateurs et dirigeants d'une personne morale condamnée deviennent solidairement responsables de l'amende"
+            ]
+          },
+          {
+            "numero": 18,
+            "titre": "Loi ontarienne de 2009 sur la mobilité de la main-d'œuvre",
+            "puces": [
+              "Limite les exigences qu'un ordre de réglementation ontarien peut imposer aux titulaires d'une accréditation extraprovinciale, selon l'Accord de libre-échange canadien"
+            ]
+          },
+          {
+            "numero": 19,
+            "titre": "Loi sur l'aménagement du territoire",
+            "puces": [
+              "Limite le droit d'appel devant le Tribunal ontarien de l'aménagement du territoire sur une partie de plan renvoyée, sauf avis déjà déposé avant le renvoi"
+            ]
+          },
+          {
+            "numero": 20,
+            "titre": "Loi sur l'aménagement des voies publiques et des transports en commun",
+            "puces": [
+              "Interdit certaines activités sur ou près des routes principales et à accès limité sans permis du ministre",
+              "Le ministre pourra donner des directives, prendre des mesures d'exécution et en recouvrer les frais",
+              "Ajoute des pouvoirs d'inspection et de vérification pour l'application de la Loi"
+            ]
+          },
+          {
+            "numero": 21,
+            "titre": "Loi de 1991 sur les professions de la santé réglementées",
+            "puces": [
+              "Limite les exigences d'inscription qu'un ordre professionnel peut imposer aux titulaires d'un certificat extraprovincial, selon l'Accord de libre-échange canadien"
+            ]
+          },
+          {
+            "numero": 22,
+            "titre": "Loi de 2016 sur la récupération des ressources et l'économie circulaire",
+            "puces": [
+              "Modifie les responsabilités des titulaires de marque pour les produits désignés et les services offerts aux municipalités",
+              "Donne un nouveau pouvoir réglementaire sur les renseignements et accords, pouvant s'appliquer aux accords déjà conclus"
+            ]
+          },
+          {
+            "numero": 23,
+            "titre": "Loi sur la taxe de vente au détail",
+            "puces": [
+              "Remplace l'obligation de permis par une inscription obligatoire pour les vendeurs liés à l'assurance",
+              "Abroge des dispositions devenues caduques"
+            ]
+          }
+        ],
+        "omnibus": 23,
+        "sansContenu": false,
+        "tronque": false,
+        "source": "note-explicative",
+        "derniereActivite": "2026-11-02",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 12980,
+          "sortie": 3097
+        }
+      }
+    },
+    "141": {
+      "en": {
+        "puces": [
+          "Amends the Liquor Control Board of Ontario Act, 2019 to support Ontario-produced liquor",
+          "Adds a new LCBO objective to promote and report on Ontario-produced liquor",
+          "Requires the LCBO to reinvest a regulation-set percentage of its profits into Ontario liquor producers",
+          "Allows the LCBO to consult several ministers to align operations with agriculture, tourism and economic strategies",
+          "States the Act cannot be used to restrict importing or selling liquor made outside Ontario",
+          "Requires interpretation of the Act to respect Ontario's interprovincial and international trade obligations",
+          "Gives government power to set rules defining Ontario-produced liquor, sales targets, and shelf space requirements"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-28",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.603Z",
+        "jetons": {
+          "entree": 2530,
+          "sortie": 274
+        }
+      },
+      "fr": {
+        "puces": [
+          "La Régie des alcools de l'Ontario doit promouvoir les boissons alcoolisées produites en Ontario et faire des rapports à leur sujet",
+          "La Régie des alcools devra réinvestir un pourcentage de ses profits, fixé par règlement, dans les producteurs ontariens de boissons alcoolisées",
+          "La Régie des alcools pourra consulter certains ministres pour harmoniser ses activités avec les stratégies d'agriculture, de tourisme et de développement économique",
+          "La loi précise qu'elle ne limite pas l'importation ou la vente de boissons alcoolisées produites hors de l'Ontario",
+          "La loi doit s'interpréter de façon compatible avec les obligations commerciales interprovinciales et internationales de l'Ontario",
+          "De nouveaux règlements pourront fixer des objectifs de vente, de l'espace tablette et un nombre minimal de producteurs pour les boissons ontariennes"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-28",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.605Z",
+        "jetons": {
+          "entree": 3394,
+          "sortie": 354
+        }
+      }
+    },
+    "142": {
+      "en": {
+        "puces": [
+          "Proclaims October 18 each year as Menopause Awareness Day in Ontario",
+          "Proclaims the month of October each year as Menopause Awareness Month",
+          "Aims to raise awareness about menopause symptoms, treatment and support",
+          "Preamble notes menopause affects about half of Ontario's population",
+          "Cites estimated $3.5 billion annual economic impact from unmanaged symptoms",
+          "Act is called the Menopause Awareness Act, 2026",
+          "Takes effect on the day it receives Royal Assent"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-28",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.602Z",
+        "jetons": {
+          "entree": 2378,
+          "sortie": 204
+        }
+      },
+      "fr": {
+        "puces": [
+          "Le 18 octobre de chaque année devient la Journée de sensibilisation à la ménopause en Ontario.",
+          "Le mois d'octobre de chaque année devient le Mois de sensibilisation à la ménopause en Ontario.",
+          "Le projet de loi vise à mieux faire connaître la ménopause et la périménopause, et leurs symptômes.",
+          "Il souligne les impacts de la ménopause sur la santé, l'emploi et la sécurité économique des femmes.",
+          "La loi entre en vigueur dès qu'elle reçoit la sanction royale."
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-28",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.604Z",
+        "jetons": {
+          "entree": 3353,
+          "sortie": 225
+        }
+      }
+    },
+    "143": {
+      "en": {
+        "puces": [
+          "A budget omnibus bill amending 25 Ontario laws, covering gaming and cannabis enforcement, property assessment, conservation authorities, securities regulation, pensions and provincial spending authorizations.",
+          "It shifts education property tax remittance to the Minister of Finance, expands penalty and inspection powers in several regulators, and authorizes interim government spending for 2026-2028."
+        ],
+        "annexes": [
+          {
+            "numero": 1,
+            "titre": "Alcohol and Gaming Commission of Ontario Act, 2019",
+            "puces": [
+              "Adds the Cannabis Control Act, 2017 to statutes the Commission administers.",
+              "Lets the Registrar impose monetary penalties by order, without a mandatory hearing, appealable to the Licence Appeal Tribunal.",
+              "Registrar must consider prior fines when setting monetary penalties; penalty payment is not an admission of guilt.",
+              "Orders can be filed with the Superior Court of Justice and enforced like a court order."
+            ]
+          },
+          {
+            "numero": 2,
+            "titre": "Assessment Act",
+            "puces": [
+              "Exempts from taxation certain university-leased or owned land used for student residential accommodation.",
+              "Sets special rules for exempting certain charitable institutions for the 2027 taxation year.",
+              "Education property taxes to be remitted to the Minister of Finance instead of school boards.",
+              "Requires the assessment corporation to publish assessment roll information about land."
+            ]
+          },
+          {
+            "numero": 3,
+            "titre": "Building Ontario Fund Act, 2024",
+            "puces": [
+              "Minister may declare a Building Ontario Fund subsidiary is not, or never was, a Crown agent.",
+              "Such a declaration removes Crown liability for the subsidiary's obligations.",
+              "Certain Act provisions extended to apply to subsidiaries."
+            ]
+          },
+          {
+            "numero": 4,
+            "titre": "Business Corporations Act",
+            "puces": [
+              "Minister may redefine 'individual' by regulation for purposes of 'individual with significant control' rules.",
+              "Register of individuals with significant control must now include citizenship, residential address and address for service.",
+              "Wholly-owned subsidiaries of certain bodies corporate become exempt from the register requirement.",
+              "Adds regulation-making power for transitional matters related to these amendments."
+            ]
+          },
+          {
+            "numero": 5,
+            "titre": "Cannabis Control Act, 2017",
+            "puces": [
+              "Bans unlicensed cultivation, propagation or harvesting of cannabis for retail sale outside the Ontario Cannabis Retail Corporation.",
+              "Prohibits landlords from knowingly allowing premises to be used for such illegal activity.",
+              "Gives the Registrar power to demand statements or records from suspected violators.",
+              "Creates inspector and investigator powers, including warrantless searches of vehicles and boats in some cases."
+            ]
+          },
+          {
+            "numero": 6,
+            "titre": "Cannabis Licence Act, 2018",
+            "puces": [
+              "Adds a definition of 'boat' and updates the definition of 'vehicle'.",
+              "Allows appointment of persons under 19 (a prescribed age) rather than only 18-year-olds for compliance monitoring."
+            ]
+          },
+          {
+            "numero": 7,
+            "titre": "Capital Investment Plan Act, 1993",
+            "puces": [
+              "Exempts specified Ontario Financing Authority records from freedom-of-information disclosure if confidentiality is determined necessary.",
+              "Amendment applies retroactively to January 1, 2025."
+            ]
+          },
+          {
+            "numero": 8,
+            "titre": "City of Toronto Act, 2006",
+            "puces": [
+              "Education property taxes to be remitted to the Minister of Finance instead of school boards.",
+              "Includes other housekeeping amendments."
+            ]
+          },
+          {
+            "numero": 9,
+            "titre": "Clean Water Act, 2006",
+            "puces": [
+              "Technical amendments following conservation authority amalgamations.",
+              "Certain source protection committee powers to be exercised by the source protection authority instead.",
+              "Other housekeeping amendments made."
+            ]
+          },
+          {
+            "numero": 10,
+            "titre": "Commodity Futures Act",
+            "puces": [
+              "Class order exemptions now last three years, extendable by rule for up to two more years.",
+              "Technical amendments reflecting the earlier transfer of functions to the Capital Markets Tribunal."
+            ]
+          },
+          {
+            "numero": 11,
+            "titre": "Conservation Authorities Act",
+            "puces": [
+              "Allows municipalities to be treated as one municipality for appointing members to new or existing authorities.",
+              "Replaces dissolution/establishment rules with Lieutenant Governor in Council orders on Minister's recommendation; removes power to dissolve an authority.",
+              "Restricts Agency directions on land transactions, policies, staffing and budgets of authorities.",
+              "Requires the Minister to publish digital maps of conservation authority jurisdictions and participating municipalities."
+            ]
+          },
+          {
+            "numero": 12,
+            "titre": "Corporations Information Act",
+            "puces": [
+              "Sets new rules on when a notice of change must be filed for significant-control register information.",
+              "Creates rules on when such information may be disclosed or made public, including prescribed restrictions.",
+              "Allows the Director to set procedures for determining whether disclosure restrictions apply.",
+              "Allows notices to corporations to be given by public posting rather than only direct delivery."
+            ]
+          },
+          {
+            "numero": 13,
+            "titre": "Credit Unions and Caisses Populaires Act, 2020",
+            "puces": [
+              "Updates rules to reflect that certain Securities Act exemption orders are now time-limited."
+            ]
+          },
+          {
+            "numero": 14,
+            "titre": "Education Act",
+            "puces": [
+              "Education property taxes to be remitted to the Minister of Finance instead of school boards.",
+              "Updates references from 'assessment commissioner' to 'assessment corporation'.",
+              "Repeals spent provisions and makes housekeeping amendments."
+            ]
+          },
+          {
+            "numero": 15,
+            "titre": "Insurance Act",
+            "puces": [
+              "Removes rules and references for 'sub-managing general agents' throughout the Act.",
+              "Gives the Authority power to make rules for managing general agents who retain others to perform certain activities.",
+              "Re-enacts the definition and licensing rules for managing general agents, including new exemptions from licensing."
+            ]
+          },
+          {
+            "numero": 16,
+            "titre": "Interim Appropriation for 2027-2028 Act, 2026",
+            "puces": [
+              "Authorizes government spending ahead of supply votes for the fiscal year ending March 31, 2028, up to set maximums."
+            ]
+          },
+          {
+            "numero": 17,
+            "titre": "Lake Simcoe Protection Act, 2008",
+            "puces": [
+              "Renames 'Lake Simcoe Region Conservation Authority' to 'Lake Huron Regional Conservation Authority' and makes related changes."
+            ]
+          },
+          {
+            "numero": 18,
+            "titre": "Land Transfer Tax Act",
+            "puces": [
+              "Exempts Crown or Crown agency acquisitions of beneficial land interests from tax under section 3.",
+              "Raises the maximum fine for false refund applications from $4,000 to $10,000.",
+              "Updates rules on how notices under the Act may be sent."
+            ]
+          },
+          {
+            "numero": 19,
+            "titre": "Ministry of Revenue Act",
+            "puces": [
+              "Allows the Minister to enter agreements to provide debt collection services to other government ministries or public bodies.",
+              "Requires publication of certain information when such agreements are made.",
+              "Removes requirement that administrative entities be prescribed for section 11.5 to apply."
+            ]
+          },
+          {
+            "numero": 20,
+            "titre": "Municipal Act, 2001",
+            "puces": [
+              "Education property taxes to be remitted to the Minister of Finance instead of school boards.",
+              "Includes other housekeeping amendments."
+            ]
+          },
+          {
+            "numero": 21,
+            "titre": "Pension Benefits Act",
+            "puces": [
+              "Amends not-yet-in-force rules for converting defined contribution plans into jointly sponsored pension plans.",
+              "Updates asset transfer and member notice requirements under sections 80.5 and 101.4.",
+              "Gives FSRA's Chief Executive Officer power to vary or waive certain related regulations."
+            ]
+          },
+          {
+            "numero": 22,
+            "titre": "Regulated Health Professions Act, 1991",
+            "puces": [
+              "Adds a regulation-making power to exempt certain activities or persons from the hearing aid dispensing prescription requirement."
+            ]
+          },
+          {
+            "numero": 23,
+            "titre": "Securities Act",
+            "puces": [
+              "Creates new Part XXIII.2 authorizing interjurisdictional cooperation with other provincial/territorial securities commissions.",
+              "Allows the Commission to delegate or accept delegated powers and adopt extra-provincial securities laws.",
+              "Class order exemptions now last three years, extendable by rule for up to two more years.",
+              "Extends immunities under the Securities Commission Act, 2021 to delegated interjurisdictional functions."
+            ]
+          },
+          {
+            "numero": 24,
+            "titre": "Supplementary Interim Appropriation for 2026-2027 Act, 2026",
+            "puces": [
+              "Authorizes additional government spending ahead of supply votes for the fiscal year ending March 31, 2027, on top of prior authorized amounts."
+            ]
+          },
+          {
+            "numero": 25,
+            "titre": "Taxation Act, 2007",
+            "puces": [
+              "Adds a cross-reference to section 15 concerning the calculation of the minimum tax credit."
+            ]
+          }
+        ],
+        "omnibus": 25,
+        "sansContenu": false,
+        "tronque": false,
+        "source": "note-explicative",
+        "derniereActivite": "2026-11-05",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.604Z",
+        "jetons": {
+          "entree": 9380,
+          "sortie": 2953
+        }
+      },
+      "fr": {
+        "puces": [
+          "Un projet de loi omnibus budgétaire qui modifie 25 lois ontariennes touchant les impôts fonciers scolaires, le cannabis, les valeurs mobilières, les offices de protection de la nature et plusieurs autres domaines",
+          "Comprend aussi deux lois d'affectation anticipée de crédits pour autoriser des dépenses gouvernementales en attendant le vote du budget"
+        ],
+        "annexes": [
+          {
+            "numero": 1,
+            "titre": "Loi de 2019 sur la Commission des alcools et des jeux de l'Ontario",
+            "puces": [
+              "Ajoute la Loi de 2017 sur le contrôle du cannabis aux lois administrées par la Commission",
+              "Le registrateur peut imposer des sanctions pécuniaires par ordonnance, sans audience obligatoire, appel possible au Tribunal d'appel en matière de permis",
+              "Le registrateur doit tenir compte des amendes pénales déjà imposées pour décider d'une sanction pécuniaire",
+              "Les ordonnances peuvent être déposées à la Cour supérieure et exécutées comme des ordonnances du tribunal"
+            ]
+          },
+          {
+            "numero": 2,
+            "titre": "Loi sur l'évaluation foncière",
+            "puces": [
+              "Nouvelle exemption d'impôts pour des biens-fonds universitaires loués ou possédés servant de logements étudiants",
+              "Règles particulières pour l'exemption de certains établissements de bienfaisance pour l'année d'imposition 2027",
+              "Les impôts fonciers scolaires remis au ministre des Finances plutôt qu'aux conseils scolaires",
+              "La société d'évaluation foncière devra publier les renseignements du rôle d'évaluation"
+            ]
+          },
+          {
+            "numero": 3,
+            "titre": "Loi de 2024 sur le Fonds ontarien pour la construction",
+            "puces": [
+              "Le ministre peut déclarer qu'une filiale du Fonds n'est pas, ou n'a jamais été, mandataire de la Couronne",
+              "La Couronne ne peut alors être tenue responsable des dettes de la filiale visée"
+            ]
+          },
+          {
+            "numero": 4,
+            "titre": "Loi sur les sociétés par actions",
+            "puces": [
+              "Le ministre peut redéfinir par règlement le terme « particulier » pour l'expression « particulier ayant un contrôle important »",
+              "Le registre des particuliers ayant un contrôle important doit désormais inclure citoyenneté, adresse domiciliaire et adresse de signification",
+              "Certaines filiales à part entière sont exemptées de l'obligation de tenir ce registre",
+              "Ajoute des pouvoirs réglementaires pour les questions transitoires liées à ces modifications"
+            ]
+          },
+          {
+            "numero": 5,
+            "titre": "Loi de 2017 sur le contrôle du cannabis",
+            "puces": [
+              "Interdit aux personnes de 19 ans et plus de cultiver ou récolter du cannabis pour la vente au détail hors circuit de la Société ontarienne de vente du cannabis",
+              "Interdit aux locateurs de permettre sciemment l'usage de leurs lieux pour ces activités",
+              "Le registrateur peut sommer une personne de fournir documents ou déclarations en cas de soupçon de contravention",
+              "Nomme des inspecteurs et enquêteurs avec pouvoirs d'inspection, de saisie et de perquisition sans mandat dans véhicules ou bateaux"
+            ]
+          },
+          {
+            "numero": 6,
+            "titre": "Loi de 2018 sur les licences liées au cannabis",
+            "puces": [
+              "Ajoute la définition de « bateau » et révise celle de « véhicule »",
+              "Permet la nomination par le registrateur d'un particulier d'un âge prescrit inférieur à 19 ans pour surveiller l'observation de la loi, au lieu du seuil actuel de 18 ans"
+            ]
+          },
+          {
+            "numero": 7,
+            "titre": "Loi de 1993 sur le plan d'investissement",
+            "puces": [
+              "Permet au premier dirigeant de l'Office ontarien de financement de garder confidentiels certains dossiers, exemptés de la Loi sur l'accès à l'information",
+              "Modification rétroactive au 1er janvier 2025"
+            ]
+          },
+          {
+            "numero": 8,
+            "titre": "Loi de 2006 sur la cité de Toronto",
+            "puces": [
+              "Les impôts fonciers scolaires versés au ministre des Finances plutôt qu'aux conseils scolaires",
+              "Modifications d'ordre administratif"
+            ]
+          },
+          {
+            "numero": 9,
+            "titre": "Loi de 2006 sur l'eau saine",
+            "puces": [
+              "Modifications de forme découlant de la fusion des offices de protection de la nature",
+              "Certains pouvoirs des comités de protection des sources transférés aux offices de protection des sources"
+            ]
+          },
+          {
+            "numero": 10,
+            "titre": "Loi sur les contrats à terme sur marchandises",
+            "puces": [
+              "Les ordonnances de dispense d'une catégorie rendues par la Commission des valeurs mobilières seront valides trois ans, prorogeables de deux ans par règle",
+              "Modifications de forme liées au transfert de fonctions vers le Tribunal des marchés financiers"
+            ]
+          },
+          {
+            "numero": 11,
+            "titre": "Loi sur les offices de protection de la nature",
+            "puces": [
+              "Permet à des municipalités participantes d'être considérées comme une seule municipalité pour la nomination des membres d'un office",
+              "Remplace les règles de création, fusion et dissolution des offices par un pouvoir de décret du lieutenant-gouverneur en conseil",
+              "Limite les directives que l'Agence peut donner aux offices sur les biens-fonds, politiques, employés et budgets",
+              "Le ministre devra publier des cartes numériques des zones de compétence et la liste des municipalités participantes"
+            ]
+          },
+          {
+            "numero": 12,
+            "titre": "Loi sur les renseignements exigés des personnes morales",
+            "puces": [
+              "Encadre le traitement des renseignements du registre des particuliers ayant un contrôle important",
+              "Nouvelles règles sur la divulgation et la restriction de mise à disposition publique de ces renseignements",
+              "L'avis au public pourra être donné par affichage sur un site Web du gouvernement",
+              "Le ministre ou le directeur pourra recueillir indirectement des renseignements personnels pour leurs fonctions"
+            ]
+          },
+          {
+            "numero": 13,
+            "titre": "Loi de 2020 sur les caisses populaires et les credit unions",
+            "puces": [
+              "Ajuste les règles de vente de valeurs mobilières pour tenir compte du délai associé aux ordonnances rendues sous la Loi sur les valeurs mobilières"
+            ]
+          },
+          {
+            "numero": 14,
+            "titre": "Loi sur l'éducation",
+            "puces": [
+              "Les impôts fonciers scolaires remis au ministre des Finances plutôt qu'aux conseils scolaires",
+              "Remplace les mentions du « commissaire à l'évaluation » par « société d'évaluation foncière »",
+              "Modifications administratives et abrogation de dispositions périmées"
+            ]
+          },
+          {
+            "numero": 15,
+            "titre": "Loi sur les assurances",
+            "puces": [
+              "Supprime les règles sur les sous-agents généraux gestionnaires",
+              "L'Autorité pourra établir des règles pour les agents généraux gestionnaires qui engagent des tiers",
+              "Révise la liste des activités des agents généraux gestionnaires et les interdictions d'exploitation sans permis"
+            ]
+          },
+          {
+            "numero": 16,
+            "titre": "Loi de 2026 portant affectation anticipée de crédits pour 2027-2028",
+            "puces": [
+              "Autorise des dépenses jusqu'à des plafonds déterminés en attendant le vote des crédits pour l'exercice se terminant le 31 mars 2028"
+            ]
+          },
+          {
+            "numero": 17,
+            "titre": "Loi de 2008 sur la protection du lac Simcoe",
+            "puces": [
+              "Remplace « Office de protection de la nature de la région du lac Simcoe » par « Office régional de protection de la nature du lac Huron »"
+            ]
+          },
+          {
+            "numero": 18,
+            "titre": "Loi sur les droits de cession immobilière",
+            "puces": [
+              "Aucun droit exigé si seule la Couronne ou un organisme de la Couronne acquiert un intérêt à titre bénéficiaire",
+              "L'amende maximale pour fausse déclaration dans une demande de remboursement passe de 4 000 $ à 10 000 $",
+              "Modifie le mode d'envoi de divers avis prévus par la loi"
+            ]
+          },
+          {
+            "numero": 19,
+            "titre": "Loi sur le ministère du Revenu",
+            "puces": [
+              "Le ministre peut conclure des accords pour fournir des services de perception à d'autres ministères ou organismes publics",
+              "Supprime l'exigence que les entités d'application soient prescrites pour l'application de l'article 11.5"
+            ]
+          },
+          {
+            "numero": 20,
+            "titre": "Loi de 2001 sur les municipalités",
+            "puces": [
+              "Les impôts fonciers scolaires versés au ministre des Finances plutôt qu'aux conseils scolaires",
+              "Modifications d'ordre administratif"
+            ]
+          },
+          {
+            "numero": 21,
+            "titre": "Loi sur les régimes de retraite",
+            "puces": [
+              "Modifie les règles de transfert d'actif et d'avis lors de la conversion d'un régime à employeur unique en régime conjoint",
+              "Précise les transferts par catégorie d'employés",
+              "Le directeur général de l'Autorité ontarienne de réglementation des services financiers peut modifier ou renoncer à certains règlements"
+            ]
+          },
+          {
+            "numero": 22,
+            "titre": "Loi de 1991 sur les professions de la santé réglementées",
+            "puces": [
+              "Ajoute un pouvoir réglementaire pour soustraire certaines activités ou personnes à l'interdiction de délivrance d'appareils de correction auditive sans ordonnance"
+            ]
+          },
+          {
+            "numero": 23,
+            "titre": "Loi sur les valeurs mobilières",
+            "puces": [
+              "Ajoute une nouvelle partie autorisant la coopération interterritoriale entre commissions des valeurs mobilières canadiennes",
+              "La Commission pourra déléguer ou recevoir des pouvoirs d'autres commissions et adopter du droit extraprovincial",
+              "Les ordonnances de dispense d'une catégorie seront valides trois ans, prorogeables de deux ans",
+              "L'immunité de la Commission s'étend aux pouvoirs délégués par une commission extraprovinciale"
+            ]
+          },
+          {
+            "numero": 24,
+            "titre": "Loi supplémentaire de 2026 portant affectation anticipée de crédits pour 2026-2027",
+            "puces": [
+              "Autorise des dépenses additionnelles jusqu'à des plafonds déterminés en attendant le vote des crédits pour l'exercice se terminant le 31 mars 2027"
+            ]
+          },
+          {
+            "numero": 25,
+            "titre": "Loi de 2007 sur les impôts",
+            "puces": [
+              "Ajoute un renvoi à l'article 15 concernant le calcul du crédit d'impôt minimum d'un particulier"
+            ]
+          }
+        ],
+        "omnibus": 25,
+        "sansContenu": false,
+        "tronque": false,
+        "source": "note-explicative",
+        "derniereActivite": "2026-11-05",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.604Z",
+        "jetons": {
+          "entree": 13053,
+          "sortie": 3816
+        }
+      }
+    },
+    "144": {
+      "fr": {
+        "puces": [
+          "Crée un comité consultatif sur les panneaux solaires enfichables, mis en place dans les 60 jours suivant l'entrée en vigueur de la loi",
+          "Le comité réunit des représentants d'associations d'énergie renouvelable, de sécurité électrique, de locataires, de syndicats et de groupes environnementaux",
+          "Le comité doit déterminer les modifications nécessaires pour utiliser ces panneaux solaires sans danger",
+          "Il doit étudier l'expérience d'autres territoires comme l'Allemagne, le Royaume-Uni et les États-Unis",
+          "Il propose des mesures pour faciliter l'évaluation de ces panneaux par les organismes de sécurité des produits",
+          "Le comité remet ses recommandations au ministre dans les six mois suivant sa création",
+          "Le ministre doit publier le rapport et présenter à l'Assemblée législative les recommandations qu'il appuie, dans les 90 jours"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-29",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.604Z",
+        "jetons": {
+          "entree": 3511,
+          "sortie": 355
+        }
+      },
+      "en": {
+        "puces": [
+          "Creates the Plug into the Sun Act, 2026, to study plug-in solar panels for homes",
+          "Minister of Energy and Mines must set up a Plug-in Solar Panels Advisory Committee within 60 days",
+          "Committee members appointed by the Minister must include groups like renewable energy, tenants, labour, housing, firefighters and environmental organizations",
+          "Committee will identify safety modifications and study use of these panels in Germany, the UK and the US",
+          "Committee will explore how Ontario can get the panels evaluated by safety agencies like Underwriters Laboratories of Canada",
+          "Committee must report recommendations to the Minister within six months of being formed",
+          "Minister must publish the report and tell the Legislature which recommendations he supports within 90 days"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-29",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 2725,
+          "sortie": 281
+        }
+      }
+    },
+    "145": {
+      "fr": {
+        "puces": [
+          "Élargit les actes autorisés que les optométristes membres de l'Ordre peuvent accomplir",
+          "Permet de fournir des échantillons et de préparer des médicaments topiques",
+          "Autorise le traitement indépendant des cas de glaucome à angle ouvert",
+          "Permet l'utilisation d'un échographe pour la pachymétrie cornéenne ou l'échographie oculaire",
+          "Autorise le retrait de corps étrangers logés sous la surface de la cornée",
+          "La loi entre en vigueur dès la sanction royale"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-02",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.604Z",
+        "jetons": {
+          "entree": 1730,
+          "sortie": 216
+        }
+      },
+      "en": {
+        "puces": [
+          "Amends the Optometry Act, 1991 to expand what optometry College members can do",
+          "Allows providing samples and dispensing topical medications",
+          "Allows independently managing open-angle glaucoma",
+          "Allows using diagnostic ultrasound for corneal pachymetry or ocular ultrasonography",
+          "Allows removing foreign bodies from below the surface of the cornea",
+          "Takes effect on the day it receives Royal Assent"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-02",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.605Z",
+        "jetons": {
+          "entree": 1425,
+          "sortie": 174
+        }
+      }
+    },
+    "146": {
+      "fr": {
+        "puces": [
+          "Interdit la construction de nouveaux centres de données en intelligence artificielle ou l'augmentation de leur capacité de calcul jusqu'à la levée du moratoire",
+          "Crée un comité consultatif chargé de proposer des réformes sur l'eau, l'énergie, le bruit et les émissions de ces centres",
+          "Le comité peut lever le moratoire s'il juge que ses objectifs (protection de l'eau, des terres agricoles, de l'électricité, etc.) sont atteints",
+          "Permet au ministre de l'Agriculture d'ordonner la vente de terres agricoles achetées en violation du moratoire pour un centre de données",
+          "Permet au ministre d'interdire l'achat de terres agricoles destinées à un tel centre",
+          "Les ministres de l'Énergie et de l'Environnement doivent publier un rapport annuel sur l'eau, l'énergie, le bruit, les émissions et l'emploi liés à ces centres",
+          "Prévoit des amendes pouvant atteindre 500 000 $ pour un particulier et 1 000 000 $ pour une entreprise en cas d'infraction"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-03",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.605Z",
+        "jetons": {
+          "entree": 6953,
+          "sortie": 414
+        }
+      },
+      "en": {
+        "puces": [
+          "Bans building or expanding artificial intelligence data centres in Ontario until the moratorium is lifted",
+          "Creates an AI Safety Advisory Council to recommend legal changes on energy, water, farmland and community impacts",
+          "Council will lift the moratorium once it judges those objectives have been met",
+          "Allows the Agriculture Minister to order people to sell farmland bought for prohibited AI data centres",
+          "Minister can also block planned farmland purchases intended for AI data centres",
+          "Requires annual public reports on data centres' water, energy, noise, emissions, waste and job impacts",
+          "Sets fines up to $500,000 for individuals and $1,000,000 for corporations breaking the moratorium"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-03",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 4633,
+          "sortie": 261
+        }
+      }
+    },
+    "147": {
+      "fr": {
+        "puces": [
+          "Oblige le ministre à examiner les règlements sur les camps de loisirs avec nuitée pour mieux protéger les campeurs contre l'anaphylaxie",
+          "Le ministre devra recommander des modifications réglementaires sur les politiques de prévention et de gestion des allergies",
+          "Les changements possibles touchent les protocoles d'urgence, comme l'administration rapide d'épinéphrine",
+          "Vise aussi la formation du personnel et des bénévoles ainsi que l'accès aux auto-injecteurs d'épinéphrine",
+          "Prévoit des plans médicaux individuels pour les campeurs ayant des allergies dangereuses",
+          "Le ministre doit envisager de mettre à jour les documents d'orientation sur la sensibilisation aux allergies",
+          "Le ministre doit consulter Allergies Alimentaires Canada, l'Ontario Camps Association et d'autres intervenants"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-04",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.602Z",
+        "jetons": {
+          "entree": 3076,
+          "sortie": 343
+        }
+      },
+      "en": {
+        "puces": [
+          "Enacts Benji's Law to strengthen allergy protections at overnight recreational camps for people under 18 or with special needs",
+          "Requires the Minister to review camp regulations under the Health Protection and Promotion Act on anaphylaxis risks",
+          "Minister must recommend regulatory amendments to protect campers from anaphylaxis and life-threatening allergic reactions",
+          "Possible amendments cover anaphylaxis prevention policies, emergency epinephrine protocols, and staff training requirements",
+          "Possible amendments also address epinephrine auto-injector access, individual medical emergency plans, and allergen management in food",
+          "Minister must consider updating guidance documents on allergy awareness, prevention, and management practices",
+          "Minister must consult Food Allergy Canada, the Ontario Camps Association, and other relevant stakeholders"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-04",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 2374,
+          "sortie": 307
+        }
+      }
+    },
+    "148": {
+      "en": {
+        "puces": [
+          "Omnibus bill creating a new civil remedy for intimate image abuse and amending 17 other Acts covering health professions, long-term care, child welfare, retirement homes, and postsecondary education.",
+          "Expands scopes of practice for several health professions, strengthens ministerial oversight of public health boards, and updates privacy and student-loan rules."
+        ],
+        "annexes": [
+          {
+            "numero": 1,
+            "titre": "Audiology and Speech-Language Pathology Act, 1991",
+            "puces": [
+              "Speech-language pathologists are authorized to apply a form of energy prescribed by regulation."
+            ]
+          },
+          {
+            "numero": 2,
+            "titre": "Child, Youth and Family Services Act, 2017",
+            "puces": [
+              "Children's aid societies must give families information about alternative dispute resolution at set intervals.",
+              "New process lets a Director convert certain intercountry adoptions into full Ontario adoptions under conditions.",
+              "Societies may collect and share personal information with Ontario child welfare authorities without consent to assess risk of harm.",
+              "New regulation-making power to prohibit publishing locations of certain funded or licensed services, with an offence for breach."
+            ]
+          },
+          {
+            "numero": 3,
+            "titre": "Chiropractic Act, 1991",
+            "puces": [
+              "Chiropractors are authorized to order application of a form of energy prescribed by regulation."
+            ]
+          },
+          {
+            "numero": 4,
+            "titre": "Dental Hygiene Act, 1991",
+            "puces": [
+              "Dental hygienists are authorized to administer a designated substance by injection.",
+              "Adds related requirements and regulation-making powers for this new authorized act.",
+              "French-language terminology for the practice is updated throughout the Act."
+            ]
+          },
+          {
+            "numero": 5,
+            "titre": "Denturism Act, 1991",
+            "puces": [
+              "Scope of denturism expanded to include design, construction, repair and fitting of implant-supported dentures.",
+              "Denturists authorized to fit and dispense implant-supported dentures, with related new requirements and regulations.",
+              "Consequential amendments made to the Regulated Health Professions Act, 1991."
+            ]
+          },
+          {
+            "numero": 6,
+            "titre": "Fixing Long-Term Care Act, 2021",
+            "puces": [
+              "Licensees must now have an organized dementia care program.",
+              "Director can require placement co-ordinators to report on placement and admission matters.",
+              "Medical Director role replaced by Clinical Director, who may be a physician or extended-class registered nurse.",
+              "New four-year limitation period set for prosecuting offences under the Act."
+            ]
+          },
+          {
+            "numero": 7,
+            "titre": "Healing Arts Radiation Protection Act",
+            "puces": [
+              "Denturists may operate X-ray machines after completing a prescribed course.",
+              "Certain other health professionals may prescribe X-rays as permitted by regulation.",
+              "Dental hygienists and denturists may be designated as radiation protection officers."
+            ]
+          },
+          {
+            "numero": 8,
+            "titre": "Health Insurance Act",
+            "puces": [
+              "General Manager may now pay late claims only when late submission is due to extenuating circumstances.",
+              "New regulation-making power to set time limits for hearings under subsection 20(1).",
+              "Requirement that review panels include a physician and lawyer is repealed."
+            ]
+          },
+          {
+            "numero": 9,
+            "titre": "Health Protection and Promotion Act",
+            "puces": [
+              "Minister gains authority to issue public-interest directives to boards of health, which must be published online.",
+              "Minister may appoint a supervisor to take over a board of health's powers in the public interest.",
+              "Sets out factors the Minister must consider when making these public-interest decisions."
+            ]
+          },
+          {
+            "numero": 10,
+            "titre": "Intimate Images Protection Act, 2026",
+            "puces": [
+              "Creates new law allowing civil lawsuits against people who make, distribute or threaten to distribute intimate images without consent.",
+              "Courts may order platforms to remove images or order defendants to pay damages.",
+              "People can apply for orders to stop or prevent distribution of intimate images, sometimes without a hearing.",
+              "Breach of certain orders is an offence punishable by fine or imprisonment, or both."
+            ]
+          },
+          {
+            "numero": 11,
+            "titre": "Ministry of Community and Social Services Act",
+            "puces": [
+              "New regulation-making power to prohibit publishing locations of ministry-funded or ministry-provided services, with an offence for breach."
+            ]
+          },
+          {
+            "numero": 12,
+            "titre": "Ministry of Health and Long-Term Care Appeal and Review Boards Act, 1998",
+            "puces": [
+              "Removes requirement for the Health Services Appeal and Review Board to include minimum numbers of lawyer and physician members."
+            ]
+          },
+          {
+            "numero": 13,
+            "titre": "Ministry of Training, Colleges and Universities Act",
+            "puces": [
+              "New Crown liability rules added and certain causes of action extinguished.",
+              "Minister may suspend an institution's eligibility for student loans, awards and grants.",
+              "Students and institutions may become jointly and severally liable for loan amounts in certain cases.",
+              "New regulation-making powers added for loans, grants, agreements and changes in institution ownership."
+            ]
+          },
+          {
+            "numero": 14,
+            "titre": "Ontario Career Colleges Act, 2005",
+            "puces": [
+              "Training Completion Assurance Fund reclassified as a Public Accounts account with spending limits.",
+              "Career colleges must maintain at least one approved campus and obtain approval for each campus.",
+              "Colleges barred from contracting out of student rights or protections under the Act.",
+              "New powers allow review and revocation of vocational program approvals and public notice of enforcement actions."
+            ]
+          },
+          {
+            "numero": 15,
+            "titre": "Optometry Act, 1991",
+            "puces": [
+              "Optometrists authorized to dispense designated drugs and perform certain procedures on or below the cornea or mucous membrane of the eye.",
+              "Adds related new requirements and regulation-making powers."
+            ]
+          },
+          {
+            "numero": 16,
+            "titre": "Personal Health Information Protection Act, 2004",
+            "puces": [
+              "Act's purposes expanded to include facilitating health system administration.",
+              "References to aboriginal midwives and healers updated to Indigenous midwives and healers, making Indigenous midwives health information custodians.",
+              "New Part IV.1 lets the Agency collect personal health information for health system administration, subject to Commissioner-approved practices.",
+              "Expands prescribed organization's powers over the electronic health record, including new collection and liability-protection rules."
+            ]
+          },
+          {
+            "numero": 17,
+            "titre": "Retirement Homes Act, 2010",
+            "puces": [
+              "Adds a resident's right to ongoing support from caregivers to the Residents' Bill of Rights.",
+              "Allows senior ministry officials to give binding directions and recommendations on preventing and managing infectious diseases."
+            ]
+          },
+          {
+            "numero": 18,
+            "titre": "Social Work and Social Service Work Act, 1998",
+            "puces": [
+              "Defines sexual abuse of a client by a College member and sets special disciplinary rules for such cases.",
+              "Mandatory revocation of a member's certificate upon certain findings of sexual abuse, with special reinstatement rules."
+            ]
+          }
+        ],
+        "omnibus": 18,
+        "sansContenu": false,
+        "tronque": false,
+        "source": "note-explicative",
+        "derniereActivite": "2026-11-16",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.603Z",
+        "jetons": {
+          "entree": 9151,
+          "sortie": 2246
+        }
+      },
+      "fr": {
+        "puces": [
+          "Ce projet de loi omnibus modifie 17 lois existantes, surtout dans les domaines de la santé, des soins de longue durée et de l'éducation postsecondaire, et édicte une nouvelle loi sur la protection des images intimes.",
+          "Il élargit les actes autorisés pour plusieurs professions de la santé, renforce la protection des renseignements personnels et des résidents, et crée de nouveaux recours civils contre le partage non consenti d'images intimes."
+        ],
+        "annexes": [
+          {
+            "numero": 1,
+            "titre": "Loi de 1991 sur les audiologistes et les orthophonistes",
+            "puces": [
+              "Les orthophonistes pourront appliquer une forme d'énergie prescrite par les règlements dans l'exercice de leur profession."
+            ]
+          },
+          {
+            "numero": 2,
+            "titre": "Loi de 2017 sur les services à l'enfance, à la jeunesse et à la famille",
+            "puces": [
+              "Les sociétés d'aide à l'enfance devront informer les enfants et parents des méthodes de règlement extrajudiciaire des différends, à intervalles précis.",
+              "Nouveau certificat permettant de convertir une adoption internationale prononcée hors Ontario en adoption rompant le lien de filiation préexistant, sous conditions.",
+              "Élargissement des règles de collecte et de divulgation sans consentement de renseignements personnels entre sociétés d'aide à l'enfance et services de bien-être en Ontario.",
+              "Nouveau pouvoir réglementaire pour interdire la publication de renseignements identifiant les lieux où des services sont fournis; infraction prévue en cas de contravention."
+            ]
+          },
+          {
+            "numero": 3,
+            "titre": "Loi de 1991 sur les chiropraticiens",
+            "puces": [
+              "Les chiropraticiens pourront ordonner l'application d'une forme d'énergie prescrite par les règlements."
+            ]
+          },
+          {
+            "numero": 4,
+            "titre": "Loi de 1991 sur les hygiénistes dentaires",
+            "puces": [
+              "Les hygiénistes dentaires pourront administrer par injection une substance désignée par règlement.",
+              "Ajout d'exigences et de pouvoirs réglementaires liés à ce nouvel acte.",
+              "Harmonisation terminologique dans la version française de la loi."
+            ]
+          },
+          {
+            "numero": 5,
+            "titre": "Loi de 1991 sur les denturologistes",
+            "puces": [
+              "Le champ d'exercice est élargi pour inclure la conception et l'adaptation de prothèses implantaires.",
+              "Les denturologistes pourront adapter et préparer des prothèses implantaires, avec nouvelles exigences associées.",
+              "Modifications corrélatives à la Loi de 1991 sur les professions de la santé réglementées."
+            ]
+          },
+          {
+            "numero": 6,
+            "titre": "Loi de 2021 sur le redressement des soins de longue durée",
+            "puces": [
+              "Les foyers de soins de longue durée devront instaurer un programme structuré de soins pour les personnes atteintes de démence.",
+              "Le directeur médical obligatoire est remplacé par un directeur des services cliniques, pouvant être médecin ou infirmière/infirmier autorisé de catégorie supérieure.",
+              "Nouvelles règles sur les contrats de gestion, dont la répartition des obligations financières entre titulaire de permis et gestionnaire.",
+              "Un délai de prescription de quatre ans est instauré pour les poursuites, alors qu'aucun délai ne s'appliquait auparavant."
+            ]
+          },
+          {
+            "numero": 7,
+            "titre": "Loi sur la protection contre les rayons X",
+            "puces": [
+              "Les denturologistes pourront faire fonctionner des appareils à rayons X après avoir suivi un cours prescrit.",
+              "D'autres professionnels de la santé pourront prescrire l'irradiation par rayons X selon un mode autorisé.",
+              "Les hygiénistes dentaires et denturologistes pourront être désignés agents de radioprotection."
+            ]
+          },
+          {
+            "numero": 8,
+            "titre": "Loi sur l'assurance-santé",
+            "puces": [
+              "Le directeur général pourra payer un service assuré même si la demande est présentée en retard, en cas de circonstances atténuantes.",
+              "Nouveaux pouvoirs réglementaires pour fixer les délais applicables aux audiences.",
+              "Suppression de l'exigence qu'un comité de révision compte au moins un médecin et un avocat."
+            ]
+          },
+          {
+            "numero": 9,
+            "titre": "Loi sur la protection et la promotion de la santé",
+            "puces": [
+              "Le ministre pourra donner des directives à un conseil de santé s'il estime que l'intérêt public le justifie; les directives devront être publiées en ligne.",
+              "Le ministre pourra nommer un superviseur ayant le droit exclusif d'exercer les pouvoirs d'un conseil de santé jugé en difficulté.",
+              "Précision des critères que le ministre doit considérer pour agir dans l'intérêt public."
+            ]
+          },
+          {
+            "numero": 10,
+            "titre": "Loi de 2026 sur la protection des images intimes",
+            "puces": [
+              "Nouvelle loi créant une cause d'action civile contre quiconque partage ou menace de partager une image intime sans consentement.",
+              "Le tribunal pourra ordonner aux plateformes Internet de retirer des images intimes ou condamner le défendeur à des dommages-intérêts.",
+              "Possibilité d'obtenir une ordonnance pour faire cesser ou empêcher le partage d'une image intime, même sans audience.",
+              "Infraction prévue pour non-respect d'une ordonnance, passible d'amende et/ou d'emprisonnement."
+            ]
+          },
+          {
+            "numero": 11,
+            "titre": "Loi sur le ministère des Services sociaux et communautaires",
+            "puces": [
+              "Nouveau pouvoir réglementaire pour interdire la publication de renseignements identifiant les lieux de services financés par le ministère; infraction prévue en cas de contravention."
+            ]
+          },
+          {
+            "numero": 12,
+            "titre": "Loi de 1998 sur les commissions d'appel et de révision du ministère de la Santé et des Soins de longue durée",
+            "puces": [
+              "Suppression de l'exigence qu'un nombre minimal d'avocats et de médecins siègent à la Commission d'appel et de révision des services de santé."
+            ]
+          },
+          {
+            "numero": 13,
+            "titre": "Loi sur le ministère de la Formation et des Collèges et Universités",
+            "puces": [
+              "Nouvelles règles sur la responsabilité de la Couronne et l'extinction de certaines causes d'action.",
+              "Le ministre pourra suspendre l'approbation d'un établissement à offrir des prêts, aide financière et bourses aux étudiants.",
+              "Un étudiant et un établissement pourront être tenus solidairement responsables d'une somme due sur un prêt d'études.",
+              "Nouveaux pouvoirs réglementaires sur les prêts, l'aide financière, les ententes avec les établissements et les transferts de propriété."
+            ]
+          },
+          {
+            "numero": 14,
+            "titre": "Loi de 2005 sur les collèges d'enseignement professionnel de l'Ontario",
+            "puces": [
+              "Le Fonds d'assurance pour l'achèvement de la formation devient un compte public aux fins d'utilisation restreintes.",
+              "Les collèges devront maintenir au moins un campus autorisé par le surintendant, avec processus d'octroi et de révocation.",
+              "Interdiction pour les collèges de sous-traiter ou limiter les droits accordés aux étudiants par la loi.",
+              "Nouveau pouvoir réglementaire pour interdire temporairement de nouvelles inscriptions, programmes ou campus."
+            ]
+          },
+          {
+            "numero": 15,
+            "titre": "Loi de 1991 sur les optométristes",
+            "puces": [
+              "Les optométristes pourront délivrer des médicaments désignés par règlement.",
+              "Ils pourront accomplir des actes prescrits dans ou sous la surface de la cornée ou des muqueuses de l'œil.",
+              "Ajout d'exigences et de pouvoirs réglementaires connexes à ces nouveaux actes."
+            ]
+          },
+          {
+            "numero": 16,
+            "titre": "Loi de 2004 sur la protection des renseignements personnels sur la santé",
+            "puces": [
+              "Les sages-femmes autochtones offrant des services traditionnels sont ajoutées à la définition de praticien de la santé.",
+              "L'Agence ontarienne de santé obtient de nouveaux pouvoirs pour recueillir, utiliser et divulguer des renseignements personnels sur la santé liés à l'administration du système de santé.",
+              "L'organisation prescrite pourra demander le versement de renseignements au dossier de santé électronique, sous réserve des règlements.",
+              "Mise à jour terminologique remplaçant « aboriginal » par « Indigenous » dans plusieurs lois connexes."
+            ]
+          },
+          {
+            "numero": 17,
+            "titre": "Loi de 2010 sur les maisons de retraite",
+            "puces": [
+              "Ajout d'un droit des résidents à un soutien continu de la part de fournisseurs de soins.",
+              "Des titulaires de poste supérieur du ministère pourront donner des directives exécutoires aux titulaires de permis sur la prévention des maladies infectieuses."
+            ]
+          },
+          {
+            "numero": 18,
+            "titre": "Loi de 1998 sur le travail social et les techniques de travail social",
+            "puces": [
+              "Introduction du concept de mauvais traitements d'ordre sexuel infligés à un client par un membre de l'Ordre.",
+              "Révocation obligatoire du certificat d'inscription en cas de conclusion de certains mauvais traitements d'ordre sexuel.",
+              "Règles distinctes pour la remise en vigueur du certificat d'un membre révoqué pour ce motif."
+            ]
+          }
+        ],
+        "omnibus": 18,
+        "sansContenu": false,
+        "tronque": false,
+        "source": "note-explicative",
+        "derniereActivite": "2026-11-16",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.603Z",
+        "jetons": {
+          "entree": 13287,
+          "sortie": 3354
+        }
+      }
+    },
+    "149": {
+      "fr": {
+        "puces": [
+          "Crée un groupe de travail sur la réponse d'urgence à la crise liée aux drogues toxiques, dirigé par le médecin-hygiéniste en chef.",
+          "Le groupe réunit médecins-hygiénistes, experts en santé, intervenants de première ligne, personnes ayant une expérience vécue et représentants autochtones et francophones.",
+          "Le groupe doit élaborer une stratégie globale pour réduire les méfaits et les décès liés aux drogues toxiques en Ontario.",
+          "La stratégie sera mise en œuvre en partenariat avec les collectivités des Premières Nations et francophones.",
+          "Le groupe se réunit au moins une fois par mois et recueille des données sur les services, traitements et résultats.",
+          "La stratégie doit être présentée au ministre dans les six mois suivant la création du groupe, puis publiée en français et en anglais.",
+          "Un rapport annuel sur les activités du groupe est publié en ligne et déposé devant l'Assemblée législative."
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-16",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.605Z",
+        "jetons": {
+          "entree": 3237,
+          "sortie": 372
+        }
+      },
+      "en": {
+        "puces": [
+          "Creates the Toxic Drug Crisis Emergency Response Task Force Act, 2026",
+          "Minister of Health must set up the Task Force within 60 days of the section taking effect",
+          "Chief Medical Officer of Health chairs the Task Force, with members from health, frontline, and community groups",
+          "Task Force includes First Nations, Inuit, Métis representatives and francophone service experts",
+          "Task Force must meet monthly to design and implement a strategy reducing toxic drug harms and deaths",
+          "Strategy must be published online in English and French within six months of the Task Force's creation",
+          "Task Force must issue annual reports on activities and data, published online and tabled in the Assembly"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-16",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 2434,
+          "sortie": 253
+        }
+      }
+    },
+    "150": {
+      "en": {
+        "puces": [
+          "Proclaims the week starting the second Sunday in February each year as Ontario Colleges Athletic Association Week",
+          "Honors the Ontario Colleges Athletic Association, which represents 26 member institutions and about 4,000 student-athletes",
+          "Notes member institutions generate more than $200 million annually through sport-related activity",
+          "Act takes effect immediately upon receiving Royal Assent",
+          "Short title is the Ontario Colleges Athletic Association Week Act, 2026"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-16",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.604Z",
+        "jetons": {
+          "entree": 1758,
+          "sortie": 191
+        }
+      },
+      "fr": {
+        "puces": [
+          "Déclare la semaine débutant le deuxième dimanche de février Semaine de l'Ontario Colleges Athletic Association, chaque année",
+          "Vise à souligner les performances des étudiants-athlètes dans le sport collégial en Ontario",
+          "L'Association représente 26 établissements membres et environ 4 000 étudiants-athlètes",
+          "Souligne la contribution économique estimée à plus de 200 millions de dollars par année",
+          "Marque aussi le 60e anniversaire de l'Ontario Colleges Athletic Association"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-16",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 2255,
+          "sortie": 215
         }
       }
     },
@@ -10790,11 +12375,97 @@
           "sortie": 170
         }
       }
+    },
+    "PR63": {
+      "en": {
+        "puces": [
+          "Revives Martin Farms Limited, a corporation dissolved on December 21, 2021",
+          "Allows the corporation to deal with property it held at the time of dissolution",
+          "Restores the company to its legal position, including property, rights and liabilities, as if never dissolved",
+          "Revival is subject to any rights acquired by others after the dissolution",
+          "Applies to a private special legislation request by Robert L. Martin, a former director",
+          "Takes effect on the day it receives Royal Assent"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-03",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.603Z",
+        "jetons": {
+          "entree": 1562,
+          "sortie": 187
+        }
+      }
+    },
+    "PR61": {
+      "en": {
+        "puces": [
+          "Revives Befana Investments Ltd., a corporation dissolved on May 14, 2024",
+          "Dissolution happened under the Business Corporations Act through articles of dissolution",
+          "Applicant Nicola Bavaro was a director when the corporation was dissolved",
+          "Revival aims to let him deal with real property held in the corporation's name",
+          "Corporation is restored to its legal position, including property, rights and liabilities, as if never dissolved",
+          "Restoration is subject to any rights acquired by others after the dissolution",
+          "Act takes effect on the day it receives Royal Assent"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-27",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.605Z",
+        "jetons": {
+          "entree": 1572,
+          "sortie": 220
+        }
+      }
+    },
+    "PR57": {
+      "en": {
+        "puces": [
+          "Renames the Supply Chain Management Association Ontario as the National Institute of Supply Chain Leaders",
+          "Continues the organization as a corporation without share capital with existing board and officers staying in place",
+          "Grants qualifying members exclusive right to use designations NISCL, Certified Supply Chain Leader, NISCL-CSCL and CSCL",
+          "Lets the board set by-laws on membership, qualifications, fees, discipline, ethics and governance",
+          "Makes it an offence for non-members to use the protected designations or imply they are members",
+          "Allows the Superior Court to issue orders stopping unauthorized use of the designations",
+          "Repeals the Supply Chain Management Association Ontario Act, 2015"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-11-02",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 6027,
+          "sortie": 265
+        }
+      }
+    },
+    "PR58": {
+      "en": {
+        "puces": [
+          "Revives 5028833 Ontario Ltd., a company dissolved on August 29, 2024",
+          "Restores the corporation's legal status as if it had never been dissolved",
+          "Keeps all property, rights, privileges and liabilities as of the dissolution date",
+          "Allows the estate trustee to deal with unclaimed funds held in the company's name",
+          "Protects any rights acquired by other people after the dissolution",
+          "Takes effect on the day it receives Royal Assent"
+        ],
+        "sansContenu": false,
+        "tronque": false,
+        "derniereActivite": "2026-10-27",
+        "modele": "claude-sonnet-5",
+        "genereLe": "2026-11-16T21:39:57.606Z",
+        "jetons": {
+          "entree": 1629,
+          "sortie": 184
+        }
+      }
     }
   },
   "avertissementEn": "Written by AI from the official text published on ola.org, not from the law as amended since. Not an official document.",
   "avertissementFr": "Rédigé par une IA à partir du texte officiel publié sur ola.org, et non de la loi telle qu’amendée depuis. Ce n’est pas un document officiel.",
-  "maj": "2026-09-25T04:14:32.059Z",
-  "nombre": 191,
-  "coutCumule": 6.2941
+  "maj": "2026-11-16T21:39:57.606Z",
+  "nombre": 206,
+  "coutCumule": 6.8073
 }

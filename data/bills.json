@@ -5,10 +5,10 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-16T18:14:05.190Z",
+  "lus": "2026-11-16T20:45:18.841Z",
   "nombre": {
-    "total": 203,
-    "publics": 147,
+    "total": 206,
+    "publics": 150,
     "prives": 56
   },
   "projets": [
@@ -3034,6 +3034,69 @@
       "typeProjetSource": "deduit-du-parrain",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-147",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-147"
+    },
+    {
+      "numero": "148",
+      "numeroTri": 148,
+      "type": "public",
+      "titreEn": "Protect Ontario Families and Communities Act, 2026",
+      "titreFr": "Loi de 2026 visant à protéger les familles et les collectivités en Ontario",
+      "parrains": [
+        {
+          "nom": "Parsa, Hon. Michael",
+          "role": "Minister of Children, Community and Social Services"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-148",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-148"
+    },
+    {
+      "numero": "149",
+      "numeroTri": 149,
+      "type": "public",
+      "titreEn": "Toxic Drug Crisis Emergency Response Task Force Act, 2026",
+      "titreFr": "Loi de 2026 sur le groupe de travail sur la réponse d'urgence à la crise liée aux drogues toxiques",
+      "parrains": [
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Gilmour, Alexa",
+          "role": null
+        },
+        {
+          "nom": "Wong-Tam, Kristyn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-149",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-149"
+    },
+    {
+      "numero": "150",
+      "numeroTri": 150,
+      "type": "public",
+      "titreEn": "Ontario Colleges Athletic Association Week Act, 2026",
+      "titreFr": "Loi de 2026 sur la Semaine de l’Ontario Colleges Athletic Association",
+      "parrains": [
+        {
+          "nom": "Babikian, Aris",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-150",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-150"
     },
     {
       "numero": "PR1",
