@@ -254,7 +254,7 @@
       'neuf.relache': (fin, retour) => `The House has not sat since ${fin}; it returns on ${retour}. That is normal — committees can still sit in the meantime, and their work is below.`,
       'neuf.relacheSansRetour': (fin) => `The House has not sat since ${fin}, and no return date has been announced. Committees can still sit in the meantime; their work is below.`,
       'neuf.normal': 'The latest days on which a bill moved or a committee sat, from the official record.',
-      'neuf.autres': (n) => `and ${n} other bill${n > 1 ? 's' : ''} that day`,
+      'neuf.tout': 'See everything in the Archives', 'neuf.autres': (n) => `and ${n} other bill${n > 1 ? 's' : ''} that day`,
       'petitions.titre': 'Petitions to the Legislature', 'petitions.sous': 'On paper only in Ontario',
       'petitions.comment': 'Ontario has no online petitions. A petition is signed by hand, an MPP presents it in the House, and the government has 24 sitting days to answer.',
       'petitions.chiffres': (s, p, r) => `${s} subjects this session · ${p} presentations · ${r} answered by the government`,
@@ -567,7 +567,7 @@
       'neuf.relache': (fin, retour) => `La Chambre n’a pas siégé depuis le ${fin} ; elle reprend le ${retour}. C’est normal — les comités peuvent siéger entre-temps, et leur travail est ci-dessous.`,
       'neuf.relacheSansRetour': (fin) => `La Chambre n’a pas siégé depuis le ${fin}, et aucune date de reprise n’est annoncée. Les comités peuvent siéger entre-temps ; leur travail est ci-dessous.`,
       'neuf.normal': 'Les dernières journées où un projet a bougé ou un comité a siégé, d’après le compte rendu officiel.',
-      'neuf.autres': (n) => `et ${n} autre${n > 1 ? 's' : ''} projet${n > 1 ? 's' : ''} ce jour-là`,
+      'neuf.tout': 'Tout voir dans les Archives', 'neuf.autres': (n) => `et ${n} autre${n > 1 ? 's' : ''} projet${n > 1 ? 's' : ''} ce jour-là`,
       'petitions.titre': 'Pétitions à l’Assemblée', 'petitions.sous': 'Sur papier seulement en Ontario',
       'petitions.comment': 'L’Ontario n’a pas de pétition électronique. Une pétition se signe à la main, un ou une député·e la présente à la Chambre, et le gouvernement a 24 jours de séance pour y répondre.',
       'petitions.chiffres': (s, p, r) => `${s} sujets cette session · ${p} présentations · ${r} avec la réponse du gouvernement`,
@@ -1107,6 +1107,19 @@
 
   // « What's new » et « Petitions », côte à côte, comme « Quoi de neuf » et « Pétitions » sur
   // DossierQuébec. Tout vient de apercu.json (build-site-data.js).
+  // L'accueil garde les 7 derniers jours d'activité (comptés depuis la plus récente) et au plus
+  // 8 lignes ; le reste est dans les Archives.
+  function neufRecent(jours) {
+    if (!jours.length) return [];
+    const fin = new Date(jours[0].date + 'T00:00:00Z'); fin.setUTCDate(fin.getUTCDate() - 6);
+    const debut = fin.toISOString().slice(0, 10);
+    let reste = 8;
+    return jours.filter((x) => x.date >= debut).map((x) => {
+      const lignes = x.lignes.slice(0, Math.max(reste, 0)); reste -= lignes.length;
+      return { ...x, lignes, autres: lignes.length < x.lignes.length ? 0 : x.autres };
+    }).filter((x) => x.lignes.length);
+  }
+
   function nouvellesAccueil(a) {
     const zone = document.querySelector('[data-role="nouvelles"]');
     if (!zone || !a) return;
@@ -1132,7 +1145,7 @@
           )}</a></li>`;
     zone.querySelector('[data-role="neuf"]').innerHTML = `
       <div class="encadre-neuf">${echapper(contexte)}</div>
-      ${(a.quoiDeNeuf ?? [])
+      ${neufRecent(a.quoiDeNeuf ?? [])
         .map(
           (j) => `<div class="jour-neuf">
             <p class="date-neuf">${date(j.date)}</p>
@@ -1140,7 +1153,8 @@
             ${j.autres ? `<p class="legende">${mot('neuf.autres', j.autres)}</p>` : ''}
           </div>`
         )
-        .join('')}`;
+        .join('')}
+      <a class="bouton-trait" href="/archives"><span>${mot('neuf.tout')}</span> <span aria-hidden="true">→</span></a>`;
 
     // --- Pétitions : ce qui existe en Ontario, c'est-à-dire des pétitions sur papier.
     const p = a.petitions;

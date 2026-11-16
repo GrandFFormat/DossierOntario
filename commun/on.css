@@ -1020,6 +1020,11 @@ body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 [data-role="votes-recents"] .cles-votes{margin:0 0 18px;}
 [data-role="nouvelles"] > .legende{margin:0 0 18px;}
 [data-role="nouvelles"] .jour-neuf{margin-top:18px;}
+[data-role="votes-recents"], [data-role="nouvelles"]:not([hidden]){display:flex; flex-direction:column;}
+[data-role="votes-recents"] > .bouton-trait, [data-role="nouvelles"] .bouton-trait{margin-top:auto; padding-top:0; align-self:flex-start;}
+[data-role="nouvelles"] [data-role="neuf"]{display:flex; flex-direction:column; flex:1; gap:0;}
+[data-role="nouvelles"] [data-role="neuf"] > .bouton-trait{margin-top:auto;}
+[data-role="nouvelles"] [data-role="neuf"] > .jour-neuf:last-of-type{margin-bottom:18px;}
 .vote-ligne{padding:16px 0 18px;}
 .bande-defis{padding:52px 0 58px !important; margin-top:40px !important;}
 .bande-defis .defis-sous{margin:8px 0 0;}

@@ -9,8 +9,8 @@
   var MOIS = { en: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'], fr: ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juill.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'] };
   var JOURS = { en: ['Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.'], fr: ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'] };
   var T = {
-    en: { titre: 'Have your say', sous: 'Public hearings held by committees of the Legislature. Anyone can ask to speak or send a written submission.', titreProjet: 'Public hearings on this bill', prochaine: 'Hearing', prochaines: 'Next hearing', villes: function (n) { return n + ' cities'; }, inscrire: 'Register to speak by', memoire: 'Written submissions by', postuler: 'Register or send a submission ↗', avis: 'Official notice ↗', fiche: 'Bill page →', source: 'Source: notices of hearings, Legislative Assembly of Ontario.', ferme: 'closed' },
-    fr: { titre: 'Donnez votre avis', sous: 'Audiences publiques des comités de l’Assemblée. Tout le monde peut demander à témoigner ou envoyer un mémoire écrit.', titreProjet: 'Audiences publiques sur ce projet de loi', prochaine: 'Audience', prochaines: 'Prochaine audience', villes: function (n) { return n + ' villes'; }, inscrire: 'S’inscrire pour témoigner avant le', memoire: 'Mémoires écrits jusqu’au', postuler: 'S’inscrire ou envoyer un mémoire ↗', avis: 'Avis officiel (anglais) ↗', fiche: 'Fiche du projet →', source: 'Source : avis d’audiences, Assemblée législative de l’Ontario.', ferme: 'fermée' }
+    en: { titre: 'Have your say', sous: 'Public hearings held by committees of the Legislature. Anyone can ask to speak or send a written submission.', titreProjet: 'Public hearings on this bill', prochaine: 'Hearing', prochaines: 'Next hearing', villes: function (n) { return n + ' cities'; }, inscrire: 'Register to speak by', memoire: 'Written submissions by', postuler: 'Register or send a submission ↗', court: 'Take part ↗', details: 'Details', avis: 'Official notice ↗', fiche: 'Bill page →', source: 'Source: notices of hearings, Legislative Assembly of Ontario.', ferme: 'closed' },
+    fr: { titre: 'Donnez votre avis', sous: 'Audiences publiques des comités de l’Assemblée. Tout le monde peut demander à témoigner ou envoyer un mémoire écrit.', titreProjet: 'Audiences publiques sur ce projet de loi', prochaine: 'Audience', prochaines: 'Prochaine audience', villes: function (n) { return n + ' villes'; }, inscrire: 'S’inscrire pour témoigner avant le', memoire: 'Mémoires écrits jusqu’au', postuler: 'S’inscrire ou envoyer un mémoire ↗', court: 'Participer ↗', details: 'Détails', avis: 'Avis officiel (anglais) ↗', fiche: 'Fiche du projet →', source: 'Source : avis d’audiences, Assemblée législative de l’Ontario.', ferme: 'fermée' }
   };
   function langue() { try { return localStorage.getItem('dossier:langue') === 'fr' ? 'fr' : 'en'; } catch (e) { return 'en'; } }
   function echapper(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -34,6 +34,9 @@
       '.aud-avis{border-top:2px solid var(--ink,#131313);padding:12px 0 4px}.aud-avis:first-of-type{border-top:0;padding-top:0}.aud-avis h3{margin:0 0 2px;font-size:17px;line-height:1.25}.aud-avis h3 a{color:inherit}' +
       '.aud-comite{font-size:13px;color:var(--muted,#5B6570);margin:0 0 6px}.aud-avis ul{margin:0 0 8px;padding-left:18px;font-size:15px;line-height:1.5}' +
       '.aud-liens{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;font-weight:700}.aud-liens a{color:var(--ink,#131313)}.aud-liens .aud-go{background:#FFD24D;color:#131313;border:2px solid var(--ink,#131313);padding:2px 10px;text-decoration:none}' +
+      '.aud-ligne{display:flex;gap:12px;align-items:center;justify-content:space-between}.aud-tete{min-width:0}.aud-cle{display:block;font-size:14px;margin-top:2px}.aud-court .aud-go{flex:none;background:#FFD24D;color:#131313;border:2px solid var(--ink,#131313);padding:4px 12px;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}' +
+      '.aud-court details{margin:4px 0 6px;font-size:14px}.aud-court summary{cursor:pointer;font-weight:700;color:var(--muted,#5B6570)}.aud-court details ul{margin-top:6px}' +
+      '@media(max-width:560px){.aud-ligne{flex-direction:column;align-items:flex-start}}' +
       '.aud-note{margin:10px 0 0;font-size:12px;color:var(--muted,#5B6570)}';
     document.head.appendChild(s);
   }
@@ -57,6 +60,13 @@
     if (r.mem) lignes.push('<li><b>' + t.memoire + '</b> ' + echapper(date(r.mem.date, lg)) + ', ' + echapper(heure(r.mem.heure, lg)) + '</li>');
     var nom = lg === 'fr' && a.titreFr ? a.titreFr : a.titre, comite = lg === 'fr' && a.comiteFr ? a.comiteFr : a.comite;
     var titre = a.bill && !surFiche ? '<a href="/bill/' + a.bill + '">' + echapper(nom) + '</a>' : echapper(nom);
+    if (!surFiche) {   // accueil : une ligne par avis, le détail dans un menu
+      var cle = r.aud.length ? lignes[0] : lignes[lignes.length - 1];
+      return '<div class="aud-avis aud-court"><div class="aud-ligne"><div class="aud-tete"><h3>' + titre + '</h3><span class="aud-cle">' + cle.split('<li>').join('').split('</li>').join('') + '</span></div>' +
+        '<a class="aud-go" href="' + echapper(a.inscription) + '" target="_blank" rel="noopener">' + t.court + '</a></div>' +
+        '<details><summary>' + t.details + '</summary><p class="aud-comite">' + echapper(comite) + '</p><ul>' + lignes.join('') + '</ul>' +
+        '<div class="aud-liens"><a href="' + echapper(a.url) + '" target="_blank" rel="noopener">' + t.avis + '</a></div></details></div>';
+    }
     return '<div class="aud-avis"><h3>' + titre + '</h3><p class="aud-comite">' + echapper(comite) + '</p><ul>' + lignes.join('') + '</ul>' +
       '<div class="aud-liens"><a class="aud-go" href="' + echapper(a.inscription) + '" target="_blank" rel="noopener">' + t.postuler + '</a><a href="' + echapper(a.url) + '" target="_blank" rel="noopener">' + t.avis + '</a></div></div>';
   }
