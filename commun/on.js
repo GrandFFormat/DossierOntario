@@ -118,6 +118,100 @@
       'e404.pour': 'Yeas', 'e404.contre': 'Nays', 'e404.speaker': 'The Speaker rules the address out of order.',
       'e404.accueil': 'Back to the House', 'e404.projets': 'Bills that do exist',
       'avis.reprise': 'This site might be shut down due to low traffic and a desire to focus on Quebec. Want to take it over? You would still be part of the web of Canadian provinces, attached via <a href="https://dossiercanada.ca/">dossiercanada.ca</a>. Money-wise, it would probably cost you about $30 a month for a Claude subscription, and that’s pretty much it. If you want it, shoot me an email: <a href="mailto:info@dossierquebec.ca">info@dossierquebec.ca</a>',
+      'nav.ottawaSous': 'city council',
+      'ottawa.retour': '← DossierOntario', 'ottawa.sur': 'City of Ottawa · city council and standing committees',
+      'ottawa.titre': 'What Ottawa city council decided',
+      'ottawa.intro': '<b>Unofficial, and new.</b> The last two months of decisions of Ottawa City Council and its standing committees, read from the minutes the City publishes, one card per decision, with a plain-language summary written by AI. Every card links to the official minutes.',
+      'ottawa.chSeances': 'meetings', 'ottawa.chDecisions': 'decisions', 'ottawa.chVotes': 'recorded votes',
+      'ottawa.fenetre': (du, au) => `Decisions from ${du} to ${au}, City Council and standing committees. The Committee of Adjustment and the boards (police, library, health) are not included.`,
+      'ottawa.conditions': 'The City’s terms of use ask for permission before republishing its content. This page is a prototype, built to show the City the result before asking. The City has not been contacted yet. Terms:',
+      'ottawa.compte': (n) => `${n} decision${n > 1 ? 's' : ''}`, 'ottawa.seanceNo': (n) => `meeting ${n}`,
+      'ottawa.ouvrir': '+ What was decided', 'ottawa.resume': 'In plain words', 'ottawa.officiel': 'What the minutes say',
+      // « En bref » : la dernière séance de chaque conseil, comme commun/seances-en-bref.js de DQ.
+      'ottawa.ebTitre': 'In brief: the latest meeting of Council and of each committee · AI-generated summary',
+      'ottawa.ebNote': '<strong>From the City\'s minutes.</strong> Each card\'s sentence is an AI-written summary of them. The highlighted items are chosen without AI. The minutes prevail: the link is at the bottom of each card.',
+      'ottawa.ebSorte': 'Minutes · decided', 'ottawa.ebSeanceDu': 'Meeting of', 'ottawa.ebTout': 'All its decisions →', 'ottawa.ebOfficiel': 'Official version: minutes ↗',
+      'ottawa.ebVotes': (n) => `Recorded vote${n > 1 ? 's' : ''} (${n})`, 'ottawa.ebAucunVote': 'No recorded vote at this meeting.', 'ottawa.ebPlus': (n) => `and ${n} more →`,
+      'ottawa.ebDivise': 'split vote', 'ottawa.ebPourContre': (p, c) => `<b class="p">${p}</b> for · <b class="c">${c}</b> against`,
+      // Pied de page des pages de ville, comme DQ.
+      'ottawa.piedTexte': 'Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City\'s original document prevails. <a href="/ottawa/sources">Sources</a>.',
+      'ottawa.piedLiens': '<a href="/">DossierOntario: the Legislative Assembly in plain language</a> · <a href="/rules">The rules of the site</a> · <a href="/ottawa/sources">Sources</a> · <a href="https://ottawa.ca/en" target="_blank" rel="noopener">City of Ottawa site ↗</a> · A project by <a href="https://www.dafrsolution.com/en" target="_blank" rel="noopener">DAFR Solution</a>',
+      // Tableaux des contrats, comme la page Contrats de Montréal sur DQ.
+      'ottawa.fournisseur': 'Supplier', 'ottawa.nbContrats': 'Contracts', 'ottawa.montant': 'Amount', 'ottawa.part': 'Share', 'ottawa.objet': 'Subject', 'ottawa.voirPlus': 'Show more',
+      'ottawa.topAide': 'Total of the 2025 contracts of $25,000 and more. Click a name to see its contracts.',
+      'ottawa.suite': 'Also recorded', 'ottawa.resultat': 'Result', 'ottawa.dossier': 'File',
+      'ottawa.voteNominal': 'Recorded vote', 'ottawa.dissidence': (n) => `${n} dissent${n > 1 ? 's' : ''}`,
+      'ottawa.dissidents': 'Dissent:', 'ottawa.propose': 'Moved by', 'ottawa.appuye': 'seconded by',
+      'ottawa.pour': (n) => `For (${n})`, 'ottawa.contre': (n) => `Against (${n})`,
+      'ottawa.pieces': (n) => `${n} document${n > 1 ? 's' : ''}`, 'ottawa.autresPieces': (n) => `and ${n} more in the minutes`,
+      'ottawa.pv': 'Read the minutes on the City’s site', 'ottawa.source': 'Source: the City of Ottawa’s meeting portal (eScribe)',
+      // --- Volet Ottawa : les onglets
+      'ottawa.ongletAccueil': 'Overview', 'ottawa.ongletDecisions': 'Decisions', 'ottawa.ongletConseil': 'Council', 'ottawa.ongletContrats': 'Contracts', 'ottawa.ongletBudget': 'Budget & taxes', 'ottawa.ongletPres': 'Near me', 'ottawa.ongletLexique': 'Lexicon', 'ottawa.ongletSources': 'Sources',
+      'ottawa.sur2': 'City of Ottawa · city council and standing committees', 'ottawa.surAccueil': 'City of Ottawa · an unofficial citizen file', 'ottawa.titreAccueil': 'Ottawa, decision by decision',
+      'ottawa.introAccueil': '<b>Unofficial, and new.</b> Everything here comes from what the City of Ottawa publishes: its minutes, its open data. Nothing is invented. Every item links back to its source.',
+      'ottawa.surConseil': 'City of Ottawa · 2022-2026 Term of Council', 'ottawa.titreConseil': 'Who sits on Ottawa city council',
+      'ottawa.surContrats': 'City of Ottawa · contracts awarded under delegated authority', 'ottawa.titreContrats': 'Who the City pays, and for what',
+      'ottawa.surBudget': 'City of Ottawa · taxes by ward and 2026 draft budget', 'ottawa.titreBudget': 'Where the money comes from, and where it goes',
+      'ottawa.surPres': 'City of Ottawa · your ward, your councillor, what is coming', 'ottawa.titrePres': 'Near me',
+      'ottawa.surLexique': 'City of Ottawa · the words of the council, explained', 'ottawa.titreLexique': 'Municipal lexicon',
+      'ottawa.introLexique': 'Council words, explained in ordinary ones. These explanations are ours, not the City’s. For the exact rule, the official text always wins.',
+      'ottawa.surSources': 'City of Ottawa · where it all comes from', 'ottawa.titreSources': 'Sources and limits',
+      'ottawa.chElus': 'elected members', 'ottawa.chQuartiers': 'wards', 'ottawa.chSeancesPresence': 'council meetings counted for attendance',
+      'ottawa.dernieresSeances': 'The latest meetings, in one sentence', 'ottawa.dernieresDecisions': 'The latest decisions', 'ottawa.explorer': 'Explore the file',
+      'ottawa.voirDecisions': (n) => `${n} decision${n > 1 ? 's' : ''} →`,
+      'ottawa.descDecisions': 'Every decision of council and its committees in the last two months, in plain words, with the official text.',
+      'ottawa.descConseil': 'The mayor and the 24 councillors, their ward on the map, their attendance, how to reach them.',
+      'ottawa.descContrats': 'Every contract of $25,000 or more signed by staff in 2025, who got it and why it was not competed when it was not.',
+      'ottawa.descBudget': 'Taxes by ward since 2022, the 2026 draft budget, reserves, fees and how Ottawa compares to Ontario.',
+      'ottawa.descPres': 'Your street or postal code: your ward, your councillor, the parks, the construction and the permits around you.',
+      'ottawa.descLexique': 'By-law, recorded vote, bulk consent, delegation of authority: the words of city hall, explained.',
+      'ottawa.quartierNo': (n) => `Ward ${n}`, 'ottawa.villeEntiere': 'City-wide', 'ottawa.touteLaVille': 'Elected by the whole city', 'ottawa.quartier': 'Ward',
+      'ottawa.maire': 'Mayor', 'ottawa.conseiller': 'Councillor', 'ottawa.presence': 'Attendance', 'ottawa.courriel': 'Email', 'ottawa.telephone': 'Phone', 'ottawa.site': 'Site', 'ottawa.ficheVille': 'Profile on ottawa.ca',
+      'ottawa.mandat': 'The minutes of November 12, 2026 call it the final Council meeting of the 2022-2026 Term. Members below are those of that term, as published in the City’s open data. Osgoode had two councillors during the term.',
+      'ottawa.presenceNote': (du, au, n) => `Attendance counts City Council meetings only, from ${du} to ${au} (${n} meetings), as published by the City. Committee meetings are not counted.`,
+      'ottawa.carteTitre': 'The 24 wards', 'ottawa.carteAide': 'Click a ward on the map, or a name below.', 'ottawa.carteAlt': 'Map of Ottawa’s 24 wards', 'ottawa.tousElus': 'Everyone',
+      'ottawa.sourceDonnees': 'Source: City of Ottawa open data,',
+      'ottawa.chContrats': 'contracts in 2025', 'ottawa.chTotal': 'total awarded', 'ottawa.chNonConc': 'non-competitive', 'ottawa.chNonConcTotal': 'non-competitive, in dollars',
+      'ottawa.contratsIntro': 'The City publishes in its open data the contracts of $25,000 or more awarded by staff under the authority Council delegated to them. These are the two 2025 lists (January–June and July–December), supplier by supplier. “Non-competitive” means the contract was awarded without a competitive process, for the reason given.',
+      'ottawa.topFournisseurs': 'The 15 biggest suppliers', 'ottawa.tousContrats': 'All contracts', 'ottawa.rechercheContrats': 'Search a supplier, a word, a contract number', 'ottawa.service': 'Department', 'ottawa.tousServices': 'All departments', 'ottawa.nonConcurrentiel': 'Non-competitive',
+      'ottawa.compteContrats': (n, m) => `${n} contract${n > 1 ? 's' : ''}, ${m} in total`, 'ottawa.h1': 'Jan–Jun 2025', 'ottawa.h2': 'Jul–Dec 2025',
+      'ottawa.chFonctionnement': 'operating budget 2026 (draft)', 'ottawa.chImmobilisations': 'capital budget 2026 (draft)', 'ottawa.chTaxes': 'municipal taxes by ward, 2026', 'ottawa.chHausse': 'tax increase 2026, Ottawa',
+      'ottawa.budgetIntro': 'The 2026 draft budget as tabled by staff, from the City’s open data “Budget Explorer”, and the taxes levied in each ward since 2022. A draft is what Council debates. The adopted budget may differ.', 'ottawa.budgetNote': 'The City’s files do not name the unit of the budget amounts. Their total (operating 2026: 5,220,570) matches a budget of about $5.2 billion, so we read the amounts as thousands of dollars. This is our deduction, not an official statement.',
+      'ottawa.autres': 'Other', 'ottawa.votreQuartierTaxes': 'Your ward', 'ottawa.quartierAide': 'Pick your ward to see the taxes the City levies there. “Near me” finds your ward from your address.',
+      'ottawa.evalCourt': (a) => `Assessed value of all properties, ${a}`, 'ottawa.taxesCourt': (a) => `Municipal taxes levied, ${a}`, 'ottawa.hausseCourt': (a) => `Increase in ${a}`, 'ottawa.depuis2022': 'Change in taxes levied since 2022',
+      'ottawa.ouVa': (a) => `Where the money goes in ${a}`, 'ottawa.ouVaAide': (t) => `Operating spending of ${t}, by committee. The biggest seven, then everything else.`,
+      'ottawa.dOuVient': (a) => `Where the money comes from in ${a}`, 'ottawa.dOuVientAide': (t) => `Operating revenues of ${t}, by source.`,
+      'ottawa.immoAide': (t) => `${t} of capital spending, by purpose. Open the detail for the funding sources and the committees.`, 'ottawa.detail': 'Detail', 'ottawa.plusLoin': 'Further: projects, reserves, fees, other cities',
+      'ottawa.taxesTitre': 'Municipal taxes by ward', 'ottawa.taxesAide': 'The assessed value of all properties in the ward, the municipal taxes levied on them and the year’s increase, as published by the City. The last column is the change in taxes levied since 2022, which reflects new buildings as well as rate increases.',
+      'ottawa.evaluation': 'Assessed value', 'ottawa.taxesPercues': 'Taxes levied', 'ottawa.hausseTaxe': 'Increase',
+      'ottawa.depensesTitre': (a) => `Operating spending ${a}, by committee`, 'ottawa.revenusTitre': (a) => `Operating revenues ${a}, by source`, 'ottawa.immoTitre': (a) => `Capital program ${a}`,
+      'ottawa.parCategorie': 'By purpose', 'ottawa.parFinancement': 'By funding source', 'ottawa.parComite': 'By committee',
+      'ottawa.projetsTitre': (n) => `The ${n} capital projects`, 'ottawa.rechercheProjets': 'Search a project, a street, a service…', 'ottawa.rien': 'Nothing found.',
+      'ottawa.reservesTitre': (a) => `Reserve funds, ${a}`, 'ottawa.reserve': 'Reserve', 'ottawa.ouverture': 'Opening balance', 'ottawa.fermeture': 'Closing balance', 'ottawa.reservesNote': (n) => `The 15 largest of ${n} reserves.`,
+      'ottawa.fraisTitre': (n) => `User fees: ${n} rates`, 'ottawa.fraisAide': 'Everything the City charges for, from a dog licence to a building permit, with the 2025 and 2026 rates. Type a word to find a fee.', 'ottawa.rechercheFrais': 'Search a fee (parking, permit, pool, licence…)', 'ottawa.fraisQuoi': 'Fee', 'ottawa.variation': 'Change',
+      'ottawa.comparaisonTitre': 'Tax increases since 2015, Ottawa and other Ontario cities', 'ottawa.annee': 'Year',
+      'ottawa.presIntro': 'Type your street and number, or your postal code: nothing is sent anywhere, the lookup happens in your browser from the City’s address list. You get your ward, your councillor, the parks, the construction planned and the building permits issued in 2026 around you.',
+      'ottawa.rue': 'Street', 'ottawa.ruePlaceholder': 'Bank Street, Montréal Road…', 'ottawa.numero': 'No.', 'ottawa.codePostal': 'Or a postal code', 'ottawa.chercher': 'Find', 'ottawa.ouQuartier': 'Or pick a ward:',
+      'ottawa.adressesAbsentes': 'The address list is not loaded yet. Pick your ward in the list or on the map.', 'ottawa.cpInvalide': 'A postal code looks like K1A 0A6.', 'ottawa.cpInconnu': 'This postal code is not in the City of Ottawa’s address list.',
+      'ottawa.rueDansPlusieurs': (q) => `This street crosses several wards (${q}). Add a street number to be sure. Showing the ward with most of its addresses.`,
+      'ottawa.votreQuartier': 'Your ward', 'ottawa.travaux': 'Construction', 'ottawa.parcs': 'Parks', 'ottawa.permis': 'Permits 2026', 'ottawa.chargement': 'Loading…',
+      'ottawa.travauxAide': 'Road, water, sewer, pathway and facility work the City plans or has under way in this ward, by type, from its construction forecast.', 'ottawa.travauxQuand': 'When', 'ottawa.accessible': 'accessible',
+      'ottawa.permisResume': (n, v, l) => `${n} building permits issued in 2026 in this ward, ${v} of construction value, ${l} new dwelling units. The 30 most recent:`, 'ottawa.logements': (n) => `${n} unit${n > 1 ? 's' : ''}`, 'ottawa.permisPlus': (n) => `and ${n} more in the City’s open data.`,
+      'ottawa.decisionsQuartier': 'Council decisions name the ward in their title: see the Decisions tab',
+      'ottawa.presTotaux': (t, p, pe, v) => `City-wide: ${t} construction items, ${p} parks, ${pe} permits in 2026 (${v}).`, 'ottawa.presVie': 'Your address never leaves your browser.',
+      'ottawa.lexiqueOfficiel': 'City Council on ottawa.ca',
+      'ottawa.sourcesIntro': 'Every number on the Ottawa pages comes from a document the City publishes. Here is the list, what we do with each one and what we do not do.',
+      'ottawa.sourcesTitre': 'What we read', 'ottawa.srcPv': 'Minutes of Council and committees (eScribe)', 'ottawa.srcPvQuoi': 'Read in both languages, item by item: titles, text, result, motions, recorded votes, dissents, attachments.',
+      'ottawa.src_elus': 'Mayor and councillors: names, wards, contact details.', 'ottawa.src_quartiers': 'The ward boundaries drawn on the maps.', 'ottawa.src_presences': 'Who attended each council meeting.', 'ottawa.src_taxes': 'Assessed value, taxes levied and increase, per ward and year.',
+      'ottawa.src_contratsH1': 'Contracts of $25,000 and more, first half of 2025.', 'ottawa.src_contratsH2': 'Contracts of $25,000 and more, second half of 2025.', 'ottawa.src_budget2026': 'Nine tables of the 2026 draft budget: spending, revenues, capital, reserves, fees, projects, comparison.',
+      'ottawa.src_travauxLineaires': 'Planned road, water, sewer and pathway work.', 'ottawa.src_travauxPoints': 'Planned facility, park, bridge and culvert work.', 'ottawa.src_parcs': 'Parks and green spaces, with address and type.', 'ottawa.src_permis2026': 'Building permits issued in 2026, month by month.', 'ottawa.src_adresses': 'Every municipal address, used to find your ward in your browser.',
+      'ottawa.licenceTexte': 'The open data is used under the',
+      'ottawa.conditionsTitre': 'The City’s terms of use', 'ottawa.conditionsTexte': 'The minutes are not open data. The City’s terms of use ask for permission before republishing its content. We built this page first, so the City can see exactly what is republished, how it is attributed and that every item links back. The City has not been contacted yet. If the City asks us to remove something, we will. Terms:',
+      'ottawa.limitesTitre': 'What this file does not do',
+      'ottawa.limites': ['It covers City Council and its standing committees only. The Committee of Adjustment, the Transit Commission’s sub-bodies, the Police Services Board, the Library Board and Ottawa Public Health are not read.', 'It starts with the last two months of the 2022-2026 term. Older decisions are in the City’s own archive.', 'The plain-language summaries are written by an AI from the official text, one language at a time; they can be wrong. The official text is always on the card.', 'Budget amounts are read as thousands of dollars by deduction, because the City’s files do not state the unit. See the note on the Budget tab.', 'Attendance counts Council meetings only, within the window the City publishes.', 'Nothing on ottawa.ca or open.ottawa.ca is read automatically. We read the meeting portal (eScribe) and the ArcGIS services behind the open data.'],
+      'ottawa.commentTitre': 'How it is done',
+      'ottawa.comment': ['Scripts read the sources in the open, with a user agent that names this site and a contact address, at least two seconds between requests. Sites that ask for a longer delay, like open.ottawa.ca, are not read at all.', 'The City is not asked for anything it does not already publish. No account, no scraping behind a login, no media sites.', 'The data is refreshed by hand for now. The Ottawa file is a demonstration, not a live feed. The date each page shows is the date the data was read.', 'The code is public: see “Source code” in the footer.'],
+      'ottawa.journalTitre': 'What changed on the Ottawa pages',
       'pied.code': 'Source code', 'pied.claude': 'A project by', 'pied.etmoi': 'DAFR Solution',
       'etmoi.titre': 'Why this site exists', 'etmoi.maj': 'Site updates',
       // La page « The rules » (/rules), 5 oct. 2026 : chaque règle a sa preuve dans le dépôt.
@@ -340,6 +434,97 @@
       'e404.pour': 'Pour', 'e404.contre': 'Contre', 'e404.speaker': 'La présidence déclare cette adresse irrecevable.',
       'e404.accueil': 'Retour à la Chambre', 'e404.projets': 'Les projets de loi qui existent',
       'avis.reprise': 'Ce site pourrait fermer, faute d’achalandage et pour me concentrer sur le Québec. Envie de le reprendre ? Il resterait dans le réseau des provinces canadiennes, rattaché par <a href="https://dossiercanada.ca/">dossiercanada.ca</a>. Côté argent, ça vous coûterait probablement environ 30 $ par mois pour un abonnement Claude, et c’est à peu près tout. Si ça vous intéresse, écrivez-moi : <a href="mailto:info@dossierquebec.ca">info@dossierquebec.ca</a>',
+      'nav.ottawaSous': 'conseil municipal',
+      'ottawa.retour': '← DossierOntario', 'ottawa.sur': 'Ville d’Ottawa · conseil municipal et comités permanents',
+      'ottawa.titre': 'Ce que le conseil municipal d’Ottawa a décidé',
+      'ottawa.intro': '<b>Non officiel, et tout neuf.</b> Les deux derniers mois de décisions du conseil municipal d’Ottawa et de ses comités permanents, lues dans les procès-verbaux que la Ville publie, une carte par décision, avec un résumé en langage clair rédigé par une IA. Chaque carte mène au procès-verbal officiel.',
+      'ottawa.chSeances': 'séances', 'ottawa.chDecisions': 'décisions', 'ottawa.chVotes': 'votes nominaux',
+      'ottawa.fenetre': (du, au) => `Décisions du ${du} au ${au}, conseil municipal et comités permanents. Le Comité de dérogation et les conseils d’administration (police, bibliothèque, santé) n’y sont pas.`,
+      'ottawa.conditions': 'Les conditions d’utilisation de la Ville demandent une permission avant de republier son contenu. Cette page est un prototype, construit pour montrer le résultat à la Ville avant de lui demander. La Ville n’a pas encore été contactée. Conditions :',
+      'ottawa.compte': (n) => `${n} décision${n > 1 ? 's' : ''}`, 'ottawa.seanceNo': (n) => `séance ${n}`,
+      'ottawa.ouvrir': '+ Ce qui a été décidé', 'ottawa.resume': 'En mots simples', 'ottawa.officiel': 'Ce que dit le procès-verbal',
+      'ottawa.ebTitre': 'En bref : la dernière séance du conseil et de chaque comité · résumé généré par IA',
+      'ottawa.ebNote': '<strong>D’après le procès-verbal de la Ville.</strong> La phrase de chaque carte en est un résumé écrit par IA. Les points mis en avant sont choisis sans IA. Le procès-verbal fait foi : le lien est au bas de chaque carte.',
+      'ottawa.ebSorte': 'Procès-verbal · décidé', 'ottawa.ebSeanceDu': 'Séance du', 'ottawa.ebTout': 'Toutes ses décisions →', 'ottawa.ebOfficiel': 'Version officielle : procès-verbal ↗',
+      'ottawa.ebVotes': (n) => `Vote${n > 1 ? 's' : ''} nominal${n > 1 ? 'aux' : ''} (${n})`, 'ottawa.ebAucunVote': 'Aucun vote nominal à cette séance.', 'ottawa.ebPlus': (n) => `et ${n} autre${n > 1 ? 's' : ''} →`,
+      'ottawa.ebDivise': 'vote divisé', 'ottawa.ebPourContre': (p, c) => `<b class="p">${p}</b> pour · <b class="c">${c}</b> contre`,
+      'ottawa.piedTexte': 'Site citoyen indépendant. Aucun lien avec la Ville d’Ottawa, aucun caractère officiel. En cas d’écart, le document d’origine de la Ville fait foi. <a href="/ottawa/sources">Sources</a>.',
+      'ottawa.piedLiens': '<a href="/">DossierOntario : l’Assemblée législative en clair</a> · <a href="/rules">Les règles du site</a> · <a href="/ottawa/sources">Sources</a> · <a href="https://ottawa.ca/fr" target="_blank" rel="noopener">Site de la Ville d’Ottawa ↗</a> · Une réalisation de <a href="https://www.dafrsolution.com" target="_blank" rel="noopener">DAFR Solution</a>',
+      'ottawa.fournisseur': 'Fournisseur', 'ottawa.nbContrats': 'Contrats', 'ottawa.montant': 'Montant', 'ottawa.part': 'Part', 'ottawa.objet': 'Objet', 'ottawa.voirPlus': 'Voir plus',
+      'ottawa.topAide': 'Total des contrats de 25 000 $ et plus de 2025. Cliquer un nom affiche ses contrats.',
+      'ottawa.suite': 'Aussi consigné', 'ottawa.resultat': 'Résultat', 'ottawa.dossier': 'Dossier',
+      'ottawa.voteNominal': 'Vote nominal', 'ottawa.dissidence': (n) => `${n} dissidence${n > 1 ? 's' : ''}`,
+      'ottawa.dissidents': 'Dissidence :', 'ottawa.propose': 'Proposée par', 'ottawa.appuye': 'appuyée par',
+      'ottawa.pour': (n) => `Pour (${n})`, 'ottawa.contre': (n) => `Contre (${n})`,
+      'ottawa.pieces': (n) => `${n} document${n > 1 ? 's' : ''}`, 'ottawa.autresPieces': (n) => `et ${n} de plus dans le procès-verbal`,
+      'ottawa.pv': 'Lire le procès-verbal sur le site de la Ville', 'ottawa.source': 'Source : le portail des séances de la Ville d’Ottawa (eScribe)',
+      // --- Volet Ottawa : les onglets
+      'ottawa.ongletAccueil': 'Aperçu', 'ottawa.ongletDecisions': 'Décisions', 'ottawa.ongletConseil': 'Conseil', 'ottawa.ongletContrats': 'Contrats', 'ottawa.ongletBudget': 'Budget et taxes', 'ottawa.ongletPres': 'Près de chez moi', 'ottawa.ongletLexique': 'Lexique', 'ottawa.ongletSources': 'Sources',
+      'ottawa.sur2': 'Ville d’Ottawa · conseil municipal et comités permanents', 'ottawa.surAccueil': 'Ville d’Ottawa · un dossier citoyen non officiel', 'ottawa.titreAccueil': 'Ottawa, décision par décision',
+      'ottawa.introAccueil': '<b>Non officiel, et tout neuf.</b> Tout ce qui est ici vient de ce que la Ville d’Ottawa publie : ses procès-verbaux, ses données ouvertes. Rien n’est inventé. Chaque élément mène à sa source.',
+      'ottawa.surConseil': 'Ville d’Ottawa · mandat du Conseil 2022-2026', 'ottawa.titreConseil': 'Qui siège au conseil municipal d’Ottawa',
+      'ottawa.surContrats': 'Ville d’Ottawa · contrats octroyés par délégation de pouvoir', 'ottawa.titreContrats': 'Qui la Ville paie, et pour quoi',
+      'ottawa.surBudget': 'Ville d’Ottawa · taxes par quartier et budget provisoire 2026', 'ottawa.titreBudget': 'D’où vient l’argent, et où il va',
+      'ottawa.surPres': 'Ville d’Ottawa · votre quartier, votre élu·e, ce qui s’en vient', 'ottawa.titrePres': 'Près de chez moi',
+      'ottawa.surLexique': 'Ville d’Ottawa · les mots du conseil, expliqués', 'ottawa.titreLexique': 'Lexique municipal',
+      'ottawa.introLexique': 'Les mots du conseil, expliqués avec des mots ordinaires. Ces explications sont les nôtres, pas celles de la Ville. Pour la règle exacte, le texte officiel a toujours le dernier mot.',
+      'ottawa.surSources': 'Ville d’Ottawa · d’où tout ça vient', 'ottawa.titreSources': 'Sources et limites',
+      'ottawa.chElus': 'élu·e·s', 'ottawa.chQuartiers': 'quartiers', 'ottawa.chSeancesPresence': 'séances du conseil comptées pour la présence',
+      'ottawa.dernieresSeances': 'Les dernières séances, en une phrase', 'ottawa.dernieresDecisions': 'Les dernières décisions', 'ottawa.explorer': 'Explorer le dossier',
+      'ottawa.voirDecisions': (n) => `${n} décision${n > 1 ? 's' : ''} →`,
+      'ottawa.descDecisions': 'Chaque décision du conseil et de ses comités depuis deux mois, en mots simples, avec le texte officiel.',
+      'ottawa.descConseil': 'Le maire et les 24 conseillers et conseillères, leur quartier sur la carte, leur présence, comment les joindre.',
+      'ottawa.descContrats': 'Chaque contrat de 25 000 $ et plus signé par le personnel en 2025, qui l’a eu, et la raison quand il n’y a pas eu d’appel d’offres.',
+      'ottawa.descBudget': 'Les taxes par quartier depuis 2022, le budget provisoire 2026, les réserves, les frais et Ottawa face à l’Ontario.',
+      'ottawa.descPres': 'Votre rue ou votre code postal : votre quartier, votre conseiller ou conseillère, les parcs, les travaux et les permis autour de vous.',
+      'ottawa.descLexique': 'Règlement, vote nominal, consentement en bloc, délégation de pouvoir : les mots de l’hôtel de ville, expliqués.',
+      'ottawa.quartierNo': (n) => `quartier ${n}`, 'ottawa.villeEntiere': 'Toute la ville', 'ottawa.touteLaVille': 'Élu par toute la ville', 'ottawa.quartier': 'Quartier',
+      'ottawa.maire': 'Maire', 'ottawa.conseiller': 'Conseiller·ère', 'ottawa.presence': 'Présence', 'ottawa.courriel': 'Courriel', 'ottawa.telephone': 'Téléphone', 'ottawa.site': 'Site', 'ottawa.ficheVille': 'Fiche sur ottawa.ca',
+      'ottawa.mandat': 'Le procès-verbal du 12 novembre 2026 en fait la dernière séance du Conseil du mandat 2022-2026. Les membres ci-dessous sont ceux de ce mandat, tels que publiés dans les données ouvertes de la Ville. Osgoode a eu deux conseillers pendant le mandat.',
+      'ottawa.presenceNote': (du, au, n) => `La présence compte les séances du conseil municipal seulement, du ${du} au ${au} (${n} séances), telles que publiées par la Ville. Les séances de comité ne sont pas comptées.`,
+      'ottawa.carteTitre': 'Les 24 quartiers', 'ottawa.carteAide': 'Cliquez un quartier sur la carte, ou un nom ci-dessous.', 'ottawa.carteAlt': 'Carte des 24 quartiers d’Ottawa', 'ottawa.tousElus': 'Tout le monde',
+      'ottawa.sourceDonnees': 'Source : données ouvertes de la Ville d’Ottawa,',
+      'ottawa.chContrats': 'contrats en 2025', 'ottawa.chTotal': 'total octroyé', 'ottawa.chNonConc': 'sans appel d’offres', 'ottawa.chNonConcTotal': 'sans appel d’offres, en dollars',
+      'ottawa.contratsIntro': 'La Ville publie dans ses données ouvertes les contrats de 25 000 $ et plus octroyés par le personnel en vertu du pouvoir que le Conseil lui a délégué. Voici les deux listes de 2025 (janvier–juin et juillet–décembre), fournisseur par fournisseur. « Sans appel d’offres » veut dire que le contrat a été octroyé sans mise en concurrence, pour la raison indiquée.',
+      'ottawa.topFournisseurs': 'Les 15 plus gros fournisseurs', 'ottawa.tousContrats': 'Tous les contrats', 'ottawa.rechercheContrats': 'Chercher un fournisseur, un mot, un numéro de contrat', 'ottawa.service': 'Service', 'ottawa.tousServices': 'Tous les services', 'ottawa.nonConcurrentiel': 'Sans appel d’offres',
+      'ottawa.compteContrats': (n, m) => `${n} contrat${n > 1 ? 's' : ''}, ${m} au total`, 'ottawa.h1': 'janv.–juin 2025', 'ottawa.h2': 'juill.–déc. 2025',
+      'ottawa.chFonctionnement': 'budget de fonctionnement 2026 (provisoire)', 'ottawa.chImmobilisations': 'budget d’immobilisations 2026 (provisoire)', 'ottawa.chTaxes': 'taxes municipales par quartier, 2026', 'ottawa.chHausse': 'hausse de taxes 2026, Ottawa',
+      'ottawa.budgetIntro': 'Le budget provisoire 2026 tel que déposé par le personnel, tiré de l’« explorateur du budget » des données ouvertes de la Ville, et les taxes perçues dans chaque quartier depuis 2022. Un budget provisoire, c’est ce que le Conseil débat. Le budget adopté peut différer.', 'ottawa.budgetNote': 'Les fichiers de la Ville ne nomment pas l’unité des montants du budget. Leur somme (fonctionnement 2026 : 5 220 570) correspond à un budget d’environ 5,2 milliards de dollars : on lit donc les montants en milliers de dollars. C’est notre déduction, pas une mention officielle.',
+      'ottawa.autres': 'Autres', 'ottawa.votreQuartierTaxes': 'Votre quartier', 'ottawa.quartierAide': 'Choisissez votre quartier pour voir les taxes que la Ville y perçoit. « Près de chez moi » trouve votre quartier à partir de votre adresse.',
+      'ottawa.evalCourt': (a) => `Valeur imposable de toutes les propriétés, ${a}`, 'ottawa.taxesCourt': (a) => `Taxes municipales perçues, ${a}`, 'ottawa.hausseCourt': (a) => `Hausse en ${a}`, 'ottawa.depuis2022': 'Variation des taxes perçues depuis 2022',
+      'ottawa.ouVa': (a) => `Où va l’argent en ${a}`, 'ottawa.ouVaAide': (t) => `Dépenses de fonctionnement de ${t}, par comité. Les sept plus grosses, puis tout le reste.`,
+      'ottawa.dOuVient': (a) => `D’où vient l’argent en ${a}`, 'ottawa.dOuVientAide': (t) => `Revenus de fonctionnement de ${t}, par source.`,
+      'ottawa.immoAide': (t) => `${t} d’immobilisations, par but. Ouvrez le détail pour les sources de financement et les comités.`, 'ottawa.detail': 'Détail', 'ottawa.plusLoin': 'Pour aller plus loin : projets, réserves, frais, autres villes',
+      'ottawa.taxesTitre': 'Taxes municipales par quartier', 'ottawa.taxesAide': 'La valeur imposable de toutes les propriétés du quartier, les taxes municipales qui y sont perçues et la hausse de l’année, telles que publiées par la Ville. La dernière colonne est la variation des taxes perçues depuis 2022, qui reflète les nouvelles constructions autant que les hausses de taux.',
+      'ottawa.evaluation': 'Valeur imposable', 'ottawa.taxesPercues': 'Taxes perçues', 'ottawa.hausseTaxe': 'Hausse',
+      'ottawa.depensesTitre': (a) => `Dépenses de fonctionnement ${a}, par comité`, 'ottawa.revenusTitre': (a) => `Revenus de fonctionnement ${a}, par source`, 'ottawa.immoTitre': (a) => `Programme d’immobilisations ${a}`,
+      'ottawa.parCategorie': 'Par but', 'ottawa.parFinancement': 'Par source de financement', 'ottawa.parComite': 'Par comité',
+      'ottawa.projetsTitre': (n) => `Les ${n} projets d’immobilisations`, 'ottawa.rechercheProjets': 'Chercher un projet, une rue, un service…', 'ottawa.rien': 'Rien trouvé.',
+      'ottawa.reservesTitre': (a) => `Fonds de réserve, ${a}`, 'ottawa.reserve': 'Réserve', 'ottawa.ouverture': 'Solde d’ouverture', 'ottawa.fermeture': 'Solde de fermeture', 'ottawa.reservesNote': (n) => `Les 15 plus grosses des ${n} réserves.`,
+      'ottawa.fraisTitre': (n) => `Frais d’utilisation : ${n} tarifs`, 'ottawa.fraisAide': 'Tout ce que la Ville fait payer, du permis de chien au permis de construire, avec les tarifs 2025 et 2026. Tapez un mot pour trouver un frais.', 'ottawa.rechercheFrais': 'Chercher un frais (stationnement, permis, piscine, licence…)', 'ottawa.fraisQuoi': 'Frais', 'ottawa.variation': 'Variation',
+      'ottawa.comparaisonTitre': 'Hausses de taxes depuis 2015, Ottawa et d’autres villes de l’Ontario', 'ottawa.annee': 'Année',
+      'ottawa.presIntro': 'Tapez votre rue et votre numéro, ou votre code postal : rien n’est envoyé nulle part, la recherche se fait dans votre navigateur à partir de la liste d’adresses de la Ville. Vous obtenez votre quartier, votre conseiller ou conseillère, les parcs, les travaux prévus et les permis de construire délivrés en 2026 autour de vous.',
+      'ottawa.rue': 'Rue', 'ottawa.ruePlaceholder': 'rue Bank, chemin de Montréal…', 'ottawa.numero': 'No', 'ottawa.codePostal': 'Ou un code postal', 'ottawa.chercher': 'Trouver', 'ottawa.ouQuartier': 'Ou choisissez un quartier :',
+      'ottawa.adressesAbsentes': 'La liste d’adresses n’est pas encore chargée. Choisissez votre quartier dans la liste ou sur la carte.', 'ottawa.cpInvalide': 'Un code postal ressemble à K1A 0A6.', 'ottawa.cpInconnu': 'Ce code postal n’est pas dans la liste d’adresses de la Ville d’Ottawa.',
+      'ottawa.rueDansPlusieurs': (q) => `Cette rue traverse plusieurs quartiers (${q}). Ajoutez un numéro pour être sûr. On montre le quartier qui a le plus de ses adresses.`,
+      'ottawa.votreQuartier': 'Votre quartier', 'ottawa.travaux': 'Travaux', 'ottawa.parcs': 'Parcs', 'ottawa.permis': 'Permis 2026', 'ottawa.chargement': 'Chargement…',
+      'ottawa.travauxAide': 'Travaux de voirie, d’eau, d’égout, de sentiers et d’installations que la Ville prévoit ou a en cours dans ce quartier, par type, d’après ses prévisions de construction.', 'ottawa.travauxQuand': 'Quand', 'ottawa.accessible': 'accessible',
+      'ottawa.permisResume': (n, v, l) => `${n} permis de construire délivrés en 2026 dans ce quartier, ${v} de valeur de construction, ${l} nouveaux logements. Les 30 plus récents :`, 'ottawa.logements': (n) => `${n} logement${n > 1 ? 's' : ''}`, 'ottawa.permisPlus': (n) => `et ${n} de plus dans les données ouvertes de la Ville.`,
+      'ottawa.decisionsQuartier': 'Les décisions du conseil nomment le quartier dans leur titre : voir l’onglet Décisions',
+      'ottawa.presTotaux': (t, p, pe, v) => `Toute la ville : ${t} travaux, ${p} parcs, ${pe} permis en 2026 (${v}).`, 'ottawa.presVie': 'Votre adresse ne quitte jamais votre navigateur.',
+      'ottawa.lexiqueOfficiel': 'Le conseil municipal sur ottawa.ca',
+      'ottawa.sourcesIntro': 'Chaque chiffre des pages d’Ottawa vient d’un document que la Ville publie. Voici la liste, ce qu’on fait de chacun et ce qu’on ne fait pas.',
+      'ottawa.sourcesTitre': 'Ce qu’on lit', 'ottawa.srcPv': 'Procès-verbaux du Conseil et des comités (eScribe)', 'ottawa.srcPvQuoi': 'Lus dans les deux langues, point par point : titres, texte, résultat, motions, votes nominaux, dissidences, pièces jointes.',
+      'ottawa.src_elus': 'Maire et conseillers : noms, quartiers, coordonnées.', 'ottawa.src_quartiers': 'Les limites de quartier dessinées sur les cartes.', 'ottawa.src_presences': 'Qui était présent à chaque séance du conseil.', 'ottawa.src_taxes': 'Valeur imposable, taxes perçues et hausse, par quartier et par année.',
+      'ottawa.src_contratsH1': 'Contrats de 25 000 $ et plus, premier semestre 2025.', 'ottawa.src_contratsH2': 'Contrats de 25 000 $ et plus, second semestre 2025.', 'ottawa.src_budget2026': 'Neuf tableaux du budget provisoire 2026 : dépenses, revenus, immobilisations, réserves, frais, projets, comparaison.',
+      'ottawa.src_travauxLineaires': 'Travaux prévus de voirie, d’eau, d’égout et de sentiers.', 'ottawa.src_travauxPoints': 'Travaux prévus d’installations, de parcs, de ponts et de ponceaux.', 'ottawa.src_parcs': 'Parcs et espaces verts, avec adresse et type.', 'ottawa.src_permis2026': 'Permis de construire délivrés en 2026, mois par mois.', 'ottawa.src_adresses': 'Chaque adresse municipale, pour trouver votre quartier dans votre navigateur.',
+      'ottawa.licenceTexte': 'Les données ouvertes sont utilisées en vertu de la licence',
+      'ottawa.conditionsTitre': 'Les conditions d’utilisation de la Ville', 'ottawa.conditionsTexte': 'Les procès-verbaux ne sont pas des données ouvertes. Les conditions d’utilisation de la Ville demandent une permission avant de republier son contenu. On a construit cette page d’abord, pour que la Ville voie exactement ce qui est republié, comment c’est attribué et que chaque élément mène à sa source. La Ville n’a pas encore été contactée. Si la Ville demande de retirer quelque chose, on le fera. Conditions :',
+      'ottawa.limitesTitre': 'Ce que ce dossier ne fait pas',
+      'ottawa.limites': ['Il couvre le conseil municipal et ses comités permanents seulement. Le Comité de dérogation, les sous-organes de la Commission du transport en commun, la Commission de services policiers, le conseil de la bibliothèque et Santé publique Ottawa ne sont pas lus.', 'Il commence avec les deux derniers mois du mandat 2022-2026. Les décisions plus anciennes sont dans les archives de la Ville.', 'Les résumés en langage clair sont écrits par une IA à partir du texte officiel, une langue à la fois ; ils peuvent se tromper. Le texte officiel est toujours sur la carte.', 'Les montants du budget sont lus en milliers de dollars par déduction, parce que les fichiers de la Ville n’indiquent pas l’unité. Voir la note de l’onglet Budget.', 'La présence compte les séances du Conseil seulement, dans la fenêtre que la Ville publie.', 'Rien sur ottawa.ca ni sur open.ottawa.ca n’est lu automatiquement. On lit le portail des séances (eScribe) et les services ArcGIS derrière les données ouvertes.'],
+      'ottawa.commentTitre': 'Comment c’est fait',
+      'ottawa.comment': ['Des scripts lisent les sources à visage découvert, avec un agent utilisateur qui nomme ce site et une adresse de contact, au moins deux secondes entre deux requêtes. Les sites qui demandent un délai plus long, comme open.ottawa.ca, ne sont pas lus du tout.', 'On ne demande rien à la Ville qu’elle ne publie pas déjà. Aucun compte, rien derrière une connexion, aucun site de média.', 'Les données sont rafraîchies à la main pour l’instant. Le dossier d’Ottawa est une démonstration, pas un fil en direct. La date affichée sur chaque page est celle de la lecture des données.', 'Le code est public : voir « Code source » dans le pied de page.'],
+      'ottawa.journalTitre': 'Ce qui a changé sur les pages d’Ottawa',
       'pied.code': 'Code source', 'pied.claude': 'Une réalisation de', 'pied.etmoi': 'DAFR Solution',
       'etmoi.titre': 'Pourquoi ce site existe', 'etmoi.maj': 'Mises à jour du site',
       // La page « The rules » (/rules), 5 oct. 2026 : chaque règle a sa preuve dans le dépôt.
@@ -1999,6 +2184,654 @@
   // viennent d'ONTERM (build-site-data.js), jamais d'une traduction maison.
   // « …et moi » : le mot de Martin est dans la page (etmoi.texte) ; ici, les mises à jour du
   // site, lues dans contenu/journal.json — la plus récente en haut.
+  // Le volet de ville d'Ottawa (15 nov. 2026) : une séance = un pli, une décision = une carte,
+  // comme les projets de loi. Le résumé en clair est dans la page (pas de chargement tardif :
+  // deux mois tiennent dans un seul fichier).
+  VUES.ottawa = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawa"]');
+    const d = DONNEES.ottawa;
+    if (!cible || !d) return;
+
+    const resultat = (p) => {
+      const r = selonLangue(p.resultatEn, p.resultatFr) ?? '';
+      const perdu = /^(lost|rejet)/i.test(p.resultatEn ?? '');
+      const recu = /^(received|reçu)/i.test(p.resultatEn ?? '');
+      return `<span class="pastille ${perdu ? 'pastille-rejete' : recu ? '' : 'pastille-adopte'}">${echapper(r)}</span>`;
+    };
+
+    const carte = (s, p) => {
+      const titre = selonLangue(p.titreEn, p.titreFr);
+      const puces = selonLangue(p.resumeEn, p.resumeFr);
+      const texte = selonLangue(p.texteEn, p.texteFr);
+      const suite = selonLangue(p.compteRenduEn, p.compteRenduFr);
+      const vote = p.vote;
+      return `<article class="carte carte-projet carte-ottawa" id="d-${echapper(s.id)}-${echapper(p.numero)}" data-numero="${echapper(p.numero)}">
+        <div class="projet-tete">
+          <span class="numero">${echapper(p.numero)}</span>
+          <div class="projet-tete-texte">
+            <h3 class="carte-titre">${echapper(titre)}</h3>
+            <p class="legende">${[
+              p.quartier ? echapper(p.quartier) : null,
+              p.sectionEn ? echapper(selonLangue(p.sectionEn, p.sectionFr)) : null,
+              p.dossier ? `${mot('ottawa.dossier')} ${echapper(p.dossier)}` : null,
+            ].filter(Boolean).join(' · ')}</p>
+          </div>
+          <div class="projet-pastilles">
+            ${vote ? `<span class="pastille pastille-vote">${mot('ottawa.voteNominal')}</span>` : ''}
+            ${p.dissidences?.length ? `<span class="pastille pastille-dissidence">${mot('ottawa.dissidence', p.dissidences.length)}</span>` : ''}
+            ${resultat(p)}
+          </div>
+        </div>
+        <details class="projet-detail">
+          <summary>${mot('ottawa.ouvrir')}</summary>
+          <div class="projet-detail-corps">
+            <div class="projet-texte">
+              ${puces ? `<h4 class="sous-titre">${mot('ottawa.resume')}</h4>
+                <ul class="resume">${puces.map((x) => `<li>${echapper(x)}</li>`).join('')}</ul>
+                <p class="legende avis-ia">${echapper(selonLangue(d.avertissementEn, d.avertissementFr) ?? '')}</p>` : ''}
+              ${texte ? `<h4 class="sous-titre">${mot('ottawa.officiel')}</h4><p class="texte-officiel">${echapper(texte)}</p>` : ''}
+              ${suite ? `<h4 class="sous-titre">${mot('ottawa.suite')}</h4><p class="texte-officiel">${echapper(suite)}</p>` : ''}
+            </div>
+            <aside class="projet-cote">
+              <h4 class="sous-titre">${mot('ottawa.resultat')}</h4>
+              <div class="boite-activite">
+                <b>${echapper(selonLangue(p.resultatEn, p.resultatFr) ?? '')}</b>
+                ${p.dissidences?.length ? `<span>${mot('ottawa.dissidents')} ${echapper(p.dissidences.join(', '))}</span>` : ''}
+                ${p.motions?.[0]?.propose ? `<span>${mot('ottawa.propose')} ${echapper(p.motions[0].propose)}${p.motions[0].appuye ? ` · ${mot('ottawa.appuye')} ${echapper(p.motions[0].appuye)}` : ''}</span>` : ''}
+              </div>
+              ${vote ? `<div class="vote-ottawa">
+                <p><b class="pour">${mot('ottawa.pour', vote.pour?.length ?? 0)}</b> ${echapper((vote.pour ?? []).join(', '))}</p>
+                <p><b class="contre">${mot('ottawa.contre', vote.contre?.length ?? 0)}</b> ${echapper((vote.contre ?? []).join(', '))}</p>
+              </div>` : ''}
+              ${p.pieces?.length ? `<h4 class="sous-titre">${mot('ottawa.pieces', p.pieces.length)}</h4>
+                <ul class="pieces-ottawa">${p.pieces.slice(0, 8).map((x) => `<li><a href="${echapper(x.url)}" target="_blank" rel="noopener">${echapper(x.titre)}</a></li>`).join('')}${p.pieces.length > 8 ? `<li class="legende">${mot('ottawa.autresPieces', p.pieces.length - 8)}</li>` : ''}</ul>` : ''}
+              <a class="bouton-source" href="${echapper(selonLangue(s.urlEn, s.urlFr))}" target="_blank" rel="noopener">${mot('ottawa.pv')} →</a>
+            </aside>
+          </div>
+        </details>
+      </article>`;
+    };
+
+    const seance = (s, i) => `<details class="section-pli pli-projets" id="s-${echapper(s.id)}" ${i === 0 ? 'open' : ''}>
+        <summary class="tete-section"><h2 class="grand-titre">${echapper(selonLangue(s.nomEn, s.nomFr))} — ${date(s.date)}</h2>
+          <span class="legende">${mot('ottawa.compte', s.decisions.length)}${s.numeroSeance ? ` · ${mot('ottawa.seanceNo', s.numeroSeance)}` : ''}</span></summary>
+        ${selonLangue(s.enBrefEn, s.enBrefFr) ? `<p class="en-bref">${echapper(selonLangue(s.enBrefEn, s.enBrefFr))}</p>` : ''}
+        <div class="liste-projets">${s.decisions.map((p) => carte(s, p)).join('')}</div>
+      </details>`;
+
+    // « En bref » : la dernière séance du conseil et de chaque comité, en tête de la page, comme
+    // commun/seances-en-bref.js de DQ (Martin, 15 nov. 2026 : le récap décisionnel de Montréal).
+    // Une carte par instance : la phrase (IA, mots-clés soulignés), trois points marquants choisis
+    // sans IA, les votes nominaux, puis les liens vers la liste et le procès-verbal officiel.
+    const couper = (t, n) => (t.length > n ? t.slice(0, n).replace(/[\s,;:–-]+\S*$/, '') + '…' : t);
+    const souligner = (phrase, mots) => {
+      let html = echapper(phrase);
+      for (const m of mots ?? []) {
+        const e = echapper(m);
+        const i = html.indexOf(e);
+        if (i >= 0) html = html.slice(0, i) + `<span class="eb-mot">${e}</span>` + html.slice(i + e.length);
+      }
+      return html;
+    };
+    const ebVotes = (s) => {
+      const votes = s.votes ?? [];
+      if (!votes.length) return `<p class="eb-votes-aucun">${mot('ottawa.ebAucunVote')}</p>`;
+      const lignes = votes.slice(0, 2).map((v) => {
+        const t = v.pour + v.contre || 1;
+        return `<a class="eb-vote" href="#d-${echapper(s.id)}-${echapper(v.numero)}">
+          <span class="eb-vote-titre">${echapper(couper(selonLangue(v.titreEn, v.titreFr) ?? v.numero, 70))}</span>
+          <span class="eb-vote-compte">${mot('ottawa.ebPourContre', v.pour, v.contre)}</span>
+          <span class="eb-vote-barre"><i class="p" style="width:${((v.pour / t) * 100).toFixed(1)}%"></i><i class="c" style="width:${((v.contre / t) * 100).toFixed(1)}%"></i></span>
+        </a>`;
+      }).join('');
+      const reste = votes.length - 2;
+      return `<div class="eb-votes"><span class="eb-votes-titre">${mot('ottawa.ebVotes', votes.length)}</span>${lignes}${reste > 0 ? `<a class="eb-votes-plus" href="#s-${echapper(s.id)}">${mot('ottawa.ebPlus', reste)}</a>` : ''}</div>`;
+    };
+    const ebCarte = (s) => {
+      const phrase = selonLangue(s.enBrefEn, s.enBrefFr);
+      const points = (s.points ?? []).map((p) => `<li><a href="#d-${echapper(s.id)}-${echapper(p.numero)}"><span class="eb-titre">${echapper(couper(selonLangue(p.titreEn, p.titreFr) ?? '', 85))}</span>${
+        selonLangue(p.montantEn, p.montantFr) ? `<span class="eb-montant">${echapper(selonLangue(p.montantEn, p.montantFr))}</span>` : ''}${p.divise ? `<span class="eb-divise">${mot('ottawa.ebDivise')}</span>` : ''}</a></li>`).join('');
+      return `<article class="eb-carte">
+        <span class="eb-sorte">${mot('ottawa.ebSorte')}</span>
+        <header><h3>${echapper(selonLangue(s.nomEn, s.nomFr))}</h3><span class="eb-date">${mot('ottawa.ebSeanceDu')} ${date(s.date)} · ${mot('ottawa.compte', s.decisions.length)}</span></header>
+        ${phrase ? `<div class="eb-phrase">${souligner(phrase, langue === 'fr' ? s.motsClesFr : s.motsClesEn)}</div>` : ''}
+        ${points ? `<ul class="eb-points">${points}</ul>` : ''}
+        ${ebVotes(s)}
+        <div class="eb-liens"><a class="eb-tout" href="#s-${echapper(s.id)}">${mot('ottawa.ebTout')}</a><a class="eb-officiel" href="${echapper(selonLangue(s.urlEn, s.urlFr))}" target="_blank" rel="noopener">${mot('ottawa.ebOfficiel')}</a></div>
+      </article>`;
+    };
+    const vuesInstances = new Set();
+    const dernieres = d.seances.filter((s) => !vuesInstances.has(s.nomEn) && vuesInstances.add(s.nomEn))
+      .sort((a, b) => (a.nomEn === 'City Council' ? -1 : b.nomEn === 'City Council' ? 1 : 0));
+    const enBrefBloc = dernieres.length ? `<div class="eb-gros">
+        <div class="eb-entete">${mot('ottawa.ebTitre')}</div>
+        <div class="eb-note">${mot('ottawa.ebNote')}</div>
+        <div class="eb-grille">${dernieres.map(ebCarte).join('')}</div>
+      </div>` : '';
+
+    const total = d.seances.reduce((n, s) => n + s.decisions.length, 0);
+    cible.innerHTML = `
+      <div class="chiffres">
+        <div class="chiffre"><b>${d.seances.length}</b><span>${mot('ottawa.chSeances')}</span></div>
+        <div class="chiffre"><b>${total}</b><span>${mot('ottawa.chDecisions')}</span></div>
+        <div class="chiffre"><b>${d.seances.flatMap((s) => s.decisions).filter((p) => p.vote).length}</b><span>${mot('ottawa.chVotes')}</span></div>
+      </div>
+      <div class="encadre">${mot('ottawa.fenetre', date(d.fenetre.du), date(d.fenetre.au))} ${mot('ottawa.conditions')}
+        <a class="lien-source" href="${echapper(d.conditions)}" target="_blank" rel="noopener">ottawa.ca</a>.</div>
+      ${enBrefBloc}
+      ${d.seances.map(seance).join('')}
+      <p class="legende" style="margin-top:22px"><a class="lien-source" href="${echapper(d.source)}" target="_blank" rel="noopener">${mot('ottawa.source')}</a> · ${mot('pied.maj')} ${date(d.lus.slice(0, 10))}</p>`;
+    brancherCartes(cible, [], () => {});
+    // Un lien du bloc « En bref » (#s-… une séance, #d-… une décision) ouvre ce qu'il vise.
+    const viser = () => {
+      const id = decodeURIComponent(location.hash.slice(1));
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (!el) return;
+      const pli = el.closest('details.section-pli') ?? (el.matches('details') ? el : null);
+      if (pli) pli.open = true;
+      const detail = el.querySelector(':scope > details.projet-detail');
+      if (detail) detail.open = true;
+      requestAnimationFrame(() => el.scrollIntoView({ block: 'start', behavior: 'smooth' }));
+    };
+    window.addEventListener('hashchange', viser);
+    viser();
+  };
+
+  // ================================================================= Volet Ottawa : les onglets
+  // (15 nov. 2026, d'après quebec/REPRODUIRE-POUR-UNE-AUTRE-VILLE.md). Chaque onglet ne charge
+  // que son fichier ; les travaux, parcs et permis d'un quartier arrivent à la demande.
+  const nb = (n, dec = 0) => (n == null || Number.isNaN(n) ? '—' : Number(n).toLocaleString(langue === 'fr' ? 'fr-CA' : 'en-CA', { maximumFractionDigits: dec }));
+  const argent = (n, dec = 0) => (n == null ? '—' : langue === 'fr' ? `${nb(n, dec)} $` : `$${nb(n, dec)}`);
+  const argentK = (n) => argent((n ?? 0) * 1000); // les montants du budget sont en milliers (déduction, voir budget.note)
+  const abrege = (n) => {
+    if (n == null) return '—';
+    const a = Math.abs(n);
+    if (a >= 1e9) return langue === 'fr' ? `${nb(n / 1e9, 2)} G$` : `$${nb(n / 1e9, 2)}B`;
+    if (a >= 1e6) return langue === 'fr' ? `${nb(n / 1e6, 1)} M$` : `$${nb(n / 1e6, 1)}M`;
+    return argent(n);
+  };
+  const sousNav = () => {
+    document.querySelectorAll('.sous-onglets a, .onglets-ville a').forEach((a) => { a.textContent = mot(a.getAttribute('data-i18n')); });
+  };
+  const nomQuartier = (q) => (q ? `${selonLangue(q.nomEn, q.nomFr)} (${mot('ottawa.quartierNo', q.numero)})` : mot('ottawa.villeEntiere'));
+  const elusParQuartier = (conseil) => {
+    const m = new Map();
+    for (const e of conseil.elus) if (e.quartier) (m.get(e.quartier) ?? m.set(e.quartier, []).get(e.quartier)).push(e);
+    return m;
+  };
+  const carteElu = (e, q, options = {}) => {
+    const p = e.presence;
+    const taux = p ? Math.round((p.presents / p.seances) * 100) : null;
+    return `<article class="carte-elu" data-quartier="${e.quartier ?? ''}">
+      <p class="role">${e.role === 'Mayor' ? mot('ottawa.maire') : mot('ottawa.conseiller')}${e.periode ? ` · ${echapper(e.periode)}` : ''}</p>
+      <h3>${echapper(`${e.prenom} ${e.nom}`)}</h3>
+      <p class="legende">${e.quartier ? nomQuartier(q) : mot('ottawa.touteLaVille')}${q?.secteurEn ? ` · ${echapper(selonLangue(q.secteurEn, q.secteurFr))}` : ''}</p>
+      <dl>
+        ${p ? `<dt>${mot('ottawa.presence')}</dt><dd><b>${taux} %</b> <span class="legende">(${p.presents}/${p.seances})</span></dd>` : ''}
+        ${e.courriel ? `<dt>${mot('ottawa.courriel')}</dt><dd><a href="mailto:${echapper(e.courriel)}">${echapper(e.courriel)}</a></dd>` : ''}
+        ${e.telephone ? `<dt>${mot('ottawa.telephone')}</dt><dd>${echapper(e.telephone)}</dd>` : ''}
+        ${e.site ? `<dt>${mot('ottawa.site')}</dt><dd><a href="${echapper(e.site)}" target="_blank" rel="noopener">${echapper(e.site.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))}</a></dd>` : ''}
+      </dl>
+      ${options.sansSource ? '' : `<p class="legende" style="margin:8px 0 0"><a class="lien-source" href="${echapper(e.source)}" target="_blank" rel="noopener">${mot('ottawa.ficheVille')}</a></p>`}
+    </article>`;
+  };
+
+  // La carte des quartiers : une projection plate (longitude × cos(latitude)), assez pour
+  // reconnaître la ville. Chaque quartier est un chemin cliquable, son numéro au centre.
+  const carteQuartiers = (geo, actif) => {
+    if (!geo?.features?.length) return '';
+    const anneaux = (g) => (g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []);
+    let minX = 1e9, maxX = -1e9, minY = 1e9, maxY = -1e9;
+    const pts = [];
+    for (const f of geo.features) for (const poly of anneaux(f.geometry)) for (const [x, y] of poly[0]) pts.push([x, y]);
+    const latMoy = pts.reduce((s, p) => s + p[1], 0) / pts.length;
+    const k = Math.cos((latMoy * Math.PI) / 180);
+    for (const [x, y] of pts) { minX = Math.min(minX, x * k); maxX = Math.max(maxX, x * k); minY = Math.min(minY, y); maxY = Math.max(maxY, y); }
+    const L = 720, H = Math.round((L * (maxY - minY)) / (maxX - minX));
+    const px = (x, y) => [(((x * k - minX) / (maxX - minX)) * L).toFixed(1), ((1 - (y - minY) / (maxY - minY)) * H).toFixed(1)];
+    const formes = geo.features.map((f) => {
+      const d = anneaux(f.geometry).map((poly) => poly.map((ring) => `M${ring.map(([x, y]) => px(x, y).join(',')).join('L')}Z`).join('')).join('');
+      const plus = anneaux(f.geometry).sort((a, b) => b[0].length - a[0].length)[0][0];
+      const c = plus.reduce((s, p) => [s[0] + p[0], s[1] + p[1]], [0, 0]).map((v) => v / plus.length);
+      const [cx, cy] = px(c[0], c[1]);
+      const n = f.properties.numero;
+      return `<g data-quartier="${n}"><path d="${d}" class="${n === actif ? 'actif' : ''}"><title>${echapper(selonLangue(f.properties.nomEn, f.properties.nomFr))} (${n})</title></path><text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="middle">${n}</text></g>`;
+    });
+    return `<svg class="carte-quartiers" viewBox="0 0 ${L} ${H}" role="img" aria-label="${mot('ottawa.carteAlt')}">${formes.join('')}</svg>`;
+  };
+
+  // ---------------------------------------------------------------- Accueil du volet
+  VUES.ottawaAccueil = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaAccueil"]');
+    const d = DONNEES.ottawa, conseil = DONNEES['ottawa-conseil'];
+    if (!cible || !d) return;
+    const decisions = d.seances.flatMap((s) => s.decisions.map((p) => ({ s, p })));
+    const recentes = decisions.slice(0, 6);
+    const enBref = d.seances.slice(0, 4).map((s) => {
+      const phrase = selonLangue(s.enBrefEn, s.enBrefFr);
+      return `<li><b>${echapper(selonLangue(s.nomEn, s.nomFr))}</b> · ${date(s.date)}<span class="legende">${phrase ? ` — ${echapper(phrase)}` : ''} <a href="/ottawa/decisions">${mot('ottawa.voirDecisions', s.decisions.length)}</a></span></li>`;
+    });
+    const onglet = (href, titre, texte) => `<a class="carte carte-lex carte-lien" href="${href}"><h3 class="carte-titre">${titre}</h3><p class="courant">${texte}</p></a>`;
+    cible.innerHTML = `
+      <div class="chiffres">
+        <div class="chiffre"><b>${d.seances.length}</b><span>${mot('ottawa.chSeances')}</span></div>
+        <div class="chiffre"><b>${decisions.length}</b><span>${mot('ottawa.chDecisions')}</span></div>
+        <div class="chiffre"><b>${conseil ? conseil.elus.length : '—'}</b><span>${mot('ottawa.chElus')}</span></div>
+        <div class="chiffre"><b>${conseil ? conseil.quartiers.length : '—'}</b><span>${mot('ottawa.chQuartiers')}</span></div>
+      </div>
+      <h2 class="grand-titre">${mot('ottawa.dernieresSeances')}</h2>
+      <ul class="liste-sobre">${enBref.join('')}</ul>
+      <h2 class="grand-titre" style="margin-top:28px">${mot('ottawa.dernieresDecisions')}</h2>
+      <ul class="liste-sobre">${recentes.map(({ s, p }) => `<li><a href="/ottawa/decisions">${echapper(selonLangue(p.titreEn, p.titreFr))}</a><span class="legende">${echapper(selonLangue(s.nomEn, s.nomFr))} · ${date(s.date)} · ${echapper(selonLangue(p.resultatEn, p.resultatFr) ?? '')}</span></li>`).join('')}</ul>
+      <h2 class="grand-titre" style="margin-top:28px">${mot('ottawa.explorer')}</h2>
+      <div class="grille">
+        ${onglet('/ottawa/decisions', mot('ottawa.ongletDecisions'), mot('ottawa.descDecisions'))}
+        ${onglet('/ottawa/council', mot('ottawa.ongletConseil'), mot('ottawa.descConseil'))}
+        ${onglet('/ottawa/contracts', mot('ottawa.ongletContrats'), mot('ottawa.descContrats'))}
+        ${onglet('/ottawa/budget', mot('ottawa.ongletBudget'), mot('ottawa.descBudget'))}
+        ${onglet('/ottawa/near-me', mot('ottawa.ongletPres'), mot('ottawa.descPres'))}
+        ${onglet('/ottawa/lexicon', mot('ottawa.ongletLexique'), mot('ottawa.descLexique'))}
+      </div>
+      <div class="encadre" style="margin-top:26px">${mot('ottawa.fenetre', date(d.fenetre.du), date(d.fenetre.au))} ${mot('ottawa.conditions')}
+        <a class="lien-source" href="${echapper(d.conditions)}" target="_blank" rel="noopener">ottawa.ca</a>. <a href="/ottawa/sources">${mot('ottawa.ongletSources')} →</a></div>
+      <p class="legende">${mot('pied.maj')} ${date(d.lus.slice(0, 10))}</p>`;
+  };
+
+  // ---------------------------------------------------------------- Conseil municipal
+  VUES.ottawaConseil = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaConseil"]');
+    const c = DONNEES['ottawa-conseil'], geo = DONNEES['ottawa-quartiers'];
+    if (!cible || !c) return;
+    const quartiers = new Map(c.quartiers.map((q) => [q.numero, q]));
+    const tri = [...c.elus].sort((a, b) => (a.role === 'Mayor' ? -1 : b.role === 'Mayor' ? 1 : (a.quartier ?? 99) - (b.quartier ?? 99)));
+    const n = c.presencesNote;
+    let actif = null;
+    const dessiner = () => {
+      const liste = actif ? tri.filter((e) => e.quartier === actif) : tri;
+      cible.innerHTML = `
+        <div class="chiffres">
+          <div class="chiffre"><b>1</b><span>${mot('ottawa.maire')}</span></div>
+          <div class="chiffre"><b>${c.quartiers.length}</b><span>${mot('ottawa.chQuartiers')}</span></div>
+          <div class="chiffre"><b>${n?.seances ?? '—'}</b><span>${mot('ottawa.chSeancesPresence')}</span></div>
+        </div>
+        <div class="encadre">${mot('ottawa.mandat')} ${n ? mot('ottawa.presenceNote', date(n.depuis), date(n.jusqua), n.seances) : ''}</div>
+        <h2 class="grand-titre">${mot('ottawa.carteTitre')}</h2>
+        <p class="legende">${mot('ottawa.carteAide')}</p>
+        ${carteQuartiers(geo, actif)}
+        <div class="onglets-pres" style="margin-top:14px">
+          <button class="filtre ${actif ? '' : 'actif'}" data-q="">${mot('ottawa.tousElus')}</button>
+          ${c.quartiers.map((q) => `<button class="filtre ${q.numero === actif ? 'actif' : ''}" data-q="${q.numero}">${q.numero} · ${echapper(selonLangue(q.nomEn, q.nomFr))}</button>`).join('')}
+        </div>
+        <div class="grille-elus">${liste.map((e) => carteElu(e, quartiers.get(e.quartier))).join('')}</div>
+        <p class="legende">${mot('ottawa.sourceDonnees')} <a class="lien-source" href="${echapper(c.licence.url)}" target="_blank" rel="noopener">${echapper(c.licence.nom)}</a> · ${mot('pied.maj')} ${date(c.lus.slice(0, 10))}</p>`;
+      cible.querySelectorAll('.carte-quartiers g, .onglets-pres button').forEach((el) => el.addEventListener('click', () => {
+        const q = Number(el.dataset.quartier ?? el.dataset.q) || null;
+        actif = q === actif ? null : q;
+        dessiner();
+        if (actif) cible.querySelector('.grille-elus')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }));
+    };
+    dessiner();
+  };
+
+  // ---------------------------------------------------------------- Contrats
+  VUES.ottawaContrats = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaContrats"]');
+    const d = DONNEES['ottawa-contrats'];
+    if (!cible || !d) return;
+    // [0 contrat, 1 service, 2 description, 3 type, 4 montant, 5 fournisseur, 6 motif non concurrentiel, 7 période, 8 consultation]
+    // Même page que les contrats de Montréal sur DQ : les chiffres, le tableau des 15 plus gros
+    // fournisseurs (un clic sur le nom remplit la recherche), puis le tableau de tous les contrats.
+    const tous = d.c.filter((c) => c[4] != null).sort((a, b) => b[4] - a[4]);
+    const total = tous.reduce((s, c) => s + c[4], 0);
+    const nonConc = tous.filter((c) => c[6]);
+    const services = [...new Set(tous.map((c) => c[1]).filter(Boolean))].sort();
+    const parFournisseur = new Map();
+    for (const c of tous) {
+      const f = parFournisseur.get(c[5]) ?? { n: 0, m: 0, g: 0 };
+      f.n++; f.m += c[4]; if (c[6]) f.g++;
+      parFournisseur.set(c[5], f);
+    }
+    const top = [...parFournisseur].sort((a, b) => b[1].m - a[1].m).slice(0, 15);
+    let recherche = '', service = '', seulementNC = false, montre = 50;
+    const filtrer = () => {
+      const r = recherche.trim().toLowerCase();
+      return tous.filter((c) => (!service || c[1] === service) && (!seulementNC || c[6]) && (!r || `${c[0]} ${c[2]} ${c[5]} ${c[1]}`.toLowerCase().includes(r)));
+    };
+    const ligne = (c) => `<tr><td>${echapper(c[2])}<span class="motif">${c[6] ? `<span class="puce puce-nc">${mot('ottawa.nonConcurrentiel')}</span> ${echapper(c[6])} · ` : ''}${echapper(c[1] ?? '')} · ${echapper(c[3] ?? '')} · ${echapper(c[0])} · ${c[7] === '2025-H1' ? mot('ottawa.h1') : mot('ottawa.h2')}${c[8] ? ` · ${echapper(c[8])}` : ''}</span></td><td>${echapper(c[5])}</td><td class="n">${argent(c[4])}</td></tr>`;
+    const dessiner = () => {
+      const liste = filtrer();
+      cible.innerHTML = `
+        <div class="chiffres">
+          <div class="chiffre"><b>${nb(tous.length)}</b><span>${mot('ottawa.chContrats')}</span></div>
+          <div class="chiffre"><b>${abrege(total)}</b><span>${mot('ottawa.chTotal')}</span></div>
+          <div class="chiffre"><b>${nb(nonConc.length)}</b><span>${mot('ottawa.chNonConc')}</span></div>
+          <div class="chiffre"><b>${abrege(nonConc.reduce((s, c) => s + c[4], 0))}</b><span>${mot('ottawa.chNonConcTotal')}</span></div>
+        </div>
+        <div class="encadre">${mot('ottawa.contratsIntro')}</div>
+        <h2 class="grand-titre">${mot('ottawa.topFournisseurs')}</h2>
+        <p class="legende">${mot('ottawa.topAide')}</p>
+        <div class="tableau-defile"><table class="tableau-volet"><thead><tr><th>${mot('ottawa.fournisseur')}</th><th class="n">${mot('ottawa.nbContrats')}</th><th class="n">${mot('ottawa.nonConcurrentiel')}</th><th class="n">${mot('ottawa.montant')}</th><th class="n">${mot('ottawa.part')}</th></tr></thead><tbody>${
+          top.map(([f, x]) => `<tr><td><a href="#liste-contrats" data-f="${echapper(f)}">${echapper(f)}</a></td><td class="n">${x.n}</td><td class="n">${x.g || ''}</td><td class="n">${argent(x.m)}</td><td class="n">${nb((x.m / total) * 100)} %</td></tr>`).join('')
+        }</tbody></table></div>
+        <h2 class="grand-titre">${mot('ottawa.tousContrats')}</h2>
+        <div class="barre-filtres">
+          <input class="champ" type="search" data-role="recherche" value="${echapper(recherche)}" placeholder="${mot('ottawa.rechercheContrats')}" aria-label="${mot('ottawa.rechercheContrats')}">
+          <select class="champ" data-role="service" aria-label="${mot('ottawa.service')}"><option value="">${mot('ottawa.tousServices')}</option>${services.map((s) => `<option ${s === service ? 'selected' : ''}>${echapper(s)}</option>`).join('')}</select>
+          <button class="filtre ${seulementNC ? 'actif' : ''}" data-role="nc" aria-pressed="${seulementNC}">${mot('ottawa.nonConcurrentiel')}</button>
+        </div>
+        <p class="legende" aria-live="polite">${mot('ottawa.compteContrats', liste.length, abrege(liste.reduce((s, c) => s + c[4], 0)))}</p>
+        <div class="tableau-defile" id="liste-contrats"><table class="tableau-volet"><thead><tr><th>${mot('ottawa.objet')}</th><th>${mot('ottawa.fournisseur')}</th><th class="n">${mot('ottawa.montant')}</th></tr></thead><tbody>${liste.slice(0, montre).map(ligne).join('')}</tbody></table></div>
+        ${liste.length > montre ? `<p><button class="filtre" data-role="plus">${mot('ottawa.voirPlus')}</button></p>` : ''}
+        <p class="legende" style="margin-top:22px">${mot('ottawa.sourceDonnees')} <a class="lien-source" href="${echapper(d.licence.url)}" target="_blank" rel="noopener">${echapper(d.licence.nom)}</a> · ${mot('pied.maj')} ${date(d.lus.slice(0, 10))}</p>`;
+      const champ = cible.querySelector('[data-role="recherche"]');
+      champ.addEventListener('input', () => { recherche = champ.value; montre = 50; const pos = champ.selectionStart; dessiner(); const c2 = cible.querySelector('[data-role="recherche"]'); c2.focus(); c2.setSelectionRange(pos, pos); });
+      cible.querySelector('[data-role="service"]').addEventListener('change', (e) => { service = e.target.value; montre = 50; dessiner(); });
+      cible.querySelector('[data-role="nc"]').addEventListener('click', () => { seulementNC = !seulementNC; montre = 50; dessiner(); });
+      cible.querySelector('[data-role="plus"]')?.addEventListener('click', () => { const y = window.scrollY; montre += 100; dessiner(); window.scrollTo(0, y); });
+      cible.querySelectorAll('a[data-f]').forEach((a) => a.addEventListener('click', (e) => {
+        e.preventDefault(); recherche = a.dataset.f; service = ''; seulementNC = false; montre = 50; dessiner();
+        cible.querySelector('[data-role="recherche"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }));
+    };
+    dessiner();
+  };
+
+  // ---------------------------------------------------------------- Budget et taxes
+  VUES.ottawaBudget = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaBudget"]');
+    const d = DONNEES['ottawa-budget'];
+    if (!cible || !d) return;
+    const b = d.budget;
+    const annee = 2026;
+    const dep = b.fonctionnementDepenses.filter((x) => x.annee === annee).sort((a, b2) => b2.total - a.total);
+    const depTotal = dep.reduce((s, x) => s + x.total, 0);
+    const rev = b.fonctionnementRevenus.filter((x) => x.annee === annee).sort((a, b2) => b2.total - a.total);
+    const revTotal = rev.reduce((s, x) => s + x.total, 0);
+    const immoCat = b.immobilisationsParCategorie.filter((x) => x.annee === annee).sort((a, b2) => b2.total - a.total);
+    const immoFin = b.immobilisationsParFinancement.filter((x) => x.annee === annee).sort((a, b2) => b2.total - a.total);
+    const immoCom = b.immobilisationsParComite.filter((x) => x.annee === annee).sort((a, b2) => b2.total - a.total);
+    const reserves = b.reserves.filter((x) => x.annee === annee).sort((a, b2) => b2.fermeture - a.fermeture);
+    const comp = b.comparaison.filter((x) => x.annee >= 2015);
+    const derniereHausse = [...comp].filter((x) => x.ville === 'Ottawa').sort((a, b2) => b2.annee - a.annee)[0];
+    const taxes = [...d.taxes].sort((a, b2) => a.quartier - b2.quartier);
+    const taxesTotal = taxes.reduce((s, q) => s + (q.annees[annee]?.taxes ?? 0), 0);
+    // Les barres du budget de Montréal sur DQ : le nom et le montant sur une ligne, la barre
+    // pleine largeur dessous, la plus grosse ligne à 100 %.
+    const barres = (lignes, cle, total) => {
+      const max = Math.max(...lignes.map((x) => x.total));
+      return `<div class="barres-service">${lignes.map((x) => `<div class="barre-service"><div class="tete"><strong>${echapper(selonLangue(x[`${cle}En`], x[`${cle}Fr`]))}</strong><span>${abrege(x.total * 1000)}${total ? ` · ${nb((x.total / total) * 100, 1)} %` : ''}</span></div><div class="piste"><div class="rempli" style="width:${Math.max(1, Math.round((x.total / max) * 100))}%"></div></div></div>`).join('')}</div>`;
+    };
+    // Un nom de comité court dans les barres : « Comité des services communautaires » → « Services communautaires ».
+    const court = (t) => {
+      const c = String(t ?? '').replace(/^(Comité|Commission|Conseil d’administration|Conseil d'administration|Conseil|C\.A\.) (de la |des |du |de l’|de l'|d’|d'|de |d'administration de la |d’administration de la )?/i, '').replace(/ (Committee|Board)$/i, '').replace(/^Ottawa (Police Services|Public Library|Board of Health)$/i, '$1');
+      return c.charAt(0).toUpperCase() + c.slice(1);
+    };
+    // Les N plus grosses lignes, puis « Autres » pour le reste.
+    const resserrer = (lignes, cle, n) => {
+      if (lignes.length <= n + 1) return lignes;
+      const reste = lignes.slice(n).reduce((s, x) => s + x.total, 0);
+      return [...lignes.slice(0, n), { [`${cle}En`]: mot('ottawa.autres'), [`${cle}Fr`]: mot('ottawa.autres'), total: reste, autres: true }];
+    };
+    const barresCourtes = (lignes, cle, total, n) => {
+      const l = resserrer(lignes, cle, n);
+      const max = Math.max(...l.map((x) => x.total));
+      return `<div class="barres-service">${l.map((x) => `<div class="barre-service${x.autres ? ' barre-autres' : ''}"><div class="tete"><strong>${echapper(x.autres ? x[`${cle}En`] : court(selonLangue(x[`${cle}En`], x[`${cle}Fr`])))}</strong><span>${abrege(x.total * 1000)}${total ? ` · ${nb((x.total / total) * 100, 1)} %` : ''}</span></div><div class="piste"><div class="rempli" style="width:${Math.max(1, Math.round((x.total / max) * 100))}%"></div></div></div>`).join('')}</div>`;
+    };
+    let rechercheFrais = '', rechercheProjets = '', quartierChoisi = taxes[0]?.quartier;
+    const dessiner = () => {
+      const rf = rechercheFrais.trim().toLowerCase();
+      const frais = rf ? b.frais.filter((f) => `${f.descriptionEn} ${f.descriptionFr} ${f.serviceEn} ${f.serviceFr}`.toLowerCase().includes(rf)).slice(0, 40) : [];
+      const rp = rechercheProjets.trim().toLowerCase();
+      const projets = rp ? b.projetsImmobilisations.filter((p) => `${p.projetEn} ${p.projetFr} ${p.serviceEn} ${p.serviceFr} ${p.secteurEn} ${p.secteurFr}`.toLowerCase().includes(rp)).sort((a, b2) => b2.total - a.total).slice(0, 40) : [];
+      const q = taxes.find((x) => x.quartier === quartierChoisi) ?? taxes[0];
+      const qa = q?.annees[annee], qz = q?.annees[2022];
+      const ev = qz?.taxes && qa?.taxes ? ((qa.taxes - qz.taxes) / qz.taxes) * 100 : null;
+      const immoTotal = immoCat.reduce((s, x) => s + x.total, 0);
+      cible.innerHTML = `
+        <div class="chiffres">
+          <div class="chiffre"><b>${abrege(depTotal * 1000)}</b><span>${mot('ottawa.chFonctionnement')}</span></div>
+          <div class="chiffre"><b>${abrege(immoTotal * 1000)}</b><span>${mot('ottawa.chImmobilisations')}</span></div>
+          <div class="chiffre"><b>${abrege(taxesTotal)}</b><span>${mot('ottawa.chTaxes')}</span></div>
+          <div class="chiffre"><b>${echapper(derniereHausse?.hausse ?? '—')}</b><span>${mot('ottawa.chHausse')} ${derniereHausse?.annee ?? ''}</span></div>
+        </div>
+        <div class="encadre">${mot('ottawa.budgetIntro')} <span class="legende">${mot('ottawa.budgetNote')}</span></div>
+
+        <h2 class="grand-titre">${mot('ottawa.taxesTitre')}</h2>
+        <div class="calcul">
+          <label for="choix-quartier">${mot('ottawa.votreQuartierTaxes')}</label>
+          <select id="choix-quartier" class="champ" data-role="quartier">${taxes.map((x) => `<option value="${x.quartier}" ${x.quartier === q.quartier ? 'selected' : ''}>${x.quartier} · ${echapper(selonLangue(x.nomEn, x.nomFr))}</option>`).join('')}</select>
+          <p class="legende">${mot('ottawa.quartierAide')}</p>
+          <table class="tableau-volet calcul-table"><tbody>
+            <tr><td>${mot('ottawa.evalCourt', annee)}</td><td class="n">${abrege(qa?.evaluation)}</td></tr>
+            <tr><td>${mot('ottawa.taxesCourt', annee)}</td><td class="n">${abrege(qa?.taxes)}</td></tr>
+            <tr><td>${mot('ottawa.hausseCourt', annee)}</td><td class="n">${qa?.part != null ? `${nb(qa.part, 2)} %` : '—'}</td></tr>
+            <tr class="total"><td>${mot('ottawa.depuis2022')}</td><td class="n">${ev != null ? `${ev > 0 ? '+' : ''}${nb(ev, 1)} %` : '—'}</td></tr>
+          </tbody></table>
+        </div>
+
+        <h2 class="grand-titre">${mot('ottawa.ouVa', annee)}</h2>
+        <p class="legende">${mot('ottawa.ouVaAide', abrege(depTotal * 1000))}</p>
+        ${barresCourtes(dep, 'comite', depTotal, 7)}
+
+        <h2 class="grand-titre">${mot('ottawa.dOuVient', annee)}</h2>
+        <p class="legende">${mot('ottawa.dOuVientAide', abrege(revTotal * 1000))}</p>
+        ${barresCourtes(rev, 'source', revTotal, 5)}
+
+        <h2 class="grand-titre">${mot('ottawa.immoTitre', annee)}</h2>
+        <p class="legende">${mot('ottawa.immoAide', abrege(immoTotal * 1000))}</p>
+        ${barresCourtes(immoCat, 'categorie', immoTotal, 5)}
+        <details class="plus-loin"><summary>${mot('ottawa.detail')}</summary>
+          <h3 class="sous-titre">${mot('ottawa.parFinancement')}</h3>${barresCourtes(immoFin, 'source', immoFin.reduce((s, x) => s + x.total, 0), 5)}
+          <h3 class="sous-titre">${mot('ottawa.parComite')}</h3>${barresCourtes(immoCom, 'comite', immoCom.reduce((s, x) => s + x.total, 0), 6)}
+        </details>
+
+        <details class="plus-loin"><summary>${mot('ottawa.plusLoin')}</summary>
+          <h3 class="sous-titre">${mot('ottawa.projetsTitre', b.projetsImmobilisations.length)}</h3>
+          <input class="champ" type="search" data-role="projets" value="${echapper(rechercheProjets)}" placeholder="${mot('ottawa.rechercheProjets')}" aria-label="${mot('ottawa.rechercheProjets')}">
+          ${projets.length ? `<table class="tableau-volet"><tbody>${projets.map((p) => `<tr><td>${echapper(selonLangue(p.projetEn, p.projetFr))}<span class="legende"> · ${echapper(selonLangue(p.serviceEn, p.serviceFr))}</span></td><td class="n">${argentK(p.total)}</td></tr>`).join('')}</tbody></table>` : rp ? `<p class="legende">${mot('ottawa.rien')}</p>` : ''}
+
+          <h3 class="sous-titre">${mot('ottawa.reservesTitre', annee)}</h3>
+          <div style="overflow:auto"><table class="tableau-volet"><thead><tr><th>${mot('ottawa.reserve')}</th><th class="n">${mot('ottawa.ouverture')}</th><th class="n">${mot('ottawa.fermeture')}</th></tr></thead>
+            <tbody>${reserves.slice(0, 15).map((r) => `<tr><td>${echapper(selonLangue(r.nomEn, r.nomFr))}<span class="legende"> · ${echapper(selonLangue(r.typeEn, r.typeFr))}</span></td><td class="n">${argentK(r.ouverture)}</td><td class="n">${argentK(r.fermeture)}</td></tr>`).join('')}</tbody></table></div>
+          <p class="legende">${mot('ottawa.reservesNote', reserves.length)}</p>
+
+          <h3 class="sous-titre">${mot('ottawa.fraisTitre', b.frais.length)}</h3>
+          <p class="legende">${mot('ottawa.fraisAide')}</p>
+          <input class="champ" type="search" data-role="frais" value="${echapper(rechercheFrais)}" placeholder="${mot('ottawa.rechercheFrais')}" aria-label="${mot('ottawa.rechercheFrais')}">
+          ${frais.length ? `<div style="overflow:auto"><table class="tableau-volet"><thead><tr><th>${mot('ottawa.fraisQuoi')}</th><th class="n">2025</th><th class="n">2026</th><th class="n">${mot('ottawa.variation')}</th></tr></thead><tbody>${frais.map((f) => `<tr><td>${echapper(selonLangue(f.descriptionEn, f.descriptionFr))}<span class="legende"> · ${echapper(selonLangue(f.serviceEn, f.serviceFr))}</span></td><td class="n">${echapper((f.frais2025 ?? '').trim())}</td><td class="n">${echapper((f.frais2026 ?? '').trim())}</td><td class="n">${echapper((f.augmentation ?? '').trim())}</td></tr>`).join('')}</tbody></table></div>` : rf ? `<p class="legende">${mot('ottawa.rien')}</p>` : ''}
+
+          <h3 class="sous-titre">${mot('ottawa.comparaisonTitre')}</h3>
+          <div style="overflow:auto"><table class="tableau-volet"><thead><tr><th>${mot('ottawa.annee')}</th>${[...new Set(comp.map((x) => x.ville ?? x.province))].map((v) => `<th class="n">${echapper(v)}</th>`).join('')}</tr></thead>
+            <tbody>${[...new Set(comp.map((x) => x.annee))].sort().map((a) => `<tr><td>${a}</td>${[...new Set(comp.map((x) => x.ville ?? x.province))].map((v) => `<td class="n">${echapper(comp.find((x) => x.annee === a && (x.ville ?? x.province) === v)?.hausse ?? '—')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+        </details>
+        <p class="legende" style="margin-top:22px">${mot('ottawa.sourceDonnees')} <a class="lien-source" href="${echapper(d.licence.url)}" target="_blank" rel="noopener">${echapper(d.licence.nom)}</a> · ${mot('pied.maj')} ${date(d.lus.slice(0, 10))}</p>`;
+      cible.querySelector('[data-role="quartier"]').addEventListener('change', (e) => { quartierChoisi = Number(e.target.value); const y = window.scrollY; dessiner(); window.scrollTo(0, y); });
+      for (const [role, set] of [['frais', (v) => { rechercheFrais = v; }], ['projets', (v) => { rechercheProjets = v; }]]) {
+        const champ = cible.querySelector(`[data-role="${role}"]`);
+        champ.addEventListener('input', () => { set(champ.value); const pos = champ.selectionStart; const y = window.scrollY; const ouverts = [...cible.querySelectorAll('details.plus-loin')].map((x) => x.open); dessiner(); cible.querySelectorAll('details.plus-loin').forEach((x, i) => { x.open = ouverts[i]; }); const c2 = cible.querySelector(`[data-role="${role}"]`); c2.focus(); c2.setSelectionRange(pos, pos); window.scrollTo(0, y); });
+      }
+    };
+    dessiner();
+  };
+
+  // ---------------------------------------------------------------- Près de chez moi
+  // Tout se passe dans le navigateur : la rue tapée charge /data/site/ottawa-adresses/<lettre>.json
+  // (plages de numéros par quartier), le code postal charge cp-<RTA>.json. Rien n'est envoyé.
+  VUES.ottawaPres = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaPres"]');
+    const c = DONNEES['ottawa-conseil'], geo = DONNEES['ottawa-quartiers'], tot = DONNEES['ottawa-pres'];
+    if (!cible || !c) return;
+    const quartiers = new Map(c.quartiers.map((q) => [q.numero, q]));
+    const elus = elusParQuartier(c);
+    const cacheLettres = {}, cacheCp = {}, cacheQuartier = {};
+    let quartier = null, rue = '', numero = '', cp = '', suggestions = [], onglet = 'travaux', message = '';
+    const normaliser = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toUpperCase().replace(/[^A-Z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+    const lettre = async (l) => {
+      if (cacheLettres[l] !== undefined) return cacheLettres[l];
+      try { const r = await fetch(`/data/site/ottawa-adresses/${l}.json`); cacheLettres[l] = r.ok ? await r.json() : null; } catch { cacheLettres[l] = null; }
+      return cacheLettres[l];
+    };
+    const codes = async (fsa) => {
+      if (cacheCp[fsa] !== undefined) return cacheCp[fsa];
+      try { const r = await fetch(`/data/site/ottawa-adresses/cp-${fsa}.json`); cacheCp[fsa] = r.ok ? await r.json() : null; } catch { cacheCp[fsa] = null; }
+      return cacheCp[fsa];
+    };
+    const donneesQuartier = async (n) => {
+      if (cacheQuartier[n]) return cacheQuartier[n];
+      try { const r = await fetch(`/data/site/ottawa-quartier/${n}.json`); cacheQuartier[n] = r.ok ? await r.json() : null; } catch { cacheQuartier[n] = null; }
+      return cacheQuartier[n];
+    };
+    const chercherRue = async () => {
+      const n = normaliser(rue);
+      if (n.length < 2) { suggestions = []; return; }
+      const rues = await lettre(n[0]);
+      if (!rues) { suggestions = []; message = mot('ottawa.adressesAbsentes'); return; }
+      message = '';
+      suggestions = Object.entries(rues).filter(([nom, v]) => normaliser(nom).includes(n) || (v[0] && normaliser(v[0]).includes(n))).slice(0, 12).map(([nom, v]) => ({ nom, fr: v[0], plages: v[1] }));
+    };
+    const trouverParRue = async (choix) => {
+      const num = parseInt(numero, 10);
+      // plages : [de, à, quartier, n]
+      const plages = choix.plages;
+      let q = null;
+      if (!Number.isNaN(num)) q = plages.find((p) => num >= p[0] && num <= p[1])?.[2] ?? null;
+      if (q == null) {
+        const compte = {};
+        for (const p of plages) compte[p[2]] = (compte[p[2]] ?? 0) + p[3];
+        const tri = Object.entries(compte).sort((a, b) => b[1] - a[1]);
+        q = Number(tri[0][0]);
+        message = tri.length > 1 ? mot('ottawa.rueDansPlusieurs', tri.map(([k]) => k).join(', ')) : '';
+      } else message = '';
+      quartier = q; rue = selonLangue(choix.nom, choix.fr); suggestions = [];
+      await dessiner();
+    };
+    const trouverParCp = async () => {
+      const code = cp.toUpperCase().replace(/\s+/g, '');
+      if (!/^[A-Z]\d[A-Z]\d[A-Z]\d$/.test(code)) { message = mot('ottawa.cpInvalide'); return dessiner(); }
+      const liste = await codes(code.slice(0, 3));
+      if (!liste) { message = mot('ottawa.adressesAbsentes'); return dessiner(); }
+      const q = liste[code];
+      if (!q) { message = mot('ottawa.cpInconnu'); return dessiner(); }
+      quartier = Number(q); message = ''; await dessiner();
+    };
+    const dessiner = async () => {
+      const q = quartier ? quartiers.get(quartier) : null;
+      const detail = quartier ? await donneesQuartier(quartier) : null;
+      const tri = quartier ? tot?.parQuartier?.find((x) => x.numero === quartier) : null;
+      const listeTravaux = (detail?.travaux ?? []).sort((a, b) => (a[5] ?? '').localeCompare(b[5] ?? ''));
+      const typesTravaux = new Map();
+      for (const t of listeTravaux) { const k = selonLangue(t[1], t[2]); typesTravaux.set(k, (typesTravaux.get(k) ?? 0) + 1); }
+      const contenuOnglet = () => {
+        if (!detail) return '';
+        if (onglet === 'travaux') return `<p class="courant">${mot('ottawa.travauxAide')}</p>
+          <ul class="liste-sobre">${[...typesTravaux].sort((a, b) => b[1] - a[1]).map(([k, n]) => `<li>${echapper(k)}<span class="compte-badge">${n}</span></li>`).join('')}</ul>
+          <h3 class="sous-titre" style="margin-top:16px">${mot('ottawa.travauxQuand')}</h3>
+          <ul class="liste-sobre">${[...new Set(listeTravaux.map((t) => selonLangue(t[5], t[6]) ?? '—'))].map((k) => `<li>${echapper(k)}<span class="compte-badge">${listeTravaux.filter((t) => (selonLangue(t[5], t[6]) ?? '—') === k).length}</span></li>`).join('')}</ul>`;
+        if (onglet === 'parcs') return `<ul class="liste-sobre">${detail.parcs.sort((a, b) => a[0].localeCompare(b[0])).map((p) => `<li><b>${echapper(selonLangue(p[0], p[1]))}</b><span class="legende">${echapper(selonLangue(p[2], p[3]) ?? '')} · ${echapper(selonLangue(p[4], p[5]) ?? '')}${p[7] && /yes|oui/i.test(p[7]) ? ` · ${mot('ottawa.accessible')}` : ''}</span></li>`).join('')}</ul>`;
+        if (onglet === 'permis') {
+          const valeur = detail.permis.reduce((s, p) => s + (p[5] ?? 0), 0), logements = detail.permis.reduce((s, p) => s + (p[4] ?? 0), 0);
+          return `<p class="courant">${mot('ottawa.permisResume', nb(detail.permis.length), abrege(valeur), nb(logements))}</p>
+          <ul class="liste-sobre">${detail.permis.slice(0, 30).map((p) => `<li><b>${echapper(p[1])}</b> <span class="legende">${date(p[0])} · ${echapper(p[2] ?? '')}${p[5] ? ` · ${abrege(p[5])}` : ''}${p[4] ? ` · ${mot('ottawa.logements', p[4])}` : ''}</span><span class="legende">${echapper(p[3] ?? '')}</span></li>`).join('')}</ul>
+          ${detail.permis.length > 30 ? `<p class="legende">${mot('ottawa.permisPlus', detail.permis.length - 30)}</p>` : ''}`;
+        }
+        return '';
+      };
+      cible.innerHTML = `
+        <div class="encadre">${mot('ottawa.presIntro')}</div>
+        <div class="pres-formulaire">
+          <div>
+            <label class="legende" for="pres-rue">${mot('ottawa.rue')}</label>
+            <div style="display:flex; gap:8px"><input class="champ" id="pres-rue" type="search" autocomplete="off" data-role="rue" value="${echapper(rue)}" placeholder="${mot('ottawa.ruePlaceholder')}"><input class="champ" style="max-width:110px" type="text" inputmode="numeric" data-role="numero" value="${echapper(numero)}" placeholder="${mot('ottawa.numero')}"></div>
+            ${suggestions.length ? `<ul class="pres-suggestions">${suggestions.map((s, i) => `<li data-i="${i}">${echapper(selonLangue(s.nom, s.fr))}${s.fr && langue === 'fr' && s.fr !== s.nom ? ` <span class="legende">(${echapper(s.nom)})</span>` : ''}</li>`).join('')}</ul>` : ''}
+          </div>
+          <div>
+            <label class="legende" for="pres-cp">${mot('ottawa.codePostal')}</label>
+            <div style="display:flex; gap:8px"><input class="champ" id="pres-cp" type="text" autocomplete="postal-code" data-role="cp" value="${echapper(cp)}" placeholder="K1A 0A6" style="max-width:130px"><button class="filtre" data-role="cp-ok">${mot('ottawa.chercher')}</button></div>
+          </div>
+        </div>
+        <p class="legende">${mot('ottawa.ouQuartier')} <select class="champ" data-role="quartier" style="display:inline-block; width:auto"><option value="">—</option>${c.quartiers.map((x) => `<option value="${x.numero}" ${x.numero === quartier ? 'selected' : ''}>${x.numero} · ${echapper(selonLangue(x.nomEn, x.nomFr))}</option>`).join('')}</select></p>
+        ${message ? `<p class="encadre">${echapper(message)}</p>` : ''}
+        ${q ? `<div class="pres-resultat">
+          <p class="sur-titre">${mot('ottawa.votreQuartier')}</p>
+          <h2>${echapper(selonLangue(q.nomEn, q.nomFr))} <span class="legende">· ${mot('ottawa.quartierNo', q.numero)} · ${echapper(selonLangue(q.secteurEn, q.secteurFr))}</span></h2>
+          <div class="grille-elus">${(elus.get(q.numero) ?? []).map((e) => carteElu(e, q)).join('')}${c.elus.filter((e) => e.role === 'Mayor').map((e) => carteElu(e, null)).join('')}</div>
+          <div class="onglets-pres">
+            <button class="filtre ${onglet === 'travaux' ? 'actif' : ''}" data-onglet="travaux">${mot('ottawa.travaux')}<span class="compte-badge">${tri?.travaux ?? detail?.travaux.length ?? 0}</span></button>
+            <button class="filtre ${onglet === 'parcs' ? 'actif' : ''}" data-onglet="parcs">${mot('ottawa.parcs')}<span class="compte-badge">${tri?.parcs ?? detail?.parcs.length ?? 0}</span></button>
+            <button class="filtre ${onglet === 'permis' ? 'actif' : ''}" data-onglet="permis">${mot('ottawa.permis')}<span class="compte-badge">${tri?.permis ?? detail?.permis.length ?? 0}</span></button>
+          </div>
+          ${detail ? contenuOnglet() : `<p class="legende">${mot('ottawa.chargement')}</p>`}
+          <p class="legende" style="margin-top:14px"><a href="/ottawa/decisions">${mot('ottawa.decisionsQuartier')} →</a></p>
+        </div>
+        ${carteQuartiers(geo, quartier)}` : `${carteQuartiers(geo, null)}<p class="legende">${mot('ottawa.carteAide')}</p>`}
+        ${tot ? `<p class="legende" style="margin-top:18px">${mot('ottawa.presTotaux', nb(tot.totaux.travaux), nb(tot.totaux.parcs), nb(tot.totaux.permis), abrege(tot.totaux.permisValeur))}</p>` : ''}
+        <p class="legende">${mot('ottawa.sourceDonnees')} <a class="lien-source" href="${echapper(c.licence.url)}" target="_blank" rel="noopener">${echapper(c.licence.nom)}</a> · ${mot('ottawa.presVie')}</p>`;
+      const champRue = cible.querySelector('[data-role="rue"]');
+      let minuterie;
+      champRue.addEventListener('input', () => { rue = champRue.value; clearTimeout(minuterie); minuterie = setTimeout(async () => { await chercherRue(); const pos = champRue.selectionStart; await dessiner(); const c2 = cible.querySelector('[data-role="rue"]'); c2.focus(); c2.setSelectionRange(pos, pos); }, 180); });
+      cible.querySelector('[data-role="numero"]').addEventListener('input', (e) => { numero = e.target.value; });
+      cible.querySelectorAll('.pres-suggestions li').forEach((li) => li.addEventListener('mousedown', (e) => { e.preventDefault(); trouverParRue(suggestions[Number(li.dataset.i)]); }));
+      const champCp = cible.querySelector('[data-role="cp"]');
+      champCp.addEventListener('input', () => { cp = champCp.value; });
+      champCp.addEventListener('keydown', (e) => { if (e.key === 'Enter') trouverParCp(); });
+      cible.querySelector('[data-role="cp-ok"]').addEventListener('click', trouverParCp);
+      cible.querySelector('[data-role="quartier"]').addEventListener('change', (e) => { quartier = Number(e.target.value) || null; message = ''; dessiner(); });
+      cible.querySelectorAll('[data-onglet]').forEach((b) => b.addEventListener('click', () => { onglet = b.dataset.onglet; dessiner(); }));
+      cible.querySelectorAll('.carte-quartiers g').forEach((g) => g.addEventListener('click', () => { quartier = Number(g.dataset.quartier); message = ''; dessiner().then(() => cible.querySelector('.pres-resultat')?.scrollIntoView({ behavior: 'smooth', block: 'start' })); }));
+    };
+    dessiner();
+  };
+
+  // ---------------------------------------------------------------- Lexique municipal
+  VUES.ottawaLexique = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaLexique"]');
+    const lex = DONNEES['ottawa-lexique'];
+    if (!cible || !lex) return;
+    const ancre = (i) => `groupe-${i + 1}`;
+    cible.innerHTML = `<nav class="raccourcis" aria-label="${mot('ottawa.ongletLexique')}">${lex.groupes.map((g, i) => `<a href="#${ancre(i)}" class="teinte-${i % 5}"><b>${i + 1}</b> ${echapper(selonLangue(g.titre.en, g.titre.fr))}</a>`).join('')}</nav>` +
+      lex.groupes.map((g, i) => `<section class="groupe-lex teinte-${i % 5}">
+        <h2 class="titre-lex" id="${ancre(i)}"><span class="num-lex">${i + 1}</span>${echapper(selonLangue(g.titre.en, g.titre.fr))}<span class="compte">${g.entrees.length}</span></h2>
+        <div class="grille">${g.entrees.map((e) => `<article class="carte carte-lex"><h3 class="carte-titre">${echapper(selonLangue(e.terme.en, e.terme.fr))}</h3><p class="courant">${echapper(selonLangue(e.texte.en, e.texte.fr))}</p></article>`).join('')}</div>
+      </section>`).join('') +
+      `<p class="legende" style="margin-top:22px"><a class="lien-source" href="${echapper(selonLangue(lex.source.en, lex.source.fr))}" target="_blank" rel="noopener">${mot('ottawa.lexiqueOfficiel')}</a></p>`;
+  };
+
+  // ---------------------------------------------------------------- Sources et limites
+  VUES.ottawaSources = () => {
+    sousNav();
+    const cible = document.querySelector('section[data-vue="ottawaSources"]');
+    const d = DONNEES.ottawa, c = DONNEES['ottawa-conseil'], journal = DONNEES.journal;
+    if (!cible) return;
+    const sources = c?.sources ?? {};
+    const ligne = (titre, quoi, url) => `<tr><td><b>${echapper(titre)}</b><span class="legende">${quoi}</span></td><td><a class="lien-source" href="${echapper(url)}" target="_blank" rel="noopener">${echapper(new URL(url).hostname)} →</a></td></tr>`;
+    const entrees = (journal?.entrees ?? []).filter((e) => /ottawa/i.test(`${e.en ?? ''} ${e.fr ?? ''}`));
+    cible.innerHTML = `
+      <div class="encadre">${mot('ottawa.sourcesIntro')}</div>
+      <h2 class="grand-titre">${mot('ottawa.sourcesTitre')}</h2>
+      <div style="overflow:auto"><table class="tableau-volet"><tbody>
+        ${d ? ligne(mot('ottawa.srcPv'), mot('ottawa.srcPvQuoi'), d.source) : ''}
+        ${Object.entries(sources).map(([k, s]) => ligne(s.titre, mot(`ottawa.src_${k}`) === `ottawa.src_${k}` ? '' : mot(`ottawa.src_${k}`), s.page)).join('')}
+      </tbody></table></div>
+      <p class="courant">${mot('ottawa.licenceTexte')} ${c ? `<a class="lien-source" href="${echapper(c.licence.url)}" target="_blank" rel="noopener">${echapper(c.licence.nom)}</a>.` : ''}</p>
+      <h2 class="grand-titre">${mot('ottawa.conditionsTitre')}</h2>
+      <p class="courant">${mot('ottawa.conditionsTexte')} ${d ? `<a class="lien-source" href="${echapper(d.conditions)}" target="_blank" rel="noopener">ottawa.ca</a>.` : ''}</p>
+      <h2 class="grand-titre">${mot('ottawa.limitesTitre')}</h2>
+      <ul class="courant">${mot('ottawa.limites').map((l) => `<li>${l}</li>`).join('')}</ul>
+      <h2 class="grand-titre">${mot('ottawa.commentTitre')}</h2>
+      <ul class="courant">${mot('ottawa.comment').map((l) => `<li>${l}</li>`).join('')}</ul>
+      ${entrees.length ? `<h2 class="grand-titre">${mot('ottawa.journalTitre')}</h2><ul class="liste-sobre">${entrees.map((e) => `<li><b>${date(e.date)}</b> — ${echapper(selonLangue(e.en, e.fr))}</li>`).join('')}</ul>` : ''}
+      <p class="legende" style="margin-top:22px">${d ? `${mot('pied.maj')} ${date(d.lus.slice(0, 10))}` : ''}</p>`;
+  };
+
   VUES.apropos = () => {
     const liste = document.querySelector('[data-role="journal"]');
     const j = DONNEES.journal;

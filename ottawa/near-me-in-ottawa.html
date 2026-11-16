@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dossier:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0N4BYF7Y2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0N4BYF7Y2Z', { content_group: 'Ottawa' });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-fr="Près de chez moi à Ottawa | DossierOntario">Near me in Ottawa | DossierOntario</title>
+<meta name="description" content="Type your Ottawa address: your ward and your councillor, the City’s construction, parks and 2026 building permits in your ward." data-fr-content="Tapez votre adresse à Ottawa : votre quartier et votre conseiller, les travaux de la Ville, les parcs et les permis de construire 2026 de votre quartier.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://dossierontario.ca/ottawa/near-me-in-ottawa">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DossierOntario">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Near me in Ottawa | DossierOntario">
+<meta property="og:description" content="Type your Ottawa address: your ward and your councillor, the City’s construction, parks and 2026 building permits in your ward.">
+<meta property="og:url" content="https://dossierontario.ca/ottawa/near-me-in-ottawa">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('dvq:theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'sombre' : 'clair';
+      document.documentElement.dataset.theme = t;
+      var z = parseInt(localStorage.getItem('dossier:zoom'), 10);
+      if (z >= 80 && z <= 150) document.documentElement.style.zoom = z + '%';
+    } catch (e) {}
+  })();
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "DossierOntario", "item": "https://dossierontario.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "City of Ottawa", "item": "https://dossierontario.ca/ottawa/" },
+    { "@type": "ListItem", "position": 3, "name": "Near me", "item": "https://dossierontario.ca/ottawa/near-me-in-ottawa" }
+  ]
+}
+</script>
+<script>
+  /* Français choisi (?lang=fr ou dossier:langue) : la page est cachée le temps que assets/langue.js la traduise. */
+  (function () { try { var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('dossier:langue'); if (l === 'fr') { document.documentElement.lang = 'fr'; document.documentElement.classList.add('dvq-fr'); } } catch (e) {} })();
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="pres" data-ville="ottawa">
+<header>
+  <div class="contenu">
+    <div class="titre-ligne">
+      <a href="./"><p class="logo-titre">Dossier<span class="marque">Ottawa</span></p></a><a class="lien-dq" href="/" title="DossierOntario: the Legislative Assembly of Ontario in plain language" aria-label="DossierOntario: the Legislative Assembly of Ontario in plain language" data-fr-title="DossierOntario : l’Assemblée législative de l’Ontario en clair" data-fr-aria-label="DossierOntario : l’Assemblée législative de l’Ontario en clair"></a>
+    </div>
+    <p class="sous-titre" data-fr="Les décisions du conseil municipal d’Ottawa, rendues lisibles. Des documents publics : les procès-verbaux du greffe et les données ouvertes de la Ville d’Ottawa.">
+      Ottawa City Council decisions, made readable. Public documents: the City Clerk’s minutes
+      and the City of Ottawa’s open data.
+    </p>
+    <nav>
+      <a href="./" data-fr="Accueil">Home</a>
+      <a href="decisions-of-ottawa-city-council" data-fr="Décisions">Decisions</a>
+      <a href="ottawa-city-council" data-fr="Conseil municipal">City Council</a>
+      <a href="near-me-in-ottawa" aria-current="page" data-fr="Près de chez moi">Near me</a>
+      <a href="contracts-of-the-city-of-ottawa" data-fr="Contrats">Contracts</a>
+      <a href="ottawa-capital-budget" data-fr="Budget">Budget</a>
+      <a href="ottawa-council-glossary" data-fr="Lexique">Glossary</a>
+      <div class="outils">
+        <div class="taille-texte" role="group" aria-label="Text size" data-fr-aria-label="Taille du texte">
+          <button type="button" id="texte-moins" aria-label="Smaller text" data-fr-aria-label="Réduire le texte">A−</button>
+          <span id="texte-pct" aria-live="polite">100%</span>
+          <button type="button" id="texte-plus" aria-label="Larger text" data-fr-aria-label="Agrandir le texte">A+</button>
+        </div>
+        <button type="button" id="bascule-theme" class="bascule-theme" aria-pressed="false"
+                title="Switch to dark theme" aria-label="Switch to dark theme"></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="contenu prose" style="max-width:1180px">
+  <h1 class="page" data-fr="Près de chez moi à Ottawa">Near me in Ottawa</h1>
+  <p data-fr="Tapez votre rue, ou votre code postal : votre quartier tel que la Ville le définit, votre conseiller et dans votre quartier les travaux prévus par la Ville, les parcs et les permis 2026 de construction, de démolition et de piscine. Tout vient des données ouvertes de la Ville d’Ottawa.">Type your street, or your postal code: your ward as the City defines it, your councillor and in your ward the City’s planned construction, the parks and the 2026 building, demolition and pool permits. Everything comes from the City of Ottawa’s open data.</p>
+  <form class="qui-represente" id="qui-represente" autocomplete="off">
+    <label for="adresse" data-fr="Votre rue et votre numéro, ou votre code postal">Your street and number, or your postal code</label>
+    <div class="ligne">
+      <input id="adresse" type="search" placeholder="E.g. 110 Laurier Ave W, or K1P 1J1" data-fr-placeholder="Ex. 110 Laurier Ave W, ou K1P 1J1" list="suggestions-rues">
+      <button type="submit" data-fr="Chercher">Search</button>
+    </div>
+    <datalist id="suggestions-rues"></datalist>
+    <p class="compte" style="margin:6px 0 0"><label for="choix-quartier" data-fr="Ou choisissez un quartier :">Or pick a ward:</label> <select id="choix-quartier"><option value="">—</option></select></p>
+    <div id="resultat-adresse" aria-live="polite"></div>
+    <p class="compte" data-fr="Votre adresse reste dans votre navigateur. Elle n’est envoyée à personne. La recherche couvre la Ville d’Ottawa seulement.">Your address stays in your browser. It is not sent to anyone. The search covers the City of Ottawa only.</p>
+  </form>
+  <style>
+    .qui-represente { background: var(--carte); border: var(--bordure-carte); border-radius: var(--rayon); padding: 14px 16px; margin: 16px 0 20px; }
+    .qui-represente label { font-weight: 600; display: block; margin-bottom: 6px; }
+    .qui-represente .ligne { display: flex; gap: 8px; }
+    .qui-represente input { flex: 1; min-width: 0; font: inherit; padding: 7px 10px; border: 1px solid var(--ligne-forte); border-radius: var(--rayon); background: var(--fond); color: var(--encre); }
+    .qui-represente button { font: inherit; padding: 7px 14px; border-radius: var(--rayon); border: 1px solid var(--accent); background: var(--accent); color: #fff; cursor: pointer; }
+    #resultat-adresse { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; align-items: start; }
+    .bloc-pres { background: var(--fond); border: 1px solid var(--ligne); border-radius: var(--rayon); padding: 12px 14px; }
+    .bloc-pres h3 { margin: 0 0 8px; font-size: 1rem; }
+    .bloc-pres ul { margin: 0; padding-left: 18px; }
+    .bloc-pres li { margin: 4px 0; font-size: .92rem; }
+    .genre-permis { display: inline-block; font-size: .75rem; font-weight: 600; color: #fff; border-radius: 999px; padding: 1px 8px; margin-right: 2px; }
+    .genre-permis.construction { background: var(--pour, #0B8A4B); }
+    .genre-permis.demolition { background: var(--contre, #D23B2C); }
+    .genre-permis.alteration { background: var(--t-transport, #1D4ED8); }
+    .genre-permis.en-cours { background: var(--t-transport, #1D4ED8); }
+    .genre-permis.a-venir { background: var(--t-urbanisme, #7C3AED); }
+    .genre-permis.fermeture { background: var(--contre, #D23B2C); }
+    #resultat-adresse.apercu { opacity: .45; filter: grayscale(1); max-height: 660px; overflow: hidden; -webkit-mask-image: linear-gradient(#000 80%, transparent); mask-image: linear-gradient(#000 80%, transparent); }
+    .lien-carte { display: inline-flex; vertical-align: -2px; color: var(--accent); }
+    .zone-rayon { display: contents; }
+    .cadre-rayon, .carte-pres { grid-column: 1 / -1; }
+    .carte-pres { height: 380px; border-radius: var(--rayon); border: var(--bordure-carte); margin: 0 0 6px; z-index: 0; }
+    .carte-pres .leaflet-popup-content { font-size: 13px; line-height: 1.45; }
+    .cadre-rayon { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 14px 0 10px; padding: 10px 14px;
+      background: var(--carte); border: var(--bordure-carte); border-radius: var(--rayon); }
+    .cadre-rayon > span { font-weight: 600; }
+    .cadre-rayon .rayon-pm { display: inline-flex; align-items: center; gap: 10px; flex: none; }
+    .cadre-rayon .filtre-groupe { width: auto; height: auto; border-radius: 999px; padding: 5px 12px; font-size: .82rem; font-weight: 700;
+      background: var(--encre); color: var(--fond); border: 1.5px solid var(--encre); }
+    .cadre-rayon .filtre-groupe[aria-pressed="false"] { background: transparent; color: var(--encre); opacity: .5; text-decoration: line-through; }
+    .cadre-rayon .filtre-groupe[aria-pressed="mixed"] { background: transparent; color: var(--encre); }
+    .cadre-rayon .filtre-circulation { width: auto; height: auto; border-radius: 999px; padding: 5px 12px; font-size: .82rem; font-weight: 700;
+      background: transparent; color: var(--encre); border: 1.5px solid #E8742C; }
+    .cadre-rayon .filtre-circulation[aria-pressed="true"] { background: #E8742C; color: #fff; }
+    .cadre-rayon .bouton-filtres { width: auto; height: auto; border-radius: 999px; padding: 5px 12px; font-size: .82rem; font-weight: 700;
+      background: transparent; color: var(--encre); border: 1.5px solid var(--ligne-forte, var(--ligne)); }
+    .cadre-rayon .bouton-filtres[aria-expanded="true"] { background: var(--encre); color: var(--fond); border-color: var(--encre); }
+    .cadre-rayon .bouton-filtres b { font-weight: 700; color: #E8742C; }
+    .filtres-detail { display: none; flex-basis: 100%; flex-wrap: wrap; gap: 6px; order: 9; padding-top: 4px; }
+    .filtres-detail.ouvert { display: flex; }
+    .filtres-rayon { display: flex; flex-wrap: wrap; gap: 6px; margin-right: auto; flex: 1; }
+    .cadre-rayon .filtre-type { width: auto; height: auto; border-radius: 999px; padding: 4px 10px 4px 8px; font-size: .8rem; font-weight: 600;
+      background: transparent; color: var(--encre); border: 1.5px solid var(--ligne-forte); display: inline-flex; align-items: center; gap: 6px; }
+    .cadre-rayon .filtre-type i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+    .cadre-rayon .filtre-type b { font-weight: 600; opacity: .7; }
+    .cadre-rayon .filtre-type[aria-pressed="false"] { opacity: .45; text-decoration: line-through; }
+    .cadre-rayon .filtre-type[aria-pressed="false"] i { background: transparent !important; box-shadow: inset 0 0 0 1.5px currentColor; }
+    .cadre-rayon button { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--accent); background: var(--accent);
+      color: #fff; font-family: inherit; font-weight: 700; font-size: 20px; line-height: 1; cursor: pointer; }
+    .cadre-rayon button:disabled { opacity: .35; cursor: default; }
+    .cadre-rayon strong { min-width: 64px; text-align: center; font-size: 1.1rem; }
+    .bulle-carte { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; color: #fff; }
+    .bulle-carte svg { width: 13px; height: 13px; }
+    .bulle-carte:hover, .bulle-carte:focus-visible { filter: brightness(1.12); text-decoration: underline; }
+    /* Sur téléphone, la maison était une cible de 14 px : impossible à toucher du doigt (Martin,
+       15 nov. 2026). Une pastille de 36 px, l'icône plus grande, sans déplacer la ligne. */
+    @media (max-width: 720px), (pointer: coarse) {
+      .lien-carte { align-items: center; justify-content: center; min-width: 36px; min-height: 36px;
+        margin: -8px 0; vertical-align: middle; border-radius: 50%; background: var(--accent-fond); }
+      .lien-carte svg { width: 20px; height: 20px; }
+      .bulle-carte { min-height: 32px; padding: 4px 12px; font-size: .8rem; margin: 2px 4px 2px 0; }
+      .bulle-carte svg { width: 16px; height: 16px; }
+    }
+  </style>
+  <script type="module">
+  // Copie de la page Près de chez moi de Vancouver (15 nov. 2026), avec ce qu'Ottawa publie : l'adresse
+  // donne le QUARTIER (plages de numéros par rue, ou code postal), pas un point sur une carte. Les blocs
+  // montrent donc le quartier entier : élu, travaux prévus, parcs, permis 2026. Pas de rayon, pas de carte.
+  import { EN, tr } from './assets/langue.js';
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const L = (en, fr) => (EN ? en : fr ?? en);
+  const nf = new Intl.NumberFormat(EN ? 'en-CA' : 'fr-CA', { maximumFractionDigits: 0 });
+  const argent = (n) => (EN ? '$' + nf.format(n) : nf.format(n) + ' $');
+  const Q = await (await fetch('data/quartiers.json')).json().catch(() => null);
+  if (!Q) { $('#resultat-adresse').innerHTML = tr('<p>Aucune donnée.</p>', '<p>No data.</p>'); throw new Error('quartiers.json absent'); }
+  for (const q of Q.quartiers) $('#choix-quartier').insertAdjacentHTML('beforeend', `<option value="${q.numero}">${q.numero} · ${esc(L(q.nomEn, q.nomFr))}</option>`);
+  const cache = {};
+  const json = async (u) => (cache[u] ??= fetch(u).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+  const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toUpperCase().replace(/[^A-Z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  // L'index des rues : /data/site/ottawa-adresses/<lettre>.json, { "Laurier Ave W": ["av Laurier O", [[de, à, quartier, n]]] }.
+  async function trouver(texte) {
+    const t = texte.trim();
+    const cp = t.toUpperCase().replace(/\s+/g, '');
+    if (/^[A-Z]\d[A-Z]\d[A-Z]\d$/.test(cp)) {
+      const l = await json(`/data/site/ottawa-adresses/cp-${cp.slice(0, 3)}.json`);
+      return l?.[cp] ? { quartier: Number(l[cp]), quoi: cp } : { erreur: tr('Code postal introuvable dans les données de la Ville.', 'Postal code not found in the City’s data.') };
+    }
+    const m = /^(\d+)\s+(.+)$/.exec(t);
+    const num = m ? Number(m[1]) : NaN, rue = norm(m ? m[2] : t);
+    if (rue.length < 2) return { erreur: tr('Tapez une rue.', 'Type a street.') };
+    const rues = await json(`/data/site/ottawa-adresses/${rue[0]}.json`);
+    if (!rues) return { erreur: tr('Index des adresses introuvable.', 'Address index not found.') };
+    const cands = Object.entries(rues).filter(([nom, v]) => norm(nom) === rue || norm(v[0] ?? '') === rue);
+    const choix = cands[0] ?? Object.entries(rues).find(([nom, v]) => norm(nom).startsWith(rue) || norm(v[0] ?? '').startsWith(rue));
+    if (!choix) return { erreur: tr('Rue introuvable. Essayez la forme courte (ex. « Laurier Ave W »).', 'Street not found. Try the short form (e.g. “Laurier Ave W”).') };
+    const [nom, [nomFr, plages]] = choix;
+    let q = Number.isFinite(num) ? plages.find((p) => num >= p[0] && num <= p[1])?.[2] : null;
+    let note = '';
+    if (q == null) {
+      const compte = {};
+      for (const p of plages) compte[p[2]] = (compte[p[2]] ?? 0) + p[3];
+      const tri = Object.entries(compte).sort((a, b) => b[1] - a[1]);
+      q = Number(tri[0][0]);
+      if (tri.length > 1) note = tr(`Cette rue traverse plusieurs quartiers (${tri.map(([k]) => k).join(', ')}). Ajoutez le numéro pour être précis.`, `This street crosses several wards (${tri.map(([k]) => k).join(', ')}). Add the number to be precise.`);
+    }
+    return { quartier: q, quoi: `${Number.isFinite(num) ? num + ' ' : ''}${L(nom, nomFr)}`, note };
+  }
+  async function montrer(r) {
+    const z = $('#resultat-adresse');
+    if (r.erreur) { z.innerHTML = `<div class="bloc-pres"><p>${esc(r.erreur)}</p></div>`; return; }
+    const q = Q.quartiers.find((x) => x.numero === r.quartier);
+    const det = await json(`/data/site/ottawa-quartier/${r.quartier}.json`);
+    const t = Q.parQuartier.find((x) => x.numero === r.quartier);
+    const elu = Q.elus.find((e) => e.districtNumero === r.quartier), maire = Q.elus.find((e) => /mayor/i.test(e.fonction));
+    const fiche = (e, role) => e ? `<li><strong>${esc(e.nomComplet)}</strong>, ${role}${e.telephone ? `<br><a href="tel:${esc(e.telephone.replace(/[^\d+]/g, ''))}">${esc(e.telephone)}</a>` : ''}${e.courriel ? ` · <a href="mailto:${esc(e.courriel)}">${esc(e.courriel)}</a>` : ''}${e.lienVille ? ` · <a href="${esc(e.lienVille)}" target="_blank" rel="noopener">ottawa.ca ↗</a>` : ''}</li>` : '';
+    const travaux = det?.travaux ?? [], parcs = det?.parcs ?? [], permis = det?.permis ?? [];
+    const types = new Map();
+    for (const x of travaux) { const k = L(x[1], x[2]); types.set(k, (types.get(k) ?? 0) + 1); }
+    const quand = new Map();
+    for (const x of travaux) { const k = L(x[5], x[6]) ?? '—'; quand.set(k, (quand.get(k) ?? 0) + 1); }
+    const valeur = permis.reduce((s, p) => s + (p[5] ?? 0), 0), logements = permis.reduce((s, p) => s + (p[4] ?? 0), 0);
+    const genre = (n) => /^DEM/.test(n) ? ['demolition', tr('Démolition', 'Demolition')] : /^POOL/.test(n) ? ['alteration', tr('Piscine', 'Pool')] : ['construction', tr('Construction', 'Construction')];
+    z.innerHTML = `
+      <div class="bloc-pres"><h3>${tr('Votre quartier', 'Your ward')}</h3>
+        <p style="margin:0 0 6px">${r.quoi ? `${esc(r.quoi)} → ` : ''}<strong>${tr('Quartier', 'Ward')} ${q.numero} · ${esc(L(q.nomEn, q.nomFr))}</strong> <span class="compte">(${esc(L(q.secteurEn, q.secteurFr))})</span></p>
+        ${r.note ? `<p class="compte">${esc(r.note)}</p>` : ''}
+        <ul>${fiche(elu, tr('votre conseiller ou conseillère', 'your councillor'))}${fiche(maire, tr('maire, élu par toute la ville', 'Mayor, elected city-wide'))}</ul>
+        <p class="compte" style="margin:8px 0 0"><a href="ottawa-city-council#elu-${q.numero}">${tr('Sa fiche au conseil', 'Their Council card')} →</a> · <a href="ottawa-capital-budget">${tr('Les taxes de votre quartier', 'Your ward’s taxes')} →</a></p></div>
+      <div class="bloc-pres"><h3>${tr('Travaux prévus par la Ville', 'City construction planned')} <span class="compte">(${t?.travaux ?? travaux.length})</span></h3>
+        <ul>${[...types].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([k, n]) => `<li>${esc(k)} <span class="compte">${n}</span></li>`).join('') || `<li>${tr('Aucun', 'None')}</li>`}</ul>
+        ${quand.size ? `<p class="compte" style="margin:8px 0 0">${tr('Quand : ', 'When: ')}${[...quand].map(([k, n]) => `${esc(k)} (${n})`).join(' · ')}</p>` : ''}</div>
+      <div class="bloc-pres"><h3>${tr('Permis 2026', '2026 permits')} <span class="compte">(${t?.permis ?? permis.length})</span></h3>
+        <p class="compte" style="margin:0 0 6px">${tr(`Valeur déclarée ${argent(valeur)} · ${nf.format(logements)} logement(s)`, `Declared value ${argent(valeur)} · ${nf.format(logements)} dwelling(s)`)}</p>
+        <ul>${permis.slice(0, 12).map((p) => { const [c, g] = genre(p[6] ?? ''); return `<li><span class="genre-permis ${c}">${g}</span> <strong>${esc(p[1])}</strong> <span class="compte">${esc(p[0])}${p[5] ? ` · ${argent(p[5])}` : ''}</span><br><span class="compte">${esc(p[3] ?? '')}</span></li>`; }).join('')}</ul>
+        ${permis.length > 12 ? `<p class="compte">${tr(`et ${permis.length - 12} autres`, `and ${permis.length - 12} more`)}</p>` : ''}</div>
+      <div class="bloc-pres"><h3>${tr('Parcs', 'Parks')} <span class="compte">(${t?.parcs ?? parcs.length})</span></h3>
+        <ul>${[...parcs].sort((a, b) => a[0].localeCompare(b[0])).slice(0, 15).map((p) => `<li><strong>${esc(L(p[0], p[1]))}</strong> <span class="compte">${esc(L(p[2], p[3]) ?? '')}</span></li>`).join('')}</ul>
+        ${parcs.length > 15 ? `<p class="compte">${tr(`et ${parcs.length - 15} autres`, `and ${parcs.length - 15} more`)}</p>` : ''}</div>`;
+  }
+  // Suggestions de rues pendant la frappe.
+  $('#adresse').addEventListener('input', async (e) => {
+    const v = e.target.value.trim(), m = /^(\d+\s+)?(.+)$/.exec(v), rue = norm(m?.[2] ?? '');
+    if (rue.length < 2 || /^[A-Z]\d[A-Z]/.test(v.toUpperCase().replace(/\s/g, ''))) return;
+    const rues = await json(`/data/site/ottawa-adresses/${rue[0]}.json`);
+    if (!rues) return;
+    $('#suggestions-rues').innerHTML = Object.entries(rues).filter(([nom, x]) => norm(nom).startsWith(rue) || norm(x[0] ?? '').startsWith(rue)).slice(0, 10).map(([nom, x]) => `<option value="${esc((m?.[1] ?? '') + L(nom, x[0]))}">`).join('');
+  });
+  $('#qui-represente').addEventListener('submit', async (e) => { e.preventDefault(); montrer(await trouver($('#adresse').value)); });
+  $('#choix-quartier').addEventListener('change', (e) => { if (e.target.value) montrer({ quartier: Number(e.target.value) }); });
+  </script>
+</main>
+<footer>
+  <div class="contenu">
+    <p data-fr="Site citoyen indépendant. Aucun lien avec la Ville d’Ottawa, aucun caractère officiel. En cas d’écart, le document de la Ville fait foi. &lt;a href=&quot;sources-of-the-ottawa-data&quot;&gt;Sources&lt;/a&gt;.">Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City’s own document prevails. <a href="sources-of-the-ottawa-data">Sources</a>.</p>
+    <p data-fr="Contient de l’information visée par la &lt;a href=&quot;https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Open Government Licence – City of Ottawa&lt;/a&gt; (licence du gouvernement ouvert de la Ville d’Ottawa).">Contains information licensed under the <a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener">Open Government Licence – City of Ottawa</a>.</p>
+    <p class="lien-dq-pied" data-fr="&lt;a href=&quot;/&quot;&gt;DossierOntario : l’Assemblée législative de l’Ontario en clair&lt;/a&gt; · &lt;a href=&quot;/rules&quot;&gt;Les règles du site&lt;/a&gt;"><a href="/">DossierOntario: the Legislative Assembly of Ontario in plain language</a> · <a href="/rules">Rules of the site</a></p>
+  </div>
+</footer>
+<script type="module" src="assets/app.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script src="assets/avis-pause.js" defer></script>
+<script type="module" src="assets/langue.js"></script>
+</body>
+</html>

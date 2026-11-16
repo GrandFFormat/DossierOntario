@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0N4BYF7Y2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Consentement : refusé par défaut ; accordé seulement si la personne a dit oui (bandeau).
+  var choix = null; try { choix = localStorage.getItem('dossier:temoins'); } catch (e) {}
+  gtag('consent', 'default', {
+    analytics_storage: choix === 'oui' ? 'granted' : 'denied',
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
+  });
+  gtag('js', new Date());
+  gtag('config', 'G-0N4BYF7Y2Z');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ottawa, decision by decision — DossierOntario</title>
+<meta name="description" content="What Ottawa City Council and its committees decided in the last two months, who sits on council, the contracts, the budget and taxes, and what is coming near you. Unofficial, bilingual.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Ottawa, decision by decision — DossierOntario">
+<meta property="og:description" content="What Ottawa City Council and its committees decided in the last two months, who sits on council, the contracts, the budget and taxes, and what is coming near you. Unofficial, bilingual.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dossierontario.ca/ottawa/">
+<meta property="og:image" content="https://dossierontario.ca/ottawa/og-ottawa.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DossierVilleDOttawa: Ottawa, decision by decision">
+<meta property="og:site_name" content="DossierOntario">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#C8102E">
+<link rel="stylesheet" href="/commun/on.css?v=31f9ee6158">
+<script src="/commun/on.js?v=03cb0ed3c8" defer></script>
+</head>
+<body data-vue="ottawaAccueil" data-donnees="ottawa ottawa-conseil apercu">
+
+<!-- La bande qui défile, recopiée de DossierCanada (.dq-ticker). Remplie par on.js
+     avec les chiffres du jour (apercu.json) ; contenu en double pour boucler sans couture. -->
+
+<header class="entete">
+  <div class="entete-rang">
+    <div class="marque">
+      <a class="mot-symbole" href="/ottawa/">Dossier<span class="province">VilleDOttawa</span></a>
+      <a class="erable" href="/" title="DossierOntario" aria-label="DossierOntario">
+        <svg viewBox="-2015 -2000 4030 4030" aria-hidden="true"><path fill="currentColor" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></svg>
+      </a>
+      <!-- Onglet Villes (7 nov. 2026 ; après la feuille d'érable depuis le 9 nov., demande de Martin), comme DossierCanada : un seul lien vers « Représentez votre ville » sur DQ. -->
+        <details class="villes-menu onglet-villes" id="villesMenu">
+          <summary class="city-flip" title="Cities" aria-label="Cities"><span data-i18n="nav.villes">Cities</span></summary>
+          <ul>
+            <li><a href="/ottawa/">Ottawa <small data-i18n="nav.ottawaSous">city council</small></a></li>
+          <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?province=on&lang=en" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
+          </ul>
+        </details>
+        <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;var a=m.querySelector('.villes-rtv a');function maj(){a.href='https://dossierquebec.ca/represente-ta-ville?province=on'+(/^en/i.test(document.documentElement.lang)?'&lang=en':'');}maj();m.addEventListener('toggle',function(){if(m.open)maj();});document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
+    </div>
+    <nav class="onglets onglets-ville" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="actif">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="">Lexicon</a>
+    </nav>
+    <div class="controles">
+      <div class="groupe-taille">
+        <button type="button" data-action="moins" aria-label="A−">A−</button>
+        <span class="niveau-taille" data-role="zoom">100%</span>
+        <button type="button" data-action="plus" aria-label="A+">A+</button>
+      </div>
+      <button type="button" class="bouton-theme" data-action="theme" data-i18n-title="entete.theme" title="Theme" aria-label="Theme">
+        <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+      </button>
+      <button type="button" data-action="langue" data-i18n="entete.langue">Français</button>
+    </div>
+  </div>
+</header>
+
+
+<main class="colonne">
+  <p class="sur-titre" data-i18n="ottawa.surAccueil">City of Ottawa · an unofficial citizen file</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreAccueil">Ottawa, decision by decision</h1>
+  <div class="encadre" data-i18n-html="ottawa.introAccueil"><b>Unofficial, and new.</b> Everything here comes from what the City of Ottawa publishes: its minutes, its open data. Nothing is invented; every item links back to its source.</div>
+  <section data-vue="ottawaAccueil"></section>
+</main>
+
+
+
+
+<footer class="pied pied-ville">
+  <div class="colonne">
+    <p data-i18n-html="ottawa.piedTexte">Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City's original document prevails. <a href="/ottawa/sources">Sources</a>.</p>
+    <p class="pied-ville-liens" data-i18n-html="ottawa.piedLiens"><a href="/">DossierOntario: the Legislative Assembly in plain language</a> · <a href="/rules">The rules of the site</a> · <a href="/ottawa/sources">Sources</a> · <a href="https://ottawa.ca/en" target="_blank" rel="noopener">City of Ottawa site ↗</a> · A project by <a href="https://www.dafrsolution.com/en" target="_blank" rel="noopener">DAFR Solution</a></p>
+  </div>
+</footer>
+
+<!-- Bandeau des témoins (cookies) : Google Analytics n'en pose aucun avant un « oui ». -->
+<div class="bandeau-temoins" data-role="temoins" hidden>
+  <p data-i18n="temoins.texte">This site uses Google Analytics cookies to count visits. Nothing is set unless you accept.</p>
+  <div class="bandeau-temoins-boutons">
+    <button type="button" class="filtre" data-temoins="non" data-i18n="temoins.non">Refuse</button>
+    <button type="button" class="filtre actif" data-temoins="oui" data-i18n="temoins.oui">Accept</button>
+  </div>
+</div>
+
+<button class="haut-de-page" data-role="haut" data-i18n-title="haut.titre" title="Back to top" aria-label="Back to top" hidden>↑</button>
+<!-- Vercel Web Analytics, comme DQ : sans témoin (cookie), sans donnée personnelle. -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

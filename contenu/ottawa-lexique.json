@@ -1,0 +1,283 @@
+{
+  "_note": "Le lexique municipal d'Ottawa : les mots du conseil et de ses comités, expliqués avec des mots de tous les jours. Les explications sont les nôtres, pas celles de la Ville. Écrit le 15 nov. 2026 à partir de ce qu'on lit dans les procès-verbaux.",
+  "source": {
+    "en": "https://ottawa.ca/en/city-hall/mayor-and-city-councillors/city-council",
+    "fr": "https://ottawa.ca/fr/hotel-de-ville/maire-et-conseillers-municipaux/conseil-municipal"
+  },
+  "groupes": [
+    {
+      "titre": {
+        "en": "How a decision is made",
+        "fr": "Comment une décision se prend"
+      },
+      "entrees": [
+        {
+          "terme": {
+            "en": "City Council",
+            "fr": "Conseil municipal"
+          },
+          "texte": {
+            "en": "The mayor and the 24 ward councillors, meeting together. It is the body that adopts by-laws, the budget and the big decisions.",
+            "fr": "Le maire et les 24 conseillers et conseillères de quartier, réunis. C'est l'organe qui adopte les règlements, le budget et les grandes décisions."
+          }
+        },
+        {
+          "terme": {
+            "en": "Standing committee",
+            "fr": "Comité permanent"
+          },
+          "texte": {
+            "en": "A smaller group of councillors that studies one field (planning and housing, transit, finance, audit…) before Council. It hears the public, debates and recommends. Most decisions are shaped there.",
+            "fr": "Un plus petit groupe de conseillers qui étudie un domaine (planification et logement, transport en commun, finances, vérification…) avant le Conseil. Il entend le public, débat et recommande. La plupart des décisions se dessinent là."
+          }
+        },
+        {
+          "terme": {
+            "en": "Committee recommendation",
+            "fr": "Recommandation du comité"
+          },
+          "texte": {
+            "en": "What a committee asks Council to do. When Council “carries” the item, the recommendation becomes the decision. “As amended” means Council or the committee changed the wording first.",
+            "fr": "Ce qu'un comité demande au Conseil de faire. Quand le Conseil « adopte » le point, la recommandation devient la décision. « Telle que modifiée » veut dire que le comité ou le Conseil a changé le texte avant."
+          }
+        },
+        {
+          "terme": {
+            "en": "Motion",
+            "fr": "Motion"
+          },
+          "texte": {
+            "en": "A proposal put to a vote, moved by one member and seconded by another. Ottawa numbers them (2026-88-01: meeting 88, first motion). A motion can add, change or delay a decision.",
+            "fr": "Une proposition mise aux voix, proposée par un membre et appuyée par un autre. Ottawa les numérote (2026-88-01 : séance 88, première motion). Une motion peut ajouter, changer ou retarder une décision."
+          }
+        },
+        {
+          "terme": {
+            "en": "Carried / Lost",
+            "fr": "Adopté / Rejeté"
+          },
+          "texte": {
+            "en": "Carried: the majority said yes. Lost: the majority said no. When there is no recorded vote, the minutes keep only the result, not who voted how.",
+            "fr": "Adopté : la majorité a dit oui. Rejeté : la majorité a dit non. Sans vote nominal, le procès-verbal ne garde que le résultat. On ne sait pas qui a voté comment."
+          }
+        },
+        {
+          "terme": {
+            "en": "Received",
+            "fr": "Reçu"
+          },
+          "texte": {
+            "en": "Council took note of a report without deciding anything: an audit, an update, a plan “for information”. Nothing is approved and nothing is refused.",
+            "fr": "Le Conseil a pris acte d'un rapport sans rien décider : une vérification, un bilan, un plan « pour information ». Rien n'est approuvé, rien n'est refusé."
+          }
+        },
+        {
+          "terme": {
+            "en": "Recorded vote",
+            "fr": "Vote nominal"
+          },
+          "texte": {
+            "en": "A vote where each member’s name is written down with a yes or a no. It is how the minutes show how your councillor voted.",
+            "fr": "Un vote où le nom de chaque membre est consigné avec un oui ou un non. C'est ainsi que le procès-verbal montre comment votre conseiller ou conseillère a voté."
+          }
+        },
+        {
+          "terme": {
+            "en": "Dissent",
+            "fr": "Dissidence"
+          },
+          "texte": {
+            "en": "On a vote without a recorded tally, the minutes can note that a member disagreed. “Carried with dissent from Councillor X” means it passed and X was against.",
+            "fr": "Sur un vote sans décompte nominal, le procès-verbal peut noter le désaccord d'un membre. « Adopté avec la dissidence du conseiller X » : c'est passé et X était contre."
+          }
+        },
+        {
+          "terme": {
+            "en": "Direction to staff",
+            "fr": "Directive au personnel"
+          },
+          "texte": {
+            "en": "An instruction a member gives to City staff during a meeting, recorded in the minutes: study something, report back, add an option. It is not a by-law.",
+            "fr": "Une consigne qu'un membre donne au personnel de la Ville pendant la séance, consignée au procès-verbal : étudier quelque chose, faire rapport, ajouter une option. Ce n'est pas un règlement."
+          }
+        }
+      ]
+    },
+    {
+      "titre": {
+        "en": "What the words on the agenda mean",
+        "fr": "Ce que veulent dire les mots de l'ordre du jour"
+      },
+      "entrees": [
+        {
+          "terme": {
+            "en": "By-law",
+            "fr": "Règlement municipal"
+          },
+          "texte": {
+            "en": "A municipal law. Zoning, parking, noise, fees, taxes: all by-laws. Council often adopts several by-laws together at the end of a meeting.",
+            "fr": "Une loi municipale. Zonage, stationnement, bruit, frais, taxes : tous des règlements. Le Conseil adopte souvent plusieurs règlements ensemble à la fin de la séance."
+          }
+        },
+        {
+          "terme": {
+            "en": "Zoning by-law amendment",
+            "fr": "Modification au règlement de zonage"
+          },
+          "texte": {
+            "en": "A change to what can be built on a given piece of land: height, number of homes, use. Most planning decisions are this. The address and ward are in the title.",
+            "fr": "Un changement à ce qu'on peut construire sur un terrain donné : hauteur, nombre de logements, usage. La plupart des décisions d'urbanisme sont de ce type. L'adresse et le quartier sont dans le titre."
+          }
+        },
+        {
+          "terme": {
+            "en": "Official Plan",
+            "fr": "Plan officiel"
+          },
+          "texte": {
+            "en": "The City’s long-term map of where and how Ottawa should grow. A zoning change that contradicts it needs an Official Plan amendment too.",
+            "fr": "La carte à long terme de la Ville : où et comment Ottawa doit grandir. Un changement de zonage qui le contredit demande aussi une modification au Plan officiel."
+          }
+        },
+        {
+          "terme": {
+            "en": "Heritage designation (Part IV)",
+            "fr": "Désignation patrimoniale (partie IV)"
+          },
+          "texte": {
+            "en": "Protecting a building under Part IV of the Ontario Heritage Act. Changes to a designated building then need the City’s approval under that Act.",
+            "fr": "Protéger un bâtiment en vertu de la partie IV de la Loi sur le patrimoine de l'Ontario. Les changements à un bâtiment désigné demandent alors l'accord de la Ville selon cette loi."
+          }
+        },
+        {
+          "terme": {
+            "en": "Bulk consent agenda",
+            "fr": "Points de consentement en bloc"
+          },
+          "texte": {
+            "en": "Items nobody wants to debate, adopted together in a single vote. Any member can pull one out to discuss it. Many routine decisions pass this way.",
+            "fr": "Des points que personne ne veut débattre, adoptés ensemble en un seul vote. N'importe quel membre peut en retirer un pour en discuter. Beaucoup de décisions courantes passent ainsi."
+          }
+        },
+        {
+          "terme": {
+            "en": "In camera",
+            "fr": "Huis clos"
+          },
+          "texte": {
+            "en": "A part of the meeting closed to the public, for subjects the law allows, such as legal advice, land deals or personnel. The minutes name the subject, not the content.",
+            "fr": "Une partie de la séance fermée au public, pour des sujets que la loi permet, comme les avis juridiques, les transactions immobilières ou le personnel. Le procès-verbal nomme le sujet, pas le contenu."
+          }
+        },
+        {
+          "terme": {
+            "en": "Notice of motion",
+            "fr": "Avis de motion"
+          },
+          "texte": {
+            "en": "A member announces a motion for the next meeting, so everyone can read it first. Nothing is decided yet.",
+            "fr": "Un membre annonce une motion pour la prochaine séance, pour que tout le monde puisse la lire d'abord. Rien n'est encore décidé."
+          }
+        },
+        {
+          "terme": {
+            "en": "Suspension of the Rules",
+            "fr": "Suspension des règles"
+          },
+          "texte": {
+            "en": "Council agrees to set aside its usual procedure rules, for example the notice period, to decide something right away. The minutes record the motion that does it.",
+            "fr": "Le Conseil accepte de mettre de côté ses règles de procédure habituelles, par exemple le délai d'avis, pour décider quelque chose tout de suite. Le procès-verbal consigne la motion qui le permet."
+          }
+        },
+        {
+          "terme": {
+            "en": "Inquiry",
+            "fr": "Demande de renseignements"
+          },
+          "texte": {
+            "en": "A written question from a member to staff (OCC-2026-18…). The answer comes back at a later meeting, as a memo. It is information, not a decision.",
+            "fr": "Une question écrite d'un membre au personnel (OCC-2026-18…). La réponse revient à une séance suivante, sous forme de note. C'est de l'information, pas une décision."
+          }
+        },
+        {
+          "terme": {
+            "en": "File number and ward",
+            "fr": "Numéro de dossier et quartier"
+          },
+          "texte": {
+            "en": "“ACS2026-PDB-RHU-0049 – Kanata North (Ward 4)”: the department’s file number, then the ward the decision touches. “City-wide” means it touches everyone.",
+            "fr": "« ACS2026-PDB-RHU-0049 – Kanata-Nord (quartier 4) » : le numéro de dossier du service, puis le quartier que la décision touche. « City-wide » (« À l'échelle de la ville » en français) : toute la ville."
+          }
+        }
+      ]
+    },
+    {
+      "titre": {
+        "en": "Money",
+        "fr": "L'argent"
+      },
+      "entrees": [
+        {
+          "terme": {
+            "en": "Operating budget",
+            "fr": "Budget de fonctionnement"
+          },
+          "texte": {
+            "en": "The money for running the City every day: salaries, buses, snow, libraries. It is paid mostly by property taxes, fees and transfers from other governments. Our reading of the 2026 draft is on the Budget tab.",
+            "fr": "L'argent pour faire tourner la Ville au jour le jour : salaires, autobus, déneigement, bibliothèques. Il est payé surtout par les taxes foncières, les frais et les transferts des autres gouvernements. Notre lecture du budget provisoire 2026 est dans l'onglet Budget."
+          }
+        },
+        {
+          "terme": {
+            "en": "Capital budget",
+            "fr": "Budget d'immobilisations"
+          },
+          "texte": {
+            "en": "The money for building and repairing things that last: roads, pipes, arenas, buses. Often paid with debt and reserves rather than this year’s taxes.",
+            "fr": "L'argent pour construire et réparer ce qui dure : routes, conduites, arénas, autobus. Souvent payé par de la dette et des réserves plutôt que par les taxes de l'année."
+          }
+        },
+        {
+          "terme": {
+            "en": "Current Value Assessment (CVA)",
+            "fr": "Évaluation foncière (MPAC)"
+          },
+          "texte": {
+            "en": "What the province’s assessment agency (MPAC) says your property is worth. Your municipal tax is this value times the City’s tax rate.",
+            "fr": "Ce que l'agence d'évaluation de la province (MPAC) dit que votre propriété vaut. Votre taxe municipale, c'est cette valeur fois le taux de la Ville."
+          }
+        },
+        {
+          "terme": {
+            "en": "Reserve fund",
+            "fr": "Fonds de réserve"
+          },
+          "texte": {
+            "en": "Money set aside for a purpose: stabilize taxes, replace buses, cover a bad winter. The budget shows each reserve’s opening and closing balance.",
+            "fr": "De l'argent mis de côté pour un but : stabiliser les taxes, remplacer des autobus, couvrir un hiver difficile. Le budget montre le solde d'ouverture et de fermeture de chaque réserve."
+          }
+        },
+        {
+          "terme": {
+            "en": "Delegation of authority",
+            "fr": "Délégation de pouvoir"
+          },
+          "texte": {
+            "en": "Council lets staff sign contracts and make routine decisions without a vote, within limits set by by-law. The City publishes the contracts of $25,000 or more awarded this way. That list is our Contracts tab.",
+            "fr": "Le Conseil laisse le personnel signer des contrats et prendre des décisions courantes sans vote, dans des limites fixées par règlement. La Ville publie les contrats de 25 000 $ et plus octroyés ainsi. Cette liste, c'est notre onglet Contrats."
+          }
+        },
+        {
+          "terme": {
+            "en": "Non-competitive contract",
+            "fr": "Contrat sans appel d'offres"
+          },
+          "texte": {
+            "en": "A contract awarded without a competitive process, with a written reason: only one supplier can do it, an emergency, a follow-on to an existing contract. The reason is in the City’s list.",
+            "fr": "Un contrat octroyé sans appel d'offres, avec une raison écrite : un seul fournisseur peut le faire, une urgence, la suite d'un contrat existant. La raison est dans la liste de la Ville."
+          }
+        }
+      ]
+    }
+  ]
+}

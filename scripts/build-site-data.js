@@ -584,6 +584,151 @@ function main() {
         }
       : null,
   });
+
+  // ------------------------------------------------------------------ Ottawa : le reste du volet
+  // (scrapers/ottawa-donnees.js) — un fichier par onglet, pour qu'une page ne charge que ce
+  // qu'elle affiche ; les travaux, parcs et permis par quartier ; les adresses par lettre.
+  const ville = lireJson('data/ottawa-ville.json');
+  const enBref = lireJson('data/ottawa-en-bref.json');
+  if (ville) {
+    const pres = Object.fromEntries(ville.presences.map((p) => [p.nom, p]));
+    ecrire('ottawa-conseil', {
+      lus: ville.lus, licence: ville.licence, presencesNote: ville.presencesNote, sources: ville.sources,
+      elus: ville.elus.map((e) => ({ ...e, presence: pres[`${e.prenom} ${e.nom}`.trim()] ?? null })),
+      quartiers: ville.quartiers.map(({ geometrie, ...q }) => q),
+    });
+    ecrire('ottawa-quartiers', { type: 'FeatureCollection', features: ville.quartiers.map((q) => ({ type: 'Feature', properties: { numero: q.numero, nomEn: q.nomEn, nomFr: q.nomFr }, geometry: q.geometrie })) });
+    ecrire('ottawa-budget', { lus: ville.lus, licence: ville.licence, taxes: ville.taxes, budget: ville.budget });
+    ecrire('ottawa-contrats', {
+      lus: ville.lus, licence: ville.licence, nombre: ville.contrats.length,
+      // Tableaux positionnels (comme les contrats de DQ) : contrat, service, description, type, montant, fournisseur, motif non concurrentiel, période, consultation.
+      c: ville.contrats.map((c) => [c.contrat, c.service, (c.description ?? '').slice(0, 300), c.type, c.montant, c.fournisseur, c.motifNonConcurrentiel, c.periode, c.consultation]),
+    });
+    mkdirSync(`${SORTIE}/ottawa-quartier`, { recursive: true });
+    for (const q of ville.quartiers) {
+      const n = q.numero;
+      writeFileSync(`${SORTIE}/ottawa-quartier/${n}.json`, JSON.stringify({
+        numero: n,
+        travaux: ville.travaux.filter((x) => x.quartier === n).map((x) => [x.genre, x.typeEn, x.typeFr, x.statutEn, x.statutFr, x.departEn, x.departFr, x.page, x.pageFr, x.circulation]),
+        parcs: ville.parcs.filter((x) => x.quartier === n).map((x) => [x.nomEn, x.nomFr, x.adresseEn, x.adresseFr, x.typeEn, x.typeFr, x.chiens, x.accessible]),
+        permis: ville.permis.filter((x) => x.quartier === n).sort((a, b) => (b.date ?? '').localeCompare(a.date ?? '')).map((x) => [x.date, x.adresse, x.batiment, (x.description ?? '').slice(0, 200), x.logements, x.valeur, x.numero]),
+      }));
+    }
+    console.log(`${SORTIE}/ottawa-quartier/ (${ville.quartiers.length} fichiers)`);
+    ecrire('ottawa-pres', {
+      lus: ville.lus, licence: ville.licence,
+      totaux: { travaux: ville.travaux.length, parcs: ville.parcs.length, permis: ville.permis.length, permisValeur: ville.permis.reduce((s, p) => s + (p.valeur ?? 0), 0), permisLogements: ville.permis.reduce((s, p) => s + (p.logements ?? 0), 0) },
+      parQuartier: ville.quartiers.map((q) => ({ numero: q.numero, travaux: ville.travaux.filter((x) => x.quartier === q.numero).length, parcs: ville.parcs.filter((x) => x.quartier === q.numero).length, permis: ville.permis.filter((x) => x.quartier === q.numero).length })),
+    });
+    const adresses = lireJson('data/ottawa-adresses.json');
+    if (adresses) {
+      mkdirSync(`${SORTIE}/ottawa-adresses`, { recursive: true });
+      const parLettre = {};
+      for (const [rue, v] of Object.entries(adresses.rues)) {
+        const l = (rue[0] ?? '#').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        const cle = /[A-Z]/.test(l) ? l : '0';
+        (parLettre[cle] ??= {})[rue] = v;
+      }
+      for (const [l, rues] of Object.entries(parLettre)) writeFileSync(`${SORTIE}/ottawa-adresses/${l}.json`, JSON.stringify(rues));
+      const parFsa = {};
+      for (const [code, q] of Object.entries(adresses.codesPostaux)) (parFsa[code.slice(0, 3)] ??= {})[code] = q;
+      for (const [fsa, codes] of Object.entries(parFsa)) writeFileSync(`${SORTIE}/ottawa-adresses/cp-${fsa}.json`, JSON.stringify(codes));
+      console.log(`${SORTIE}/ottawa-adresses/ (${Object.keys(parLettre).length} lettres, ${Object.keys(parFsa).length} RTA)`);
+    }
+  }
+
+  // ------------------------------------------------------------------ Ottawa (volet de ville)
+  // Les deux derniers mois du conseil municipal d'Ottawa et de ses comités (scrapers/ottawa.js),
+  // avec les résumés en clair (scrapers/ottawa-resumes.js). Seules les DÉCISIONS sortent ici :
+  // les points de procédure restent dans data/ottawa.json pour qui veut tout lire.
+  const ottawa = lireJson('data/ottawa.json');
+  const ottawaResumes = lireJson('data/ottawa-resumes.json');
+  if (ottawa) {
+    const puce = (cle, langue) => {
+      const r = ottawaResumes?.resumes?.[cle]?.[langue];
+      return r && !r.sansContenu && r.puces?.length ? r.puces : null;
+    };
+    // « En bref » (comme scripts/resumes-seances.js de DQ) : les points marquants d'une séance
+    // sont choisis SANS IA. Les décisions résumées d'abord, puis le montant lu dans le titre, le
+    // vote divisé, le règlement. Trois au plus. Les votes nominaux de la séance, avec le décompte.
+    const montantTitre = (t) => {
+      const m = /\$\s?(\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?\s*(million|billion|M)?/i.exec(t ?? '');
+      if (!m) return 0;
+      const n = Number(m[1].replace(/,/g, ''));
+      return /billion/i.test(m[2] ?? '') ? n * 1e9 : m[2] ? n * 1e6 : n;
+    };
+    const estDivise = (p) => Boolean(p.motions?.some((m) => m.vote)) || /\(\d+ to \d+\)|lost|rejet/i.test(p.resultatEn ?? '');
+    const pointsMarquants = (s) => {
+      const score = (p) => (puce(`${s.id}|${p.numero}`, 'en') ? 1000 : 0)
+        + Math.log10(1 + montantTitre(p.titreEn)) * 50
+        + (estDivise(p) ? 200 : 0)
+        + (/by-law|règlement/i.test(p.titreEn ?? '') && !/notice of motion/i.test(p.titreEn ?? '') ? 120 : 0);
+      return s.points.filter((p) => p.decision && !/^(adjournment|confirmation by-law|motion to adopt|roll call|declarations of interest|confirmation of minutes|inquiries|disposition of items|notices of motion|notices and meeting information)/i.test(p.titreEn ?? ''))
+        .map((p) => ({ p, n: score(p) })).sort((a, b) => b.n - a.n).slice(0, 3)
+        .map(({ p }) => {
+          const m = /\$\s?\d[\d,]*(?:\.\d+)?(?:\s*(?:million|billion))?/i.exec(p.titreEn ?? '')?.[0] ?? null;
+          return { numero: p.numero, titreEn: p.titreEn, titreFr: p.titreFr, montantEn: m, montantFr: m ? m.replace(/^\$\s?/, '').replace(/,/g, ' ').replace(/ million/i, ' M').replace(/ billion/i, ' G') + ' $' : null, divise: estDivise(p) };
+        });
+    };
+    const votesSeance = (s) => s.points.filter((p) => p.decision).flatMap((p) => {
+      const v = p.motions?.find((m) => m.vote)?.vote;
+      return v ? [{ numero: p.numero, titreEn: p.titreEn, titreFr: p.titreFr, pour: v.pour?.length ?? 0, contre: v.contre?.length ?? 0 }] : [];
+    });
+    ecrire('ottawa', {
+      lus: ottawa.lus,
+      fenetre: ottawa.fenetre,
+      source: ottawa.source,
+      conditions: ottawa.conditions,
+      avertissementEn: ottawaResumes?.avertissementEn ?? null,
+      avertissementFr: ottawaResumes?.avertissementFr ?? null,
+      nombreDecisions: ottawa.nombreDecisions,
+      seances: [...ottawa.seances]
+        .sort((a, b) => b.date.localeCompare(a.date))
+        .map((s) => ({
+          id: s.id,
+          nomEn: s.nomEn,
+          nomFr: s.nomFr,
+          date: s.date,
+          numeroSeance: s.numeroSeance,
+          urlEn: s.urlEn,
+          urlFr: s.urlFr,
+          video: s.video,
+          enBrefEn: enBref?.enBref?.[s.id]?.en?.phrase ?? null,
+          enBrefFr: enBref?.enBref?.[s.id]?.fr?.phrase ?? null,
+          motsClesEn: enBref?.enBref?.[s.id]?.en?.motsCles ?? [],
+          motsClesFr: enBref?.enBref?.[s.id]?.fr?.motsCles ?? [],
+          points: pointsMarquants(s),
+          votes: votesSeance(s),
+          decisions: s.points
+            .filter((p) => p.decision)
+            .map((p) => {
+              const cle = `${s.id}|${p.numero}`;
+              const vote = p.motions.find((m) => m.vote)?.vote ?? null;
+              return {
+                numero: p.numero,
+                sectionEn: p.sectionEn,
+                sectionFr: p.sectionFr,
+                titreEn: p.titreEn,
+                titreFr: p.titreFr,
+                dossier: p.dossier ?? null,
+                quartier: p.quartier ?? null,
+                resultatEn: p.resultatEn,
+                resultatFr: p.resultatFr,
+                dissidences: p.dissidences,
+                vote,
+                motions: p.motions.filter((m) => m.numero || m.propose).map((m) => ({ numero: m.numero, propose: m.propose, appuye: m.appuye })),
+                texteEn: (p.texteEn ?? '').slice(0, 2500),
+                texteFr: (p.texteFr ?? '').slice(0, 2500),
+                compteRenduEn: (p.compteRenduEn ?? '').slice(0, 1500) || null,
+                compteRenduFr: (p.compteRenduFr ?? '').slice(0, 1500) || null,
+                pieces: p.pieces,
+                resumeEn: puce(cle, 'en'),
+                resumeFr: puce(cle, 'fr'),
+              };
+            }),
+        })),
+    });
+  }
 }
 
 // ------------------------------------------------------------------ archives

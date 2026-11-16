@@ -20,6 +20,13 @@
     "resumes": "node scrapers/resumes.js",
     "resumes:estimation": "node scrapers/resumes.js --dry-run",
     "scrape:seances": "node scrapers/seances.js",
+    "ottawa:seances": "node scrapers/ottawa.js",
+    "ottawa:resumes": "node scrapers/ottawa-resumes.js",
+    "ottawa:en-bref": "node scrapers/ottawa-en-bref.js",
+    "ottawa:donnees": "node scrapers/ottawa-donnees.js --sans-adresses",
+    "ottawa:adresses": "node scrapers/ottawa-donnees.js",
+    "ottawa:og": "node scripts/og-ottawa.js",
+    "ottawa": "npm run ottawa:seances && npm run ottawa:resumes && npm run ottawa:en-bref && npm run ottawa:donnees && npm run build",
     "scrape:petitions": "node scrapers/petitions.js"
   },
   "dependencies": {

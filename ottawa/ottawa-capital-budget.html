@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dossier:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0N4BYF7Y2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0N4BYF7Y2Z', { content_group: 'Ottawa' });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-fr="Budget et taxes d’Ottawa | DossierOntario">Ottawa budget and taxes | DossierOntario</title>
+<meta name="description" content="The City of Ottawa’s 2026 budget from its open data: operating spending by committee, revenue, capital spending and property taxes by ward." data-fr-content="Le budget 2026 de la Ville d’Ottawa d’après ses données ouvertes : dépenses de fonctionnement par comité, revenus, immobilisations et taxes foncières par quartier.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://dossierontario.ca/ottawa/ottawa-capital-budget">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DossierOntario">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Ottawa budget and taxes | DossierOntario">
+<meta property="og:description" content="The City of Ottawa’s 2026 budget from its open data: operating spending by committee, revenue, capital spending and property taxes by ward.">
+<meta property="og:url" content="https://dossierontario.ca/ottawa/ottawa-capital-budget">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('dvq:theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'sombre' : 'clair';
+      document.documentElement.dataset.theme = t;
+      var z = parseInt(localStorage.getItem('dossier:zoom'), 10);
+      if (z >= 80 && z <= 150) document.documentElement.style.zoom = z + '%';
+    } catch (e) {}
+  })();
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "DossierOntario", "item": "https://dossierontario.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "City of Ottawa", "item": "https://dossierontario.ca/ottawa/" },
+    { "@type": "ListItem", "position": 3, "name": "Capital budget", "item": "https://dossierontario.ca/ottawa/ottawa-capital-budget" }
+  ]
+}
+</script>
+<script>
+  /* Français choisi (?lang=fr ou dossier:langue) : la page est cachée le temps que assets/langue.js la traduise. */
+  (function () { try { var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('dossier:langue'); if (l === 'fr') { document.documentElement.lang = 'fr'; document.documentElement.classList.add('dvq-fr'); } } catch (e) {} })();
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="budget" data-ville="ottawa">
+<header>
+  <div class="contenu">
+    <div class="titre-ligne">
+      <a href="./"><p class="logo-titre">Dossier<span class="marque">Ottawa</span></p></a><a class="lien-dq" href="/" title="DossierOntario: the Legislative Assembly of Ontario in plain language" aria-label="DossierOntario: the Legislative Assembly of Ontario in plain language" data-fr-title="DossierOntario : l’Assemblée législative de l’Ontario en clair" data-fr-aria-label="DossierOntario : l’Assemblée législative de l’Ontario en clair"></a>
+    </div>
+    <p class="sous-titre" data-fr="Les décisions du conseil municipal d’Ottawa, rendues lisibles. Des documents publics : les procès-verbaux du greffe et les données ouvertes de la Ville d’Ottawa.">
+      Ottawa City Council decisions, made readable. Public documents: the City Clerk’s minutes
+      and the City of Ottawa’s open data.
+    </p>
+    <nav>
+      <a href="./" data-fr="Accueil">Home</a>
+      <a href="decisions-of-ottawa-city-council" data-fr="Décisions">Decisions</a>
+      <a href="ottawa-city-council" data-fr="Conseil municipal">City Council</a>
+      <a href="near-me-in-ottawa" data-fr="Près de chez moi">Near me</a>
+      <a href="contracts-of-the-city-of-ottawa" data-fr="Contrats">Contracts</a>
+      <a href="ottawa-capital-budget" aria-current="page" data-fr="Budget">Budget</a>
+      <a href="ottawa-council-glossary" data-fr="Lexique">Glossary</a>
+      <div class="outils">
+        <div class="taille-texte" role="group" aria-label="Text size" data-fr-aria-label="Taille du texte">
+          <button type="button" id="texte-moins" aria-label="Smaller text" data-fr-aria-label="Réduire le texte">A−</button>
+          <span id="texte-pct" aria-live="polite">100%</span>
+          <button type="button" id="texte-plus" aria-label="Larger text" data-fr-aria-label="Agrandir le texte">A+</button>
+        </div>
+        <button type="button" id="bascule-theme" class="bascule-theme" aria-pressed="false"
+                title="Switch to dark theme" aria-label="Switch to dark theme"></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="contenu prose">
+  <div id="chargement" class="avis" hidden data-fr="Chargement des données…"></div>
+  <h1 class="page" data-fr="Budget et taxes d’Ottawa">Ottawa budget and taxes</h1>
+  <p data-fr="Ce que la Ville d’Ottawa prévoit de &lt;strong&gt;dépenser, percevoir et construire&lt;/strong&gt; en 2026 et ce que chaque quartier paie en taxes foncières. Les chiffres sont ceux de la Ville, tirés de ses données ouvertes (explorateur du budget préliminaire 2026, taxes par quartier).">What the City of Ottawa plans to <strong>spend, collect and build</strong> in 2026 and what each ward pays in property taxes. The figures are the City’s own, from its open data (2026 draft budget explorer, taxes by ward).</p>
+  <div id="chiffres" class="grille-chiffres"></div>
+  <h2 id="titre-quartier" data-fr="Votre quartier">Your ward</h2>
+  <p class="compte"><label for="choix-quartier" data-fr="Choisissez votre quartier :">Pick your ward:</label> <select id="choix-quartier"></select> <a href="near-me-in-ottawa" data-fr="Je ne connais pas mon quartier →">I don’t know my ward →</a></p>
+  <div id="quartier" class="grille-chiffres"></div>
+  <h2 id="titre-repartition" data-fr="Où va l’argent du fonctionnement en 2026">Where the operating money goes in 2026</h2>
+  <p id="intro-repartition" class="compte"></p>
+  <div id="repartition"></div>
+  <h2 data-fr="D’où vient l’argent">Where the money comes from</h2>
+  <p id="intro-revenus" class="compte"></p>
+  <div id="revenus"></div>
+  <h2 data-fr="Ce que la Ville construit en 2026">What the City builds in 2026</h2>
+  <p id="intro-immo" class="compte"></p>
+  <div id="immo"></div>
+  <h2 data-fr="Les taxes foncières, quartier par quartier">Property taxes, ward by ward</h2>
+  <p id="intro-taxes" class="compte"></p>
+  <div id="taxes"></div>
+  <h2 data-fr="Comment lire cette page">How to read this page</h2>
+  <ul>
+    <li data-fr="&lt;strong&gt;L’unité.&lt;/strong&gt; Les fichiers budgétaires de la Ville ne nomment pas leur unité. Leur somme (fonctionnement 2026 : 5 220 570) correspond à un budget d’environ 5,2 milliards de dollars : les montants sont donc lus en milliers de dollars. C’est notre déduction, pas une mention officielle."><strong>The unit.</strong> The City’s budget files do not name their unit. Their sum (operating 2026: 5,220,570) matches a budget of about $5.2 billion, so the amounts are read as thousands of dollars. That is our deduction, not an official statement.</li>
+    <li data-fr="&lt;strong&gt;Le budget de fonctionnement&lt;/strong&gt; paie les services courants (transport en commun, police, collecte, parcs, salaires). &lt;strong&gt;Le budget d’immobilisations&lt;/strong&gt; paie ce qui se construit ou s’achète. Les deux sont distincts."><strong>The operating budget</strong> pays for day-to-day services (transit, police, waste, parks, salaries). <strong>The capital budget</strong> pays for what is built or bought. They are separate.</li>
+    <li data-fr="&lt;strong&gt;Les taxes par quartier&lt;/strong&gt; sont le total des taxes foncières que la Ville facture dans chaque quartier, avec la valeur foncière totale. Cette page n’estime pas votre propre compte."><strong>Taxes by ward</strong> are the total property taxes the City bills in each ward, with the total assessed value. This page does not estimate your own bill.</li>
+  </ul>
+  <h2 data-fr="Sources">Sources</h2>
+  <ul id="sources-budget"></ul>
+  <p id="maj" class="compte"></p>
+</main>
+<style>
+  .grille-chiffres { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 20px 0; }
+  .grille-chiffres > div { background: var(--carte); border: var(--bordure-carte); border-radius: var(--rayon); padding: 12px 14px; }
+  .grille-chiffres strong { display: block; font-size: 1.5rem; line-height: 1.2; }
+  .grille-chiffres span { color: var(--doux); font-size: .9rem; }
+  .barre-service { margin: 10px 0; }
+  .barre-service .tete { display: flex; justify-content: space-between; gap: 12px; font-size: .95rem; }
+  .barre-service .tete strong { font-weight: 600; }
+  .barre-service .piste { height: 10px; background: var(--fond-2); border-radius: 5px; margin-top: 4px; overflow: hidden; }
+  .barre-service .rempli { height: 100%; background: var(--accent); border-radius: 5px; }
+  .barre-service details { margin-top: 4px; }
+  .barre-service summary { cursor: pointer; font-size: .85rem; color: var(--doux); }
+  .barre-service ul { margin: 4px 0 0; padding-left: 18px; font-size: .9rem; }
+  .barre-service li { margin: 3px 0; }
+  .barre-service li .compte { display: inline; margin-left: 4px; }
+  .tableau-defile { overflow-x: auto; }
+  .tableau-defile table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  .tableau-defile th, .tableau-defile td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--ligne); vertical-align: top; }
+  .tableau-defile .n { text-align: right; white-space: nowrap; }
+</style>
+<script type="module">
+  // Copie de la page Budget de Vancouver (15 nov. 2026) : les mêmes barres, avec ce qu'Ottawa publie —
+  // le fonctionnement par comité, les revenus, les immobilisations, et les taxes par quartier.
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  import { EN, tr } from './assets/langue.js';
+  const LOC = EN ? 'en-CA' : 'fr-CA';
+  const nf = new Intl.NumberFormat(LOC, { maximumFractionDigits: 0 });
+  const argent = (n) => (EN ? '$' + nf.format(Math.round(n)) : nf.format(Math.round(n)) + ' $');
+  const m1 = (n) => new Intl.NumberFormat(LOC, { maximumFractionDigits: 1 }).format(n / 1e6);
+  const g2 = (n) => new Intl.NumberFormat(LOC, { maximumFractionDigits: 2 }).format(n / 1e9);
+  const millions = (n) => (n >= 1e9 ? (EN ? '$' + g2(n) + ' B' : g2(n) + ' G$') : EN ? '$' + m1(n) + ' M' : m1(n) + ' M$');
+  const pct = (a, b) => (b ? new Intl.NumberFormat(LOC, { maximumFractionDigits: 1 }).format((100 * a) / b) : '0') + (EN ? '%' : ' %');
+  const L = (o, cle) => (EN ? o[cle + 'En'] : o[cle + 'Fr'] ?? o[cle + 'En']);
+  const d = await (await fetch('data/budget.json')).json().catch(() => null);
+  if (!d) {
+    $('#chargement').hidden = false;
+    $('#chargement').innerHTML = tr('Les données ne sont pas disponibles pour l’instant.', 'Data is not available right now.');
+    throw new Error('budget.json absent');
+  }
+  const K = 1000;   // milliers de dollars (voir « Comment lire cette page »)
+  const B = d.budget;
+  const derniere = (l) => Math.max(...l.map((x) => x.annee).filter(Number.isFinite));
+  const an = derniere(B.fonctionnementDepenses);
+  const fonc = B.fonctionnementDepenses.filter((x) => x.annee === an).sort((a, b) => b.total - a.total);
+  const totalFonc = fonc.reduce((s, x) => s + x.total, 0) * K;
+  const anR = derniere(B.fonctionnementRevenus);
+  const rev = B.fonctionnementRevenus.filter((x) => x.annee === anR).sort((a, b) => b.total - a.total);
+  const totalRev = rev.reduce((s, x) => s + x.total, 0) * K;
+  const anI = derniere(B.immobilisationsParComite);
+  const immo = B.immobilisationsParComite.filter((x) => x.annee === anI).sort((a, b) => b.total - a.total);
+  const totalImmo = immo.reduce((s, x) => s + x.total, 0) * K;
+  const anT = Math.max(...d.taxes.flatMap((q) => Object.keys(q.annees).map(Number)));
+  const totalTaxes = d.taxes.reduce((s, q) => s + (q.annees[anT]?.taxes ?? 0), 0);
+  $('#chiffres').innerHTML = [
+    [millions(totalFonc), tr(`budget de fonctionnement, ${an}`, `operating budget, ${an}`)],
+    [millions(totalImmo), tr(`budget d’immobilisations, ${anI}`, `capital budget, ${anI}`)],
+    [millions(totalTaxes), tr(`taxes foncières facturées, ${anT}`, `property taxes billed, ${anT}`)],
+    [nf.format(d.taxes.length), tr('quartiers', 'wards')],
+  ].map(([a, b]) => `<div><strong>${a}</strong><span>${b}</span></div>`).join('');
+  function barre(nom, valeur, part, details = '') {
+    return `<div class="barre-service"><div class="tete"><strong>${esc(nom)}</strong><span>${valeur}</span></div>
+      <div class="piste"><div class="rempli" style="width:${Math.max(1, Math.round(part * 100))}%"></div></div>${details}</div>`;
+  }
+  // Votre quartier : le chiffre de la Ville pour le quartier choisi.
+  const sel = $('#choix-quartier');
+  sel.innerHTML = d.taxes.map((q) => `<option value="${q.quartier}">${q.quartier} · ${esc(L(q, 'nom'))}</option>`).join('');
+  try { const memo = localStorage.getItem('ottawa:quartier'); if (memo) sel.value = memo; } catch {}
+  const montrerQuartier = () => {
+    const q = d.taxes.find((x) => String(x.quartier) === sel.value) ?? d.taxes[0];
+    const a = q.annees[anT], avant = q.annees[anT - 1];
+    $('#quartier').innerHTML = [
+      [millions(a.taxes), tr(`taxes foncières facturées en ${anT}`, `property taxes billed in ${anT}`)],
+      [pct(a.taxes, totalTaxes), tr('part du total de la ville', 'share of the city total')],
+      [millions(a.evaluation), tr('valeur foncière totale', 'total assessed value')],
+      ...(avant ? [[(a.taxes >= avant.taxes ? '+' : '−') + pct(Math.abs(a.taxes - avant.taxes), avant.taxes), tr(`par rapport à ${anT - 1}`, `compared with ${anT - 1}`)]] : []),
+    ].map(([x, y]) => `<div><strong>${x}</strong><span>${y}</span></div>`).join('') + `<p class="compte" style="grid-column:1/-1;margin:0">${esc(L(q, 'secteur'))}</p>`;
+    try { localStorage.setItem('ottawa:quartier', sel.value); } catch {}
+  };
+  sel.addEventListener('change', montrerQuartier);
+  montrerQuartier();
+  // Fonctionnement, par comité, avec les secteurs de services du comité en détail.
+  $('#intro-repartition').textContent = tr(`${millions(totalFonc)} de dépenses de fonctionnement prévues pour ${an}, par comité du conseil. Ouvrez un comité pour voir ses dix plus gros projets d’immobilisations.`, `${millions(totalFonc)} of operating spending planned for ${an}, by Council committee. Open a committee to see its ten largest capital projects.`);
+  const projets = B.projetsImmobilisations ?? [];
+  const sansParenthese = (t) => String(t ?? '').replace(/\s*\(.*\)\s*$/, '').trim();
+  const detailComite = (c) => {
+    const l = projets.filter((p) => sansParenthese(p.comiteEn) === sansParenthese(c.comiteEn)).sort((a, b) => b.total - a.total).slice(0, 10);
+    return l.length ? `<details><summary>${tr('Détail', 'Detail')}</summary><p class="compte" style="margin:6px 0 0">${tr('Les dix plus gros projets d’immobilisations du comité', 'The committee’s ten largest capital projects')}</p><ul>${l.map((p) => `<li>${esc(L(p, 'projet'))} <span class="compte">${millions(p.total * K)}</span></li>`).join('')}</ul></details>` : '';
+  };
+  $('#repartition').innerHTML = fonc.map((c) => barre(L(c, 'comite'), `${millions(c.total * K)} · ${pct(c.total * K, totalFonc)}`, c.total / fonc[0].total, detailComite(c))).join('');
+  $('#intro-revenus').textContent = tr(`Les revenus de fonctionnement prévus pour ${anR}, par source, tels que la Ville les nomme.`, `Operating revenue planned for ${anR}, by source, as the City names them.`);
+  $('#revenus').innerHTML = rev.map((r) => barre(L(r, 'source'), `${millions(r.total * K)} · ${pct(r.total * K, totalRev)}`, r.total / rev[0].total)).join('');
+  const cat = (B.immobilisationsParCategorie ?? []).filter((x) => x.annee === anI);
+  const fin = (B.immobilisationsParFinancement ?? []).filter((x) => x.annee === anI);
+  $('#intro-immo').textContent = tr(`${millions(totalImmo)} d’immobilisations en ${anI}, par comité.${cat.length ? ` Par catégorie : ${cat.map((c) => `${L(c, 'categorie')} ${millions(c.total * K)}`).join(', ')}.` : ''}${fin.length ? ` Financement : ${fin.map((c) => `${L(c, 'source')} ${millions(c.total * K)}`).join(', ')}.` : ''}`, `${millions(totalImmo)} of capital spending in ${anI}, by committee.${cat.length ? ` By category: ${cat.map((c) => `${L(c, 'categorie')} ${millions(c.total * K)}`).join(', ')}.` : ''}${fin.length ? ` Funding: ${fin.map((c) => `${L(c, 'source')} ${millions(c.total * K)}`).join(', ')}.` : ''}`);
+  $('#immo').innerHTML = immo.map((c) => barre(L(c, 'comite'), `${millions(c.total * K)} · ${pct(c.total * K, totalImmo)}`, c.total / immo[0].total)).join('');
+  const parQ = [...d.taxes].sort((a, b) => (b.annees[anT]?.taxes ?? 0) - (a.annees[anT]?.taxes ?? 0));
+  $('#intro-taxes').textContent = tr(`${millions(totalTaxes)} de taxes foncières facturées en ${anT}, quartier par quartier.`, `${millions(totalTaxes)} of property taxes billed in ${anT}, ward by ward.`);
+  $('#taxes').innerHTML = parQ.map((q) => barre(`${q.quartier} · ${L(q, 'nom')}`, `${millions(q.annees[anT].taxes)} · ${pct(q.annees[anT].taxes, totalTaxes)}`, q.annees[anT].taxes / parQ[0].annees[anT].taxes)).join('');
+  const lien = (u, t) => (u ? `<a href="${esc(u)}" target="_blank" rel="noopener">« ${esc(t)} »</a>` : esc(t));
+  $('#sources-budget').innerHTML = [
+    `<li>${lien(d.source, '2026 Draft Budget Explorer - Datasets')}, ${tr('données ouvertes de la Ville d’Ottawa', 'City of Ottawa open data')}.</li>`,
+    `<li>${lien(d.sourceTaxes, 'Taxes by Ward 2022-2026')}, ${tr('données ouvertes de la Ville d’Ottawa', 'City of Ottawa open data')}.</li>`,
+    `<li>${tr('Sous l’', 'Under the ')}<a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener">Open Government Licence – City of Ottawa</a>.</li>`,
+  ].join('');
+  $('#maj').textContent = tr(`Lu le ${d.extraction.slice(0, 10)}.`, `Read on ${d.extraction.slice(0, 10)}.`);
+</script>
+<footer>
+  <div class="contenu">
+    <p data-fr="Site citoyen indépendant. Aucun lien avec la Ville d’Ottawa, aucun caractère officiel. En cas d’écart, le document de la Ville fait foi. &lt;a href=&quot;sources-of-the-ottawa-data&quot;&gt;Sources&lt;/a&gt;.">Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City’s own document prevails. <a href="sources-of-the-ottawa-data">Sources</a>.</p>
+    <p data-fr="Contient de l’information visée par la &lt;a href=&quot;https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Open Government Licence – City of Ottawa&lt;/a&gt; (licence du gouvernement ouvert de la Ville d’Ottawa).">Contains information licensed under the <a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener">Open Government Licence – City of Ottawa</a>.</p>
+    <p class="lien-dq-pied" data-fr="&lt;a href=&quot;/&quot;&gt;DossierOntario : l’Assemblée législative de l’Ontario en clair&lt;/a&gt; · &lt;a href=&quot;/rules&quot;&gt;Les règles du site&lt;/a&gt;"><a href="/">DossierOntario: the Legislative Assembly of Ontario in plain language</a> · <a href="/rules">Rules of the site</a></p>
+  </div>
+</footer>
+<script type="module" src="assets/app.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script src="assets/avis-pause.js" defer></script>
+<script type="module" src="assets/langue.js"></script>
+</body>
+</html>

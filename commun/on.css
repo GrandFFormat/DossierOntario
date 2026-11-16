@@ -1173,3 +1173,130 @@ html:not([lang="fr"]) .fr-txt, html[lang="fr"] .en-txt{display:none;}
 .min-liste li{margin-bottom:6px;}
 .min-reseaux{display:flex; flex-wrap:wrap; gap:6px; margin:8px 0;}
 .min-reseaux a{display:inline-flex; align-items:center; justify-content:center; min-width:32px; height:32px; border:2px solid var(--ink); color:var(--ink); text-decoration:none; font-weight:700;}
+
+/* ---------- Volet de ville : Ottawa ---------- */
+.carte-ottawa .texte-officiel{font-size:14px; line-height:1.6; white-space:pre-line; margin:0 0 10px;}
+.pastille-vote{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+.pastille-dissidence{background:var(--paper-2); color:var(--rouge); border-color:var(--rouge);}
+.vote-ottawa{border:1px solid var(--line); padding:10px 12px; margin:10px 0; font-size:13px; line-height:1.5;}
+.vote-ottawa p{margin:0 0 6px;}
+.vote-ottawa b.pour{color:var(--ink);} .vote-ottawa b.contre{color:var(--rouge);}
+.pieces-ottawa{list-style:none; margin:0 0 12px; padding:0; font-size:13px;}
+.pieces-ottawa li{padding:3px 0; border-bottom:1px solid var(--line-soft); overflow-wrap:anywhere;}
+.pieces-ottawa a{color:var(--rouge);}
+
+/* ---------- Volet Ottawa : les onglets du volet, la carte, les tableaux ---------- */
+.sous-onglets{display:flex; flex-wrap:wrap; gap:0; border:1px solid var(--line); margin:0 0 22px;}
+.sous-onglets a{padding:10px 14px; font-size:13.5px; font-weight:600; text-decoration:none; border-right:1px solid var(--line-soft); color:var(--ink);}
+.sous-onglets a:last-child{border-right:0;}
+.sous-onglets a:hover{color:var(--rouge);}
+.sous-onglets a.actif{background:var(--ink); color:var(--paper);}
+.en-bref{font-size:14px; line-height:1.5; margin:0 0 12px; padding:10px 14px; border-left:4px solid var(--rouge); background:var(--paper-2);}
+.carte-quartiers{width:100%; max-width:720px; height:auto; display:block; border:1px solid var(--line); background:var(--paper-2);}
+.carte-quartiers path{fill:#E6E6E2; stroke:#161616; stroke-width:.6; cursor:pointer;}
+.carte-quartiers path:hover, .carte-quartiers path.actif{fill:var(--rouge);}
+:root[data-theme="dark"] .carte-quartiers path{fill:#2a2a28;}
+.carte-quartiers text{font:700 9px Arial,sans-serif; fill:#161616; pointer-events:none;}
+.carte-quartiers path.actif + text, .carte-quartiers g:hover text{fill:#fff;}
+.grille-elus{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin:18px 0;}
+.carte-elu{border:1px solid var(--line); padding:14px 16px; background:var(--paper);}
+.carte-elu h3{margin:0 0 2px; font-size:17px;}
+.carte-elu .role{color:var(--rouge); font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.05em;}
+.carte-elu dl{display:grid; grid-template-columns:auto 1fr; gap:3px 10px; margin:10px 0 0; font-size:13px;}
+.carte-elu dt{color:var(--slate);} .carte-elu dd{margin:0;}
+.tableau-volet{width:100%; border-collapse:collapse; font-size:13.5px; margin:10px 0 22px;}
+.tableau-volet th{text-align:left; border-bottom:2px solid var(--line); padding:8px 8px; font-size:12px; text-transform:uppercase; letter-spacing:.05em;}
+.tableau-volet td{border-bottom:1px solid var(--line-soft); padding:8px 8px; vertical-align:top;}
+.tableau-volet td.n, .tableau-volet th.n{text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums;}
+.barre-h{height:10px; background:var(--rouge); display:inline-block; vertical-align:middle; margin-right:8px;}
+.ligne-contrat{border-bottom:1px solid var(--line-soft); padding:12px 0;}
+.ligne-contrat .montant{font-weight:900; font-size:18px; letter-spacing:-.02em;}
+.ligne-contrat .fournisseur{font-weight:700;}
+.ligne-contrat p{margin:4px 0 0; font-size:13.5px; line-height:1.5;}
+.pastille-nc{background:var(--rouge); color:#fff; border-color:var(--rouge);}
+.az{display:flex; flex-wrap:wrap; gap:4px; margin:10px 0;}
+.az button{min-width:30px; padding:4px 6px; font-size:12px;}
+.pres-formulaire{display:grid; grid-template-columns:1fr auto; gap:10px; align-items:start; margin:16px 0; max-width:640px;}
+.pres-suggestions{list-style:none; margin:4px 0 0; padding:0; border:1px solid var(--line); background:var(--paper); max-height:220px; overflow:auto;}
+.pres-suggestions li{padding:6px 10px; cursor:pointer; border-bottom:1px solid var(--line-soft); font-size:14px;}
+.pres-suggestions li:hover{background:var(--paper-2); color:var(--rouge);}
+.pres-resultat{border:1px solid var(--line); padding:18px 20px; margin:16px 0;}
+.pres-resultat h2{margin:0 0 6px;}
+.onglets-pres{display:flex; flex-wrap:wrap; gap:6px; margin:14px 0;}
+.liste-sobre{list-style:none; margin:0; padding:0; font-size:13.5px;}
+.liste-sobre li{padding:7px 0; border-bottom:1px solid var(--line-soft);}
+.liste-sobre .legende{display:block;}
+.compte-badge{display:inline-block; min-width:22px; padding:0 6px; background:var(--ink); color:var(--paper); font-size:11px; font-weight:800; text-align:center; margin-left:6px;}
+@media (max-width:700px){ .pres-formulaire{grid-template-columns:1fr;} .sous-onglets a{padding:8px 10px; font-size:12.5px;} }
+a.carte-lien{text-decoration:none; color:inherit; display:block;}
+a.carte-lien:hover .carte-titre{color:var(--rouge);}
+.en-bref{font-style:italic;}
+
+/* ===== Volet Ottawa, 15 nov. 2026 : « En bref », pied de ville, tableaux des contrats et barres
+   du budget, repris des pages de Montréal sur DQ (montreal/assets/style.css, seances-en-bref). ===== */
+.eb-gros{border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow-sm); padding:16px 18px 14px; margin:18px 0 26px;}
+.eb-entete{font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; margin:0 0 8px;}
+.eb-note{font-size:13.5px; line-height:1.5; margin:0 0 12px;}
+.eb-note strong{background:var(--yellow); color:#131313; padding:1px 5px; box-decoration-break:clone; -webkit-box-decoration-break:clone;}
+.eb-grille{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:12px;}
+.eb-carte{border:2px solid var(--line); background:var(--paper-2); padding:14px 16px; display:flex; flex-direction:column; gap:10px; min-width:0;}
+.eb-carte header{display:flex; flex-direction:column; gap:1px;}
+.eb-carte h3{font-size:16px; margin:0; line-height:1.3;}
+.eb-date{color:var(--slate); font-size:12.5px;}
+.eb-phrase{font-size:17px; line-height:1.55; font-weight:500; margin:2px 0 4px;}
+.eb-mot{text-decoration:underline; text-decoration-color:var(--rouge); text-decoration-thickness:3px; text-underline-offset:4px;}
+.eb-points{list-style:none; margin:0; padding:0; border-top:1px solid var(--line-soft);}
+.eb-points li{border-bottom:1px solid var(--line-soft);}
+.eb-points a{display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 8px; padding:6px 0; color:var(--slate); text-decoration:none; font-size:13px; line-height:1.4;}
+.eb-points a:hover .eb-titre{color:var(--rouge); text-decoration:underline;}
+.eb-titre{flex:1 1 60%;}
+.eb-montant{font-weight:700; white-space:nowrap; margin-left:auto; color:var(--ink);}
+.eb-divise{font-size:11.5px; color:var(--red); white-space:nowrap;}
+.eb-sorte{align-self:flex-start; font-family:'Archivo Narrow',sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; padding:2px 7px; border:1px solid var(--green); background:var(--green-soft); color:var(--ink);}
+.eb-votes{display:flex; flex-direction:column; gap:6px; padding:8px 0 2px; border-top:1px solid var(--line-soft);}
+.eb-votes-titre{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--slate);}
+.eb-vote{display:grid; grid-template-columns:1fr auto; gap:3px 10px; text-decoration:none; color:var(--ink); font-size:13px; line-height:1.35;}
+.eb-vote:hover .eb-vote-titre{text-decoration:underline;}
+.eb-vote-compte{white-space:nowrap; font-size:12px; color:var(--slate);}
+.eb-vote-compte b.p{color:var(--green);} .eb-vote-compte b.c{color:var(--red);}
+.eb-vote-barre{grid-column:1 / -1; display:flex; height:6px; overflow:hidden; background:var(--line-soft);}
+.eb-vote-barre i{display:block; height:100%;} .eb-vote-barre i.p{background:var(--green);} .eb-vote-barre i.c{background:var(--red);}
+.eb-votes-plus,.eb-tout{font-size:13px; font-weight:700; text-decoration:none; color:var(--rouge);}
+.eb-votes-plus:hover,.eb-tout:hover{text-decoration:underline;}
+.eb-votes-aucun{font-size:12px; color:var(--slate); margin:0; padding:8px 0 0; border-top:1px solid var(--line-soft);}
+.eb-liens{margin-top:auto; display:flex; flex-direction:column; gap:4px;}
+.eb-officiel{font-size:13px; font-weight:600; color:var(--ink); text-decoration:underline; text-decoration-color:var(--yellow); text-underline-offset:3px;}
+/* Pied des pages de ville : une phrase et une ligne de liens, comme DQ. */
+.pied-ville p{font-size:13.5px; line-height:1.6; color:var(--slate); margin:6px 0;}
+.pied-ville a{color:var(--ink);}
+/* Tableaux des contrats. */
+.tableau-defile{overflow-x:auto; margin:10px 0 22px;}
+.tableau-defile .tableau-volet{margin:0;}
+.tableau-volet .motif{display:block; color:var(--slate); font-size:12.5px; margin-top:3px; font-weight:400;}
+.tableau-volet td a{color:var(--ink);}
+.puce{display:inline-block; font-family:'Archivo Narrow',sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; padding:1px 6px; border:1px solid var(--line); vertical-align:middle;}
+.puce-nc{background:var(--rouge); color:#fff; border-color:var(--rouge);}
+/* Barres du budget. */
+.barres-service{margin:10px 0 26px;}
+.barre-service{margin:10px 0;}
+.barre-service .tete{display:flex; justify-content:space-between; gap:12px; font-size:14.5px; line-height:1.4;}
+.barre-service .tete strong{font-weight:600;}
+.barre-service .tete span{white-space:nowrap; font-variant-numeric:tabular-nums;}
+.barre-service .piste{height:10px; background:var(--line-soft); margin-top:4px; overflow:hidden;}
+.barre-service .rempli{height:100%; background:var(--rouge);}
+.grille-2:has(> div > .barres-service){gap:0 32px;}
+#liste-contrats td:first-child{width:56%;}
+#liste-contrats td:nth-child(2){width:26%;}
+
+/* Budget d'Ottawa, version courte (15 nov. 2026) : encadré du quartier, barres, « Pour aller plus loin ». */
+.calcul{border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow-sm); padding:16px 18px; margin:12px 0 26px;}
+.calcul label{display:block; font-weight:700; margin-bottom:6px;}
+.calcul select{max-width:100%; font-size:15px;}
+.calcul-table{margin:12px 0 0;}
+.calcul-table td{font-size:14.5px; padding:8px 4px;}
+.calcul-table tr.total td{font-weight:800; font-size:16px; border-bottom:0;}
+.barre-autres .tete strong{font-weight:400; color:var(--slate);}
+.barre-autres .rempli{background:var(--slate);}
+.plus-loin{border-top:2px solid var(--line); margin:8px 0 22px; padding-top:8px;}
+.plus-loin > summary{cursor:pointer; font-weight:800; font-size:15px; padding:6px 0;}
+.plus-loin .sous-titre{margin-top:22px;}

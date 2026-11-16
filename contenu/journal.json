@@ -2,6 +2,21 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-11-15",
+      "fr": "Ottawa a une nouvelle présentation : un en-tête et un menu propres au volet, une page d’accueil avec les dernières décisions résumées, une carte des quartiers sur la page du conseil, et des pages Contrats, Budget et taxes et Près de chez moi refaites. Les adresses ont changé (par exemple « decisions-of-ottawa-city-council »).",
+      "en": "Ottawa has a new look: its own header and menu, a home page with the latest summarized decisions, a ward map on the Council page, and redone Contracts, Budget and taxes and Near me pages. The page addresses changed (for example “decisions-of-ottawa-city-council”)."
+    },
+    {
+      "date": "2026-11-15",
+      "fr": "Ottawa : la page Décisions s’ouvre sur « En bref », la dernière séance du conseil et de chaque comité, comme sur DossierQuébec. Les pages d’Ottawa ont le pied de page des volets de ville, sans la bande rouge. Les contrats et le budget sont présentés en tableaux et en barres, comme à Montréal.",
+      "en": "Ottawa: the Decisions page now opens with “In brief”, the latest meeting of Council and of each committee, as on DossierQuébec. Ottawa pages use the city-file footer, without the red band. Contracts and budget are shown as tables and bars, as for Montréal."
+    },
+    {
+      "date": "2026-11-15",
+      "fr": "Première ville : Ottawa, en huit onglets, dans le menu Villes. Les deux derniers mois de décisions du conseil municipal et de ses comités, résumées en langage clair avec le lien vers le procès-verbal. Aussi : le conseil et la carte des 24 quartiers, les contrats de 2025, les taxes et le budget, « Près de chez moi », un lexique et les sources.",
+      "en": "First city: Ottawa, in eight tabs, in the Cities menu. The last two months of City Council and committee decisions, summarized in plain language with a link to the minutes. Also: the council and the map of the 24 wards, the 2025 contracts, taxes and the budget, “Near me”, a lexicon and the sources."
+    },
+    {
       "date": "2026-11-12",
       "fr": "Marit Stiles, John Fraser et Mike Schreiner ont chacun leur fiche de chef de parti, et passent en tête de la liste des député·e·s. La fiche de Doug Ford mentionne qu’il dirige le Parti progressiste-conservateur.",
       "en": "Marit Stiles, John Fraser and Mike Schreiner each have a party leader page and now come first in the list of MPPs. Doug Ford’s page notes that he leads the Progressive Conservative Party."

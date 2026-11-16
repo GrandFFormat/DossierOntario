@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dossier:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0N4BYF7Y2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0N4BYF7Y2Z', { content_group: 'Ottawa' });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-fr="Contrats attribués par la Ville d’Ottawa | DossierOntario">Contracts awarded by the City of Ottawa | DossierOntario</title>
+<meta name="description" content="Every contract over $25,000 the City of Ottawa awarded in 2025, from its open data: supplier, amount, department and how it was awarded." data-fr-content="Chaque contrat de plus de 25 000 $ attribué par la Ville d’Ottawa en 2025, d’après ses données ouvertes : fournisseur, montant, service et mode d’attribution.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://dossierontario.ca/ottawa/contracts-of-the-city-of-ottawa">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DossierOntario">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Contracts awarded by the City of Ottawa | DossierOntario">
+<meta property="og:description" content="Every contract over $25,000 the City of Ottawa awarded in 2025, from its open data: supplier, amount, department and how it was awarded.">
+<meta property="og:url" content="https://dossierontario.ca/ottawa/contracts-of-the-city-of-ottawa">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('dvq:theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'sombre' : 'clair';
+      document.documentElement.dataset.theme = t;
+      var z = parseInt(localStorage.getItem('dossier:zoom'), 10);
+      if (z >= 80 && z <= 150) document.documentElement.style.zoom = z + '%';
+    } catch (e) {}
+  })();
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "DossierOntario", "item": "https://dossierontario.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "City of Ottawa", "item": "https://dossierontario.ca/ottawa/" },
+    { "@type": "ListItem", "position": 3, "name": "Contracts", "item": "https://dossierontario.ca/ottawa/contracts-of-the-city-of-ottawa" }
+  ]
+}
+</script>
+<script>
+  /* Français choisi (?lang=fr ou dossier:langue) : la page est cachée le temps que assets/langue.js la traduise. */
+  (function () { try { var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('dossier:langue'); if (l === 'fr') { document.documentElement.lang = 'fr'; document.documentElement.classList.add('dvq-fr'); } } catch (e) {} })();
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="contrats" data-ville="ottawa">
+<header>
+  <div class="contenu">
+    <div class="titre-ligne">
+      <a href="./"><p class="logo-titre">Dossier<span class="marque">Ottawa</span></p></a><a class="lien-dq" href="/" title="DossierOntario: the Legislative Assembly of Ontario in plain language" aria-label="DossierOntario: the Legislative Assembly of Ontario in plain language" data-fr-title="DossierOntario : l’Assemblée législative de l’Ontario en clair" data-fr-aria-label="DossierOntario : l’Assemblée législative de l’Ontario en clair"></a>
+    </div>
+    <p class="sous-titre" data-fr="Les décisions du conseil municipal d’Ottawa, rendues lisibles. Des documents publics : les procès-verbaux du greffe et les données ouvertes de la Ville d’Ottawa.">
+      Ottawa City Council decisions, made readable. Public documents: the City Clerk’s minutes
+      and the City of Ottawa’s open data.
+    </p>
+    <nav>
+      <a href="./" data-fr="Accueil">Home</a>
+      <a href="decisions-of-ottawa-city-council" data-fr="Décisions">Decisions</a>
+      <a href="ottawa-city-council" data-fr="Conseil municipal">City Council</a>
+      <a href="near-me-in-ottawa" data-fr="Près de chez moi">Near me</a>
+      <a href="contracts-of-the-city-of-ottawa" aria-current="page" data-fr="Contrats">Contracts</a>
+      <a href="ottawa-capital-budget" data-fr="Budget">Budget</a>
+      <a href="ottawa-council-glossary" data-fr="Lexique">Glossary</a>
+      <div class="outils">
+        <div class="taille-texte" role="group" aria-label="Text size" data-fr-aria-label="Taille du texte">
+          <button type="button" id="texte-moins" aria-label="Smaller text" data-fr-aria-label="Réduire le texte">A−</button>
+          <span id="texte-pct" aria-live="polite">100%</span>
+          <button type="button" id="texte-plus" aria-label="Larger text" data-fr-aria-label="Agrandir le texte">A+</button>
+        </div>
+        <button type="button" id="bascule-theme" class="bascule-theme" aria-pressed="false"
+                title="Switch to dark theme" aria-label="Switch to dark theme"></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="contenu prose">
+  <div id="chargement" class="avis" hidden data-fr="Chargement des données…"></div>
+  <h1 class="page" data-fr="Contrats attribués par la Ville d’Ottawa">Contracts awarded by the City of Ottawa</h1>
+  <p data-fr="Chaque contrat de plus de 25 000 $ attribué par la Ville d’Ottawa en 2025, tel que la Ville le publie dans ses données ouvertes, en deux fichiers semestriels. &lt;strong&gt;Aucun chiffre ici ne pointe une faute.&lt;/strong&gt; Un contrat attribué sans concurrence est permis par le règlement sur les approvisionnements de la Ville dans des cas précis et la Ville écrit sur quel article elle s’appuie.">Every contract over $25,000 the City of Ottawa awarded in 2025, as the City publishes it in its open data, in two half-year files. <strong>No figure here points to any fault.</strong> A contract awarded without competition is allowed by the City’s procurement by-law in specific cases and the City writes which section it relied on.</p>
+  <div id="chiffres" class="grille-chiffres"></div>
+  <h2 data-fr="Les 15 plus gros fournisseurs">The 15 largest suppliers</h2>
+  <p class="compte" id="intro-palmares"></p>
+  <div id="palmares" class="tableau-defile"></div>
+  <h2 data-fr="Tous les contrats">All contracts</h2>
+  <div class="barre-outils">
+    <input id="recherche" type="search" placeholder="Supplier, subject or department" aria-label="Search a supplier, subject or department" data-fr-placeholder="Fournisseur, objet ou service" data-fr-aria-label="Chercher un fournisseur, un objet ou un service">
+    <select id="choix-service" aria-label="Department" data-fr-aria-label="Service"><option value="" data-fr="Tous les services">All departments</option></select>
+    <select id="filtre-mode" aria-label="Contract type" data-fr-aria-label="Type de contrat">
+      <option value="" data-fr="Tous les types">All types</option>
+      <option value="seule" data-fr="Sans concurrence (article du règlement cité)">Non-competitive (by-law section cited)</option>
+    </select>
+  </div>
+  <p id="compte-liste" class="compte" aria-live="polite"></p>
+  <div id="liste" class="tableau-defile"></div>
+  <p><button type="button" id="voir-plus" class="bouton-lien" hidden data-fr="Afficher plus">Show more</button></p>
+  <h2 data-fr="Comment lire cette page">How to read this page</h2>
+  <ul>
+    <li data-fr="&lt;strong&gt;Le montant&lt;/strong&gt; est celui que la Ville publie pour le contrat ou pour la modification qui y est faite. Une modification ou une prolongation est une nouvelle ligne, avec son propre montant."><strong>The amount</strong> is the one the City publishes for the contract or for the change made to it. An amendment or an extension is a new line, with its own amount.</li>
+    <li data-fr="&lt;strong&gt;Le type&lt;/strong&gt; est celui de la Ville : Initial (nouveau contrat), Amendment (modification), Extension (prolongation), Follow-On (contrat de suivi), ou une combinaison."><strong>The type</strong> is the City’s: Initial (a new contract), Amendment, Extension, Follow-On, or a combination.</li>
+    <li data-fr="&lt;strong&gt;Sans concurrence&lt;/strong&gt; : quand la Ville attribue sans processus concurrentiel, elle écrit l’article de son règlement sur les approvisionnements sur lequel elle s’appuie (par exemple « Section 22 (1) (J) ») et, souvent, un motif. Les deux sont affichés tels quels."><strong>Non-competitive</strong>: when the City awarded without a competitive process, it writes the section of its procurement by-law it relied on (for example “Section 22 (1) (J)”) and, often, a reason. Both are shown as written.</li>
+    <li data-fr="&lt;strong&gt;Ce qui n’est pas ici&lt;/strong&gt; : la date exacte d’attribution (la Ville ne donne que le semestre), les entreprises qui ont soumissionné, les contrats de moins de 25 000 $ et le lien entre un contrat et une décision du conseil."><strong>What is not here</strong>: the exact award date (the City gives only the half-year), the companies that bid, contracts under $25,000 and the link between a contract and a Council decision.</li>
+  </ul>
+  <h2 data-fr="Sources">Sources</h2>
+  <ul id="sources-contrats"></ul>
+  <p id="maj" class="compte"></p>
+</main>
+<style>
+  .grille-chiffres { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 20px 0; }
+  .grille-chiffres > div { background: var(--carte); border: var(--bordure-carte); border-radius: var(--rayon); padding: 12px 14px; }
+  .grille-chiffres strong { display: block; font-size: 1.5rem; line-height: 1.2; }
+  .grille-chiffres span { color: var(--doux); font-size: .9rem; }
+  .tableau-defile { overflow-x: auto; }
+  .tableau-defile table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  .tableau-defile th, .tableau-defile td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--ligne); vertical-align: top; }
+  .tableau-defile .n { text-align: right; white-space: nowrap; }
+  .tableau-defile .motif { display: block; color: var(--doux); font-size: .85rem; margin-top: 2px; }
+  .barre-outils input, .barre-outils select { font: inherit; padding: 6px 8px; border: 1px solid var(--ligne-forte); border-radius: var(--rayon); background: var(--carte); color: var(--encre); }
+  .barre-outils input { flex: 1; min-width: 200px; }
+  #choix-contrat { flex: 1 1 100%; order: 3; width: 100%; max-width: 100%; min-width: 0; text-overflow: ellipsis; }
+  .ouvrir { font: inherit; font-size: .85rem; background: none; border: 0; padding: 2px 0; margin-top: 4px; color: var(--lien, var(--encre)); cursor: pointer; text-decoration: underline; display: block; text-align: left; }
+  tr.detail > td { background: var(--carte); padding: 12px 14px 14px; }
+  .detail h3 { font-size: 1rem; margin: 10px 0 6px; }
+  .detail h3:first-child { margin-top: 0; }
+  .tableau-defile .detail table.soum { width: auto; min-width: min(100%, 560px); font-size: .9rem; }
+  .tableau-defile .detail table.soum th, .tableau-defile .detail table.soum td { padding: 5px 8px; }
+  .detail tr.gagnant td { font-weight: 700; }
+  .detail .note { color: var(--doux); font-size: .85rem; margin: 8px 0 0; }
+</style>
+<script type="module">
+  // Copie de la page Contrats de Vancouver (15 nov. 2026). Ce qui change : Ottawa publie un contrat par
+  // ligne, avec le semestre, le type (Initial, Amendment…), le service, et l'article du règlement quand
+  // il n'y a pas eu de concurrence. Ni date exacte ni soumissionnaires : ces colonnes n'existent pas.
+  import { EN, tr } from './assets/langue.js';
+  const nf = new Intl.NumberFormat(EN ? 'en-CA' : 'fr-CA', { maximumFractionDigits: 0 });
+  const nf1 = new Intl.NumberFormat(EN ? 'en-CA' : 'fr-CA', { maximumFractionDigits: 1 });
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const argent = (n) => (n == null ? '—' : EN ? '$' + nf.format(n) : nf.format(n) + ' $');
+  const millions = (n) => (n >= 1e6 ? (EN ? '$' + nf1.format(n / 1e6) + ' M' : nf1.format(n / 1e6) + ' M$') : argent(n));
+  const periode = (p) => { const [a, h] = String(p).split('-'); return h === 'H1' ? tr(`janv.–juin ${a}`, `Jan.–June ${a}`) : h === 'H2' ? tr(`juill.–déc. ${a}`, `July–Dec. ${a}`) : p; };
+  const d = await (await fetch('data/contrats-page.json')).json().catch(() => null);
+  if (!d) {
+    $('#chargement').hidden = false;
+    $('#chargement').innerHTML = tr('Les données ne sont pas disponibles pour l’instant.', 'Data is not available right now.');
+    throw new Error('contrats-page.json absent');
+  }
+  let C_i = 0;
+  const C = d.c.map(([per, montant, type, fournisseur, titre, num, service, article, motif]) => ({
+    i: C_i++, per, montant, fournisseur, titre, num, service, article, motif, type: d.types[type], typeIdx: type, seule: Boolean(article),
+  }));
+  const somme = (l) => l.reduce((s, c) => s + (c.montant || 0), 0);
+  const total = somme(C);
+  const S = C.filter((c) => c.seule);
+  const pct = (a, b) => (b ? Math.round((100 * a) / b) : 0) + '%';
+  $('#chiffres').innerHTML = [
+    [nf.format(C.length), tr('contrats et modifications', 'contracts and changes')],
+    [millions(total), tr('au total', 'in total')],
+    [`${nf.format(S.length)} (${pct(S.length, C.length)})`, tr(`sans concurrence, ${millions(somme(S))}`, `non-competitive, ${millions(somme(S))}`)],
+    [nf.format(new Set(C.map((c) => c.fournisseur)).size), tr('fournisseurs', 'suppliers')],
+  ].map(([a, b]) => `<div><strong>${a}</strong><span>${b}</span></div>`).join('');
+  $('#intro-palmares').textContent = tr(`Total des contrats publiés pour ${d.periodes.map(periode).join(' et ')}. Cliquez sur un nom pour voir ses contrats.`, `Total of contracts published for ${d.periodes.map(periode).join(' and ')}. Click a name to see its contracts.`);
+  d.types.forEach((t, i) => $('#filtre-mode').insertAdjacentHTML('beforeend', `<option value="t${i}">${esc(t)} (${C.filter((c) => c.typeIdx === i).length})</option>`));
+  [...new Set(C.map((c) => c.service).filter(Boolean))].sort().forEach((sv) => $('#choix-service').insertAdjacentHTML('beforeend', `<option>${esc(sv)}</option>`));
+  const parF = new Map();
+  for (const c of C) {
+    const f = parF.get(c.fournisseur) || { n: 0, m: 0, s: 0 };
+    f.n++; f.m += c.montant || 0; if (c.seule) f.s++;
+    parF.set(c.fournisseur, f);
+  }
+  const top = [...parF].sort((a, b) => b[1].m - a[1].m).slice(0, 15);
+  $('#palmares').innerHTML = `<table><thead><tr><th>${tr('Fournisseur', 'Supplier')}</th><th class="n">${tr('Contrats', 'Contracts')}</th><th class="n">${tr('Sans concurrence', 'Non-competitive')}</th><th class="n">Total</th><th class="n">${tr('Part du total', 'Share of total')}</th></tr></thead><tbody>${
+    top.map(([nom, f]) => `<tr><td><a href="#liste" data-f="${esc(nom)}">${esc(nom)}</a></td><td class="n">${f.n}</td><td class="n">${f.s || ''}</td><td class="n">${argent(f.m)}</td><td class="n">${pct(f.m, total)}</td></tr>`).join('')
+  }</tbody></table>`;
+  $('#palmares').addEventListener('click', (e) => {
+    const a = e.target.closest('a[data-f]'); if (!a) return;
+    e.preventDefault(); $('#recherche').value = a.dataset.f; $('#filtre-mode').value = ''; $('#choix-service').value = ''; montrer(true);
+    $('#recherche').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+  const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  let limite = 50;
+  function montrer(neuf) {
+    if (neuf) limite = 50;
+    const q = norm($('#recherche').value.trim()), m = $('#filtre-mode').value, sv = $('#choix-service').value;
+    const l = C.filter((c) => (!m || (m === 'seule' ? c.seule : c.typeIdx === Number(m.slice(1)))) && (!sv || c.service === sv) && (!q || norm(c.fournisseur + ' ' + c.titre + ' ' + c.num + ' ' + c.service).includes(q)))
+      .sort((a, b) => (b.montant || 0) - (a.montant || 0));
+    $('#compte-liste').textContent = `${nf.format(l.length)} ${tr('contrat(s)', 'contract(s)')}, ${argent(somme(l))}`;
+    $('#liste').innerHTML = `<table><thead><tr><th>${tr('Période', 'Period')}</th><th>${tr('Objet', 'Subject')}</th><th>${tr('Fournisseur', 'Supplier')}</th><th class="n">${tr('Montant', 'Amount')}</th></tr></thead><tbody>${
+      l.slice(0, limite).map((c) => `<tr><td class="n">${periode(c.per)}</td><td>${esc(c.titre || c.num)}<span class="motif"><span class="puce">${esc(c.type)}</span> ${esc(c.service)} · ${esc(c.num)}${c.seule ? ` <span class="puce">${tr('Sans concurrence', 'Non-competitive')} : ${esc(c.article)}</span>` : ''}${c.motif ? ` <span class="compte">${esc(c.motif)}</span>` : ''}</span></td><td>${esc(c.fournisseur)}</td><td class="n">${argent(c.montant)}</td></tr>`).join('')
+    }</tbody></table>`;
+    $('#voir-plus').hidden = l.length <= limite;
+  }
+  const params = new URLSearchParams(location.search), qInit = params.get('q');
+  if (qInit) $('#recherche').value = qInit;
+  $('#recherche').addEventListener('input', () => montrer(true));
+  $('#filtre-mode').addEventListener('change', () => montrer(true));
+  $('#choix-service').addEventListener('change', () => montrer(true));
+  $('#voir-plus').addEventListener('click', () => { limite += 100; montrer(); });
+  montrer(true);
+  $('#sources-contrats').innerHTML = d.sources.map((x) => `<li><a href="${esc(x.page)}" target="_blank" rel="noopener">« ${esc(x.titre)} »</a>, ${tr('données ouvertes de la Ville d’Ottawa', 'City of Ottawa open data')}, ${tr('sous l’', 'under the ')}<a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener">Open Government Licence – City of Ottawa</a>.</li>`).join('');
+  $('#maj').textContent = tr(`Lu le ${d.extraction.slice(0, 10)}.`, `Read on ${d.extraction.slice(0, 10)}.`);
+</script>
+<footer>
+  <div class="contenu">
+    <p data-fr="Site citoyen indépendant. Aucun lien avec la Ville d’Ottawa, aucun caractère officiel. En cas d’écart, le document de la Ville fait foi. &lt;a href=&quot;sources-of-the-ottawa-data&quot;&gt;Sources&lt;/a&gt;.">Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City’s own document prevails. <a href="sources-of-the-ottawa-data">Sources</a>.</p>
+    <p data-fr="Contient de l’information visée par la &lt;a href=&quot;https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Open Government Licence – City of Ottawa&lt;/a&gt; (licence du gouvernement ouvert de la Ville d’Ottawa).">Contains information licensed under the <a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener">Open Government Licence – City of Ottawa</a>.</p>
+    <p class="lien-dq-pied" data-fr="&lt;a href=&quot;/&quot;&gt;DossierOntario : l’Assemblée législative de l’Ontario en clair&lt;/a&gt; · &lt;a href=&quot;/rules&quot;&gt;Les règles du site&lt;/a&gt;"><a href="/">DossierOntario: the Legislative Assembly of Ontario in plain language</a> · <a href="/rules">Rules of the site</a></p>
+  </div>
+</footer>
+<script type="module" src="assets/app.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script src="assets/avis-pause.js" defer></script>
+<script type="module" src="assets/langue.js"></script>
+</body>
+</html>

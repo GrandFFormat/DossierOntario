@@ -3,3 +3,6 @@ node_modules/
 api.env
 data/.details.log
 *.log
+
+# Dumps bruts des données ouvertes d'Ottawa (405 000 points d'adresse…) : rechargés par scrapers/ottawa-donnees.js
+data/ottawa-brut/

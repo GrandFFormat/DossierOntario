@@ -36,8 +36,8 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#C8102E">
-<link rel="stylesheet" href="/commun/on.css?v=5ee18b22cb">
-<script src="/commun/on.js?v=bede6ee643" defer></script>
+<link rel="stylesheet" href="/commun/on.css?v=31f9ee6158">
+<script src="/commun/on.js?v=03cb0ed3c8" defer></script>
 </head>
 <body data-vue="apropos" data-donnees="contenu:journal apercu">
 
@@ -59,10 +59,11 @@
         <details class="villes-menu onglet-villes" id="villesMenu">
           <summary class="city-flip" title="Cities" aria-label="Cities"><span data-i18n="nav.villes">Cities</span></summary>
           <ul>
-            <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?province=on&lang=en" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
+            <li><a href="/ottawa/">Ottawa <small data-i18n="nav.ottawaSous">city council</small></a></li>
+          <li class="villes-rtv"><a href="/represente-ta-ville">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
           </ul>
         </details>
-        <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;var a=m.querySelector('a');function maj(){a.href='https://dossierquebec.ca/represente-ta-ville?province=on'+(/^en/i.test(document.documentElement.lang)?'&lang=en':'');}maj();m.addEventListener('toggle',function(){if(m.open)maj();});document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
+        <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
     </div>
     <nav class="onglets" aria-label="Sections">
       <a href="/" data-i18n="nav.accueil" class="">Home</a>

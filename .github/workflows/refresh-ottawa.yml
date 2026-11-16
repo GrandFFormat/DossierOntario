@@ -1,0 +1,82 @@
+# Rafraîchissement du volet Ville d'Ottawa — À LA MAIN SEULEMENT.
+#
+# Le volet d'Ottawa est une démonstration figée (les deux derniers mois du mandat 2022-2026) :
+# pas de cron tant que Martin n'a pas décidé de l'activer. On le lance depuis l'onglet Actions
+# (workflow_dispatch) pour vérifier que tout tourne, ou le jour où la ville devient active.
+#
+# Son propre groupe de concurrence (guide DQ, étape 9) : il ne doit jamais annuler le
+# rafraîchissement de l'Assemblée, ni être annulé par lui.
+#
+# Politesse : 2 s entre deux requêtes sur eScribe et les services ArcGIS ; open.ottawa.ca et
+# hub.arcgis.com (Crawl-delay 60) ne sont jamais lus ; ottawa.ca non plus.
+# Les 405 000 points d'adresse ne sont pas relus ici (≈ 15 min) : `npm run ottawa:adresses`
+# à la main, quand la Ville change ses quartiers.
+
+name: Rafraîchir Ottawa (à la main)
+
+on:
+  workflow_dispatch:
+    inputs:
+      jours:
+        description: 'Fenêtre de lecture des procès-verbaux, en jours'
+        required: false
+        default: '62'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-ottawa
+  cancel-in-progress: false
+
+jobs:
+  ottawa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      JOURS: ${{ inputs.jours }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm ci
+
+      - name: Lire le calendrier et les procès-verbaux (eScribe, EN + FR)
+        run: node scrapers/ottawa.js --jours "$JOURS"
+
+      # Les résumés et « En bref » coûtent quelques cents ; sans le secret, l'étape est sautée
+      # et le site montre le texte officiel seul.
+      - name: Écrire les résumés en langage clair (Sonnet)
+        if: env.ANTHROPIC_API_KEY != ''
+        continue-on-error: true
+        run: npm run ottawa:resumes
+
+      - name: Écrire « En bref » (Haiku)
+        if: env.ANTHROPIC_API_KEY != ''
+        continue-on-error: true
+        run: npm run ottawa:en-bref
+
+      # Une source en panne ne doit jamais effacer ce qui était publié : l'étape est en
+      # avertissement, et le build repart des derniers fichiers data/ commités.
+      - name: Lire les données ouvertes (élus, quartiers, présences, taxes, budget, contrats, travaux, parcs, permis)
+        continue-on-error: true
+        run: npm run ottawa:donnees
+
+      - name: Préparer les données du site et les pages
+        run: npm run build
+
+      - name: Publier ce qui a changé
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A data ottawa *.html sitemap.xml llms.txt
+          if git diff --staged --quiet; then
+            echo 'Rien de neuf du côté de la Ville d’Ottawa.'
+          else
+            git commit -m "Données de la Ville d'Ottawa au $(date -u +%Y-%m-%d)"
+            git push
+          fi

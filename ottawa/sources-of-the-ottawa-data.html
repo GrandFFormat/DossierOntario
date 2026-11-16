@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dossier:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0N4BYF7Y2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0N4BYF7Y2Z', { content_group: 'Ottawa' });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-fr="Sources des données d’Ottawa | DossierOntario">Sources of the Ottawa data | DossierOntario</title>
+<meta name="description" content="Where the Ottawa data comes from, under which licence, what it does not contain and what a machine can miss." data-fr-content="D’où viennent les données d’Ottawa, sous quelle licence, ce qu’elles ne contiennent pas et ce qu’une machine peut manquer.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://dossierontario.ca/ottawa/sources-of-the-ottawa-data">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DossierOntario">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Sources of the Ottawa data | DossierOntario">
+<meta property="og:description" content="Where the Ottawa data comes from, under which licence, what it does not contain and what a machine can miss.">
+<meta property="og:url" content="https://dossierontario.ca/ottawa/sources-of-the-ottawa-data">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('dvq:theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'sombre' : 'clair';
+      document.documentElement.dataset.theme = t;
+      var z = parseInt(localStorage.getItem('dossier:zoom'), 10);
+      if (z >= 80 && z <= 150) document.documentElement.style.zoom = z + '%';
+    } catch (e) {}
+  })();
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "DossierOntario", "item": "https://dossierontario.ca/" },
+    { "@type": "ListItem", "position": 2, "name": "City of Ottawa", "item": "https://dossierontario.ca/ottawa/" },
+    { "@type": "ListItem", "position": 3, "name": "Sources", "item": "https://dossierontario.ca/ottawa/sources-of-the-ottawa-data" }
+  ]
+}
+</script>
+<script>
+  /* Français choisi (?lang=fr ou dossier:langue) : la page est cachée le temps que assets/langue.js la traduise. */
+  (function () { try { var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('dossier:langue'); if (l === 'fr') { document.documentElement.lang = 'fr'; document.documentElement.classList.add('dvq-fr'); } } catch (e) {} })();
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="sources" data-ville="ottawa">
+<header>
+  <div class="contenu">
+    <div class="titre-ligne">
+      <a href="./"><p class="logo-titre">Dossier<span class="marque">Ottawa</span></p></a><a class="lien-dq" href="/" title="DossierOntario: the Legislative Assembly of Ontario in plain language" aria-label="DossierOntario: the Legislative Assembly of Ontario in plain language" data-fr-title="DossierOntario : l’Assemblée législative de l’Ontario en clair" data-fr-aria-label="DossierOntario : l’Assemblée législative de l’Ontario en clair"></a>
+    </div>
+    <p class="sous-titre" data-fr="Les décisions du conseil municipal d’Ottawa, rendues lisibles. Des documents publics : les procès-verbaux du greffe et les données ouvertes de la Ville d’Ottawa.">
+      Ottawa City Council decisions, made readable. Public documents: the City Clerk’s minutes
+      and the City of Ottawa’s open data.
+    </p>
+    <nav>
+      <a href="./" data-fr="Accueil">Home</a>
+      <a href="decisions-of-ottawa-city-council" data-fr="Décisions">Decisions</a>
+      <a href="ottawa-city-council" data-fr="Conseil municipal">City Council</a>
+      <a href="near-me-in-ottawa" data-fr="Près de chez moi">Near me</a>
+      <a href="contracts-of-the-city-of-ottawa" data-fr="Contrats">Contracts</a>
+      <a href="ottawa-capital-budget" data-fr="Budget">Budget</a>
+      <a href="ottawa-council-glossary" data-fr="Lexique">Glossary</a>
+      <div class="outils">
+        <div class="taille-texte" role="group" aria-label="Text size" data-fr-aria-label="Taille du texte">
+          <button type="button" id="texte-moins" aria-label="Smaller text" data-fr-aria-label="Réduire le texte">A−</button>
+          <span id="texte-pct" aria-live="polite">100%</span>
+          <button type="button" id="texte-plus" aria-label="Larger text" data-fr-aria-label="Agrandir le texte">A+</button>
+        </div>
+        <button type="button" id="bascule-theme" class="bascule-theme" aria-pressed="false"
+                title="Switch to dark theme" aria-label="Switch to dark theme"></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="contenu prose">
+  <div id="chargement" class="avis" hidden data-fr="Chargement des données…"></div>
+  <h1 class="page" data-fr="Sources des données d’Ottawa">Sources of the Ottawa data</h1>
+  <p data-fr="Ce site n’est pas la Ville d’Ottawa et n’a aucun caractère officiel. En cas d’écart, le document de la Ville fait foi : il est à un clic sur chaque fiche.">This site is not the City of Ottawa and has no official status. If anything differs, the City’s own document prevails: it is one click away on every card.</p>
+
+  <h2 data-fr="D’où viennent les données">Where the data comes from</h2>
+  <ul>
+    <li data-fr="&lt;strong&gt;Décisions et votes nominaux&lt;/strong&gt; : les procès-verbaux du conseil municipal et de ses comités permanents, publiés par le greffe sur &lt;a href=&quot;https://pub-ottawa.escribemeetings.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pub-ottawa.escribemeetings.com&lt;/a&gt;, lus une fois par séance, en anglais et en français. Rien n’est traduit par nous."><strong>Decisions and recorded votes</strong>: the minutes of City Council and its standing committees, published by the City Clerk on <a href="https://pub-ottawa.escribemeetings.com/" target="_blank" rel="noopener">pub-ottawa.escribemeetings.com</a>, read once per meeting, in English and in French. Nothing is translated by us.</li>
+    <li data-fr="&lt;strong&gt;Élus, quartiers, présences, contrats, budget, taxes par quartier, travaux, parcs et permis&lt;/strong&gt; : les données ouvertes de la Ville, sous l’&lt;a href=&quot;https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;span class=&quot;nom-propre&quot;&gt;Open Government Licence – City of Ottawa&lt;/span&gt;&lt;/a&gt;, version 2.0. Les jeux sont lus par les services ArcGIS, pas par le portail open.ottawa.ca, dont le robots.txt demande 60 secondes entre deux requêtes."><strong>Councillors, wards, attendance, contracts, budget, taxes by ward, construction, parks and permits</strong>: the City’s open data, under the <a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener"><span class="nom-propre">Open Government Licence – City of Ottawa</span></a>, version 2.0. The data sets are read through ArcGIS services, not through the open.ottawa.ca portal, whose robots.txt asks for 60 seconds between requests.</li>
+    <li data-fr="Notre script s’identifie et attend au moins deux secondes entre deux requêtes. Il ne lit pas ottawa.ca. Les liens vers les pages des élus et les conditions d’utilisation y mènent sans être lus.">Our script identifies itself and waits at least two seconds between two requests. It does not read ottawa.ca. The links to the councillors’ pages and the terms of use lead there without being read.</li>
+  </ul>
+
+  <h2 data-fr="Ce que fait une machine et ce qu’elle peut manquer">What a machine does and what it can miss</h2>
+  <ul>
+    <li data-fr="&lt;strong&gt;Les résumés&lt;/strong&gt; sont rédigés par une IA d’après le texte du procès-verbal, point par point et identifiés comme tels. Ils peuvent se tromper. Le procès-verbal fait foi. Les points de procédure (levée de la séance, confirmation du procès-verbal…) n’ont pas de résumé."><strong>The summaries</strong> are written by AI from the text of the minutes, item by item and identified as such. They can be wrong. The minutes prevail. Procedural items (adjournment, confirmation of minutes…) get no summary.</li>
+    <li data-fr="&lt;strong&gt;La phrase « En bref »&lt;/strong&gt; de chaque séance est elle aussi rédigée par une IA, d’après la liste de ses décisions. Les phrases actuelles ont été corrigées à la main après relecture. Les trois points marquants sont choisis sans IA, par règle (points résumés d’abord, puis montants, votes divisés et règlements)."><strong>The “In brief” sentence</strong> of each meeting is also written by AI, from the list of its decisions. We corrected the current ones by hand after a review. The three highlighted items are picked without AI, by rule (summarized items first, then amounts, split votes and by-laws).</li>
+    <li data-fr="&lt;strong&gt;Les étiquettes de sujet&lt;/strong&gt; (zonage, contrats, patrimoine…) n’existent pas dans le procès-verbal : elles sont ajoutées ici par mots-clés sur le titre anglais du point. Une mauvaise étiquette est notre erreur, pas celle de la Ville."><strong>The subject tags</strong> (zoning, contracts, heritage…) do not exist in the minutes: they are added here by keywords on the English title of the item. A wrong tag is our mistake, not the City’s.</li>
+    <li data-fr="&lt;strong&gt;Les noms des votes nominaux&lt;/strong&gt; : le procès-verbal écrit « M. Luloff » : on relie l’initiale et le nom de famille au nom complet de l’élu. Un nom qui ne correspond à personne reste tel que le procès-verbal l’écrit."><strong>Names in recorded votes</strong>: the minutes write “M. Luloff”: we link the initial and the family name to the councillor’s full name. A name that matches nobody stays as the minutes write it.</li>
+    <li data-fr="&lt;strong&gt;Les montants du budget&lt;/strong&gt; : les fichiers budgétaires de la Ville ne nomment pas leur unité. Leur somme (fonctionnement 2026 : 5 220 570) correspond à un budget d’environ 5,2 milliards de dollars : les montants sont donc lus en milliers de dollars. C’est une déduction, pas une mention officielle."><strong>Budget amounts</strong>: the City’s budget files do not name their unit. Their sum (operating 2026: 5,220,570) matches a budget of about $5.2 billion, so the amounts are read as thousands of dollars. That is a deduction, not an official statement.</li>
+  </ul>
+
+  <h2 data-fr="À savoir">Things to know</h2>
+  <ul>
+    <li data-fr="&lt;strong&gt;C’est un aperçu.&lt;/strong&gt; Il couvre les séances &lt;strong&gt;du 14 septembre au 15 novembre 2026&lt;/strong&gt; et n’est pas encore mis à jour automatiquement."><strong>This is a preview.</strong> It covers the meetings of <strong>September 14 to November 15, 2026</strong> and is not updated automatically yet.</li>
+    <li data-fr="&lt;strong&gt;Un même dossier apparaît souvent deux fois&lt;/strong&gt; : une fois en comité permanent, puis de nouveau quand le conseil le rend définitif. Ce sont deux vraies décisions et les deux sont affichées."><strong>The same file often appears twice</strong>: once in a standing committee, then again when Council makes it final. Both are real decisions and both are shown.</li>
+    <li data-fr="&lt;strong&gt;La plupart des points passent sans vote nominal.&lt;/strong&gt; Quand le procès-verbal consigne une dissidence sans vote nominal, les noms sont affichés tels qu’il les donne."><strong>Most items carry without a recorded vote.</strong> When the minutes record dissent without a recorded vote, the names are shown as the minutes give them.</li>
+  </ul>
+
+  <h2 data-fr="Ce qu’on a demandé à la Ville et ce qu’elle a répondu">What we asked the City and what it answered</h2>
+  <p data-fr="Rien pour l’instant. Cet aperçu n’a pas été publié. Avant qu’il le soit, on écrira au greffe de la Ville pour dire ce qu’on lit, à quel rythme et comment nous joindre et ce paragraphe dira ce qui est revenu.">Nothing yet. This preview has not been published. Before it is, we will write to the City Clerk’s office to say what we read, how often and how to reach us and this paragraph will say what came back.</p>
+
+  <h2 data-fr="État des données">Data status</h2>
+  <div id="etat-donnees"></div>
+  <div id="etat-archive"></div>
+</main>
+<footer>
+  <div class="contenu">
+    <p data-fr="Site citoyen indépendant. Aucun lien avec la Ville d’Ottawa, aucun caractère officiel. En cas d’écart, le document de la Ville fait foi. &lt;a href=&quot;sources-of-the-ottawa-data&quot;&gt;Sources&lt;/a&gt;.">Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City’s own document prevails.</p>
+    <p data-fr="Contient de l’information visée par la &lt;a href=&quot;https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Open Government Licence – City of Ottawa&lt;/a&gt; (licence du gouvernement ouvert de la Ville d’Ottawa).">Contains information licensed under the <a href="https://ottawa.ca/en/city-hall/get-know-your-city/open-data#open-data-licence-version-2-0" target="_blank" rel="noopener">Open Government Licence – City of Ottawa</a>.</p>
+    <p class="lien-dq-pied" data-fr="&lt;a href=&quot;/&quot;&gt;DossierOntario : l’Assemblée législative de l’Ontario en clair&lt;/a&gt; · &lt;a href=&quot;/rules&quot;&gt;Les règles du site&lt;/a&gt;"><a href="/">DossierOntario: the Legislative Assembly of Ontario in plain language</a> · <a href="/rules">Rules of the site</a></p>
+  </div>
+</footer>
+<script type="module" src="assets/app.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script src="assets/avis-pause.js" defer></script>
+<script type="module" src="assets/langue.js"></script>
+</body>
+</html>

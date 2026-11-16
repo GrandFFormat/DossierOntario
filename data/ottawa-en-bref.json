@@ -1,0 +1,222 @@
+{
+  "modele": "claude-haiku-4-5-20251001",
+  "enBref": {
+    "056daf0a-1738-49cf-a7ff-f1b5b528c976": {
+      "en": {
+        "phrase": "The committee considered two heritage designations and two heritage permit applications.",
+        "motsCles": [
+          "heritage designations",
+          "heritage permit"
+        ],
+        "empreinte": "1dc15f2c5a31",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:14.644Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Le comité a étudié deux désignations patrimoniales et deux demandes de permis patrimonial.",
+        "motsCles": [
+          "désignations patrimoniales",
+          "permis patrimonial"
+        ],
+        "empreinte": "0aa7ffef520f",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:15.785Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "de879260-e75d-4f74-b0b7-4c8d8cbde996": {
+      "en": {
+        "phrase": "Council dealt with heritage items, a street name change, housing support and flood recovery assistance.",
+        "motsCles": [
+          "heritage items",
+          "street name",
+          "flood recovery"
+        ],
+        "empreinte": "23487308f124",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:16.663Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Le conseil a traité de patrimoine, d’un changement de nom de rue, d’aide au logement et d’aide aux sinistrés des inondations.",
+        "motsCles": [
+          "patrimoine",
+          "nom de rue",
+          "aide aux sinistrés"
+        ],
+        "empreinte": "3452d3b90c3a",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:17.952Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "a2a6d56d-ffb8-4b1c-90a1-555352106242": {
+      "en": {
+        "phrase": "The committee dealt with zoning amendments for several properties and technical amendments to the permanent signs by-law.",
+        "motsCles": [
+          "zoning amendments",
+          "signs by-law"
+        ],
+        "empreinte": "2a2c322f0899",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:19.034Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Le comité a traité de modifications de zonage dans plusieurs secteurs et de modifications techniques au règlement sur les enseignes.",
+        "motsCles": [
+          "zonage",
+          "enseignes"
+        ],
+        "empreinte": "de477d86d15a",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:20.025Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "f282702d-17f6-4d5c-9aed-2c251ef14ef9": {
+      "en": {
+        "phrase": "Council dealt with zoning amendments in several areas, the signs by-law, a demolition exemption and road closures.",
+        "motsCles": [
+          "zoning amendments",
+          "signs by-law",
+          "road closures"
+        ],
+        "empreinte": "9e824e6a2503",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:21.121Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Modifications de zonage dans plusieurs secteurs, règlement sur les enseignes, dérogation pour des démolitions et fermetures de rue.",
+        "motsCles": [
+          "zonage",
+          "enseignes",
+          "démolitions"
+        ],
+        "empreinte": "1d0df796f9da",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:22.257Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "abe9d9f1-e19b-4bd0-95f6-465f4d38147b": {
+      "en": {
+        "phrase": "The committee received KPMG’s audit plan and several Auditor General reports on overtime, garbage collection and 3-1-1.",
+        "motsCles": [
+          "audit plan",
+          "overtime",
+          "garbage collection"
+        ],
+        "empreinte": "e7ee8062172a",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:23.333Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Le comité a reçu le plan de vérification de KPMG et des rapports de la vérificatrice générale sur les heures supplémentaires, la collecte des ordures et le 3-1-1.",
+        "motsCles": [
+          "plan de vérification",
+          "heures supplémentaires",
+          "collecte des ordures"
+        ],
+        "empreinte": "b6619775fc04",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:24.455Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "0e176a88-8996-4b96-bdaf-38624bd64786": {
+      "en": {
+        "phrase": "The committee dealt with zoning amendments at several addresses and planning for the Leitrim area.",
+        "motsCles": [
+          "zoning amendments",
+          "Leitrim area"
+        ],
+        "empreinte": "f718df7fb082",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:25.374Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "La séance a surtout porté sur plusieurs modifications de zonage à diverses adresses et sur l’aménagement du secteur Leitrim.",
+        "motsCles": [
+          "modifications de zonage",
+          "secteur Leitrim"
+        ],
+        "empreinte": "f7a78a124327",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:26.598Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "1aec42e4-722f-4cbc-a6d8-d5feaacdcd05": {
+      "en": {
+        "phrase": "Uncollectible taxes, land sales, a lease at 200 Iber Road and an application to expropriate land for the Brian Coburn widening.",
+        "motsCles": [
+          "Uncollectible taxes",
+          "expropriate land"
+        ],
+        "empreinte": "34870f0c73f8",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:27.503Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Impôts fonciers irrécouvrables, vente de terrains, bail au 200, rue Iber et demande d’expropriation pour l’élargissement Brian Coburn.",
+        "motsCles": [
+          "Impôts fonciers irrécouvrables",
+          "demande d’expropriation"
+        ],
+        "empreinte": "558c44a9b63b",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:28.779Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    },
+    "7e8e2766-5703-4860-9fc6-7b51b4bd783a": {
+      "en": {
+        "phrase": "Council dealt with heritage designations, zoning amendments, Auditor General reports and an expropriation request.",
+        "motsCles": [
+          "heritage designations",
+          "zoning amendments",
+          "expropriation request"
+        ],
+        "empreinte": "b37fb7392eaa",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:29.803Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      },
+      "fr": {
+        "phrase": "Le conseil a traité de désignations patrimoniales, de modifications de zonage, de rapports de la vérificatrice générale et d’une demande d’expropriation.",
+        "motsCles": [
+          "désignations patrimoniales",
+          "modifications de zonage",
+          "demande d’expropriation"
+        ],
+        "empreinte": "a381fbe1af45",
+        "version": 2,
+        "modele": "claude-haiku-4-5-20251001",
+        "genereLe": "2026-11-15T11:16:31.066Z",
+        "manuel": "2026-11-15, d’après Hugo"
+      }
+    }
+  },
+  "maj": "2026-11-15T11:16:31.066Z"
+}

@@ -199,6 +199,15 @@ const PAGES = [
   <section data-vue="apropos"><ul class="journal" data-role="journal"></ul></section>`,
   },
   {
+    // Représentez votre ville : copie de la page de DossierBC (Martin, 15 nov. 2026).
+    fichier: 'represente-ta-ville.html',
+    vue: 'represente',
+    donnees: '',
+    titre: 'Represent your city',
+    description: 'Bring your city council to DossierOntario: its decisions, its votes, its spending, in plain language. Prices and how it works.',
+    contenu: `  <style>\n  /* Styles de la page de DossierBC (commun/dq.css, commun/bc.css), avec les variables de DossierOntario. */\n  .page-rtv { --card: var(--sur-clair, #fff); --muted: #5b6270; --bc-filet: var(--line); --bc-estompe: #5b6270; --bc-gris-fond: #eef0f3; --bc-jaune-fond: #fff4cc; --bc-rouge: var(--rouge); }\n  html:not([lang=\"fr\"]) .page-rtv .fr-txt, html[lang=\"fr\"] .page-rtv .en-txt { display: none; }\n  .page-rtv .rtv-pot { position: absolute; left: -9999px; }\n  .page-rtv .hero-outline { display: block; }\n  .page-rtv .rtv{max-width:760px; margin:0 auto; padding:28px 0 48px;}\n  .page-rtv .rtv-etapes{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:28px;}\n  .page-rtv .rtv-etape{border:3px solid var(--ink); background:var(--card); box-shadow:4px 4px 0 var(--ink); padding:14px 16px;}\n  .page-rtv .rtv-etape b{display:inline-block; background:#FFD24D; border:2px solid var(--ink); padding:0 8px; font-family:'Archivo',sans-serif; font-weight:900; margin-bottom:6px;}\n  .page-rtv .rtv-etape p{margin:0; font-size:15px; line-height:1.45;}\n  .page-rtv .rtv-form{display:grid; gap:14px; border:3px solid var(--ink); background:var(--card); box-shadow:4px 4px 0 var(--ink); padding:20px 22px;}\n  .page-rtv .rtv-form label{display:grid; gap:6px; font-weight:700; font-size:14px;}\n  .page-rtv .rtv-form input:not([type=radio]), .rtv-form textarea{font:inherit; font-weight:400; padding:10px 12px; border:2px solid var(--ink); background:#fff; color:#131313;}\n  .page-rtv .rtv-form fieldset{border:0; margin:0; padding:0; display:grid; gap:6px;}\n  .page-rtv .rtv-form legend{font-weight:700; font-size:14px; margin-bottom:6px;}\n  .page-rtv .rtv-form .rtv-choix{display:flex; align-items:center; gap:8px; font-weight:400;}\n  .page-rtv .rtv-form .bill-more{justify-self:start; cursor:pointer;}\n  .page-rtv .rtv-pot{position:absolute; left:-9999px; width:1px; height:1px; opacity:0;}\n  .page-rtv .rtv-note{margin:0; font-size:13px; color:var(--muted, #5B6570);}\n  .page-rtv .rtv-merci{margin:0; font-size:16px;}\n  .page-rtv .rtv-h1{font-size:clamp(40px, 7vw, 88px) !important; line-height:1 !important; overflow-wrap:anywhere;}\n  .page-rtv .rtv-lien{color:inherit; font-weight:700; text-decoration:underline; text-decoration-color:#FFD24D; text-decoration-thickness:4px; text-underline-offset:3px;}\n  .page-rtv .rtv-lien:hover{text-decoration-color:#0E4FC1;}\n  .page-rtv .rtv-prix{border:3px solid var(--ink); background:var(--card); box-shadow:4px 4px 0 var(--ink); padding:16px 18px; margin-bottom:28px;}\n  .page-rtv .rtv-prix p{margin:0 0 10px; font-size:15px; line-height:1.45;}\n  .page-rtv .rtv-prix-h{font-family:'Archivo',sans-serif; font-weight:900; font-size:20px; margin:0 0 12px;}\n  .page-rtv .rtv-grille{border-collapse:collapse; margin:0 0 12px; font-size:15px;}\n  .page-rtv .rtv-grille td{padding:5px 18px 5px 0; border-bottom:1px solid var(--line, #ddd);}\n  .page-rtv .rtv-grille td:last-child{font-weight:800; text-align:right; padding-right:0;}\n  .page-rtv .rtv-fondateur{background:#FFF3C4; color:#131313; border-left:4px solid #FFD24D; padding:8px 10px;}\n  .page-rtv .rtv-bloquee td{color:var(--bc-rouge); font-weight:700;}\n  .page-rtv .rtv-permission td{background:var(--bc-jaune-fond); color:#17202b; font-weight:600;}\n  .page-rtv .rtv-inconnu td{background:var(--bc-gris-fond); color:#17202b;}\n  .page-rtv .rtv-legende{margin:18px 0 0; padding:14px 16px; border:1px solid var(--bc-filet);}\n  .page-rtv .rtv-legende ul{margin:0; padding:0; list-style:none;}\n  .page-rtv .rtv-legende li:last-child{margin-bottom:0;}\n  .page-rtv .rtv-l-rouge::before{background:var(--bc-rouge); border-color:var(--bc-rouge) !important;}\n  .page-rtv .rtv-l-jaune::before{background:var(--bc-jaune-fond);}\n  .page-rtv .rtv-l-gris::before{background:var(--bc-gris-fond);}\n  .page-rtv .rtv-legende-source{margin:12px 0 0; font-size:12px; color:var(--bc-estompe);}\n  \n  @media (max-width: 640px) { .page-rtv .rtv-etapes { grid-template-columns: 1fr; } }\n  </style>\n  <div class=\"page-rtv\">\n    <div class=\"view-hero\">\n      <h1 class=\"hero-h1 hero-h1-md\">\n        <span class=\"hero-sujet\"><span class=\"en-txt\">City volets</span><span class=\"fr-txt\">Volets municipaux</span></span>\n        <span class=\"en-txt\">Represent</span><span class=\"fr-txt\">Représentez</span>\n        <span class=\"hero-outline\"><span class=\"en-txt\">your city.</span><span class=\"fr-txt\">votre ville.</span></span>\n      </h1>\n      <p class=\"view-hero-sub\">\n        <span class=\"en-txt\">DossierOntario puts the Legislative Assembly of Ontario in plain language. The same can be done for a city council — its decisions, its votes, its spending. <b>No Ontario city is covered yet.</b> Raise your hand and yours could be the first. <a class=\"rtv-lien\" href=\"https://dossierquebec.ca/montreal/?lang=en\" target=\"_blank\" rel=\"noopener\">See what it looks like, on the City of Montréal →</a></span>\n        <span class=\"fr-txt\">DossierOntario met l'Assemblée législative de l'Ontario en langage clair. On peut faire la même chose pour un conseil municipal — ses décisions, ses votes, ses dépenses. <b>Aucune ville de l'Ontario n'est couverte.</b> Levez la main et la vôtre pourrait être la première. <a class=\"rtv-lien\" href=\"https://dossierquebec.ca/montreal/\" target=\"_blank\" rel=\"noopener\">Voir à quoi ça ressemble, sur la Ville de Montréal →</a></span>\n      </p>\n    </div>\n\n    <div class=\"band band-white bleed\"><div class=\"rtv\">\n      <div class=\"rtv-etapes\">\n        <div class=\"rtv-etape\"><b>1</b><p><span class=\"en-txt\">You tell us which city you want to see on the site.</span><span class=\"fr-txt\">Vous nous dites quelle ville vous voulez voir sur le site.</span></p></div>\n        <div class=\"rtv-etape\"><b>2</b><p><span class=\"en-txt\">We check how the city publishes its council minutes — some still scan handwritten pages — and come back to you with the cost.</span><span class=\"fr-txt\">On vérifie comment la Ville publie ses procès-verbaux — certaines numérisent encore des pages écrites à la main — et on vous revient avec le coût.</span></p></div>\n        <div class=\"rtv-etape\"><b>3</b><p><span class=\"en-txt\">Your city appears in the Cities menu, with “Report offered by” and your name on it.</span><span class=\"fr-txt\">Votre ville apparaît dans le menu Villes, avec la mention « Compte rendu offert par » et votre nom.</span></p></div>\n      </div>\n\n      <div class=\"rtv-prix\">\n        <h2 class=\"rtv-prix-h\"><span class=\"en-txt\">Prices, for a sponsoring business</span><span class=\"fr-txt\">Les prix, pour une entreprise commanditaire</span></h2>\n\n        <details class=\"rtv-menu\" open><summary class=\"rtv-menu-titre\"><span class=\"en-txt\">Prices</span><span class=\"fr-txt\">Les prix</span></summary>\n        <p><b class=\"en-txt\">Setup: $500, once.</b><b class=\"fr-txt\">Démarrage : 500 $, une fois.</b>\n          <span class=\"en-txt\">We load the decisions of the last two months. A council does not sit from the 1st to the 31st: two months guarantee one full month, so whoever subscribes gets a real summary right away. Not every city publishes its minutes in a modern way, and digging them out is most of the work.</span>\n          <span class=\"fr-txt\">On charge les décisions des deux derniers mois. Un conseil ne siège pas du 1<sup>er</sup> au 31 : deux mois garantissent un mois complet, et la personne qui s'abonne reçoit tout de suite un vrai résumé. Toutes les villes ne publient pas leurs procès-verbaux de façon moderne, et aller les chercher est l'essentiel du travail.</span></p>\n        <p><b class=\"en-txt\">Then, per month:</b><b class=\"fr-txt\">Ensuite, par mois :</b></p>\n        <table class=\"rtv-grille\">\n          <tr><td><span class=\"en-txt\">City under 50,000 people</span><span class=\"fr-txt\">Ville de moins de 50 000 habitant·e·s</span></td><td><span class=\"en-txt\">$50</span><span class=\"fr-txt\">50 $</span></td></tr>\n          <tr><td><span class=\"en-txt\">50,000 to 150,000 people</span><span class=\"fr-txt\">De 50 000 à 150 000</span></td><td><span class=\"en-txt\">$100</span><span class=\"fr-txt\">100 $</span></td></tr>\n          <tr><td><span class=\"en-txt\">150,000 to 500,000 people</span><span class=\"fr-txt\">De 150 000 à 500 000</span></td><td><span class=\"en-txt\">$200</span><span class=\"fr-txt\">200 $</span></td></tr>\n          <tr><td><span class=\"en-txt\">500,000 to 1 million people</span><span class=\"fr-txt\">De 500 000 à 1 million</span></td><td><span class=\"en-txt\">$300</span><span class=\"fr-txt\">300 $</span></td></tr>\n          <tr><td><span class=\"en-txt\">Over 1 million people</span><span class=\"fr-txt\">Plus d'un million</span></td><td><span class=\"en-txt\">$500</span><span class=\"fr-txt\">500 $</span></td></tr>\n        </table>\n        </details>\n\n        <details class=\"rtv-menu\"><summary class=\"rtv-menu-titre\"><span class=\"en-txt\">Terms</span><span class=\"fr-txt\">Conditions</span></summary>\n        <p><span class=\"en-txt\">Sponsorship is taken in three-month blocks. One sponsor per city. If several want the same city, sealed bids, best offer wins.</span><span class=\"fr-txt\">La représentation se prend par blocs de trois mois. Un seul commanditaire par ville. Si plusieurs veulent la même ville, offres sous pli, la meilleure l'emporte.</span></p>\n        <p class=\"rtv-fondateur\"><b class=\"en-txt\">Founders:</b><b class=\"fr-txt\">Fondateurs :</b> <span class=\"en-txt\">the first sponsors choose three months, six months or a year, at the same monthly price for the whole term.</span><span class=\"fr-txt\">les premiers commanditaires choisissent trois mois, six mois ou un an, au même prix par mois pour toute la durée.</span></p>\n        </details>\n      </div>\n\n      <form class=\"rtv-form\" id=\"rtvForm\" onsubmit=\"event.preventDefault(); rtvEnvoyer(this)\">\n        <label><span><span class=\"en-txt\">Your city</span><span class=\"fr-txt\">Votre ville</span></span><input name=\"ville\" required maxlength=\"80\" placeholder=\"Ottawa, Hamilton, London…\"></label>\n        <label><span><span class=\"en-txt\">Your name or your organization's</span><span class=\"fr-txt\">Votre nom ou celui de votre organisme</span></span><input name=\"nom\" required maxlength=\"120\"></label>\n        <label><span><span class=\"en-txt\">Your email</span><span class=\"fr-txt\">Votre courriel</span></span><input name=\"courriel\" type=\"email\" required maxlength=\"200\"></label>\n        <fieldset>\n          <legend><span class=\"en-txt\">You are</span><span class=\"fr-txt\">Vous êtes</span></legend>\n          <label class=\"rtv-choix\"><input type=\"radio\" name=\"profil\" value=\"citoyen\" checked> <span class=\"en-txt\">A citizen</span><span class=\"fr-txt\">Un citoyen ou une citoyenne</span></label>\n          <label class=\"rtv-choix\"><input type=\"radio\" name=\"profil\" value=\"organisme\"> <span class=\"en-txt\">An organization</span><span class=\"fr-txt\">Un organisme</span></label>\n          <label class=\"rtv-choix\"><input type=\"radio\" name=\"profil\" value=\"entreprise\"> <span class=\"en-txt\">A business that wants to sponsor its city</span><span class=\"fr-txt\">Une entreprise qui veut commanditer sa ville</span></label>\n        </fieldset>\n        <label><span><span class=\"en-txt\">Anything else (optional)</span><span class=\"fr-txt\">Un mot de plus (facultatif)</span></span><textarea name=\"message\" rows=\"4\" maxlength=\"2000\"></textarea></label>\n        <input name=\"site_web\" class=\"rtv-pot\" tabindex=\"-1\" autocomplete=\"off\" aria-hidden=\"true\">\n        <button type=\"submit\" class=\"bill-more\"><span class=\"en-txt\">Raise my hand →</span><span class=\"fr-txt\">Lever la main →</span></button>\n        <p class=\"rtv-note\" aria-live=\"polite\" id=\"rtvEtat\"><span class=\"en-txt\">No parties, candidates or elected officials. A sponsor has no say over the content.</span><span class=\"fr-txt\">Pas de parti, de candidat·e ni d'élu·e. Le commanditaire n'a aucun droit de regard sur le contenu.</span></p>\n      </form>\n    </div></div>\n  </div>\n  <script>\n  // Le formulaire poste sur /api/represente (copie de api/represente.js de DossierBC), qui envoie le tout par courriel.\n  async function rtvEnvoyer(f) {\n    const en = document.documentElement.lang !== 'fr';\n    const note = f.querySelector('.rtv-note'), btn = f.querySelector('button');\n    btn.disabled = true;\n    note.textContent = en ? 'Sending…' : 'Envoi…';\n    try {\n      const d = Object.fromEntries(new FormData(f));\n      d.province = 'on';\n      const r = await fetch('/api/represente', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });\n      if (!r.ok) throw new Error('HTTP ' + r.status);\n      f.innerHTML = en ? '<p class=\"rtv-merci\"><b>Thank you.</b> We will email you once we have looked at your city.</p>' : '<p class=\"rtv-merci\"><b>Merci.</b> On vous revient par courriel dès qu\\'on a regardé votre ville.</p>';\n    } catch (e) {\n      btn.disabled = false;\n      note.textContent = en ? 'Sending failed. Please try again in a moment.' : 'L\\'envoi n\\'a pas fonctionné. Réessayez dans un moment.';\n    }\n  }\n  </script>`,
+  },
+  {
     // « The rules » dans le pied de page, à côté de Facebook (5 oct. 2026), comme /regles sur
     // DossierQuébec. Le contenu est propre à l'Ontario : pas de promesses ni de partis ici.
     // Chaque règle doit rester VRAIE : si le site change, la règle change avec lui.
@@ -281,6 +290,185 @@ const PAGES = [
   </section>`,
   },
   {
+    fichier: 'ottawa/index.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaAccueil',
+    donnees: 'ottawa ottawa-conseil',
+    titre: "Ottawa, decision by decision",
+    description: "What Ottawa City Council and its committees decided in the last two months, who sits on council, the contracts, the budget and taxes, and what is coming near you. Unofficial, bilingual.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surAccueil">City of Ottawa · an unofficial citizen file</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreAccueil">Ottawa, decision by decision</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'accueil' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'accueil' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'accueil' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'accueil' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'accueil' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'accueil' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'accueil' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'accueil' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <div class="encadre" data-i18n-html="ottawa.introAccueil"><b>Unofficial, and new.</b> Everything here comes from what the City of Ottawa publishes: its minutes, its open data. Nothing is invented; every item links back to its source.</div>
+  <section data-vue="ottawaAccueil"></section>`,
+  },
+  {
+    fichier: 'ottawa/decisions.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawa',
+    donnees: 'ottawa',
+    titre: "Ottawa: what city council decided",
+    description: "The last two months of Ottawa City Council and committee decisions, item by item, in plain language, with a link to the official minutes.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.sur2">City of Ottawa · city council and standing committees</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titre">What Ottawa city council decided</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'decisions' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'decisions' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'decisions' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'decisions' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'decisions' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'decisions' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'decisions' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'decisions' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <div class="encadre" data-i18n-html="ottawa.intro"><b>Unofficial, and new.</b> The last two months of decisions of Ottawa City Council and its standing committees, read from the minutes the City publishes, one card per decision, with a plain-language summary written by AI. Every card links to the official minutes.</div>
+  <section data-vue="ottawa"></section>`,
+  },
+  {
+    fichier: 'ottawa/council.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaConseil',
+    donnees: 'ottawa-conseil ottawa-quartiers',
+    titre: "Ottawa: city council and wards",
+    description: "The mayor and the 24 ward councillors of Ottawa, their ward on the map, their attendance at council meetings, and how to reach them.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surConseil">City of Ottawa · 2022-2026 Term of Council</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreConseil">Who sits on Ottawa city council</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'council' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'council' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'council' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'council' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'council' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'council' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'council' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'council' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <section data-vue="ottawaConseil"></section>`,
+  },
+  {
+    fichier: 'ottawa/contracts.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaContrats',
+    donnees: 'ottawa-contrats',
+    titre: "Ottawa: contracts of $25,000 and more",
+    description: "Every contract of $25,000 or more awarded by City of Ottawa staff under delegated authority in 2025: supplier, department, amount, and why it was not competed when it was not.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surContrats">City of Ottawa · contracts awarded under delegated authority</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreContrats">Who the City pays, and for what</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'contracts' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'contracts' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'contracts' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'contracts' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'contracts' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'contracts' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'contracts' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'contracts' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <section data-vue="ottawaContrats"></section>`,
+  },
+  {
+    fichier: 'ottawa/budget.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaBudget',
+    donnees: 'ottawa-budget',
+    titre: "Ottawa: budget and taxes",
+    description: "Ottawa municipal taxes by ward from 2022 to 2026, the 2026 draft budget by committee, revenues, capital program, reserves and fees, from the City’s open data.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surBudget">City of Ottawa · taxes by ward and 2026 draft budget</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreBudget">Where the money comes from, and where it goes</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'budget' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'budget' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'budget' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'budget' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'budget' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'budget' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'budget' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'budget' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <section data-vue="ottawaBudget"></section>`,
+  },
+  {
+    fichier: 'ottawa/near-me.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaPres',
+    donnees: 'ottawa-conseil ottawa-quartiers ottawa-pres',
+    titre: "Ottawa: near me",
+    description: "Type an Ottawa street or postal code: your ward, your councillor, the parks, the upcoming construction and the building permits around you. Nothing is sent to a server.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surPres">City of Ottawa · your ward, your councillor, what is coming</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titrePres">Near me</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'near-me' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'near-me' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'near-me' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'near-me' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'near-me' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'near-me' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'near-me' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'near-me' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <section data-vue="ottawaPres"></section>`,
+  },
+  {
+    fichier: 'ottawa/lexicon.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaLexique',
+    donnees: 'contenu:ottawa-lexique',
+    titre: "Ottawa: municipal lexicon",
+    description: "By-law, zoning amendment, recorded vote, bulk consent, delegation of authority: the words of Ottawa city council explained in plain language.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surLexique">City of Ottawa · the words of the council, explained</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreLexique">Municipal lexicon</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'lexicon' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'lexicon' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'lexicon' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'lexicon' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'lexicon' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'lexicon' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'lexicon' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'lexicon' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <div class="encadre" data-i18n="ottawa.introLexique">Council words, explained in ordinary ones. These explanations are ours, not the City’s: we write them to be understood, not to be precise in the legal sense.</div>
+  <section data-vue="ottawaLexique"></section>`,
+  },
+  {
+    fichier: 'ottawa/sources.html',
+    horsPlan: true, // verrou : noindex tant que la Ville d'Ottawa n'a pas répondu (guide DQ, étape 2)
+    vue: 'ottawaSources',
+    donnees: 'ottawa ottawa-conseil contenu:journal',
+    titre: "Ottawa: sources",
+    description: "Where every number on the Ottawa pages comes from, under which licence, what the City’s terms of use say, and what this site does not do.",
+    contenu: `  <p class="fil"><a href="/" data-i18n="ottawa.retour">← DossierOntario</a></p>
+  <p class="sur-titre" data-i18n="ottawa.surSources">City of Ottawa · where it all comes from</p>
+  <h1 class="titre-vue" data-i18n="ottawa.titreSources">Sources and limits</h1>
+  <nav class="sous-onglets" aria-label="Ottawa">
+    <a href="/ottawa/" data-i18n="ottawa.ongletAccueil" class="${'accueil' === 'sources' ? 'actif' : ''}">Overview</a>
+    <a href="/ottawa/decisions" data-i18n="ottawa.ongletDecisions" class="${'decisions' === 'sources' ? 'actif' : ''}">Decisions</a>
+    <a href="/ottawa/council" data-i18n="ottawa.ongletConseil" class="${'council' === 'sources' ? 'actif' : ''}">Council</a>
+    <a href="/ottawa/contracts" data-i18n="ottawa.ongletContrats" class="${'contracts' === 'sources' ? 'actif' : ''}">Contracts</a>
+    <a href="/ottawa/budget" data-i18n="ottawa.ongletBudget" class="${'budget' === 'sources' ? 'actif' : ''}">Budget &amp; taxes</a>
+    <a href="/ottawa/near-me" data-i18n="ottawa.ongletPres" class="${'near-me' === 'sources' ? 'actif' : ''}">Near me</a>
+    <a href="/ottawa/lexicon" data-i18n="ottawa.ongletLexique" class="${'lexicon' === 'sources' ? 'actif' : ''}">Lexicon</a>
+    <a href="/ottawa/sources" data-i18n="ottawa.ongletSources" class="${'sources' === 'sources' ? 'actif' : ''}">Sources</a>
+  </nav>
+  <section data-vue="ottawaSources"></section>`,
+  },
+  {
     fichier: 'sources.html',
     vue: 'sources',
     donnees: '',
@@ -318,7 +506,7 @@ const PAGES = [
 // Vercel sert le site en « cleanUrls » : /bills, et non /bills.html. Les adresses que le
 // site publie lui-même (canonical, og:url, plan du site) doivent dire la même chose, sinon
 // Google voit deux adresses pour une seule page.
-const adressePropre = (fichier) => (fichier === 'index.html' ? '' : fichier.replace(/\.html$/, ''));
+const adressePropre = (fichier) => (fichier === 'index.html' ? '' : fichier.replace(/index\.html$/, '').replace(/\.html$/, ''));
 
 // Le commentaire de tête du modèle parle du modèle, pas des pages : il n'a rien à faire
 // dans ce qu'on sert (et il y affirmerait « ce fichier n'est jamais servi », ce qui
@@ -327,7 +515,10 @@ const modele = readFileSync(MODELE, 'utf8')
   .replace(/\r\n/g, '\n')
   .replace(/<!-- MODÈLE[\s\S]*?-->\n/, '');
 
+mkdirSync('ottawa', { recursive: true });
 for (const page of PAGES) {
+  // Le volet Ottawa a ses propres pages (copiées du modèle de Vancouver, 15 nov. 2026) : on ne les écrase pas.
+  if (page.fichier.startsWith('ottawa/')) continue;
   let html = modele
     .replace(/\{\{TITRE\}\}/g, page.titre)
     .replace(/\{\{DESCRIPTION\}\}/g, page.description)
@@ -348,6 +539,41 @@ for (const page of PAGES) {
   }
   html = html.replace(/\{\{ACTIF_[a-z]+\}\}/g, '');
 
+  // Les pages d'Ottawa, comme les volets de ville de DQ : la barre de la ville remplace celle de la
+  // province (pas d'onglets de l'Assemblée, pas de bande des chiffres de l'Assemblée). Les huit
+  // onglets du volet montent dans l'en-tête, à la place de la sous-navigation dans la page.
+  if (page.fichier.startsWith('ottawa/')) {
+    const sous = html.match(/  <nav class="sous-onglets"[\s\S]*?<\/nav>\n/);
+    if (sous) {
+      const liens = sous[0].replace(/^  <nav class="sous-onglets" aria-label="Ottawa">\n/, '').replace(/  <\/nav>\n$/, '');
+      // L'onglet Sources quitte la barre : le lien est au pied de page, comme sur DQ (Martin, 15 nov. 2026).
+      const liensSansSources = liens.replace(/    <a href="\/ottawa\/sources"[^\n]*\n/, '');
+      html = html.replace(sous[0], '')
+        .replace(/<nav class="onglets" aria-label="Sections">[\s\S]*?<\/nav>/, `<nav class="onglets onglets-ville" aria-label="Ottawa">\n${liensSansSources}    </nav>`);
+    }
+    // Pas de bande rouge (« Gratuit. Sans publicité. » et la mission sur ola.org) ni de pied de page
+    // à colonnes : le pied des pages de ville de DQ, une phrase et une ligne de liens (Martin, 15 nov. 2026).
+    html = html
+      .replace(/<!-- La bande rouge de fin[\s\S]*?<\/section>\n/, '')
+      .replace(/<footer class="pied">[\s\S]*?<\/footer>/, `<footer class="pied pied-ville">
+  <div class="colonne">
+    <p data-i18n-html="ottawa.piedTexte">Independent citizen site. No connection with the City of Ottawa, no official status. If anything differs, the City's original document prevails. <a href="/ottawa/sources">Sources</a>.</p>
+    <p class="pied-ville-liens" data-i18n-html="ottawa.piedLiens"><a href="/">DossierOntario: the Legislative Assembly in plain language</a> · <a href="/rules">The rules of the site</a> · <a href="/ottawa/sources">Sources</a> · <a href="https://ottawa.ca/en" target="_blank" rel="noopener">City of Ottawa site ↗</a> · A project by <a href="https://www.dafrsolution.com/en" target="_blank" rel="noopener">DAFR Solution</a></p>
+  </div>
+</footer>`);
+    html = html.replace(/<div class="ticker"[^>]*>.*?<\/div><\/div>\n/, '');
+    // Le logo devient celui de la ville (DQ : « DossierVilleDeLaval ») ; la feuille d'érable mène à
+    // DossierOntario, comme le petit lien vers DQ sur les pages de ville de DQ. Pas de fil « ← DossierOntario ».
+    html = html
+      .replace(/<a class="mot-symbole" href="\/">[\s\S]*?<\/a>/, '<a class="mot-symbole" href="/ottawa/">Dossier<span class="province">VilleDOttawa</span></a>')
+      .replace(/<a class="erable" href="https:\/\/dossiercanada\.ca\/"[^>]*>/, '<a class="erable" href="/" title="DossierOntario" aria-label="DossierOntario">')
+      .replace(/  <p class="fil"><a href="\/" data-i18n="ottawa\.retour">[^<]*<\/a><\/p>\n/, '');
+  }
+  if (page.fichier.startsWith('ottawa/')) {
+    html = html
+      .replace('https://dossierontario.ca/partage.png', 'https://dossierontario.ca/ottawa/og-ottawa.png')
+      .replace(/<meta property="og:image:alt" content="[^"]*">/, '<meta property="og:image:alt" content="DossierVilleDOttawa: Ottawa, decision by decision">');
+  }
   if (page.horsPlan) {
     html = html.replace(/<link rel="canonical"[^>]*>\n/, '<meta name="robots" content="noindex">\n').replace(/<link rel="alternate"[^>]*>\n/, '');
   }
