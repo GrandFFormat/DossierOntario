@@ -1,0 +1,452 @@
+{
+  "seances": {
+    "2026-11-05": {
+      "jour": "2026-11-05",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-05/hansard",
+      "en": [
+        "Bill 109 (Protecting Ontario's Food Independence Act) passed third reading. It would let the province restrict foreign ownership of farmland, merge two farm tribunals, update the Milk Act and change beef fee collection.",
+        "Opposition members said they would support Bill 109 but asked about farmland lost to development, about 319 acres a day, and about speculation by domestic buyers. The agriculture minister said he is open to ideas.",
+        "Bill 143 (budget measures) passed second reading, 66 to 35, after a motion to put the question carried 66 to 34. It was referred to the Standing Committee on Finance and Economic Affairs.",
+        "Question Period: Opposition members asked about OSAP funding frozen for private career colleges and alleged fraud. The Minister of Colleges and Universities gave a timeline and cited KPMG, the OPP and the Auditor General.",
+        "Opposition members asked the Health Minister about denied cancer treatment coverage for Sabrina Apitz-Grossman. She said decisions are made by experts and cited the FAST program. Member Robin Lennox was named and removed from the chamber.",
+        "Other questions covered cuts to registered nurse positions at London hospitals, child care worker wages, commercial tenancy law, development charges and Ring of Fire roads.",
+        "The House marked Remembrance Day with two minutes of silence and statements from party leaders. The Redeemer University choir sang. Third reading debate on Bill 119 (streets and communities safety) began and was adjourned."
+      ],
+      "fr": [
+        "Le projet de loi 109 (Loi visant à protéger l'autonomie alimentaire de l'Ontario) a été adopté en troisième lecture. Il permettrait de restreindre la propriété étrangère de terres agricoles et de fusionner deux tribunaux agricoles. Il modifie aussi la Loi sur le lait et la perception des frais du bœuf.",
+        "Des député·es de l'opposition appuient le projet de loi 109 mais ont posé des questions sur la perte de terres agricoles au profit du développement, environ 319 acres par jour et sur la spéculation intérieure. Le ministre de l'Agriculture se dit ouvert aux idées.",
+        "Le projet de loi 143 (mesures budgétaires) a été adopté en deuxième lecture par 66 voix contre 35. Une motion pour mettre la question aux voix avait été adoptée par 66 contre 34. Le projet a été renvoyé au Comité permanent des finances et des affaires économiques.",
+        "Période des questions : l'opposition a interrogé le gouvernement sur le gel du RAFEO pour les collèges privés et les allégations de fraude. Le ministre des Collèges et Universités a présenté un calendrier et cité KPMG, la police provinciale et la vérificatrice générale.",
+        "Des député·es de l'opposition ont interrogé la ministre de la Santé sur le refus de couvrir le traitement contre le cancer de Sabrina Apitz-Grossman. Elle a répondu que les décisions relèvent d'experts et cité le programme FAST. Robin Lennox a été nommée et expulsée de la Chambre.",
+        "D'autres questions portaient sur les postes d'infirmières à London, les salaires en garderie, la loi sur la location commerciale, les redevances d'aménagement et les routes du Cercle de feu.",
+        "La Chambre a souligné le jour du Souvenir par deux minutes de silence et des déclarations des chefs. La chorale de l'Université Redeemer a chanté. Le débat de troisième lecture du projet de loi 119 sur la sécurité des rues a commencé et a été ajourné."
+      ],
+      "joueurs": [
+        {
+          "nom": "Hon. Sam Oosterhoff",
+          "role": "Minister of Agriculture, Food and Agribusiness",
+          "sujet": "Bill 109 third reading",
+          "sujetFr": "Troisième lecture du projet de loi 109"
+        },
+        {
+          "nom": "Mr. John Vanthof",
+          "role": "Timiskaming–Cochrane",
+          "sujet": "Farmland loss, Clay Belt, Bill 109",
+          "sujetFr": "Perte de terres, Ceinture d'argile, projet de loi 109"
+        },
+        {
+          "nom": "Hon. Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP and career colleges",
+          "sujetFr": "RAFEO et collèges privés"
+        },
+        {
+          "nom": "Hon. Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Cancer drug coverage, hospital funding",
+          "sujetFr": "Médicaments contre le cancer, financement des hôpitaux"
+        },
+        {
+          "nom": "Mr. Adil Shamji",
+          "role": "Don Valley East",
+          "sujet": "Cancer treatment denial",
+          "sujetFr": "Refus de traitement du cancer"
+        },
+        {
+          "nom": "MPP Robin Lennox",
+          "role": "Hamilton Centre",
+          "sujet": "Cancer treatment; named and removed",
+          "sujetFr": "Traitement du cancer; expulsée"
+        },
+        {
+          "nom": "Mr. Mike Schreiner",
+          "role": "Guelph",
+          "sujet": "Farmland protection, Bill 21",
+          "sujetFr": "Protection des terres, projet de loi 21"
+        },
+        {
+          "nom": "Mr. Ted Hsu",
+          "role": "Kingston and the Islands",
+          "sujet": "Bill 109 suggestions from hearings",
+          "sujetFr": "Suggestions issues des audiences"
+        },
+        {
+          "nom": "MPP Fatima Shaban",
+          "role": "Scarborough Southwest",
+          "sujet": "Inaugural speech",
+          "sujetFr": "Premier discours"
+        },
+        {
+          "nom": "Hon. Paul Calandra",
+          "role": "Minister of Education",
+          "sujet": "Child care",
+          "sujetFr": "Services de garde"
+        },
+        {
+          "nom": "MPP Mohamed Firin",
+          "role": "York South–Weston",
+          "sujet": "Bill 119 debate",
+          "sujetFr": "Débat sur le projet de loi 119"
+        },
+        {
+          "nom": "Hon. Doug Ford",
+          "role": "Premier",
+          "sujet": "Remembrance Day statement",
+          "sujetFr": "Déclaration du jour du Souvenir"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "109",
+          "etape": "third reading"
+        },
+        {
+          "numero": "143",
+          "etape": "second reading"
+        },
+        {
+          "numero": "119",
+          "etape": "third reading"
+        }
+      ],
+      "faitLe": "2026-11-16T20:36:38.033Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-04": {
+      "jour": "2026-11-04",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-04/hansard",
+      "en": [
+        "The House continued second reading debate on Bill 143, the fall economic statement bill. Government members cited tariff relief, the $8.7-billion federal-provincial plan, health investments and tax cuts. Opposition members cited the $16.9-billion deficit, health and education spending below the spring budget, and food bank use.",
+        "Government House Leader Steve Clark moved that the question be now put on Bill 143. The motion was declared carried on voice, and the recorded vote was deferred to the next deferred votes.",
+        "Question Period focused on OSAP and private career colleges. Minister Nolan Quinn said an audit, an OPP referral and notice to the Auditor General are under way. He said legislation is coming. Opposition members asked for the audit to be made public, a special Auditor General audit, and loan forgiveness.",
+        "Other questions covered the ECE wage freeze, lead testing in school water, cancer drug funding, affordable housing and francophone arts funding. Ministers replied by citing existing programs, testing rules, wage increases since 2018 and upcoming federal talks.",
+        "Government backbenchers asked about trade diversification, red tape reduction and sport infrastructure. Ministers cited non-US trade growth, a review of 375 business permits and $300 million added to the sport and recreation fund.",
+        "The NDP motion for a caregiver benefit was defeated 38 to 74. Bill 147, Benji's Law on allergy-friendly overnight camps, passed first reading. A motion allowing pre-budget committee meetings over the winter passed.",
+        "Third reading debate on Bill 119, the Protecting Ontario's Streets and Communities Act, resumed. MPP Lucille Collard welcomed the human trafficking coerced-debt measures. She asked for funding, a clear timetable and local police board input. The debate was adjourned."
+      ],
+      "fr": [
+        "La Chambre a poursuivi le débat de deuxième lecture du projet de loi 143 sur l'énoncé économique de l'automne. Le gouvernement a cité l'aide liée aux tarifs, le plan fédéral-provincial de 8,7 milliards de dollars et des baisses d'impôt. L'opposition a cité le déficit de 16,9 milliards de dollars et le recours aux banques alimentaires.",
+        "Le leader parlementaire du gouvernement, Steve Clark, a proposé de mettre la question aux voix sur le projet de loi 143. La motion a été déclarée adoptée de vive voix et le vote par appel nominal a été reporté.",
+        "La période de questions a porté surtout sur le RAFEO et les collèges privés d'enseignement professionnel. Le ministre Nolan Quinn a mentionné une vérification, un renvoi à la PPO et un avis à la vérificatrice générale. L'opposition a demandé de rendre la vérification publique, un audit spécial et l'effacement des prêts.",
+        "D'autres questions ont porté sur le gel des salaires des EPE, le plomb dans l'eau des écoles, les médicaments contre le cancer, le logement abordable et les arts visuels francophones. Les ministres ont cité des programmes existants et des hausses salariales depuis 2018.",
+        "Des député·e·s du gouvernement ont posé des questions sur la diversification du commerce, la réduction de la paperasse et les infrastructures sportives. Les ministres ont cité la hausse du commerce hors États-Unis et 300 millions de dollars ajoutés au fonds sportif.",
+        "La motion du NPD sur une prestation pour les proches aidants a été rejetée par 38 voix contre 74. Le projet de loi 147 (Loi Benji) a franchi la première lecture. Une motion permettant des consultations prébudgétaires cet hiver a été adoptée.",
+        "Le débat de troisième lecture du projet de loi 119 a repris. La députée Lucille Collard a accueilli favorablement les mesures sur les dettes forcées liées à la traite de personnes. Elle a demandé du financement et un échéancier clair. Le débat a été ajourné."
+      ],
+      "joueurs": [
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP audit and fraud",
+          "sujetFr": "Vérification et fraude du RAFEO"
+        },
+        {
+          "nom": "Andrea Hazell",
+          "role": "Scarborough–Guildwood",
+          "sujet": "Budget bill debate",
+          "sujetFr": "Débat sur le projet de loi budgétaire"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Leader of the third party",
+          "sujet": "Special Auditor General audit",
+          "sujetFr": "Audit spécial de la vérificatrice générale"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "role": "London West",
+          "sujet": "OSAP reports",
+          "sujetFr": "Rapports sur le RAFEO"
+        },
+        {
+          "nom": "Steve Clark",
+          "role": "Government House Leader",
+          "sujet": "Closure on Bill 143",
+          "sujetFr": "Clôture du débat sur le projet de loi 143"
+        },
+        {
+          "nom": "Lucille Collard",
+          "role": "Ottawa–Vanier",
+          "sujet": "Bill 119 and economic statement",
+          "sujetFr": "Projet de loi 119 et énoncé économique"
+        },
+        {
+          "nom": "Paul Calandra",
+          "role": "Minister of Education",
+          "sujet": "Child care wages",
+          "sujetFr": "Salaires en garde d'enfants"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Cancer drug coverage",
+          "sujetFr": "Couverture des médicaments contre le cancer"
+        },
+        {
+          "nom": "Stephen Lecce",
+          "role": "Minister of Energy and Mines",
+          "sujet": "Energy and mining plan",
+          "sujetFr": "Plan énergie et mines"
+        },
+        {
+          "nom": "Dawn Gallagher Murphy",
+          "role": "Newmarket–Aurora",
+          "sujet": "Tariff relief and health",
+          "sujetFr": "Aide tarifaire et santé"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "143",
+          "etape": "second reading"
+        },
+        {
+          "numero": "119",
+          "etape": "third reading"
+        },
+        {
+          "numero": "147",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-16T20:37:01.120Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-03": {
+      "jour": "2026-11-03",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-03/hansard",
+      "en": [
+        "House continued second reading debate on Bill 143, the budget measures bill tied to the fall economic statement. Government members said it protects jobs, cuts business taxes and invests in infrastructure; no vote was reported.",
+        "Opposition members said the statement offers little on housing, health care, education and jobs. They pointed to the $16.9-billion deficit, interest costs and advertising spending. The Green leader proposed a wealth tax.",
+        "MPPs raised Highway 69 funding, hospital costs (Ottawa at $10 billion), forestry support, and a retroactive freedom-of-information exemption for the Ontario Financing Authority in schedule 7.",
+        "Question Period focused on the OSAP private career college fraud. The Minister of Colleges and Universities cited KPMG, OPP and Auditor General referrals and coming legislation. Opposition asked for an Auditor General review and his dismissal.",
+        "Opposition asked about students cut off from the Learn and Stay grant and the paused Better Jobs Ontario. The Minister of Labour said other funding to private institutions is under review.",
+        "Other questions covered Ottawa Civic hospital costs, school permit fees, cancer treatment access, zoning orders and fundraising, HART hubs, truck training and Ontario Corps.",
+        "Bill 146 (AI data centre moratorium) and private bill Pr63 (Martin Farms Limited) passed first reading. Ottawa South gave notice of dissatisfaction on the Learn and Stay answer, to be debated later."
+      ],
+      "fr": [
+        "La Chambre a poursuivi le débat en deuxième lecture du projet de loi 143, sur les mesures budgétaires liées à l’énoncé économique de l’automne. Le gouvernement dit qu’il protège les emplois, réduit les impôts des entreprises et investit dans les infrastructures. Aucun vote n’a été rapporté.",
+        "Des député·es de l’opposition disent que l’énoncé offre peu pour le logement, la santé, l’éducation et l’emploi. Ils ont cité le déficit de 16,9 milliards de dollars, les intérêts et la publicité. Le chef des Verts propose un impôt sur la fortune.",
+        "Des député·es ont soulevé le financement de la route 69, le coût des hôpitaux (Ottawa à 10 milliards de dollars), l’appui à la foresterie et une exemption rétroactive d’accès à l’information pour l’Office ontarien de financement (annexe 7).",
+        "La période de questions a porté sur la fraude liée au RAFEO dans les collèges privés. Le ministre des Collèges et Universités a cité KPMG, la PPO, un renvoi à la vérificatrice générale et un projet de loi à venir. L’opposition réclame un examen de la vérificatrice générale et son départ.",
+        "L’opposition a posé des questions sur les étudiants privés de la subvention Learn and Stay et sur Better Jobs Ontario, suspendu. Le ministre du Travail dit que d’autres financements aux établissements privés sont en révision.",
+        "D’autres questions ont porté sur le coût de l’hôpital Civic d’Ottawa, les frais d’utilisation des écoles, l’accès aux traitements contre le cancer, les zones de zonage ministériel et le financement politique, les centres HART, la formation des camionneurs et Ontario Corps.",
+        "Le projet de loi 146 (moratoire sur les centres de données d’IA) et le projet de loi privé Pr63 (Martin Farms Limited) ont franchi la première lecture. Le député d’Ottawa-Sud a donné avis d’insatisfaction sur la réponse concernant Learn and Stay, débattue plus tard."
+      ],
+      "joueurs": [
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP fraud, KPMG review",
+          "sujetFr": "Fraude du RAFEO, examen de KPMG"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "Private colleges, donations, MZOs",
+          "sujetFr": "Collèges privés, dons, zones de zonage"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Ottawa South",
+          "sujet": "Learn and Stay grant, fall statement",
+          "sujetFr": "Subvention Learn and Stay, énoncé économique"
+        },
+        {
+          "nom": "Lee Fairclough",
+          "role": "Etobicoke–Lakeshore",
+          "sujet": "Auditor General review of OSAP",
+          "sujetFr": "Examen de la vérificatrice générale"
+        },
+        {
+          "nom": "Rob Flack",
+          "role": "Minister of Municipal Affairs and Housing",
+          "sujet": "Housing starts, municipal funding",
+          "sujetFr": "Mises en chantier, financement municipal"
+        },
+        {
+          "nom": "David Piccini",
+          "role": "Minister of Infrastructure",
+          "sujet": "Ottawa Civic hospital",
+          "sujetFr": "Hôpital Civic d’Ottawa"
+        },
+        {
+          "nom": "France Gélinas",
+          "role": "Nickel Belt",
+          "sujet": "Highway 69, hospitals, primary care",
+          "sujetFr": "Route 69, hôpitaux, soins primaires"
+        },
+        {
+          "nom": "George Pirie",
+          "role": "Minister of Northern Economic Development and Growth",
+          "sujet": "Northern resources, Ring of Fire",
+          "sujetFr": "Ressources du Nord, Cercle de feu"
+        },
+        {
+          "nom": "Ted Hsu",
+          "role": "Kingston and the Islands",
+          "sujet": "Bill 143 schedules, youth, productivity",
+          "sujetFr": "Annexes du projet de loi 143, jeunes, productivité"
+        },
+        {
+          "nom": "Mike Schreiner",
+          "role": "Guelph",
+          "sujet": "Wealth tax, AI data centre bill",
+          "sujetFr": "Impôt sur la fortune, projet de loi sur les centres de données"
+        },
+        {
+          "nom": "Deepak Anand",
+          "role": "Mississauga–Malton",
+          "sujet": "Support for Bill 143",
+          "sujetFr": "Appui au projet de loi 143"
+        },
+        {
+          "nom": "Guy Bourgouin",
+          "role": "Mushkegowuk–James Bay",
+          "sujet": "Forestry, northern services",
+          "sujetFr": "Foresterie, services dans le Nord"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "143",
+          "etape": "second reading"
+        },
+        {
+          "numero": "146",
+          "etape": "first reading"
+        },
+        {
+          "numero": "Pr63",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-16T20:37:36.571Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-02": {
+      "jour": "2026-11-02",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-02/hansard",
+      "en": [
+        "Question Period focused on OSAP and private career colleges. Opposition members asked why action took so long and called for the Minister of Colleges and Universities to be removed. Minister Quinn cited OPP, KPMG and the OSAP pause, and said legislation is coming.",
+        "Bill 140 (Building Ontario Faster Act, 2026) passed second reading 75 to 41 after a motion to end debate carried 75 to 41. It was referred to the Standing Committee on the Interior.",
+        "Bill 109 (Farmland Security Act, 2026) was reported by the Interior committee without amendment and ordered for third reading. Bills 145 (Optometry Amendment) and Pr57 passed first reading.",
+        "The NDP opposition day motion asked for a plan within 14 days to relieve students affected by the OSAP pause. Liberals supported it. It was defeated 38 to 68.",
+        "In the motion debate, Minister Quinn outlined the timeline of inspections and said legislation would cap enrolment and end OSAP for mostly online programs. Opposition members shared student stories and raised party donations.",
+        "Second reading debate on Bill 143 (Plan to Protect Ontario Act, Budget Measures, 2026, No. 2) began. Finance Minister Bethlenfalvy described tariff supports and tax cuts. NDP and Liberal members criticized housing, education, health and deficit figures.",
+        "Other questions covered Highway 69 widening, forestry investments, housing starts, out-of-country cancer treatment coverage and hospital layoffs in Hamilton."
+      ],
+      "fr": [
+        "La période de questions a porté sur le RAFEO et les collèges privés d’enseignement professionnel. L’opposition a demandé pourquoi l’action avait tardé et réclamé le départ du ministre des Collèges et Universités. Le ministre Quinn a cité la PPO, KPMG et la pause du RAFEO et annoncé un projet de loi.",
+        "Le projet de loi 140 (Building Ontario Faster Act, 2026) a été adopté en deuxième lecture par 75 voix contre 41 après une motion de clôture adoptée par 75 contre 41. Il est renvoyé au Comité permanent de l’intérieur.",
+        "Le comité de l’intérieur a rapporté le projet de loi 109 (Farmland Security Act, 2026) sans amendement; il est renvoyé à la troisième lecture. Les projets de loi 145 (optométrie) et Pr57 ont passé la première lecture.",
+        "La motion de l’opposition néo-démocrate demandait un plan en 14 jours pour aider les étudiants touchés par la pause du RAFEO. Les libéraux l’ont appuyée. Elle a été rejetée par 38 voix contre 68.",
+        "Dans le débat, le ministre Quinn a décrit la chronologie des inspections et dit qu’une loi plafonnerait les inscriptions et retirerait l’aide aux programmes surtout en ligne. L’opposition a présenté des histoires d’étudiants et évoqué des dons.",
+        "Le débat de deuxième lecture du projet de loi 143 (Plan to Protect Ontario Act, mesures budgétaires, no 2) a commencé. Le ministre des Finances Bethlenfalvy a décrit l’aide liée aux tarifs et les baisses d’impôt. NPD et libéraux ont critiqué logement, éducation, santé et déficit.",
+        "D’autres questions ont porté sur l’élargissement de la route 69, la foresterie, les mises en chantier, la couverture de traitements du cancer à l’étranger et les mises à pied à l’hôpital de Hamilton."
+      ],
+      "joueurs": [
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "OSAP motion, deficit",
+          "sujetFr": "Motion sur le RAFEO, déficit"
+        },
+        {
+          "nom": "Hon. Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP pause, KPMG, legislation",
+          "sujetFr": "Pause du RAFEO, KPMG, projet de loi"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Ottawa South",
+          "sujet": "OSAP and student stories",
+          "sujetFr": "RAFEO et histoires d’étudiants"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "role": "London West",
+          "sujet": "OSAP oversight",
+          "sujetFr": "Surveillance du RAFEO"
+        },
+        {
+          "nom": "Hon. Peter Bethlenfalvy",
+          "role": "Minister of Finance",
+          "sujet": "Bill 143, fall economic statement",
+          "sujetFr": "Projet de loi 143, énoncé économique"
+        },
+        {
+          "nom": "Hon. Doug Ford",
+          "role": "Premier",
+          "sujet": "Deficit and taxes",
+          "sujetFr": "Déficit et impôts"
+        },
+        {
+          "nom": "Jessica Bell",
+          "role": "University–Rosedale",
+          "sujet": "Housing, fall statement critique",
+          "sujetFr": "Logement, critique de l’énoncé"
+        },
+        {
+          "nom": "Hon. Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Hospitals, out-of-country care",
+          "sujetFr": "Hôpitaux, soins à l’étranger"
+        },
+        {
+          "nom": "Hon. Prabmeet Singh Sarkaria",
+          "role": "Minister of Transportation",
+          "sujet": "Highway 69",
+          "sujetFr": "Route 69"
+        },
+        {
+          "nom": "Hon. Rob Flack",
+          "role": "Minister of Municipal Affairs and Housing",
+          "sujet": "Housing plan",
+          "sujetFr": "Plan de logement"
+        },
+        {
+          "nom": "Hon. Stephen Crawford",
+          "role": "Minister (Oakville)",
+          "sujet": "Bill 143 second reading",
+          "sujetFr": "Projet de loi 143, deuxième lecture"
+        },
+        {
+          "nom": "Stephanie Bowman",
+          "role": "Don Valley West",
+          "sujet": "OSAP and Bill 143",
+          "sujetFr": "RAFEO et projet de loi 143"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "140",
+          "etape": "second reading"
+        },
+        {
+          "numero": "109",
+          "etape": "report"
+        },
+        {
+          "numero": "145",
+          "etape": "first reading"
+        },
+        {
+          "numero": "Pr57",
+          "etape": "first reading"
+        },
+        {
+          "numero": "143",
+          "etape": "second reading"
+        }
+      ],
+      "faitLe": "2026-11-16T20:37:59.850Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
+    }
+  }
+}
