@@ -52,7 +52,7 @@
       '<ul class="sea-puces">' + puces.slice(0, 2).map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') +
       puces.slice(2).map(function (p) { return '<li class="sea-cache">' + esc(p) + '</li>'; }).join('') + '</ul>' +
       (j.length ? '<div class="sea-qui sea-cache-bloc">' + t.qui + '</div><ul class="sea-joueurs sea-cache-bloc">' + j.map(joueur).join('') + '</ul>' : '') +
-      (reste ? '<button type="button" class="sea-plus" aria-expanded="false" aria-label="' + t.ouvrir + '">+</button>' : '') +
+      (reste ? '<button type="button" class="sea-plus" data-mesure="on-hansard-plus" aria-expanded="false" aria-label="' + t.ouvrir + '">+</button>' : '') +
       '<span class="sea-note">' + t.note + ' · <a href="' + esc(m.lien) + '" target="_blank" rel="noopener">' + t.transcription + '</a></span></div>';
   }
 
@@ -67,6 +67,10 @@
         .finished.then(function () { c.style.overflow = ''; }, function () { c.style.overflow = ''; });
     }
     btn.textContent = ouvert ? '−' : '+';
+    // La mesure maison (dossierquebec.ca/commun/mesure.js) lit data-mesure au clic : seules les
+    // ouvertures comptent « on-hansard-plus », comme « bc-hansard-plus » sur DossierBC. Réévaluation
+    // le 16 févr. 2027 : ces ouvertures valent-elles le coût des résumés ?
+    btn.setAttribute('data-mesure', ouvert ? 'on-hansard-moins' : 'on-hansard-plus');
     btn.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
     if (!ouvert) {
       var haut = document.getElementById('seances') || c;

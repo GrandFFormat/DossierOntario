@@ -31,9 +31,9 @@ const MODELE = 'claude-sonnet-5-5';
 const PRIX = { entree: 2 / 1e6, sortie: 10 / 1e6 };
 const MAX_SIGNES = 600000;
 const LIMITE = Number(process.env.HANSARD_LIMIT || 6);
-// Martin, 16 nov. 2026 : comme sur BC, les trois dernières séances (3, 4 et 5 nov.) pour voir
-// la fenêtre, puis seulement les nouvelles.
-const DEPUIS = process.env.HANSARD_DEPUIS || '2026-11-03';
+// Martin, 16 nov. 2026 : la dernière semaine de séance (2 au 5 nov.), puis une par jour de séance.
+// Pas d'historique. Les ouvertures du « + » sont comptées (on-hansard-plus) pour juger le coût.
+const DEPUIS = process.env.HANSARD_DEPUIS || '2026-11-02';
 const ESTIMATION = process.argv.includes('--estimation');
 const BASE = `https://www.ola.org/en/legislative-business/house-documents/parliament-${LEGISLATURE}/session-${SESSION}`;
 
