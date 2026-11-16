@@ -70,18 +70,8 @@ const PAGES = [
   <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
 </div>
 <div class="colonne">
-  <section class="grille-2 cases">
-    <div class="case">
-      <p class="sur-titre" data-i18n="petitions.titre">Petitions to the Legislature</p>
-      <h2 class="titre-case" data-i18n="petitions.sous">On paper only in Ontario</h2>
-      <div data-role="petitions"></div>
-    </div>
-    <div class="case">
-      <p class="sur-titre" data-i18n="mission.surTitre">Our mission</p>
-      <p class="enonce-case" data-i18n="mission.enonceSimple">The Assembly's site is the most reliable source there is. This one just makes it easier to follow.</p>
-      <table class="comparatif" data-role="comparatif"></table>
-    </div>
-  </section>
+  <!-- Comme l'encadré des pétitions de DossierBC (15 nov. 2026) : remplace le bloc des pétitions et la mission en double avec la bande rouge. -->
+  <p class="encadre-petitions" data-i18n-html="petitions.papier"></p>
   <section class="cases case-lexique" data-role="lexique-accueil"></section>
 </div>`,
     contenu: `  <section class="grille-2 cases une">

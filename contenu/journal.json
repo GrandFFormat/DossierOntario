@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil : un encadré sur les pétitions (signées à l’encre en Ontario, comparées au Québec et à Ottawa) remplace le bloc des pétitions, et la mission n’apparaît plus qu’une fois, dans la bande rouge.",
+      "en": "Home page: a box on petitions (signed in ink in Ontario, compared with Quebec and Ottawa) replaces the petitions block, and the mission now appears only once, in the red band."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil plus court : « Quoi de neuf » montre la dernière semaine d’activité (le reste est dans les Archives), chaque audience publique tient sur une ligne avec ses détails dans un menu, et les votes et les nouvelles ont la même hauteur.",
       "en": "Shorter home page: “What’s new” shows the last week of activity (the rest is in the Archives), each public hearing fits on one line with its details in a menu, and the votes and the news are the same height."
     },

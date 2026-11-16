@@ -1305,3 +1305,10 @@ a.carte-lien:hover .carte-titre{color:var(--rouge);}
 .plus-loin{border-top:2px solid var(--line); margin:8px 0 22px; padding-top:8px;}
 .plus-loin > summary{cursor:pointer; font-weight:800; font-size:15px; padding:6px 0;}
 .plus-loin .sous-titre{margin-top:22px;}
+
+/* L'encadré des pétitions, comme sur DossierBC : fond jaune pâle, filet jaune à gauche. */
+.encadre-petitions{margin:28px 0; padding:14px 20px; background:#f7e9b4; color:#17202b; border-left:6px solid #FFD24D; font-size:15px; line-height:1.6;}
+.encadre-petitions a{color:#17202b; font-weight:600; text-decoration:underline;}
+.encadre-petitions a:last-child{white-space:nowrap;}
+:root[data-theme="dark"] .encadre-petitions{background:rgba(227,181,40,.14); color:var(--ink);}
+:root[data-theme="dark"] .encadre-petitions b, :root[data-theme="dark"] .encadre-petitions a{color:#F2CC5B;}
