@@ -55,6 +55,10 @@ const PAGES = [
     </div>
   </section>
 </div>
+<div class="colonne">
+  <!-- Comme l'encadré des pétitions de DossierBC (15 nov. 2026) : au-dessus des projets challengés (Martin, 16 nov.) ; remplace le bloc des pétitions et la mission en double avec la bande rouge. -->
+  <p class="encadre-petitions" data-i18n-html="petitions.papier"></p>
+</div>
 <div class="bande bande-defis" data-role="defis" hidden>
   <div class="colonne">
     <h2 class="defis-titre" data-i18n="defis.titre">Bills challenged by citizens</h2>
@@ -68,10 +72,6 @@ const PAGES = [
   <p class="legende recents-indice" data-i18n="recents.indice">↓ Click anywhere in a card to read what the bill does ↓</p>
   <div class="liste-projets" data-role="recents-liste"></div>
   <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
-</div>
-<div class="colonne">
-  <!-- Comme l'encadré des pétitions de DossierBC (15 nov. 2026) : remplace le bloc des pétitions et la mission en double avec la bande rouge. -->
-  <p class="encadre-petitions" data-i18n-html="petitions.papier"></p>
 </div>`,
     contenu: `  <section class="grille-2 cases une">
     <div class="case">
