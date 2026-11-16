@@ -796,14 +796,14 @@ body:not(.pret) main.colonne{min-height:100vh;}
 :root{
   --ink:#161616; --paper:#F2F2F0; --paper-2:#F7F7F5; --card:#F2F2F0;
   --line:#161616; --line-soft:#D6D6D2; --slate:#6B6B66;
-  --rouge:#E8341C; --gold:#E8341C; --gold-bg:#E8341C; --gold-hover:#B92812; --gold-soft:#FBE0DA;
+  --rouge:#A3221A; --gold:#A3221A; --gold-bg:#A3221A; --gold-hover:#7E1912; --gold-soft:#FBE0DA;
   --yellow:#E6E6E2;
   --shadow-sm:none; --shadow:none; --shadow-lg:none;
 }
 :root[data-theme="dark"]{
   --ink:#ECECE8; --paper:#151515; --paper-2:#1C1C1C; --card:#151515;
   --line:#ECECE8; --line-soft:#333331; --slate:#A3A39D;
-  --rouge:#FF5A40; --gold:#FF5A40; --gold-bg:#E8341C; --gold-soft:#3A1A14; --yellow:#262624;
+  --rouge:#A3221A; --gold:#A3221A; --gold-bg:#A3221A; --gold-soft:#3A1A14; --yellow:#262624;
 }
 *{box-shadow:none !important;}
 body{font-size:15px;}
@@ -1002,7 +1002,7 @@ main.colonne > .une{margin-top:28px;}
 /* La bande « Notre mission » : sur l’accueil seulement (demande de Martin, 30 sept. 2026). */
 body:not([data-vue="accueil"]) .mission-rouge{display:none;}
 /* Comités en couleur : une teinte par comité — bandeau du nom, filet gauche, sous-titres. */
-.teinte-comite-0{--c:#E8341C; --c-txt:#fff;}
+.teinte-comite-0{--c:#A3221A; --c-txt:#fff;}
 .teinte-comite-1{--c:#1F5FAD; --c-txt:#fff;}
 .teinte-comite-2{--c:#F2B600; --c-txt:#161616;}
 .teinte-comite-3{--c:#2E7D4F; --c-txt:#fff;}
