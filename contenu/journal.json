@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Accueil réordonné : les projets récemment actifs montent sous les audiences ; les votes et « Quoi de neuf » passent entre la bande des projets challengés et la bande rouge.",
+      "en": "Home page reordered: recently active bills move up under the hearings; the votes and “What’s new” now sit between the challenged-bills band and the red band."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil : les projets de loi récemment actifs ne montrent que leur titre, avec un lien « Voir plus » vers la page des projets de loi.",
       "en": "Home page: recently active bills now show only their title, with a “See more” link to the bills page."
     },

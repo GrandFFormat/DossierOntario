@@ -45,15 +45,10 @@ const PAGES = [
     // filets, une grille. Tous les chiffres sont LUS (apercu.json), jamais illustratifs ; le
     // bloc « What the bills are about » de la maquette n'existe pas ici : aucune source ne
     // classe les projets par sujet.
-    bandesBas: `<div class="colonne">
-  <section class="grille-2 cases">
-    <div class="case" data-role="votes-recents"></div>
-    <div class="case" data-role="nouvelles" hidden>
-      <h2 class="titre-case" data-i18n="neuf.titre">What's new</h2>
-      <p class="legende" data-i18n="neuf.sous">The latest real activity at the Legislature</p>
-      <div data-role="neuf"></div>
-    </div>
-  </section>
+    bandesBas: `<div class="colonne recents-accueil" data-role="recents" hidden>
+  <h2 class="titre-case" data-i18n="recents.titre">Recently active bills</h2>
+  <ul class="titres-recents" data-role="recents-liste"></ul>
+  <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
 </div>
 <div class="colonne">
   <!-- Comme l'encadré des pétitions de DossierBC (15 nov. 2026) : au-dessus des projets challengés (Martin, 16 nov.) ; remplace le bloc des pétitions et la mission en double avec la bande rouge. -->
@@ -67,10 +62,16 @@ const PAGES = [
     <div data-role="defis-liste"></div>
   </div>
 </div>
-<div class="colonne recents-accueil" data-role="recents" hidden>
-  <h2 class="titre-case" data-i18n="recents.titre">Recently active bills</h2>
-  <ul class="titres-recents" data-role="recents-liste"></ul>
-  <a class="lien-source" href="/bills" data-i18n="recents.tous">All bills →</a>
+<!-- Votes et Quoi de neuf entre la bande des projets challengés et la bande rouge (Martin, 16 nov. 2026). -->
+<div class="colonne">
+  <section class="grille-2 cases">
+    <div class="case" data-role="votes-recents"></div>
+    <div class="case" data-role="nouvelles" hidden>
+      <h2 class="titre-case" data-i18n="neuf.titre">What's new</h2>
+      <p class="legende" data-i18n="neuf.sous">The latest real activity at the Legislature</p>
+      <div data-role="neuf"></div>
+    </div>
+  </section>
 </div>`,
     contenu: `  <section class="grille-2 cases une">
     <div class="case">
