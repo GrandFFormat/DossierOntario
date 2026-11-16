@@ -53,10 +53,11 @@
       lignes.push('<li><b>' + (a.audiences.length > 1 ? t.prochaines : t.prochaine) + '</b>' + (lg === 'fr' ? ' : ' : ': ') + echapper(date(x.date, lg)) + (x.lieu ? ', ' + echapper(x.lieu) : '') +
         (a.audiences.length > 1 ? ' (' + t.villes(a.audiences.length) + ')' : '') + '</li>');
     }
-    if (r.ins.length) { var i = r.ins[0]; lignes.push('<li><b>' + t.inscrire + '</b> ' + echapper(date(i.date, lg)) + ', ' + echapper(heure(i.heure, lg)) + (i.pour ? ' (' + echapper(i.pour) + ')' : '') + '</li>'); }
+    if (r.ins.length) { var i = r.ins[0]; lignes.push('<li><b>' + t.inscrire + '</b> ' + echapper(date(i.date, lg)) + ', ' + echapper(heure(i.heure, lg)) + (i.pour ? ' (' + echapper(lg === 'fr' ? i.pour.replace(/ and /g, ' et ') : i.pour) + ')' : '') + '</li>'); }
     if (r.mem) lignes.push('<li><b>' + t.memoire + '</b> ' + echapper(date(r.mem.date, lg)) + ', ' + echapper(heure(r.mem.heure, lg)) + '</li>');
-    var titre = a.bill && !surFiche ? '<a href="/bill/' + a.bill + '">' + echapper(a.titre) + '</a>' : echapper(a.titre);
-    return '<div class="aud-avis"><h3>' + titre + '</h3><p class="aud-comite">' + echapper(a.comite) + '</p><ul>' + lignes.join('') + '</ul>' +
+    var nom = lg === 'fr' && a.titreFr ? a.titreFr : a.titre, comite = lg === 'fr' && a.comiteFr ? a.comiteFr : a.comite;
+    var titre = a.bill && !surFiche ? '<a href="/bill/' + a.bill + '">' + echapper(nom) + '</a>' : echapper(nom);
+    return '<div class="aud-avis"><h3>' + titre + '</h3><p class="aud-comite">' + echapper(comite) + '</p><ul>' + lignes.join('') + '</ul>' +
       '<div class="aud-liens"><a class="aud-go" href="' + echapper(a.inscription) + '" target="_blank" rel="noopener">' + t.postuler + '</a><a href="' + echapper(a.url) + '" target="_blank" rel="noopener">' + t.avis + '</a></div></div>';
   }
 

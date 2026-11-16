@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-16T16:53:55.212Z",
+ "generatedAt": "2026-11-16T16:59:35.706Z",
  "source": "https://www.ola.org/en/legislative-business/committees/notices-hearings",
  "items": [
   {
@@ -25,7 +25,9 @@
     "heure": "6:00 p.m."
    },
    "url": "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/notice-hearings/2026-nov-17-notice-hearings-standing-committee-interior",
-   "inscription": "https://www.ola.org/en/apply-committees"
+   "inscription": "https://www.ola.org/en/apply-committees",
+   "titreFr": "Projet de loi 140, Loi de 2026 visant à bâtir l’Ontario plus rapidement",
+   "comiteFr": "Comité permanent des affaires intérieures"
   },
   {
    "id": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/notice-hearings/2027-feb-3-notice-hearings-standing-committee-finance-economic-affairs",
@@ -132,7 +134,9 @@
     "heure": "12:00 p.m."
    },
    "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/notice-hearings/2027-feb-3-notice-hearings-standing-committee-finance-economic-affairs",
-   "inscription": "https://www.ola.org/en/apply-committees"
+   "inscription": "https://www.ola.org/en/apply-committees",
+   "titreFr": "Consultations prébudgétaires 2027",
+   "comiteFr": "Comité permanent des finances et des affaires économiques"
   },
   {
    "id": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/notice-hearings/2026-nov-18-notice-hearings-standing-committee-finance-economic-affairs",
@@ -157,7 +161,9 @@
     "heure": "6:00 p.m."
    },
    "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/notice-hearings/2026-nov-18-notice-hearings-standing-committee-finance-economic-affairs",
-   "inscription": "https://www.ola.org/en/apply-committees"
+   "inscription": "https://www.ola.org/en/apply-committees",
+   "titreFr": "Projet de loi 143, Loi de 2026 sur le plan pour protéger l’Ontario (mesures budgétaires) (no 2)",
+   "comiteFr": "Comité permanent des finances et des affaires économiques"
   }
  ]
 }

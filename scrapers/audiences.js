@@ -68,6 +68,21 @@ for (const [url, titre] of avis) {
   catch (e) { console.warn(`Avis illisible (${url}) : ${e.message}`); }
 }
 
+// Les titres en français, sans traduction maison : le titre officiel français du projet de loi
+// (data/site/bills.json) et le nom officiel français du comité (data/comites.json), tous deux publiés
+// par l'Assemblée. Les consultations prébudgétaires ont une formule fixe. Sinon, le titre reste anglais.
+const lireJson = (f) => { try { return JSON.parse(readFileSync(f, 'utf8')); } catch { return null; } };
+const projets = lireJson('data/site/bills.json');
+const listeProjets = Array.isArray(projets) ? projets : projets?.projets ?? projets?.bills ?? Object.values(projets ?? {});
+const comites = lireJson('data/comites.json');
+const listeComites = Array.isArray(comites) ? comites : comites?.comites ?? Object.values(comites ?? {});
+for (const a of items) {
+  const p = a.bill ? listeProjets.find((x) => String(x.numero) === String(a.bill)) : null;
+  const budget = /^(\d{4}) Pre-Budget Consultations$/.exec(a.titre);
+  a.titreFr = p?.titreFr ? `Projet de loi ${a.bill}, ${p.titreFr}` : budget ? `Consultations prébudgétaires ${budget[1]}` : null;
+  a.comiteFr = listeComites.find((c) => c.nomEn === a.comite)?.nomFr ?? null;
+}
+
 // Réécrit seulement si les avis ont changé : sinon la date seule ferait un commit (et un déploiement) par jour.
 const CHEMIN = 'data/site/audiences.json';
 let avant = null;
