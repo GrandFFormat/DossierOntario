@@ -5,11 +5,11 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-02T20:36:36.989Z",
+  "lus": "2026-11-16T18:14:05.190Z",
   "nombre": {
-    "total": 200,
-    "publics": 145,
-    "prives": 55
+    "total": 203,
+    "publics": 147,
+    "prives": 56
   },
   "projets": [
     {
@@ -2176,7 +2176,7 @@
       "titreFr": "Loi de 2026 visant à protéger l’autonomie alimentaire de l’Ontario",
       "parrains": [
         {
-          "nom": "Jones, Hon. Trevor",
+          "nom": "Oosterhoff, Hon. Sam",
           "role": "Minister of Agriculture, Food and Agribusiness"
         }
       ],
@@ -2992,6 +2992,48 @@
       "typeProjetSource": "deduit-du-parrain",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-145",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-145"
+    },
+    {
+      "numero": "146",
+      "numeroTri": 146,
+      "type": "public",
+      "titreEn": "Moratorium on Artificial Intelligence Data Centres Act, 2026",
+      "titreFr": "Loi de 2026 sur le moratoire relatif aux centres de traitement de données en intelligence artificielle",
+      "parrains": [
+        {
+          "nom": "Schreiner, Mike",
+          "role": null
+        },
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-146",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-146"
+    },
+    {
+      "numero": "147",
+      "numeroTri": 147,
+      "type": "public",
+      "titreEn": "Benji’s Law (Ensuring Anaphylaxis, Asthma and Epilepsy Friendly Overnight Camps), 2026",
+      "titreFr": "Loi Benji de 2026 pour assurer la création de camps avec nuitée attentifs à l’anaphylaxie, à l’asthme et à l’épilepsie",
+      "parrains": [
+        {
+          "nom": "Vickers, Paul",
+          "role": null
+        },
+        {
+          "nom": "Smith, Laura",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-147",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-147"
     },
     {
       "numero": "PR1",
@@ -3927,6 +3969,23 @@
       "typeProjetSource": "numero-pr",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr61",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr61"
+    },
+    {
+      "numero": "PR63",
+      "numeroTri": 63,
+      "type": "prive",
+      "titreEn": "Martin Farms Limited Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Anand, Deepak",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr63",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr63"
     }
   ]
 }

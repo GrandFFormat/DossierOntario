@@ -2,9 +2,2895 @@
   "source": "https://www.ola.org — une page par vote, atteinte par les liens des projets de loi et des motions",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-02T21:02:24.667Z",
-  "nombre": 115,
+  "lus": "2026-11-16T18:44:01.861Z",
+  "nombre": 119,
   "votes": [
+    {
+      "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-143-plan-protect-ontario-act-budget-measures-2026-no-2-vote-second-reading",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/recherche-votes/legislature-44/session-1/projet-loi-143-loi-2026-plan-pour-proteger-lontario-mesures-budgetaires-no-2-vote-deuxieme-lecture",
+      "origine": {
+        "type": "projet",
+        "projet": "143"
+      },
+      "sujetEn": "Bill 143, Plan to Protect Ontario Act (Budget Measures), 2026 (No. 2)",
+      "sujetFr": "Projet de loi 143, Loi de 2026 sur le plan pour protéger l’Ontario (mesures budgétaires) (no 2)",
+      "typeEn": "Vote on second reading",
+      "typeFr": "Vote de la deuxième lecture",
+      "date": "2026-11-05",
+      "dateAfficheeEn": "November 5, 2026",
+      "dateAfficheeFr": "5 novembre 2026",
+      "resultatEn": "Carried",
+      "resultatFr": "Adoptée",
+      "pour": 66,
+      "contre": 35,
+      "projetLie": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-143",
+      "votants": [
+        {
+          "nom": "Tyler Allsopp",
+          "identifiant": "tyler-allsopp",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bay of Quinte",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Baie de Quinte"
+        },
+        {
+          "nom": "Deepak Anand",
+          "identifiant": "deepak-anand",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Malton",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Malton"
+        },
+        {
+          "nom": "Aris Babikian",
+          "identifiant": "aris-babikian",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Agincourt",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Agincourt"
+        },
+        {
+          "nom": "Jeff Beattie",
+          "identifiant": "jeff-beattie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton East—Stoney Creek",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton-Est—Stoney Creek"
+        },
+        {
+          "nom": "Hon. Peter Bethlenfalvy",
+          "identifiant": "peter-bethlenfalvy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Pickering—Uxbridge",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Pickering—Uxbridge"
+        },
+        {
+          "nom": "Will Bouma",
+          "identifiant": "will-bouma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brantford—Brant",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brantford—Brant"
+        },
+        {
+          "nom": "Ric Bresee",
+          "identifiant": "ric-bresee",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hastings—Lennox and Addington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hastings—Lennox and Addington"
+        },
+        {
+          "nom": "Hon. Paul Calandra",
+          "identifiant": "paul-calandra",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Stouffville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Stouffville"
+        },
+        {
+          "nom": "Hon. Raymond Sung Joon Cho",
+          "identifiant": "raymond-sung-joon-cho",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Nord"
+        },
+        {
+          "nom": "Monica Ciriello",
+          "identifiant": "monica-ciriello",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton Mountain",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton Mountain"
+        },
+        {
+          "nom": "Hon. Steve Clark",
+          "identifiant": "steve-clark",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Leeds—Grenville—Thousand Islands and Rideau Lakes",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Leeds—Grenville—Thousand Islands et Rideau Lakes"
+        },
+        {
+          "nom": "Lorne Coe",
+          "identifiant": "lorne-coe",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Whitby",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Whitby"
+        },
+        {
+          "nom": "Hon. Michelle Cooper",
+          "identifiant": "michelle-cooper",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Eglinton—Lawrence",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Eglinton—Lawrence"
+        },
+        {
+          "nom": "Hon. Stephen Crawford",
+          "identifiant": "stephen-crawford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville"
+        },
+        {
+          "nom": "Rudy Cuzzetto",
+          "identifiant": "rudy-cuzzetto",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Lakeshore",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Lakeshore"
+        },
+        {
+          "nom": "George Darouze",
+          "identifiant": "george-darouze",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Carleton",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Carleton"
+        },
+        {
+          "nom": "Billy Denault",
+          "identifiant": "billy-denault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Renfrew—Nipissing—Pembroke",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Renfrew—Nipissing—Pembroke"
+        },
+        {
+          "nom": "Andrew Dowie",
+          "identifiant": "andrew-dowie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Windsor—Tecumseh",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Windsor—Tecumseh"
+        },
+        {
+          "nom": "Hon. Doug Downey",
+          "identifiant": "doug-downey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Springwater—Oro-Medonte",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Springwater—Oro-Medonte"
+        },
+        {
+          "nom": "Hon. Jill Dunlop",
+          "identifiant": "jill-dunlop",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe-Nord"
+        },
+        {
+          "nom": "Mohamed Firin",
+          "identifiant": "mohamed-firin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York South—Weston",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Sud—Weston"
+        },
+        {
+          "nom": "Hon. Rob Flack",
+          "identifiant": "rob-flack",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Elgin—Middlesex—London",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Elgin—Middlesex—London"
+        },
+        {
+          "nom": "Hon. Doug Ford",
+          "identifiant": "doug-ford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Etobicoke North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Etobicoke-Nord"
+        },
+        {
+          "nom": "Dawn Gallagher Murphy",
+          "identifiant": "dawn-gallagher-murphy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Newmarket—Aurora",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Newmarket—Aurora"
+        },
+        {
+          "nom": "Hardeep Singh Grewal",
+          "identifiant": "hardeep-singh-grewal",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton East",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Est"
+        },
+        {
+          "nom": "Silvia Gualtieri",
+          "identifiant": "silvia-gualtieri",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga East—Cooksville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga-Est—Cooksville"
+        },
+        {
+          "nom": "Hon. Zee Hamid",
+          "identifiant": "zee-hamid",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Milton",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Milton"
+        },
+        {
+          "nom": "Hon. Ernie Hardeman",
+          "identifiant": "ernie-hardeman",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oxford",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oxford"
+        },
+        {
+          "nom": "Hon. Mike Harris",
+          "identifiant": "mike-harris",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kitchener—Conestoga",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kitchener—Conestoga"
+        },
+        {
+          "nom": "Hon. Kevin Holland",
+          "identifiant": "kevin-holland",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thunder Bay—Atikokan",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Atikokan"
+        },
+        {
+          "nom": "Hon. Sylvia Jones",
+          "identifiant": "sylvia-jones",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Dufferin—Caledon",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Dufferin—Caledon"
+        },
+        {
+          "nom": "Hon. Trevor Jones",
+          "identifiant": "trevor-jones",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Chatham-Kent—Leamington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Chatham-Kent—Leamington"
+        },
+        {
+          "nom": "John Jordan",
+          "identifiant": "john-jordan",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lanark—Frontenac—Kingston",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lanark—Frontenac—Kingston"
+        },
+        {
+          "nom": "Logan Kanapathi",
+          "identifiant": "logan-kanapathi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Thornhill",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Thornhill"
+        },
+        {
+          "nom": "Hon. Michael S. Kerzner",
+          "identifiant": "michael-s-kerzner",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Centre"
+        },
+        {
+          "nom": "Hon. Andrea Khanjin",
+          "identifiant": "andrea-khanjin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Innisfil",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Innisfil"
+        },
+        {
+          "nom": "Susan Lahey",
+          "identifiant": "susan-lahey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York—Simcoe",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York—Simcoe"
+        },
+        {
+          "nom": "Anthony Leardi",
+          "identifiant": "anthony-leardi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Essex",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Essex"
+        },
+        {
+          "nom": "Hon. Todd J. McCarthy",
+          "identifiant": "todd-j-mccarthy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Durham",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Durham"
+        },
+        {
+          "nom": "Hon. Graham McGregor",
+          "identifiant": "graham-mcgregor",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Nord"
+        },
+        {
+          "nom": "Hon. Sam Oosterhoff",
+          "identifiant": "sam-oosterhoff",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Niagara West",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Niagara-Ouest"
+        },
+        {
+          "nom": "Billy Pang",
+          "identifiant": "billy-pang",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Unionville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Unionville"
+        },
+        {
+          "nom": "Hon. Michael Parsa",
+          "identifiant": "michael-parsa",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Aurora—Oak Ridges—Richmond Hill",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Aurora—Oak Ridges—Richmond Hill"
+        },
+        {
+          "nom": "Hon. David Piccini",
+          "identifiant": "david-piccini",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Northumberland—Peterborough South",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Northumberland—Peterborough-Sud"
+        },
+        {
+          "nom": "Natalie Pierre",
+          "identifiant": "natalie-pierre",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Burlington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Burlington"
+        },
+        {
+          "nom": "Steve Pinsonneault",
+          "identifiant": "steve-pinsonneault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lambton—Kent—Middlesex",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lambton—Kent—Middlesex"
+        },
+        {
+          "nom": "Hon. Nolan Quinn",
+          "identifiant": "nolan-quinn",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Stormont—Dundas—South Glengarry",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Stormont—Dundas—South Glengarry"
+        },
+        {
+          "nom": "Joseph Racinsky",
+          "identifiant": "joseph-racinsky",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Wellington—Halton Hills",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Wellington—Halton Hills"
+        },
+        {
+          "nom": "Brian Riddell",
+          "identifiant": "brian-riddell",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Cambridge",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Cambridge"
+        },
+        {
+          "nom": "Bill Rosenberg",
+          "identifiant": "bill-rosenberg",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Algoma—Manitoulin",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Algoma—Manitoulin"
+        },
+        {
+          "nom": "Sheref Sabawy",
+          "identifiant": "sheref-sabawy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Erin Mills",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Erin Mills"
+        },
+        {
+          "nom": "Amarjot Sandhu",
+          "identifiant": "amarjot-sandhu",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton West",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Ouest"
+        },
+        {
+          "nom": "Hon. Prabmeet Singh Sarkaria",
+          "identifiant": "prabmeet-singh-sarkaria",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton South",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Sud"
+        },
+        {
+          "nom": "Stéphane Sarrazin",
+          "identifiant": "stephane-sarrazin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Glengarry—Prescott—Russell",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Glengarry—Prescott—Russell"
+        },
+        {
+          "nom": "Hon. Brian Saunderson",
+          "identifiant": "brian-saunderson",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe—Grey",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe—Grey"
+        },
+        {
+          "nom": "Hon. Laurie Scott",
+          "identifiant": "laurie-scott",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Haliburton—Kawartha Lakes—Brock",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Haliburton—Kawartha Lakes—Brock"
+        },
+        {
+          "nom": "Dave Smith",
+          "identifiant": "dave-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Peterborough—Kawartha",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Peterborough—Kawartha"
+        },
+        {
+          "nom": "David Smith",
+          "identifiant": "david-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Centre"
+        },
+        {
+          "nom": "Hon. Graydon Smith",
+          "identifiant": "graydon-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Parry Sound—Muskoka",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Parry Sound—Muskoka"
+        },
+        {
+          "nom": "Laura Smith",
+          "identifiant": "laura-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thornhill",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thornhill"
+        },
+        {
+          "nom": "Hon. Kinga Surma",
+          "identifiant": "kinga-surma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Etobicoke Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Etobicoke-Centre"
+        },
+        {
+          "nom": "Hon. Vijay Thanigasalam",
+          "identifiant": "vijay-thanigasalam",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Rouge Park",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Rouge Park"
+        },
+        {
+          "nom": "Hon. Michael A. Tibollo",
+          "identifiant": "michael-a-tibollo",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Vaughan—Woodbridge",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Vaughan—Woodbridge"
+        },
+        {
+          "nom": "Effie J. Triantafilopoulos",
+          "identifiant": "effie-j-triantafilopoulos",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville North—Burlington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville-Nord—Burlington"
+        },
+        {
+          "nom": "Paul Vickers",
+          "identifiant": "paul-vickers",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bruce—Grey—Owen Sound",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Bruce—Grey—Owen Sound"
+        },
+        {
+          "nom": "Hon. Charmaine A. Williams",
+          "identifiant": "charmaine-a-williams",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Centre"
+        },
+        {
+          "nom": "Jessica Bell",
+          "identifiant": "jessica-bell",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "University—Rosedale",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "University—Rosedale"
+        },
+        {
+          "nom": "Guy Bourgouin",
+          "identifiant": "guy-bourgouin",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Mushkegowuk—James Bay",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Mushkegowuk—Baie James"
+        },
+        {
+          "nom": "Stephanie Bowman",
+          "identifiant": "stephanie-bowman",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley West",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Ouest"
+        },
+        {
+          "nom": "Bobbi Ann Brady",
+          "identifiant": "bobbi-ann-brady",
+          "parti": "Independent",
+          "circonscription": "Haldimand—Norfolk",
+          "vote": "contre",
+          "partiFr": "Indépendant",
+          "circonscriptionFr": "Haldimand—Norfolk"
+        },
+        {
+          "nom": "Jeff Burch",
+          "identifiant": "jeff-burch",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Centre",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara-Centre"
+        },
+        {
+          "nom": "Rob Cerjanec",
+          "identifiant": "rob-cerjanec",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ajax",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ajax"
+        },
+        {
+          "nom": "Aislinn Clancy",
+          "identifiant": "aislinn-clancy",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Kitchener Centre",
+          "vote": "contre",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Kitchener-Centre"
+        },
+        {
+          "nom": "Lucille Collard",
+          "identifiant": "lucille-collard",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa—Vanier",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa—Vanier"
+        },
+        {
+          "nom": "John Fraser",
+          "identifiant": "john-fraser",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa South",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa-Sud"
+        },
+        {
+          "nom": "Jennifer K. French",
+          "identifiant": "jennifer-k-french",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Oshawa",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Oshawa"
+        },
+        {
+          "nom": "Wayne Gates",
+          "identifiant": "wayne-gates",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Falls",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara Falls"
+        },
+        {
+          "nom": "Alexa Gilmour",
+          "identifiant": "alexa-gilmour",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Parkdale—High Park",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Parkdale—High Park"
+        },
+        {
+          "nom": "Chris Glover",
+          "identifiant": "chris-glover",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Spadina—Fort York",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Spadina—Fort York"
+        },
+        {
+          "nom": "Lisa Gretzky",
+          "identifiant": "lisa-gretzky",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Windsor West",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Windsor-Ouest"
+        },
+        {
+          "nom": "Andrea Hazell",
+          "identifiant": "andrea-hazell",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Scarborough—Guildwood",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Scarborough—Guildwood"
+        },
+        {
+          "nom": "Ted Hsu",
+          "identifiant": "ted-hsu",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kingston and the Islands",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kingston et les Îles"
+        },
+        {
+          "nom": "Terence Kernaghan",
+          "identifiant": "terence-kernaghan",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London North Centre",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Centre-Nord"
+        },
+        {
+          "nom": "Sol Mamakwa",
+          "identifiant": "sol-mamakwa",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Kiiwetinoong",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Kiiwetinoong"
+        },
+        {
+          "nom": "Karen McCrimmon",
+          "identifiant": "karen-mccrimmon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kanata—Carleton",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kanata—Carleton"
+        },
+        {
+          "nom": "Mary-Margaret McMahon",
+          "identifiant": "mary-margaret-mcmahon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Beaches—East York",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Beaches—East York"
+        },
+        {
+          "nom": "Chandra Pasma",
+          "identifiant": "chandra-pasma",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Ottawa West—Nepean",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Ottawa-Ouest—Nepean"
+        },
+        {
+          "nom": "Tom Rakocevic",
+          "identifiant": "tom-rakocevic",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Humber River—Black Creek",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Humber River—Black Creek"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "identifiant": "peggy-sattler",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London West",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Ouest"
+        },
+        {
+          "nom": "Mike Schreiner",
+          "identifiant": "mike-schreiner",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Guelph",
+          "vote": "contre",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Guelph"
+        },
+        {
+          "nom": "Fatima Shaban",
+          "identifiant": "fatima-shaban",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Scarborough Southwest",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Scarborough-Sud-Ouest"
+        },
+        {
+          "nom": "Adil Shamji",
+          "identifiant": "adil-shamji",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley East",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Est"
+        },
+        {
+          "nom": "Sandy Shaw",
+          "identifiant": "sandy-shaw",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Hamilton West—Ancaster—Dundas",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Hamilton-Ouest—Ancaster—Dundas"
+        },
+        {
+          "nom": "Stephanie Smyth",
+          "identifiant": "stephanie-smyth",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Toronto—St. Paul's",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Toronto—St. Paul's"
+        },
+        {
+          "nom": "Jennifer (Jennie) Stevens",
+          "identifiant": "jennifer-jennie-stevens",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "St. Catharines",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "St. Catharines"
+        },
+        {
+          "nom": "Marit Stiles",
+          "identifiant": "marit-stiles",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Davenport",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Davenport"
+        },
+        {
+          "nom": "Jonathan Tsao",
+          "identifiant": "jonathan-tsao",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley North",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Nord"
+        },
+        {
+          "nom": "John Vanthof",
+          "identifiant": "john-vanthof",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Timiskaming—Cochrane",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Timiskaming—Cochrane"
+        },
+        {
+          "nom": "Lise Vaugeois",
+          "identifiant": "lise-vaugeois",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Thunder Bay—Superior North",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Supérieur-Nord"
+        },
+        {
+          "nom": "Tyler Watt",
+          "identifiant": "tyler-watt",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Nepean",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Nepean"
+        },
+        {
+          "nom": "Kristyn Wong-Tam",
+          "identifiant": "kristyn-wong-tam",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Toronto Centre",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Toronto-Centre"
+        }
+      ],
+      "lu": "2026-11-16T18:36:52.807Z"
+    },
+    {
+      "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-143-plan-protect-ontario-act-budget-measures-2026-no-2-closure-second-reading",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/recherche-votes/legislature-44/session-1/projet-loi-143-loi-2026-plan-pour-proteger-lontario-mesures-budgetaires-no-2-cloture-deuxieme-lecture",
+      "origine": {
+        "type": "projet",
+        "projet": "143"
+      },
+      "sujetEn": "Bill 143, Plan to Protect Ontario Act (Budget Measures), 2026 (No. 2)",
+      "sujetFr": "Projet de loi 143, Loi de 2026 sur le plan pour protéger l’Ontario (mesures budgétaires) (no 2)",
+      "typeEn": "Closure on second reading",
+      "typeFr": "Clôture de la deuxième lecture",
+      "date": "2026-11-05",
+      "dateAfficheeEn": "November 5, 2026",
+      "dateAfficheeFr": "5 novembre 2026",
+      "resultatEn": "Carried",
+      "resultatFr": "Adoptée",
+      "pour": 66,
+      "contre": 34,
+      "projetLie": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-143",
+      "votants": [
+        {
+          "nom": "Tyler Allsopp",
+          "identifiant": "tyler-allsopp",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bay of Quinte",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Baie de Quinte"
+        },
+        {
+          "nom": "Deepak Anand",
+          "identifiant": "deepak-anand",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Malton",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Malton"
+        },
+        {
+          "nom": "Aris Babikian",
+          "identifiant": "aris-babikian",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Agincourt",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Agincourt"
+        },
+        {
+          "nom": "Jeff Beattie",
+          "identifiant": "jeff-beattie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton East—Stoney Creek",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton-Est—Stoney Creek"
+        },
+        {
+          "nom": "Hon. Peter Bethlenfalvy",
+          "identifiant": "peter-bethlenfalvy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Pickering—Uxbridge",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Pickering—Uxbridge"
+        },
+        {
+          "nom": "Will Bouma",
+          "identifiant": "will-bouma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brantford—Brant",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brantford—Brant"
+        },
+        {
+          "nom": "Ric Bresee",
+          "identifiant": "ric-bresee",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hastings—Lennox and Addington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hastings—Lennox and Addington"
+        },
+        {
+          "nom": "Hon. Paul Calandra",
+          "identifiant": "paul-calandra",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Stouffville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Stouffville"
+        },
+        {
+          "nom": "Hon. Raymond Sung Joon Cho",
+          "identifiant": "raymond-sung-joon-cho",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Nord"
+        },
+        {
+          "nom": "Monica Ciriello",
+          "identifiant": "monica-ciriello",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton Mountain",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton Mountain"
+        },
+        {
+          "nom": "Hon. Steve Clark",
+          "identifiant": "steve-clark",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Leeds—Grenville—Thousand Islands and Rideau Lakes",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Leeds—Grenville—Thousand Islands et Rideau Lakes"
+        },
+        {
+          "nom": "Lorne Coe",
+          "identifiant": "lorne-coe",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Whitby",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Whitby"
+        },
+        {
+          "nom": "Hon. Michelle Cooper",
+          "identifiant": "michelle-cooper",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Eglinton—Lawrence",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Eglinton—Lawrence"
+        },
+        {
+          "nom": "Hon. Stephen Crawford",
+          "identifiant": "stephen-crawford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville"
+        },
+        {
+          "nom": "Rudy Cuzzetto",
+          "identifiant": "rudy-cuzzetto",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Lakeshore",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Lakeshore"
+        },
+        {
+          "nom": "George Darouze",
+          "identifiant": "george-darouze",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Carleton",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Carleton"
+        },
+        {
+          "nom": "Billy Denault",
+          "identifiant": "billy-denault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Renfrew—Nipissing—Pembroke",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Renfrew—Nipissing—Pembroke"
+        },
+        {
+          "nom": "Andrew Dowie",
+          "identifiant": "andrew-dowie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Windsor—Tecumseh",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Windsor—Tecumseh"
+        },
+        {
+          "nom": "Hon. Doug Downey",
+          "identifiant": "doug-downey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Springwater—Oro-Medonte",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Springwater—Oro-Medonte"
+        },
+        {
+          "nom": "Hon. Jill Dunlop",
+          "identifiant": "jill-dunlop",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe-Nord"
+        },
+        {
+          "nom": "Mohamed Firin",
+          "identifiant": "mohamed-firin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York South—Weston",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Sud—Weston"
+        },
+        {
+          "nom": "Hon. Rob Flack",
+          "identifiant": "rob-flack",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Elgin—Middlesex—London",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Elgin—Middlesex—London"
+        },
+        {
+          "nom": "Hon. Doug Ford",
+          "identifiant": "doug-ford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Etobicoke North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Etobicoke-Nord"
+        },
+        {
+          "nom": "Dawn Gallagher Murphy",
+          "identifiant": "dawn-gallagher-murphy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Newmarket—Aurora",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Newmarket—Aurora"
+        },
+        {
+          "nom": "Hardeep Singh Grewal",
+          "identifiant": "hardeep-singh-grewal",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton East",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Est"
+        },
+        {
+          "nom": "Silvia Gualtieri",
+          "identifiant": "silvia-gualtieri",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga East—Cooksville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga-Est—Cooksville"
+        },
+        {
+          "nom": "Hon. Zee Hamid",
+          "identifiant": "zee-hamid",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Milton",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Milton"
+        },
+        {
+          "nom": "Hon. Ernie Hardeman",
+          "identifiant": "ernie-hardeman",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oxford",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oxford"
+        },
+        {
+          "nom": "Hon. Mike Harris",
+          "identifiant": "mike-harris",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kitchener—Conestoga",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kitchener—Conestoga"
+        },
+        {
+          "nom": "Hon. Kevin Holland",
+          "identifiant": "kevin-holland",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thunder Bay—Atikokan",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Atikokan"
+        },
+        {
+          "nom": "Hon. Sylvia Jones",
+          "identifiant": "sylvia-jones",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Dufferin—Caledon",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Dufferin—Caledon"
+        },
+        {
+          "nom": "Hon. Trevor Jones",
+          "identifiant": "trevor-jones",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Chatham-Kent—Leamington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Chatham-Kent—Leamington"
+        },
+        {
+          "nom": "John Jordan",
+          "identifiant": "john-jordan",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lanark—Frontenac—Kingston",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lanark—Frontenac—Kingston"
+        },
+        {
+          "nom": "Logan Kanapathi",
+          "identifiant": "logan-kanapathi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Thornhill",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Thornhill"
+        },
+        {
+          "nom": "Hon. Michael S. Kerzner",
+          "identifiant": "michael-s-kerzner",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Centre"
+        },
+        {
+          "nom": "Hon. Andrea Khanjin",
+          "identifiant": "andrea-khanjin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Innisfil",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Innisfil"
+        },
+        {
+          "nom": "Susan Lahey",
+          "identifiant": "susan-lahey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York—Simcoe",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York—Simcoe"
+        },
+        {
+          "nom": "Anthony Leardi",
+          "identifiant": "anthony-leardi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Essex",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Essex"
+        },
+        {
+          "nom": "Hon. Todd J. McCarthy",
+          "identifiant": "todd-j-mccarthy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Durham",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Durham"
+        },
+        {
+          "nom": "Hon. Graham McGregor",
+          "identifiant": "graham-mcgregor",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton North",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Nord"
+        },
+        {
+          "nom": "Hon. Sam Oosterhoff",
+          "identifiant": "sam-oosterhoff",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Niagara West",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Niagara-Ouest"
+        },
+        {
+          "nom": "Billy Pang",
+          "identifiant": "billy-pang",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Unionville",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Unionville"
+        },
+        {
+          "nom": "Hon. Michael Parsa",
+          "identifiant": "michael-parsa",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Aurora—Oak Ridges—Richmond Hill",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Aurora—Oak Ridges—Richmond Hill"
+        },
+        {
+          "nom": "Hon. David Piccini",
+          "identifiant": "david-piccini",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Northumberland—Peterborough South",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Northumberland—Peterborough-Sud"
+        },
+        {
+          "nom": "Natalie Pierre",
+          "identifiant": "natalie-pierre",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Burlington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Burlington"
+        },
+        {
+          "nom": "Steve Pinsonneault",
+          "identifiant": "steve-pinsonneault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lambton—Kent—Middlesex",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lambton—Kent—Middlesex"
+        },
+        {
+          "nom": "Hon. Nolan Quinn",
+          "identifiant": "nolan-quinn",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Stormont—Dundas—South Glengarry",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Stormont—Dundas—South Glengarry"
+        },
+        {
+          "nom": "Joseph Racinsky",
+          "identifiant": "joseph-racinsky",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Wellington—Halton Hills",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Wellington—Halton Hills"
+        },
+        {
+          "nom": "Brian Riddell",
+          "identifiant": "brian-riddell",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Cambridge",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Cambridge"
+        },
+        {
+          "nom": "Bill Rosenberg",
+          "identifiant": "bill-rosenberg",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Algoma—Manitoulin",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Algoma—Manitoulin"
+        },
+        {
+          "nom": "Sheref Sabawy",
+          "identifiant": "sheref-sabawy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Erin Mills",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Erin Mills"
+        },
+        {
+          "nom": "Amarjot Sandhu",
+          "identifiant": "amarjot-sandhu",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton West",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Ouest"
+        },
+        {
+          "nom": "Hon. Prabmeet Singh Sarkaria",
+          "identifiant": "prabmeet-singh-sarkaria",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton South",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Sud"
+        },
+        {
+          "nom": "Stéphane Sarrazin",
+          "identifiant": "stephane-sarrazin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Glengarry—Prescott—Russell",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Glengarry—Prescott—Russell"
+        },
+        {
+          "nom": "Hon. Brian Saunderson",
+          "identifiant": "brian-saunderson",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe—Grey",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe—Grey"
+        },
+        {
+          "nom": "Hon. Laurie Scott",
+          "identifiant": "laurie-scott",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Haliburton—Kawartha Lakes—Brock",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Haliburton—Kawartha Lakes—Brock"
+        },
+        {
+          "nom": "Dave Smith",
+          "identifiant": "dave-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Peterborough—Kawartha",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Peterborough—Kawartha"
+        },
+        {
+          "nom": "David Smith",
+          "identifiant": "david-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Centre"
+        },
+        {
+          "nom": "Hon. Graydon Smith",
+          "identifiant": "graydon-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Parry Sound—Muskoka",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Parry Sound—Muskoka"
+        },
+        {
+          "nom": "Laura Smith",
+          "identifiant": "laura-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thornhill",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thornhill"
+        },
+        {
+          "nom": "Hon. Kinga Surma",
+          "identifiant": "kinga-surma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Etobicoke Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Etobicoke-Centre"
+        },
+        {
+          "nom": "Hon. Vijay Thanigasalam",
+          "identifiant": "vijay-thanigasalam",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Rouge Park",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Rouge Park"
+        },
+        {
+          "nom": "Hon. Michael A. Tibollo",
+          "identifiant": "michael-a-tibollo",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Vaughan—Woodbridge",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Vaughan—Woodbridge"
+        },
+        {
+          "nom": "Effie J. Triantafilopoulos",
+          "identifiant": "effie-j-triantafilopoulos",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville North—Burlington",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville-Nord—Burlington"
+        },
+        {
+          "nom": "Paul Vickers",
+          "identifiant": "paul-vickers",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bruce—Grey—Owen Sound",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Bruce—Grey—Owen Sound"
+        },
+        {
+          "nom": "Hon. Charmaine A. Williams",
+          "identifiant": "charmaine-a-williams",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton Centre",
+          "vote": "pour",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Centre"
+        },
+        {
+          "nom": "Jessica Bell",
+          "identifiant": "jessica-bell",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "University—Rosedale",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "University—Rosedale"
+        },
+        {
+          "nom": "Guy Bourgouin",
+          "identifiant": "guy-bourgouin",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Mushkegowuk—James Bay",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Mushkegowuk—Baie James"
+        },
+        {
+          "nom": "Stephanie Bowman",
+          "identifiant": "stephanie-bowman",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley West",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Ouest"
+        },
+        {
+          "nom": "Bobbi Ann Brady",
+          "identifiant": "bobbi-ann-brady",
+          "parti": "Independent",
+          "circonscription": "Haldimand—Norfolk",
+          "vote": "contre",
+          "partiFr": "Indépendant",
+          "circonscriptionFr": "Haldimand—Norfolk"
+        },
+        {
+          "nom": "Jeff Burch",
+          "identifiant": "jeff-burch",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Centre",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara-Centre"
+        },
+        {
+          "nom": "Rob Cerjanec",
+          "identifiant": "rob-cerjanec",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ajax",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ajax"
+        },
+        {
+          "nom": "Aislinn Clancy",
+          "identifiant": "aislinn-clancy",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Kitchener Centre",
+          "vote": "contre",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Kitchener-Centre"
+        },
+        {
+          "nom": "Lucille Collard",
+          "identifiant": "lucille-collard",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa—Vanier",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa—Vanier"
+        },
+        {
+          "nom": "John Fraser",
+          "identifiant": "john-fraser",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa South",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa-Sud"
+        },
+        {
+          "nom": "Jennifer K. French",
+          "identifiant": "jennifer-k-french",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Oshawa",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Oshawa"
+        },
+        {
+          "nom": "Wayne Gates",
+          "identifiant": "wayne-gates",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Falls",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara Falls"
+        },
+        {
+          "nom": "Alexa Gilmour",
+          "identifiant": "alexa-gilmour",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Parkdale—High Park",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Parkdale—High Park"
+        },
+        {
+          "nom": "Chris Glover",
+          "identifiant": "chris-glover",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Spadina—Fort York",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Spadina—Fort York"
+        },
+        {
+          "nom": "Lisa Gretzky",
+          "identifiant": "lisa-gretzky",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Windsor West",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Windsor-Ouest"
+        },
+        {
+          "nom": "Andrea Hazell",
+          "identifiant": "andrea-hazell",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Scarborough—Guildwood",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Scarborough—Guildwood"
+        },
+        {
+          "nom": "Ted Hsu",
+          "identifiant": "ted-hsu",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kingston and the Islands",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kingston et les Îles"
+        },
+        {
+          "nom": "Terence Kernaghan",
+          "identifiant": "terence-kernaghan",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London North Centre",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Centre-Nord"
+        },
+        {
+          "nom": "Sol Mamakwa",
+          "identifiant": "sol-mamakwa",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Kiiwetinoong",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Kiiwetinoong"
+        },
+        {
+          "nom": "Karen McCrimmon",
+          "identifiant": "karen-mccrimmon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kanata—Carleton",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kanata—Carleton"
+        },
+        {
+          "nom": "Mary-Margaret McMahon",
+          "identifiant": "mary-margaret-mcmahon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Beaches—East York",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Beaches—East York"
+        },
+        {
+          "nom": "Chandra Pasma",
+          "identifiant": "chandra-pasma",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Ottawa West—Nepean",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Ottawa-Ouest—Nepean"
+        },
+        {
+          "nom": "Tom Rakocevic",
+          "identifiant": "tom-rakocevic",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Humber River—Black Creek",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Humber River—Black Creek"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "identifiant": "peggy-sattler",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London West",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Ouest"
+        },
+        {
+          "nom": "Mike Schreiner",
+          "identifiant": "mike-schreiner",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Guelph",
+          "vote": "contre",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Guelph"
+        },
+        {
+          "nom": "Fatima Shaban",
+          "identifiant": "fatima-shaban",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Scarborough Southwest",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Scarborough-Sud-Ouest"
+        },
+        {
+          "nom": "Adil Shamji",
+          "identifiant": "adil-shamji",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley East",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Est"
+        },
+        {
+          "nom": "Sandy Shaw",
+          "identifiant": "sandy-shaw",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Hamilton West—Ancaster—Dundas",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Hamilton-Ouest—Ancaster—Dundas"
+        },
+        {
+          "nom": "Stephanie Smyth",
+          "identifiant": "stephanie-smyth",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Toronto—St. Paul's",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Toronto—St. Paul's"
+        },
+        {
+          "nom": "Jennifer (Jennie) Stevens",
+          "identifiant": "jennifer-jennie-stevens",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "St. Catharines",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "St. Catharines"
+        },
+        {
+          "nom": "Jonathan Tsao",
+          "identifiant": "jonathan-tsao",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley North",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Nord"
+        },
+        {
+          "nom": "John Vanthof",
+          "identifiant": "john-vanthof",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Timiskaming—Cochrane",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Timiskaming—Cochrane"
+        },
+        {
+          "nom": "Lise Vaugeois",
+          "identifiant": "lise-vaugeois",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Thunder Bay—Superior North",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Supérieur-Nord"
+        },
+        {
+          "nom": "Tyler Watt",
+          "identifiant": "tyler-watt",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Nepean",
+          "vote": "contre",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Nepean"
+        },
+        {
+          "nom": "Kristyn Wong-Tam",
+          "identifiant": "kristyn-wong-tam",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Toronto Centre",
+          "vote": "contre",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Toronto-Centre"
+        }
+      ],
+      "lu": "2026-11-16T18:37:01.893Z"
+    },
+    {
+      "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-20-vote-motion-moved-wayne-gates",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/recherche-votes/legislature-44/session-1/motion-emanant-deputees-deputes-20-vote-motion-proposee-wayne-gates",
+      "origine": {
+        "type": "motion",
+        "page": "motions-deputes"
+      },
+      "sujetEn": "Private members' motion 20",
+      "sujetFr": "Motion émanant des députées et députés 20",
+      "typeEn": "Vote on motion moved by Wayne Gates",
+      "typeFr": "Vote de la motion proposée par Wayne Gates",
+      "date": "2026-11-04",
+      "dateAfficheeEn": "November 4, 2026",
+      "dateAfficheeFr": "4 novembre 2026",
+      "resultatEn": "Lost",
+      "resultatFr": "Rejetée",
+      "pour": 38,
+      "contre": 74,
+      "projetLie": null,
+      "votants": [
+        {
+          "nom": "Jessica Bell",
+          "identifiant": "jessica-bell",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "University—Rosedale",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "University—Rosedale"
+        },
+        {
+          "nom": "Stephen Blais",
+          "identifiant": "stephen-blais",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Orléans",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Orléans"
+        },
+        {
+          "nom": "Guy Bourgouin",
+          "identifiant": "guy-bourgouin",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Mushkegowuk—James Bay",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Mushkegowuk—Baie James"
+        },
+        {
+          "nom": "Bobbi Ann Brady",
+          "identifiant": "bobbi-ann-brady",
+          "parti": "Independent",
+          "circonscription": "Haldimand—Norfolk",
+          "vote": "pour",
+          "partiFr": "Indépendant",
+          "circonscriptionFr": "Haldimand—Norfolk"
+        },
+        {
+          "nom": "Jeff Burch",
+          "identifiant": "jeff-burch",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara-Centre"
+        },
+        {
+          "nom": "Rob Cerjanec",
+          "identifiant": "rob-cerjanec",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ajax",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ajax"
+        },
+        {
+          "nom": "Aislinn Clancy",
+          "identifiant": "aislinn-clancy",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Kitchener Centre",
+          "vote": "pour",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Kitchener-Centre"
+        },
+        {
+          "nom": "Lucille Collard",
+          "identifiant": "lucille-collard",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa—Vanier",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa—Vanier"
+        },
+        {
+          "nom": "John Fraser",
+          "identifiant": "john-fraser",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa South",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa-Sud"
+        },
+        {
+          "nom": "Jennifer K. French",
+          "identifiant": "jennifer-k-french",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Oshawa",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Oshawa"
+        },
+        {
+          "nom": "Wayne Gates",
+          "identifiant": "wayne-gates",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Falls",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara Falls"
+        },
+        {
+          "nom": "France Gélinas",
+          "identifiant": "france-gelinas",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Nickel Belt",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Nickel Belt"
+        },
+        {
+          "nom": "Alexa Gilmour",
+          "identifiant": "alexa-gilmour",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Parkdale—High Park",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Parkdale—High Park"
+        },
+        {
+          "nom": "Chris Glover",
+          "identifiant": "chris-glover",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Spadina—Fort York",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Spadina—Fort York"
+        },
+        {
+          "nom": "Lisa Gretzky",
+          "identifiant": "lisa-gretzky",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Windsor West",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Windsor-Ouest"
+        },
+        {
+          "nom": "Andrea Hazell",
+          "identifiant": "andrea-hazell",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Scarborough—Guildwood",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Scarborough—Guildwood"
+        },
+        {
+          "nom": "Ted Hsu",
+          "identifiant": "ted-hsu",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kingston and the Islands",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kingston et les Îles"
+        },
+        {
+          "nom": "Terence Kernaghan",
+          "identifiant": "terence-kernaghan",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London North Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Centre-Nord"
+        },
+        {
+          "nom": "Sol Mamakwa",
+          "identifiant": "sol-mamakwa",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Kiiwetinoong",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Kiiwetinoong"
+        },
+        {
+          "nom": "Karen McCrimmon",
+          "identifiant": "karen-mccrimmon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kanata—Carleton",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kanata—Carleton"
+        },
+        {
+          "nom": "Catherine McKenney",
+          "identifiant": "catherine-mckenney",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Ottawa Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Ottawa-Centre"
+        },
+        {
+          "nom": "Mary-Margaret McMahon",
+          "identifiant": "mary-margaret-mcmahon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Beaches—East York",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Beaches—East York"
+        },
+        {
+          "nom": "Chandra Pasma",
+          "identifiant": "chandra-pasma",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Ottawa West—Nepean",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Ottawa-Ouest—Nepean"
+        },
+        {
+          "nom": "Tom Rakocevic",
+          "identifiant": "tom-rakocevic",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Humber River—Black Creek",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Humber River—Black Creek"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "identifiant": "peggy-sattler",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London West",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Ouest"
+        },
+        {
+          "nom": "Mike Schreiner",
+          "identifiant": "mike-schreiner",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Guelph",
+          "vote": "pour",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Guelph"
+        },
+        {
+          "nom": "Fatima Shaban",
+          "identifiant": "fatima-shaban",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Scarborough Southwest",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Scarborough-Sud-Ouest"
+        },
+        {
+          "nom": "Adil Shamji",
+          "identifiant": "adil-shamji",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley East",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Est"
+        },
+        {
+          "nom": "Sandy Shaw",
+          "identifiant": "sandy-shaw",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Hamilton West—Ancaster—Dundas",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Hamilton-Ouest—Ancaster—Dundas"
+        },
+        {
+          "nom": "Stephanie Smyth",
+          "identifiant": "stephanie-smyth",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Toronto—St. Paul's",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Toronto—St. Paul's"
+        },
+        {
+          "nom": "Jennifer (Jennie) Stevens",
+          "identifiant": "jennifer-jennie-stevens",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "St. Catharines",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "St. Catharines"
+        },
+        {
+          "nom": "Peter Tabuns",
+          "identifiant": "peter-tabuns",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Toronto—Danforth",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Toronto—Danforth"
+        },
+        {
+          "nom": "Jonathan Tsao",
+          "identifiant": "jonathan-tsao",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley North",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Nord"
+        },
+        {
+          "nom": "John Vanthof",
+          "identifiant": "john-vanthof",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Timiskaming—Cochrane",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Timiskaming—Cochrane"
+        },
+        {
+          "nom": "Lise Vaugeois",
+          "identifiant": "lise-vaugeois",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Thunder Bay—Superior North",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Supérieur-Nord"
+        },
+        {
+          "nom": "Tyler Watt",
+          "identifiant": "tyler-watt",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Nepean",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Nepean"
+        },
+        {
+          "nom": "Jamie West",
+          "identifiant": "jamie-west",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Sudbury",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Sudbury"
+        },
+        {
+          "nom": "Kristyn Wong-Tam",
+          "identifiant": "kristyn-wong-tam",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Toronto Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Toronto-Centre"
+        },
+        {
+          "nom": "Tyler Allsopp",
+          "identifiant": "tyler-allsopp",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bay of Quinte",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Baie de Quinte"
+        },
+        {
+          "nom": "Deepak Anand",
+          "identifiant": "deepak-anand",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Malton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Malton"
+        },
+        {
+          "nom": "Aris Babikian",
+          "identifiant": "aris-babikian",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Agincourt",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Agincourt"
+        },
+        {
+          "nom": "Robert Bailey",
+          "identifiant": "robert-bailey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Sarnia—Lambton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Sarnia—Lambton"
+        },
+        {
+          "nom": "Jeff Beattie",
+          "identifiant": "jeff-beattie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton East—Stoney Creek",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton-Est—Stoney Creek"
+        },
+        {
+          "nom": "Hon. Peter Bethlenfalvy",
+          "identifiant": "peter-bethlenfalvy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Pickering—Uxbridge",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Pickering—Uxbridge"
+        },
+        {
+          "nom": "Will Bouma",
+          "identifiant": "will-bouma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brantford—Brant",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brantford—Brant"
+        },
+        {
+          "nom": "Ric Bresee",
+          "identifiant": "ric-bresee",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hastings—Lennox and Addington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hastings—Lennox and Addington"
+        },
+        {
+          "nom": "Hon. Paul Calandra",
+          "identifiant": "paul-calandra",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Stouffville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Stouffville"
+        },
+        {
+          "nom": "Hon. Raymond Sung Joon Cho",
+          "identifiant": "raymond-sung-joon-cho",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough North",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Nord"
+        },
+        {
+          "nom": "Hon. Stan Cho",
+          "identifiant": "stan-cho",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Willowdale",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Willowdale"
+        },
+        {
+          "nom": "Monica Ciriello",
+          "identifiant": "monica-ciriello",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton Mountain",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton Mountain"
+        },
+        {
+          "nom": "Hon. Steve Clark",
+          "identifiant": "steve-clark",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Leeds—Grenville—Thousand Islands and Rideau Lakes",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Leeds—Grenville—Thousand Islands et Rideau Lakes"
+        },
+        {
+          "nom": "Lorne Coe",
+          "identifiant": "lorne-coe",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Whitby",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Whitby"
+        },
+        {
+          "nom": "Hon. Michelle Cooper",
+          "identifiant": "michelle-cooper",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Eglinton—Lawrence",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Eglinton—Lawrence"
+        },
+        {
+          "nom": "Hon. Stephen Crawford",
+          "identifiant": "stephen-crawford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville"
+        },
+        {
+          "nom": "Rudy Cuzzetto",
+          "identifiant": "rudy-cuzzetto",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Lakeshore",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Lakeshore"
+        },
+        {
+          "nom": "George Darouze",
+          "identifiant": "george-darouze",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Carleton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Carleton"
+        },
+        {
+          "nom": "Billy Denault",
+          "identifiant": "billy-denault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Renfrew—Nipissing—Pembroke",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Renfrew—Nipissing—Pembroke"
+        },
+        {
+          "nom": "Jess Dixon",
+          "identifiant": "jess-dixon",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kitchener South—Hespeler",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kitchener-Sud—Hespeler"
+        },
+        {
+          "nom": "Andrew Dowie",
+          "identifiant": "andrew-dowie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Windsor—Tecumseh",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Windsor—Tecumseh"
+        },
+        {
+          "nom": "Hon. Doug Downey",
+          "identifiant": "doug-downey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Springwater—Oro-Medonte",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Springwater—Oro-Medonte"
+        },
+        {
+          "nom": "Hon. Victor Fedeli",
+          "identifiant": "victor-fedeli",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Nipissing",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Nipissing"
+        },
+        {
+          "nom": "Mohamed Firin",
+          "identifiant": "mohamed-firin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York South—Weston",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Sud—Weston"
+        },
+        {
+          "nom": "Hon. Rob Flack",
+          "identifiant": "rob-flack",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Elgin—Middlesex—London",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Elgin—Middlesex—London"
+        },
+        {
+          "nom": "Hon. Doug Ford",
+          "identifiant": "doug-ford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Etobicoke North",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Etobicoke-Nord"
+        },
+        {
+          "nom": "Dawn Gallagher Murphy",
+          "identifiant": "dawn-gallagher-murphy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Newmarket—Aurora",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Newmarket—Aurora"
+        },
+        {
+          "nom": "Hardeep Singh Grewal",
+          "identifiant": "hardeep-singh-grewal",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton East",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Est"
+        },
+        {
+          "nom": "Silvia Gualtieri",
+          "identifiant": "silvia-gualtieri",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga East—Cooksville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga-Est—Cooksville"
+        },
+        {
+          "nom": "Hon. Zee Hamid",
+          "identifiant": "zee-hamid",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Milton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Milton"
+        },
+        {
+          "nom": "Hon. Ernie Hardeman",
+          "identifiant": "ernie-hardeman",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oxford",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oxford"
+        },
+        {
+          "nom": "Hon. Kevin Holland",
+          "identifiant": "kevin-holland",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thunder Bay—Atikokan",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Atikokan"
+        },
+        {
+          "nom": "Hon. Sylvia Jones",
+          "identifiant": "sylvia-jones",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Dufferin—Caledon",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Dufferin—Caledon"
+        },
+        {
+          "nom": "John Jordan",
+          "identifiant": "john-jordan",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lanark—Frontenac—Kingston",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lanark—Frontenac—Kingston"
+        },
+        {
+          "nom": "Logan Kanapathi",
+          "identifiant": "logan-kanapathi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Thornhill",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Thornhill"
+        },
+        {
+          "nom": "Hon. Michael S. Kerzner",
+          "identifiant": "michael-s-kerzner",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Centre"
+        },
+        {
+          "nom": "Hon. Andrea Khanjin",
+          "identifiant": "andrea-khanjin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Innisfil",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Innisfil"
+        },
+        {
+          "nom": "Hon. Natalia Kusendova-Bashta",
+          "identifiant": "natalia-kusendova-bashta",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga-Centre"
+        },
+        {
+          "nom": "Susan Lahey",
+          "identifiant": "susan-lahey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York—Simcoe",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York—Simcoe"
+        },
+        {
+          "nom": "Anthony Leardi",
+          "identifiant": "anthony-leardi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Essex",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Essex"
+        },
+        {
+          "nom": "Hon. Stephen Lecce",
+          "identifiant": "stephen-lecce",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "King—Vaughan",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "King—Vaughan"
+        },
+        {
+          "nom": "Hon. Todd J. McCarthy",
+          "identifiant": "todd-j-mccarthy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Durham",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Durham"
+        },
+        {
+          "nom": "Hon. Graham McGregor",
+          "identifiant": "graham-mcgregor",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton North",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Nord"
+        },
+        {
+          "nom": "Hon. Sam Oosterhoff",
+          "identifiant": "sam-oosterhoff",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Niagara West",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Niagara-Ouest"
+        },
+        {
+          "nom": "Billy Pang",
+          "identifiant": "billy-pang",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Unionville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Unionville"
+        },
+        {
+          "nom": "Hon. Michael Parsa",
+          "identifiant": "michael-parsa",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Aurora—Oak Ridges—Richmond Hill",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Aurora—Oak Ridges—Richmond Hill"
+        },
+        {
+          "nom": "Hon. David Piccini",
+          "identifiant": "david-piccini",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Northumberland—Peterborough South",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Northumberland—Peterborough-Sud"
+        },
+        {
+          "nom": "Natalie Pierre",
+          "identifiant": "natalie-pierre",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Burlington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Burlington"
+        },
+        {
+          "nom": "Steve Pinsonneault",
+          "identifiant": "steve-pinsonneault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lambton—Kent—Middlesex",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lambton—Kent—Middlesex"
+        },
+        {
+          "nom": "Hon. George Pirie",
+          "identifiant": "george-pirie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Timmins",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Timmins"
+        },
+        {
+          "nom": "Hon. Nolan Quinn",
+          "identifiant": "nolan-quinn",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Stormont—Dundas—South Glengarry",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Stormont—Dundas—South Glengarry"
+        },
+        {
+          "nom": "Joseph Racinsky",
+          "identifiant": "joseph-racinsky",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Wellington—Halton Hills",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Wellington—Halton Hills"
+        },
+        {
+          "nom": "Hon. Matthew Rae",
+          "identifiant": "matthew-rae",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Perth—Wellington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Perth—Wellington"
+        },
+        {
+          "nom": "Hon. Greg Rickford",
+          "identifiant": "greg-rickford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kenora—Rainy River",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kenora—Rainy River"
+        },
+        {
+          "nom": "Brian Riddell",
+          "identifiant": "brian-riddell",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Cambridge",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Cambridge"
+        },
+        {
+          "nom": "Bill Rosenberg",
+          "identifiant": "bill-rosenberg",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Algoma—Manitoulin",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Algoma—Manitoulin"
+        },
+        {
+          "nom": "Sheref Sabawy",
+          "identifiant": "sheref-sabawy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Erin Mills",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Erin Mills"
+        },
+        {
+          "nom": "Amarjot Sandhu",
+          "identifiant": "amarjot-sandhu",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton West",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Ouest"
+        },
+        {
+          "nom": "Hon. Prabmeet Singh Sarkaria",
+          "identifiant": "prabmeet-singh-sarkaria",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton South",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Sud"
+        },
+        {
+          "nom": "Stéphane Sarrazin",
+          "identifiant": "stephane-sarrazin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Glengarry—Prescott—Russell",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Glengarry—Prescott—Russell"
+        },
+        {
+          "nom": "Hon. Brian Saunderson",
+          "identifiant": "brian-saunderson",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe—Grey",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe—Grey"
+        },
+        {
+          "nom": "Hon. Laurie Scott",
+          "identifiant": "laurie-scott",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Haliburton—Kawartha Lakes—Brock",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Haliburton—Kawartha Lakes—Brock"
+        },
+        {
+          "nom": "Dave Smith",
+          "identifiant": "dave-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Peterborough—Kawartha",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Peterborough—Kawartha"
+        },
+        {
+          "nom": "David Smith",
+          "identifiant": "david-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Centre"
+        },
+        {
+          "nom": "Hon. Graydon Smith",
+          "identifiant": "graydon-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Parry Sound—Muskoka",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Parry Sound—Muskoka"
+        },
+        {
+          "nom": "Laura Smith",
+          "identifiant": "laura-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thornhill",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thornhill"
+        },
+        {
+          "nom": "Hon. Kinga Surma",
+          "identifiant": "kinga-surma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Etobicoke Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Etobicoke-Centre"
+        },
+        {
+          "nom": "Hon. Nina Tangri",
+          "identifiant": "nina-tangri",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Streetsville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Streetsville"
+        },
+        {
+          "nom": "Hon. Vijay Thanigasalam",
+          "identifiant": "vijay-thanigasalam",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Rouge Park",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Rouge Park"
+        },
+        {
+          "nom": "Hon. Lisa M. Thompson",
+          "identifiant": "lisa-m-thompson",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Huron—Bruce",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Huron—Bruce"
+        },
+        {
+          "nom": "Hon. Michael A. Tibollo",
+          "identifiant": "michael-a-tibollo",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Vaughan—Woodbridge",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Vaughan—Woodbridge"
+        },
+        {
+          "nom": "Effie J. Triantafilopoulos",
+          "identifiant": "effie-j-triantafilopoulos",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville North—Burlington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville-Nord—Burlington"
+        },
+        {
+          "nom": "Paul Vickers",
+          "identifiant": "paul-vickers",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bruce—Grey—Owen Sound",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Bruce—Grey—Owen Sound"
+        },
+        {
+          "nom": "Hon. Charmaine A. Williams",
+          "identifiant": "charmaine-a-williams",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Centre"
+        }
+      ],
+      "lu": "2026-11-16T18:41:03.112Z"
+    },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-140-building-ontario-faster-act-2026-vote-second-reading",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/recherche-votes/legislature-44/session-1/projet-loi-140-loi-2026-visant-a-batir-lontario-plus-rapidement-vote-deuxieme-lecture",
@@ -1070,7 +3956,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:53.827Z"
+      "lu": "2026-11-16T18:36:40.085Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-140-building-ontario-faster-act-2026-closure-second-reading",
@@ -2137,7 +5023,984 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:00.716Z"
+      "lu": "2026-11-16T18:36:47.797Z"
+    },
+    {
+      "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-1-vote-motion-moved-marit-stiles-2",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/recherche-votes/legislature-44/session-1/jours-lopposition-1-vote-motion-proposee-marit-stiles-2",
+      "origine": {
+        "type": "motion",
+        "page": "jours-opposition"
+      },
+      "sujetEn": "Opposition days 1",
+      "sujetFr": "Jours de l'opposition 1",
+      "typeEn": "Vote on motion moved by Marit Stiles",
+      "typeFr": "Vote de la motion proposée par Marit Stiles",
+      "date": "2026-11-02",
+      "dateAfficheeEn": "November 2, 2026",
+      "dateAfficheeFr": "2 novembre 2026",
+      "resultatEn": "Lost",
+      "resultatFr": "Rejetée",
+      "pour": 38,
+      "contre": 68,
+      "projetLie": null,
+      "votants": [
+        {
+          "nom": "Teresa J. Armstrong",
+          "identifiant": "teresa-j-armstrong",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London—Fanshawe",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London—Fanshawe"
+        },
+        {
+          "nom": "Jessica Bell",
+          "identifiant": "jessica-bell",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "University—Rosedale",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "University—Rosedale"
+        },
+        {
+          "nom": "Stephen Blais",
+          "identifiant": "stephen-blais",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Orléans",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Orléans"
+        },
+        {
+          "nom": "Guy Bourgouin",
+          "identifiant": "guy-bourgouin",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Mushkegowuk—James Bay",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Mushkegowuk—Baie James"
+        },
+        {
+          "nom": "Stephanie Bowman",
+          "identifiant": "stephanie-bowman",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley West",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Ouest"
+        },
+        {
+          "nom": "Jeff Burch",
+          "identifiant": "jeff-burch",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara-Centre"
+        },
+        {
+          "nom": "Rob Cerjanec",
+          "identifiant": "rob-cerjanec",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ajax",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ajax"
+        },
+        {
+          "nom": "Aislinn Clancy",
+          "identifiant": "aislinn-clancy",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Kitchener Centre",
+          "vote": "pour",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Kitchener-Centre"
+        },
+        {
+          "nom": "Lucille Collard",
+          "identifiant": "lucille-collard",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Ottawa—Vanier",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Ottawa—Vanier"
+        },
+        {
+          "nom": "Lee Fairclough",
+          "identifiant": "lee-fairclough",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Etobicoke—Lakeshore",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Etobicoke—Lakeshore"
+        },
+        {
+          "nom": "Jennifer K. French",
+          "identifiant": "jennifer-k-french",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Oshawa",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Oshawa"
+        },
+        {
+          "nom": "Wayne Gates",
+          "identifiant": "wayne-gates",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Niagara Falls",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Niagara Falls"
+        },
+        {
+          "nom": "France Gélinas",
+          "identifiant": "france-gelinas",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Nickel Belt",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Nickel Belt"
+        },
+        {
+          "nom": "Alexa Gilmour",
+          "identifiant": "alexa-gilmour",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Parkdale—High Park",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Parkdale—High Park"
+        },
+        {
+          "nom": "Chris Glover",
+          "identifiant": "chris-glover",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Spadina—Fort York",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Spadina—Fort York"
+        },
+        {
+          "nom": "Lisa Gretzky",
+          "identifiant": "lisa-gretzky",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Windsor West",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Windsor-Ouest"
+        },
+        {
+          "nom": "Ted Hsu",
+          "identifiant": "ted-hsu",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kingston and the Islands",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kingston et les Îles"
+        },
+        {
+          "nom": "Terence Kernaghan",
+          "identifiant": "terence-kernaghan",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London North Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Centre-Nord"
+        },
+        {
+          "nom": "Robin Lennox",
+          "identifiant": "robin-lennox",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Hamilton Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Hamilton-Centre"
+        },
+        {
+          "nom": "Sol Mamakwa",
+          "identifiant": "sol-mamakwa",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Kiiwetinoong",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Kiiwetinoong"
+        },
+        {
+          "nom": "Karen McCrimmon",
+          "identifiant": "karen-mccrimmon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Kanata—Carleton",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Kanata—Carleton"
+        },
+        {
+          "nom": "Catherine McKenney",
+          "identifiant": "catherine-mckenney",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Ottawa Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Ottawa-Centre"
+        },
+        {
+          "nom": "Mary-Margaret McMahon",
+          "identifiant": "mary-margaret-mcmahon",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Beaches—East York",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Beaches—East York"
+        },
+        {
+          "nom": "Chandra Pasma",
+          "identifiant": "chandra-pasma",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Ottawa West—Nepean",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Ottawa-Ouest—Nepean"
+        },
+        {
+          "nom": "Tom Rakocevic",
+          "identifiant": "tom-rakocevic",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Humber River—Black Creek",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Humber River—Black Creek"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "identifiant": "peggy-sattler",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "London West",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "London-Ouest"
+        },
+        {
+          "nom": "Mike Schreiner",
+          "identifiant": "mike-schreiner",
+          "parti": "Green Party of Ontario",
+          "circonscription": "Guelph",
+          "vote": "pour",
+          "partiFr": "Parti vert de l'Ontario",
+          "circonscriptionFr": "Guelph"
+        },
+        {
+          "nom": "Fatima Shaban",
+          "identifiant": "fatima-shaban",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Scarborough Southwest",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Scarborough-Sud-Ouest"
+        },
+        {
+          "nom": "Adil Shamji",
+          "identifiant": "adil-shamji",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Don Valley East",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Don Valley-Est"
+        },
+        {
+          "nom": "Sandy Shaw",
+          "identifiant": "sandy-shaw",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Hamilton West—Ancaster—Dundas",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Hamilton-Ouest—Ancaster—Dundas"
+        },
+        {
+          "nom": "Stephanie Smyth",
+          "identifiant": "stephanie-smyth",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Toronto—St. Paul's",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Toronto—St. Paul's"
+        },
+        {
+          "nom": "Marit Stiles",
+          "identifiant": "marit-stiles",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Davenport",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Davenport"
+        },
+        {
+          "nom": "Peter Tabuns",
+          "identifiant": "peter-tabuns",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Toronto—Danforth",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Toronto—Danforth"
+        },
+        {
+          "nom": "John Vanthof",
+          "identifiant": "john-vanthof",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Timiskaming—Cochrane",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Timiskaming—Cochrane"
+        },
+        {
+          "nom": "Lise Vaugeois",
+          "identifiant": "lise-vaugeois",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Thunder Bay—Superior North",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Supérieur-Nord"
+        },
+        {
+          "nom": "Tyler Watt",
+          "identifiant": "tyler-watt",
+          "parti": "Ontario Liberal Party",
+          "circonscription": "Nepean",
+          "vote": "pour",
+          "partiFr": "Parti libéral de l'Ontario",
+          "circonscriptionFr": "Nepean"
+        },
+        {
+          "nom": "Jamie West",
+          "identifiant": "jamie-west",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Sudbury",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Sudbury"
+        },
+        {
+          "nom": "Kristyn Wong-Tam",
+          "identifiant": "kristyn-wong-tam",
+          "parti": "New Democratic Party of Ontario",
+          "circonscription": "Toronto Centre",
+          "vote": "pour",
+          "partiFr": "Nouveau Parti démocratique de l'Ontario",
+          "circonscriptionFr": "Toronto-Centre"
+        },
+        {
+          "nom": "Tyler Allsopp",
+          "identifiant": "tyler-allsopp",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bay of Quinte",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Baie de Quinte"
+        },
+        {
+          "nom": "Deepak Anand",
+          "identifiant": "deepak-anand",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Malton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Malton"
+        },
+        {
+          "nom": "Robert Bailey",
+          "identifiant": "robert-bailey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Sarnia—Lambton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Sarnia—Lambton"
+        },
+        {
+          "nom": "Jeff Beattie",
+          "identifiant": "jeff-beattie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton East—Stoney Creek",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton-Est—Stoney Creek"
+        },
+        {
+          "nom": "Will Bouma",
+          "identifiant": "will-bouma",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brantford—Brant",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brantford—Brant"
+        },
+        {
+          "nom": "Ric Bresee",
+          "identifiant": "ric-bresee",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hastings—Lennox and Addington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hastings—Lennox and Addington"
+        },
+        {
+          "nom": "Hon. Paul Calandra",
+          "identifiant": "paul-calandra",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Stouffville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Stouffville"
+        },
+        {
+          "nom": "Hon. Raymond Sung Joon Cho",
+          "identifiant": "raymond-sung-joon-cho",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough North",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Nord"
+        },
+        {
+          "nom": "Monica Ciriello",
+          "identifiant": "monica-ciriello",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Hamilton Mountain",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Hamilton Mountain"
+        },
+        {
+          "nom": "Hon. Steve Clark",
+          "identifiant": "steve-clark",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Leeds—Grenville—Thousand Islands and Rideau Lakes",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Leeds—Grenville—Thousand Islands et Rideau Lakes"
+        },
+        {
+          "nom": "Lorne Coe",
+          "identifiant": "lorne-coe",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Whitby",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Whitby"
+        },
+        {
+          "nom": "Hon. Michelle Cooper",
+          "identifiant": "michelle-cooper",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Eglinton—Lawrence",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Eglinton—Lawrence"
+        },
+        {
+          "nom": "Hon. Stephen Crawford",
+          "identifiant": "stephen-crawford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville"
+        },
+        {
+          "nom": "Rudy Cuzzetto",
+          "identifiant": "rudy-cuzzetto",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Lakeshore",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Lakeshore"
+        },
+        {
+          "nom": "George Darouze",
+          "identifiant": "george-darouze",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Carleton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Carleton"
+        },
+        {
+          "nom": "Billy Denault",
+          "identifiant": "billy-denault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Renfrew—Nipissing—Pembroke",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Renfrew—Nipissing—Pembroke"
+        },
+        {
+          "nom": "Jess Dixon",
+          "identifiant": "jess-dixon",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kitchener South—Hespeler",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kitchener-Sud—Hespeler"
+        },
+        {
+          "nom": "Andrew Dowie",
+          "identifiant": "andrew-dowie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Windsor—Tecumseh",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Windsor—Tecumseh"
+        },
+        {
+          "nom": "Hon. Doug Downey",
+          "identifiant": "doug-downey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Springwater—Oro-Medonte",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Springwater—Oro-Medonte"
+        },
+        {
+          "nom": "Hon. Jill Dunlop",
+          "identifiant": "jill-dunlop",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe North",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe-Nord"
+        },
+        {
+          "nom": "Hon. Victor Fedeli",
+          "identifiant": "victor-fedeli",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Nipissing",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Nipissing"
+        },
+        {
+          "nom": "Mohamed Firin",
+          "identifiant": "mohamed-firin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York South—Weston",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Sud—Weston"
+        },
+        {
+          "nom": "Hon. Rob Flack",
+          "identifiant": "rob-flack",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Elgin—Middlesex—London",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Elgin—Middlesex—London"
+        },
+        {
+          "nom": "Dawn Gallagher Murphy",
+          "identifiant": "dawn-gallagher-murphy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Newmarket—Aurora",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Newmarket—Aurora"
+        },
+        {
+          "nom": "Hardeep Singh Grewal",
+          "identifiant": "hardeep-singh-grewal",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton East",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Est"
+        },
+        {
+          "nom": "Silvia Gualtieri",
+          "identifiant": "silvia-gualtieri",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga East—Cooksville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga-Est—Cooksville"
+        },
+        {
+          "nom": "Hon. Zee Hamid",
+          "identifiant": "zee-hamid",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Milton",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Milton"
+        },
+        {
+          "nom": "Hon. Ernie Hardeman",
+          "identifiant": "ernie-hardeman",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oxford",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oxford"
+        },
+        {
+          "nom": "Hon. Mike Harris",
+          "identifiant": "mike-harris",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kitchener—Conestoga",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kitchener—Conestoga"
+        },
+        {
+          "nom": "Hon. Kevin Holland",
+          "identifiant": "kevin-holland",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Thunder Bay—Atikokan",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Thunder Bay—Atikokan"
+        },
+        {
+          "nom": "Hon. Trevor Jones",
+          "identifiant": "trevor-jones",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Chatham-Kent—Leamington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Chatham-Kent—Leamington"
+        },
+        {
+          "nom": "John Jordan",
+          "identifiant": "john-jordan",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lanark—Frontenac—Kingston",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lanark—Frontenac—Kingston"
+        },
+        {
+          "nom": "Logan Kanapathi",
+          "identifiant": "logan-kanapathi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Thornhill",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Thornhill"
+        },
+        {
+          "nom": "Hon. Michael S. Kerzner",
+          "identifiant": "michael-s-kerzner",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York-Centre"
+        },
+        {
+          "nom": "Hon. Andrea Khanjin",
+          "identifiant": "andrea-khanjin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Barrie—Innisfil",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Barrie—Innisfil"
+        },
+        {
+          "nom": "Susan Lahey",
+          "identifiant": "susan-lahey",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "York—Simcoe",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "York—Simcoe"
+        },
+        {
+          "nom": "Anthony Leardi",
+          "identifiant": "anthony-leardi",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Essex",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Essex"
+        },
+        {
+          "nom": "Hon. Stephen Lecce",
+          "identifiant": "stephen-lecce",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "King—Vaughan",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "King—Vaughan"
+        },
+        {
+          "nom": "Hon. Todd J. McCarthy",
+          "identifiant": "todd-j-mccarthy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Durham",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Durham"
+        },
+        {
+          "nom": "Hon. Graham McGregor",
+          "identifiant": "graham-mcgregor",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton North",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Nord"
+        },
+        {
+          "nom": "Hon. Sam Oosterhoff",
+          "identifiant": "sam-oosterhoff",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Niagara West",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Niagara-Ouest"
+        },
+        {
+          "nom": "Billy Pang",
+          "identifiant": "billy-pang",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Markham—Unionville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Markham—Unionville"
+        },
+        {
+          "nom": "Hon. Michael Parsa",
+          "identifiant": "michael-parsa",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Aurora—Oak Ridges—Richmond Hill",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Aurora—Oak Ridges—Richmond Hill"
+        },
+        {
+          "nom": "Hon. David Piccini",
+          "identifiant": "david-piccini",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Northumberland—Peterborough South",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Northumberland—Peterborough-Sud"
+        },
+        {
+          "nom": "Natalie Pierre",
+          "identifiant": "natalie-pierre",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Burlington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Burlington"
+        },
+        {
+          "nom": "Steve Pinsonneault",
+          "identifiant": "steve-pinsonneault",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Lambton—Kent—Middlesex",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Lambton—Kent—Middlesex"
+        },
+        {
+          "nom": "Hon. George Pirie",
+          "identifiant": "george-pirie",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Timmins",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Timmins"
+        },
+        {
+          "nom": "Hon. Nolan Quinn",
+          "identifiant": "nolan-quinn",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Stormont—Dundas—South Glengarry",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Stormont—Dundas—South Glengarry"
+        },
+        {
+          "nom": "Joseph Racinsky",
+          "identifiant": "joseph-racinsky",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Wellington—Halton Hills",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Wellington—Halton Hills"
+        },
+        {
+          "nom": "Hon. Matthew Rae",
+          "identifiant": "matthew-rae",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Perth—Wellington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Perth—Wellington"
+        },
+        {
+          "nom": "Hon. Greg Rickford",
+          "identifiant": "greg-rickford",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Kenora—Rainy River",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Kenora—Rainy River"
+        },
+        {
+          "nom": "Brian Riddell",
+          "identifiant": "brian-riddell",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Cambridge",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Cambridge"
+        },
+        {
+          "nom": "Bill Rosenberg",
+          "identifiant": "bill-rosenberg",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Algoma—Manitoulin",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Algoma—Manitoulin"
+        },
+        {
+          "nom": "Sheref Sabawy",
+          "identifiant": "sheref-sabawy",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Erin Mills",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Erin Mills"
+        },
+        {
+          "nom": "Amarjot Sandhu",
+          "identifiant": "amarjot-sandhu",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton West",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Ouest"
+        },
+        {
+          "nom": "Stéphane Sarrazin",
+          "identifiant": "stephane-sarrazin",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Glengarry—Prescott—Russell",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Glengarry—Prescott—Russell"
+        },
+        {
+          "nom": "Hon. Brian Saunderson",
+          "identifiant": "brian-saunderson",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Simcoe—Grey",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Simcoe—Grey"
+        },
+        {
+          "nom": "Hon. Laurie Scott",
+          "identifiant": "laurie-scott",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Haliburton—Kawartha Lakes—Brock",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Haliburton—Kawartha Lakes—Brock"
+        },
+        {
+          "nom": "Dave Smith",
+          "identifiant": "dave-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Peterborough—Kawartha",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Peterborough—Kawartha"
+        },
+        {
+          "nom": "David Smith",
+          "identifiant": "david-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough-Centre"
+        },
+        {
+          "nom": "Hon. Graydon Smith",
+          "identifiant": "graydon-smith",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Parry Sound—Muskoka",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Parry Sound—Muskoka"
+        },
+        {
+          "nom": "Hon. Nina Tangri",
+          "identifiant": "nina-tangri",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Mississauga—Streetsville",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Mississauga—Streetsville"
+        },
+        {
+          "nom": "Hon. Vijay Thanigasalam",
+          "identifiant": "vijay-thanigasalam",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Scarborough—Rouge Park",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Scarborough—Rouge Park"
+        },
+        {
+          "nom": "Hon. Lisa M. Thompson",
+          "identifiant": "lisa-m-thompson",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Huron—Bruce",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Huron—Bruce"
+        },
+        {
+          "nom": "Hon. Michael A. Tibollo",
+          "identifiant": "michael-a-tibollo",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Vaughan—Woodbridge",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Vaughan—Woodbridge"
+        },
+        {
+          "nom": "Effie J. Triantafilopoulos",
+          "identifiant": "effie-j-triantafilopoulos",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Oakville North—Burlington",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Oakville-Nord—Burlington"
+        },
+        {
+          "nom": "Paul Vickers",
+          "identifiant": "paul-vickers",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Bruce—Grey—Owen Sound",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Bruce—Grey—Owen Sound"
+        },
+        {
+          "nom": "Hon. Charmaine A. Williams",
+          "identifiant": "charmaine-a-williams",
+          "parti": "Progressive Conservative Party of Ontario",
+          "circonscription": "Brampton Centre",
+          "vote": "contre",
+          "partiFr": "Parti progressiste-conservateur de l'Ontario",
+          "circonscriptionFr": "Brampton-Centre"
+        }
+      ],
+      "lu": "2026-11-16T18:42:14.046Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-117-access-assistance-care-commuting-essential-specialized-services-act-2026-vote-second-reading",
@@ -3159,7 +7022,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:40.594Z"
+      "lu": "2026-11-16T18:36:22.055Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-72-vote-motion-moved-silvia-gualtieri",
@@ -4226,7 +8089,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:07.173Z"
+      "lu": "2026-11-16T18:39:55.227Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-119-protecting-ontarios-streets-communities-act-2026-closure-second-reading",
@@ -5176,7 +9039,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:48.732Z"
+      "lu": "2026-11-16T18:36:30.592Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-moved-without-notice-vote-motion-moved-hon-steve-clark-2",
@@ -6000,7 +9863,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:07.467Z"
+      "lu": "2026-11-16T18:37:09.239Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-vote-third-reading",
@@ -6914,7 +10777,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:55.568Z"
+      "lu": "2026-11-16T18:35:27.836Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-closure-third-reading",
@@ -7828,7 +11691,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:03.846Z"
+      "lu": "2026-11-16T18:35:37.464Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-112-lydias-law-accountability-transparency-handling-sexual-assault-cases-2026-vote-second-reading",
@@ -8742,7 +12605,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:20.005Z"
+      "lu": "2026-11-16T18:36:00.380Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-113-fair-prices-tax-free-groceries-act-2026-vote-second-reading",
@@ -9728,7 +13591,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:24.712Z"
+      "lu": "2026-11-16T18:36:09.110Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2026-vote-third-reading",
@@ -10750,7 +14613,7 @@
           "circonscriptionFr": "Haldimand—Norfolk"
         }
       ],
-      "lu": "2026-11-02T20:50:20.336Z"
+      "lu": "2026-11-16T18:28:03.639Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-vote-third-reading",
@@ -11601,7 +15464,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:27.996Z"
+      "lu": "2026-11-16T18:33:37.166Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-closure-third-reading",
@@ -12452,7 +16315,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:33.959Z"
+      "lu": "2026-11-16T18:33:44.882Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-107-stop-harmful-gambling-advertising-act-2026-vote-second-reading",
@@ -13312,7 +17175,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:47.919Z"
+      "lu": "2026-11-16T18:35:20.105Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-114-hst-relief-implementation-act-residential-property-rebates-2026-vote-third-reading",
@@ -14073,7 +17936,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:29.826Z"
+      "lu": "2026-11-16T18:36:14.454Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-18-vote-motion-moved-hon-steve-clark",
@@ -14978,7 +18841,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:12.688Z"
+      "lu": "2026-11-16T18:37:20.178Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-5-vote-motion-moved-marit-stiles",
@@ -15865,7 +19728,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:20.542Z"
+      "lu": "2026-11-16T18:42:25.928Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-vote-third-reading",
@@ -16743,7 +20606,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:58.026Z"
+      "lu": "2026-11-16T18:34:14.458Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-closure-third-reading",
@@ -17621,7 +21484,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:03.147Z"
+      "lu": "2026-11-16T18:34:19.292Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-vote-second-reading",
@@ -18508,7 +22371,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:09.159Z"
+      "lu": "2026-11-16T18:35:44.072Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-110-building-billy-bishop-airport-act-2026-closure-second-reading",
@@ -19386,7 +23249,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:57:14.388Z"
+      "lu": "2026-11-16T18:35:52.694Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-70-vote-motion-moved-jessica-bell",
@@ -20273,7 +24136,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:12.297Z"
+      "lu": "2026-11-16T18:40:05.652Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-vote-third-reading",
@@ -21223,7 +25086,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:16.127Z"
+      "lu": "2026-11-16T18:34:42.526Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-closure-third-reading",
@@ -22173,7 +26036,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:23.578Z"
+      "lu": "2026-11-16T18:34:48.380Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-99-fair-free-elections-act-2026-vote-second-reading",
@@ -23141,7 +27004,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:49.016Z"
+      "lu": "2026-11-16T18:34:07.191Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-105-protecting-ontarios-workers-economic-resilience-act-2026-vote-second-reading",
@@ -24091,7 +27954,7 @@
           "circonscriptionFr": "Nepean"
         }
       ],
-      "lu": "2026-11-02T20:56:39.219Z"
+      "lu": "2026-11-16T18:35:11.868Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-4-vote-motion-moved-stephanie-smyth",
@@ -24924,7 +28787,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:23.551Z"
+      "lu": "2026-11-16T18:42:31.810Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-vote-third-reading",
@@ -25757,7 +29620,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:10.072Z"
+      "lu": "2026-11-16T18:33:17.677Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-vote-second-reading",
@@ -26590,7 +30453,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:08.202Z"
+      "lu": "2026-11-16T18:34:26.175Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-100-better-regional-governance-act-2026-closure-second-reading",
@@ -27423,7 +31286,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:13.310Z"
+      "lu": "2026-11-16T18:34:34.190Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-16-vote-motion-moved-hon-steve-clark",
@@ -28373,7 +32236,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:18.147Z"
+      "lu": "2026-11-16T18:37:28.903Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-14-vote-motion-moved-hon-peter-bethlenfalvy",
@@ -29314,7 +33177,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:24.080Z"
+      "lu": "2026-11-16T18:37:37.811Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-3-vote-motion-moved-marit-stiles-0",
@@ -30174,7 +34037,7 @@
           "circonscriptionFr": "Bruce—Grey—Owen Sound"
         }
       ],
-      "lu": "2026-11-02T21:01:33.027Z"
+      "lu": "2026-11-16T18:42:42.733Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-23-protecting-seniors-rights-care-homes-act-2026-vote-second-reading",
@@ -31124,7 +34987,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:21.331Z"
+      "lu": "2026-11-16T18:29:13.137Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-vote-second-reading",
@@ -32074,7 +35937,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:28.784Z"
+      "lu": "2026-11-16T18:34:55.345Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-101-putting-student-achievement-first-act-2026-closure-second-reading",
@@ -33024,7 +36887,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:56:34.012Z"
+      "lu": "2026-11-16T18:35:03.533Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-86-meredith-act-fair-compensation-injured-workers-2026-vote-second-reading",
@@ -33974,7 +37837,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:04.467Z"
+      "lu": "2026-11-16T18:33:10.500Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-2-vote-motion-moved-tyler-watt",
@@ -34771,7 +38634,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:38.080Z"
+      "lu": "2026-11-16T18:42:49.280Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-vote-second-reading",
@@ -35739,7 +39602,7 @@
           "circonscriptionFr": "Nepean"
         }
       ],
-      "lu": "2026-11-02T20:55:39.863Z"
+      "lu": "2026-11-16T18:33:52.237Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-98-building-homes-improving-transportation-infrastructure-act-2026-closure-second-reading",
@@ -36707,7 +40570,7 @@
           "circonscriptionFr": "Sudbury"
         }
       ],
-      "lu": "2026-11-02T20:55:45.940Z"
+      "lu": "2026-11-16T18:33:59.766Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-53-vote-motion-moved-monica-ciriello",
@@ -37711,7 +41574,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:18.117Z"
+      "lu": "2026-11-16T18:40:18.500Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-84-mandatory-blood-testing-amendment-act-2026-vote-second-reading",
@@ -38661,7 +42524,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:58.376Z"
+      "lu": "2026-11-16T18:33:03.640Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-vote-second-reading",
@@ -39611,7 +43474,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:12.890Z"
+      "lu": "2026-11-16T18:33:23.197Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-97-plan-protect-ontario-act-budget-measures-2026-closure-second-reading",
@@ -40561,7 +44424,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:55:22.009Z"
+      "lu": "2026-11-16T18:33:30.412Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-1-vote-motion-moved-marit-stiles-1",
@@ -41484,7 +45347,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:43.610Z"
+      "lu": "2026-11-16T18:43:00.122Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-82-protecting-renters-unfair-above-guideline-rent-increases-act-2026-vote-second-reading",
@@ -42443,7 +46306,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:52.549Z"
+      "lu": "2026-11-16T18:32:56.452Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-75-keeping-criminals-behind-bars-act-2026-vote-second-reading",
@@ -43420,7 +47283,7 @@
           "circonscriptionFr": "Kitchener-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:13.799Z"
+      "lu": "2026-11-16T18:32:22.941Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-46-protect-ontario-cutting-red-tape-act-2025-vote-third-reading",
@@ -44334,7 +48197,7 @@
           "circonscriptionFr": "Nepean"
         }
       ],
-      "lu": "2026-11-02T20:52:45.590Z"
+      "lu": "2026-11-16T18:30:41.710Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-78-commissioner-democratic-rights-act-2025-vote-second-reading",
@@ -45230,7 +49093,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:44.942Z"
+      "lu": "2026-11-16T18:32:47.790Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-moved-without-notice-vote-motion-moved-hon-steve-clark",
@@ -45775,7 +49638,7 @@
           "circonscriptionFr": "Timiskaming—Cochrane"
         }
       ],
-      "lu": "2026-11-02T20:58:28.270Z"
+      "lu": "2026-11-16T18:37:43.666Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-43-vote-motion-moved-natalie-pierre",
@@ -46662,7 +50525,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:25.643Z"
+      "lu": "2026-11-16T18:40:30.798Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-76-barrie-oro-medonte-springwater-boundary-adjustment-act-2025-vote-third-reading",
@@ -47621,7 +51484,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:25.175Z"
+      "lu": "2026-11-16T18:32:29.149Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-40-protect-ontario-securing-affordable-energy-generations-act-2025-vote-third-reading",
@@ -48598,7 +52461,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:52:29.885Z"
+      "lu": "2026-11-16T18:30:28.527Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-76-barrie-oro-medonte-springwater-boundary-adjustment-act-2025-vote-second-reading",
@@ -49485,7 +53348,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:34.127Z"
+      "lu": "2026-11-16T18:32:36.963Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-12-vote-motion-moved-hon-steve-clark",
@@ -50462,7 +54325,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:36.247Z"
+      "lu": "2026-11-16T18:37:54.117Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-70-supporting-mobility-affordability-reliable-transportation-ontario-act-2025-vote-second-reading",
@@ -51457,7 +55320,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:54:10.222Z"
+      "lu": "2026-11-16T18:32:12.839Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-25-emergency-management-modernization-act-2025-vote-third-reading",
@@ -52407,7 +56270,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:45.672Z"
+      "lu": "2026-11-16T18:29:34.919Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-27-resource-management-safety-act-2025-vote-third-reading",
@@ -53357,7 +57220,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:52:00.350Z"
+      "lu": "2026-11-16T18:29:50.609Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-67-hospitality-workers-appreciation-day-act-2025-vote-second-reading",
@@ -54325,7 +58188,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:42.716Z"
+      "lu": "2026-11-16T18:31:51.127Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-40-vote-motion-moved-alexa-gilmour",
@@ -55248,7 +59111,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:31.173Z"
+      "lu": "2026-11-16T18:40:41.651Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-65-remembrance-day-observance-act-2025-vote-second-reading",
@@ -56108,7 +59971,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:35.721Z"
+      "lu": "2026-11-16T18:31:42.547Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-68-plan-protect-ontario-act-budget-measures-2025-no-2-vote-third-reading",
@@ -57130,7 +60993,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:52.777Z"
+      "lu": "2026-11-16T18:31:59.189Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-27-resource-management-safety-act-2025-vote-second-reading",
@@ -58107,7 +61970,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:52:07.256Z"
+      "lu": "2026-11-16T18:29:57.613Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-60-fighting-delays-building-faster-act-2025-vote-third-reading",
@@ -59156,7 +63019,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:16.284Z"
+      "lu": "2026-11-16T18:31:18.528Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-61-ontario-artificial-intelligence-talent-innovation-strategy-act-2025-vote-second-reading",
@@ -60205,7 +64068,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:29.704Z"
+      "lu": "2026-11-16T18:31:34.677Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-68-plan-protect-ontario-act-budget-measures-2025-no-2-vote-second-reading",
@@ -61182,7 +65045,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:59.999Z"
+      "lu": "2026-11-16T18:32:10.649Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-11-vote-motion-moved-hon-steve-clark",
@@ -62231,7 +66094,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:42.797Z"
+      "lu": "2026-11-16T18:38:05.420Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-3-vote-motion-moved-catherine-mckenney",
@@ -63235,7 +67098,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:49.156Z"
+      "lu": "2026-11-16T18:43:10.523Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-33-supporting-children-students-act-2025-vote-third-reading",
@@ -64284,7 +68147,7 @@
           "circonscriptionFr": "Nepean"
         }
       ],
-      "lu": "2026-11-02T20:52:15.974Z"
+      "lu": "2026-11-16T18:30:12.675Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-32-vote-motion-moved-dawn-gallagher-murphy",
@@ -65333,7 +69196,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:37.162Z"
+      "lu": "2026-11-16T18:40:53.896Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-33-supporting-children-students-act-2025-vote-second-reading",
@@ -66328,7 +70191,7 @@
           "circonscriptionFr": "Sudbury"
         }
       ],
-      "lu": "2026-11-02T20:52:20.992Z"
+      "lu": "2026-11-16T18:30:19.758Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-40-protect-ontario-securing-affordable-energy-generations-act-2025-vote-second-reading",
@@ -67323,7 +71186,7 @@
           "circonscriptionFr": "Sudbury"
         }
       ],
-      "lu": "2026-11-02T20:52:36.183Z"
+      "lu": "2026-11-16T18:30:34.528Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-58-franco-ontarian-bookstore-promotion-protection-act-2025-vote-second-reading",
@@ -68309,7 +72172,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:09.332Z"
+      "lu": "2026-11-16T18:31:08.041Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-60-fighting-delays-building-faster-act-2025-vote-second-reading",
@@ -69304,7 +73167,7 @@
           "circonscriptionFr": "Sudbury"
         }
       ],
-      "lu": "2026-11-02T20:53:22.109Z"
+      "lu": "2026-11-16T18:31:26.967Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-8-closure-amendment-amendment-moved-anthony-leardi",
@@ -70299,7 +74162,7 @@
           "circonscriptionFr": "Sudbury"
         }
       ],
-      "lu": "2026-11-02T20:58:58.293Z"
+      "lu": "2026-11-16T18:38:27.063Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-2-vote-motion-moved-stephanie-bowman",
@@ -71186,7 +75049,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:54.544Z"
+      "lu": "2026-11-16T18:43:20.978Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-9-vote-motion-moved-hon-steve-clark",
@@ -72109,7 +75972,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:58:48.138Z"
+      "lu": "2026-11-16T18:38:17.143Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-49-northern-highway-11-17-safety-act-2025-vote-second-reading",
@@ -73041,7 +76904,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:52:51.525Z"
+      "lu": "2026-11-16T18:30:48.754Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-1-vote-motion-moved-marit-stiles",
@@ -73829,7 +77692,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:02:01.140Z"
+      "lu": "2026-11-16T18:43:31.943Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-56-building-a-more-competitive-economy-act-2025-vote-third-reading",
@@ -74842,7 +78705,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:52:57.391Z"
+      "lu": "2026-11-16T18:30:57.242Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-15-vote-motion-moved-dave-smith",
@@ -75837,7 +79700,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:43.524Z"
+      "lu": "2026-11-16T18:41:14.518Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-25-emergency-management-modernization-act-2025-vote-second-reading",
@@ -76706,7 +80569,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:52.800Z"
+      "lu": "2026-11-16T18:29:42.577Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-56-building-a-more-competitive-economy-act-2025-vote-second-reading",
@@ -77566,7 +81429,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:53:02.933Z"
+      "lu": "2026-11-16T18:31:04.816Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-7-vote-motion-moved-hon-steve-clark",
@@ -78579,7 +82442,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:59:07.032Z"
+      "lu": "2026-11-16T18:38:38.259Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-28-homelessness-ends-housing-act-2025-vote-second-reading",
@@ -79529,7 +83392,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T20:52:12.969Z"
+      "lu": "2026-11-16T18:30:04.607Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2025-adoption-committee-report",
@@ -80344,7 +84207,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:26.883Z"
+      "lu": "2026-11-16T18:28:11.169Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-moved-without-notice-vote-motion-moved-hon-steve-clark-1",
@@ -81168,7 +85031,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:59:14.821Z"
+      "lu": "2026-11-16T18:38:48.992Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-8-vote-motion-moved-jeff-burch",
@@ -82208,7 +86071,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:51.811Z"
+      "lu": "2026-11-16T18:41:27.356Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-vote-third-reading",
@@ -83266,7 +87129,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:49:35.231Z"
+      "lu": "2026-11-16T18:27:23.890Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-adoption-committee-report",
@@ -84315,7 +88178,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:49:41.455Z"
+      "lu": "2026-11-16T18:27:31.311Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-10-protect-ontario-through-safer-streets-stronger-communities-act-2025-vote-third-reading",
@@ -85391,7 +89254,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:39.382Z"
+      "lu": "2026-11-16T18:28:26.210Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-5-vote-motion-moved-teresa-j-armstrong",
@@ -86332,7 +90195,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:57.134Z"
+      "lu": "2026-11-16T18:41:38.695Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-2-protect-ontario-through-free-trade-within-canada-act-2025-vote-third-reading",
@@ -87372,7 +91235,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:49:26.063Z"
+      "lu": "2026-11-16T18:27:15.103Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-6-safer-municipalities-act-2025-vote-third-reading",
@@ -88412,7 +92275,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:04.436Z"
+      "lu": "2026-11-16T18:27:52.512Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-11-more-convenient-care-act-2025-vote-third-reading",
@@ -89443,7 +93306,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:51.890Z"
+      "lu": "2026-11-16T18:28:42.969Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-17-protect-ontario-building-faster-smarter-act-2025-vote-third-reading",
@@ -90483,7 +94346,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:07.578Z"
+      "lu": "2026-11-16T18:28:58.600Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-24-plan-protect-ontario-act-budget-measures-2025-vote-third-reading",
@@ -91514,7 +95377,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:29.657Z"
+      "lu": "2026-11-16T18:29:21.452Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-5-vote-motion-moved-hon-steve-clark",
@@ -92554,7 +96417,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:59:21.304Z"
+      "lu": "2026-11-16T18:38:58.468Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-6-safer-municipalities-act-2025-vote-second-reading",
@@ -93405,7 +97268,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:12.149Z"
+      "lu": "2026-11-16T18:27:58.120Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-10-protect-ontario-through-safer-streets-stronger-communities-act-2025-vote-second-reading",
@@ -94436,7 +98299,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:45.612Z"
+      "lu": "2026-11-16T18:28:33.644Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-13-primary-care-act-2025-vote-second-reading",
@@ -95467,7 +99330,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:59.215Z"
+      "lu": "2026-11-16T18:28:51.346Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-17-protect-ontario-building-faster-smarter-act-2025-vote-second-reading",
@@ -96309,7 +100172,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:14.552Z"
+      "lu": "2026-11-16T18:29:05.360Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-24-plan-protect-ontario-act-budget-measures-2025-vote-second-reading",
@@ -97331,7 +101194,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:51:38.294Z"
+      "lu": "2026-11-16T18:29:28.129Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-4-vote-motion-moved-anthony-leardi",
@@ -98362,7 +102225,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:59:31.365Z"
+      "lu": "2026-11-16T18:39:09.543Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-2-vote-motion-moved-hon-peter-bethlenfalvy",
@@ -99393,7 +103256,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:59:50.960Z"
+      "lu": "2026-11-16T18:39:32.729Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-3-vote-motion-moved-hon-steve-clark",
@@ -100397,7 +104260,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:59:40.467Z"
+      "lu": "2026-11-16T18:39:21.175Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-4-vote-motion-moved-sandy-shaw",
@@ -101410,7 +105273,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:05.544Z"
+      "lu": "2026-11-16T18:41:50.855Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-9-municipal-accountability-act-2025-vote-second-reading",
@@ -102432,7 +106295,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:50:29.013Z"
+      "lu": "2026-11-16T18:28:18.475Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/private-members-motion-2-vote-motion-moved-robin-lennox",
@@ -103454,7 +107317,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:01:13.502Z"
+      "lu": "2026-11-16T18:42:03.268Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/government-motion-moved-without-notice-vote-motion-moved-hon-steve-clark-0",
@@ -104467,7 +108330,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T21:00:01.074Z"
+      "lu": "2026-11-16T18:39:45.026Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-3-vote-motion-moved-marit-stiles",
@@ -105471,7 +109334,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:02:09.826Z"
+      "lu": "2026-11-16T18:43:41.104Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-vote-second-reading",
@@ -106511,7 +110374,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:49:47.932Z"
+      "lu": "2026-11-16T18:27:36.585Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/bill-5-protect-ontario-unleashing-our-economy-act-2025-closure-second-reading",
@@ -107551,7 +111414,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T20:49:55.054Z"
+      "lu": "2026-11-16T18:27:46.731Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-2-vote-motion-moved-john-fraser",
@@ -108402,7 +112265,7 @@
           "circonscriptionFr": "Toronto-Centre"
         }
       ],
-      "lu": "2026-11-02T21:02:17.358Z"
+      "lu": "2026-11-16T18:43:51.147Z"
     },
     {
       "url": "https://www.ola.org/en/legislative-business/votes-search/parliament-44/session-1/opposition-days-1-vote-motion-moved-marit-stiles-0",
@@ -109352,7 +113215,7 @@
           "circonscriptionFr": "Brampton-Centre"
         }
       ],
-      "lu": "2026-11-02T21:02:24.660Z"
+      "lu": "2026-11-16T18:44:01.853Z"
     }
   ]
 }

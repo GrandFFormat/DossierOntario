@@ -6,7 +6,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-02T21:14:38.997Z",
+  "lus": "2026-11-16T18:48:14.894Z",
   "totalSieges": 124,
   "etatPartis": [
     {
@@ -92,6 +92,14 @@
       "numeroMembre": "7493",
       "courriel": "deepak.anandco@pc.ola.org",
       "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Room 112, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-1264",
+          "courriel": null
+        },
         {
           "type": "Constituency office",
           "adresse": "Unit 11, 7895 Tranmere Dr.",
@@ -466,7 +474,7 @@
       "bureaux": [
         {
           "type": "Legislative office",
-          "adresse": "Room 263, Main Legislative Building",
+          "adresse": "Room 169, Main Legislative Building",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-0119",
@@ -915,6 +923,14 @@
           "courriel": null
         },
         {
+          "type": "Legislative office",
+          "adresse": "Room 263, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-2976",
+          "courriel": null
+        },
+        {
           "type": "Constituency office",
           "adresse": "Unit 1, 1128 Mill Street",
           "ville": "Manotick",
@@ -937,6 +953,14 @@
       "numeroMembre": "111",
       "courriel": "billy.denault@pc.ola.org",
       "bureaux": [
+        {
+          "type": "Legislative office",
+          "adresse": "Whitney Block, Room 1308, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A2",
+          "telephone": "416-325-9889",
+          "courriel": null
+        },
         {
           "type": "Constituency office",
           "adresse": "The Victoria Center, Unit 6, 84 Isabella St.",
@@ -1519,6 +1543,14 @@
       "courriel": "hardeep.grewal@pc.ola.org",
       "bureaux": [
         {
+          "type": "Legislative office",
+          "adresse": "Whitney Block, Room 1309A, 99 Wellesley St. W",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A2",
+          "telephone": "416-325-7826",
+          "courriel": null
+        },
+        {
           "type": "Constituency office",
           "adresse": "Unit 307, 1 Gateway Blvd.",
           "ville": "Brampton",
@@ -1830,7 +1862,7 @@
       "bureaux": [
         {
           "type": "Legislative office",
-          "adresse": "Room 167, Main Legislative Building, Queen's Park",
+          "adresse": "Room 168, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-1232",
@@ -2512,7 +2544,7 @@
       "bureaux": [
         {
           "type": "Legislative office",
-          "adresse": "Room 210, Main Legislative Building, Queen's Park",
+          "adresse": "Room 116, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
           "telephone": "416-325-3015",
@@ -2780,6 +2812,14 @@
           "ville": "Thessalon",
           "codePostal": "P0R 1L0",
           "telephone": "705-842-6556",
+          "courriel": null
+        },
+        {
+          "type": "Legislative office",
+          "adresse": "Room 211, Main Legislative Building, Queen's Park",
+          "ville": "Toronto",
+          "codePostal": "M7A 1A5",
+          "telephone": "416-325-7841",
           "courriel": null
         }
       ]
@@ -3086,18 +3126,18 @@
       "bureaux": [
         {
           "type": "Constituency office",
-          "adresse": "Unit 5, 3110 Kingston Rd.",
+          "adresse": "1476 Kingston Rd.",
           "ville": "Scarborough",
-          "codePostal": "M1M 1P2",
+          "codePostal": "M1N 1R6",
           "telephone": "416-261-9525",
           "courriel": "FShaban-CO@ndp.on.ca"
         },
         {
           "type": "Legislative office",
-          "adresse": "Room 384, Main Legislative Building, Queen's Park",
+          "adresse": "Room 385, Main Legislative Building, Queen's Park",
           "ville": "Toronto",
           "codePostal": "M7A 1A5",
-          "telephone": null,
+          "telephone": "416-325-0908",
           "courriel": null
         }
       ]

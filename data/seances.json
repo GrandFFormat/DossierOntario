@@ -1482,8 +1482,92 @@
         "en": "Committee business",
         "fr": null
       }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-nov-05": [
+      {
+        "en": "Committee business",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-nov-04": [
+      {
+        "en": "Committee business",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-nov-05": [
+      {
+        "en": "Committee business",
+        "fr": null
+      },
+      {
+        "en": "Subcommittee report",
+        "fr": null
+      },
+      {
+        "en": "Intended appointments",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/government-agencies/parliament-44/transcripts/committee-transcript-2026-oct-29": [
+      {
+        "en": "Appointment of Vice-Chair",
+        "fr": null
+      },
+      {
+        "en": "Appointment of subcommittee",
+        "fr": null
+      },
+      {
+        "en": "Intended appointments",
+        "fr": null
+      },
+      {
+        "en": "Committee business",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/heritage-infrastructure-cultural-policy/parliament-44/transcripts/committee-transcript-2026-oct-28": [
+      {
+        "en": "Appointment of subcommittee",
+        "fr": null
+      },
+      {
+        "en": "Estimates",
+        "fr": null
+      },
+      {
+        "en": "Ministry of Infrastructure",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/interior/parliament-44/transcripts/committee-transcript-2026-nov-02": [
+      {
+        "en": "Protecting Ontario’s Food Independence Act, 2026",
+        "fr": "Loi de 2026 visant à protéger l’autonomie alimentaire de l’Ontario"
+      },
+      {
+        "en": "Committee business",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/procedure-house-affairs/parliament-44/transcripts/committee-transcript-2026-oct-29": [
+      {
+        "en": "Appointment of Vice-Chair",
+        "fr": null
+      },
+      {
+        "en": "Appointment of subcommittee",
+        "fr": null
+      }
+    ],
+    "https://www.ola.org/en/legislative-business/committees/public-accounts/parliament-44/transcripts/committee-transcript-2026-nov-02": [
+      {
+        "en": "Committee business",
+        "fr": null
+      }
     ]
   },
-  "lus": "2026-11-02T21:14:30.473Z",
-  "nombre": 159
+  "lus": "2026-11-16T18:48:06.014Z",
+  "nombre": 167
 }

@@ -1,8 +1,133 @@
 {
   "source": "https://www.ola.org/en/legislative-business/status-business/petitions-responses-subject-index",
-  "lus": "2026-11-02T21:14:32.294Z",
-  "nombre": 230,
+  "lus": "2026-11-16T18:48:07.918Z",
+  "nombre": 240,
   "petitions": [
+    {
+      "numero": 240,
+      "sujet": "Support for Bill 109 and local ownership of farmland",
+      "presentations": [
+        {
+          "membre": "Joseph Racinsky",
+          "depot": "2026-11-05",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 239,
+      "sujet": "Cobalt refinery site remediation",
+      "presentations": [
+        {
+          "membre": "John Vanthof",
+          "depot": "2026-11-05",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 238,
+      "sujet": "Natural and cultural heritage assessment and approval framework",
+      "presentations": [
+        {
+          "membre": "George Darouze",
+          "depot": "2026-11-05",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 237,
+      "sujet": "Electricity sector governance, planning, and procurement",
+      "presentations": [
+        {
+          "membre": "George Darouze",
+          "depot": "2026-11-05",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 236,
+      "sujet": "Hybrid work policies in the Ontario Public Service",
+      "presentations": [
+        {
+          "membre": "Mike Schreiner",
+          "depot": "2026-11-04",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 235,
+      "sujet": "Moratorium on artificial intelligence data centre construction",
+      "presentations": [
+        {
+          "membre": "Mike Schreiner",
+          "depot": "2026-11-03",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 234,
+      "sujet": "Criminal background checks for municipal election candidates",
+      "presentations": [
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-03",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 233,
+      "sujet": "MPP recall framework",
+      "presentations": [
+        {
+          "membre": "Peter Tabuns",
+          "depot": "2026-11-03",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 232,
+      "sujet": "Fall Economic Statement 2026",
+      "presentations": [
+        {
+          "membre": "Dave Smith",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
+        {
+          "membre": "Deepak Anand",
+          "depot": "2026-11-04",
+          "reponse": null
+        },
+        {
+          "membre": "Dave Smith",
+          "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
+          "membre": "Anthony Leardi",
+          "depot": "2026-11-02",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 231,
+      "sujet": "WSIB workforce reductions",
+      "presentations": [
+        {
+          "membre": "Lise Vaugeois",
+          "depot": "2026-11-02",
+          "reponse": null
+        }
+      ]
+    },
     {
       "numero": 230,
       "sujet": "Owen Sound Family Health Team compensation",
@@ -55,6 +180,11 @@
           "membre": "Joseph Racinsky",
           "depot": "2026-10-27",
           "reponse": null
+        },
+        {
+          "membre": "Joseph Racinsky",
+          "depot": "2026-11-03",
+          "reponse": null
         }
       ]
     },
@@ -95,6 +225,11 @@
       "numero": 222,
       "sujet": "Grocery price competition and removal of HST on food",
       "presentations": [
+        {
+          "membre": "Tom Rakocevic",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-06-02",
@@ -218,6 +353,11 @@
         {
           "membre": "Brian Saunderson",
           "depot": "2026-06-02",
+          "reponse": null
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-02",
           "reponse": null
         }
       ]
@@ -471,6 +611,11 @@
         {
           "membre": "Alexa Gilmour",
           "depot": "2026-06-02",
+          "reponse": null
+        },
+        {
+          "membre": "Chris Glover",
+          "depot": "2026-11-04",
           "reponse": null
         },
         {
@@ -731,6 +876,11 @@
           "membre": "France Gélinas",
           "depot": "2026-06-01",
           "reponse": null
+        },
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-02",
+          "reponse": null
         }
       ]
     },
@@ -822,7 +972,7 @@
         {
           "membre": "Guy Bourgouin",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-16"
         }
       ]
     },
@@ -844,7 +994,7 @@
         {
           "membre": "Peggy Sattler",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-05"
         }
       ]
     },
@@ -855,7 +1005,7 @@
         {
           "membre": "Aislinn Clancy",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-04"
         }
       ]
     },
@@ -866,7 +1016,7 @@
         {
           "membre": "Peter Tabuns",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-04"
         }
       ]
     },
@@ -877,22 +1027,27 @@
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
-          "reponse": null
+          "reponse": "2026-11-04"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
+          "reponse": "2026-11-04"
+        },
+        {
+          "membre": "Peggy Sattler",
+          "depot": "2026-11-05",
           "reponse": null
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-04"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-11-04"
         }
       ]
     },
@@ -903,7 +1058,7 @@
         {
           "membre": "Jeff Burch",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-03"
         }
       ]
     },
@@ -914,7 +1069,7 @@
         {
           "membre": "Jeff Burch",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-03"
         }
       ]
     },
@@ -933,14 +1088,24 @@
           "reponse": "2026-11-02"
         },
         {
+          "membre": "France Gélinas",
+          "depot": "2026-11-04",
+          "reponse": null
+        },
+        {
+          "membre": "Jamie West",
+          "depot": "2026-11-04",
+          "reponse": null
+        },
+        {
           "membre": "Jamie West",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-16"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-11-16"
         },
         {
           "membre": "France Gélinas",
@@ -950,11 +1115,21 @@
         {
           "membre": "Jamie West",
           "depot": "2026-05-07",
-          "reponse": null
+          "reponse": "2026-11-16"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
+          "reponse": null
+        },
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
+          "membre": "Jamie West",
+          "depot": "2026-11-02",
           "reponse": null
         }
       ]
@@ -1018,6 +1193,11 @@
       "numero": 164,
       "sujet": "Affordable housing",
       "presentations": [
+        {
+          "membre": "Peggy Sattler",
+          "depot": "2026-11-05",
+          "reponse": null
+        },
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-05-06",
@@ -1090,7 +1270,7 @@
         {
           "membre": "Anthony Leardi",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-02"
         },
         {
           "membre": "Steve Clark",
@@ -1238,13 +1418,18 @@
       "presentations": [
         {
           "membre": "Ted Hsu",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
+        {
+          "membre": "Ted Hsu",
           "depot": "2026-03-30",
           "reponse": "2026-05-25"
         },
         {
           "membre": "Ted Hsu",
           "depot": "2026-05-25",
-          "reponse": null
+          "reponse": "2026-11-03"
         },
         {
           "membre": "Ted Hsu",
@@ -1254,12 +1439,12 @@
         {
           "membre": "Ted Hsu",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-03"
         },
         {
           "membre": "Ted Hsu",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-03"
         }
       ]
     },
@@ -1505,6 +1690,11 @@
           "reponse": "2026-10-29"
         },
         {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
           "membre": "Lucille Collard",
           "depot": "2026-04-13",
           "reponse": "2026-10-29"
@@ -1544,17 +1734,17 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-16"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-16"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-11-16"
         }
       ]
     },
@@ -2107,6 +2297,16 @@
       "sujet": "Tenant rights",
       "presentations": [
         {
+          "membre": "Peggy Sattler",
+          "depot": "2026-11-04",
+          "reponse": null
+        },
+        {
+          "membre": "Lisa Gretzky",
+          "depot": "2026-11-05",
+          "reponse": null
+        },
+        {
           "membre": "Aislinn Clancy",
           "depot": "2025-12-10",
           "reponse": "2026-04-01"
@@ -2417,17 +2617,17 @@
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-05"
         },
         {
           "membre": "Alexa Gilmour",
           "depot": "2026-04-20",
-          "reponse": null
+          "reponse": "2026-11-05"
         },
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-22",
-          "reponse": null
+          "reponse": "2026-11-05"
         }
       ]
     },
@@ -2501,6 +2701,11 @@
           "membre": "Lee Fairclough",
           "depot": "2026-06-01",
           "reponse": "2026-11-02"
+        },
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-03",
+          "reponse": null
         },
         {
           "membre": "Doly Begum",
@@ -2656,6 +2861,11 @@
           "membre": "Stephanie Smyth",
           "depot": "2026-06-01",
           "reponse": "2026-11-02"
+        },
+        {
+          "membre": "Kristyn Wong-Tam",
+          "depot": "2026-11-02",
+          "reponse": null
         }
       ]
     },
@@ -2698,7 +2908,7 @@
         {
           "membre": "Chandra Pasma",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-03"
         }
       ]
     },
@@ -2971,6 +3181,11 @@
           "reponse": null
         },
         {
+          "membre": "Chandra Pasma",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
+        {
           "membre": "Mike Schreiner",
           "depot": "2025-12-10",
           "reponse": "2026-05-13"
@@ -3034,6 +3249,11 @@
           "membre": "Chandra Pasma",
           "depot": "2025-10-28",
           "reponse": "2025-12-08"
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-02",
+          "reponse": null
         }
       ]
     },
@@ -3239,6 +3459,11 @@
           "membre": "Ted Hsu",
           "depot": "2025-10-30",
           "reponse": "2026-03-26"
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-02",
+          "reponse": null
         }
       ]
     },
@@ -3437,7 +3662,7 @@
         {
           "membre": "Robin Lennox",
           "depot": "2026-06-02",
-          "reponse": null
+          "reponse": "2026-11-03"
         },
         {
           "membre": "France Gélinas",
@@ -3482,12 +3707,12 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-03"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-04-15",
-          "reponse": null
+          "reponse": "2026-11-03"
         }
       ]
     },
@@ -3739,7 +3964,7 @@
         {
           "membre": "Bobbi Ann Brady",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-04"
         }
       ]
     },
@@ -4109,7 +4334,7 @@
         {
           "membre": "Catherine Fife",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-04"
         }
       ]
     },
@@ -4238,6 +4463,11 @@
       "sujet": "Public education funding",
       "presentations": [
         {
+          "membre": "Peter Tabuns",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
+        {
           "membre": "France Gélinas",
           "depot": "2026-04-14",
           "reponse": "2026-10-29"
@@ -4276,6 +4506,11 @@
           "membre": "Jamie West",
           "depot": "2025-05-12",
           "reponse": "2025-10-29"
+        },
+        {
+          "membre": "Jennifer K. French",
+          "depot": "2026-11-03",
+          "reponse": null
         },
         {
           "membre": "Jessica Bell",
@@ -4548,6 +4783,16 @@
           "reponse": "2026-10-29"
         },
         {
+          "membre": "Alexa Gilmour",
+          "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
+          "membre": "Kristyn Wong-Tam",
+          "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
           "membre": "Catherine McKenney",
           "depot": "2026-04-13",
           "reponse": "2026-10-29"
@@ -4671,6 +4916,11 @@
           "membre": "Jamie West",
           "depot": "2025-04-29",
           "reponse": "2025-10-28"
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-03",
+          "reponse": null
         },
         {
           "membre": "Peggy Sattler",
@@ -4869,6 +5119,21 @@
           "membre": "Catherine Fife",
           "depot": "2025-10-23",
           "reponse": "2025-12-10"
+        },
+        {
+          "membre": "Chandra Pasma",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
+        {
+          "membre": "Lise Vaugeois",
+          "depot": "2026-11-04",
+          "reponse": null
+        },
+        {
+          "membre": "Lisa Gretzky",
+          "depot": "2026-11-05",
+          "reponse": null
         },
         {
           "membre": "Mary-Margaret McMahon",
@@ -5176,6 +5441,11 @@
           "reponse": "2026-10-29"
         },
         {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
           "membre": "Lise Vaugeois",
           "depot": "2025-11-25",
           "reponse": "2026-03-23"
@@ -5272,12 +5542,12 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-16",
-          "reponse": null
+          "reponse": "2026-11-04"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-04"
         }
       ]
     },
@@ -5385,6 +5655,11 @@
           "reponse": "2025-10-23"
         },
         {
+          "membre": "France Gélinas",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
+        {
           "membre": "Jamie West",
           "depot": "2025-05-01",
           "reponse": "2025-10-23"
@@ -5425,6 +5700,11 @@
       "numero": 7,
       "sujet": "Health care privatization",
       "presentations": [
+        {
+          "membre": "Peter Tabuns",
+          "depot": "2026-11-03",
+          "reponse": null
+        },
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
@@ -5650,6 +5930,11 @@
         },
         {
           "membre": "France Gélinas",
+          "depot": "2026-11-04",
+          "reponse": null
+        },
+        {
+          "membre": "France Gélinas",
           "depot": "2025-05-13",
           "reponse": "2025-10-23"
         },
@@ -5753,6 +6038,11 @@
           "membre": "Ted Hsu",
           "depot": "2025-04-16",
           "reponse": "2025-10-23"
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-02",
+          "reponse": null
         }
       ]
     },

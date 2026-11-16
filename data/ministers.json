@@ -6,14 +6,14 @@
     "fichiers": {
       "ministresEn": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/0891604d-0a27-4f51-ae45-87384ab8db59/download/mpbsd-minister-list-2026-09-10-en-utf8-2026-09-10-en.csv",
       "ministresFr": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/9d02d374-6a13-472d-8155-55bb86a565b7/download/mpbsd-minister-list-2026-09-10-fr-utf8-2026-09-10-fr.csv",
-      "adjointsEn": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/ce115985-d6ad-478e-9459-e48066fb204c/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-en-2026-10-22-utf8-2026-10-22_1_1.csv",
-      "adjointsFr": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/9021f4e6-9421-4730-8dce-269750142085/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-fr-2026-10-22-utf8-2026-10-22_1_1.csv"
+      "adjointsEn": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/ce115985-d6ad-478e-9459-e48066fb204c/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-en-2026-10-28-utf8-2026-10-28_1_1.csv",
+      "adjointsFr": "https://data.ontario.ca/dataset/bcfd82bc-bbe0-4029-a09a-0c1312fb66f3/resource/9021f4e6-9421-4730-8dce-269750142085/download/mbpsdp-onterm-reference-lists-parliamentary-assistants-fr-2026-10-28-utf8-2026-10-28_1_1.csv"
     },
     "licence": "Licence du gouvernement ouvert – Ontario"
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-02T21:15:23.163Z",
+  "lus": "2026-11-16T18:48:59.488Z",
   "nombre": 39,
   "ministres": [
     {
@@ -610,8 +610,8 @@
     },
     {
       "nom": "Stéphane Sarrazin",
-      "titreEn": "Parliamentary Assistant to the Minister of Francophone Affairs",
-      "titreFr": "adjoint parlementaire à la ministre des Affaires francophones"
+      "titreEn": "Parliamentary Assistant to the Minister of Francophone Affairs and Parliamentary Assistant to the Associate Minister of Small Business",
+      "titreFr": "adjoint parlementaire à la ministre des Affaires francophones et à la ministre associée des Petites Entreprises"
     },
     {
       "nom": "Dave Smith",
