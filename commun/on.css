@@ -29,7 +29,7 @@
 
 *{box-sizing:border-box;}
 *{border-radius:0 !important;}
-::selection{background:var(--yellow); color:var(--sur-clair);}
+::selection{background:#FFD24D; color:#131313;} /* Fixe dans les deux thèmes : en sombre, --yellow devient #262624 et le texte sélectionné disparaissait (Martin, 16 nov. 2026). */
 
 body{
   margin:0; background:var(--paper); color:var(--ink);
