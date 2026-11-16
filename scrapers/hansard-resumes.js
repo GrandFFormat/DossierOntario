@@ -41,13 +41,15 @@ const CONSIGNE = `You summarise one sitting day of the Legislative Assembly of O
 
 Return through the tool:
 - "en" and "fr": the SAME summary, English and Québec French, 4 to 7 bullets. Each bullet: one idea, about 30 words at most, everyday words. Cover what the House actually did: bills debated and at which stage (second reading, committee, third reading…), main questions asked in Question Period, motions, votes and their result. For a bill debate, say what the government presented and what the opposition asked or proposed, as the transcript shows it.
-- "joueurs": the people who took a significant part, at most 12. "nom" exactly as the transcript names them, "role" as the transcript gives it (minister's title, or riding), "sujet" in a few English words, "sujetFr" the same in French.
+- "joueurs": the people who took a significant part, at most 12. "nom": first and last name only, never a prefix (no "Hon.", "Mr.", "Ms.", "MPP"). "role": the minister's or the Premier's title if they hold one, otherwise their riding — the same role for the same person every time, "sujet" in a few English words, "sujetFr" the same in French.
 - "projets": each bill debated: "numero" (the bill number only, e.g. "140" or "Pr45"), "etape" ("second reading", "committee", "report", "third reading", "first reading", "other").
 
 Rules:
 - Only what the transcript says. Never invent, never assume. Neutral: report what each person said or asked, never judge, never characterise a person or a party ("attacked", "failed", "dodged" are forbidden).
 - No quotes longer than a few words.
-- French: Québec French, simple. Use « député·e » for MPP. Keep Act names in English unless the transcript gives the French title. Never put a comma before « et ».
+- Bills: write "Bill 140 (official title)" in English and « projet de loi 140 (titre officiel) » in French, using ONLY the official titles listed after the transcript. If a bill is not in that list, give a short description in each language instead of a title.
+- Never use a semicolon. Short sentences.
+- French: Québec French, simple. Write « député·e » and « député·e·s » (always this form). Never put a comma before « et ».
 - If the transcript is purely ceremonial or too short to summarise honestly, set sansContenu to true and return empty lists.`;
 
 const OUTIL = {
@@ -86,6 +88,15 @@ const OUTIL = {
 const nettoyer = (l) => (l ?? []).map((p) => String(p).trim().replace(/^[-•]\s*/, '')).filter(Boolean);
 const sansVirguleEt = (s) => s.replace(/,\s+et\b/g, ' et');
 
+// Les titres officiels des projets de loi, dans les deux langues (data/site/bills.json, tiré d'ola.org) :
+// donnés au modèle pour qu'il n'en invente pas et n'en traduise pas (relecture de Hugo, 16 nov. 2026).
+function titresOfficiels(texteSeance) {
+  let projets = [];
+  try { projets = JSON.parse(readFileSync('data/site/bills.json', 'utf-8')).projets ?? []; } catch (e) { return ''; }
+  const vus = projets.filter((p) => new RegExp('Bill ' + String(p.numero).replace(/^PR/i, 'Pr') + '\\b').test(texteSeance));
+  return vus.map((p) => 'Bill ' + p.numero + ' — EN: ' + (p.titreEn ?? '?') + ' — FR: ' + (p.titreFr ?? '(no French title published)')).join('\n');
+}
+
 async function main() {
   const liste = await lirePage(BASE);
   const jours = [...new Set(liste.match(new RegExp(`session-${SESSION}/(\\d{4}-\\d{2}-\\d{2})/hansard`, 'g')) ?? [])]
@@ -122,7 +133,7 @@ async function main() {
         system: CONSIGNE,
         tools: [OUTIL],
         tool_choice: { type: 'auto' },
-        messages: [{ role: 'user', content: `Legislative Assembly of Ontario — Hansard, ${jour}\n${tronque ? `[Transcript cut at ${MAX_SIGNES} characters.]\n` : ''}\n<official_transcript>\n${t}\n</official_transcript>\n\nNow call the tool "seance".` }],
+        messages: [{ role: 'user', content: `Legislative Assembly of Ontario — Hansard, ${jour}\n${tronque ? `[Transcript cut at ${MAX_SIGNES} characters.]\n` : ''}\n<official_transcript>\n${t}\n</official_transcript>\n\n<official_bill_titles>\n${titresOfficiels(t)}\n</official_bill_titles>\n\nNow call the tool "seance".` }],
       });
       jE += rep.usage.input_tokens; jS += rep.usage.output_tokens;
       const b = rep.content.find((c) => c.type === 'tool_use')?.input;

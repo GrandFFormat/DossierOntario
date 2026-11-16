@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-16",
+      "fr": "Séances de la Chambre : résumés corrigés après relecture (titres officiels des projets de loi, noms sans titre de civilité), et l’encadré des pétitions placé juste au-dessus, comme sur DossierBC.",
+      "en": "House sittings: summaries corrected after review (official bill titles, names without honorifics), and the petitions box now sits right above them, as on DossierBC."
+    },
+    {
+      "date": "2026-11-16",
       "fr": "Accueil : « Derniers votes nominatifs » retiré (les votes restent dans leur page) ; « Quoi de neuf » prend toute la largeur.",
       "en": "Home page: “Latest recorded votes” removed (votes stay on their own page); “What’s new” now takes the full width."
     },

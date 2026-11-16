@@ -101,6 +101,9 @@
       zone = document.createElement('section'); zone.id = 'seances'; zone.className = 'sea';
       ancre.insertAdjacentElement('afterend', zone);
     }
+    // L'encadré des pétitions juste au-dessus de la fenêtre, comme sur DossierBC (Martin, 16 nov. 2026).
+    var pet = document.querySelector('.encadre-petitions');
+    if (pet && zone.previousElementSibling !== pet) zone.insertAdjacentElement('beforebegin', pet);
     style();
     var semaine = liste[0].jour >= lundi();
     zone.innerHTML = '<div class="sea-cadre"><div class="sea-intro">' +
