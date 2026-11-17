@@ -447,6 +447,123 @@
       "faitLe": "2026-11-16T20:37:59.850Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-16": {
+      "jour": "2026-11-16",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-16/hansard",
+      "en": [
+        "The House agreed to appoint Heidi Sander as Poet Laureate of Ontario for two years from November 27, 2026. Members from all parties spoke in support.",
+        "In Question Period, Marit Stiles asked about the Stellantis plant in Brampton. Minister Victor Fedeli said the province will meet Stellantis's global CEO and wants the plant kept ready for a new model.",
+        "Opposition members asked about OSAP and private career colleges. Minister Nolan Quinn described the audit, the OPP referral and planned legislation. Students' lost funding was raised several times.",
+        "The NDP and Liberals also asked about Highway 69 deaths, Staples school supplies, class sizes, a cancer patient denied out-of-country care, and food bank use. Ministers answered each.",
+        "First reading was given to Bill 148 (Protect Ontario Families and Communities Act, 2026), Bill 149 (Toxic Drug Crisis Emergency Response Task Force Act, 2026) and Bill 150 (Ontario Colleges Athletic Association Week Act, 2026).",
+        "The Liberal opposition day motion asked for an Auditor General audit of OSAP, release of KPMG reports and restored OSAP grants. The government spoke against it. It was defeated 64 to 26.",
+        "Bill 119 (Protecting Ontario's Streets and Communities Act, 2026) passed third reading on division. The government cited retail theft and human trafficking debt relief. The opposition raised court backlogs, victim funding and Lydia's Law."
+      ],
+      "fr": [
+        "La Chambre a accepté de nommer Heidi Sander poète lauréate de l'Ontario pour deux ans à partir du 27 novembre 2026. Des député·e·s de tous les partis ont appuyé la motion.",
+        "Pendant la période de questions, Marit Stiles a interrogé le gouvernement sur l'usine Stellantis de Brampton. Le ministre Victor Fedeli a dit que la province rencontrera le chef de la direction mondial et veut garder l'usine prête pour un nouveau modèle.",
+        "Des député·e·s de l'opposition ont posé des questions sur le RAFEO et les collèges privés d'enseignement professionnel. Le ministre Nolan Quinn a parlé de la vérification, du renvoi à la PPO et du projet de loi. Le financement perdu des étudiants a été soulevé à plusieurs reprises.",
+        "Le NPD et les libéraux ont aussi posé des questions sur les décès sur la route 69, les fournitures Staples, la taille des classes, un patient atteint d'un cancer refusé pour des soins hors pays et les banques alimentaires. Les ministres ont répondu.",
+        "Les projets de loi 148 (Loi de 2026 visant à protéger les familles et les collectivités en Ontario), 149 (Loi de 2026 sur le groupe de travail sur la réponse d'urgence à la crise liée aux drogues toxiques) et 150 (Loi de 2026 sur la Semaine de l'Ontario Colleges Athletic Association) ont franchi la première lecture.",
+        "La motion libérale de la journée de l'opposition demandait un audit de la vérificatrice générale sur le RAFEO, la publication des rapports de KPMG et le retour des subventions. Le gouvernement s'y est opposé. Elle a été rejetée par 64 voix contre 26.",
+        "Le projet de loi 119 (Loi de 2026 visant à protéger les rues et les collectivités de l'Ontario) a été adopté en troisième lecture avec dissidence. Le gouvernement a cité le vol au détail et l'aide pour les dettes de traite de personnes. L'opposition a soulevé les retards des tribunaux, le financement des victimes et la loi de Lydia."
+      ],
+      "joueurs": [
+        {
+          "nom": "Marit Stiles",
+          "role": "Davenport",
+          "sujet": "Stellantis plant, government accountability",
+          "sujetFr": "Usine Stellantis, responsabilité du gouvernement"
+        },
+        {
+          "nom": "Victor Fedeli",
+          "role": "Minister of Economic Development, Job Creation and Trade",
+          "sujet": "Stellantis plant plan",
+          "sujetFr": "Plan pour l'usine Stellantis"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP and career colleges",
+          "sujetFr": "RAFEO et collèges privés"
+        },
+        {
+          "nom": "Tyler Watt",
+          "role": "Nepean",
+          "sujet": "OSAP opposition day motion",
+          "sujetFr": "Motion de l'opposition sur le RAFEO"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Ottawa South",
+          "sujet": "OSAP, class sizes",
+          "sujetFr": "RAFEO, taille des classes"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "role": "London West",
+          "sujet": "Students hurt by OSAP freeze",
+          "sujetFr": "Étudiants touchés par le gel du RAFEO"
+        },
+        {
+          "nom": "Michael S. Kerzner",
+          "role": "Solicitor General",
+          "sujet": "Bill 119, lithium battery safety",
+          "sujetFr": "Projet de loi 119, piles au lithium"
+        },
+        {
+          "nom": "Silvia Gualtieri",
+          "role": "Mississauga East–Cooksville",
+          "sujet": "Bill 119 third reading speech",
+          "sujetFr": "Discours sur le projet de loi 119"
+        },
+        {
+          "nom": "Sol Mamakwa",
+          "role": "Kiiwetinoong",
+          "sujet": "Bill 119 gaps for victims and the north",
+          "sujetFr": "Lacunes du projet de loi 119"
+        },
+        {
+          "nom": "Stephen Blais",
+          "role": "Orléans",
+          "sujet": "Bill 119 schedules",
+          "sujetFr": "Annexes du projet de loi 119"
+        },
+        {
+          "nom": "Adil Shamji",
+          "role": "Don Valley East",
+          "sujet": "Out-of-country cancer care",
+          "sujetFr": "Soins du cancer hors pays"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Out-of-country coverage",
+          "sujetFr": "Couverture hors pays"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "119",
+          "etape": "third reading"
+        },
+        {
+          "numero": "148",
+          "etape": "first reading"
+        },
+        {
+          "numero": "149",
+          "etape": "first reading"
+        },
+        {
+          "numero": "150",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-17T20:00:09.028Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
