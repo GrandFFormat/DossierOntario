@@ -564,6 +564,123 @@
       "faitLe": "2026-11-17T20:00:09.028Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-17": {
+      "jour": "2026-11-17",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-17/hansard",
+      "en": [
+        "The House began second reading debate on Bill 148 (Protect Ontario Families and Communities Act, 2026). Ministers presented changes to children's aid societies, intimate image protection, private career college and OSAP oversight, and social worker discipline.",
+        "Opposition members said the 18-schedule omnibus bill was tabled less than 24 hours earlier. They asked that OSAP, child welfare and health measures be separate bills.",
+        "NDP and Liberal members said the OSAP schedule shields the government from lawsuits, retroactively. They said it does nothing to restore loans for career college students. The minister said the bill adds guardrails against misuse.",
+        "On children's aid, Alexa Gilmour supported parts of the bill but asked what it does for children in sheds, motels or dying in care. Minister Parsa pointed to $2 billion in funding and reduced caseloads.",
+        "Members from all sides spoke well of the intimate image protections. Jess Dixon described the new civil remedies, including takedown orders and AI-generated images.",
+        "Question Period focused on OSAP and private career colleges. Opposition leaders asked about money lost and the minister's role. Minister Quinn cited 3,200 investigations, the OPP referral and the KPMG audit.",
+        "Other Question Period topics were special education funding, children's aid, a cancer treatment denial, primary care funding and a wealth tax. Bills 151, 152 and Pr65 passed first reading."
+      ],
+      "fr": [
+        "La Chambre a commencé le débat de deuxième lecture du projet de loi 148 (Loi de 2026 visant à protéger les familles et les collectivités en Ontario). Les ministres ont présenté des mesures sur les sociétés d'aide à l'enfance, les images intimes, les collèges privés d'enseignement professionnel, l'RAFEO et la discipline des travailleurs sociaux.",
+        "Des député·e·s de l'opposition ont dit que ce projet omnibus de 18 annexes a été déposé moins de 24 heures plus tôt. Ils ont demandé des projets de loi distincts pour l'RAFEO, la protection de l'enfance et la santé.",
+        "Des député·e·s du NPD et du Parti libéral ont dit que l'annexe sur l'RAFEO protège le gouvernement contre les poursuites, de façon rétroactive. Ils ont dit qu'elle ne rétablit pas les prêts des étudiants. Le ministre a dit que le projet ajoute des garde-fous contre les abus.",
+        "Sur l'aide à l'enfance, Alexa Gilmour a appuyé certaines parties, mais a demandé ce que le projet fait pour les enfants logés dans des remises ou des motels, ou morts en soins. Le ministre Parsa a cité 2 milliards de dollars et la baisse des cas.",
+        "Des député·e·s de tous les partis ont bien accueilli la protection des images intimes. Jess Dixon a décrit les nouveaux recours civils, dont les ordonnances de retrait et les images créées par IA.",
+        "La période de questions a porté surtout sur l'RAFEO et les collèges privés. Les chefs de l'opposition ont posé des questions sur l'argent perdu et le rôle du ministre. Le ministre Quinn a cité 3 200 enquêtes, la GPO et l'audit de KPMG.",
+        "Autres sujets : financement de l'éducation spécialisée, aide à l'enfance, refus d'un traitement contre le cancer, soins primaires et impôt sur la richesse. Les projets de loi 151, 152 et Pr65 ont franchi la première lecture."
+      ],
+      "joueurs": [
+        {
+          "nom": "Michael Parsa",
+          "role": "Minister of Children, Community and Social Services",
+          "sujet": "Presented Bill 148, children's aid",
+          "sujetFr": "A présenté le projet de loi 148, aide à l'enfance"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP and career college measures",
+          "sujetFr": "RAFEO et collèges privés"
+        },
+        {
+          "nom": "Michael A. Tibollo",
+          "role": "Associate Attorney General",
+          "sujet": "Intimate image protections",
+          "sujetFr": "Protection des images intimes"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "role": "London West",
+          "sujet": "Indemnity clauses, OSAP students",
+          "sujetFr": "Clauses d'immunité, étudiants de l'RAFEO"
+        },
+        {
+          "nom": "Alexa Gilmour",
+          "role": "Parkdale–High Park",
+          "sujet": "Children's aid shortfalls in bill",
+          "sujetFr": "Lacunes sur l'aide à l'enfance"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "OSAP and education questions",
+          "sujetFr": "Questions sur l'RAFEO et l'éducation"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Ottawa South",
+          "sujet": "OSAP scandal, indemnification",
+          "sujetFr": "Scandale de l'RAFEO, immunité"
+        },
+        {
+          "nom": "Paul Calandra",
+          "role": "Minister of Education",
+          "sujet": "Special education funding",
+          "sujetFr": "Financement de l'éducation spécialisée"
+        },
+        {
+          "nom": "Tyler Watt",
+          "role": "Nepean",
+          "sujet": "Omnibus bill, OSAP, health privacy",
+          "sujetFr": "Projet omnibus, RAFEO, vie privée"
+        },
+        {
+          "nom": "Jess Dixon",
+          "role": "Kitchener South–Hespeler",
+          "sujet": "Intimate Images Protection Act",
+          "sujetFr": "Loi sur les images intimes"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Cancer treatment, primary care",
+          "sujetFr": "Traitement du cancer, soins primaires"
+        },
+        {
+          "nom": "George Darouze",
+          "role": "Carleton",
+          "sujet": "Child welfare, ADR",
+          "sujetFr": "Aide à l'enfance, règlement des différends"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "148",
+          "etape": "second reading"
+        },
+        {
+          "numero": "151",
+          "etape": "first reading"
+        },
+        {
+          "numero": "152",
+          "etape": "first reading"
+        },
+        {
+          "numero": "Pr65",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-18T19:35:14.352Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
