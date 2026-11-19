@@ -681,6 +681,123 @@
       "faitLe": "2026-11-18T19:35:14.352Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-18": {
+      "jour": "2026-11-18",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-18/hansard",
+      "en": [
+        "The House continued second reading debate on Bill 148 (Protect Ontario Families and Communities Act, 2026). Government members spoke on intimate image abuse, child welfare, long-term care and OSAP oversight. Debate was adjourned at 6 pm.",
+        "Opposition members said the bill is an omnibus bill with 18 schedules and should be split. They objected to schedules 13 and 14, which shield the government from lawsuits over the OSAP pause at private career colleges.",
+        "Government members said the OSAP measures add identity checks, enrolment caps and stronger penalties for bad actors. Minister Quinn said Career Colleges Ontario had raised concerns and that KPMG and the OPP are involved.",
+        "Other parts of Bill 148 were discussed: nurse practitioners as clinical directors in long-term care, mandatory dementia care programs, and training for child welfare workers on human trafficking risks. Opposition members raised the KPMG children's aid report and children living in unlicensed settings.",
+        "Question Period: Marit Stiles asked about the S&P outlook change, debt and donations. Finance Minister Bethlenfalvy pointed to a US$3-billion bond sale and tax cuts. John Fraser and others pressed the OSAP file.",
+        "Deferred vote: Bill 133 (Health Care Honours, Employment, Retention, Optimization and Empowerment Strategy Act, 2026) lost at second reading, 40 to 73.",
+        "Bill 153, Jordan Heffern Memorial Act (Preventing Nurse Suicides), and Bill Pr60 (reviving Anderana Lodge Family Society Inc.) were introduced and passed first reading. The House also marked Minister Raymond Cho's 90th birthday."
+      ],
+      "fr": [
+        "La Chambre a poursuivi le débat en deuxième lecture sur le projet de loi 148 (Loi de 2026 visant à protéger les familles et les collectivités en Ontario). Des député·e·s ont parlé des images intimes, de la protection de l'enfance, des soins de longue durée et du RAFEO. Le débat a été ajourné à 18 h.",
+        "Des député·e·s de l'opposition ont dit que c'est un projet de loi omnibus de 18 annexes qui devrait être divisé. Ils s'opposent aux annexes 13 et 14, qui protègent le gouvernement contre les poursuites liées à la pause du RAFEO dans les collèges privés.",
+        "Des député·e·s du gouvernement ont dit que les mesures sur le RAFEO ajoutent des vérifications d'identité, des plafonds d'inscription et des sanctions plus fortes. Le ministre Quinn a mentionné les préoccupations de Collèges Ontario carrière, KPMG et la PPO.",
+        "D'autres volets ont été abordés: les infirmières praticiennes comme directrices cliniques en soins de longue durée, les programmes obligatoires de soins de la démence et la formation du personnel de la protection de l'enfance sur la traite de personnes. L'opposition a soulevé le rapport de KPMG et les enfants logés dans des lieux non agréés.",
+        "Période de questions: Marit Stiles a posé des questions sur la perspective de S&P, la dette et les dons. Le ministre des Finances Bethlenfalvy a cité un emprunt de 3 milliards de dollars US et les baisses d'impôt. John Fraser et d'autres ont insisté sur le RAFEO.",
+        "Vote différé: le projet de loi 133 (Loi de 2026 sur la stratégie en matière de distinctions, d'emploi, de rétention, d'optimisation et du développement de l'autonomie dans le secteur de la santé) a été rejeté en deuxième lecture, 40 voix contre 73.",
+        "Le projet de loi 153 (Loi de 2026 commémorant Jordan Heffern) et le projet de loi Pr60 (reconstitution d'Anderana Lodge Family Society Inc.) ont franchi la première lecture. La Chambre a aussi souligné les 90 ans du ministre Raymond Cho."
+      ],
+      "joueurs": [
+        {
+          "nom": "Jess Dixon",
+          "role": "Kitchener South–Hespeler",
+          "sujet": "Intimate image abuse tort in Bill 148",
+          "sujetFr": "Délit d'abus d'images intimes, projet de loi 148"
+        },
+        {
+          "nom": "Terence Kernaghan",
+          "role": "London North Centre",
+          "sujet": "OSAP lawsuit shield, omnibus bill",
+          "sujetFr": "Protection contre poursuites RAFEO, projet omnibus"
+        },
+        {
+          "nom": "Andrea Khanjin",
+          "role": "Minister of Red Tape Reduction",
+          "sujet": "Child welfare, human trafficking, Bill 148",
+          "sujetFr": "Protection de l'enfance, traite de personnes"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP pause and new guardrails",
+          "sujetFr": "Pause du RAFEO et nouvelles mesures"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "Credit outlook, donations",
+          "sujetFr": "Perspective de crédit, dons"
+        },
+        {
+          "nom": "Peter Bethlenfalvy",
+          "role": "Minister of Finance",
+          "sujet": "Credit rating, bond sale",
+          "sujetFr": "Cote de crédit, emprunt"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Ottawa South",
+          "sujet": "OSAP scandal",
+          "sujetFr": "Scandale du RAFEO"
+        },
+        {
+          "nom": "Natalia Kusendova-Bashta",
+          "role": "Minister of Long-Term Care",
+          "sujet": "Clinical directors, dementia care",
+          "sujetFr": "Directeurs cliniques, soins de la démence"
+        },
+        {
+          "nom": "Lise Vaugeois",
+          "role": "Thunder Bay–Superior North",
+          "sujet": "Omnibus bill, OSAP, CAS",
+          "sujetFr": "Projet omnibus, RAFEO, SAE"
+        },
+        {
+          "nom": "Chris Glover",
+          "role": "Spadina–Fort York",
+          "sujet": "OSAP, children's aid, long-term care",
+          "sujetFr": "RAFEO, SAE, soins de longue durée"
+        },
+        {
+          "nom": "France Gélinas",
+          "role": "Nickel Belt",
+          "sujet": "Bill 153 on nurse suicide prevention",
+          "sujetFr": "Projet de loi 153, prévention du suicide chez les infirmières"
+        },
+        {
+          "nom": "Raymond Cho",
+          "role": "Minister for Seniors and Accessibility",
+          "sujet": "90th birthday",
+          "sujetFr": "90e anniversaire"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "148",
+          "etape": "second reading"
+        },
+        {
+          "numero": "133",
+          "etape": "second reading"
+        },
+        {
+          "numero": "153",
+          "etape": "first reading"
+        },
+        {
+          "numero": "Pr60",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-19T19:38:31.830Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
