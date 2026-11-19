@@ -519,7 +519,7 @@ body:not(.pret) main.colonne{min-height:100vh;}
 /* ---------- Challenger et partager (page des projets de loi) ----------
    Mêmes gestes et même allure que sur DossierQuébec : un bouton plein pour le geste, trois
    petits carrés pour le partage, et le compteur en pastille noire et jaune dans la tête. */
-.pastille-defi{background:#131313; border-color:#131313; color:#FFD24D;} /* Fixe : en sombre, --yellow devient #262624 et le chiffre disparaissait (Martin, 19 nov. 2026). */
+.pastille-defi{background:#131313; border-color:#fff; color:#FFD24D;} /* Fixe : en sombre, --yellow devient #262624 et le chiffre disparaissait (Martin, 19 nov. 2026). */
 .defi{display:flex; flex-direction:column; gap:8px; border-top:2px dashed var(--line-soft); padding-top:12px;}
 .defi-indice{text-transform:none; letter-spacing:0; line-height:1.4;}
 .bouton-defi{
