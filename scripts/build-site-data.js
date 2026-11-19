@@ -545,6 +545,15 @@ function main() {
   ecrire('apercu', {
     maj: details?.lus ?? bills.lus,
     quoiDeNeuf,
+    // Les dernières motions mises aux voix (Martin, 19 nov. 2026) : remplacent « Quoi de neuf » à
+    // l'accueil. Un vote nominatif sans projet de loi dont le type est « Vote on motion… ».
+    // L'Assemblée ne publie que le numéro et l'auteur·e, pas le texte : on n'invente rien.
+    motions: votesSite.filter((v) => !v.projet && /^Vote on motion/i.test(v.typeEn ?? '')).slice(0, 40).map((v) => ({
+      date: v.date, sujetEn: v.sujetEn, sujetFr: v.sujetFr,
+      parEn: (v.typeEn ?? '').replace(/^Vote on motion moved by\s*/i, '').replace(/^Hon\.\s*/, ''),
+      parFr: (v.typeFr ?? '').replace(/^Vote de la motion proposée par\s*/i, '').replace(/^L.hon\.\s*/i, ''),
+      resultatEn: v.resultatEn, resultatFr: v.resultatFr, pour: v.pour, contre: v.contre, url: v.url, urlFr: v.urlFr,
+    })),
     petitions: petitionsSite,
     legislature: bills.legislature,
     session: bills.session,

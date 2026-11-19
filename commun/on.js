@@ -251,6 +251,7 @@
       'recents.indice': '↓ Click anywhere in a card to read what the bill does ↓',
       'recents.tous': 'See more on the bills page →',
       'neuf.titre': 'What’s new', 'neuf.sous': 'The latest real activity at the Legislature',
+      'motions.titre': 'Latest motions', 'motions.sous': 'Recorded votes on motions, newest first. The Assembly publishes the number and who moved it; the full text is on ola.org.', 'motions.par': (n) => `moved by ${n}`, 'motions.plus': '5 more', 'motions.pour': (p, c) => `${p} for, ${c} against`, 'motions.lire': 'Read on ola.org ↗',
       'neuf.relache': (fin, retour) => `The House has not sat since ${fin}; it returns on ${retour}. That is normal — committees can still sit in the meantime, and their work is below.`,
       'neuf.relacheSansRetour': (fin) => `The House has not sat since ${fin}, and no return date has been announced. Committees can still sit in the meantime; their work is below.`,
       'neuf.normal': 'The latest days on which a bill moved or a committee sat, from the official record.',
@@ -566,6 +567,7 @@
       'recents.indice': '↓ Cliquez n’importe où dans une carte pour voir ce que fait le projet ↓',
       'recents.tous': 'Voir plus dans la page des projets de loi →',
       'neuf.titre': 'Quoi de neuf', 'neuf.sous': 'Les dernières activités réelles à l’Assemblée',
+      'motions.titre': 'Dernières motions', 'motions.sous': 'Les votes nominatifs sur des motions, du plus récent au plus ancien. L’Assemblée publie le numéro et qui l’a proposée ; le texte complet est sur ola.org.', 'motions.par': (n) => `proposée par ${n}`, 'motions.plus': '5 de plus', 'motions.pour': (p, c) => `${p} pour, ${c} contre`, 'motions.lire': 'Lire sur ola.org ↗',
       'neuf.relache': (fin, retour) => `La Chambre n’a pas siégé depuis le ${fin} ; elle reprend le ${retour}. C’est normal — les comités peuvent siéger entre-temps, et leur travail est ci-dessous.`,
       'neuf.relacheSansRetour': (fin) => `La Chambre n’a pas siégé depuis le ${fin}, et aucune date de reprise n’est annoncée. Les comités peuvent siéger entre-temps ; leur travail est ci-dessous.`,
       'neuf.normal': 'Les dernières journées où un projet a bougé ou un comité a siégé, d’après le compte rendu officiel.',
@@ -1127,37 +1129,26 @@
     const zone = document.querySelector('[data-role="nouvelles"]');
     if (!zone || !a) return;
 
-    // --- Quoi de neuf : un encadré qui dit où en est la Chambre, puis les journées.
-    const cal = a.calendrier;
-    const contexte = cal?.enRelache && cal.derniereSeance
-      ? cal.prochaineSeance
-        ? mot('neuf.relache', date(cal.derniereSeance), date(cal.prochaineSeance))
-        : mot('neuf.relacheSansRetour', date(cal.derniereSeance))
-      : mot('neuf.normal');
-    const ligne = (l) =>
-      l.type === 'projet'
-        ? `<li><a href="/bill/${encodeURIComponent(String(l.numero).toLowerCase())}">${mot('defis.numero', l.numero)} — ${echapper(
-            selonLangue(l.titreEn, l.titreFr)
-          )}</a> : ${echapper(selonLangue(l.evenementEn, l.evenementFr) ?? '')}${
-            l.comiteEn ? ` <span class="legende">· ${echapper(selonLangue(l.comiteEn, l.comiteFr))}</span>` : ''
-          }</li>`
-        : `<li><b>${echapper(selonLangue(l.comiteEn, l.comiteFr))}</b> : ${l.sujets
-            .map((s) => echapper(selonLangue(s.en, s.fr)))
-            .join(' · ')} <a class="lien-source" href="${echapper(l.transcription)}" target="_blank" rel="noopener">${mot(
-            'comites.transcription'
-          )}</a></li>`;
-    zone.querySelector('[data-role="neuf"]').innerHTML = `
-      <div class="encadre-neuf">${echapper(contexte)}</div>
-      ${neufRecent(a.quoiDeNeuf ?? [])
-        .map(
-          (j) => `<div class="jour-neuf">
-            <p class="date-neuf">${date(j.date)}</p>
-            <ul class="liste-neuf">${j.lignes.map(ligne).join('')}</ul>
-            ${j.autres ? `<p class="legende">${mot('neuf.autres', j.autres)}</p>` : ''}
-          </div>`
-        )
-        .join('')}
-      <a class="bouton-trait" href="/archives"><span>${mot('neuf.tout')}</span> <span aria-hidden="true">→</span></a>`;
+    // --- Dernières motions (Martin, 19 nov. 2026) : remplace « Quoi de neuf », qui répétait
+    // « Projets de loi récemment actifs ». Les votes nominatifs sur des motions (apercu.json →
+    // motions), 5 à la fois, « 5 de plus » ensuite. Rien d'inventé : numéro, auteur·e, résultat,
+    // décompte et le lien vers le vote sur ola.org.
+    const motions = a.motions ?? [];
+    let montrees = 5;
+    const ligneMotion = (m) => {
+      const adoptee = /carried/i.test(m.resultatEn ?? '');
+      return `<li><b>${echapper(selonLangue(m.sujetEn, m.sujetFr))}</b> <span class="legende">· ${mot('motions.par', echapper(selonLangue(m.parEn, m.parFr)))}</span><br>
+        <span class="motion-res ${adoptee ? 'motion-adoptee' : 'motion-rejetee'}">${echapper(selonLangue(m.resultatEn, m.resultatFr))}</span>
+        <span class="legende">${mot('motions.pour', m.pour, m.contre)} · ${date(m.date)}</span>
+        <a class="lien-source" href="${echapper(selonLangue(m.url, m.urlFr ?? m.url))}" target="_blank" rel="noopener">${mot('motions.lire')}</a></li>`;
+    };
+    const dessinerMotions = () => {
+      const z = zone.querySelector('[data-role="neuf"]');
+      z.innerHTML = `<ul class="liste-neuf liste-motions">${motions.slice(0, montrees).map(ligneMotion).join('')}</ul>
+        ${montrees < motions.length ? `<button type="button" class="bouton-trait motions-plus" data-mesure="on-motions-plus"><span>${mot('motions.plus')}</span> <span aria-hidden="true">↓</span></button>` : ''}`;
+      z.querySelector('.motions-plus')?.addEventListener('click', () => { montrees += 5; dessinerMotions(); });
+    };
+    if (motions.length) dessinerMotions();
 
     // --- Pétitions : ce qui existe en Ontario, c'est-à-dire des pétitions sur papier.
     const p = a.petitions;

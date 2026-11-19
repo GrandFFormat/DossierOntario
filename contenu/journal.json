@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-19",
+      "fr": "À l’accueil, « Quoi de neuf » laisse la place aux dernières motions mises aux voix : numéro, qui l’a proposée, résultat et décompte, 5 à la fois avec un bouton « 5 de plus ».",
+      "en": "On the home page, “What’s new” gives way to the latest motions put to a recorded vote: number, who moved it, result and count, 5 at a time with a “5 more” button."
+    },
+    {
+      "date": "2026-11-19",
       "fr": "Chaque député·e a maintenant sa fiche, comme sur DossierQuébec : photo officielle de l’Assemblée, fonctions, projets de loi parrainés, présence aux votes et coordonnées. Cliquez sur un nom dans la page Député·e·s et ministres.",
       "en": "Every MPP now has a profile page, like on DossierQuébec: official photo from the Assembly, roles, bills sponsored, vote attendance and contact details. Click a name on the MPPs and cabinet page."
     },

@@ -67,8 +67,8 @@ const PAGES = [
   <!-- « Derniers votes nominatifs » retiré (doublon, Martin, 16 nov. 2026) : Quoi de neuf prend toute la largeur. -->
   <section class="cases">
     <div class="case" data-role="nouvelles" hidden>
-      <h2 class="titre-case" data-i18n="neuf.titre">What's new</h2>
-      <p class="legende" data-i18n="neuf.sous">The latest real activity at the Legislature</p>
+      <h2 class="titre-case" data-i18n="motions.titre">Latest motions</h2>
+      <p class="legende" data-i18n="motions.sous">Recorded votes on motions, newest first.</p>
       <div data-role="neuf"></div>
     </div>
   </section>
