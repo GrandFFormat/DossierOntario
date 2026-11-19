@@ -6,3 +6,7 @@ data/.details.log
 
 # Dumps bruts des données ouvertes d'Ottawa (405 000 points d'adresse…) : rechargés par scrapers/ottawa-donnees.js
 data/ottawa-brut/
+
+# Fichiers de travail privés (retirés du site le 19 nov. 2026)
+/contenu/villes-ontario-represente.md
+/ottawa/courriel-greffe.md
