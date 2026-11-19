@@ -2,6 +2,11 @@
   "_note": "Les mises à jour du site, écrites à la main pour le lecteur, la plus récente en haut. Affichées sous « …et moi » dans le pied de page. Chaque changement visible ajoute son entrée, en français ET en anglais, dans le même commit.",
   "entrees": [
     {
+      "date": "2026-11-19",
+      "fr": "Le compteur 🔥 des projets contestés se lit maintenant en mode sombre (chiffre jaune).",
+      "en": "The 🔥 counter on challenged bills is now readable in dark mode (yellow number)."
+    },
+    {
       "date": "2026-11-16",
       "fr": "Séances de la Chambre : résumés corrigés après relecture (titres officiels des projets de loi, noms sans titre de civilité), et l’encadré des pétitions placé juste au-dessus, comme sur DossierBC.",
       "en": "House sittings: summaries corrected after review (official bill titles, names without honorifics), and the petitions box now sits right above them, as on DossierBC."
