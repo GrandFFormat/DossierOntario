@@ -3013,7 +3013,7 @@
       return `<article class="carte carte-depute">
         <div class="depute-tete"><span class="pastille pastille-parti" title="${echapper(parti)}" style="background:${echapper(m.couleurParti ?? '#8B8578')};
           border-color:${echapper(m.couleurParti ?? '#8B8578')}; color:${texteSurParti(m.couleurParti)}">${echapper(sigleParti(parti))}</span>${actions(m)}</div>
-        <h3 class="depute-nom">${CHEFS.includes(m.identifiant) ? `<a href="/leader/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : m.ministreEn ? `<a href="/minister/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : `<a href="${echapper(m.url)}" target="_blank" rel="noopener">${echapper(m.nom)}</a>`}</h3>
+        <h3 class="depute-nom">${CHEFS.includes(m.identifiant) ? `<a href="/leader/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : m.ministreEn ? `<a href="/minister/${echapper(m.identifiant)}">${echapper(m.nom)}</a>` : `<a href="/mpp/${echapper(m.identifiant)}">${echapper(m.nom)}</a>`}</h3>
         ${m.ministreEn ? `<p class="depute-role">${echapper(selonLangue(m.ministreEn, m.ministreFr))}</p>` : ''}
         ${m.adjointEn ? `<p class="depute-role depute-adjoint">${echapper(selonLangue(m.adjointEn, m.adjointFr))}</p>` : ''}
         <dl class="depute-faits">

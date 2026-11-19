@@ -619,141 +619,153 @@ for (const page of PAGES_PROJETS) {
 }
 console.log(`${PAGES_PROJETS.length} pages de projets de loi dans bill/`);
 
-// ---------------------------------------------------------------- une page par ministre
-// /minister/<identifiant> (11 nov. 2026), même mécanique que DossierQuébec : fonctions,
-// parti, circonscription, projets de loi parrainés, présence aux votes, coordonnées,
-// Person en données structurées, sitemap. Texte anglais par défaut, français basculé par
-// html[lang] (.fr-txt / .en-txt, commun/on.css).
-// Réseaux sociaux : data/site/ministresReseaux.json, relevés sur une source officielle
-// seulement : le site de circonscription du ministre (11 nov. 2026). Source de chaque lien
-// dans ministresReseaux-sources.json. Rien n'est deviné : un nom affiché sans lien ne compte pas.
-// Pas de photo : les portraits d'ola.org ne sont pas sous licence ouverte.
+// ---------------------------------------------------------------- une fiche par député·e
+// /minister/<id>, /leader/<id> et /mpp/<id> (19 nov. 2026) : même gabarit que la fiche de ministre de
+// DossierQuébec (scripts/build-minister-pages.js là-bas) : bandeau avec photo et réseaux, étiquette
+// jaune, nom en gros, phrase « au <date> », puis Fonctions, Parti / Circonscription, Projets de loi
+// parrainés, Présence aux votes (pastille + note sur les votes manqués) et Coordonnées officielles.
+// Texte anglais par défaut, français basculé par html[lang] (.fr-txt / .en-txt).
+// Pas de « Suivre » ni de « Mandat » : DossierOntario n'a ni abonnement ni nombre de mandats lu
+// sur une source officielle. Rien n'est inventé.
+// Photo : portrait officiel d'ola.org (scrapers/photos.js), usage non commercial avec mention de
+// l'Assemblée (décision de Martin, 19 nov. 2026).
+// Réseaux : data/site/ministresReseaux.json et chefs.json, relevés sur une source officielle seulement.
 const deux = (en, fr) => `<span class="en-txt">${en}</span><span class="fr-txt">${fr}</span>`;
 const ICONES_RESEAUX = {
   Facebook: 'f', X: 'X', Instagram: 'IG', LinkedIn: 'in', YouTube: 'YT', TikTok: 'TT',
 };
 const nomReseau = (u) => [[/\/\/x\.com|twitter/, 'X'], [/facebook/, 'Facebook'], [/instagram/, 'Instagram'], [/linkedin/, 'LinkedIn'], [/youtube/, 'YouTube'], [/tiktok/, 'TikTok']].find(([r]) => r.test(u))?.[1] || 'Web';
-// Sans identifiant ola.org (la secrétaire du Conseil, fonctionnaire hors Assemblée) : pas de fiche.
 const ministresOn = (JSON.parse(readFileSync('data/ministers.json', 'utf8')).ministres ?? []).filter((m) => m.identifiant);
 const deputesOn = JSON.parse(readFileSync('data/site/members.json', 'utf8')).deputes ?? [];
 const chefsOn = existsSync('data/site/chefs.json') ? JSON.parse(readFileSync('data/site/chefs.json', 'utf8')) : { chefs: [], gouvernement: {} };
 const reseauxOn = existsSync('data/site/ministresReseaux.json') ? JSON.parse(readFileSync('data/site/ministresReseaux.json', 'utf8')) : {};
+const photosOn = existsSync('data/site/photos.json') ? JSON.parse(readFileSync('data/site/photos.json', 'utf8')) : {};
 const sansHon = (s) => String(s).replace(/\bHon\.\s*/g, '').trim();
 const normNom = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
 // « Ford, Hon. Doug » → « dougford »
 const parrainNorme = (p) => { const [nom, prenom] = sansHon(p).split(','); return normNom(`${prenom ?? ''}${nom}`); };
-mkdirSync('minister', { recursive: true });
-for (const vieux of readdirSync('minister')) if (vieux.endsWith('.html')) unlinkSync(`minister/${vieux}`);
-const PAGES_MINISTRES = [];
-for (const m of ministresOn) {
-  const d = deputesOn.find((x) => x.identifiant === m.identifiant) ?? {};
-  const fichier = `minister/${m.identifiant}.html`;
+const MOIS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const MOIS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const [aA, aM, aJ] = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Toronto' }).split('-').map(Number);
+const dateFrOn = `${aJ === 1 ? '1er' : aJ} ${MOIS_FR[aM - 1]} ${aA}`;
+const dateEnOn = `${MOIS_EN[aM - 1]} ${aJ}, ${aA}`;
+// Mêmes paliers que la lecture de la présence sur /mpps : 90 % et plus, 80 à 90 %, moins de 80 %.
+const classePresenceOn = (t) => (t >= 90 ? 'presence-vert' : t >= 80 ? 'presence-jaune' : 'presence-neutre');
+const majuscule = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+const minuscule = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : s);
+const morceaux = (s) => String(s ?? '').split(';').map((x) => x.trim()).filter(Boolean);
+const reseauxHtml = (res) => (res.length ? `<p class="min-reseaux">${res.map((u) => `<a href="${echapperHtml(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] ?? nomReseau(u)}</a>`).join('')}</p>` : '');
+
+function ficheDepute(d, o) {
+  const nom = sansHon(d.nom);
+  const fichier = `${o.dossier}/${d.identifiant}.html`;
   const url = `https://dossierontario.ca/${adressePropre(fichier)}`;
-  const projets = projetsSite.filter((p) => (p.parrains ?? []).some((x) => parrainNorme(x) === normNom(m.nom)));
-  const res = reseauxOn[m.identifiant] ?? [];
-  const presence = d.votesTenus ? `${Math.round((d.votesExprimes / d.votesTenus) * 100)}% (${d.votesExprimes}/${d.votesTenus})` : null;
-  const titreEn = m.titreEn.split(';')[0];
-  const titre = `${m.nom}, ${titreEn.length + m.nom.length > 50 ? 'Ontario minister' : titreEn}`;
-  const description = `${m.nom}${d.circonscription ? ` (${d.circonscription})` : ''}: ${m.titreEn}. Bills sponsored, voting attendance and official contact details.`.slice(0, 300);
-  const ligne = (en, fr, valeur) => `<div><dt>${deux(en, fr)}</dt><dd>${valeur}</dd></div>`;
-  const contenu = `  <p class="fil"><a href="/mpps#cabinet">${deux('← MPPs and cabinet', '← Député·e·s et Conseil des ministres')}</a></p>
-  <h1 class="titre-vue">${echapperHtml(m.nom)}</h1>
-  <section data-vue="ministre" class="min-fiche">
-    <article class="carte">
-      <p class="depute-role">${deux(echapperHtml(m.titreEn), echapperHtml(m.titreFr))}</p>
-      ${chefsOn.gouvernement?.[m.identifiant] ? `<p class="depute-role">${deux(echapperHtml(chefsOn.gouvernement[m.identifiant].roleEn), echapperHtml(chefsOn.gouvernement[m.identifiant].roleFr))}</p>` : ''}
-      ${res.length ? `<p class="min-reseaux">${res.map((u) => `<a href="${echapperHtml(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] ?? nomReseau(u)}</a>`).join('')}</p>` : ''}
-      <dl class="depute-faits">
+  const projets = projetsSite.filter((p) => (p.parrains ?? []).some((x) => parrainNorme(x) === normNom(nom)));
+  const ph = photosOn[d.identifiant] && existsSync(photosOn[d.identifiant].fichier) ? photosOn[d.identifiant] : null;
+  const photo = ph
+    ? `<figure class="min-photo"><img src="/${echapperHtml(ph.fichier)}" width="180" height="270" alt="${echapperHtml(nom)}"><figcaption>Photo : <a href="${echapperHtml(d.url)}" rel="noopener">${deux('Legislative Assembly of Ontario', 'Assemblée législative de l’Ontario')}</a></figcaption></figure>`
+    : '';
+  const res = o.reseaux ?? [];
+  const ligne = (en, fr, valeur) => `<div class="m-row"><span class="m-label">${deux(en, fr)}</span><span class="m-val">${valeur}</span></div>`;
+  const taux = d.votesTenus ? Math.round((d.votesExprimes / d.votesTenus) * 100) : null;
+  const manques = d.votesTenus ? d.votesTenus - d.votesExprimes : 0;
+  const s = manques > 1 ? 's' : '';
+  const presence = taux !== null
+    ? `<p>${deux(
+      `<b class="presence-pastille ${classePresenceOn(taux)}">${taux}%</b> of recorded divisions this session: ${d.votesExprimes} of ${d.votesTenus}, i.e. ${manques} vote${s} missed (44th Legislature).`,
+      `<b class="presence-pastille ${classePresenceOn(taux)}">${taux} %</b> des votes nominaux de cette session : ${d.votesExprimes} sur ${d.votesTenus}, soit ${manques} vote${s} manqué${s} (44e législature).`)}</p>
+      <p class="pr-meta">${deux('A missed vote can be an official mission, an illness or a scheduling conflict: the register does not give the reason.', 'Un vote manqué peut être une mission officielle, une maladie ou un conflit d’horaire : le registre n’en donne pas la raison.')}</p>`
+    : `<p>${deux('No recorded division yet.', 'Aucun vote nominal encore.')}</p>`;
+  const contenu = `  <p class="fil"><a href="/mpps${o.dossier === 'minister' ? '#cabinet' : ''}">${deux('← MPPs and cabinet', '← Député·e·s et Conseil des ministres')}</a></p>
+  <section data-vue="fiche" class="fiche-dep">
+    <div class="min-hero">
+      <div class="min-colphoto">${photo}${reseauxHtml(res)}</div>
+      <div class="min-tete">
+        <p class="hero-sujet">${deux(o.etiquetteEn, o.etiquetteFr)}</p>
+        <h1 class="hero-h1">${echapperHtml(nom)}</h1>
+        <p class="view-hero-sub">${deux(o.phraseEn, o.phraseFr)}</p>
+      </div>
+    </div>
+    <div class="min-fiche">
+      ${o.fonctionsEn.length ? `<h2>${deux('Roles', 'Fonctions')}</h2><ul class="min-liste">${o.fonctionsEn.map((r, i) => `<li>${deux(echapperHtml(r), echapperHtml(o.fonctionsFr[i] ?? r))}</li>`).join('')}</ul>` : ''}
+      <div class="min-faits">
         ${d.parti ? ligne('Party', 'Parti', deux(echapperHtml(d.parti), echapperHtml(d.partiFr ?? d.parti))) : ''}
         ${d.circonscription ? ligne('Riding', 'Circonscription', deux(echapperHtml(d.circonscription), echapperHtml(d.circonscriptionFr ?? d.circonscription))) : ''}
-        ${presence ? ligne('Recorded-vote attendance', 'Présence aux votes nominaux', echapperHtml(presence)) : ''}
-      </dl>
-      <h2 class="titre-case">${deux('Bills sponsored', 'Projets de loi parrainés')}</h2>
-      ${projets.length ? `<ul class="min-liste">${projets.map((p) => `<li><a href="/bill/${slug(p.numero)}">${deux(`Bill ${echapperHtml(p.numero)}`, `Projet de loi ${echapperHtml(p.numero)}`)}</a> — ${deux(echapperHtml(p.titreEn), echapperHtml(p.titreFr ?? p.titreEn))}</li>`).join('')}</ul>` : `<p>${deux('No bill sponsored in this session.', 'Aucun projet de loi parrainé pendant cette session.')}</p>`}
-      <h2 class="titre-case">${deux('Official links', 'Liens officiels')}</h2>
-      <ul class="min-liste">
-        <li><a href="${echapperHtml(m.url)}" rel="noopener">${deux('Profile on ola.org', 'Fiche sur ola.org')}</a></li>
-        ${d.courriel ? `<li><a href="mailto:${echapperHtml(d.courriel)}">${echapperHtml(d.courriel)}</a></li>` : ''}
-      </ul>
-    </article>
-  </section>`;
-  const ld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'Person', name: m.nom, url, jobTitle: m.titreEn, ...(d.parti ? { affiliation: { '@type': 'PoliticalParty', name: d.parti } } : {}), sameAs: [m.url, ...res] },
-    { '@type': 'BreadcrumbList', itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'DossierOntario', item: 'https://dossierontario.ca/' },
-      { '@type': 'ListItem', position: 2, name: 'MPPs and cabinet', item: 'https://dossierontario.ca/mpps' },
-      { '@type': 'ListItem', position: 3, name: m.nom, item: url } ] } ] };
-  PAGES_MINISTRES.push({ fichier, titre, description, contenu, ld });
-}
-for (const page of PAGES_MINISTRES) {
-  const html = modele
-    .replace(/\{\{TITRE\}\}/g, () => echapperHtml(page.titre))
-    .replace(/\{\{DESCRIPTION\}\}/g, () => echapperHtml(page.description))
-    .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
-    .replace(/\{\{VUE\}\}/g, 'ministre')
-    .replace(/\{\{DONNEES\}\}/g, 'apercu')
-    .replace(/\{\{BANDES\}\}/g, '')
-    .replace(/\{\{BANDES_BAS\}\}/g, '')
-    .replace(/\{\{CONTENU\}\}/g, () => page.contenu)
-    .replace(/(href|src)="\/(commun\/on\.(?:css|js))"/g, (_, attr, chemin) => `${attr}="/${chemin}?v=${VERSIONS[chemin]}"`)
-    .replace(/\{\{ACTIF_deputes\}\}/g, 'actif')
-    .replace(/\{\{ACTIF_[a-z]+\}\}/g, '')
-    .replace('</head>', () => `<script type="application/ld+json">\n${JSON.stringify(page.ld, null, 2).replace(/</g, '\\u003c')}\n</script>\n</head>`);
-  writeFileSync(page.fichier, html);
-}
-console.log(`${PAGES_MINISTRES.length} pages de ministres dans minister/`);
-
-// ---------------------------------------------------------------- une page par chef de parti
-// /leader/<identifiant> (11 nov. 2026) : chef·fe·s des partis d'opposition (data/site/chefs.json,
-// source de la fonction et des réseaux notée). Même fiche que celle d'un ministre.
-mkdirSync('leader', { recursive: true });
-for (const vieux of readdirSync('leader')) if (vieux.endsWith('.html')) unlinkSync(`leader/${vieux}`);
-const PAGES_CHEFS = [];
-for (const c of chefsOn.chefs ?? []) {
-  const d = deputesOn.find((x) => x.identifiant === c.identifiant);
-  if (!d) continue;
-  const fichier = `leader/${c.identifiant}.html`;
-  const url = `https://dossierontario.ca/${adressePropre(fichier)}`;
-  const nom = d.nom.replace(/^Hon\.\s+/, '');
-  const projets = projetsSite.filter((p) => (p.parrains ?? []).some((x) => parrainNorme(x) === normNom(nom)));
-  const presence = d.votesTenus ? `${Math.round((d.votesExprimes / d.votesTenus) * 100)}% (${d.votesExprimes}/${d.votesTenus})` : null;
-  const res = c.reseaux ?? [];
-  const ligne = (en, fr, valeur) => `<div><dt>${deux(en, fr)}</dt><dd>${valeur}</dd></div>`;
-  const contenu = `  <p class="fil"><a href="/mpps">${deux('← MPPs and cabinet', '← Député·e·s et Conseil des ministres')}</a></p>
-  <h1 class="titre-vue">${echapperHtml(nom)}</h1>
-  <section data-vue="chef" class="min-fiche">
-    <article class="carte">
-      <p class="depute-role">${deux(echapperHtml(c.roleEn), echapperHtml(c.roleFr))}</p>
-      ${res.length ? `<p class="min-reseaux">${res.map((u) => `<a href="${echapperHtml(u)}" target="_blank" rel="noopener" title="${nomReseau(u)}" aria-label="${nomReseau(u)}">${ICONES_RESEAUX[nomReseau(u)] ?? nomReseau(u)}</a>`).join('')}</p>` : ''}
-      <dl class="depute-faits">
-        ${ligne('Party', 'Parti', deux(echapperHtml(d.parti), echapperHtml(d.partiFr ?? d.parti)))}
-        ${ligne('Riding', 'Circonscription', deux(echapperHtml(d.circonscription), echapperHtml(d.circonscriptionFr ?? d.circonscription)))}
-        ${presence ? ligne('Recorded-vote attendance', 'Présence aux votes nominaux', echapperHtml(presence)) : ''}
-      </dl>
-      <h2 class="titre-case">${deux('Bills sponsored', 'Projets de loi parrainés')}</h2>
-      ${projets.length ? `<ul class="min-liste">${projets.map((p) => `<li><a href="/bill/${slug(p.numero)}">${deux(`Bill ${echapperHtml(p.numero)}`, `Projet de loi ${echapperHtml(p.numero)}`)}</a> — ${deux(echapperHtml(p.titreEn), echapperHtml(p.titreFr ?? p.titreEn))}</li>`).join('')}</ul>` : `<p>${deux('No bill sponsored in this session.', 'Aucun projet de loi parrainé pendant cette session.')}</p>`}
-      <h2 class="titre-case">${deux('Official links', 'Liens officiels')}</h2>
+      </div>
+      <h2>${deux('Bills sponsored', 'Projets de loi parrainés')}</h2>
+      ${projets.length ? `<ul class="min-liste">${projets.map((p) => `<li><a href="/bill/${slug(p.numero)}">${deux(`Bill ${echapperHtml(p.numero)} — ${echapperHtml(p.titreEn)}`, `Projet de loi ${echapperHtml(p.numero)} — ${echapperHtml(p.titreFr ?? p.titreEn)}`)}</a></li>`).join('')}</ul>` : `<p>${deux('No bill sponsored in this session.', 'Aucun projet de loi parrainé pendant cette session.')}</p>`}
+      <h2>${deux('Vote attendance', 'Présence aux votes')}</h2>
+      ${presence}
+      <h2>${deux('Official contact', 'Coordonnées officielles')}</h2>
       <ul class="min-liste">
         <li><a href="${echapperHtml(d.url)}" rel="noopener">${deux('Profile on ola.org', 'Fiche sur ola.org')}</a></li>
-        <li><a href="${echapperHtml(c.source)}" rel="noopener">${deux('Party page', 'Page du parti')}</a></li>
-        ${d.courriel ? `<li><a href="mailto:${echapperHtml(d.courriel)}">${echapperHtml(d.courriel)}</a></li>` : ''}
+        ${(o.liens ?? []).map(([href, en, fr]) => `<li><a href="${echapperHtml(href)}" rel="noopener">${deux(en, fr)}</a></li>`).join('')}
+        ${d.courriel ? `<li><a href="mailto:${echapperHtml(d.courriel)}">✉ ${echapperHtml(d.courriel)}</a></li>` : ''}
       </ul>
-    </article>
+    </div>
   </section>`;
   const ld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'Person', name: nom, url, jobTitle: c.roleEn, affiliation: { '@type': 'PoliticalParty', name: d.parti }, sameAs: [d.url, ...res] },
+    { '@type': 'Person', name: nom, url, jobTitle: o.jobTitle, ...(ph ? { image: `https://dossierontario.ca/${ph.fichier}` } : {}), ...(d.parti ? { affiliation: { '@type': 'PoliticalParty', name: d.parti } } : {}), sameAs: [d.url, ...res] },
     { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'DossierOntario', item: 'https://dossierontario.ca/' },
       { '@type': 'ListItem', position: 2, name: 'MPPs and cabinet', item: 'https://dossierontario.ca/mpps' },
       { '@type': 'ListItem', position: 3, name: nom, item: url } ] } ] };
-  PAGES_CHEFS.push({ fichier, titre: `${nom}, ${c.roleEn.length + nom.length > 50 ? 'party leader' : c.roleEn}`, description: `${nom} (${d.circonscription}): ${c.roleEn}. Bills sponsored, voting attendance, official links and social media.`, contenu, ld });
+  return { fichier, contenu, ld };
 }
-for (const page of PAGES_CHEFS) {
+
+const PAGES_MINISTRES = [], PAGES_CHEFS = [], PAGES_DEPUTES = [];
+for (const dossier of ['minister', 'leader', 'mpp']) {
+  mkdirSync(dossier, { recursive: true });
+  for (const vieux of readdirSync(dossier)) if (vieux.endsWith('.html')) unlinkSync(`${dossier}/${vieux}`);
+}
+const avecFiche = new Set();
+for (const m of ministresOn) {
+  const d = { ...(deputesOn.find((x) => x.identifiant === m.identifiant) ?? {}), identifiant: m.identifiant, nom: m.nom, url: m.url };
+  const gouv = chefsOn.gouvernement?.[m.identifiant];
+  const titreEn = m.titreEn.split(';')[0];
+  const p = ficheDepute(d, {
+    dossier: 'minister', etiquetteEn: 'Ontario minister', etiquetteFr: 'Ministre de l’Ontario',
+    fonctionsEn: [...morceaux(m.titreEn), ...(gouv ? [gouv.roleEn] : [])],
+    fonctionsFr: [...morceaux(m.titreFr).map(majuscule), ...(gouv ? [gouv.roleFr] : [])],
+    phraseEn: `${echapperHtml(m.nom)} is ${echapperHtml(morceaux(m.titreEn).join(' and '))} in the Ford government (as of ${dateEnOn}).`,
+    phraseFr: `${echapperHtml(m.nom)} est ${echapperHtml(morceaux(m.titreFr).join(' et '))} dans le gouvernement Ford (au ${dateFrOn}).`,
+    reseaux: reseauxOn[m.identifiant], jobTitle: m.titreEn,
+  });
+  avecFiche.add(m.identifiant);
+  PAGES_MINISTRES.push({ ...p, titre: `${m.nom}, ${titreEn.length + m.nom.length > 50 ? 'Ontario minister' : titreEn}`, description: `${m.nom}${d.circonscription ? ` (${d.circonscription})` : ''}: ${m.titreEn}. Bills sponsored, voting attendance and official contact details.`.slice(0, 300) });
+}
+for (const c of chefsOn.chefs ?? []) {
+  const d = deputesOn.find((x) => x.identifiant === c.identifiant);
+  if (!d) continue;
+  const nom = sansHon(d.nom);
+  const p = ficheDepute(d, {
+    dossier: 'leader', etiquetteEn: 'Party leader', etiquetteFr: 'Chef·fe de parti',
+    fonctionsEn: [c.roleEn], fonctionsFr: [c.roleFr],
+    phraseEn: `${echapperHtml(nom)} is ${echapperHtml(minuscule(c.roleEn))} and MPP for ${echapperHtml(d.circonscription)} (as of ${dateEnOn}).`,
+    phraseFr: `${echapperHtml(nom)} : ${echapperHtml(minuscule(c.roleFr))}, député·e de ${echapperHtml(d.circonscriptionFr ?? d.circonscription)} (au ${dateFrOn}).`,
+    reseaux: c.reseaux, liens: [[c.source, 'Party page', 'Page du parti']], jobTitle: c.roleEn,
+  });
+  avecFiche.add(c.identifiant);
+  PAGES_CHEFS.push({ ...p, titre: `${nom}, ${c.roleEn.length + nom.length > 50 ? 'party leader' : c.roleEn}`, description: `${nom} (${d.circonscription}): ${c.roleEn}. Bills sponsored, voting attendance, official links and social media.` });
+}
+for (const d of deputesOn) {
+  if (avecFiche.has(d.identifiant)) continue;
+  const nom = sansHon(d.nom);
+  const p = ficheDepute(d, {
+    dossier: 'mpp', etiquetteEn: 'Ontario MPP', etiquetteFr: 'Député·e de l’Ontario',
+    fonctionsEn: d.adjointEn ? [d.adjointEn] : [], fonctionsFr: d.adjointFr ? [majuscule(d.adjointFr)] : [],
+    phraseEn: `${echapperHtml(nom)} is the MPP for ${echapperHtml(d.circonscription)} (${echapperHtml(d.parti)}) as of ${dateEnOn}.`,
+    phraseFr: `${echapperHtml(nom)} représente ${echapperHtml(d.circonscriptionFr ?? d.circonscription)} à l’Assemblée (${echapperHtml(d.partiFr ?? d.parti)}) au ${dateFrOn}.`,
+    jobTitle: 'Member of Provincial Parliament',
+  });
+  PAGES_DEPUTES.push({ ...p, titre: `${nom}, MPP for ${d.circonscription}`, description: `${nom}, MPP for ${d.circonscription} (${d.parti}): bills sponsored, voting attendance and official contact details.`.slice(0, 300) });
+}
+for (const page of [...PAGES_MINISTRES, ...PAGES_CHEFS, ...PAGES_DEPUTES]) {
   const html = modele
     .replace(/\{\{TITRE\}\}/g, () => echapperHtml(page.titre))
     .replace(/\{\{DESCRIPTION\}\}/g, () => echapperHtml(page.description))
     .replace(/\{\{FICHIER\}\}/g, adressePropre(page.fichier))
-    .replace(/\{\{VUE\}\}/g, 'chef')
+    .replace(/\{\{VUE\}\}/g, 'fiche')
     .replace(/\{\{DONNEES\}\}/g, 'apercu')
     .replace(/\{\{BANDES\}\}/g, '')
     .replace(/\{\{BANDES_BAS\}\}/g, '')
@@ -762,16 +774,17 @@ for (const page of PAGES_CHEFS) {
     .replace(/\{\{ACTIF_deputes\}\}/g, 'actif')
     .replace(/\{\{ACTIF_[a-z]+\}\}/g, '')
     .replace('</head>', () => `<script type="application/ld+json">\n${JSON.stringify(page.ld, null, 2).replace(/</g, '\\u003c')}\n</script>\n</head>`);
+  if ((html.match(/<h1[\s>]/g) || []).length !== 1) throw new Error(`fiche ${page.fichier} : pas exactement un <h1>`);
   writeFileSync(page.fichier, html);
 }
-console.log(`${PAGES_CHEFS.length} pages de chefs dans leader/`);
+console.log(`${PAGES_MINISTRES.length} ministres, ${PAGES_CHEFS.length} chefs, ${PAGES_DEPUTES.length} député·e·s : fiches dans minister/, leader/ et mpp/`);
 
 // Les pages d'Ottawa (indexées sur décision de Martin, 16 nov. 2026).
 function fs_ottawa() { return readdirSync('ottawa').filter((f) => f.endsWith('.html')).map((f) => ({ fichier: 'ottawa/' + f })); }
 // Le plan du site, pour que Google trouve les six pages (leçon de DossierQuébec).
 const plan = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES, ...PAGES_CHEFS, ...fs_ottawa()].map(
+${[...PAGES.filter((p) => !p.horsPlan), ...PAGES_PROJETS, ...PAGES_MINISTRES, ...PAGES_CHEFS, ...PAGES_DEPUTES, ...fs_ottawa()].map(
   (p) => `  <url><loc>https://dossierontario.ca/${adressePropre(p.fichier)}</loc>
     <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`
 ).join('\n')}

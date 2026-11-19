@@ -3,6 +3,11 @@
   "entrees": [
     {
       "date": "2026-11-19",
+      "fr": "Chaque député·e a maintenant sa fiche, comme sur DossierQuébec : photo officielle de l’Assemblée, fonctions, projets de loi parrainés, présence aux votes et coordonnées. Cliquez sur un nom dans la page Député·e·s et ministres.",
+      "en": "Every MPP now has a profile page, like on DossierQuébec: official photo from the Assembly, roles, bills sponsored, vote attendance and contact details. Click a name on the MPPs and cabinet page."
+    },
+    {
+      "date": "2026-11-19",
       "fr": "Le compteur 🔥 des projets contestés se lit maintenant en mode sombre (chiffre jaune, contour blanc).",
       "en": "The 🔥 counter on challenged bills is now readable in dark mode (yellow number, white outline)."
     },
