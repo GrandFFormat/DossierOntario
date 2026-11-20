@@ -972,3 +972,8 @@ html.dvq-fr:not(.dvq-pret) body { visibility: hidden; }
 @keyframes haut-envol { 0% { transform: none; opacity: 1; } 15% { transform: translateY(8px) scale(1.1); opacity: 1; } 100% { transform: translateY(var(--envol, -400px)) scale(.6); opacity: 0; } }
 .haut.envol { animation: haut-envol .7s cubic-bezier(.5,0,.2,1) forwards; opacity: 1 !important; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .haut.envol { animation: none; } }
+
+/* En bref : le grand cadre gris neutre avec une ligne d accent à gauche (Martin, 20 nov. 2026 ; rouge du drapeau, vert, orange et bleu essayés), au lieu du bordeaux
+   de la palette en thème sombre. Le texte garde ses couleurs. */
+.en-bref .eb-gros { background: var(--fond-doux, #1b1e22); border: 1px solid var(--ligne); border-left: 5px solid var(--accent); color: var(--encre); }
+:root:not([data-theme="sombre"]) .en-bref .eb-gros { background: #f3f4f6; }
