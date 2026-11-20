@@ -1,7 +1,7 @@
 /* VOLET VANCOUVER (DossierOntario) — copie de montreal/assets/style.css (dépôt DossierQuébec), le 15 novembre
  * 2026, selon le guide « Reproduire un volet de ville pour une autre ville » (« à garder tel quel »).
  * Trois jetons changent par thème, et rien d'autre : l'accent passe du vert de Québec au bleu
- * héraldique de DossierOntario (#1f4f8a, commun/bc.css), la vedette à l'or soleil (#e3b528). Le vert
+ * rouge du site provincial (20 nov. 2026, chaque site sa palette), la vedette au jaune du site. Le vert
  * reste au vote POUR et le rouge au vote CONTRE : ces deux couleurs se lisent pareil sur tous les
  * sites de la famille. Une classe s'ajoute en fin de fichier : .puce.conflit (conflit d'intérêts
  * déclaré), une donnée que Vancouver publie et que Montréal n'a pas.
@@ -33,10 +33,10 @@
   --ligne: #DDE2E7;
   --ligne-forte: #C2CAD2;
 
-  --accent: #1f4f8a;          /* Vancouver : le bleu héraldique de DossierOntario */
-  --accent-fond: #e9f0f9;
-  --accent-encre: #193f6e;
-  --vedette: #e3b528;         /* Vancouver : l'or soleil du cahier de DossierOntario */
+  --accent: #C8102E;  /* Ottawa : palette du site provincial */
+  --accent-fond: #fbe9eb;  /* Ottawa : palette du site provincial */
+  --accent-encre: #851420;  /* Ottawa : palette du site provincial */
+  --vedette: #FFD24D;  /* Ottawa : palette du site provincial */
   --pour: #0B8A4B;
   --contre: #D23B2C;
   --contre-fond: #FDECEA;
@@ -87,10 +87,10 @@
   --ligne: #2A323C;
   --ligne-forte: #3A4450;
 
-  --accent: #7fb0ea;          /* Vancouver, thème sombre */
-  --accent-fond: #17304f;
-  --accent-encre: #a9c9f2;
-  --vedette: #f0c54a;
+  --accent: #f9817f;  /* Ottawa, thème sombre */
+  --accent-fond: #4a1d1d;  /* Ottawa, thème sombre */
+  --accent-encre: #ffb3b0;  /* Ottawa, thème sombre */
+  --vedette: #FFD24D;  /* Ottawa, thème sombre */
   --pour: #3DDC84;
   --contre: #FF6B5B;
   --contre-fond: #3A1F1C;
