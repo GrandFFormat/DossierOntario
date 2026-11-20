@@ -25,7 +25,6 @@ globalThis.VILLE = {
   anglophone: true,
   date1er: true,
   textes: true,
-  palmaresVotesContre: true,
   conflits: true,
   quartiers: true,
   fenetre: {
