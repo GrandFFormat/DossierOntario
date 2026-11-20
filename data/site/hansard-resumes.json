@@ -798,6 +798,115 @@
       "faitLe": "2026-11-19T19:38:31.830Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-19": {
+      "jour": "2026-11-19",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-19/hansard",
+      "en": [
+        "Second reading debate continued on Bill 148 (Protect Ontario Families and Communities Act, 2026). Government members spoke about intimate image protections, nurse clinical directors in long-term care and scope of practice changes. Opposition members criticized the omnibus format.",
+        "Opposition members objected to schedules limiting lawsuits over OSAP and career colleges, including for past decisions. They asked for help for affected students and children in care. The government said the bill adds oversight and recovery tools.",
+        "The government House leader moved that the question now be put on Bill 148 after over nine hours of debate. The motion was carried on a voice vote. A recorded vote is deferred.",
+        "Question Period: the Opposition Leader asked about class sizes. The Education Minister cited rising test results and said class sizes have not increased.",
+        "Question Period: NDP members asked the Health Minister to fund out-of-country cancer treatment for patients going to court. She pointed to the FAST program and said decisions are separate from politicians.",
+        "Question Period: Liberal members asked about the OSAP scandal. The Colleges and Universities Minister cited 3,200 investigations, the KPMG audit and the OPP referral. OSAP payments to private institutions remain paused.",
+        "Debate began on government motion 20 on public safety, calling on Ottawa to act on bail, border enforcement and drugs. The NDP moved an amendment and a sub-amendment. Debate continued past 5 p.m. and was adjourned."
+      ],
+      "fr": [
+        "Le débat de deuxième lecture s’est poursuivi sur le projet de loi 148 (Loi de 2026 visant à protéger les familles et les collectivités en Ontario). Le gouvernement a parlé des images intimes, des directeurs cliniques infirmiers en soins de longue durée et des champs de pratique. L’opposition a critiqué ce projet de loi omnibus.",
+        "L’opposition s’est opposée aux annexes qui limitent les poursuites liées au RAFEO et aux collèges privés d’enseignement professionnel, même pour des décisions passées. Elle a réclamé de l’aide pour les étudiants et les enfants pris en charge. Le gouvernement a dit que le projet de loi ajoute de la surveillance et des outils de recouvrement.",
+        "Le leader parlementaire du gouvernement a proposé de mettre la question aux voix sur le projet de loi 148 après plus de neuf heures de débat. La motion a été adoptée de vive voix. Le vote par appel nominal est reporté.",
+        "Période de questions : la cheffe de l’opposition a posé des questions sur la taille des classes. Le ministre de l’Éducation a cité la hausse des résultats et dit que la taille des classes n’a pas augmenté.",
+        "Période de questions : des député·e·s néo-démocrates ont demandé à la ministre de la Santé de financer des traitements du cancer à l’étranger pour des patients qui vont devant les tribunaux. Elle a cité le programme FAST et dit que ces décisions sont indépendantes des politiciens.",
+        "Période de questions : des député·e·s libéraux ont posé des questions sur le scandale du RAFEO. Le ministre des Collèges et Universités a cité 3 200 enquêtes, la vérification de KPMG et le renvoi à la PPO. Les paiements du RAFEO aux établissements privés restent suspendus.",
+        "Le débat a commencé sur la motion 20 du gouvernement sur la sécurité publique, qui demande à Ottawa d’agir sur la mise en liberté sous caution, la frontière et les drogues. Le NPD a proposé un amendement et un sous-amendement. Le débat s’est poursuivi après 17 h et a été ajourné."
+      ],
+      "joueurs": [
+        {
+          "nom": "Adil Shamji",
+          "role": "Don Valley East",
+          "sujet": "Bill 148 and public safety motion",
+          "sujetFr": "Projet de loi 148 et motion sur la sécurité publique"
+        },
+        {
+          "nom": "Charmaine Williams",
+          "role": "Associate Minister of Women’s Social and Economic Opportunity",
+          "sujet": "Intimate image protections",
+          "sujetFr": "Protection des images intimes"
+        },
+        {
+          "nom": "Chandra Pasma",
+          "role": "Ottawa West–Nepean",
+          "sujet": "Bill 148, children’s aid, OSAP",
+          "sujetFr": "Projet de loi 148, société d’aide à l’enfance, RAFEO"
+        },
+        {
+          "nom": "Anthony Leardi",
+          "role": "Essex",
+          "sujet": "Bill 148 health changes",
+          "sujetFr": "Changements en santé du projet de loi 148"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "Class sizes, cancer treatment",
+          "sujetFr": "Taille des classes, traitement du cancer"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Cancer treatment funding",
+          "sujetFr": "Financement des traitements du cancer"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP investigations and pause",
+          "sujetFr": "Enquêtes et suspension du RAFEO"
+        },
+        {
+          "nom": "John Fraser",
+          "role": "Ottawa South",
+          "sujet": "OSAP scandal, motion debate",
+          "sujetFr": "Scandale du RAFEO, débat sur la motion"
+        },
+        {
+          "nom": "Michael S. Kerzner",
+          "role": "Solicitor General",
+          "sujet": "Public safety motion",
+          "sujetFr": "Motion sur la sécurité publique"
+        },
+        {
+          "nom": "Jamie West",
+          "role": "Sudbury",
+          "sujet": "Amendment on addiction treatment",
+          "sujetFr": "Amendement sur le traitement des dépendances"
+        },
+        {
+          "nom": "Robin Lennox",
+          "role": "Hamilton Centre",
+          "sujet": "Sub-amendment, cancer care",
+          "sujetFr": "Sous-amendement, soins du cancer"
+        },
+        {
+          "nom": "Steve Clark",
+          "role": "Government House Leader",
+          "sujet": "Closure motion, defence of motion 20",
+          "sujetFr": "Motion de clôture, défense de la motion 20"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "148",
+          "etape": "second reading"
+        },
+        {
+          "numero": "154",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-20T19:15:43.808Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
