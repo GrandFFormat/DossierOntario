@@ -5,11 +5,11 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-16T20:45:18.841Z",
+  "lus": "2026-11-23T22:21:03.868Z",
   "nombre": {
-    "total": 206,
-    "publics": 150,
-    "prives": 56
+    "total": 214,
+    "publics": 156,
+    "prives": 58
   },
   "projets": [
     {
@@ -3099,6 +3099,128 @@
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-150"
     },
     {
+      "numero": "151",
+      "numeroTri": 151,
+      "type": "public",
+      "titreEn": "Celebrating Various African Communities Act, 2026",
+      "titreFr": "Loi de 2026 célébrant diverses communautés africaines",
+      "parrains": [
+        {
+          "nom": "Firin, Mohamed",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-151",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-151"
+    },
+    {
+      "numero": "152",
+      "numeroTri": 152,
+      "type": "public",
+      "titreEn": "Waterloo Moraine Conservation Act, 2026",
+      "titreFr": "Loi de 2026 sur la conservation de la moraine de Waterloo",
+      "parrains": [
+        {
+          "nom": "Clancy, Aislinn",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-152",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-152"
+    },
+    {
+      "numero": "153",
+      "numeroTri": 153,
+      "type": "public",
+      "titreEn": "Jordan Heffern Memorial Act (Preventing Nurse Suicides), 2026",
+      "titreFr": "Loi de 2026 commémorant Jordan Heffern (prévention du suicide chez les infirmières et infirmiers)",
+      "parrains": [
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Fife, Catherine",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        },
+        {
+          "nom": "West, Jamie",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-153",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-153"
+    },
+    {
+      "numero": "154",
+      "numeroTri": 154,
+      "type": "public",
+      "titreEn": "Early Age Onset Cancer Awareness Day Act, 2026",
+      "titreFr": "Loi de 2026 sur la Journée de sensibilisation aux cancers précoces",
+      "parrains": [
+        {
+          "nom": "Rakocevic, Tom",
+          "role": null
+        },
+        {
+          "nom": "Gélinas, France",
+          "role": null
+        },
+        {
+          "nom": "Lennox, Robin",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-154",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-154"
+    },
+    {
+      "numero": "155",
+      "numeroTri": 155,
+      "type": "public",
+      "titreEn": "Protect Ontario’s Northern and Rural Communities Act, 2026",
+      "titreFr": "Loi de 2026 pour protéger les collectivités nordiques et rurales de l’Ontario",
+      "parrains": [
+        {
+          "nom": "Pirie, Hon. George",
+          "role": "Minister of Northern Economic Development and Growth"
+        }
+      ],
+      "typeProjet": "gouvernement",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-155",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-155"
+    },
+    {
+      "numero": "156",
+      "numeroTri": 156,
+      "type": "public",
+      "titreEn": "Home and Community Care Awareness Week, 2026",
+      "titreFr": "Loi de 2026 sur la Semaine de sensibilisation aux soins à domicile et en milieu communautaire",
+      "parrains": [
+        {
+          "nom": "Rosenberg, Bill",
+          "role": null
+        }
+      ],
+      "typeProjet": "depute",
+      "typeProjetSource": "deduit-du-parrain",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-156",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-156"
+    },
+    {
       "numero": "PR1",
       "numeroTri": 1,
       "type": "prive",
@@ -4017,6 +4139,23 @@
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr58"
     },
     {
+      "numero": "PR60",
+      "numeroTri": 60,
+      "type": "prive",
+      "titreEn": "Anderana Lodge Family Society Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Riddell, Brian",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr60",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr60"
+    },
+    {
       "numero": "PR61",
       "numeroTri": 61,
       "type": "prive",
@@ -4049,6 +4188,23 @@
       "typeProjetSource": "numero-pr",
       "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr63",
       "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr63"
+    },
+    {
+      "numero": "PR65",
+      "numeroTri": 65,
+      "type": "prive",
+      "titreEn": "1647359 Ontario Inc. Act, 2026",
+      "titreFr": null,
+      "parrains": [
+        {
+          "nom": "Coe, Lorne",
+          "role": null
+        }
+      ],
+      "typeProjet": "prive",
+      "typeProjetSource": "numero-pr",
+      "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-pr65",
+      "urlFr": "https://www.ola.org/fr/affaires-legislatives/projets-loi/legislature-44/session-1/projet-loi-pr65"
     }
   ]
 }

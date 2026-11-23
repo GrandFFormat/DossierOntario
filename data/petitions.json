@@ -1,8 +1,101 @@
 {
   "source": "https://www.ola.org/en/legislative-business/status-business/petitions-responses-subject-index",
-  "lus": "2026-11-16T21:23:56.990Z",
-  "nombre": 240,
+  "lus": "2026-11-23T22:56:06.425Z",
+  "nombre": 248,
   "petitions": [
+    {
+      "numero": 248,
+      "sujet": "Transportation enforcement safety measures",
+      "presentations": [
+        {
+          "membre": "Jennifer K. French",
+          "depot": "2026-11-23",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 247,
+      "sujet": "Supports and protections for hospital nurses",
+      "presentations": [
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-23",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 246,
+      "sujet": "Levack Public School",
+      "presentations": [
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-19",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 245,
+      "sujet": "Sexual violence and harassment prevention in licensed establishments",
+      "presentations": [
+        {
+          "membre": "Peggy Sattler",
+          "depot": "2026-11-18",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 244,
+      "sujet": "Niagara supportive housing strategy",
+      "presentations": [
+        {
+          "membre": "Jennifer (Jennie) Stevens",
+          "depot": "2026-11-18",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 243,
+      "sujet": "Huntsville cancer clinic",
+      "presentations": [
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-18",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 242,
+      "sujet": "Waste management strategy",
+      "presentations": [
+        {
+          "membre": "George Darouze",
+          "depot": "2026-11-18",
+          "reponse": null
+        },
+        {
+          "membre": "Paul Vickers",
+          "depot": "2026-11-18",
+          "reponse": null
+        }
+      ]
+    },
+    {
+      "numero": 241,
+      "sujet": "Commercial tenancy protections and policies for small businesses",
+      "presentations": [
+        {
+          "membre": "Kristyn Wong-Tam",
+          "depot": "2026-11-16",
+          "reponse": null
+        }
+      ]
+    },
     {
       "numero": 240,
       "sujet": "Support for Bill 109 and local ownership of farmland",
@@ -20,7 +113,17 @@
       "presentations": [
         {
           "membre": "John Vanthof",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "John Vanthof",
           "depot": "2026-11-05",
+          "reponse": null
+        },
+        {
+          "membre": "John Vanthof",
+          "depot": "2026-11-17",
           "reponse": null
         }
       ]
@@ -29,6 +132,26 @@
       "numero": 238,
       "sujet": "Natural and cultural heritage assessment and approval framework",
       "presentations": [
+        {
+          "membre": "Deepak Anand",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
+        {
+          "membre": "Anthony Leardi",
+          "depot": "2026-11-18",
+          "reponse": null
+        },
+        {
+          "membre": "Anthony Leardi",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Anthony Leardi",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
         {
           "membre": "George Darouze",
           "depot": "2026-11-05",
@@ -123,6 +246,21 @@
       "presentations": [
         {
           "membre": "Lise Vaugeois",
+          "depot": "2026-11-18",
+          "reponse": null
+        },
+        {
+          "membre": "Catherine Fife",
+          "depot": "2026-11-18",
+          "reponse": null
+        },
+        {
+          "membre": "Jamie West",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Lise Vaugeois",
           "depot": "2026-11-02",
           "reponse": null
         }
@@ -147,6 +285,11 @@
           "membre": "Ted Hsu",
           "depot": "2026-10-28",
           "reponse": null
+        },
+        {
+          "membre": "Mike Schreiner",
+          "depot": "2026-11-19",
+          "reponse": null
         }
       ]
     },
@@ -157,6 +300,11 @@
         {
           "membre": "Peggy Sattler",
           "depot": "2026-10-28",
+          "reponse": null
+        },
+        {
+          "membre": "Peggy Sattler",
+          "depot": "2026-11-16",
           "reponse": null
         }
       ]
@@ -541,6 +689,11 @@
       "presentations": [
         {
           "membre": "George Darouze",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
+        {
+          "membre": "George Darouze",
           "depot": "2026-05-14",
           "reponse": null
         },
@@ -869,18 +1022,23 @@
       "presentations": [
         {
           "membre": "France Gélinas",
-          "depot": "2026-05-05",
+          "depot": "2026-11-16",
           "reponse": null
+        },
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-05-05",
+          "reponse": "2026-11-23"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-06-01",
-          "reponse": null
+          "reponse": "2026-11-23"
         },
         {
           "membre": "France Gélinas",
           "depot": "2026-11-02",
-          "reponse": null
+          "reponse": "2026-11-23"
         }
       ]
     },
@@ -891,7 +1049,7 @@
         {
           "membre": "Alexa Gilmour",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-11-19"
         }
       ]
     },
@@ -902,7 +1060,7 @@
         {
           "membre": "Bobbi Ann Brady",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-18"
         }
       ]
     },
@@ -913,17 +1071,17 @@
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-18"
         },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-05-27",
-          "reponse": null
+          "reponse": "2026-11-18"
         },
         {
           "membre": "Tom Rakocevic",
           "depot": "2026-06-02",
-          "reponse": null
+          "reponse": "2026-11-18"
         }
       ]
     },
@@ -934,7 +1092,7 @@
         {
           "membre": "Adil Shamji",
           "depot": "2026-04-23",
-          "reponse": null
+          "reponse": "2026-11-18"
         }
       ]
     },
@@ -945,7 +1103,7 @@
         {
           "membre": "Dave Smith",
           "depot": "2026-04-22",
-          "reponse": null
+          "reponse": "2026-11-17"
         }
       ]
     },
@@ -961,7 +1119,7 @@
         {
           "membre": "Peter Tabuns",
           "depot": "2026-04-22",
-          "reponse": null
+          "reponse": "2026-11-17"
         }
       ]
     },
@@ -983,7 +1141,7 @@
         {
           "membre": "France Gélinas",
           "depot": "2026-04-21",
-          "reponse": null
+          "reponse": "2026-11-16"
         }
       ]
     },
@@ -991,6 +1149,11 @@
       "numero": 176,
       "sujet": "Standard of care for students with diabetes",
       "presentations": [
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
         {
           "membre": "Peggy Sattler",
           "depot": "2026-04-20",
@@ -1088,6 +1251,11 @@
           "reponse": "2026-11-02"
         },
         {
+          "membre": "Paul Vickers",
+          "depot": "2026-11-18",
+          "reponse": null
+        },
+        {
           "membre": "France Gélinas",
           "depot": "2026-11-04",
           "reponse": null
@@ -1130,6 +1298,11 @@
         {
           "membre": "Jamie West",
           "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
+          "membre": "Jamie West",
+          "depot": "2026-11-17",
           "reponse": null
         }
       ]
@@ -1253,6 +1426,11 @@
       "sujet": "Public sector procurement",
       "presentations": [
         {
+          "membre": "Anthony Leardi",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
+        {
           "membre": "Deepak Anand",
           "depot": "2026-04-14",
           "reponse": "2026-11-02"
@@ -1271,6 +1449,11 @@
           "membre": "Anthony Leardi",
           "depot": "2026-06-01",
           "reponse": "2026-11-02"
+        },
+        {
+          "membre": "Anthony Leardi",
+          "depot": "2026-11-16",
+          "reponse": null
         },
         {
           "membre": "Steve Clark",
@@ -1500,6 +1683,11 @@
       "sujet": "OSAP funding and grants",
       "presentations": [
         {
+          "membre": "Jamie West",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
+        {
           "membre": "France Gélinas",
           "depot": "2026-04-14",
           "reponse": "2026-10-29"
@@ -1518,6 +1706,51 @@
           "membre": "Robin Lennox",
           "depot": "2026-06-02",
           "reponse": "2026-10-29"
+        },
+        {
+          "membre": "Chris Glover",
+          "depot": "2026-11-23",
+          "reponse": null
+        },
+        {
+          "membre": "Peggy Sattler",
+          "depot": "2026-11-23",
+          "reponse": null
+        },
+        {
+          "membre": "Jessica Bell",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Kristyn Wong-Tam",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Alexa Gilmour",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Tom Rakocevic",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
+        {
+          "membre": "Mike Schreiner",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
+        {
+          "membre": "Tyler Watt",
+          "depot": "2026-11-16",
+          "reponse": null
         },
         {
           "membre": "Tyler Watt",
@@ -1692,6 +1925,11 @@
         {
           "membre": "Ted Hsu",
           "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
+          "membre": "Ted Hsu",
+          "depot": "2026-11-17",
           "reponse": null
         },
         {
@@ -1914,12 +2152,12 @@
         {
           "membre": "Steve Clark",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-11-19"
         },
         {
           "membre": "Steve Clark",
           "depot": "2026-05-04",
-          "reponse": null
+          "reponse": "2026-11-19"
         },
         {
           "membre": "Steve Clark",
@@ -1929,7 +2167,7 @@
         {
           "membre": "Steve Clark",
           "depot": "2026-05-12",
-          "reponse": null
+          "reponse": "2026-11-19"
         }
       ]
     },
@@ -2107,11 +2345,16 @@
         {
           "membre": "Stephen Blais",
           "depot": "2026-05-05",
-          "reponse": null
+          "reponse": "2026-11-23"
         },
         {
           "membre": "Chandra Pasma",
           "depot": "2026-05-05",
+          "reponse": "2026-11-23"
+        },
+        {
+          "membre": "Chandra Pasma",
+          "depot": "2026-11-17",
           "reponse": null
         },
         {
@@ -2173,6 +2416,21 @@
       "numero": 124,
       "sujet": "Farmland protection",
       "presentations": [
+        {
+          "membre": "Bobbi Ann Brady",
+          "depot": "2026-11-23",
+          "reponse": null
+        },
+        {
+          "membre": "Bobbi Ann Brady",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
+        {
+          "membre": "Bobbi Ann Brady",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
         {
           "membre": "Mike Schreiner",
           "depot": "2025-11-24",
@@ -2703,6 +2961,26 @@
           "reponse": "2026-11-02"
         },
         {
+          "membre": "Jamie West",
+          "depot": "2026-11-23",
+          "reponse": null
+        },
+        {
+          "membre": "Kristyn Wong-Tam",
+          "depot": "2026-11-23",
+          "reponse": null
+        },
+        {
+          "membre": "Tyler Watt",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
+        {
+          "membre": "Robin Lennox",
+          "depot": "2026-11-16",
+          "reponse": null
+        },
+        {
           "membre": "France Gélinas",
           "depot": "2026-11-03",
           "reponse": null
@@ -2865,6 +3143,16 @@
         {
           "membre": "Kristyn Wong-Tam",
           "depot": "2026-11-02",
+          "reponse": null
+        },
+        {
+          "membre": "Catherine Fife",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
+        {
+          "membre": "France Gélinas",
+          "depot": "2026-11-17",
           "reponse": null
         }
       ]
@@ -3148,6 +3436,11 @@
       "numero": 79,
       "sujet": "Highway 6 and Haldibrook Road",
       "presentations": [
+        {
+          "membre": "Bobbi Ann Brady",
+          "depot": "2026-11-19",
+          "reponse": null
+        },
         {
           "membre": "Bobbi Ann Brady",
           "depot": "2025-10-20",
@@ -4111,6 +4404,11 @@
         {
           "membre": "Jennifer K. French",
           "depot": "2026-05-26",
+          "reponse": "2026-11-23"
+        },
+        {
+          "membre": "Catherine McKenney",
+          "depot": "2026-11-23",
           "reponse": null
         },
         {
@@ -4506,6 +4804,11 @@
           "membre": "Jamie West",
           "depot": "2025-05-12",
           "reponse": "2025-10-29"
+        },
+        {
+          "membre": "Adil Shamji",
+          "depot": "2026-11-19",
+          "reponse": null
         },
         {
           "membre": "Jennifer K. French",
@@ -4987,6 +5290,21 @@
       "presentations": [
         {
           "membre": "Ted Hsu",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
+        {
+          "membre": "Lucille Collard",
+          "depot": "2026-11-17",
+          "reponse": null
+        },
+        {
+          "membre": "Robin Lennox",
+          "depot": "2026-11-23",
+          "reponse": null
+        },
+        {
+          "membre": "Ted Hsu",
           "depot": "2026-04-14",
           "reponse": "2026-10-29"
         },
@@ -5014,6 +5332,11 @@
           "membre": "Peggy Sattler",
           "depot": "2026-06-01",
           "reponse": "2026-10-29"
+        },
+        {
+          "membre": "Terence Kernaghan",
+          "depot": "2026-11-23",
+          "reponse": null
         },
         {
           "membre": "Lucille Collard",

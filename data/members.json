@@ -6,7 +6,7 @@
   },
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-16T21:24:04.320Z",
+  "lus": "2026-11-23T22:56:13.668Z",
   "totalSieges": 124,
   "etatPartis": [
     {
@@ -3281,9 +3281,9 @@
         },
         {
           "type": "Constituency office",
-          "adresse": "2063 Lawrence Ave. E",
+          "adresse": "Unit 636, 55 Town Centre Court",
           "ville": "Scarborough",
-          "codePostal": "M1R 2Z4",
+          "codePostal": "M1P 4X4",
           "telephone": "416-615-2183",
           "courriel": null
         }

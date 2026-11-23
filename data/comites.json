@@ -2,7 +2,7 @@
   "source": "https://www.ola.org/en/legislative-business/committees",
   "legislature": 44,
   "session": 1,
-  "lus": "2026-11-16T21:23:54.732Z",
+  "lus": "2026-11-23T22:56:04.477Z",
   "nombre": 8,
   "comites": [
     {
@@ -71,6 +71,11 @@
         }
       ],
       "transcriptions": [
+        {
+          "date": "2026-11-17",
+          "libelle": "Committee Transcript 2026-Nov-17",
+          "url": "https://www.ola.org/en/legislative-business/committees/finance-economic-affairs/parliament-44/transcripts/committee-transcript-2026-nov-17"
+        },
         {
           "date": "2026-11-05",
           "libelle": "Committee Transcript 2026-Nov-05",
