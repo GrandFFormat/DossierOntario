@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T19:32:41.356Z",
+ "generatedAt": "2026-11-24T21:24:23.658Z",
  "source": "https://www.ola.org/en/legislative-business/committees/notices-hearings",
  "items": [
   {
@@ -110,6 +110,33 @@
    "inscription": "https://www.ola.org/en/apply-committees",
    "titreFr": "Consultations prébudgétaires 2027",
    "comiteFr": "Comité permanent des finances et des affaires économiques"
+  },
+  {
+   "id": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/notice-hearings/2026-nov-30-notice-hearings-standing-committee-social-policy",
+   "titre": "Bill 148 Protect Ontario Families and Communities Act, 2026",
+   "comite": "Standing Committee on Social Policy",
+   "bill": 148,
+   "audiences": [
+    {
+     "lieu": "Toronto",
+     "date": "2026-11-30"
+    }
+   ],
+   "inscriptions": [
+    {
+     "date": "2026-11-25",
+     "heure": "2:00 p.m.",
+     "pour": null
+    }
+   ],
+   "memoire": {
+    "date": "2026-11-30",
+    "heure": "6:00 p.m."
+   },
+   "url": "https://www.ola.org/en/legislative-business/committees/social-policy/parliament-44/notice-hearings/2026-nov-30-notice-hearings-standing-committee-social-policy",
+   "inscription": "https://www.ola.org/en/apply-committees",
+   "titreFr": "Projet de loi 148, Loi de 2026 visant à protéger les familles et les collectivités en Ontario",
+   "comiteFr": "Comité permanent de la politique sociale"
   }
  ]
 }
