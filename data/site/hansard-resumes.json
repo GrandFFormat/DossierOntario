@@ -907,6 +907,127 @@
       "faitLe": "2026-11-20T19:15:43.808Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-23": {
+      "jour": "2026-11-23",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-23/hansard",
+      "en": [
+        "Question Period: Opposition members asked about out-of-country cancer treatment denials. The Health Minister said these decisions rest with experts, not politics, and cited the FAST program, which she said gave 700 patients faster access.",
+        "Question Period: Liberal members asked about the OSAP private college scandal and a Premier's letter to a college. The Colleges Minister described OPP and KPMG reviews, a pause on payments and planned legislation.",
+        "Bill 148 (Protect Ontario Families and Communities Act, 2026) passed second reading 73 to 42, after closure carried 71 to 41. It was referred to the Standing Committee on Social Policy.",
+        "Bill 155 (Protect Ontario's Northern and Rural Communities Act, 2026) and Bill 156 (Home and Community Care Awareness Week, 2026) passed first reading.",
+        "NDP opposition day motion asked for a province-wide moratorium on health care worker layoffs and for funding to close the gap. The Health Minister said the workforce is growing and hospital funding is rising. The motion lost 37 to 65.",
+        "Debate continued on the government motion on drug use and public safety, which asks Ottawa to act on bail, borders and drugs. Opposition members said the province should act on treatment, housing and courts. No vote was held.",
+        "Other questions covered child care staff wages, hospital funding in Durham, the Building Ontario Faster Act and landfill capacity, and nurses' mental health."
+      ],
+      "fr": [
+        "Période de questions : l'opposition a interrogé le gouvernement sur les refus de traitements du cancer hors pays. La ministre de la Santé a dit que ces décisions relèvent d'experts et non de la politique. Elle a cité le programme FAST, qui aurait donné 700 patients un accès plus rapide.",
+        "Période de questions : des député·e·s libéraux ont posé des questions sur le scandale du RAFEO dans les collèges privés et sur une lettre du premier ministre. Le ministre des Collèges a parlé de la PPO, de KPMG, d'une pause des paiements et d'un projet de loi.",
+        "Le projet de loi 148 (Loi de 2026 visant à protéger les familles et les collectivités en Ontario) a franchi la deuxième lecture par 73 voix contre 42, après l'adoption de la clôture par 71 contre 41. Il est renvoyé au Comité permanent de la politique sociale.",
+        "Le projet de loi 155 (Loi de 2026 pour protéger les collectivités nordiques et rurales de l'Ontario) et le projet de loi 156 (Loi de 2026 sur la Semaine de sensibilisation aux soins à domicile et en milieu communautaire) ont franchi la première lecture.",
+        "Motion du NPD en journée de l'opposition : un moratoire provincial sur les mises à pied en santé et du financement pour combler l'écart. La ministre de la Santé a dit que la main-d'œuvre croît et que le financement augmente. La motion est rejetée par 37 voix contre 65.",
+        "Le débat s'est poursuivi sur la motion du gouvernement sur la drogue et la sécurité publique, qui demande à Ottawa d'agir sur la mise en liberté sous caution, les frontières et les drogues. L'opposition a demandé des gestes provinciaux en traitement, logement et tribunaux. Aucun vote.",
+        "D'autres questions ont porté sur les salaires en services de garde, le financement des hôpitaux à Durham, les sites d'enfouissement et la santé mentale du personnel infirmier."
+      ],
+      "joueurs": [
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "Cancer treatment denials, health layoffs",
+          "sujetFr": "Refus de traitements, mises à pied en santé"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Defended health funding and FAST program",
+          "sujetFr": "Financement de la santé et programme FAST"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP scandal response",
+          "sujetFr": "Réponse au scandale du RAFEO"
+        },
+        {
+          "nom": "Robin Lennox",
+          "role": "Hamilton Centre",
+          "sujet": "Out-of-country cancer treatment",
+          "sujetFr": "Traitements du cancer hors pays"
+        },
+        {
+          "nom": "Lee Fairclough",
+          "role": "Etobicoke–Lakeshore",
+          "sujet": "OSAP scandal",
+          "sujetFr": "Scandale du RAFEO"
+        },
+        {
+          "nom": "Adil Shamji",
+          "role": "Don Valley East",
+          "sujet": "Cancer care, Bill 133",
+          "sujetFr": "Soins du cancer, projet de loi 133"
+        },
+        {
+          "nom": "France Gélinas",
+          "role": "Nickel Belt",
+          "sujet": "Nurses' mental health, layoffs",
+          "sujetFr": "Santé mentale des infirmières, mises à pied"
+        },
+        {
+          "nom": "Natalia Kusendova-Bashta",
+          "role": "Minister of Long-Term Care",
+          "sujet": "Long-term care staffing and homes",
+          "sujetFr": "Personnel et foyers de soins de longue durée"
+        },
+        {
+          "nom": "Todd J. McCarthy",
+          "role": "Minister of the Environment, Conservation and Parks",
+          "sujet": "Landfill capacity",
+          "sujetFr": "Capacité des sites d'enfouissement"
+        },
+        {
+          "nom": "Paul Calandra",
+          "role": "Minister of Education",
+          "sujet": "Child care wages and deadline",
+          "sujetFr": "Salaires et échéance en garde d'enfants"
+        },
+        {
+          "nom": "George Pirie",
+          "role": "Minister of Northern Development",
+          "sujet": "Introduced Bill 155",
+          "sujetFr": "Dépôt du projet de loi 155"
+        },
+        {
+          "nom": "Stephen Blais",
+          "role": "Orléans",
+          "sujet": "Public safety motion debate",
+          "sujetFr": "Débat sur la motion de sécurité publique"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "148",
+          "etape": "second reading"
+        },
+        {
+          "numero": "155",
+          "etape": "first reading"
+        },
+        {
+          "numero": "156",
+          "etape": "first reading"
+        },
+        {
+          "numero": "133",
+          "etape": "other"
+        },
+        {
+          "numero": "140",
+          "etape": "other"
+        }
+      ],
+      "faitLe": "2026-11-24T21:30:20.502Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
