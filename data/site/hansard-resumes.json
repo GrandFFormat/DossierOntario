@@ -1028,6 +1028,115 @@
       "faitLe": "2026-11-24T21:30:20.502Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-24": {
+      "jour": "2026-11-24",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-24/hansard",
+      "en": [
+        "The House debated Bill 155 (Protect Ontario's Northern and Rural Communities Act, 2026) at second reading. Ministers Pirie and Thompson presented changes to Ontario Northland, the Northern Ontario Heritage Fund, rural programs, Rural Ontario Week, vehicle noise fines and tree reservations.",
+        "NDP members said the bill has little to protect northern communities. They raised wildfire response, remote airports, Highways 11 and 17, forestry support, and consultation with First Nations. Liberal members raised truck inspections and repealed wage and Canadian-purchase rules.",
+        "Government members asked whether the opposition would vote for the bill. NDP members said parts are acceptable and did not say how they will vote. Debate was adjourned.",
+        "In Question Period, Marit Stiles asked about emergency room wait times and health care job cuts. Health Minister Sylvia Jones pointed to emergency department action teams and primary care attachment.",
+        "Opposition members asked about AI data centres and electricity bills in Cambridge. Associate Minister Matthew Rae said data centres will pay full electricity costs and that legislation is coming.",
+        "Opposition members asked about the OSAP career college scandal and debt. Minister Nolan Quinn said OSAP payments to private colleges are paused, auditors and the OPP are involved, and legislation is coming. Finance Minister Peter Bethlenfalvy defended the province's fiscal record.",
+        "Chandra Pasma introduced Bill 157 on lead in drinking water at first reading. Members also tabled petitions on nurse staffing ratios, the Thunder Bay jail and disaster relief."
+      ],
+      "fr": [
+        "La Chambre a débattu du projet de loi 155 (Loi de 2026 pour protéger les collectivités nordiques et rurales de l'Ontario) à l'étape de la deuxième lecture. Les ministres Pirie et Thompson ont présenté des changements touchant Ontario Northland, le Fonds du patrimoine du Nord, les programmes ruraux, la Semaine de l'Ontario rural, les amendes pour bruit de véhicule et les arbres réservés.",
+        "Des député·e·s du NPD ont dit que le projet de loi protège peu les collectivités du Nord. Ils ont soulevé les feux de forêt, les aéroports éloignés, les routes 11 et 17, l'aide à la foresterie et la consultation des Premières Nations. Des député·e·s libéraux ont parlé des inspections de camions et de l'abrogation de règles sur les salaires et l'achat canadien.",
+        "Des député·e·s du gouvernement ont demandé si l'opposition voterait pour le projet de loi. Des député·e·s du NPD ont dit que certaines parties sont acceptables sans préciser leur vote. Le débat a été ajourné.",
+        "Pendant la période de questions, Marit Stiles a interrogé le gouvernement sur les temps d'attente aux urgences et les mises à pied en santé. La ministre de la Santé Sylvia Jones a cité les équipes d'action des urgences et l'accès aux soins primaires.",
+        "Des député·e·s de l'opposition ont posé des questions sur les centres de données d'IA et les factures d'électricité à Cambridge. Le ministre associé Matthew Rae a dit que ces centres paieront tous leurs coûts d'électricité et qu'un projet de loi s'en vient.",
+        "Des député·e·s de l'opposition ont posé des questions sur le scandale du RAFEO dans les collèges privés et sur la dette. Le ministre Nolan Quinn a dit que les paiements aux collèges privés sont suspendus, que des vérificateurs et la PPO enquêtent et qu'un projet de loi s'en vient. Le ministre des Finances Peter Bethlenfalvy a défendu le bilan financier de la province.",
+        "Chandra Pasma a présenté en première lecture le projet de loi 157 sur le plomb dans l'eau potable. Des pétitions ont aussi été déposées sur les ratios du personnel infirmier, la prison de Thunder Bay et l'aide aux sinistrés."
+      ],
+      "joueurs": [
+        {
+          "nom": "George Pirie",
+          "role": "Minister of Northern Economic Development and Growth",
+          "sujet": "Presented Bill 155",
+          "sujetFr": "Présentation du projet de loi 155"
+        },
+        {
+          "nom": "Lisa M. Thompson",
+          "role": "Minister of Rural Affairs",
+          "sujet": "Rural provisions of Bill 155",
+          "sujetFr": "Volet rural du projet de loi 155"
+        },
+        {
+          "nom": "Lise Vaugeois",
+          "role": "Thunder Bay–Superior North",
+          "sujet": "Wildfires, airports, highways",
+          "sujetFr": "Feux de forêt, aéroports, routes"
+        },
+        {
+          "nom": "Guy Bourgouin",
+          "role": "Mushkegowuk–James Bay",
+          "sujet": "Forestry and heritage fund",
+          "sujetFr": "Foresterie et Fonds du patrimoine"
+        },
+        {
+          "nom": "Andrea Hazell",
+          "role": "Scarborough–Guildwood",
+          "sujet": "Truck inspections, repealed rules",
+          "sujetFr": "Inspections de camions, règles abrogées"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "ER waits, data centres",
+          "sujetFr": "Attentes aux urgences, centres de données"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Emergency department action teams",
+          "sujetFr": "Équipes d'action des urgences"
+        },
+        {
+          "nom": "Matthew Rae",
+          "role": "Associate Minister of Energy-Intensive Industries",
+          "sujet": "Data centre electricity costs",
+          "sujetFr": "Coûts d'électricité des centres de données"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP pause and investigations",
+          "sujetFr": "Pause du RAFEO et enquêtes"
+        },
+        {
+          "nom": "Peter Bethlenfalvy",
+          "role": "Minister of Finance",
+          "sujet": "Debt and credit ratings",
+          "sujetFr": "Dette et cotes de crédit"
+        },
+        {
+          "nom": "Chandra Pasma",
+          "role": "Ottawa West–Nepean",
+          "sujet": "Bill 157 on lead in water",
+          "sujetFr": "Projet de loi 157 sur le plomb"
+        },
+        {
+          "nom": "Will Bouma",
+          "role": "Brantford–Brant",
+          "sujet": "Supported Bill 155",
+          "sujetFr": "Appui au projet de loi 155"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "155",
+          "etape": "second reading"
+        },
+        {
+          "numero": "157",
+          "etape": "first reading"
+        }
+      ],
+      "faitLe": "2026-11-25T20:38:20.471Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
