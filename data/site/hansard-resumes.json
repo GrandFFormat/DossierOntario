@@ -1137,6 +1137,131 @@
       "faitLe": "2026-11-25T20:38:20.471Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-25": {
+      "jour": "2026-11-25",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-25/hansard",
+      "en": [
+        "Second reading debate continued on Bill 155 (Protect Ontario's Northern and Rural Communities Act, 2026). Government members cited rural programs and higher noise fines. NDP and Liberal members said it does not address health care, funding or highways.",
+        "Question Period: the NDP asked about nurse-to-patient ratios. The Health Minister cited 16,000 net new nurses and 30,000 students in nursing programs.",
+        "Question Period: the Colleges Minister defended the OSAP pause for private institutions, citing OPP and KPMG reviews and coming legislation. Opposition members asked about a career college flagged late and about Tyndale University students.",
+        "Question Period: online gambling ads. The Tourism Minister cited BetGuard, $85 million for treatment and strict ad rules. Opposition members asked for an ad ban. The Premier said the issue would be dealt with.",
+        "The House debated a government time allocation motion on Bills 105, 140 and 148. It sends Bill 105 back to committee and sets committee deadlines. Opposition members objected. The recorded vote was deferred.",
+        "Private members' debate on Bill 19 (Patient-to-Nurse Ratios for Hospitals Act). The NDP, Liberal and Green members supported it. Government members said fixed ratios limit hospital flexibility. The vote was deferred.",
+        "Bill 143 (budget measures) was reported from committee and ordered for third reading. The member for Niagara Falls then debated the gaming ads answer in the late show."
+      ],
+      "fr": [
+        "Le débat en deuxième lecture du projet de loi 155 (Loi de 2026 pour protéger les collectivités nordiques et rurales de l'Ontario) s'est poursuivi. Le gouvernement a cité des programmes ruraux et des amendes plus élevées pour le bruit. Le NPD et les libéraux ont dit qu'il ne règle pas la santé, le financement ni les routes.",
+        "Période de questions : le NPD a posé des questions sur les ratios infirmières-patients. La ministre de la Santé a cité 16 000 infirmières de plus en net et 30 000 personnes en formation.",
+        "Période de questions : le ministre des Collèges a défendu la pause du RAFEO pour les établissements privés, citant la PPO, KPMG et un projet de loi à venir. L'opposition a posé des questions sur un collège signalé tardivement et sur les étudiants de Tyndale.",
+        "Période de questions : les publicités de jeux en ligne. Le ministre du Tourisme a cité BetGuard, 85 millions de dollars pour le traitement et des règles strictes. L'opposition a demandé d'interdire les publicités. Le premier ministre a dit qu'il allait s'en occuper.",
+        "La Chambre a débattu une motion d'attribution de temps du gouvernement sur les projets de loi 105, 140 et 148. Elle renvoie le projet de loi 105 en comité et fixe des échéances. L'opposition s'y est opposée. Le vote par appel nominal a été reporté.",
+        "Débat des députés sur le projet de loi 19 (Loi de 2025 sur les ratios patients-personnel infirmier dans les hôpitaux). Le NPD, les libéraux et les verts l'appuient. Le gouvernement a dit que les ratios fixes limitent la souplesse des hôpitaux. Le vote a été reporté.",
+        "Le projet de loi 143 (mesures budgétaires) a été rapporté du comité et renvoyé à la troisième lecture. Le député de Niagara Falls a ensuite débattu de la réponse sur les publicités de jeux au débat d'ajournement."
+      ],
+      "joueurs": [
+        {
+          "nom": "Will Bouma",
+          "role": "Brantford–Brant",
+          "sujet": "Bill 155 rural benefits",
+          "sujetFr": "Avantages ruraux du projet de loi 155"
+        },
+        {
+          "nom": "Jeff Burch",
+          "role": "Niagara Centre",
+          "sujet": "Bill 155 critique",
+          "sujetFr": "Critique du projet de loi 155"
+        },
+        {
+          "nom": "Ted Hsu",
+          "role": "Kingston and the Islands",
+          "sujet": "Bill 155 schedules, pensioners",
+          "sujetFr": "Annexes du projet de loi 155, retraités"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "Nurse ratios, OSAP",
+          "sujetFr": "Ratios d'infirmières, RAFEO"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Nurse staffing, paramedics",
+          "sujetFr": "Dotation en infirmières, paramédicaux"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP pause",
+          "sujetFr": "Pause du RAFEO"
+        },
+        {
+          "nom": "Zee Hamid",
+          "role": "Minister of Tourism, Culture and Gaming",
+          "sujet": "Online gambling ads",
+          "sujetFr": "Publicités de jeux en ligne"
+        },
+        {
+          "nom": "Steve Clark",
+          "role": "Government House Leader",
+          "sujet": "Time allocation motion",
+          "sujetFr": "Motion d'attribution de temps"
+        },
+        {
+          "nom": "France Gélinas",
+          "role": "Nickel Belt",
+          "sujet": "Bill 19 nurse ratios",
+          "sujetFr": "Ratios du projet de loi 19"
+        },
+        {
+          "nom": "Wayne Gates",
+          "role": "Niagara Falls",
+          "sujet": "Gaming ads",
+          "sujetFr": "Publicités de jeux"
+        },
+        {
+          "nom": "Trevor Jones",
+          "role": "Minister of Labour, Immigration, Training and Skills Development",
+          "sujet": "Bill 105",
+          "sujetFr": "Projet de loi 105"
+        },
+        {
+          "nom": "Tyler Watt",
+          "role": "Nepean",
+          "sujet": "Nurse ratios, time allocation",
+          "sujetFr": "Ratios, attribution de temps"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "155",
+          "etape": "second reading"
+        },
+        {
+          "numero": "105",
+          "etape": "other"
+        },
+        {
+          "numero": "140",
+          "etape": "other"
+        },
+        {
+          "numero": "148",
+          "etape": "other"
+        },
+        {
+          "numero": "19",
+          "etape": "second reading"
+        },
+        {
+          "numero": "143",
+          "etape": "report"
+        }
+      ],
+      "faitLe": "2026-11-26T20:31:59.289Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
