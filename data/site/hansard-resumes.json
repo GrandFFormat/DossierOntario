@@ -1262,6 +1262,127 @@
       "faitLe": "2026-11-26T20:31:59.289Z",
       "tronque": false,
       "modele": "claude-sonnet-5-5"
+    },
+    "2026-11-26": {
+      "jour": "2026-11-26",
+      "lien": "https://www.ola.org/en/legislative-business/house-documents/parliament-44/session-1/2026-11-26/hansard",
+      "en": [
+        "The House continued third reading debate on Bill 143 (Plan to Protect Ontario Act (Budget Measures), 2026 (No. 2)). Government members spoke about tariff relief, small business tax cuts, nuclear and mining investments and conservation authority changes.",
+        "Opposition members said the fall economic statement misses the mark. They raised the $16.9-billion deficit, job losses, hospital deficits, OSAP and the pause on the property tax exemption for affordable housing. They also raised a freedom-of-information schedule for the Ontario Financing Authority.",
+        "In Question Period, Marit Stiles asked about nurses who visited yesterday and about nurse-to-patient ratios. Health Minister Sylvia Jones said hospitals use multidisciplinary teams and the province is training nurses. Premier Doug Ford cited nurse registrations and new hospitals.",
+        "Opposition members asked repeatedly for a ban on online gambling ads before the new year. Minister Zee Hamid said Ontario has strict advertising rules, has invested in addiction support and wants to avoid pushing players to unregulated sites.",
+        "Colleges and Universities Minister Nolan Quinn was questioned on the OSAP private career college fraud, faith-based institutions and Université de Sudbury. He cited the OPP referral, KPMG audit, the OSAP pause for private institutions and coming legislation.",
+        "The House carried the time allocation motion on Bills 105, 140 and 148 by 70 to 42.",
+        "Second reading of NDP Bill 19 on patient-to-nurse ratios was defeated, 42 to 70."
+      ],
+      "fr": [
+        "La Chambre a poursuivi le débat de troisième lecture du projet de loi 143 (Loi de 2026 sur le plan pour protéger l’Ontario (mesures budgétaires) (no 2)). Des député·e·s du gouvernement ont parlé de l’aide liée aux tarifs douaniers, des baisses d’impôt des petites entreprises, du nucléaire, des mines et des offices de protection de la nature.",
+        "Des député·e·s de l’opposition jugent que l’énoncé économique d’automne rate la cible. Ils ont soulevé le déficit de 16,9 milliards de dollars, les pertes d’emplois, les déficits des hôpitaux, le RAFEO et la pause de l’exemption de taxe foncière pour le logement abordable. Ils ont aussi parlé d’une annexe sur l’accès à l’information visant l’Office ontarien de financement.",
+        "À la période de questions, Marit Stiles a interrogé le gouvernement sur les infirmières venues hier et sur les ratios patients-personnel infirmier. La ministre de la Santé Sylvia Jones a parlé d’équipes multidisciplinaires et de la formation des infirmières. Le premier ministre Doug Ford a cité les inscriptions d’infirmières et les nouveaux hôpitaux.",
+        "L’opposition a demandé à plusieurs reprises d’interdire la publicité sur les jeux en ligne avant la nouvelle année. Le ministre Zee Hamid a dit que l’Ontario a des règles de publicité strictes, a investi dans l’aide aux personnes dépendantes et veut éviter de renvoyer les joueurs vers des sites non réglementés.",
+        "Le ministre des Collèges et Universités Nolan Quinn a répondu aux questions sur la fraude du RAFEO dans les collèges privés, les établissements confessionnels et l’Université de Sudbury. Il a cité le renvoi à la PPO, l’audit de KPMG, la pause du RAFEO pour les établissements privés et un projet de loi à venir.",
+        "La Chambre a adopté la motion d’attribution de temps sur les projets de loi 105, 140 et 148 par 70 voix contre 42.",
+        "La deuxième lecture du projet de loi 19 du NPD sur les ratios patients-personnel infirmier a été rejetée par 42 voix contre 70."
+      ],
+      "joueurs": [
+        {
+          "nom": "Nina Tangri",
+          "role": "Associate Minister of Small Business",
+          "sujet": "Bill 143 and small business support",
+          "sujetFr": "Projet de loi 143 et soutien aux petites entreprises"
+        },
+        {
+          "nom": "Matthew Rae",
+          "role": "Associate Minister of Energy-Intensive Industries",
+          "sujet": "Energy, nuclear and mining investments",
+          "sujetFr": "Investissements en énergie, nucléaire et mines"
+        },
+        {
+          "nom": "Todd J. McCarthy",
+          "role": "Minister of the Environment, Conservation and Parks",
+          "sujet": "Conservation authority consolidation",
+          "sujetFr": "Regroupement des offices de protection de la nature"
+        },
+        {
+          "nom": "Marit Stiles",
+          "role": "Leader of the Opposition",
+          "sujet": "Nurse ratios and nurses at Queen's Park",
+          "sujetFr": "Ratios d’infirmières et infirmières à Queen’s Park"
+        },
+        {
+          "nom": "Sylvia Jones",
+          "role": "Minister of Health",
+          "sujet": "Nursing and hospital teams",
+          "sujetFr": "Soins infirmiers et équipes hospitalières"
+        },
+        {
+          "nom": "Doug Ford",
+          "role": "Premier",
+          "sujet": "Nurses and hospital investments",
+          "sujetFr": "Infirmières et investissements hospitaliers"
+        },
+        {
+          "nom": "Zee Hamid",
+          "role": "Minister of Tourism",
+          "sujet": "Online gambling advertising",
+          "sujetFr": "Publicité sur les jeux en ligne"
+        },
+        {
+          "nom": "Nolan Quinn",
+          "role": "Minister of Colleges and Universities",
+          "sujet": "OSAP fraud and Université de Sudbury",
+          "sujetFr": "Fraude du RAFEO et Université de Sudbury"
+        },
+        {
+          "nom": "Peggy Sattler",
+          "role": "London West",
+          "sujet": "OSAP warnings and affordable housing tax pause",
+          "sujetFr": "Avertissements sur le RAFEO et pause de la taxe du logement abordable"
+        },
+        {
+          "nom": "Rob Cerjanec",
+          "role": "Ajax",
+          "sujet": "Bill 143 and OFA records schedule",
+          "sujetFr": "Projet de loi 143 et annexe sur les documents de l’OOF"
+        },
+        {
+          "nom": "Jessica Bell",
+          "role": "University–Rosedale",
+          "sujet": "Bill 143 schedules critique",
+          "sujetFr": "Critique des annexes du projet de loi 143"
+        },
+        {
+          "nom": "Lee Fairclough",
+          "role": "Etobicoke–Lakeshore",
+          "sujet": "Online gambling ads and budget",
+          "sujetFr": "Publicité sur les jeux en ligne et budget"
+        }
+      ],
+      "projets": [
+        {
+          "numero": "143",
+          "etape": "third reading"
+        },
+        {
+          "numero": "105",
+          "etape": "other"
+        },
+        {
+          "numero": "140",
+          "etape": "other"
+        },
+        {
+          "numero": "148",
+          "etape": "other"
+        },
+        {
+          "numero": "19",
+          "etape": "second reading"
+        }
+      ],
+      "faitLe": "2026-11-27T20:18:04.208Z",
+      "tronque": false,
+      "modele": "claude-sonnet-5-5"
     }
   }
 }
